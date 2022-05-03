@@ -1,0 +1,138 @@
+---
+permalink: web-services-proxy/install-wsp-task.html 
+sidebar: sidebar 
+keywords: installation, download, install proxy, 
+summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。 
+---
+= 下載並安裝Web Services Proxy檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。
+
+
+
+== 下載Web服務Proxy檔案
+
+您可以從NetApp支援網站的軟體下載頁面下載安裝檔案和讀我檔案。
+
+下載套件包括Web服務Proxy和Unified Manager介面。
+
+.步驟
+. 前往 https://mysupport.netapp.com/site/downloads["NetApp支援-下載"^]。
+. 選取* E系列SANtricity 《Web服務Proxy》*。
+. 請依照指示下載檔案。請確定您為伺服器選取正確的下載套件（例如、適用於Windows的exe、適用於Linux的Bin或RPM）。
+. 將安裝檔案下載至您要安裝Proxy和Unified Manager的伺服器。
+
+
+
+
+== 安裝在Windows或Linux伺服器上
+
+您可以使用三種模式（圖形、主控台或無聲）之一、或使用RPM檔案（僅限Linux）來安裝Web服務Proxy和Unified Manager。
+
+.開始之前
+* link:install-reqs-task.html["檢閱安裝需求"]。
+* 請確定您已將正確的安裝檔案（適用於Windows的exe；適用於Linux的bin）下載到要安裝Proxy和Unified Manager的伺服器。
+
+
+
+
+=== 圖形模式安裝
+
+您可以在Windows或Linux的圖形模式下執行安裝。在圖形模式中、提示會出現在Windows型介面中。
+
+.步驟
+. 存取您下載安裝檔案的資料夾。
+. 啟動Windows或Linux的安裝、如下所示：
++
+** Windows --雙擊安裝文件：
++
+「antricity _webservices：windows_x64-n.n.nn.nds.exe」
+
+** Linux --執行下列命令：「antricity _webservices－Linux _x64-n.n.n.nn.bin」
++
+在上述檔案名稱中、「n.n.n.nn.nnn.nnn」代表版本編號。
+
+
+
++
+安裝程序隨即開始、並SANtricity 出現NetApp Web Services Proxy + Unified Manager開機畫面。
+
+. 依照螢幕上的提示進行。
++
+安裝期間、系統會提示您啟用多項功能、並輸入一些組態參數。如有必要、您可以稍後在組態檔中變更這些選項。
+
+. 出現Webserver started（Webserver已啟動）訊息時、按一下「* OK（確定）*」以完成安裝。
++
+此時將顯示Install Complete（安裝完成）對話框。
+
+. 如果您要啟動Unified Manager或互動式API文件、請按一下核取方塊、然後按一下「*完成*」。
+
+
+
+
+=== 主控台模式安裝
+
+您可以在Windows或Linux的主控台模式下執行安裝。在主控台模式中、提示會出現在終端機視窗中。
+
+.步驟
+. 執行下列命令：「<安裝檔案名稱>-I Console」
++
+在上述命令中、「<安裝檔案名稱>」代表您下載的Proxy安裝檔案名稱（例如：「antricity」_webservices：windows_x64-n.n.nn.nnns.exe」）。
+
++
+
+NOTE: 若要在安裝程序期間隨時取消安裝、請在命令提示字元中輸入「quit」。
+
++
+安裝程序隨即開始、並出現「啟動安裝程式」（Introduction）訊息。
+
+. 依照螢幕上的提示進行。
++
+安裝期間、系統會提示您啟用多項功能、並輸入一些組態參數。如有必要、您可以稍後在組態檔中變更這些選項。
+
+. 安裝完成後、請按* Enter *退出安裝程式。
+
+
+
+
+=== 無聲模式安裝
+
+您可以在Windows或Linux的Silent模式下執行安裝。在無訊息模式中、終端機視窗不會顯示任何傳回訊息或指令碼。
+
+.步驟
+. 執行下列命令：「<安裝檔名>-I silent'
++
+在上述命令中、「<安裝檔案名稱>」代表您下載的Proxy安裝檔案名稱（例如：「antricity」_webservices：windows_x64-n.n.nn.nnns.exe」）。
+
+. 按* Enter *。
++
+安裝程序可能需要幾分鐘的時間才能完成。成功安裝後、終端機視窗會出現命令提示字元。
+
+
+
+
+
+=== RPM命令安裝（僅限Linux）
+
+對於與RPM套件管理系統相容的Linux系統、您可以使用選用的RPM檔案來安裝Web Services Proxy。
+
+.步驟
+. 將RPM檔案下載至您要安裝Proxy和Unified Manager的伺服器。
+. 開啟終端機視窗。
+. 輸入下列命令：
++
+"rpm -u SANtricity網路服務-n.n.nn.nminn.nminn.e.fs_64.rpm"
+
++
+
+NOTE: 在上述命令中、「n.n.n.nn.nnn.nfn」代表版本編號。
+
++
+安裝程序可能需要幾分鐘的時間才能完成。成功安裝後、終端機視窗會出現命令提示字元。
+
+

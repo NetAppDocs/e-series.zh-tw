@@ -1,0 +1,14 @@
+---
+permalink: maintenance-e5700/concept-controllers-wombat.html 
+sidebar: sidebar 
+keywords: controller, board, firmware, software, control, drive, implement, system, manager, function, section, duplex, configuration 
+summary: 控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何在雙工組態中更換控制器。 
+---
+= 控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何在雙工組態中更換控制器。

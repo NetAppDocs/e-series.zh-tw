@@ -1,0 +1,24 @@
+---
+permalink: maintenance-ef600/hpp-complete-protocol-conversion-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: 轉換主機連接埠的傳輸協定之後、請執行其他步驟以使用新的傳輸協定。 
+---
+= 完成EF300或EF600的主機傳輸協定轉換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+套用功能套件金鑰來轉換傳輸協定之後、您必須將主機設定為使用適當的傳輸協定。
+
+如需逐步指示、請參閱適用於您系統的指南：
+
+* link:../config-linux/index.html["Linux Express組態"]
+* link:../config-vmware/index.html["VMware Express組態"]
+* link:../config-windows/index.html["Windows Express組態"]
++
+特定設定可能有所不同。請檢查 http://mysupport.netapp.com/matrix["NetApp 互通性對照表"^] 以取得解決方案的特定指示和其他建議設定。
+
+

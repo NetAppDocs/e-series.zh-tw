@@ -1,0 +1,134 @@
+---
+permalink: cloud-connector/modify-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector settings 
+summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定」選項、以取得有關的資訊。「設定」選項可讓您修改S3帳戶、託管儲存陣列和主機、以及Web服務Proxy認證的應用程式目前組態。您也可以SANtricity 透過「設定」選項來變更「解決方案」應用程式的密碼。 
+---
+= 修改SANtricity 《不適用的解決方案
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「設定」選項可讓您修改S3帳戶、託管儲存陣列和主機、以及Web服務Proxy認證的應用程式目前組態。您也可以SANtricity 透過「設定」選項來變更「解決方案」應用程式的密碼。
+
+
+
+== 修改S3帳戶設定
+
+您可以在SANtricity 「S3帳戶設定」視窗中修改現有的S3設定、以供使用。
+
+修改URL或S3 Bucket Label設定時、請注意、透過SANtricity 該解決方案設定的任何現有備份、都會受到影響。
+
+.步驟
+. 在左側工具列中、按一下*設定>組態*。
++
+此時會顯示「設定-組態」頁面。
+
+. 按一下「*檢視/編輯設定*」以取得「S3帳戶設定」。
++
+隨即顯示「S3帳戶設定」頁面。
+
+. 在URL檔案中、輸入S3雲端服務的URL。
+. 在*存取金鑰ID*欄位中、輸入S3目標的存取ID。
+. 在*秘密存取金鑰*欄位中、輸入S3目標的存取金鑰。
+. 在「* S3 Bucket Name*」欄位中、輸入S3目標的貯體名稱。
+. 如有需要、請選取*使用路徑樣式存取*核取方塊。
+. 按一下*測試連線*以驗證輸入S3認證的連線。
+. 按一下「*儲存*」以套用修改。
++
+系統會套用已修改的S3帳戶設定。
+
+
+
+
+
+== 管理儲存陣列
+
+您可以在SANtricity 「管理儲存陣列」頁面中、從註冊到「支援解決方案」主機的Web服務Proxy新增或移除儲存陣列。
+
+「Manage Storage Arrays」（管理儲存陣列）頁面會顯示Web Services Proxy中可供登錄SANtricity 到NetApp Cloud Connector主機的儲存陣列清單。
+
+.步驟
+. 在左側工具列中、按一下*設定>儲存陣列*。
++
+此時會顯示「Settings - Storage Arrays（設定-儲存陣列）」畫面。
+
+. 若要將儲存陣列新增SANtricity 至《S161Cloud Connector》、請按一下「*新增*」。
++
+.. 在Add Storage Arrays（新增儲存陣列）視窗中、從結果清單中選取所需儲存陣列旁的每個核取方塊。
+.. 按一下「 * 新增 * 」。
++
+所選的儲存陣列會新增SANtricity 至《列舉雲端連接器》、並顯示在「設定-儲存陣列」畫面的「結果清單」區段中。
+
+
+
+. 若要修改新增儲存陣列的主機、請在「設定-儲存陣列」畫面的「結果」清單區段中、按一下「*編輯*」以取得該行項目。
++
+.. 在Associated Host（關聯主機）下拉式功能表中、選取儲存陣列所需的主機。
+.. 按一下「 * 儲存 * 」。
++
+選定的主機會指派給儲存陣列。
+
+
+
+. 若要從SANtricity 《支援不支援的Cloud Connector》主機移除現有的儲存陣列、請從底部的「結果」清單中選取所需的儲存陣列、然後按一下「*移除*」。
++
+.. 在「Confirm Remove Storage Array（確認移除儲存陣列）」欄位中、輸入「移除」。
+.. 按一下「*移除*」。
++
+所選的儲存陣列會從SANtricity 支援此功能的不支援Cloud Connector主機中移除。
+
+
+
+
+
+
+
+== 修改Web服務Proxy設定
+
+您可以在SANtricity 「Web服務Proxy設定」視窗中修改現有的「Web服務Proxy」應用程式的「Web服務Proxy」設定。
+
+搭配使用的Web Services Proxy SANtricity 需要新增適當的陣列、並設定相應的密碼。
+
+.步驟
+. 在左側工具列中、按一下*功能表：設定[組態]*。
++
+此時會顯示「設定-組態」畫面。
+
+. 按一下「*檢視/編輯Web服務Proxy的設定*」。
++
+隨即顯示Web Services Proxy設定畫面。
+
+. 在「URL」欄位中、輸入SANtricity 用於解決此問題的Web服務Proxy URL。
+. 在使用者名稱欄位中、輸入Web服務Proxy連線的使用者名稱。
+. 在密碼欄位中、輸入Web服務Proxy連線的密碼。
+. 按一下*測試連線*以驗證輸入的Web服務Proxy認證資料的連線。
+. 按一下「*儲存*」以套用修改。
+
+
+
+
+== 變更SANtricity 解決方案：Cloud Connector密碼
+
+您可以在SANtricity 「變更密碼」畫面中變更「SunCloud Connector」應用程式的密碼。
+
+.步驟
+. 在左側工具列中、按一下*功能表：設定[組態]*。
++
+此時會顯示「設定-組態」畫面。
+
+. 按一下「*變更密碼*以使用SANtricity 此解決方案。
++
+此時會顯示變更密碼畫面。
+
+. 在「目前密碼」欄位中、輸入SANtricity 您目前使用的密碼以供使用。
+. 在「New Password（新密碼）」欄位中、輸入SANtricity 您的全新密碼以供使用。
+. 在「Confirm new password（確認新密碼）」欄位中、重新輸入新密碼。
+. 按一下「*變更*」以套用新密碼。
++
+修改後的密碼會套用至SANtricity 《修訂版的密碼：
+
+

@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: feature-tech-reports.html 
+keywords: feature technical reports, e-series, hardware, santricity, os 
+summary: E系列技術報告 
+---
+= 瀏覽精選技術報告
+:allow-uri-read: 
+
+
+
+
+== 特色TRs
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["* TR-4893：SANtricity 《不遠端儲存磁碟區》*"^] | https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["* TR-4839：SANtricity 不同步鏡射與非同步鏡射*"^] | https://www.netapp.com/pdf.html?item=/media/17167-tr4747pdf.pdf["* TR-4747：SANtricity 《Sof Snapshot功能概述與部署指南》*"^] 
+
+
+| 說明解決方案架構、以及如何使用E系列儲存系統從現有的遠端儲存設備匯入資料。 | 說明SANtricity 「不同步鏡射」和「非同步鏡射」功能。 | 說明SANtricity 使用SANtricity 《SyfizSystem Manager》的《不完整快照》功能、包括GUI導覽說明。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652：SANtricity 《Dynamic Disk Pools*》（動態磁碟資源池*）"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737：SANtricity 《自動負載平衡*》"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736：SANtricity 《The Sesome Web Services API*》（英文）"^] 
+
+
+| 說明儲存管理員如何將一組類似的磁碟分組到集區拓撲中、讓集區中的所有磁碟都參與I/O工作流程。 | 說明了「alb」功能的行為、其主要組態參數及其主機互通性增強功能。 | 說明SANtricity 《支援Web服務》的總覽、這是用於設定和管理E系列儲存系統的API。 
+|===

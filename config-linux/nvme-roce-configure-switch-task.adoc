@@ -1,0 +1,22 @@
+---
+permalink: config-linux/nvme-roce-configure-switch-task.html 
+sidebar: sidebar 
+keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。 
+---
+= 設定交換器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
+
+
+NOTE: *資料遺失風險。*您必須在交換器上啟用優先流程控制或全域暫停控制、以避免NVMe over RoCE環境中的資料遺失風險。
+
+.步驟
+. 啟用乙太網路暫停影格流程控制*端點對端點*作為最佳實務設定。
+. 如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。
+

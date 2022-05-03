@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/san-spvc-ic-plugin-removal.html 
+keywords: remove vCenter plugin, uninstall Plugin for vCenter, unregister vCenter plugin, 
+summary: 移除vCenter的外掛程式。 
+---
+= 移除vCenter的儲存外掛程式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以從vCenter Server Appliance移除外掛程式、並從應用程式主機解除安裝外掛程式Web伺服器。
+
+您可以依照任何順序執行這兩個不同的步驟。不過、如果您選擇在取消登錄外掛程式之前、先從應用程式主機移除外掛程式Web伺服器、則會在該程序期間移除登錄指令碼、而且您無法使用方法1取消登錄。
+
+
+
+== 從vCenter Server Appliance取消登錄外掛程式
+
+若要從vCenter Server Appliance取消登錄外掛程式、請選取下列其中一種方法：
+
+* 方法1：執行登錄指令碼
+* 方法2：使用vCenter Server Mob頁面
+
+
+
+
+=== 方法1：執行登錄指令碼
+
+. 透過命令列開啟提示字元、然後瀏覽至下列目錄：
++
+「<安裝目錄>\vCenter-Register \bin」
+
+. 執行「vCenter-Register．bat」檔案：
++
+vcenter-register.bat
+
++
+「-action unregisterPlugin」（動作未註冊外掛程式）
+
++
+'-vcenterHostname <vCenter Fqd>^'
+
++
+-'使用者名稱<管理員使用者名稱>^'
+
+. 驗證指令碼是否成功。
++
+記錄會儲存至「%install_dir%/工作日 誌/vC-registry.log」。
+
+
+
+
+
+=== 方法2：使用vCenter Server Mob頁面
+
+. 開啟網頁瀏覽器並輸入下列URL：
++
+++ https://<FQDN[] 的
+
+. 以系統管理員認證登入。
+. 尋找「extensionManager」的內容名稱、然後按一下與該內容相關的連結。
+. 按一下*更多*…以展開內容清單。 連結。
+. 驗證副檔名「plugin.netapp.eseries`」是否在清單中。
+. 如果有、請按一下方法「UnregisterExtension」。
+. 在對話框中輸入值「plugin.netapp.eseries`」、然後按一下「*叫用方法*」。
+. 關閉對話方塊並重新整理網頁瀏覽器。
+. 確認「plugin.netapp.eseries`副檔名不在清單上。
+
+
+
+NOTE: 此程序會從vCenter Server Appliance解除登錄外掛程式、但不會從伺服器移除外掛程式套件檔案。若要移除套件檔案、請使用SSH存取vCenter Server Appliance並瀏覽至下列目錄：
+
+「etc/VMware/vSphere-ui/ vC-packages/vSphere-client-cronity/」
+
+然後移除與外掛程式相關的目錄。
+
+
+
+== 從應用程式主機移除外掛程式Web伺服器
+
+若要從應用程式主機移除外掛程式軟體、請遵循下列步驟：
+
+. 從應用程式伺服器瀏覽至*控制台*。
+. 前往*應用程式與功能*、然後選取* SANtricity 適用於VCentvCenter的儲存外掛程式*。
+. 按一下*解除安裝/變更*。
++
+隨即開啟確認對話方塊。
+
+. 按一下*解除安裝*。
++
+解除安裝完成時、會顯示確認訊息。
+
+. 按一下「 * 完成 * 」。
+

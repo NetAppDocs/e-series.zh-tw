@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: manage-storage.html 
+keywords: online help, System Manager, Unified Manager 
+summary: 管理儲存設備 
+---
+= 管理儲存設備
+:allow-uri-read: 
+
+
+[role="lead"]
+請使用下列連結來存取說明如何設定、管理及監控儲存物件和E系列儲存系統的文件。這些連結會帶您前往不同的文件網站。
+
+
+
+== System Manager 11.7的線上說明
+
+存取 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["《系統管理程式》11.7線上說明SANtricity"^]，您可以在其中找到有關如何規劃、設定、管理及疑難排解儲存陣列的資訊。
+
+
+
+== Unified Manager 5的線上說明
+
+存取 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html["統一化管理程式5線上說明SANtricity"^]，您可在此學習如何在多個網路儲存陣列上執行儲存管理命令。
+
+
+
+== 命令參考資料
+
+存取 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html["命令參考資料"^]，您可在此學習如何使用命令列介面（CLI）命令來設定及監控儲存陣列。

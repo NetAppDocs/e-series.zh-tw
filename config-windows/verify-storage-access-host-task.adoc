@@ -1,0 +1,59 @@
+---
+permalink: config-windows/verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 確認主機可以將資料寫入LUN並讀取回。 
+---
+= 驗證主機上的儲存設備存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用磁碟區之前、請先確認主機可以將資料寫入LUN並讀取回來。
+
+您必須已初始化LUN、並使用檔案系統格式化LUN。
+
+.步驟
+. 在新LUN上建立檔案並寫入。
++
+[listing]
+----
+> echo test file > f:\\test.txt
+----
+. 讀取檔案並驗證資料是否已寫入。
++
+[listing]
+----
+> type f:\\test.txt
+----
+. 若要驗證多重路徑是否正常運作、請變更磁碟區擁有權。
++
+.. 從「系統管理員GUI」中、移至「*儲存設備*>*磁碟區*」SANtricity 、然後選取「*更多*」>「*變更擁有權*」。
+.. 在「變更磁碟區所有權」對話方塊中、使用*偏好的擁有者*下拉式清單、為清單中的其中一個磁碟區選取其他控制器、然後確認作業。
+.. 確認您仍可存取LUN上的檔案。
++
+[listing]
+----
+> dir f:\\
+----
+
+
+. 尋找目標ID。
++
+
+NOTE: dsmUil公用程式區分大小寫。
+
++
+[listing]
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe -a
+----
+. 檢視通往LUN的路徑、並確認您有預期的路徑數。在命令的「<目標ID>」部分中、使用上一步中找到的目標ID。
++
+[listing]
+----
+> C:\\Program Files \(x86\)\\DSMDrivers\\mppdsm\\dsmUtil.exe –g <target ID\>
+----
+

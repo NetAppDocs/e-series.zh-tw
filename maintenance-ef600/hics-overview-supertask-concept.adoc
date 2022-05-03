@@ -1,0 +1,27 @@
+---
+permalink: maintenance-ef600/hics-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: replace EF600 HIC, replace EF300 HIC, host interface card failed, HIC failure 
+summary: 在更換EF300或EF600 HIC之前、請先檢閱相關要求和考量事項。 
+---
+= EF300或EF600 HIC升級需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在EF300或EF600陣列中升級或更換主機介面卡（HIC）之前、請先檢閱下列需求。
+
+* 您已排定此程序的停機維護時間。在成功完成此程序之前、您無法存取儲存陣列上的資料。由於兩個控制器在開機時必須具有相同的HIC組態、因此當您變更HIC組態時、必須關閉電源。如果出現不相符的HIC、則當您將更換的HIC上線時、控制器會鎖定。
+* 連接新主機連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。
++
+如需相容硬體的相關資訊、請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
+
+* 您有一個ESD腕帶、或是已採取其他防靜電預防措施。
+* 您有1號十字螺絲起子。
+* 您有標籤可識別連接至控制器容器的每條纜線。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
+* 某些HIC更換或升級可能需要主機連接埠傳輸協定轉換。請依照中的指示進行 xref:hpp-change-supertask-task.html[變更EF300或EF600的主機傳輸協定] 以滿足此需求。
+* EF300控制器的HIC連接埠2必須裝有HIC才能連接主機。
+

@@ -1,0 +1,116 @@
+---
+permalink: maintenance-e2800/controllers-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: E2800 controller replacement requirements, E2800 replace controller, replacing E2800 controller, add E2800 controller, adding E2800 controller, E2800, E2812 controller shelf, E2824 controller shelf, EF280 shelf, E-Series, eseries 
+summary: 檢閱E2800控制器更換要求與考量。 
+---
+= E2800控制器更換要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換或新增E2800控制器之前、請先檢閱相關要求與考量事項。
+
+每個控制器機箱都包含控制器卡、電池和選用的主機介面卡（HIC）。您可以將第二個控制器新增至單工組態或更換故障的控制器。
+
+此程序適用於IOM12和IOM12B磁碟機櫃。
+
+
+NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）
+
+
+
+== 新增第二個控制器的需求
+
+您可以在下列控制器機櫃的單工版本中新增第二個控制器機箱：
+
+* E2812控制器機櫃
+* E2824控制器機櫃
+* EF280快閃陣列
+
+
+圖中顯示了在新增第二個控制器（一個控制器容器和一個控制器空白）之前、以及在新增第二個控制器（兩個控制器容器）之後、控制器機櫃的範例。
+
+image::../media/28_dwg_2800_controller_simplex.gif[28 dwg2800控制器單工]
+
+image::../media/28_dwg_2800_controller_duplex.gif[28圖2800控制器雙工]
+
+
+NOTE: 圖中顯示控制器容器範例、控制器容器上的主機連接埠可能有所不同。
+
+在新增第二個控制器之前、您必須具備：
+
+* 新的控制器機箱、其零件編號與目前安裝的控制器機箱相同。
+* 與目前安裝之控制器容器中的HIC相同的新HIC（僅當目前安裝的控制器容器包含主機介面卡時才需要）。
+* 連接新控制器連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。
++
+如需相容硬體的相關資訊、請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
+
+* 安裝在主機上的多重路徑驅動程式、以便您使用這兩個控制器。請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"] 以取得相關指示。
+* 或您已採取其他防靜電預防措施。
+* 1號十字螺絲起子。
+* 用於識別新纜線的標籤。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。如果您無法存取CLI、可以執行下列其中一項：
+
++
+** * for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統>附加元件>命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+** *《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。
+
+
+
+
+
+
+== 更換控制器的需求
+
+當您更換故障的控制器容器時、您必須從原始控制器容器中取出電池和HIC（如果已安裝）、並將其安裝在更換的控制器容器中。
+
+您可以透過兩種方式判斷控制器容器是否故障：
+
+* 《恢復大師SANtricity 》（Recovery Guru in the SytrSystem Manager）會引導您更換控制器容器。
+* 控制器機箱上的黃色警示LED亮起、表示控制器發生故障。
+
+
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 dwg2800控制器收件人已引導維護e2800]
+
+*（1）*_注意LED _
+
+
+NOTE: 圖中顯示控制器容器範例、控制器容器上的主機連接埠可能有所不同。
+
+更換控制器之前、您必須具備：
+
+* 更換控制器機箱的零件編號與您要更換的控制器機箱相同。
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+* 1號十字螺絲起子。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。如果您無法存取CLI、可以執行下列其中一項：
+
++
+** * for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統>附加元件>命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+** *《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。
+
+
+
+
+
+
+=== 雙工組態需求
+
+如果控制器機櫃有兩個控制器（雙工組態）、您可以在儲存陣列開機並執行主機I/O作業時更換控制器機箱、前提是符合下列條件：
+
+* 機櫃中的第二個控制器機箱具有最佳狀態。
+* 「恢復大師」的「詳細資料」區域中的「*確定要移除*」欄SANtricity 位會顯示*「是」*、表示移除此元件是安全的。
+
+
+
+
+=== 單工組態需求
+
+如果您只有一個控制器容器（單工組態）、則在您更換控制器容器之前、將無法存取儲存陣列上的資料。您必須停止主機I/O作業並關閉儲存陣列的電源。

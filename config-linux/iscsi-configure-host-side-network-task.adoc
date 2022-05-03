@@ -1,0 +1,145 @@
+---
+permalink: config-linux/iscsi-configure-host-side-network-task.html 
+sidebar: sidebar 
+keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在主機端設定iSCSI網路。 
+---
+= 設定主機端網路
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定主機端網路、您必須執行數個步驟。
+
+您可以在主機端設定iSCSI網路、方法是設定每個實體路徑的節點工作階段數目、開啟適當的iSCSI服務、設定iSCSI連接埠的網路、建立iSCSI介面繫結、以及在啟動器和目標之間建立iSCSI工作階段。
+
+在大多數情況下、您可以使用內建的軟體啟動器來執行iSCSI CNA/NIC。您不需要下載最新的驅動程式、韌體和BIOS。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以判斷程式碼需求。
+
+.步驟
+. 檢查/etc/iscsi/iscsid.conf檔案中的「node.session.nr_sessions`」變數、查看每個實體路徑的預設工作階段數。如有必要、請將預設的工作階段數變更為一個工作階段。
++
+[listing]
+----
+node.session.nr_sessions = 1
+----
+. 將/etc/iscsi/iscsid.conf檔案中的「node.session.timeo.replacement_timeout`」變數變更為「20」、預設值為「120」。
++
+[listing]
+----
+node.session.timeo.replacement_timeout=20
+----
+. 確保已開啟「iscsid」和「（open-）iSCSI」服務並啟用開機。
++
+* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+
++
+[listing]
+----
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+* SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*
+
++
+[listing]
+----
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
++
+您也可以在/etc/iscsi/iscsid.conf中設定「node.start = automatic」、然後再執行任何「iscsiadm'命令、讓工作階段在重新開機後持續存在。
+
+. 取得用於將主機設定為陣列的主機IQN啟動器名稱。
++
+[listing]
+----
+# cat /etc/iscsi/initiatorname.iscsi
+----
+. 設定iSCSI連接埠的網路：
++
+
+NOTE: 除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段或VLAN上使用兩個或多個NIC。
+
++
+.. 使用`# ifconfig-A'命令確定iSCSI連接埠名稱。
+.. 設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。
++
+[listing]
+----
+# vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
+Edit:
+BOOTPROTO=none
+ONBOOT=yes
+NM_CONTROLLED=no
+Add:
+IPADDR=192.168.xxx.xxx
+NETMASK=255.255.255.0
+----
++
+
+NOTE: 請務必設定兩個iSCSI啟動器連接埠的位址。
+
+.. 重新啟動網路服務。
++
+[listing]
+----
+# systemctl restart network
+----
+.. 確定Linux伺服器可以ping通所有iSCSI目標連接埠。
+
+
+. 建立兩個iSCSI iface繫結來設定iSCSI介面。
++
+[listing]
+----
+iscsiadm -m iface -I iface0 -o new
+iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
+----
++
+[listing]
+----
+iscsiadm -m iface -I iface1 -o new
+iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
+----
++
+
+NOTE: 若要列出介面、請使用「iscsiadm -m iface'」。
+
+. 在啟動器和目標之間建立iSCSI工作階段（總共四個）。
++
+.. 探索iSCSI目標。在工作表中儲存IQN（每次探索都相同）、以進行下一步。
++
+[listing]
+----
+iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+----
++
+
+NOTE: IQN如下所示：
+
++
+[listing]
+----
+iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+----
+.. 使用ifaces建立iSCSI啟動器與iSCSI目標之間的連線。
++
+[listing]
+----
+iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+-p 192.168.0.1:3260 -I iface0 -l
+----
+.. 列出在主機上建立的iSCSI工作階段。
++
+[listing]
+----
+# iscsiadm -m session
+----
+
+
+

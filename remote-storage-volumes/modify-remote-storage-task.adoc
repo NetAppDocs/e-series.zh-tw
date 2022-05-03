@@ -1,0 +1,39 @@
+---
+permalink: remote-storage-volumes/modify-remote-storage-task.html 
+sidebar: sidebar 
+keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series 
+summary: 您可以透過SANtricity 「View System Manager」的「Remote Storage」（遠端儲存）畫面下方的「View/Edit Settings」（檢視/編輯設定）選項、修改任何已設定的遠端儲存匯入連線設定。 
+---
+= 修改遠端儲存連線設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過「檢視/編輯設定」選項來編輯、新增或刪除任何遠端儲存組態的連線設定。
+
+變更連線內容將會影響進行中的匯入。為了避免中斷、請僅在匯入未執行時變更連線內容。
+
+.步驟
+. 從SANtricity 「物件系統管理程式」的「遠端儲存」畫面中、選取「結果清單」區段下方所需的「遠端儲存」物件。
+. 按一下*檢視/編輯設定*。
++
+隨即顯示遠端儲存設定畫面。
+
+. 單擊*連接屬性*選項卡。
++
+隨即顯示遠端儲存匯入的已設定IP位址和連接埠設定。
+
+. 執行下列其中一項動作：
++
+** *編輯*–按一下遠端儲存物件對應行項目旁的*編輯*。在欄位中輸入修訂的IP位址和（或）連接埠資訊。
+** *新增*–按一下*新增*、然後在提供的欄位中輸入新的IP位址和連接埠資訊。按一下「*新增*」進行確認、新的連線就會出現在遠端儲存物件清單中。
+** *刪除*–從清單中選取所需的連線、然後按一下*刪除*。在提供的欄位中輸入「刪除」、然後按一下「*刪除*」、以確認作業。連線會從遠端儲存物件清單中移除。
+
+
+. 按一下「 * 儲存 * 」。
++
+修改後的連線設定會套用至遠端儲存物件。
+
+

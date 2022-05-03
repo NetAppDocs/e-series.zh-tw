@@ -1,0 +1,99 @@
+---
+permalink: web-services-proxy/install-uninstall-task.html 
+sidebar: sidebar 
+keywords: uninstall Web Services Proxy, remove WSP, 
+summary: 若要移除Web服務Proxy和Unified Manager、您可以使用任何模式（圖形化、主控台、無聲或RPM檔案）、無論您使用何種方法來安裝Proxy。 
+---
+= 解除安裝Web服務Proxy
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要移除Web服務Proxy和Unified Manager、您可以使用任何模式（圖形化、主控台、無聲或RPM檔案）、無論您使用何種方法來安裝Proxy。
+
+
+
+== 圖形模式解除安裝
+
+您可以在Windows或Linux的圖形模式下執行解除安裝。在圖形模式中、提示會出現在Windows型介面中。
+
+.步驟
+. 啟動Windows或Linux的解除安裝、如下所示：
++
+** Windows --轉到包含uninstall_web_services代理卸載文件的目錄。預設目錄位於下列位置：C：/Program Files/NetApp/SANtricity Web Services Proxy/。按兩下「uninstall_web_services _proxy.exe」。
++
+
+NOTE: 或者、您也可以前往功能表：「控制台」「程式集」>「解除安裝程式」、然後選取「NetApp SANtricity Web服務Proxy」。
+
+** Linux --轉到包含Web Services Proxy卸載文件的目錄。預設目錄位於下列位置：+「/opt/netapp/SANtricity」網路服務代理伺服器/ uninstall_web_services Proxy
+
+
+. 執行下列命令：
++
+"uninstall_web_services代理-i GUI（uninstall_web_services代理-i GUI）"
+
++
+此時會出現「BIOS Web Services Proxy」開機畫面。SANtricity
+
+. 在「解除安裝」對話方塊中、按一下「*解除安裝*」。
++
+此時會出現「卸載程式」進度列、並顯示進度。
+
+. 出現「解除安裝完成」訊息時、按一下「*完成*」。
+
+
+
+
+== 主控台模式解除安裝
+
+您可以在Windows或Linux的主控台模式下執行解除安裝。在主控台模式中、提示會出現在終端機視窗中。
+
+.步驟
+. 移至uninstall_web_services Proxy目錄。
+. 執行下列命令：
++
+"uninstall_web_services代理-i控制檯"
+
++
+解除安裝程序隨即開始。
+
+. 卸載完成後，按* Enter鍵退出安裝程序。
+
+
+
+
+== 無聲模式解除安裝
+
+您可以在Windows或Linux的Silent模式下執行解除安裝。在無訊息模式中、終端機視窗不會顯示任何傳回訊息或指令碼。
+
+.步驟
+. 移至uninstall_web_services Proxy目錄。
+. 執行下列命令：
++
+"uninstall_web_services代理-i silent"
+
++
+解除安裝程序會執行、但終端機視窗不會顯示任何傳回訊息或指令碼。成功解除安裝Web服務Proxy之後、終端機視窗中會出現命令提示字元。
+
+
+
+
+
+== RPM命令解除安裝（僅限Linux）
+
+您可以使用RPM命令、從Linux系統解除安裝Web Services Proxy。
+
+.步驟
+. 開啟終端機視窗。
+. 輸入下列命令列：
++
+「rpm -e SANtricity網路服務」
+
++
+
+NOTE: 解除安裝程序可能會留下不屬於原始安裝的檔案。手動刪除這些檔案、以完全移除Web服務Proxy。
+
+

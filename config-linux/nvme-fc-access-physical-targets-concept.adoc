@@ -1,0 +1,90 @@
+---
+permalink: config-linux/nvme-fc-access-physical-targets-concept.html 
+sidebar: sidebar 
+keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 根據您的Linux版本設定導向裝置目標的I/O。 
+---
+= 存取適用於實體NVMe裝置目標的NVMe磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。
+
+對於RHEL 8和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。
+
+最佳實務做法是使用/dev/disk/by-id/中的連結、而非使用/dev/nvme0n1。例如：
+
+[listing]
+----
+# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
+nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
+----
+
+
+== 實體NVMe裝置是I/O目標
+
+執行I/O至實體NVMe裝置路徑。每個命名空間只能使用下列格式的其中一個裝置：
+
+[listing]
+----
+/dev/nvme[subsys#]n[id#]
+----
+所有路徑都會使用此裝置下的原生多重路徑解決方案進行虛擬化。
+
+您可以執行下列命令來檢視您的路徑：
+
+[listing]
+----
+# nvme list-subsys
+----
+輸出範例：
+
+[listing]
+----
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000a522500000000589aa8a6
+\
++- nvme0 rdma traddr=192.4.21.131 trsvcid=4420 live
++- nvme1 rdma traddr=192.4.22.141 trsvcid=4420 live
+----
+如果您在使用「NVMe list-SUBSYs」命令時指定命名空間裝置、它會提供有關該命名空間路徑的其他資訊：
+
+[listing]
+----
+# nvme list-subsys /dev/nvme0n1
+nvme-subsys0 - NQN=nqn.1992-08.com.netapp:5700.600a098000af44620000000058d5dd96
+\
+ +- nvme0 rdma traddr=192.168.130.101 trsvcid=4420 live non-optimized
+ +- nvme1 rdma traddr=192.168.131.101 trsvcid=4420 live non-optimized
+ +- nvme2 rdma traddr=192.168.130.102 trsvcid=4420 live optimized
+ +- nvme3 rdma traddr=192.168.131.102 trsvcid=4420 live optimized
+----
+多重路徑命令中也有一些掛勾、可讓您透過這些掛勾來檢視原生容錯移轉的路徑資訊：
+
+[listing]
+----
+#multipath -ll
+----
+
+NOTE: 若要檢視路徑資訊、必須在「/etc/multipath.conf」中設定下列項目：
+
+[listing]
+----
+
+defaults {
+        enable_foreign nvme
+}
+----
+輸出範例：
+
+[listing]
+----
+eui.0000a0335c05d57a00a0980000a5229d [nvme]:nvme0n9 NVMe,Netapp E-Series,08520001
+size=4194304 features='n/a' hwhandler='ANA' wp=rw
+|-+- policy='n/a' prio=50 status=optimized
+| `- 0:0:1 nvme0c0n1 0:0 n/a optimized    live
+`-+- policy='n/a' prio-10 status=non-optimized
+`- 0:1:1 nvme0c1n1 0:0 n/a non-optimized    live
+----

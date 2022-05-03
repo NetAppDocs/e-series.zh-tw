@@ -1,0 +1,12 @@
+---
+permalink: config-linux/srp-ib-express-setup-task.html 
+sidebar: sidebar 
+keywords: srp, infiniband, express, setup 
+summary: SRP over InfiniBand Express設定 
+---
+= SRP over InfiniBand Express設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

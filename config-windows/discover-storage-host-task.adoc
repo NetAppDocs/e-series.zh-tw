@@ -1,0 +1,32 @@
+---
+permalink: config-windows/discover-storage-host-task.html 
+sidebar: sidebar 
+keywords: LUNs, discover LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 探索適用於Windows Express方法的儲存設備。 
+---
+= 探索主機上的儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您新增LUN時、必須手動重新掃描相關的磁碟、才能發現它們。主機不會自動探索新的LUN。
+
+儲存系統上的LUN會在Windows主機上顯示為磁碟。
+
+.步驟
+. 以系統管理員身分登入。
+. 若要探索儲存設備、請從Windows命令提示字元執行下列命令。
++
+[listing]
+----
+# echo rescan | diskpart
+----
+. 若要驗證新增的儲存設備、請執行下列命令。
++
+[listing]
+----
+# echo list disk | diskpart
+----
+

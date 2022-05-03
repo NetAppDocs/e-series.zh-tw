@@ -1,0 +1,14 @@
+---
+permalink: upgrade-controllers/upgrade-controllers-task.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller 
+summary: 您可以透過更換現有控制器來升級儲存陣列。控制器由主機板、韌體和軟體組成。它控制磁碟機並實作管理軟體功能。 
+---
+= 升級E系列控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過更換現有控制器來升級儲存陣列。控制器由主機板、韌體和軟體組成。它控制磁碟機並實作管理軟體功能。

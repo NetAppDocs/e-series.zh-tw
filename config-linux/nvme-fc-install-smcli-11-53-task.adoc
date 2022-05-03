@@ -1,0 +1,55 @@
+---
+permalink: config-linux/nvme-fc-install-smcli-11-53-task.html 
+sidebar: sidebar 
+keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在Linux Express方法中安裝適用於CLI和HCA的Storage Manager。 
+---
+= 安裝SANtricity 適用於SMcli的Syn-Storage Manager SANtricity （適用於11.53版或更早版本的軟體）
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用SANtricity 的是版本11.53或更低版本的支援、您可以在SANtricity Management Station上安裝《支援資料》軟體、以協助管理陣列。
+
+包含用於其他管理工作的命令列介面（CLI）、以及用於透過I/O路徑將主機組態資訊推送至儲存陣列控制器的主機內容代理程式。SANtricity
+
+
+NOTE: 如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需更多關於如何透過SANtricity 「支援系統管理程式」下載SMcli的資訊、請參閱SANtricity 《支援服務》（英文）下方的「下載命令列介面（CLI）」主題。
+
+.您需要的是 #8217 ；需要的是什麼
+* 軟件11.53或更早版本。SANtricity
+* 正確的系統管理員或超級使用者權限。
+* 適用於下列最低需求的系統：SANtricity
++
+** * RAM*：2 GB用於Java執行時間引擎
+** *磁碟空間*：5 GB
+** *作業系統/架構*：如需判斷支援作業系統版本與架構的指引、請前往 http://mysupport.netapp.com["NetApp支援"^]。從* Downloads *（下載*）索引標籤、前往功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。
+
+
+
+
+本工作說明如何在SANtricity Windows和Linux作業系統平台上安裝支援資料儲存管理程式、因為當資料主機使用Linux時、Windows和Linux都是通用的管理工作站平台。
+
+.步驟
+. 請至下載SANtricity 更新版本的《》 http://mysupport.netapp.com["NetApp支援"^]。從* Downloads *（下載*）索引標籤、前往功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。
+. 執行SANtricity 此安裝程式。
++
+|===
+| Windows | Linux 
+
+
+ a| 
+按兩下SMIA*。exe安裝套件以開始安裝。
+ a| 
+.. 移至SMIA*。bin安裝套件所在的目錄。
+.. 如果臨時掛載點沒有執行權限、請設定「IATEMPDIR」變數。範例：「IATEMPDIR=/root ./SMIA-LINKUXX64-11.25.0A00.0002.bin」
+.. 執行「chmod+x SMIA*。bin」命令、以授予檔案執行權限。
+.. 執行「./smia*。bin」命令來啟動安裝程式。
+
+
+|===
+. 使用安裝精靈在Management Station上安裝軟體。
+

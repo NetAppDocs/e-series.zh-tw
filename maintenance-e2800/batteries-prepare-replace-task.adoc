@@ -1,0 +1,171 @@
+---
+permalink: maintenance-e2800/batteries-prepare-replace-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 請依照雙工或單工的適當步驟、準備更換E2800電池。 
+---
+= 準備更換E2800電池
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+準備更換電池的步驟取決於您使用的是雙工組態（兩個控制器）或單工組態（一個控制器）。
+
+* 如需雙工組態、請參閱 <<Place controller offline (duplex)>>。
+* 如需單工組態、請參閱 <<Power down the controller shelf (simplex)>>。
+
+
+.開始之前
+* 確認所有使用這些磁碟區的主機上都未使用任何磁碟區、或安裝多重路徑驅動程式。
+* 檢閱 link:batteries-overview-requirements-concept.html["E2800電池更換需求"]。
+
+
+
+
+== 使控制器離線（雙工）
+
+如果您使用雙工組態、則必須將受影響的控制器離線、以便安全地取出故障電池。您未離線的控制器必須處於線上狀態（處於最佳狀態）。
+
+
+NOTE: 僅當您的儲存陣列有兩個控制器（雙工組態）時、才執行此工作。
+
+.步驟
+. 從「還原系統管理程式」檢閱Recovery Guru中的詳細資料、確認電池有問題、並確保不需要先處理其他項目。SANtricity
+. 從Recovery Guru的「Details（詳細資料）」區域中、判斷要更換的電池。
+. 使用SANtricity NetApp System Manager備份儲存陣列的組態資料庫。
++
+如果移除控制器時發生問題、您可以使用儲存的檔案來還原組態。系統會儲存RAID組態資料庫的目前狀態、其中包含控制器上磁碟區群組和磁碟集區的所有資料。
+
++
+** 從系統管理員：
++
+... 選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）]。
+... 選擇*收集組態資料*。
+... 按一下「* Collect*」。
++
+檔案會以*組態Data-<arrayName>-<DateTimer>.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+** 或者、您也可以使用下列CLI命令來備份組態資料庫：
++
+「ave storageArray dbmDatabase sourceLocation=Onboard contentID=all file="File"；」
+
+
+
+. 使用SANtricity NetApp System Manager收集儲存陣列的支援資料。
++
+如果移除控制器時發生問題、您可以使用儲存的檔案來疑難排解問題。系統會將儲存陣列的庫存、狀態和效能資料儲存在單一檔案中。
+
++
+.. 選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）]。
+.. 選擇*收集支援資料*。
+.. 按一下「* Collect*」。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+. 如果控制器尚未離線、請使用SANtricity 「系統管理程式」將其離線。
++
+** 從《系統管理程式》：SANtricity
++
+... 選取*硬體*。
+... 如果圖形顯示磁碟機、請選取*顯示磁碟櫃背面*以顯示控制器。
+... 選取您要離線的控制器。
+... 從內容功能表中選取*離線*、然後確認您要執行此作業。
++
+
+NOTE: 如果您使用SANtricity 嘗試離線的控制器來存取「無法使用」功能、SANtricity 就會顯示「無法使用」訊息。選擇*連線至替代網路連線*、即可使用SANtricity 其他控制器自動存取《系統管理程式》。
+
+
+
+** 或者、您也可以使用下列CLI命令將控制器離線：
++
+*對於控制器A：*「設為控制器[a]可用度=離線」
+
++
+*對於控制器B：*「設置控制器（b）可用度=離線」
+
+
+
+. 等候SANtricity 「更新」功能將控制器狀態更新為「離線」。
+. 前往 link:batteries-remove-controller-canister-task.html["拆下E2800控制器機箱"]。
++
+
+CAUTION: 在更新狀態之前、請勿開始任何其他作業。
+
+
+
+
+
+== 關閉控制器機櫃電源（單工）
+
+如果您使用單工組態、請關閉控制器機櫃的電源、以便安全地取出故障電池。
+
+
+NOTE: 僅當您的儲存陣列有一個控制器（單工組態）時、才執行此工作。
+
+.步驟
+. 使用SANtricity NetApp System Manager備份儲存陣列的組態資料庫。
++
+如果移除控制器時發生問題、您可以使用儲存的檔案來還原組態。系統會儲存RAID組態資料庫的目前狀態、其中包含控制器上磁碟區群組和磁碟集區的所有資料。
+
++
+** 從系統管理員：
++
+... 選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）]。
+... 選擇*收集組態資料*。
+... 按一下「* Collect*」。
++
+檔案會以*組態Data-<arrayName>-<DateTimer>.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+** 或者、您也可以使用下列CLI命令來備份組態資料庫：
++
+「ave storageArray dbmDatabase sourceLocation=Onboard contentID=all file="File"；」
+
+
+
+. 使用SANtricity NetApp System Manager收集儲存陣列的支援資料。
++
+如果移除控制器時發生問題、您可以使用儲存的檔案來疑難排解問題。系統會將儲存陣列的庫存、狀態和效能資料儲存在單一檔案中。
+
++
+.. 選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）]。
+.. 選擇*收集支援資料*。
+.. 按一下「* Collect*」。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+. 確保儲存陣列與所有連線的主機之間不會發生I/O作業。例如、您可以執行下列步驟：
++
+.. 停止所有涉及從儲存設備對應至主機之LUN的程序。
+.. 確保沒有任何應用程式將資料寫入從儲存設備對應至主機的任何LUN。
+.. 卸載陣列上與磁碟區相關的所有檔案系統。
++
+
+NOTE: 停止主機I/O作業的確切步驟取決於主機作業系統和組態、而這些步驟超出這些指示的範圍。如果您不確定如何停止環境中的主機I/O作業、請考慮關閉主機。
+
++
+
+CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此程序、您可能會遺失資料。
+
+
+
+. 等待快取記憶體中的任何資料寫入磁碟機。
++
+當需要將快取資料寫入磁碟機時、控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
+
+. 從「SView System Manager」首頁SANtricity 選取*「View Operations in progress*」。
+. 請確認所有作業均已完成、然後再繼續下一步。
+. 關閉控制器機櫃上的兩個電源開關。
+. 等待控制器機櫃上的所有LED關閉。
+. 前往 link:batteries-remove-controller-canister-task.html["拆下E2800控制器機箱"]。
+

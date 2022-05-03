@@ -1,0 +1,126 @@
+---
+permalink: config-linux/nvme-fc-access-virtual-targets-concept.html 
+sidebar: sidebar 
+keywords: NVMe volumes virtual, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以根據Linux版本設定導向裝置目標的I/O。DM-MP會管理這些虛擬目標的基礎實體路徑。 
+---
+= 存取適用於虛擬裝置目標的NVMe磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。
+
+對於RHEL 7和SLES 12、I/O會由Linux主機導向至虛擬裝置目標。DM-MP會管理這些虛擬目標的基礎實體路徑。
+
+
+
+== 虛擬裝置是I/O目標
+
+請確定您只對DM-MP所建立的虛擬裝置執行I/O、而不是對實體裝置路徑執行I/O。如果您執行的是實體路徑的I/O、DM-MP就無法管理容錯移轉事件、而且I/O也會失敗。
+
+您可以透過「dm」裝置或「dev/mapper」中的「mlink」來存取這些區塊裝置、例如：
+
+[listing]
+----
+/dev/dm-1
+/dev/mapper/eui.00001bc7593b7f5f00a0980000af4462
+----
+
+
+== 範例
+
+下列「NVMe清單」命令輸出範例顯示主機節點名稱及其與命名空間ID的關聯。
+
+[listing]
+----
+
+NODE         SN           MODEL           NAMESPACE
+
+/dev/nvme1n1 021648023072 NetApp E-Series 10
+/dev/nvme1n2 021648023072 NetApp E-Series 11
+/dev/nvme1n3 021648023072 NetApp E-Series 12
+/dev/nvme1n4 021648023072 NetApp E-Series 13
+/dev/nvme2n1 021648023151 NetApp E-Series 10
+/dev/nvme2n2 021648023151 NetApp E-Series 11
+/dev/nvme2n3 021648023151 NetApp E-Series 12
+/dev/nvme2n4 021648023151 NetApp E-Series 13
+----
+|===
+| 欄位 | 說明 
+
+
+ a| 
+《節點》
+ a| 
+節點名稱包含兩個部分：
+
+* 「nvme1」表示控制器A、「nvme2」表示控制器B
+* 從主機的角度來看、「n1」、「n2」等表示命名空間識別碼。這些識別碼會在表格中重複顯示、控制器A重複一次、控制器B則重複一次
+
+
+
+
+ a| 
+名稱空間
+ a| 
+「Namespace（命名空間）」欄會列出命名空間ID（NSID）、這是從儲存陣列觀點來看的識別碼。
+
+|===
+在以下的「多路徑-ll」輸出中、最佳化路徑會以50的「優先」值顯示、而非最佳化路徑則以10的「優先」值顯示。
+
+Linux作業系統會將I/O路由至顯示為「status=active」的路徑群組、而列為「status=enabled」的路徑群組則可用於容錯移轉。
+
+[listing]
+----
+eui.00001bc7593b7f500a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=50 status=active
+| `- #:#:#:# nvme1n1 259:5 active ready running
+`-+- policy='service-time 0' prio=10 status=enabled
+  `- #:#:#:# nvme2n1 259:9  active ready running
+
+eui.00001bc7593b7f5f00a0980000af4462 dm-0 NVME,NetApp E-Series
+size=15G features='1 queue_if_no_path' hwhandler='0' wp=rw
+|-+- policy='service-time 0' prio=0 status=enabled
+| `- #:#:#:# nvme1n1 259:5 failed faulty running
+`-+- policy='service-time 0' prio=10 status=active
+  `- #:#:#:# nvme2n1 259:9  active ready running
+----
+|===
+| 產品線項目 | 說明 
+
+
+ a| 
+「policy='server-time 0' prio=50 STATUS=activity'
+ a| 
+這一行和下行顯示、NSID為10的命名空間「nvmey1n1」在路徑上最佳化、其「prio」值為50、「狀態」值為「Active」。
+
+此命名空間由控制器A擁有
+
+
+
+ a| 
+「policy='server-time 0' prio=10 STATUS=enabled'
+ a| 
+此行顯示命名空間10的容錯移轉路徑、其「優先」值為10、「狀態」值為「已啟用」。I/O目前並未導向至此路徑上的命名空間。
+
+此命名空間由控制器B擁有
+
+
+
+ a| 
+「policy='server-time 0' prio=0 STATUS=enabled'
+ a| 
+此範例顯示控制器A正在重新開機時、不同時間點的「多重路徑-ll」輸出。命名空間10的路徑顯示為「失敗的執行失敗」、其「優先」值為0、「狀態」值為「已啟用」。
+
+
+
+ a| 
+「policy='server-time 0' prio=10 STATUS=activity'
+ a| 
+請注意、「使用中」路徑是指「nvme2」、因此I/O會導向此路徑至控制器B
+
+|===

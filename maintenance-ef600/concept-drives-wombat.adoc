@@ -1,0 +1,14 @@
+---
+permalink: maintenance-ef600/concept-drives-wombat.html 
+sidebar: sidebar 
+keywords: drive, device, physical, storage, media, data 
+summary: 磁碟機是提供資料實體儲存媒體的裝置。 
+---
+= 磁碟機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+磁碟機是提供資料實體儲存媒體的裝置。

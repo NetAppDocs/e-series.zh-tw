@@ -1,0 +1,16 @@
+---
+permalink: config-vmware/understand-vmware-workflow-concept.html 
+sidebar: sidebar 
+keywords: workflow, guide, express, method, configuring, configure, storage, array, system, manager, host, understand 
+summary: 使用WVMware Express組態工作流程。 
+---
+= 瞭解VMware工作流程
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本工作流程將引導您完成「快速方法」、以設定儲存陣列和SANtricity 使用VMware System Manager、讓VMware主機能夠使用儲存設備。
+
+image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[1130 FLW sys manager VMware Express指南所有傳輸協定]

@@ -1,0 +1,91 @@
+---
+permalink: install-hw-cabling/driveshelf-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 將控制器櫃中的每個控制器連接至磁碟機櫃中的I/O模組（IOM）。 
+---
+= 磁碟機櫃纜線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須將控制器櫃中的每個控制器連接至磁碟機櫃中的I/O模組（IOM）。
+
+此程序適用於IOM12和IOM12B磁碟機櫃。
+
+
+NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）
+
+如果您要將較舊的控制器機櫃佈線至DE212C、DE224C或DE460、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃"^]。
+
+
+
+== E2800與E5700纜線
+
+下列資訊適用於E2800、E2800B、EF280、E5700、EF5700B、 或EF570控制器機櫃、轉至DE212C、DE224C或DE460磁碟機櫃。
+
+
+
+=== 12個磁碟機或24個磁碟機櫃的纜線
+
+您可以將控制器櫃纜線連接至一個或多個12個磁碟機或24個磁碟機櫃。
+
+下圖顯示控制器磁碟櫃和磁碟機磁碟櫃的呈現方式。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 控制器櫃和12個磁碟機或24個磁碟機櫃
+
+image::../media/12_24_cabling.png[1224條纜線]
+
+
+
+=== 60個磁碟機櫃的纜線
+
+您可以將控制器機櫃纜線連接至一個或多個60個磁碟機機機櫃。
+
+下圖顯示控制器磁碟櫃和磁碟機磁碟櫃的呈現方式。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 控制器機櫃和60個磁碟機機機櫃
+
+image::../media/60_cabling.png[60個纜線]
+
+
+
+== EF300纜線
+
+以下資訊適用於將EF300控制器機櫃纜線連接至DE212C、DE224C或DE460磁碟機機櫃。
+
+在連接EF300纜線之前、請確定韌體已更新至最新版本。若要更新韌體、請依照中的指示進行 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"^]。
+
+
+
+=== 12個磁碟機或24個磁碟機櫃的纜線
+
+您可以將控制器櫃纜線連接至一個或多個12個磁碟機或24個磁碟機櫃。
+
+下圖顯示控制器磁碟櫃和磁碟機磁碟櫃的呈現方式。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 控制器櫃和12個磁碟機或24個磁碟機櫃
+
+image::../media/ef_to_de224c_four_shelves.png[EF移除224c四個磁碟櫃]
+
+
+
+=== 60個磁碟機櫃的纜線
+
+您可以將控制器機櫃纜線連接至一個或多個60個磁碟機機機櫃。
+
+下圖顯示控制器磁碟櫃和磁碟機磁碟櫃的呈現方式。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+
+
+==== 控制器機櫃和60個磁碟機機機櫃
+
+image::../media/ef_to_de460c.png[EF至DE460c]

@@ -1,0 +1,124 @@
+---
+permalink: config-linux/nvme-roce-configure-storage-connections-task.html 
+sidebar: sidebar 
+keywords: NVMe over RoCE, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 如果您的控制器包含NVMe over RoCE（RDMA over Converged乙太網路）連線、您可以從「Hardware（硬體）」頁面或SANtricity 「System（系統）」頁面、設定NVMe連接埠設定。 
+---
+= 設定儲存陣列NVMe over RoCE連線
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的控制器包含NVMe over RoCE（RDMA over Converged Ethernet）連線、您可以從SANtricity 「Hardware（硬體）」頁面或「System（系統）」頁面、設定NVMe連接埠設定。
+
+.您需要的是 #8217 ；需要的是什麼
+* 控制器上的NVMe over RoCE主機連接埠；否則、系統管理員無法使用NVMe over RoCE設定。
+* 主機連線的IP位址。
+
+
+您可以從* Hardware *（硬體*）頁面或功能表：Settings[系統]存取NVMe over RoCE組態。本工作說明如何從「硬體」頁面設定連接埠。
+
+
+NOTE: NVMe over RoCE設定和功能只有在儲存陣列的控制器包含NVMe over RoCE連接埠時才會顯示。
+
+.步驟
+. 從System Manager介面選取* Hardware *。
+. 按一下要設定NVMe over RoCE連接埠的控制器。
++
+此時會出現控制器的內容功能表。
+
+. 選取*透過RoCE連接埠設定NVMe *。
++
+「*設定NVMe over roce連接埠*」對話方塊隨即開啟。
+
+. 在下拉式清單中、選取您要設定的連接埠、然後按一下「*下一步*」。
+. 選取您要使用的連接埠組態設定、然後按一下「*下一步*」。
++
+若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多連接埠設定*連結。
+
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+已設定乙太網路連接埠速度
+ a| 
+選取所需的速度。下拉式清單中顯示的選項取決於網路可支援的最大速度（例如10 Gbps）。可能的值包括：
+
+** 自動協商
+** 10 Gbps
+** 25 Gbps
+** 40 Gbps
+** 50 Gbps
+** 100 Gbps
+** 200 Gbps
+
+
+
+NOTE: 當使用QSFP56纜線連接具有200GB容量的HIC時、只有在您連接到Mellanox交換器和/或介面卡時、才能使用自動交涉功能。
+
+
+NOTE: 設定的NVMe over RoCE連接埠速度應符合所選連接埠上SFP的速度功能。所有連接埠都必須設定為相同的速度。
+
+
+
+ a| 
+啟用IPV4和/或啟用IPv6
+ a| 
+選取一個或兩個選項、以啟用對IPv4和IPv6網路的支援。
+
+
+
+ a| 
+MTU大小（按一下*顯示更多連接埠設定*即可取得）。
+ a| 
+如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到4200之間的值。
+
+|===
++
+如果您選取*啟用IPV4、則會在您按一下*下一步*之後、開啟一個對話方塊、供您選取IPV4設定。如果您選取*啟用IPv6 *、則會在您按一下*下一步*之後、開啟一個對話方塊來選取IPv6設定。如果您同時選取這兩個選項、則會先開啟[IPV4設定]對話方塊、然後按一下[* Next*（*下一步*）]之後、隨即開啟[IPv6設定]對話方塊。
+
+. 自動或手動設定IPv6和/或IPv6設定。若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多設定*連結。
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+自動從DHCP伺服器取得組態
+ a| 
+選取此選項可自動取得組態。
+
+
+
+ a| 
+手動指定靜態組態
+ a| 
+選取此選項、然後在欄位中輸入靜態位址。對於IPV4、請加入網路子網路遮罩和閘道。對於IPv6、請包含可路由的IP位址和路由器IP位址。
+
+
+NOTE: 如果只有一個可路由的IP位址、請將其餘位址設為0：0：0：0：0：0：0：0：0：0。
+
+
+
+ a| 
+啟用VLAN支援（按一下*「Show More settings（顯示更多設定）」*即可取得。）
+ a| 
+
+NOTE: 此選項僅適用於iSCSI環境。在NVMe over RoCE環境中無法使用。
+
+
+
+ a| 
+啟用乙太網路優先順序（按一下*顯示更多設定*即可取得）。
+ a| 
+
+NOTE: 此選項僅適用於iSCSI環境。在NVMe over RoCE環境中無法使用。
+
+|===
+. 單擊*完成*。
+

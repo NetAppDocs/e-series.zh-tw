@@ -1,0 +1,55 @@
+---
+permalink: config-linux/iscsi-verify-ip-network-connections-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。 
+---
+= 驗證IP網路連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。
+
+.步驟
+. 視是否啟用巨型框架而定、在主機上執行下列其中一個命令：
++
+** 如果未啟用巨型框架、請執行下列命令：
++
+[listing]
+----
+ping -I <hostIP\> <targetIP\>
+----
+** 如果啟用巨型框架、請執行有效負載大小為8、972位元組的ping命令。IP和ICMP的合併標頭為28個位元組、新增至有效負載時、等於9、000個位元組。s交換器會設定「封包大小」位元。d交換器會設定偵錯選項。這些選項可在iSCSI啟動器與目標之間成功傳輸9、000個位元組的巨型框架。
++
+[listing]
+----
+ping -I <hostIP\> -s 8972 -d <targetIP\>
+----
++
+在此範例中、iSCSI目標IP位址為「192.0.2.8」。
+
++
+[listing]
+----
+#ping -I 192.0.2.100 -s 8972 -d 192.0.2.8
+Pinging 192.0.2.8 with 8972 bytes of data:
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
+Ping statistics for 192.0.2.8:
+  Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+  Minimum = 2ms, Maximum = 2ms, Average = 2ms
+----
+
+
+. 從每個主機的啟動器位址（用於iSCSI的主機乙太網路連接埠IP位址）發出「ping」命令、命令至每個控制器iSCSI連接埠。從組態中的每個主機伺服器執行此動作、視需要變更IP位址。
++
+
+NOTE: 如果命令失敗（例如、傳回「Packet to be f破碎、但DF set」）、請驗證主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的MTU大小（巨型框架支援）。
+
+

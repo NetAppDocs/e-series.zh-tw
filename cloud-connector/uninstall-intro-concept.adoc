@@ -1,0 +1,76 @@
+---
+permalink: cloud-connector/uninstall-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector uninstall, remove Cloud Connector 
+summary: 您可以SANtricity 透過圖形化的解除安裝程式或主控台來解除安裝UnCloud Connector。 
+---
+= 解除安裝SANtricity 《Cloud Connector
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以SANtricity 透過圖形化的解除安裝程式或主控台模式來解除安裝UnCloud Connector。
+
+
+
+== 使用圖形模式解除安裝
+
+您可以使用圖形模式、在SANtricity Linux作業系統上解除安裝支援不支援的Cloud Connector。
+
+.步驟
+. 在終端機視窗中、瀏覽至包含SANtricity 不含此功能的RUNCloud Connector解除安裝檔案的目錄。
++
+下列預設目錄位置提供適用於此解決方案SANtricity 的解除安裝檔案：
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. 從包含SANtricity 「ClouflexCloud Connector解除安裝」檔案的目錄中、執行下列命令：
++
+[listing]
+----
+./uninstall_cloud_connector4 –i gui
+----
++
+已初始化SANtricity 解除安裝過程以執行《不再安裝時使用的解決方案：
+
+. 在解除安裝視窗中、按一下「*解除安裝*」以繼續解除安裝SANtricity 《Cloud Connector》（英文）。
++
+解除安裝程序已完成、SANtricity 而Linux作業系統中已解除安裝了此解決方案。
+
+
+
+
+
+== 使用主控台模式解除安裝
+
+您可以使用主控台模式、在SANtricity Linux作業系統上解除安裝支援不支援的Cloud Connector。
+
+.步驟
+. 在終端機視窗中、瀏覽至包含SANtricity 不含此功能的RUNCloud Connector解除安裝檔案的目錄。
++
+下列預設目錄位置提供適用於此解決方案SANtricity 的解除安裝檔案：
+
++
+[listing]
+----
+/opt/netapp/santricity_cloud_connector4/uninstall_cloud_connector4
+----
+. 從包含SANtricity 「ClouflexCloud Connector解除安裝」檔案的目錄中、執行下列命令：
++
+[listing]
+----
+./uninstall_cloud_connector4 –i console
+----
++
+已初始化SANtricity 解除安裝過程以執行《不再安裝時使用的解決方案：
+
+. 在解除安裝視窗中、按* Enter鍵*繼續解除安裝SANtricity NetApp Cloud Connector。
++
+解除安裝程序已完成、SANtricity 而Linux作業系統中已解除安裝了此解決方案。
+
+

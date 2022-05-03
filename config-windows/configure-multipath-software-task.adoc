@@ -1,0 +1,26 @@
+---
+permalink: config-windows/configure-multipath-software-task.html 
+sidebar: sidebar 
+keywords: multipath software for Windows, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 安裝DSM套件、其中包含適用於Windows的多重路徑軟體。 
+---
+= 設定多重路徑軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要提供通往儲存陣列的備援路徑、您可以安裝SANtricity Windows DSM套件、並使用適用於Windows的多重路徑套件。
+
+正確的系統管理員或超級使用者權限。
+
+多重路徑軟體可在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。在使用多重路徑之前、您必須先安裝SANtricity Windows DSM套件。此套件包含適用於Windows的多重路徑軟體。
+
+Windows安裝使用原生的MPIO裝置特定模組（DSM）驅動程式進行容錯移轉。當您安裝並啟用SANtricity Windows DSM套件時、不需要採取進一步行動來使用多重路徑。
+
+.步驟
+. 從下載* SANtricity 《Windows DSM*》套件 https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["作業系統軟體頁面SANtricity"^]。選取您的軟體版本、接受授權合約、然後在SANtricity 「其他下載」下選取*《Windows DSM *》。
+. 執行* SANtricity 《Windows DSM*安裝程式》。按兩下要執行的安裝套件。
+. 使用安裝精靈在Management Station上安裝套件。
+

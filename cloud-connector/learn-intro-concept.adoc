@@ -1,0 +1,90 @@
+---
+permalink: cloud-connector/learn-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector requirements 
+summary: 系統需求、設定、安裝、組態、以及SANtricity 與NetApp Cloud Connector應用程式相關的工作。 
+---
+= Cloud Connector的系統需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您的系統必須符合SANtricity 《不適用的不適用性要求：
+
+
+
+== 主機硬體需求
+
+您的硬體必須符合下列最低需求：
+
+* 至少5 GB記憶體；4 GB為最大組態堆大小
+* 軟體安裝至少需要5 GB的可用磁碟空間
+
+
+您必須安裝SANtricity 「解決方案代理」才能使用SANtricity 「解決方案代理」。您可以在本機安裝Web服務Proxy、也可以在不同的伺服器上遠端執行應用程式。如需安裝SANtricity 《Web服務Proxy（英文）」的資訊、請參閱 link:../web-services-proxy/index.html["Web服務Proxy主題"]。
+
+
+
+== 支援的瀏覽器
+
+下列瀏覽器可搭配SANtricity 支援下列的《支援使用》（請注意最低版本）：
+
+* Firefox v31
+* Google Chrome V47
+* Microsoft Internet Explorer v11
+* Microsoft Edge、EdgeHTML 12
+* Safari v9.
+
+
+
+NOTE: 使用Microsoft Internet Explorer v11瀏覽器中的「相容性檢視」設定時、不會載入適用於此解決方案SANtricity 的API文件。為了確保API文件正確顯示在Microsoft Internet Explorer v11瀏覽器下、建議停用「相容性檢視」設定。
+
+
+
+== 相容的儲存陣列與控制器韌體
+
+在使用SANtricity NetApp Cloud Connector應用程式之前、您應該先確認儲存陣列和韌體的相容性。
+
+如需SANtricity 完整且最新的完整清單、請參閱《》 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+== 相容的作業系統
+
+下列作業系統可與此應用程式相容、並可支援此應用程式：SANtricity
+
+|===
+| 作業系統 | 版本 | 架構 
+
+
+ a| 
+Red Hat Enterprise Linux（RHEL）
+ a| 
+7.x
+ a| 
+64位元
+
+
+
+ a| 
+SUSE Linux Enterprise Server（SLES）
+ a| 
+12.x
+ a| 
+64位元
+
+|===
+
+
+== 支援的檔案系統
+
+您必須使用支援的檔案系統、才能透過SANtricity 支援的Cloud Connector應用程式執行備份與還原。
+
+下列檔案系統可在SANtricity 支援的情況下、在支援的情況下、於支援的情況下進行還原和備份作業、以利執行。
+
+* ext2
+* ext3
+* ext4
+

@@ -1,0 +1,55 @@
+---
+permalink: config-windows/verify-windows-config-support-task.html 
+sidebar: sidebar 
+keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 驗證是否支援Windows組態。 
+---
+= 驗證是否支援Windows組態
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為了確保可靠的營運、請建立實作計畫、然後使用NetApp互通性對照表工具IMT （簡稱「可靠性」）來驗證是否支援整個組態。
+
+.步驟
+. 前往 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+. 按一下「*儲存解決方案搜尋*」方塊。
+. 在功能表：「傳輸協定[SAN主機]」區域中、按一下「* E系列SAN主機*」旁的「*新增*」按鈕。
+. 按一下「*檢視精簡搜尋條件*」。
++
+「精簡搜尋條件」區段隨即顯示。在本節中、您可以選擇適用的傳輸協定、以及其他組態條件、例如作業系統、NetApp作業系統和主機多重路徑驅動程式。選取您想要的組態條件、然後查看適用的相容組態元素。必要時、請針對工具中規定的作業系統和傳輸協定進行更新。按一下右頁箭頭、即可在「View Supported Configuration（檢視支援的組態）」頁面上存取所選組態的詳細資訊。
+
+. 必要時、請針對下表所列的作業系統和傳輸協定進行更新。
++
+|===
+| 作業系統更新 | 傳輸協定 | 與傳輸協定相關的更新 
+
+
+ a| 
+您可能需要安裝隨裝即用的驅動程式、以確保正常的功能和支援能力。
+
+每家HBA廠商都有更新開機程式碼和韌體的特定方法。請參閱廠商網站的支援區段、以取得更新HBA開機程式碼和韌體所需的指示與軟體。
+ a| 
+FC
+ a| 
+主機匯流排介面卡（HBA）驅動程式、韌體和開機程式碼
+
+
+
+ a| 
+iSCSI
+ a| 
+網路介面卡（NIC）驅動程式、韌體和開機程式碼。
+
+
+
+ a| 
+SAS
+ a| 
+主機匯流排介面卡（HBA）驅動程式、韌體和開機程式碼
+
+|===
+

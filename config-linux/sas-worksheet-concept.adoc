@@ -1,0 +1,89 @@
+---
+permalink: config-linux/sas-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 請使用這份工作表單來記錄SAS儲存組態資訊。 
+---
+= 記錄您的SAS組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄SAS儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+image::../media/sas_topology_diagram_conf-lin.gif[圖：SAS拓撲]
+
+
+
+== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | SAS位址 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+連接至控制器A連接埠1的主機（啟動器）連接埠1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+主機（啟動器）連接埠1連接至控制器B、連接埠1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+連接至控制器A連接埠1的主機（啟動器）連接埠2
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主機（啟動器）連接埠2連接至控制器B、連接埠1
+ a| 
+
+|===
+
+
+== 目標識別碼
+
+建議的組態包含兩個目標連接埠。
+
+
+
+== 對應主機
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

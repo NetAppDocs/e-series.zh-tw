@@ -1,0 +1,24 @@
+---
+permalink: config-linux/iscsi-configure-switches-concept.html 
+sidebar: sidebar 
+keywords: Switches, zoning, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 根據廠商的iSCSI建議來設定交換器。 
+---
+= 設定交換器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據廠商的iSCSI建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
+
+您必須確保：
+
+* 您有兩個獨立的網路來實現高可用度。請確定您將iSCSI流量隔離至不同的網路區段。
+* 您必須啟用流程控制*端點對端點*。
+* 如果適用、您已啟用巨型框架。
+
+
+
+NOTE: 控制器的交換器連接埠不支援連接埠通道/LACP。不建議使用主機端LACP；多重路徑可提供相同的效益、在某些情況下則可獲得更好的效益。

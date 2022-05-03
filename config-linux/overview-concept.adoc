@@ -1,0 +1,147 @@
+---
+permalink: config-linux/overview-concept.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 檢閱使用Express方法來設定E系列陣列和Linux主機的需求。 
+---
+= 假設
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Express方法以下列假設為基礎：
+
+|===
+| 元件 | 假設 
+
+
+ a| 
+硬體
+ a| 
+* 您已使用控制器磁碟櫃隨附的安裝與設定說明來安裝硬體。
+* 您已在選購的磁碟機櫃與控制器之間連接纜線。
+* 您已為儲存系統供電。
+* 您已安裝所有其他硬體（例如管理站、交換器）、並進行必要的連線。
+* 如果您使用的是NVMe over Infiniband、NVMe over RoCE或NVMe over Fibre Channel、則每個EF300、EF600、EF570或E5700控制器至少包含32 GB的RAM。
+
+
+
+
+ a| 
+主機
+ a| 
+* 您已在儲存系統與資料主機之間建立連線。
+* 您已安裝主機作業系統。
+* 您並未使用Linux做為虛擬化的客體作業系統。
+* 您並未將資料（I/O附加）主機設定為從SAN開機。
+* 您已安裝任何作業系統更新、如下列所示 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+儲存管理站
+ a| 
+* 您使用的是1 Gbps或更快的管理網路。
+* 您使用獨立的站台進行管理、而非使用資料（I/O附加）主機。
+* 您使用的是頻外管理、其中儲存管理站會透過以太網路連線、將命令傳送至儲存系統與控制器。
+* 您已將Management Station連接至與儲存管理連接埠相同的子網路。
+
+
+
+
+ a| 
+IP定址
+ a| 
+* 您已安裝並設定DHCP伺服器。
+* 您尚未*在Management Station和儲存系統之間建立乙太網路連線。
+
+
+
+
+ a| 
+儲存資源配置
+ a| 
+* 您將不會使用共享磁碟區。
+* 您將建立集區、而非磁碟區群組。
+
+
+
+
+ a| 
+傳輸協定：FC
+ a| 
+* 您已完成所有主機端FC連線和啟動的交換器分區。
+* 您使用的是NetApp支援的FC HBA和交換器。
+* 您使用的是FC HBA驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：iSCSI
+ a| 
+* 您使用的乙太網路交換器能夠傳輸iSCSI流量。
+* 您已根據廠商的iSCSI建議來設定乙太網路交換器。
+
+
+
+
+ a| 
+傳輸協定：SAS
+ a| 
+* 您使用的是NetApp支援的SAS HBA。
+* 您使用的是SAS HBA驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：透過InfiniBand進行
+ a| 
+* 您使用的是InfiniBand光纖。
+* 您使用的是IB-iSER HBA驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：InfiniBand上的SRP
+ a| 
+* 您使用的是InfiniBand光纖。
+* 您使用的是IB-SRP驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：NVMe over InfiniBand
+ a| 
+* 您已收到以EF300、EF600、EF570或E5700儲存系統預先設定NVMe over InfiniBand傳輸協定的100G或200g主機介面卡、或是以標準IB連接埠訂購控制器、需要轉換成NVMe連接埠。
+* 您使用的是InfiniBand光纖。
+* 您使用的是NVMe / IB驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：NVMe over RoCE
+ a| 
+* 您已收到以EF300、EF600、EF570或E5700儲存系統預先設定NVMe over RoCE傳輸協定的100G或200g主機介面卡、或是以標準IB連接埠訂購控制器、需要轉換成NVMe連接埠。
+* 您使用的是NVMe / roce驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+傳輸協定：NVMe over Fibre Channel
+ a| 
+* 您已收到EF300、EF600、EF570或E5700儲存系統中預先設定NVMe over Fibre Channel傳輸協定的32G主機介面卡、或是訂購標準FC連接埠的控制器、需要轉換成NVMe連接埠。
+* 您使用的是NVMe / FC驅動程式和韌體版本、如所列 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+|===
+
+NOTE: 這些快速方法指示包括SUSE Linux Enterprise Server（SLES）和Red Hat Enterprise Linux（RHEL）的範例。

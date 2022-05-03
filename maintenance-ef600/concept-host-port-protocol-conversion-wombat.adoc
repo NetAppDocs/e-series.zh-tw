@@ -1,0 +1,14 @@
+---
+permalink: maintenance-ef600/concept-host-port-protocol-conversion-wombat.html 
+sidebar: sidebar 
+keywords: convert, protocol, host, compatibility, connection, infrastructure, conversion 
+summary: 您可以將主機的傳輸協定轉換成不同的傳輸協定、以便相容、並將主機連線的傳輸協定轉換成不同的傳輸協定、以符合基礎架構需求。 
+---
+= 主機連接埠傳輸協定轉換
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將主機的傳輸協定轉換成不同的傳輸協定、以便相容、並將主機連線的傳輸協定轉換成不同的傳輸協定、以符合基礎架構需求。

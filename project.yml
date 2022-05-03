@@ -1,0 +1,842 @@
+---
+settings:
+  name: e-series
+  internal:
+    pdf_enabled: false
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: E系列文件
+    url: "/index.html"
+  - title: 版本資訊
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 版本資訊
+      url: "/known-issues.html"
+  - title: 開始使用
+    entries:
+    - title: 本網站內容
+      url: "/getting-started/index.html"
+    - title: 深入瞭解E系列系統
+      entries:
+      - title: E系列術語
+        url: "/getting-started/learn-terms-concept.html"
+      - title: E系列硬體總覽
+        url: "/getting-started/learn-hardware-concept.html"
+      - title: E系列機櫃類型
+        url: "/getting-started/learn-shelf-concept.html"
+      - title: 軟體概述SANtricity
+        url: "/getting-started/learn-software-concept.html"
+      - title: E系列影片
+        url: "/getting-started/learn-video-concept.html"
+    - title: 使用E系列開始運作
+      url: "/getting-started/getup-run-concept.html"
+  - title: 安裝硬體
+    entries:
+    - title: EF300和EF600
+      entries:
+      - title: 總覽
+        url: "/install-hw-ef600/index.html"
+      - title: 安裝程序
+        url: "/install-hw-ef600/overview-concept.html"
+      - title: 準備安裝
+        url: "/install-hw-ef600/prepare-for-install-task.html"
+      - title: 安裝硬體
+        url: "/install-hw-ef600/install-hardware-task.html"
+      - title: 開啟控制器磁碟櫃的電源
+        url: "/install-hw-ef600/power-controller-shelves-task.html"
+      - title: 完整的儲存系統設定
+        url: "/install-hw-ef600/complete-setup-task.html"
+    - title: E2800與E5700
+      entries:
+      - title: 總覽
+        url: "/install-hw-e2800-e5700/index.html"
+      - title: 安裝程序
+        url: "/install-hw-e2800-e5700/install-setup-overview-concept.html"
+      - title: 安裝及設定60個磁碟機
+        entries:
+        - title: 準備安裝
+          url: "/install-hw-e2800-e5700/e2860-e5760-prepare-task.html"
+        - title: 安裝硬體
+          url: "/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html"
+        - title: 纜線架
+          url: "/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html"
+        - title: 完整的儲存系統設定
+          url: "/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html"
+      - title: 安裝並設定12個和24個磁碟機
+        entries:
+        - title: 準備安裝
+          url: "/install-hw-e2800-e5700/e2824-e5724-prepare-task.html"
+        - title: 安裝硬體
+          url: "/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html"
+        - title: 連接纜線
+          url: "/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html"
+        - title: 完整的儲存系統設定
+          url: "/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html"
+    - title: 3040 40U機櫃
+      entries:
+      - title: 總覽
+        url: "/install-hw-cabinet/index.html"
+      - title: 規格
+        url: "/install-hw-cabinet/overview-cabinet-specs-concept.html"
+      - title: 收集所需的工具和設備
+        url: "/install-hw-cabinet/cabinet-gather-tools-equipment-task.html"
+      - title: 準備搬移機櫃
+        url: "/install-hw-cabinet/prepare-move-cabinet-task.html"
+      - title: 將機櫃移至永久位置
+        url: "/install-hw-cabinet/move-cabinet-task.html"
+      - title: 完整的機櫃安裝
+        url: "/install-hw-cabinet/complete-cabinet-install-task.html"
+    - title: 機架安裝硬體
+      url: "/rackmount-hardware.html"
+    - title: 纜線
+      entries:
+      - title: 總覽
+        url: "/install-hw-cabling/index.html"
+      - title: 需求
+        url: "/install-hw-cabling/cable-overview-requirements-concept.html"
+      - title: 主機纜線
+        url: "/install-hw-cabling/host-cable-task.html"
+      - title: 磁碟機櫃纜線
+        url: "/install-hw-cabling/driveshelf-cable-task.html"
+      - title: 電源線
+        url: "/install-hw-cabling/power-cable-task.html"
+      - title: 熱新增磁碟機櫃
+        url: "/install-hw-cabling/hotadd-drive-shelf-task.html"
+      - title: 乙太網路纜線
+        url: "/install-hw-cabling/ethernet-cable-task.html"
+  - title: 部署軟體
+    entries:
+    - title: Linux Express組態
+      entries:
+      - title: 總覽
+        url: "/config-linux/index.html"
+      - title: 假設
+        url: "/config-linux/overview-concept.html"
+      - title: Fibre Channel Express設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/fc-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/fc-configure-ip-address-dhcp-task.html"
+        - title: 安裝及設定主機公用程式
+          url: "/config-linux/fc-install-configure-host-utilities-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/fc-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/fc-access-sam-setup-wizard-task.html"
+        - title: 設定多重路徑軟體
+          url: "/config-linux/fc-configure-multipath-software-task.html"
+        - title: 設定多重路徑.conf檔案
+          url: "/config-linux/fc-setup-multipath-conf-file-concept.html"
+        - title: 設定FC交換器
+          url: "/config-linux/fc-configure-switches-task.html"
+        - title: 判斷主機WWPN
+          url: "/config-linux/fc-determine-host-port-wwpns-task.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/fc-create-partition-file-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/fc-verify-storage-access-host-task.html"
+        - title: Linux的FC工作表
+          url: "/config-linux/fc-worksheet-concept.html"
+      - title: SAS設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/sas-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/sas-configure-ip-address-dhcp-task.html"
+        - title: 安裝及設定主機公用程式
+          url: "/config-linux/sas-install-configure-host-utilities-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/sas-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/sas-access-sam-setup-wizard-task.html"
+        - title: 設定多重路徑軟體
+          url: "/config-linux/sas-configure-multipath-software-task.html"
+        - title: 設定多重路徑.conf檔案
+          url: "/config-linux/sas-setup-multipath-conf-file-concept.html"
+        - title: 判斷SAS主機識別碼
+          url: "/config-linux/sas-determine-sas-host-ids-task.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/sas-create-partitions-filesystems-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/sas-verify-storage-access-host-task.html"
+        - title: 適用於Linux的SAS工作表
+          url: "/config-linux/sas-worksheet-concept.html"
+      - title: iSCSI設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/iscsi-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/iscsi-configure-ip-address-dhcp-task.html"
+        - title: 安裝及設定主機公用程式
+          url: "/config-linux/iscsi-install-configure-host-utilities-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/iscsi-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/iscsi-access-sam-setup-wizard-task.html"
+        - title: 設定多重路徑軟體
+          url: "/config-linux/iscsi-configure-multipath-software-task.html"
+        - title: 設定多重路徑.conf檔案
+          url: "/config-linux/iscsi-setup-multipath-conf-file-concept.html"
+        - title: 設定交換器
+          url: "/config-linux/iscsi-configure-switches-concept.html"
+        - title: 設定網路
+          url: "/config-linux/iscsi-configure-network-concept.html"
+        - title: 設定陣列端的網路
+          url: "/config-linux/iscsi-configure-array-side-network-task.html"
+        - title: 設定主機端網路
+          url: "/config-linux/iscsi-configure-host-side-network-task.html"
+        - title: 驗證IP網路連線
+          url: "/config-linux/iscsi-verify-ip-network-connections-task.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/iscsi-create-partition-file-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/iscsi-verify-storage-access-host-task.html"
+        - title: 適用於Linux的iSCSI工作表
+          url: "/config-linux/iscsi-worksheet-concept.html"
+      - title: 透過InfiniBand設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+        - title: 設定子網路管理程式
+          url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
+        - title: 安裝及設定主機公用程式
+          url: "/config-linux/iser-ib-install-configure-host-utilities-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/iser-ib-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/iser-ib-access-sam-setup-wizard-task.html"
+        - title: 設定多重路徑軟體
+          url: "/config-linux/iser-ib-configure-multipath-software-task.html"
+        - title: 設定多重路徑.conf檔案
+          url: "/config-linux/iser-ib-setup-multipath-conf-file-concept.html"
+        - title: 設定網路連線
+          url: "/config-linux/iser-ib-configure-network-connections-task.html"
+        - title: 設定網路
+          url: "/config-linux/iser-ib-configure-network-attached-hosts-task.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/iser-ib-create-partition-files-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/iser-ib-verify-storage-access-host-task.html"
+        - title: 在InfiniBand工作表上方
+          url: "/config-linux/iser-ib-worksheet-concept.html"
+      - title: SRP over InfiniBand設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+        - title: 設定子網路管理程式
+          url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
+        - title: 安裝及設定主機公用程式
+          url: "/config-linux/srp-ib-install-configure-host-utilities-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/srp-ib-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/srp-ib-access-sam-setup-wizard-task.html"
+        - title: 設定多重路徑軟體
+          url: "/config-linux/srp-ib-configure-multipath-software-task.html"
+        - title: 設定多重路徑.conf檔案
+          url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
+        - title: 確定主機連接埠的GUI
+          url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
+        - title: 設定網路連線—透過Infiniband的SRSRP
+          url: "/config-linux/srp-ib-configure-network-connections-task.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/srp-ib-create-partitions-filesystems-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/srp-ib-verify-storage-access-host-task.html"
+        - title: SRP over Infiniband工作表
+          url: "/config-linux/srp-ib-worksheet-concept.html"
+      - title: NVMe over InfiniBand設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/nvme-ib-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/nvme-ib-configure-ip-address-dhcp-task.html"
+        - title: 安裝SANtricity 適用於SMcli的SynopsStorage Manager
+          url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 「系統管理程式」並使用「設定精靈」
+          url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+        - title: 設定子網路管理程式
+          url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
+        - title: 在主機端設定NVMe over InfiniBand
+          url: "/config-linux/nvme-ib-setup-host-side-task.html"
+        - title: 設定儲存陣列NVMe over InfiniBand連線
+          url: "/config-linux/nvme-ib-configure-storage-connections-task.html"
+        - title: 從主機探索並連線至儲存設備
+          url: "/config-linux/nvme-ib-discover-connect-storage-host-task.html"
+        - title: 定義主機
+          url: "/config-linux/nvme-ib-define-host-task.html"
+        - title: 指派磁碟區
+          url: "/config-linux/ib-assign-volume-nvme-task.html"
+        - title: 顯示主機可見的磁碟區
+          url: "/config-linux/nvme-ib-display-devices-visible-host-task.html"
+        - title: 設定容錯移轉
+          url: "/config-linux/nvme-ib-set-up-failover-task.html"
+        - title: 存取適用於虛擬裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-ib-access-virtual-targets-concept.html"
+        - title: 存取適用於實體裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
+        - title: 建立檔案系統（RHEL 7和SLES 12）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
+        - title: 建立檔案系統（RHEL 8和SLES 15）
+          url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
+        - title: NVMe over InfiniBand工作表
+          url: "/config-linux/nvme-ib-worksheet-concept.html"
+      - title: NVMe over RoCE設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/nvme-roce-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/nvme-roce-configure-ip-address-dhcp-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/nvme-roce-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/nvme-roce-access-sam-setup-wizard-task.html"
+        - title: 設定交換器
+          url: "/config-linux/nvme-roce-configure-switch-task.html"
+        - title: 在主機上設定NVMe over RoCE
+          url: "/config-linux/nvme-roce-setup-host-side-task.html"
+        - title: 設定NVMe連接埠設定
+          url: "/config-linux/nvme-roce-configure-storage-connections-task.html"
+        - title: 從主機連線至儲存設備
+          url: "/config-linux/nvme-roce-discover-connect-storage-host-task.html"
+        - title: 定義主機
+          url: "/config-linux/nvme-roce-define-host-task.html"
+        - title: 指派Volume
+          url: "/config-linux/nvme-roce-assign-volume-task.html"
+        - title: 顯示主機可見的磁碟區
+          url: "/config-linux/nvme-roce-display-volumes-visible-host-task.html"
+        - title: 在主機上設定容錯移轉
+          url: "/config-linux/nvme-roce-setup-failover-host-task.html"
+        - title: 存取適用於虛擬裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-roce-access-virtual-targets-concept.html"
+        - title: 存取適用於實體裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
+        - title: 建立檔案系統（RHEL 7和SLES 12）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
+        - title: 建立檔案系統（RHEL 8和SLES 15）
+          url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
+        - title: 適用於Linux的NVMe over RoCE工作表
+          url: "/config-linux/nvme-roce-worksheet-for-concept.html"
+      - title: NVMe over Fibre Channel設定
+        entries:
+        - title: 驗證Linux組態
+          url: "/config-linux/nvme-fc-verify-linux-config-support-task.html"
+        - title: 使用DHCP設定IP位址
+          url: "/config-linux/nvme-fc-configure-ip-address-dhcp-task.html"
+        - title: 安裝SANtricity NetApp儲存管理程式
+          url: "/config-linux/nvme-fc-install-smcli-11-53-task.html"
+        - title: 存取SANtricity 《系統管理程式》
+          url: "/config-linux/nvme-fc-access-sam-setup-wizard-task.html"
+        - title: 設定FC交換器
+          url: "/config-linux/nvme-fc-configure-fc-switches-task.html"
+        - title: 在主機端設定NVMe over Fibre Channel
+          url: "/config-linux/nvme-fc-setup-host-side-task.html"
+        - title: 定義主機
+          url: "/config-linux/nvme-fc-define-host-task.html"
+        - title: 指派Volume
+          url: "/config-linux/fc-assign-volume-nvme-task.html"
+        - title: 顯示主機可見的磁碟區
+          url: "/config-linux/nvme-fc-display-volumes-visible-host-task.html"
+        - title: 在主機上設定容錯移轉
+          url: "/config-linux/nvme-fc-setup-failover-host-task.html"
+        - title: 存取適用於虛擬裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
+        - title: 存取適用於實體裝置目標的NVMe磁碟區
+          url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
+        - title: 建立分割區和檔案系統
+          url: "/config-linux/nvme-fc-create-partition-files-task.html"
+        - title: 驗證主機上的儲存設備存取
+          url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
+        - title: 適用於Linux的NVMe over Fibre Channel工作表
+          url: "/config-linux/nvme-fc-worksheet-concept.html"
+    - title: VMware Express組態
+      entries:
+      - title: 總覽
+        url: "/config-vmware/index.html"
+      - title: 假設
+        url: "/config-vmware/overview-concept.html"
+      - title: 瞭解工作流程
+        url: "/config-vmware/understand-vmware-workflow-concept.html"
+      - title: 驗證VMware組態
+        url: "/config-vmware/verify-vmware-config-support-task.html"
+      - title: 使用DHCP設定IP位址
+        url: "/config-vmware/configure-ip-address-using-dhcp-task.html"
+      - title: 設定多重路徑軟體
+        url: "/config-vmware/configure-multipath-software-concept.html"
+      - title: 存取SANtricity 《系統管理程式》
+        url: "/config-vmware/access-sam-setup-wizard-task.html"
+      - title: 執行FC特定工作
+        url: "/config-vmware/fc-perform-specific-task.html"
+      - title: 針對FC特定工作執行NMVe
+        url: "/config-vmware/nmve-fc-perform-specific-task.html"
+      - title: 執行iSCSI專屬工作
+        url: "/config-vmware/iscsi-perform-specific-task.html"
+      - title: 執行SAS專屬的工作
+        url: "/config-vmware/sas-perform-specific-task.html"
+      - title: 探索主機上的儲存設備
+        url: "/config-vmware/discover-storage-host-task.html"
+      - title: 設定主機上的儲存設備
+        url: "/config-vmware/configure-storage-host-task.html"
+      - title: 驗證主機上的儲存設備存取
+        url: "/config-vmware/verify-storage-access-host-task.html"
+    - title: Windows Express組態
+      entries:
+      - title: 總覽
+        url: "/config-windows/index.html"
+      - title: 假設
+        url: "/config-windows/overview-concept.html"
+      - title: 瞭解工作流程
+        url: "/config-windows/understand-windows-concept.html"
+      - title: 驗證Windows組態
+        url: "/config-windows/verify-windows-config-support-task.html"
+      - title: 使用DHCP設定IP位址
+        url: "/config-windows/configure-ip-address-dhcp-task.html"
+      - title: 設定多重路徑軟體
+        url: "/config-windows/configure-multipath-software-task.html"
+      - title: 安裝及設定統一化主機公用程式
+        url: "/config-windows/install-configure-host-utilities-task.html"
+      - title: 安裝SANtricity NetApp儲存管理程式
+        url: "/config-windows/install-storage-manager-for-smcli-task.html"
+      - title: 存取SANtricity 《系統管理程式》
+        url: "/config-windows/access-sam-setup-wizard-task.html"
+      - title: 執行FC特定工作
+        url: "/config-windows/fc-perform-specific-task.html"
+      - title: 執行iSCSI專屬工作
+        url: "/config-windows/iscsi-perform-specific-task.html"
+      - title: 執行SAS專屬的工作
+        url: "/config-windows/sas-perform-specific-task.html"
+      - title: 探索主機上的儲存設備
+        url: "/config-windows/discover-storage-host-task.html"
+      - title: 設定主機上的儲存設備
+        url: "/config-windows/configure-storage-host-task.html"
+      - title: 驗證主機上的儲存設備存取
+        url: "/config-windows/verify-storage-access-host-task.html"
+  - title: 升級系統
+    entries:
+    - title: 控制器
+      pdf-filename: 控制器硬體升級
+      entries:
+      - title: 總覽
+        url: "/upgrade-controllers/index.html"
+      - title: 升級考量
+        url: "/upgrade-controllers/overview-requirements-concept.html"
+      - title: 準備升級控制器
+        url: "/upgrade-controllers/prepare-upgrade-controllers-task.html"
+      - title: 移除控制器
+        url: "/upgrade-controllers/remove-controllers-task.html"
+      - title: 安裝新的控制器
+        url: "/upgrade-controllers/install-controllers-task.html"
+      - title: 解除磁碟機鎖定
+        url: "/upgrade-controllers/upgrade-unlock-drives-task.html"
+      - title: 完成控制器升級
+        url: "/upgrade-controllers/complete-upgrade-controllers-task.html"
+      - title: 將廠商從LSI改為NetApp之後、重新掛載磁碟區
+        url: "/upgrade-controllers/remount-volumes-lsi-task.html"
+      - title: 重新設定SAS-2系統
+        url: "/upgrade-controllers/reconfigure-sas-task.html"
+    - title: 作業系統SANtricity
+      pdf-filename: 軟件升級SANtricity
+      entries:
+      - title: 總覽
+        url: "/upgrade-santricity/index.html"
+      - title: 升級考量
+        url: "/upgrade-santricity/overview-upgrade-consider-task.html"
+      - title: 升級單一控制器
+        url: "/upgrade-santricity/upgrade-single-controller-task.html"
+      - title: 升級多個控制器
+        url: "/upgrade-santricity/upgrade-multiple-controller-task.html"
+      - title: 升級磁碟機韌體
+        url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
+  - title: 維護系統
+    entries:
+    - title: EF300和EF600
+      pdf-filename: EF300-EF600維護系統
+      entries:
+      - title: 總覽
+        url: "/maintenance-ef600/index.html"
+      - title: 電池
+        pdf-filename: EF300-EF600維護電池
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/batteries-overview-requirements-concept.html"
+        - title: 更換電池
+          url: "/maintenance-ef600/batteries-replace-supertask-task.html"
+      - title: 控制器
+        pdf-filename: EF300-EF600維護控制器
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/controllers-overview-supertask-concept.html"
+        - title: 更換控制器
+          url: "/maintenance-ef600/controllers-replace-supertask-task.html"
+      - title: DIMM
+        pdf-filename: EF300-EF600可維護DIMM
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/dimms-overview-supertask-concept.html"
+        - title: 更換DIMM
+          url: "/maintenance-ef600/dimms-replace-supertask-task.html"
+      - title: 磁碟機
+        pdf-filename: EF300-EF600維護磁碟機
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/drives-overview-supertask-concept.html"
+        - title: 更換EF300磁碟機
+          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+        - title: 更換EF600磁碟機
+          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+      - title: 風扇
+        pdf-filename: EF300-EF600維持風扇運轉
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/fans-overview-requirements-replacing2-concept.html"
+        - title: 更換風扇
+          url: "/maintenance-ef600/fans-replace-supertask-task.html"
+      - title: 主機介面卡
+        pdf-filename: EF300-EF600維護HIC
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/hics-overview-supertask-concept.html"
+        - title: 新增主機介面卡
+          url: "/maintenance-ef600/hics-add-supertask-task.html"
+        - title: 升級主機介面卡
+          url: "/maintenance-ef600/hics-upgrade-intro.html"
+        - title: 更換故障主機介面卡
+          url: "/maintenance-ef600/hics-replace-supertask-task.html"
+      - title: 主機連接埠傳輸協定轉換
+        pdf-filename: EF300-EF600維護主機連接埠
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/hpp-overview-supertask-concept.html"
+        - title: 變更主機傳輸協定
+          url: "/maintenance-ef600/hpp-change-supertask-task.html"
+        - title: 完整的主機傳輸協定轉換
+          url: "/maintenance-ef600/hpp-complete-protocol-conversion-task.html"
+      - title: 電源供應器
+        pdf-filename: EF300-EF600維護電源供應器
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/power-overview-requirements2-concept.html"
+        - title: 更換電源供應器
+          url: "/maintenance-ef600/power-replace-supertask-task.html"
+      - title: SAS擴充卡
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-ef600/sas-overview-supertask-concept.html"
+        - title: 新增SAS擴充卡
+          url: "/maintenance-ef600/sas-add-supertask-task.html"
+    - title: E2800
+      pdf-filename: E2800維護系統
+      entries:
+      - title: 總覽
+        url: "/maintenance-e2800/index.html"
+      - title: 電池
+        pdf-filename: E2800可維護電池
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/batteries-overview-requirements-concept.html"
+        - title: 準備更換電池
+          url: "/maintenance-e2800/batteries-prepare-replace-task.html"
+        - title: 拆下控制器容器
+          url: "/maintenance-e2800/batteries-remove-controller-canister-task.html"
+        - title: 取出故障電池
+          url: "/maintenance-e2800/batteries-remove-failed-task.html"
+        - title: 安裝新電池
+          url: "/maintenance-e2800/batteries-install-new-task.html"
+        - title: 重新安裝控制器容器
+          url: "/maintenance-e2800/batteries-reinstall-controller-canister-task.html"
+        - title: 完成電池更換
+          url: "/maintenance-e2800/batteries-complete-replacement-task.html"
+      - title: 控制器
+        pdf-filename: E2800維護控制器
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/controllers-overview-supertask-concept.html"
+        - title: 新增第二個控制器容器
+          url: "/maintenance-e2800/controllers-second-add-task.html"
+        - title: 更換雙工組態中的控制器
+          url: "/maintenance-e2800/controllers-duplex-supertask-task.html"
+        - title: 更換單工組態的控制器
+          url: "/maintenance-e2800/controllers-simplex-supertask-task.html"
+      - title: 迴廊
+        pdf-filename: E2800可維護迴廊
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/canisters-overview-supertask-concept.html"
+        - title: 更換電源供應器（12個磁碟機或24個磁碟機）
+          url: "/maintenance-e2800/canisters-supply-supertask-task.html"
+        - title: 更換動力箱（60個磁碟機）
+          url: "/maintenance-e2800/canisters-60-replace-power-task.html"
+        - title: 更換風扇容器（60個磁碟機）
+          url: "/maintenance-e2800/canisters-fan-supertask-task.html"
+      - title: 磁碟機
+        pdf-filename: E2800維護磁碟機
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/drives-overview-supertask-concept.html"
+        - title: 更換磁碟機（12個磁碟機或24個磁碟機）
+          url: "/maintenance-e2800/drives-12-24-supertask-task.html"
+        - title: 更換磁碟機（60個磁碟機）
+          url: "/maintenance-e2800/drives-60-replace-task.html"
+        - title: 更換磁碟機抽屜（60個磁碟機）
+          url: "/maintenance-e2800/drives-60-supertask-task.html"
+      - title: 主機介面卡
+        pdf-filename: E2800維護HIC
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/hics-overview-supertask-concept.html"
+        - title: 新增主機介面卡
+          url: "/maintenance-e2800/hics-add-supertask-task.html"
+        - title: 升級主機介面卡
+          url: "/maintenance-e2800/hics-upgrade-supertask-task.html"
+        - title: 更換主機介面卡
+          url: "/maintenance-e2800/hics-replace-supertask-task.html"
+      - title: 主機連接埠傳輸協定轉換
+        pdf-filename: E2800轉換主機傳輸協定
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e2800/hpp-overview-supertask-concept.html"
+        - title: 變更主機傳輸協定
+          url: "/maintenance-e2800/hpp-change-host-protocol-task.html"
+        - title: 完整的主機傳輸協定轉換
+          url: "/maintenance-e2800/hpp-complete-protocol-conversion-task.html"
+    - title: E5700
+      pdf-filename: E5700維護系統
+      entries:
+      - title: 總覽
+        url: "/maintenance-e5700/index.html"
+      - title: 電池
+        pdf-filename: E5700可維護電池
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/batteries-intro-concept.html"
+        - title: 更換電池
+          url: "/maintenance-e5700/batteries-replace-supertask-task.html"
+      - title: 控制器
+        pdf-filename: E5700維護控制器
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/controllers-overview-concept.html"
+        - title: 更換雙工組態中的控制器
+          url: "/maintenance-e5700/controllers-duplex-supertask-task.html"
+      - title: 迴廊
+        pdf-filename: E5700維護迴廊
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/canisters-overview-supertask-concept.html"
+        - title: 更換電源供應器（24個磁碟機）
+          url: "/maintenance-e5700/canisters-supply-replace-task.html"
+        - title: 更換動力箱（60個磁碟機）
+          url: "/maintenance-e5700/canisters-power-supertask-task.html"
+        - title: 更換風扇容器（60個磁碟機）
+          url: "/maintenance-e5700/canisters-fan-replace-task.html"
+      - title: 磁碟機
+        pdf-filename: E5700維護磁碟機
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/drives-overview-supertask-concept.html"
+        - title: 更換磁碟機（24個磁碟機）
+          url: "/maintenance-e5700/drives-24-supertask-task.html"
+        - title: 更換磁碟機（60個磁碟機）
+          url: "/maintenance-e5700/drives-60-replace-task.html"
+        - title: 更換磁碟機抽屜（60個磁碟機）
+          url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+      - title: 主機介面卡
+        pdf-filename: E5700維護HIC
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/hics-overview-supertask-concept.html"
+        - title: 新增主機介面卡
+          url: "/maintenance-e5700/hics-add-supertask-task.html"
+        - title: 升級主機介面卡
+          url: "/maintenance-e5700/hics-upgrade-supertask-task.html"
+        - title: 更換主機介面卡
+          url: "/maintenance-e5700/hics-replace-supertask-task.html"
+      - title: 主機連接埠傳輸協定
+        pdf-filename: E5700變更主機傳輸協定
+        entries:
+        - title: 總覽與需求
+          url: "/maintenance-e5700/hpp-overview-supertask-concept.html"
+        - title: 變更主機傳輸協定
+          url: "/maintenance-e5700/hpp-change-host-protocol-task.html"
+        - title: 完整的主機傳輸協定轉換
+          url: "/maintenance-e5700/hpp-complete-protocol-conversion-task.html"
+  - title: 管理儲存設備
+    url: "/manage-storage.html"
+  - title: 使用SANtricity 解決方案
+    entries:
+    - title: Web服務Proxy
+      entries:
+      - title: 總覽
+        url: "/web-services-proxy/index.html"
+      - title: 深入瞭解Web服務
+        entries:
+        - title: Web服務API總覽
+          url: "/web-services-proxy/overview-intro-concept.html"
+        - title: 相容性與限制
+          url: "/web-services-proxy/overview-compat-concept.html"
+        - title: API基礎知識
+          url: "/web-services-proxy/overview-api-concept.html"
+        - title: 詞彙與概念
+          url: "/web-services-proxy/overview-terms-concept.html"
+      - title: 安裝與設定
+        entries:
+        - title: 檢閱要求
+          url: "/web-services-proxy/install-reqs-task.html"
+        - title: 安裝Web服務Proxy
+          url: "/web-services-proxy/install-wsp-task.html"
+        - title: 登入API和Unified Manager
+          url: "/web-services-proxy/install-login-task.html"
+        - title: 設定Web服務Proxy
+          url: "/web-services-proxy/install-config-task.html"
+        - title: 解除安裝Web服務Proxy
+          url: "/web-services-proxy/install-uninstall-task.html"
+      - title: 管理使用者存取權
+        url: "/web-services-proxy/access-intro-concept.html"
+      - title: 管理安全性與憑證
+        url: "/web-services-proxy/certificates-intro-concept.html"
+      - title: 管理儲存系統
+        url: "/web-services-proxy/array-intro-concept.html"
+      - title: 管理自動輪詢
+        url: "/web-services-proxy/polling-intro-concept.html"
+      - title: 管理AutoSupport
+        url: "/web-services-proxy/asup-intro-concept.html"
+    - title: 遠端Volume鏡射
+      entries:
+      - title: 總覽
+        url: "/remote-storage-volumes/index.html"
+      - title: 要求與限制
+        url: "/remote-storage-volumes/system-reqs-concept.html"
+      - title: 設定硬體
+        url: "/remote-storage-volumes/setup-remote-volumes-concept.html"
+      - title: 匯入遠端儲存設備
+        url: "/remote-storage-volumes/import-remote-storage-task.html"
+      - title: 管理匯入進度
+        url: "/remote-storage-volumes/view-import-progress-task.html"
+      - title: 修改連線設定
+        url: "/remote-storage-volumes/modify-remote-storage-task.html"
+      - title: 移除遠端儲存物件
+        url: "/remote-storage-volumes/remove-remote-storage-task.html"
+    - title: vCenter的儲存外掛程式
+      entries:
+      - title: 總覽
+        url: "/vcenter-plugin/san-spvc-ic-overview.html"
+      - title: 安裝外掛程式
+        url: "/vcenter-plugin/san-spvc-ic-installation.html"
+      - title: 設定存取權限
+        url: "/vcenter-plugin/san-spvc-ic-user-access.html"
+      - title: 登入並瀏覽
+        url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
+      - title: 探索儲存陣列
+        url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+      - title: 配置儲存設備
+        url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+      - title: 移除外掛程式
+        url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
+    - title: 老舊解決方案
+      entries:
+      - title: 雲端連接器
+        entries:
+        - title: 總覽
+          url: "/cloud-connector/index.html"
+        - title: 需求
+          url: "/cloud-connector/learn-intro-concept.html"
+        - title: 安裝Cloud Connector
+          url: "/cloud-connector/install-intro-concept.html"
+        - title: 首次設定Cloud Connector
+          url: "/cloud-connector/config-intro-concept.html"
+        - title: 登入Cloud Connector
+          url: "/cloud-connector/login-task.html"
+        - title: 備份
+          url: "/cloud-connector/backup-intro-concept.html"
+        - title: 還原
+          url: "/cloud-connector/restore-intro-concept.html"
+        - title: 修改設定
+          url: "/cloud-connector/modify-intro-concept.html"
+        - title: 解除安裝Cloud Connector
+          url: "/cloud-connector/uninstall-intro-concept.html"
+  - title: 舊版
+    url: "/early-versions.html"
+  - title: 技術報告
+    entries:
+    - title: 平台TR
+      url: "/platform-tech-reports.html"
+    - title: 安全TRs
+      url: "/security-tech-reports.html"
+    - title: 特色TRs
+      url: "/feature-tech-reports.html"
+    - title: 解決方案TR
+      url: "/solution-tech-reports.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 快速入門
+      url: "/getting-started/getup-run-concept.html"
+    - title: EF系列總覽
+      url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+    - title: E5700系列總覽
+      url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+    - title: E2800系列總覽
+      url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+    - title: 軟體概述SANtricity
+      url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
+  - title: 線上說明
+    links:
+    - title: 系統管理程式11.7 SANtricity
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+    - title: 統一化管理程式5. SANtricity
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+    - title: 命令列介面（CLI）參考
+      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+  - title: 資訊API SANtricity
+    links:
+    - title: Web服務
+      url: "/web-services-proxy/index.html"
+    - title: vCenter的外掛程式
+      url: "/vcenter-plugin/san-spvc-ic-overview.html"
+    - title: SMI-S供應商
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+  - title: 效能應用程式附加元件
+    links:
+    - title: Splunk Enterprise適用的應用程式SANtricity
+      url: https://splunkbase.splunk.com/app/1932/
+    - title: Splunk技術附加SANtricity 元件、適用於
+      url: https://splunkbase.splunk.com/app/1933/
+    - title: 效能分析器搭配E系列+ Grafana
+      url: https://github.com/NetApp/eseries-perf-analyzer
+    - title: E系列效能分析器的部落格
+      url: https://blog.netapp.com/monitoring-netapp-eseries
+  - title: 適用於SE
+    links:
+    - title: E系列/EF系列技術訓練（需登入）
+      url: https://fieldportal.netapp.com/content/199944
+    - title: EF300總覽與技術詳細資料（需登入）
+      url: https://fieldportal.netapp.com/content/1417672
+    - title: NetApp Fusion 產品（需登入）
+      url: https://fusion.netapp.com/
+  - title: 工具支援
+    links:
+    - title: NetApp 互通性對照表
+      url: http://mysupport.netapp.com/matrix/
+    - title: NetApp知識庫
+      url: https://kb.netapp.com/
+    - title: "（需要登入）Active IQ"
+      url: https://activeiq.netapp.com/?source=aiqnsspage
+    - title: E系列/SANtricity下載（需要登入）
+      url: https://mysupport.netapp.com/site/downloads#E

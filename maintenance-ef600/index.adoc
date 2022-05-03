@@ -1,0 +1,68 @@
+---
+permalink: maintenance-ef600/index.html 
+sidebar: sidebar 
+keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, replace EF300 components, replace EF600 components 
+summary: 維護EF300和EF600硬體 
+---
+= 維護EF300和EF600硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於EF300和EF600儲存系統、您可以對下列元件執行維護程序。
+
+
+
+== 電池
+
+控制器隨附電池、當AC電源故障時、會保留快取的資料。
+
+
+
+== 控制器
+
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行SANtricity 「支援系統管理程式」功能。
+
+
+
+== DIMM
+
+如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
+
+
+
+== 磁碟機
+
+磁碟機是提供資料實體儲存媒體的裝置。
+
+
+
+== 風扇
+
+每個EF300或EF600控制器機櫃或磁碟機櫃均包含五個風扇、可用來冷卻控制器。
+
+
+
+== 主機介面卡（HIC）
+
+主機介面卡（HIC）必須安裝在控制器容器內。EF600控制器包含選用HIC上的主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。
+
+
+
+== 主機連接埠傳輸協定
+
+您可以將主機的傳輸協定轉換成不同的傳輸協定、以便建立相容性與通訊。
+
+
+
+== 電源供應器
+
+電源供應器可在控制器機櫃中提供備援電源。
+
+
+
+== SAS擴充卡
+
+SAS擴充卡可安裝在控制器容器內。EF300控制器支援SAS擴充。

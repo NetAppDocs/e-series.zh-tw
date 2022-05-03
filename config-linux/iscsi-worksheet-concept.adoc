@@ -1,0 +1,60 @@
+---
+permalink: config-linux/iscsi-worksheet-concept.html 
+sidebar: sidebar 
+keywords: iSCSI worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表記錄iSCSI儲存組態資訊。 
+---
+= 記錄iSCSI組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄iSCSI儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+
+
+== 建議的組態
+
+建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
+
+image::../media/50001_01_conf-lin.gif[50001 01會議林]
+
+
+
+== 目標IQN
+
+|===
+| 標註編號 | 目標連接埠連線 | IQN 
+
+
+ a| 
+2.
+ a| 
+目標連接埠
+ a| 
+
+|===
+
+
+== 對應主機名稱
+
+|===
+| 標註編號 | 主機資訊 | 名稱與類型 
+
+
+ a| 
+1.
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+ a| 
+主機作業系統類型
+ a| 
+
+|===

@@ -1,0 +1,31 @@
+---
+permalink: install-hw-cabinet/index.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
+summary: E系列3040 40U機櫃中安裝磁碟機匣的總覽 
+---
+= 將紙匣安裝在3040 40U機櫃中
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在E系列3040 40U機櫃中安裝下列控制器磁碟機支架和擴充磁碟機支架：
+
+* E2612、E2624和E2660控制器磁碟機匣
+* E2712、E2724和E2760控制器磁碟機匣
+* E5412、E5424和E5460控制器磁碟機匣
+* E5512、E5524和E5560控制器磁碟機匣
+* E5612、E5624和E5660控制器磁碟機匣
+* EF540、EF550和EF560 Flash Array
+* DE1600、DE5600及DE6600磁碟機匣
+
+
+您也可以在機櫃中安裝下列SAS-3控制器磁碟櫃和磁碟機磁碟櫃。
+
+* E2812、E2824和E5724控制器機櫃
+* DE212C和DE224C磁碟機櫃
+
+
+不過、這些磁碟櫃的規格並未列於這些程序中。請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^]。

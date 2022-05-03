@@ -1,0 +1,26 @@
+---
+permalink: cloud-connector/login-task.html 
+sidebar: sidebar 
+keywords: Cloud Connector login, log in Cloud Connector 
+summary: 您可以在SANtricity 支援的瀏覽器中、透過已設定的伺服器、存取適用於此應用程式的圖形化使用者介面。請確定您擁有已建立的SANtricity NetApp Cloud Connector帳戶。 
+---
+= 登入SANtricity 《不適用的解決方案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在SANtricity 支援的瀏覽器中、透過已設定的伺服器、存取適用於此應用程式的圖形化使用者介面。請確定您擁有已建立的SANtricity NetApp Cloud Connector帳戶。
+
+.步驟
+. 在支援的瀏覽器中、連線到設定SANtricity 的支援功能不支援的Cloud Connector伺服器（例如：「+http://localhost:8080/+`」）。
++
+畫面上會顯示適用於此應用程式的登入頁面SANtricity 。
+
+. 輸入您設定的管理員密碼。
+. 按一下*登入*。
++
+畫面上會顯示「解決方案」應用程式的登陸頁SANtricity 面。
+
+

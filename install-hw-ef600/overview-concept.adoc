@@ -1,0 +1,16 @@
+---
+permalink: install-hw-ef600/overview-concept.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation process overview 
+summary: 檢閱EF300或EF600的安裝與設定程序。 
+---
+= 安裝程序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝及設定新的儲存系統之前、請先熟悉安裝程序：
+
+image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[ef600 ISI工作流程v 2安裝硬體ef600]

@@ -1,0 +1,126 @@
+---
+permalink: config-linux/fc-worksheet-concept.html 
+sidebar: sidebar 
+keywords: FC worksheet Linux, express linux configuration, software configuration, linux host, 
+summary: 使用這份工作表單記錄FC儲存組態資訊。 
+---
+= 記錄FC組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄FC儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。任何單一連接埠都有兩條通往儲存設備的路徑（每個控制器各一個）。
+
+image::../media/port_identifiers_host_and_target_conf-lin.gif[連接埠識別碼主機和目標設定lin]
+
+
+
+== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+主機連接埠0至FC交換器區域0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主機連接埠1至FC交換器區域1
+ a| 
+
+|===
+
+
+== 目標識別碼
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+6.
+ a| 
+陣列控制器（目標）
+ a| 
+_不適用_
+
+
+
+ a| 
+5.
+ a| 
+控制器A、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器A、連接埠2至FC交換器2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器B、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器B、連接埠2至FC交換器2
+ a| 
+
+|===
+
+
+== 對應主機
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

@@ -1,0 +1,206 @@
+---
+permalink: config-vmware/nmve-fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: Nvme over FC, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。 
+---
+= 針對FC特定工作執行NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。
+
+
+
+== 步驟1：設定NVMe / FC交換器
+
+設定（分區）NVMe over Fibre Channel（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
+
+.您需要的是 #8217 ；需要的是什麼
+* 交換器的系統管理員認證。
+* 每個主機啟動器連接埠的WWPN、以及連接至交換器的每個控制器目標連接埠。（使用HBA公用程式進行探索。）
+
+
+
+NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如需如何取得HBA公用程式的指示、請參閱廠商網站的支援區段。
+
+每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。
+
+.步驟
+. 登入FC交換器管理程式、然後選取分區組態選項。
+. 建立新的區域、其中包含第一個主機啟動器連接埠、也包含所有連接到啟動器所在FC交換器的目標連接埠。
+. 為交換器中的每個FC主機啟動器連接埠建立其他區域。
+. 儲存區域、然後啟動新的分區組態。
+
+
+
+
+== 步驟2：判斷主機連接埠WWPN——VMware的不支援NVMe或FC
+
+若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。
+
+.步驟
+. 使用SSH或ESXi Shell連線至ESXi主機。
+. 執行下列命令：
++
+[listing]
+----
+esxcfg-scsidevs –a
+----
+. 記錄啟動器識別碼。輸出將類似於以下範例：
++
+[listing]
+----
+vmhba3 lpfc link-up  fc.20000090fa05e848:10000090fa05e848 (0000:03:00.0)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+vmhba4 lpfc link-up  fc.20000090fa05e849:10000090fa05e849 (0000:03:00.1)
+Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
+----
+
+
+
+
+== 步驟3：啟用HBA驅動程式
+
+您必須在Broadcom / Emulex和Marvell / QLogic HBA驅動程式中啟用NVMe支援。
+
+.步驟
+. 從ESXi Shell執行下列其中一個命令：
++
+** * Broadcom / Emulex HBA驅動程式*
++
+[listing]
+----
+esxcli system module parameters set -m lpfc -p "lpfc_enable_fc4_type=3"
+----
+** * Marvell /邏輯HBA驅動程式*
++
+[listing]
+----
+esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
+----
+
+
+. 重新啟動主機。
+
+
+
+
+== 步驟4：記錄您的組態
+
+您可以產生並列印本頁的PDF、然後使用下列工作表記錄NVMe over Fibre Channel儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。每個區域都包含一個啟動器連接埠和所有目標連接埠。
+
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[連接埠識別碼主機和目標設定vmw]
+
+
+
+=== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+主機連接埠0至FC交換器區域0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主機連接埠1至FC交換器區域1
+ a| 
+
+|===
+
+
+=== 目標識別碼
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+6.
+ a| 
+陣列控制器（目標）
+ a| 
+_不適用_
+
+
+
+ a| 
+5.
+ a| 
+控制器A、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器A、連接埠2至FC交換器2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器B、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器B、連接埠2至FC交換器2
+ a| 
+
+|===
+
+
+=== 對應主機
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

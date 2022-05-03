@@ -1,0 +1,14 @@
+---
+permalink: maintenance-ef600/concept-controllers-wombat.html 
+sidebar: sidebar 
+keywords: controller, board, firmware, software, control, drive, implement, system, manager, function, ef300, ef600, shelf 
+summary: 控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何更換EF300或EF600控制器櫃中的單一控制器或兩個控制器。 
+---
+= 控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何更換EF300或EF600控制器櫃中的單一控制器或兩個控制器。

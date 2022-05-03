@@ -1,0 +1,65 @@
+---
+permalink: upgrade-controllers/remount-volumes-lsi-task.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remount volume, upgrade LSI, vendor ID 
+summary: 如果您的控制器升級導致廠商ID從LSI變更為NetApp、您就會重新掛載磁碟區。 
+---
+= 將廠商從LSI改為NetApp之後、重新掛載磁碟區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的控制器升級導致廠商ID從LSI變更為NetApp、請依照您主機類型的適當程序進行：
+
+* <<Remount volumes on an AIX host>>
+* <<Remount volumes on a VMware host>>
+* <<Remount volumes on a Windows host>>
+
+
+
+
+== 在AIX主機上重新掛載磁碟區
+
+更換控制器之後、您可能會發現主機在儲存陣列上顯示新的磁碟區、但也會將原始磁碟區顯示為故障。
+
+如果出現故障磁碟區、請執行「cfgmgr'」命令。
+
+
+
+== 在VMware主機上重新掛載磁碟區
+
+更換控制器之後、您可能會看到下列情況：
+
+* VMware會在儲存陣列上顯示磁碟區的新路徑、但也會將原始路徑顯示為死機路徑。
+* 主機仍會將儲存陣列上的磁碟區列為擁有LSI廠商ID。這種情況可能發生在一開始LSI規則宣告磁碟區時、因此當磁碟區重新連線時、請繼續使用相同的LSI規則。
+* 「顯示名稱」並未反映從LSI到NetApp的變更。這可能是因為顯示名稱在初始探索之後變成免費測試。在這種情況下、您可以手動變更顯示名稱。
+
+
+.步驟
+. 在每個主機上執行重新掃描。
+. 停止此子系統的所有主機I/O作業。
+. 根據NetApp規則回收磁碟區。
++
+.. 執行「esxcli儲存核心裝置清單」命令。檢查命令的輸出、找出名稱格式為「aa.xxxx」的磁碟區。
+.. 執行命令「do esxcli storage core cles clore -d naa.xxxxx'」、將LSI廠商ID變更為NetApp。
+
+
+
+
+
+
+== 在Windows主機上重新掛載磁碟區
+
+更換控制器之後、您必須在Windows主機上重新掛載磁碟區、才能讓附加主機使用位於升級儲存陣列上的磁碟區執行I/O作業。
+
+.步驟
+. 在*設備管理器*中，選擇*顯示隱藏設備*。
+. 對於*設備管理器*中列出的每個NetApp SCSI磁碟設備、在項目上按一下滑鼠右鍵、然後選取*解除安裝*。
++
+如果Windows顯示一個對話方塊、並顯示一則訊息、指出您應該重新啟動主機、請在掃描硬體並重新開機之前、先完成所有磁碟區的解除安裝。
+
+. 在*裝置管理員*中按一下滑鼠右鍵、然後選取*掃描硬體變更*。
+. 重新啟動主機。
+

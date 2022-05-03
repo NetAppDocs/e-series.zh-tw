@@ -1,0 +1,237 @@
+---
+permalink: config-linux/iser-ib-worksheet-concept.html 
+sidebar: sidebar 
+keywords: iSER worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用本工作表記錄有關Infiniband儲存組態的iSER資訊。 
+---
+= 記錄您的iSER over IB組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生並列印本頁的PDF、然後使用下列工作表記錄Infiniband儲存組態資訊上的iSER。您需要這些資訊來執行資源配置工作。
+
+
+
+== 主機識別碼
+
+
+NOTE: 軟體啟動器IQN是在工作期間決定的、 xref:iser-ib-configure-network-attached-hosts-task.adoc[設定儲存附加主機的網路]。
+
+找出並記錄每個主機的啟動器IQN。對於軟體啟動器、IQN通常位於/etc/iscsi/initatorname.iscsi檔案中。
+
+|===
+| 標註編號 | 主機連接埠連線 | 軟體啟動器IQN 
+
+
+ a| 
+1.
+ a| 
+主機（啟動器）1.
+ a| 
+
+
+
+ a| 
+不適用
+ a| 
+ a| 
+
+
+
+ a| 
+不適用
+ a| 
+ a| 
+
+
+
+ a| 
+不適用
+ a| 
+ a| 
+
+
+
+ a| 
+不適用
+ a| 
+ a| 
+
+|===
+
+
+== 建議的組態
+
+建議的組態包括兩個主機（啟動器）連接埠和四個目標連接埠。
+
+image::../media/port_identifiers_ib_iser.gif[連接埠識別碼IB控制器]
+
+
+
+== 目標IQN
+
+記錄儲存陣列的目標IQN。您將在中使用此資訊 xref:iser-ib-configure-network-attached-hosts-task.adoc[設定儲存附加主機的網路]。
+
+使用SANtricity 下列功能尋找儲存陣列IQN名稱：*儲存陣列*>* iSER *>*管理設定*。當您從不支援「傳送目標探索」的作業系統建立iSER工作階段時、可能需要這些資訊。
+
+|===
+| 標註編號 | 陣列名稱 | 目標IQN 
+
+
+ a| 
+6.
+ a| 
+陣列控制器（目標）
+ a| 
+
+|===
+
+
+== 網路組態
+
+記錄用於InfiniBand光纖上主機和儲存設備的網路組態。這些指示假設將使用兩個子網路來提供完整備援。
+
+您的網路管理員可以提供下列資訊。您可以在主題中使用此資訊、 xref:iser-ib-configure-network-attached-hosts-task.adoc[設定儲存附加主機的網路]。
+
+
+
+=== 子網路A
+
+定義要使用的子網路。
+
+|===
+| 網路位址 | 網路遮罩 
+
+
+ a| 
+ a| 
+
+|===
+記錄陣列連接埠和每個主機連接埠要使用的IQN。
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | IQN 
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+5.
+ a| 
+控制器A、連接埠1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器B、連接埠1
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+主機1、連接埠1
+ a| 
+
+
+
+ a| 
+ a| 
+（選用）主機2、連接埠1
+ a| 
+
+|===
+
+
+=== 子網路B
+
+定義要使用的子網路。
+
+|===
+| 網路位址 | 網路遮罩 
+
+
+ a| 
+ a| 
+
+|===
+記錄陣列連接埠和每個主機連接埠要使用的IQN。
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | IQN 
+
+
+ a| 
+8.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+10.
+ a| 
+控制器A、連接埠2
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器B、連接埠2
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主機1、連接埠2
+ a| 
+
+
+
+ a| 
+ a| 
+（選用）主機2、連接埠2
+ a| 
+
+|===
+
+
+== 對應主機名稱
+
+
+NOTE: 對應主機名稱會在工作流程期間建立。
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

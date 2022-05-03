@@ -1,0 +1,48 @@
+---
+permalink: config-linux/fc-configure-ip-address-dhcp-task.html 
+sidebar: sidebar 
+keywords: IP address, DHCP, express linux configuration, software configuration, linux host, 
+summary: 使用動態主機組態傳輸協定（DHCP）來提供IP位址。 
+---
+= 使用DHCP設定IP位址
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定Management Station與儲存陣列之間的通訊、請使用動態主機組態傳輸協定（DHCP）來提供IP位址。
+
+DHCP伺服器安裝並設定在與儲存管理連接埠相同的子網路上。
+
+每個儲存陣列都有一個控制器（單工）或兩個控制器（雙工）、每個控制器都有兩個儲存管理連接埠。每個管理連接埠都會指派一個IP位址。
+
+以下說明是指具有兩個控制器（雙工組態）的儲存陣列。
+
+.步驟
+. 如果您尚未連接、請將乙太網路纜線連接至管理站、並連接至每個控制器（A和B）上的管理連接埠1。
++
+DHCP伺服器會將IP位址指派給每個控制器的連接埠1。
+
++
+
+NOTE: 請勿在任一控制器上使用管理連接埠2。連接埠2保留供NetApp技術人員使用。
+
++
+
+NOTE: 如果您拔下並重新連接乙太網路纜線、或儲存陣列重新啟動、DHCP會再次指派IP位址。在設定靜態IP位址之前、會執行此程序。建議您避免拔下纜線或重新啟動陣列。
+
++
+如果儲存陣列在30秒內無法取得DHCP指派的IP位址、則會設定下列預設IP位址：
+
++
+** 控制器A、連接埠1：169.254.128.101
+** 控制器B、連接埠1：169.254.128.102
+** 子網路遮罩：255．255．0．0
+
+
+. 找到每個控制器背面的MAC位址標籤、然後為網路管理員提供每個控制器連接埠1的MAC位址。
++
+您的網路管理員需要MAC位址來判斷每個控制器的IP位址。您將需要IP位址、才能透過瀏覽器連線至儲存系統。
+
+

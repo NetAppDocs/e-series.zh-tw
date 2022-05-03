@@ -1,0 +1,273 @@
+---
+permalink: getting-started/learn-hardware-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
+summary: E系列儲存陣列有多種組態和機型可供選擇。 
+---
+= E系列硬體總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E系列儲存陣列有多種組態和機型可供選擇。
+
+儲存陣列包括磁碟櫃、控制器、磁碟機、軟體和韌體。陣列可安裝在機架或機櫃中、並可在12、24或60個磁碟機的機櫃中、針對一或兩個控制器提供可自訂的硬體。您可以將儲存陣列從多種介面類型連接至SAN、並連接至各種主機作業系統。
+
+E系列陣列提供下列機型：
+
+* E2800系列-入門級混合式
+* EF280系列-入門級All Flash
+* EF300系列：入門級All Flash、All NVMe
+* E5700系列-中階混合式
+* EF570系列-中階All Flash
+* EF600系列-中階All Flash、All NVMe
+
+
+
+
+== E2800機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+* 2U12（2個機架單元；12個磁碟機）
+* 2U24（2個機架單元；24個磁碟機）
++
+image::../media/e2800_2u_front.gif[e2800 2U正面]
+
+* 4U60（4個機架單元；60個磁碟機）
++
+image::../media/e2860_front.gif[正面e2860]
+
+
+
+
+
+ a| 
+磁碟機：
+ a| 
+支援下列磁碟機類型：
+
+* 3.5吋NL-SAS（最多180個）
+* 2.5吋SAS SSD（最多120個）
+* 2.5吋SAS HDD（最多180個）
+
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 12GB SAS
+* 10Gb或25GB iSCSI
+* 16GB或32GB光纖通道
+
+
+|===
+
+
+== EF280機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+磁碟機：
+ a| 
+最多支援96個SSD 2.5吋磁碟機
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 12GB SAS
+* 10Gb或25GB iSCSI
+* 16GB或32GB光纖通道
+
+
+|===
+
+
+== EF300機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+磁碟機與HIC：
+ a| 
+每個控制器最多可支援24個NVMe SSD、每個控制器只需一張主機介面卡（HIC）。
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 25GB iSCSI
+* 32GB NVMe /光纖通道
+* 32GB SCSI /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+
+
+|===
+
+
+== E5700機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+* 2U24（2個機架單元；24個磁碟機）
++
+image::../media/e2800_2u_front.gif[e2800 2U正面]
+
+* 4U60（4個機架單元；60個磁碟機）
++
+image::../media/e2860_front.gif[正面e2860]
+
+
+
+
+
+ a| 
+磁碟機：
+ a| 
+最多支援480種下列磁碟機類型：
+
+* 3.5吋NL-SAS磁碟機
+* 2.5吋SAS SSD磁碟機
+* 2.5吋SAS HDD磁碟機
+
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 12GB SAS
+* 10Gb或25GB iSCSI
+* 16GB或32GB光纖通道
+* 32GB NVMe /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+
+
+|===
+
+
+== EF570機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+磁碟機：
+ a| 
+最多支援120個SSD 2.5吋磁碟機
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 12GB SAS
+* 10Gb或25GB iSCSI
+* 16GB或32GB光纖通道
+* 32GB NVMe /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+
+
+|===
+
+
+== EF600機型
+
+|===
+| 元件 | 規格 
+
+
+ a| 
+機架尺寸：
+ a| 
+2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
+
+
+
+ a| 
+磁碟機與HIC：
+ a| 
+最多支援24個NVMe SSD、每個控制器有兩個主機介面卡（HIC）。
+
+
+
+ a| 
+介面：
+ a| 
+可搭配下列介面使用：
+
+* 25GB iSCSI
+* 32GB NVMe /光纖通道
+* 32GB SCSI /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+* 200GB iSER / IB
+* 200GB NVMe / IB
+* 200GB NVMe / RoCE
+
+
+|===

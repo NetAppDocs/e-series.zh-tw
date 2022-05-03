@@ -1,0 +1,78 @@
+---
+permalink: maintenance-e5700/controllers-overview-concept.html 
+sidebar: sidebar 
+keywords: E5700 controller, repair E5700 controller, replace E5700 controller, failed E5700 controller 
+summary: 檢閱E5700控制器類型與需求。 
+---
+= E5700控制器更換要求
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換E5700控制器之前、請先檢閱相關要求與考量事項。
+
+每個控制器機箱都包含控制器卡、電池和選用的主機介面卡（HIC）。
+
+
+
+== 程序總覽
+
+當您更換故障的控制器容器時、您必須從原始控制器容器中取出電池和HIC（如果已安裝）、並將其安裝在更換的控制器容器中。
+
+您可以透過兩種方式判斷控制器容器是否故障：
+
+* 《恢復大師SANtricity 》（Recovery Guru in the SytrSystem Manager）會引導您更換控制器容器。
+* 控制器機箱上的黃色警示LED亮起、表示控制器發生故障。
+
+
+image::../media/e5700_attention_led_callout.png[e5700注意力主導的標註]
+
+*（1）*_注意LED _
+
+
+NOTE: 圖中顯示控制器容器範例、控制器容器上的主機連接埠可能有所不同。
+
+* 此程序適用於IOM12和IOM12B磁碟機櫃。
+
+
+
+NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）
+
+
+
+== 更換故障控制器的需求
+
+更換控制器之前、您必須具備：
+
+* 更換控制器機箱的零件編號與您要更換的控制器機箱相同。
+
+
+
+NOTE: 更換控制器已預先安裝16GB記憶體。如果您的控制器需要64GB組態、請先使用隨附的升級套件、再安裝替換控制器。
+
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+* 1號十字螺絲起子。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。如果您無法存取CLI、可以執行下列其中一項：
+
++
+** * for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統>附加元件>命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+** *《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。
+
+
+
+
+
+
+== 雙工組態需求
+
+對於具有兩個控制器（雙工組態）的控制器機櫃、只要符合下列條件、您就可以在儲存陣列開啟電源並執行主機I/O作業時更換控制器機箱：
+
+* 機櫃中的第二個控制器機箱具有最佳狀態。
+* 「恢復大師」的「詳細資料」區域中的「*確定要移除*」欄SANtricity 位會顯示*「是」*、表示移除此元件是安全的。
+

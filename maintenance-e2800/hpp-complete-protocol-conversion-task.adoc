@@ -1,0 +1,250 @@
+---
+permalink: maintenance-e2800/hpp-complete-protocol-conversion-task.html 
+sidebar: sidebar 
+keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
+summary: 完成E2800陣列的主機連接埠傳輸協定轉換。 
+---
+= E2800的完整主機傳輸協定轉換
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+轉換主機連接埠的傳輸協定之後、您必須先執行其他步驟、才能使用新的傳輸協定。
+
+這些步驟取決於基板主機連接埠和HIC連接埠的啟動和結束傳輸協定。
+
+
+
+== 完成FC到iSCSI的轉換
+
+如果您將所有主機連接埠從FC轉換為iSCSI、則必須設定iSCSI網路。
+
+.步驟
+. 設定交換器。
++
+您應該根據廠商對於iSCSI的建議、設定用於傳輸iSCSI流量的交換器。這些建議可能同時包含組態指令和程式碼更新。
+
+. 從「支援系統管理程式」中選取功能表：硬體[設定iSCSI連接埠] SANtricity 。
+. 選取連接埠設定。
++
+您可以透過多種方式設定iSCSI網路。如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。
+
+. 更新SANtricity 《支援系統管理程式》中的主機定義。
++
+
+NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 《關於支援系統的線上說明》。
+
++
+.. 選取功能表：Storage[hosts]。
+.. 選取連接埠要關聯的主機、然後按一下*「檢視/編輯設定*」。
++
+此時會出現主機設定對話方塊。
+
+.. 單擊*主機端口*選項卡。
++
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam11330 s主機設定對話方塊連接埠索引標籤維護e2800]
+
+.. 按一下「*新增*」、然後使用「*新增主機連接埠*」對話方塊、將新的主機連接埠識別碼與主機建立關聯。
++
+主機連接埠識別碼名稱的長度取決於主機介面技術。FC主機連接埠識別碼名稱必須有16個字元。iSCSI主機連接埠識別碼名稱最多可有223個字元。連接埠必須是唯一的。不允許已設定的連接埠號碼。
+
+.. 按一下*刪除*、然後使用*刪除主機連接埠*對話方塊來移除（取消關聯）主機連接埠識別碼。
++
+*刪除*選項不會實際移除主機連接埠。此選項會移除主機連接埠與主機之間的關聯。除非您移除主機匯流排介面卡或iSCSI啟動器、否則控制器仍會識別主機連接埠。
+
+.. 按一下「*儲存*」、將變更套用至主機連接埠識別碼設定。
+.. 重複這些步驟以新增及移除任何其他主機連接埠識別碼。
+
+
+. 重新啟動主機或執行重新掃描、讓主機正確探索LUN。
+. 重新掛載Volume或開始使用區塊Volume。
+
+
+
+
+== 完成iSCSI到FC的轉換
+
+如果您將所有主機連接埠從iSCSI轉換成FC、則必須設定FC網路。
+
+.步驟
+. 安裝HBA公用程式並判斷啟動器WWPN。
+. 設定交換器分區。
++
+分區交換器可讓主機連線至儲存設備、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
+
+. 更新SANtricity 《支援系統管理程式》中的主機定義。
++
+.. 選取功能表：Storage[hosts]。
+.. 選取連接埠要關聯的主機、然後按一下*「檢視/編輯設定*」。
++
+此時會出現主機設定對話方塊。
+
+.. 單擊*主機端口*選項卡。
++
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam11330 s主機設定對話方塊連接埠索引標籤維護e2800]
+
+.. 按一下「*新增*」、然後使用「*新增主機連接埠*」對話方塊、將新的主機連接埠識別碼與主機建立關聯。
++
+主機連接埠識別碼名稱的長度取決於主機介面技術。FC主機連接埠識別碼名稱必須有16個字元。iSCSI主機連接埠識別碼名稱最多可有223個字元。連接埠必須是唯一的。不允許已設定的連接埠號碼。
+
+.. 按一下*刪除*、然後使用*刪除主機連接埠*對話方塊來移除（取消關聯）主機連接埠識別碼。
++
+*刪除*選項不會實際移除主機連接埠。此選項會移除主機連接埠與主機之間的關聯。除非您移除主機匯流排介面卡或iSCSI啟動器、否則控制器仍會識別主機連接埠。
+
+.. 按一下「*儲存*」、將變更套用至主機連接埠識別碼設定。
+.. 重複這些步驟以新增及移除任何其他主機連接埠識別碼。
+
+
+. 重新啟動主機或執行重新掃描、讓主機正確探索對應的儲存設備。
+. 重新掛載Volume或開始使用區塊Volume。
+
+
+
+
+== 完成FC到FC/iSCSI的轉換
+
+如果您先前擁有所有FC主機連接埠、而將其中一些連接埠轉換成iSCSI、則可能需要修改現有的組態以支援iSCSI。
+
+您可以使用下列任一選項來使用新的iSCSI連接埠。確切步驟取決於您目前和規劃的網路拓撲。選項1假設您要將新的iSCSI主機附加至陣列。選項2假設您要將連接至轉換連接埠的主機從FC轉換為iSCSI。
+
+
+
+=== 選項1：移動FC主機並新增iSCSI主機
+
+. 將任何FC主機從新的iSCSI連接埠移至仍為FC的連接埠。
+. 如果您尚未使用雙協定SFP、請移除任何FC SFP。
+. 直接或使用交換器、將新的iSCSI主機連接到這些連接埠。
+. 設定新主機和連接埠的iSCSI網路。如需相關指示、請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
+
+
+
+
+=== 選項2：將FC主機轉換為iSCSI
+
+. 關閉連接至轉換連接埠的FC主機。
+. 為轉換後的連接埠提供iSCSI拓撲。例如、將任何交換器從FC轉換為iSCSI。
+. 如果您尚未使用雙傳輸協定SFP、請從轉換的連接埠移除FC SFP、然後以iSCSI SFP或雙傳輸協定SFP取代。
+. 將纜線連接至轉換後連接埠中的SFP、並確認已連接至正確的iSCSI交換器或主機。
+. 開啟主機電源。
+. 使用 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 設定iSCSI主機的工具。
+. 編輯主機分割區以新增iSCSI主機連接埠ID、並移除FC主機連接埠ID。
+. iSCSI主機重新開機後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
++
+** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
+
+
+
+
+
+
+== 完成iSCSI到FC/iSCSI的轉換
+
+如果您先前擁有所有iSCSI主機連接埠、並將其中一些連接埠轉換成FC、則可能需要修改現有的組態以支援FC。
+
+您可以使用下列任一選項來使用新的FC連接埠。確切步驟取決於您目前和規劃的網路拓撲。選項1假設您要將新的FC主機附加至陣列。選項2假設您要將連接至轉換連接埠的主機從iSCSI轉換為FC。
+
+
+
+=== 選項1：移動iSCSI主機並新增FC主機
+
+. 將任何iSCSI主機從新的FC連接埠移至仍為iSCSI的連接埠。
+. 如果您尚未使用雙協定SFP、請移除任何FC SFP。
+. 直接或使用交換器、將新的FC主機連接到這些連接埠。
+. 為新的主機和連接埠設定FC網路。如需相關指示、請參閱 link:../config-windows/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
+
+
+
+
+=== 選項2：將iSCSI主機轉換為FC
+
+. 關閉連接至轉換連接埠的iSCSI主機。
+. 為轉換後的連接埠提供FC拓撲。例如、將任何交換器從iSCSI轉換成FC。
+. 如果您尚未使用雙傳輸協定SFP、請從轉換的連接埠移除iSCSI SFP、然後以FC SFP或雙傳輸協定SFP取代。
+. 將纜線連接至轉換後連接埠中的SFP、並確認已連接至正確的FC交換器或主機。
+. 開啟主機電源。
+. 使用 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 設定FC主機的工具。
+. 編輯主機分割區以新增FC主機連接埠ID、並移除iSCSI主機連接埠ID。
+. 在新的FC主機重新開機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
++
+** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
+
+
+
+
+
+
+== 完成FC/iSCSI到FC的轉換
+
+如果您先前有FC主機連接埠和iSCSI主機連接埠的組合、並且將所有連接埠轉換成FC、則可能需要修改現有的組態、才能使用新的FC連接埠。
+
+您可以使用下列任一選項來使用新的FC連接埠。確切步驟取決於您目前和規劃的網路拓撲。選項1假設您要將新的FC主機附加至陣列。選項2假設您要將連接至連接埠1和連接埠2的主機從iSCSI轉換為FC。
+
+
+
+=== 選項1：移除iSCSI主機並新增FC主機
+
+. 如果您尚未使用雙傳輸協定SFP、請移除任何iSCSI SFP、並以FC SFP或雙傳輸協定SFP取代。
+. 如果您尚未使用雙協定SFP、請移除任何FC SFP。
+. 直接或使用交換器、將新的FC主機連接到這些連接埠
+. 為新的主機和連接埠設定FC網路。如需相關指示、請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
+
+
+
+
+=== 選項2：將iSCSI主機轉換為FC
+
+. 關閉連接至轉換連接埠的iSCSI主機。
+. 為這些連接埠提供FC拓撲。例如、將連接到這些主機的任何交換器從iSCSI轉換成FC。
+. 如果您尚未使用雙傳輸協定SFP、請從連接埠移除iSCSI SFP、然後以FC SFP或雙傳輸協定SFP取代。
+. 將纜線連接至SFP、並確認已連接至正確的FC交換器或主機。
+. 開啟主機電源。
+. 使用 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 設定FC主機的工具。
+. 編輯主機分割區以新增FC主機連接埠ID、並移除iSCSI主機連接埠ID。
+. 在新的FC主機重新開機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
++
+** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
+
+
+
+
+
+
+== 完成FC/iSCSI到iSCSI的轉換
+
+如果您先前有FC主機連接埠和iSCSI主機連接埠的組合、並且將所有連接埠轉換成iSCSI、則可能需要修改現有的組態、才能使用新的iSCSI連接埠。
+
+您可以使用下列任一選項來使用新的iSCSI連接埠。確切步驟取決於您目前和規劃的網路拓撲。選項1假設您要將新的iSCSI主機附加至陣列。選項2假設您要將主機從FC轉換為iSCSI。
+
+
+
+=== 選項1：移除FC主機並新增iSCSI主機
+
+. 如果您尚未使用雙傳輸協定SFP、請移除任何FC SFP、並以iSCSI SFP或雙傳輸協定SFP取代。
+. 直接或使用交換器、將新的iSCSI主機連接到這些連接埠。
+. 設定新主機和連接埠的iSCSI網路。如需相關指示、請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
+
+
+
+
+=== 選項2：將FC主機轉換為iSCSI
+
+. 關閉連接至轉換連接埠的FC主機。
+. 為這些連接埠提供iSCSI拓撲。例如、將連接到這些主機的任何交換器從FC轉換成iSCSI。
+. 如果您尚未使用雙傳輸協定SFP、請從連接埠移除FC SFP、然後以iSCSI SFP或雙傳輸協定SFP取代。
+. 將纜線連接至SFP、並確認已連接至正確的iSCSI交換器或主機。
+. 開啟主機電源。
+. 使用 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 設定iSCSI主機的工具。
+. 編輯主機分割區以新增iSCSI主機連接埠ID、並移除FC主機連接埠ID。
+. 重新啟動新的iSCSI主機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
++
+** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
+
+
+

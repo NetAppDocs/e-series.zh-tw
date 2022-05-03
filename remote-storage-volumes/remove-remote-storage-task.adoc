@@ -1,0 +1,27 @@
+---
+permalink: remote-storage-volumes/remove-remote-storage-task.html 
+sidebar: sidebar 
+keywords: remove storage object, disconnect remote storage 
+summary: 您可以透過SANtricity 「更新系統管理程式」移除任何已設定的遠端儲存物件。 
+---
+= 移除遠端儲存物件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+匯入完成後、如果您不想再在本機和遠端裝置之間複製資料、可以移除遠端儲存物件。
+
+.步驟
+. 請確定沒有匯入項目與您打算移除的遠端儲存物件相關聯。
+. 從SANtricity 「物件系統管理程式」的「遠端儲存」畫面中、選取「結果清單」區段下方所需的「遠端儲存」物件。
+. 按一下「*移除*」。
++
+此時會顯示「確認移除遠端儲存連線」對話方塊。
+
+. 輸入「移除」、然後按一下「移除*」來確認作業。
++
+選取的遠端儲存物件即會移除。
+
+

@@ -1,0 +1,26 @@
+---
+permalink: config-linux/iser-ib-configure-network-connections-task.html 
+sidebar: sidebar 
+keywords: configure network connection, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 如果您的組態使用iSER over Infiniband傳輸協定、請執行本節中的步驟。 
+---
+= 設定網路連線
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的組態使用iSER over InfiniBand傳輸協定、請執行本節中的步驟來設定網路連線。
+
+.步驟
+. 從System Manager中、移至功能表：「Settings[系統>設定Infiniband連接埠上的iSER」。請參閱System Manager線上說明以取得進一步指示。
++
+將陣列iSCSI位址放在與用來建立iSCSI工作階段的主機連接埠相同的子網路上。如需地址、請參閱 xref:iser-ib-worksheet-concept.adoc[iser工作表]。
+
+. 記錄IQN。
++
+當您從不支援「傳送目標探索」的作業系統建立iSER工作階段時、可能需要這些資訊。在中輸入此資訊 xref:iser-ib-worksheet-concept.adoc[iser工作表]。
+
+

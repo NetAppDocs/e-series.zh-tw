@@ -1,0 +1,73 @@
+---
+permalink: config-windows/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 設定主機上的儲存設備以使用Windows Express方法。 
+---
+= 設定主機上的儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+由於新LUN離線、而且Windows主機第一次發現時沒有分割區或檔案系統、因此您必須將磁碟區上線、然後在Windows中初始化。您也可以選擇使用檔案系統來格式化LUN。
+
+您可以使用GPT或MBR-分割表將磁碟初始化為基本磁碟。通常、您會使用新技術檔案系統（NTFS）等檔案系統來格式化LUN。
+
+主機探索到的LUN。
+
+.步驟
+. 在Windows命令提示字元中、輸入「diskPart'內容」。
++
+[listing]
+----
+> diskpart
+----
+. 檢視可用磁碟的清單。
++
+[listing]
+----
+> list disk
+----
+. 選取要上線的磁碟。
++
+[listing]
+----
+> select disk 1
+----
+. 使磁碟上線。
++
+[listing]
+----
+> online disk
+----
+. 建立分割區。
++
+[listing]
+----
+> create partition primary
+----
++
+
+NOTE: 在Windows Server 2008及更新版本中、系統會在建立分割區之後立即提示您格式化磁碟並命名。在提示符下選擇*取消*以繼續使用這些說明格式化和命名分區。
+
+. 指派磁碟機代號。
++
+[listing]
+----
+> assign letter=f
+----
+. 格式化磁碟。
++
+[listing]
+----
+> format FS=NTFS LABEL=”New Volume” QUICK
+----
+. 結束磁碟零件內容。
++
+[listing]
+----
+> exit
+----
+

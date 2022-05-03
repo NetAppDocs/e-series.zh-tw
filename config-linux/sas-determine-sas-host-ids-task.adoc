@@ -1,0 +1,29 @@
+---
+permalink: config-linux/sas-determine-sas-host-ids-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 對於SAS傳輸協定、您可以使用HBA公用程式找到SAS位址、然後使用HBA BIOS進行適當的組態設定。 
+---
+= 判斷SAS主機識別碼- Linux
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於SAS傳輸協定、您可以使用HBA公用程式找到SAS位址、然後使用HBA BIOS進行適當的組態設定。
+
+開始執行此程序之前、請先檢閱以下HBA公用程式準則：
+
+* 大多數HBA廠商都提供HBA公用程式。視主機作業系統和CPU而定、請使用lsi-sas2flash（6G）或sas3flash（12G）公用程式。
+* 如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。
+
+
+.步驟
+. 從HBA廠商的網站下載HBA公用程式。
+. 安裝公用程式。
+. 使用HBA BIOS為您的組態選取適當的設定。
++
+請參閱的「附註」欄 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得建議。
+
+

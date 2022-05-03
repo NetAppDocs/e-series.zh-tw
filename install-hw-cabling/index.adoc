@@ -1,0 +1,75 @@
+---
+permalink: install-hw-cabling/index.html 
+sidebar: sidebar 
+keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 將主機直接連接至控制器或使用交換器。 
+---
+= 纜線配置總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將主機直接連接至控制器、或使用交換器將主機連接至控制器。
+
+如果您的儲存系統包含一個或多個磁碟機櫃、則必須將其纜線連接至控制器機櫃。您可以新增磁碟機櫃、同時仍將電力應用至儲存系統的其他元件。此外、您也可以將儲存系統連線至網路、以進行頻外管理。
+
+佈線資訊適用於安裝或擴充儲存系統的硬體安裝人員或系統管理員。假設您已依照硬體的安裝與設定說明_所述安裝儲存系統。
+
+
+
+== 適用的硬體模式
+
+佈線資訊適用於下列硬體機型。
+
+|===
+| *控制器機櫃* | *磁碟機櫃* 
+
+
+ a| 
+EF600
+ a| 
+不適用。
+
+
+
+ a| 
+E5724、EF570、E2812、E2824、EF280
+ a| 
+DE212C、DE224C
+
+
+
+ a| 
+E2860、E5760
+ a| 
+DE460C
+
+|===
+
+
+== 其他纜線資訊
+
+如果您要進行下列組態的佈線、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃。"^]
+
+|===
+| *控制器機櫃* | *磁碟機櫃* 
+
+
+ a| 
+E2712、E2724、E5612、E5624、EF560
+ a| 
+DE212C、DE224C
+
+
+
+ a| 
+E2760、E5660
+ a| 
+DE460C
+
+|===
+如需其他纜線選項的相關資訊、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533["E系列硬體佈線指南"^] 適用於較舊的系統。
+
+如需支援鏡射功能的纜線連接資訊、請參閱 https://www.netapp.com/us/media/tr-4656.pdf["同步與非同步鏡射功能說明與部署指南"^]。

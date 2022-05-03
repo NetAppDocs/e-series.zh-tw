@@ -1,0 +1,186 @@
+---
+permalink: web-services-proxy/install-config-task.html 
+sidebar: sidebar 
+keywords: configure Web Services Proxy, WSP configuration, start stop Webserver, start stop WSP service 
+summary: 您可以修改Web服務Proxy設定、以符合環境的獨特作業和效能需求。 
+---
+= 設定Web服務Proxy
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以修改Web服務Proxy設定、以符合環境的獨特作業和效能需求。
+
+
+
+== 停止或重新啟動Webserver
+
+Webserver服務會在安裝期間啟動、並在背景執行。在某些組態工作期間、您可能需要停止或重新啟動Webserver服務。
+
+.步驟
+. 執行下列其中一項：
++
+** 若為Windows、請前往* Start*功能表、選取功能表：管理工具[服務]、找到* NetApp SANtricity SWeb Services*、然後選取*停止*或*重新啟動*。
+** 對於Linux、請針對您的作業系統版本選擇停止及重新啟動Webserver的方法。安裝期間、會出現快顯對話方塊、指出精靈啟動的項目。例如：
++
+"web_services代理Web伺服器已安裝並啟動。您可以使用systemctl start | stop | esstart| STATUS web_services_proxy.service`與IT互動
+
++
+與服務互動的最常見方法是使用「stystemctl」命令。
+
+
+
+
+
+
+
+== 解決連接埠衝突
+
+如果Web服務Proxy正在執行、而另一個應用程式位於定義的位址或連接埠、您可以解決wsconfig.xml檔案中的連接埠衝突。
+
+.步驟
+. 開啟wsconfig.xml檔案、網址為：
++
+** （Windows）- C：\Program Files\NetApp\SANtricity Web Services Proxy
+** （Linux）-/opt/netapp/SANtricity _web_services代理
+
+
+. 將下列行新增至wsconfig.xml檔案、其中_n_是連接埠編號：
++
+[listing]
+----
+<sslport clientauth=”request”>*n*</sslport>
+<port>n</port>
+----
++
+下表顯示控制HTTP連接埠和HTTPS連接埠的屬性。
+
++
+|===
+| 名稱 | 說明 | 父節點 | 屬性 | 必要 
+
+
+ a| 
+組態
+ a| 
+組態的根節點
+ a| 
+null
+ a| 
+版本-組態架構目前為1.0版。
+ a| 
+是的
+
+
+
+ a| 
+Sslport
+ a| 
+用於偵聽SSL要求的TCP連接埠。預設為8443.
+ a| 
+組態
+ a| 
+Clientauth
+ a| 
+否
+
+
+
+ a| 
+連接埠
+ a| 
+偵聽HTTP要求的TCP連接埠、預設為8080。
+ a| 
+組態
+ a| 
+-
+ a| 
+否
+
+|===
+. 儲存並關閉檔案。
+. 重新啟動Webserver服務、使變更生效。
+
+
+
+
+== 設定負載平衡和/或高可用度
+
+若要在高可用度（HA）組態中使用Web服務Proxy、您可以設定負載平衡。在HA組態中、通常是單一節點接收所有要求、而其他節點則處於待命狀態、或是所有節點之間的要求負載平衡。
+
+Web服務Proxy可存在於高可用度（HA）環境中、無論要求的接收者為何、大多數API都能正常運作。中繼資料標記和資料夾是兩個例外、因為標記和資料夾儲存在本機資料庫中、而且不會在Web服務Proxy執行個體之間共用。
+
+不過、在少數的要求中、會發生一些已知的時間問題。具體而言、一個Proxy執行個體的資料速度比小視窗的第二個執行個體快。Web服務Proxy包含特殊組態、可移除此時間問題。此選項預設不會啟用、因為它會增加服務要求所需的時間（以確保資料一致性）。若要啟用此選項、您必須將內容新增至.ini檔案（適用於Windows）或.SH檔案（適用於Linux）。
+
+.步驟
+. 執行下列其中一項：
++
+** Windows：開啟appserver64.ini檔案、然後新增「dload-Balance.enabled=true」屬性。
++
+例如：「vmarg.7=-dload-Balance.enable=true」
+
+** Linux：開啟webserver.sh檔案、然後新增「dload-Balance.enabled=true」屬性。
++
+例如：「Debug start_options="-Dload-Balance.enable=true」
+
+
+
+. 儲存您的變更。
+. 重新啟動Webserver服務、使變更生效。
+
+
+
+
+== 停用SYMBOL HTTPS
+
+您可以停用符號命令（預設設定）、並透過遠端程序呼叫（RPC）傳送命令。此設定可在wsconfig.xml檔案中變更。
+
+根據預設、Web Services Proxy會透過HTTPS、針對執行SANtricity EOS08.40或更新版本的所有E2800系列和E5700系列儲存系統、傳送符號命令。透過HTTPS傳送的符號命令會驗證到儲存系統。如有需要、您可以停用HTTPS符號支援、並透過RPC傳送命令。每當設定符號over RPC時、所有對儲存系統的被動命令都會啟用而不需驗證。
+
+
+NOTE: 使用RPC上的符號時、Web服務Proxy無法連線至停用符號管理連接埠的系統。
+
+.步驟
+. 開啟wsconfig.xml檔案、網址為：
++
+** （Windows）- C：\Program Files\NetApp\SANtricity Web Services Proxy
+** （Linux）-/opt/netapp/SANtricity _web_services代理
+
+
+. 在"devicemgt.symbolclientstracy"項目中、將"https首選"值改為"rpcOnly"。
++
+例如：
+
++
+「<env key="devicemgt.symbolclientstrysistic"> rpcOnly（/env>`）」
+
+. 儲存檔案。
+
+
+
+
+== 設定跨來源資源共用
+
+您可以設定跨來源資源共用（CORS）、這是一種機制、使用額外的HTTP標頭來提供在一個來源執行的Web應用程式、以便從不同來源的伺服器存取所選資源。
+
+CORS由工作目錄中的cors.cfg檔案處理。CORS組態預設為開啟、因此不限制跨網域存取。
+
+如果沒有組態檔、CORS將會開啟。但如果cors.cfg檔案存在、則會使用該檔案。如果cors.cfg檔案是空的、您就無法提出CORS要求。
+
+.步驟
+. 開啟位於工作目錄中的cors.cfg檔案。
+. 將所需的行新增至檔案。
++
+CORS組態檔中的每一行都是要比對的規則運算式模式。來源標頭必須符合cors.cfg檔案中的一行。如果有任何線路模式符合來源標頭、則允許提出要求。比較完整的來源、而不只是主機元素。
+
+. 儲存檔案。
+
+
+要求會在主機上根據下列通訊協定進行比對：
+
+* 將localhost與任何傳輸協定配對：-`\*localhost*
+* 僅將localhost與HTTPS配對：-`+https://localhost*+`
+

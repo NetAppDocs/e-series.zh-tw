@@ -1,0 +1,25 @@
+---
+permalink: maintenance-ef600/sas-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
+summary: 在更換EF300 SAS擴充卡之前、請先檢閱相關要求和考量事項。 
+---
+= EF300 SAS擴充卡更換需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您打算將SAS擴充卡新增至EF300、請檢閱下列需求。
+
+* 您必須遵循 link:../install-hw-ef600/index.html["安裝並設定EF300和EF600儲存系統"] 以設定控制器。
+* 您必須將韌體更新至最新版本。若要更新韌體、請遵循中的指示 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"]。
+* 您必須為此程序排程停機維護時間。在成功完成此程序之前、您無法存取儲存陣列上的資料。
+* 您有一個ESD腕帶、或是已採取其他防靜電預防措施。
+* 您有1號十字螺絲起子。
+* 您有標籤可識別連接至控制器容器的每條纜線。
+* 您有一個管理站、其中有一個瀏覽器可以存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
+* EF300控制器的連接埠1中可能安裝SAS擴充卡、以便擴充磁碟機匣。
+* 若要纜線連接SAS擴充、請參閱 link:../install-hw-cabling/index.html["E系列硬體佈線"] 以取得相關指示。
+

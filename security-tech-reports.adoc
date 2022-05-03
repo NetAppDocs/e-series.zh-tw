@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: security-tech-reports.html 
+keywords: security technical reports, e-series, hardware, santricity, os 
+summary: E系列技術報告 
+---
+= 瀏覽安全技術報告
+:allow-uri-read: 
+
+
+
+
+== 安全TRs
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474：SANtricity 《S42Drive安全功能指南》*"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712：SANtricity 《The SesfManagement Security Features *》"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813：管理E系列系統的憑證*"] 
+
+
+| 說明E系列系統的完整磁碟加密功能、包括支援FIPS 140-2驗證磁碟機、以及內部和外部金鑰管理支援。 | 說明SANtricity NetApp E系列E2800、E5700、EF280、EF570、EF300、 和EF600儲存系統。 | 說明如何使用最新的E系列控制器和應用程式來管理安全性憑證。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/19422-tr-4855.pdf["*《TR-4855：SANtricity 《加強資訊安全指南》*"] | https://www.netapp.com/media/19404-tr-4853.pdf["* TR-4853：E系列系統的存取管理*"] |  
+
+
+| 說明如何部署SANtricity 功能以符合資訊系統機密性、完整性和可用度的規定安全目標。 | 說明如何設定存取管理、包括角色型存取控制（RBAC）、輕量型目錄存取傳輸協定（LDAP）和安全聲明標記語言（SAML）。 |  
+|===

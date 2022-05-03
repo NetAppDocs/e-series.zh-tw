@@ -1,0 +1,108 @@
+---
+permalink: config-linux/nvme-ib-set-up-failover-task.html 
+sidebar: sidebar 
+keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 設定主機執行容錯移轉。 
+---
+= 設定容錯移轉
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要提供儲存陣列的備援路徑、您可以設定主機執行容錯移轉。
+
+您必須在系統上安裝所需的套件。
+
+* 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝
+* 對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝
++
+
+NOTE: 請參閱  https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 為了確保安裝任何必要的更新、因為多重路徑可能無法與GA版本的SLES或RHEL正常運作。
+
+
+
+RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。
+
+
+
+== 啟用適用於RHEL 7或SLES 12的Device Mapper多重路徑（DMP）
+
+根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。
+
+.步驟
+. 將NVMe E系列裝置項目新增至/etc/multipath.conf檔案的「裝置」區段、如下列範例所示：
++
+[listing]
+----
+
+devices {
+        device {
+                vendor "NVME"
+                product "NetApp E-Series*"
+                path_grouping_policy group_by_prio
+                failback immediate
+                no_path_retry 30
+        }
+}
+----
+. 將「multiPathd」設定為在系統開機時啟動。
++
+[listing]
+----
+# systemctl enable multipathd
+----
+. 如果當前未運行"multiPathd"，請將其啓動。
++
+[listing]
+----
+# systemctl start multipathd
+----
+. 驗證「multiPathd」的狀態、以確保它處於作用中狀態且正在執行：
++
+[listing]
+----
+# systemctl status multipathd
+----
+
+
+
+
+== 使用原生NVMe多路徑設定RHEL 8
+
+原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列步驟啟用。
+
+. 設定「modProbe」規則以開啟原生NVMe多路徑。
++
+[listing]
+----
+# echo "options nvme_core multipath=y" >> /etc/modprobe.d/50-nvme_core.conf
+----
+. 使用新的"modProp"參數重新建立"initramfs"。
++
+[listing]
+----
+# dracut -f
+----
+. 重新開機伺服器以啟用原生NVMe多路徑來啟動伺服器。
++
+[listing]
+----
+# reboot
+----
+. 驗證在主機開機備份後、原生NVMe多路徑功能已啟用。
++
+[listing]
+----
+# cat /sys/module/nvme_core/parameters/multipath
+----
++
+.. 如果命令輸出為「N」、則原生NVMe多路徑仍會停用。
+.. 如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。
+
+
+
+
+
+NOTE: 對於SLES 15、原生NVMe多路徑預設為啟用、不需要額外的組態。

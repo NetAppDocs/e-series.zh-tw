@@ -1,0 +1,36 @@
+---
+permalink: install-hw-cabling/ethernet-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 將儲存系統連接至乙太網路、以進行頻外管理。 
+---
+= 管理站的乙太網路纜線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將儲存系統連接至乙太網路、以進行頻外儲存陣列管理。您必須使用乙太網路纜線進行所有儲存陣列管理連線。
+
+
+
+== 直接拓撲
+
+直接拓撲可將控制器直接連接至乙太網路。
+
+您必須連接每個控制器上的管理連接埠1以進行頻外管理、並讓連接埠2可供技術支援人員存取儲存陣列。
+
+.直接儲存管理連線
+image::../media/74167.gif[7467.]
+
+
+
+== 網路拓撲
+
+網路拓撲使用交換器將控制器連接至乙太網路。
+
+您必須連接每個控制器上的管理連接埠1以進行頻外管理、並讓連接埠2可供技術支援人員存取儲存陣列。
+
+.網路儲存管理連線
+image::../media/74110.gif[74210]

@@ -1,0 +1,695 @@
+---
+permalink: maintenance-ef600/hpp-change-supertask-task.html 
+sidebar: sidebar 
+keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+summary: 變更EF300或EF600陣列的主機連接埠傳輸協定。 
+---
+= 變更EF300或EF600的主機傳輸協定
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請遵循此程序、變更EF300或EF600陣列中的主機連接埠傳輸協定。此程序僅適用於使用Infiniband（IB）或Fibre Channel（FC）的主機介面卡（HIC）。
+
+
+
+== 步驟1：取得功能套件金鑰
+
+若要取得功能套件金鑰、您需要控制器機櫃的序號、功能啟動代碼、以及儲存陣列的功能啟用識別碼。
+
+.步驟
+. 找出序號。
++
+.. 從「支援系統管理程式」中選取功能表：「Support（支援中心）」SANtricity 。
+.. 選取*支援資源*索引標籤後、捲動至*檢視頂端儲存陣列內容*區段。
+.. 找到*機箱序號*、然後將此值複製到文字檔。
++
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130s e2800儲存陣列設定檔sn SMID複本mainstt ef600]
+
+
+
+. 找到*功能套件子模型ID*。
++
+.. 從「支援系統管理員」SANtricity 中選取*「支援」*。
+.. 選取*支援中心*方塊。
+.. 在Support Resources（支持資源）選項卡上，找到並選擇* Storage Array Profile*（*儲存陣列配置文件*）鏈接。
+.. 在文字方塊中輸入*功能套件子模型ID*、然後按一下*尋找*。
+.. 找出用於初始組態的功能套件子模型ID。
++
+image::../media/storage_array_profile2_maint-ef600.gif[儲存陣列設定檔2維護ef600]
+
+
+
+. 使用功能套件子模型ID、找出開始組態的對應控制器子模型ID、並在下表中找到所需結束組態的功能啟動代碼。然後、將該功能啟動代碼複製到文字檔。
++
+|===
+2+| 正在啟動組態 2+| 結束組態 .2+| 功能啟動代碼 
+
+
+| 控制器子機型ID | HIC連接埠 | 控制器子機型ID | HIC連接埠 
+
+
+ a| 
+443..
+ a| 
+NVMe / FC
+
+或
+
+NVMe / RoCE
+ a| 
+444..
+ a| 
+NVMe / IB
+ a| 
+DH5-HB4-ZK9QH
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+7Z-HB4-ZHAYW
+
+
+
+ a| 
+491
+ a| 
+ISER / IB
+ a| 
+0H1-675-Z5SII
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+NHD-V75-ZB6ZX
+
+
+
+ a| 
+444..
+ a| 
+NVMe / FC
+
+或
+
+NVMe / IB
+ a| 
+443..
+ a| 
+NVMe / RoCE
+ a| 
+YH3-XB4-ZJRIZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+2HU-BB4-ZFCG5
+
+
+
+ a| 
+491
+ a| 
+ISER / IB
+ a| 
+2H3-P75-Z6AQG
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+5HG-G75-ZDNEZ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+443..
+ a| 
+NVMe / FC
+
+或
+
+NVMe / RoCE
+ a| 
+JHX-UB4-ZGTP1
+
+
+
+ a| 
+444..
+ a| 
+NVMe / FC
+
+或
+
+NVMe / IB
+ a| 
+LHS-RB4-ZDV29
+
+
+
+ a| 
+491
+ a| 
+ISER / IB
+ a| 
+胎心音6-977-Z7Q7H
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+0HI-Z75-ZE4L5
+
+
+
+ a| 
+491
+ a| 
+ISER / IB
+ a| 
+443..
+ a| 
+NVMe / FC或NVMe / RoCE
+ a| 
+MHQ - M85 - ZIJNT
+
+
+
+ a| 
+444..
+ a| 
+NVMe / FC或NVMe / IB
+ a| 
+4HS-685-ZJZ1U
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+YHU-P85-ZLHCX
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+AHX-985-ZMXMI
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+ZZ-S85-ZNF4J
+
+
+
+ a| 
+492.
+ a| 
+SRP/IB
+ a| 
+443..
+ a| 
+NVMe / FC或NVMe / RoCE
+ a| 
+EH3-C85-Z0V93
+
+
+
+ a| 
+444..
+ a| 
+NVMe / FC或NVMe / IB
+ a| 
+BH5-V85-ZQDQJ
+
+
+
+ a| 
+448
+ a| 
+FC
+ a| 
+1H8-F85-ZRT1V
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+1HA-Y85-ZSB7S
+
+
+
+ a| 
+491
+ a| 
+ISER / IB
+ a| 
+KHD-I85-ZUSMI
+
+
+
+ a| 
+465
+ a| 
+FC/PTL
+ a| 
+491
+ a| 
+商用
+ a| 
+6H8-S75-Z98fh
+
+
+
+ a| 
+492.
+ a| 
+SRP
+ a| 
+NHL-J75-ZFL3W
+
+
+
+ a| 
+516
+ a| 
+NVMe / RoCE
+ a| 
+517
+ a| 
+NVMe / IB
+ a| 
+LHF-285-ZV9YZ
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+IHI-L85- ZXQEP
+
+
+
+ a| 
+519
+ a| 
+ISER / IB
+ a| 
+RHK-585-ZY7P5
+
+
+
+ a| 
+520
+ a| 
+FC-PTL
+ a| 
+NHN-0955-ZZ0XF
+
+
+
+ a| 
+5221
+ a| 
+SRP/IB
+ a| 
+GHP/895-Z25BD
+
+
+
+ a| 
+517
+ a| 
+NVMe / IB
+ a| 
+516
+ a| 
+NVMe / RoCE
+ a| 
+7HS-R95-Z3M06.
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+Uhu-B95-Z43X2
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+8HX-U95-Z5K6F
+
+
+
+ a| 
+520
+ a| 
+ISER / IB
+ a| 
+UHZ-E95-Z71LH
+
+
+
+ a| 
+5221
+ a| 
+SRP/IB
+ a| 
+SH2-X95-Z8IVS
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+516
+ a| 
+NVMe / FC或
+
+NVMe / RoCE
+ a| 
+UH5-H95-Z9Z58
+
+
+
+ a| 
+517
+ a| 
+NVMe / FC或
+
+NVMe / IB
+ a| 
+XH7-195-ZBGJC
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+FHA-K95-ZCXX0
+
+
+
+ a| 
+520
+ a| 
+ISER / IB
+ a| 
+JHC-595-ZDE3X
+
+
+
+ a| 
+5221
+ a| 
+SRP/IB
+ a| 
+0HF-095- ZFVFN
+
+
+
+ a| 
+519
+ a| 
+FC-PTL
+ a| 
+516
+ a| 
+NVMe / FC或NVMe / RoCE
+ a| 
+YHE-895-ZGCXS
+
+
+
+ a| 
+517
+ a| 
+NVMe / FC或NVMe / IB
+ a| 
+2HA-R95- ZHT83
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+1HM-BA5-ZJALA
+
+
+
+ a| 
+520
+ a| 
+ISER / IB
+ a| 
+YHA-UA5-ZKRXA
+
+
+
+ a| 
+5221
+ a| 
+SRP/IB
+ a| 
+MHR-EA5-ZL83V
+
+
+
+ a| 
+520
+ a| 
+ISER / IB
+ a| 
+516
+ a| 
+NVMe / FC或NVMe / RoCE
+ a| 
+HU-XA5-ZNPLT
+
+
+
+ a| 
+517
+ a| 
+NVMe / FC或NVMe / IB
+ a| 
+YHW-HA5-Z07QK
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+WZ-1A5-ZPN4U
+
+
+
+ a| 
+519
+ a| 
+FC/PTL
+ a| 
+7H2-KA5-ZR5C3.
+
+
+
+ a| 
+5221
+ a| 
+SRP
+ a| 
+3H5-4A5-ZSLVX
+
+
+
+ a| 
+5221
+ a| 
+SRP/IB
+ a| 
+516
+ a| 
+NVMe / FC或NVMe / RoCE
+ a| 
+1H7-NA5-ZT31W
+
+
+
+ a| 
+517
+ a| 
+NVMe / FC或NVMe / IB
+ a| 
+XHA-7A5-ZVJGC
+
+
+
+ a| 
+518
+ a| 
+FC
+ a| 
+KHC-QA5-ZW1P3
+
+
+
+ a| 
+519
+ a| 
+FC/PTL
+ a| 
+Che-AA5-ZXH2F
+
+
+
+ a| 
+520
+ a| 
+ISER / IB
+ a| 
+SHH-TA5-ZYHS
+
+|===
++
+
+NOTE: 如果未列出您的控制器子機型ID、請聯絡 https://mysupport.netapp.com/site/["NetApp支援"^]。
+
+. 在System Manager中、找到「啟用功能識別碼」。
++
+.. 前往功能表：設定[系統]。
+.. 向下捲動至*附加元件*。
+.. 在「*變更功能套件*」下、找到「*功能啟用識別碼*」。
+.. 複製此32位數號碼並貼到文字檔。
++
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[Sam11330 s e2800變更功能套件功能可啟用識別碼複製維護ef600]
+
+
+
+. 前往 http://partnerspfk.netapp.com["NetApp授權啟動：儲存陣列優質功能啟動"^]，然後輸入取得功能套件所需的資訊。
++
+** 機箱序號
+** 功能啟動代碼
+** 功能啟用識別碼附註：Premium功能啟動網站包含「Premium功能啟動說明」的連結。 請勿嘗試將這些指示用於此程序。
+
+
+. 選擇是在電子郵件中接收功能套件的金鑰檔、還是直接從網站下載。
+
+
+
+
+== 步驟2：停止主機I/O
+
+在轉換主機連接埠的傳輸協定之前、請先停止主機的所有I/O作業。
+
+在成功完成轉換之前、您無法存取儲存陣列上的資料。
+
+.步驟
+. 確保儲存陣列與所有連線的主機之間不會發生I/O作業。例如、您可以執行下列步驟：
++
+** 停止所有涉及從儲存設備對應至主機之LUN的程序。
+** 確保沒有任何應用程式將資料寫入從儲存設備對應至主機的任何LUN。
+** 卸載陣列上與磁碟區相關的所有檔案系統。
++
+
+NOTE: 停止主機I/O作業的確切步驟取決於主機作業系統和組態、而這些步驟超出這些指示的範圍。如果您不確定如何停止環境中的主機I/O作業、請考慮關閉主機。
+
++
+
+CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此程序、您可能會遺失資料。
+
+
+
+. 等待快取記憶體中的任何資料寫入磁碟機。
++
+當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
+
+. 從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。
+. 請等待所有作業完成、然後再繼續下一步。
+
+
+
+
+== 步驟3：變更功能套件
+
+變更功能套件以轉換主機連接埠的主機傳輸協定。
+
+.步驟
+. 從「系統管理程式」中選取功能表：「設定」[System]。SANtricity
+. 在*附加元件*下、選取*變更功能套件*。
++
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[Sam11330 sss系統變更功能套件維護ef600]
+
+. 按一下*瀏覽*、然後選取您要套用的功能套件。
+. 在欄位中輸入*變更*。
+. 按一下 * 變更 * 。
++
+功能套件移轉開始。兩個控制器會自動重新開機兩次、讓新功能套件生效。重新開機完成後、儲存陣列會返回回應狀態。
+
+. 確認主機連接埠具有您所期望的傳輸協定。
++
+.. 從「系統管理程式」中選取「*硬體*」SANtricity 。
+.. 按一下*顯示機櫃背面*。
+.. 選取控制器A或控制器B的圖形
+.. 從內容功能表中選取*檢視設定*。
+.. 選取*主機介面*索引標籤。
+.. 按一下*顯示更多設定*。
+
+
+
+
+前往 link:hpp-complete-protocol-conversion-task.html["完整的主機傳輸協定轉換"]。

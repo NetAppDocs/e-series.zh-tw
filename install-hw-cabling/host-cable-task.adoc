@@ -1,0 +1,42 @@
+---
+permalink: install-hw-cabling/host-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C, 
+summary: 您可以將主機直接連接至控制器或使用交換器。 
+---
+= 主機纜線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將主機直接連接至控制器（直接附加拓撲）、或使用交換器（交換器拓撲）將主機連接至控制器。
+
+
+
+== 直接附加拓撲的佈線
+
+直接附加的拓撲會將主機介面卡直接連接至儲存系統中的控制器。
+
+下圖顯示連線範例。若要確保最高效能、請使用所有可用的主機介面卡連接埠。
+
+.兩個主機和兩個控制器
+image::../media/topology_host_direct_generic_web_low.png[拓撲主機直接通用網路不足]
+
+*（1）*_將每個主機介面卡連接埠直接連接至控制器上的主機連接埠。_
+
+
+
+== 交換器拓撲的佈線
+
+交換器拓撲使用交換器將主機連接至儲存系統中的控制器。交換器必須支援主機與控制器之間使用的連線類型。
+
+下圖顯示連線範例。對於提供資源配置功能的交換器、您應該隔離每個啟動器和目標配對。
+
+.兩台主機和兩台交換器
+image::../media/topology_host_fabric_generic.png[一般拓撲主機架構]
+
+*（1）*_將每個主機介面卡直接連接到交換器。_
+
+*（2）*_將每個交換器直接連接至控制器上的主機連接埠。若要確保最高效能、請使用所有可用的主機介面卡連接埠。_

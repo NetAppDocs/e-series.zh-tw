@@ -1,0 +1,16 @@
+---
+permalink: config-vmware/verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: verify storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用Volume之前、請先確認主機可以將資料寫入磁碟區並讀取回磁碟區。 
+---
+= 驗證主機上的儲存設備存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用Volume之前、請先確認主機可以將資料寫入磁碟區並將其讀取回。
+
+若要這麼做、請確認磁碟區已用作虛擬機器檔案系統（VMFS）資料存放區、或已直接對應至VM、以做為原始裝置對應（RDM）。

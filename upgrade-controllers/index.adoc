@@ -1,0 +1,35 @@
+---
+permalink: upgrade-controllers/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller, upgrade DIMMs 
+summary: 透過更換控制器來升級E系列陣列的總覽。 
+---
+= 升級控制器總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過更換現有控制器來升級儲存陣列。
+
+
+
+== 控制器元件
+
+控制器由主機板、韌體和軟體組成。它可控制磁碟機、也可實作管理軟體功能。
+
+
+
+== 使用此程序的時機
+
+當您想要將所有控制器升級至不同的機型或平台時、通常會使用此程序。此程序涉及更換控制器磁碟機匣中的所有控制器
+
+您也可以在下列情況下使用此程序：
+
+* 當控制器磁碟機匣中的所有控制器發生硬體故障且無法正常運作時。
+* 若要升級控制器磁碟機匣中的雙列直插式記憶體模組（DIMM）、請將兩個控制器更換為相同型號的控制器、但以不同的DIMM取代。
+
+
+
+NOTE: 本程序不涵蓋HIC升級案例。請參閱E系列系統的HIC新增、升級及更換程序。

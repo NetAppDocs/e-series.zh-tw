@@ -1,0 +1,22 @@
+---
+permalink: install-hw-cabling/cable-overview-requirements-concept.html 
+sidebar: sidebar 
+keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: E系列磁碟櫃佈線需要多個元件。 
+---
+= 需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+除了控制器磁碟櫃和磁碟機磁碟櫃之外、您可能還需要下列部分或全部元件才能連接儲存系統：
+
+* 纜線：SAS、Fibre Channel（FC）、Ethernet、InfiniBand
+* 小型可插拔（SFP）或四埠SFP（QSFP）收發器
+* 交換器
+* 主機匯流排介面卡（HBA）
+* 主機通道介面卡（HCA）
+* 網路介面卡（NIC）
+

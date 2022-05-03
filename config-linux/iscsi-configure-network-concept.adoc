@@ -1,0 +1,25 @@
+---
+permalink: config-linux/iscsi-configure-network-concept.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 設定iSCSI網路。 
+---
+= 設定網路
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以根據資料儲存需求、以多種方式設定iSCSI網路。
+
+如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。
+
+若要設定具有基本備援功能的iSCSI網路、請將每個主機連接埠和每個控制器的一個連接埠連接至不同的交換器、並將每組主機連接埠和控制器連接埠分割至不同的網路區段或VLAN。
+
+您必須啟用「傳送及接收硬體流程控制*端點對端點*」。您必須停用優先順序流程控制。
+
+如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成中的步驟 link:../iscsi-configure-array-side-network-task.html["設定陣列端的網路"]。
+
+
+NOTE: 許多網路交換器的IP負荷必須設定在9、000位元組以上。如需詳細資訊、請參閱交換器文件。

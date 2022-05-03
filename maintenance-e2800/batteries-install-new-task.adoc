@@ -1,0 +1,62 @@
+---
+permalink: maintenance-e2800/batteries-install-new-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 安裝新電池。 
+---
+= 安裝新的E2800電池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+取出故障電池之後、您可以安裝新的電池。
+
+.您需要的是 #8217 ；需要的是什麼
+* 替換電池。
+* 無靜態的平面。
+
+
+.步驟
+. 打開新電池的包裝、將其放在無靜電的平面上。
++
+
+NOTE: 為符合IATA安全法規、更換電池的充電狀態（SoC）為30%以下。當您重新接上電源時、請記住、在更換電池充滿電且已完成初始記憶週期之前、寫入快取不會恢復。
+
+. 調整控制器機箱的方向、使電池插槽朝向您。
+. 以稍微向下的角度將電池插入控制器容器。
++
+您必須將電池正面的金屬法蘭插入控制器外殼底部的插槽、然後將電池頂端滑入電池箱左側的小定位插銷下方。
+
+. 向上移動電池栓鎖以固定電池。
++
+當栓鎖卡入定位時、栓鎖底部會掛入機箱的金屬插槽。
+
++
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28圖e2800插入電池維護e2800]
+
++
+*（1）*_電池釋放栓鎖_
+
++
+*（2）*_電池_
+
+. 翻轉控制器機箱、確認電池安裝正確。
++
+
+CAUTION: *可能的硬體損壞*-電池正面的金屬法蘭必須完全插入控制器外殼上的插槽（如第一個圖所示）。如果電池安裝不正確（如第二個圖所示）、則金屬法蘭可能會接觸控制器板、在您接上電源時會對控制器造成損壞。
+
++
+** *正確*：電池的金屬法蘭已完全插入控制器的插槽中：
+
+
++
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+
++
+** *不正確*-電池的金屬法蘭未插入控制器的插槽：+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+
+
+. 前往 link:batteries-reinstall-controller-canister-task.html["重新安裝E2800控制器機箱"]。
+

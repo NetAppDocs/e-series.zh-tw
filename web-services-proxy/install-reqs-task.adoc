@@ -1,0 +1,90 @@
+---
+permalink: web-services-proxy/install-reqs-task.html 
+sidebar: sidebar 
+keywords: installation, download, install proxy, 
+summary: Web Services Proxy的安裝與升級需求與考量。 
+---
+= 檢閱安裝與升級需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝Web服務Proxy之前、請先檢閱安裝需求和升級考量事項。
+
+
+
+== 安裝需求
+
+您可以在Windows或Linux主機系統上安裝及設定Web服務Proxy。
+
+Proxy安裝包括下列需求。
+
+|===
+| 需求 | 說明 
+
+
+ a| 
+主機名稱限制
+ a| 
+請確定您打算安裝Web Services Proxy的伺服器主機名稱僅包含Ascii字母、數字和連字號（-）。此需求是因為Java KeyTool的限制、用於為伺服器產生自我簽署的憑證。如果伺服器的主機名稱包含任何其他字元、例如底線（_）、則Webserver在安裝後將無法啟動。
+
+
+
+ a| 
+作業系統
+ a| 
+您可以在下列作業系統上安裝Proxy：
+
+* Linux
+* Windows
+
+
+如需作業系統和韌體相容性的完整清單、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+ a| 
+Linux：其他考量事項
+ a| 
+Webserver需要Linux標準基礎程式庫（init-Functions）才能正常運作。您必須為作業系統安裝lsb / insserv.套件。如需詳細資訊、請參閱讀我檔案的「其他必要套件」一節。
+
+
+
+ a| 
+多個執行個體
+ a| 
+您只能在伺服器上安裝一個Web服務Proxy執行個體、不過您可以在網路內的多個伺服器上安裝Proxy。
+
+
+
+ a| 
+容量規劃
+ a| 
+Web服務Proxy需要足夠的記錄空間。請確定您的系統符合下列可用磁碟空間需求：
+
+* 所需安裝空間：-275 MB
+* 最小記錄空間：200 MB
+* 系統記憶體：2 GB；堆空間預設為1 GB
+
+
+您可以使用磁碟空間監控工具來驗證可用的磁碟機空間、以供持續儲存和記錄。
+
+
+
+ a| 
+授權
+ a| 
+Web服務Proxy是免費的獨立產品、不需要授權金鑰。然而、適用的版權與服務條款仍適用。如果您以圖形或主控台模式安裝Proxy、則必須接受終端使用者授權合約（EULA）。
+
+|===
+
+
+== 升級考量
+
+如果您要從舊版升級、請注意某些項目會保留或移除。
+
+* 對於Web服務Proxy、會保留先前的組態設定。這些設定包括使用者密碼、所有探索到的儲存系統、伺服器憑證、信任的憑證、以及伺服器執行時間組態。
+* 對於Unified Manager、SANtricity 先前載入儲存庫中的所有還原OS檔案都會在升級期間移除。
+

@@ -1,0 +1,70 @@
+---
+permalink: config-linux/nvme-ib-verify-linux-config-support-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「可靠性」）來驗證是否支援整個組態。 
+---
+= 驗證Linux支援並審查限制
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+首先、您應該確認Linux組態是否受到支援、並檢閱控制器、主機和還原限制。
+
+
+
+== 驗證是否支援Linux組態
+
+為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「可靠性」）來驗證是否支援整個組態。
+
+.步驟
+. 前往 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+. 按一下「*解決方案搜尋*」方塊。
+. 在功能表：「傳輸協定[SAN主機]」區域中、按一下「* E系列SAN主機*」旁的「*新增*」按鈕。
+. 按一下「*檢視精簡搜尋條件*」。
++
+「精簡搜尋條件」區段隨即顯示。在本節中、您可以選擇適用的傳輸協定、以及其他組態條件、例如作業系統、NetApp作業系統和主機多重路徑驅動程式。
+
+. 選取您想要的組態條件、然後查看適用的相容組態元素。
+. 必要時、請針對工具中規定的作業系統和傳輸協定進行更新。
++
+按一下右頁箭頭、即可在「View Supported Configuration（檢視支援的組態）」頁面上存取所選組態的詳細資訊。
+
+
+
+
+
+== 檢閱NVMe over InfiniBand限制
+
+在使用NVMe over InfiniBand之前、請先檢閱控制器、主機和還原限制。如需所有限制的最新清單、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+=== 控制器限制
+
+* NVMe over InfiniBand可設定為EF300（僅100GB控制器）、EF600、EF570或E5700控制器。控制器必須具有100GB或200GB InfiniBand主機連接埠。
+* 此傳輸協定僅可用於EF300、EF600、EF570或EF570控制器。在EF600、EF570和E5700控制器上使用此傳輸協定至少需要32 GB的實體記憶體。對於EF300、至少需要16 GB的實體記憶體。如果在一天開始作業期間未達到控制器的最低記憶體需求、則會顯示一則訊息、協助您診斷問題。
+* 不支援單工（單一控制器）組態。
+* 不支援InfiniBand和SCSI主機介面上的混合式NVMe。
+* 對於EF300控制器、IB介面最多可支援64個NVMe主機。
+
+
+
+
+=== 主機、主機傳輸協定及主機作業系統限制
+
+* 主機必須執行最新相容的RHEL 7、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
+* 唯一受支援的主機通道介面卡來自Mellanox。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得更多資訊。
+* 唯一支援的主機介面卡（HIC）是100G或200g EDR IB HIC、也支援iSER和SRP（但不同時支援iSER和SRP）。
+
+
+
+
+=== 儲存與災難恢復限制
+
+* 不支援非同步與同步鏡射。
+* 不支援精簡配置（建立精簡磁碟區）。
+

@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: known-issues.html 
+keywords: known, issues, santricity, os 
+summary: 已知問題 
+---
+= 版本資訊
+:allow-uri-read: 
+
+
+[role="lead"]
+本網站外部提供版本資訊。系統會提示您使用NetApp支援網站認證登入。
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2874254["11.70版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2857931["11.60版本資訊"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2842060["11.50版本資訊"^]
+

@@ -1,0 +1,46 @@
+---
+permalink: config-linux/index.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 針對採用E系列系統的Linux主機使用快速組態。 
+---
+= Linux Express組態總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝儲存陣列及存取SANtricity 《支援系統管理程式》的Linux Express方法、適用於將獨立的Linux主機設定至E系列儲存系統。其設計旨在以最少的決策點、讓儲存系統儘快啟動及執行。
+
+
+
+=== 程序總覽
+
+Linux Express方法包括下列步驟。
+
+. 設定下列其中一種通訊環境：
++
+** 光纖通道（FC）
+** iSCSI
+** SAS
+** 在Infiniband上執行
+** SRP over Infiniband
+** NVMe over Infiniband
+** NVMe over RoCE
+** NVMe over Fibre Channel
+
+
+. 在儲存陣列上建立邏輯磁碟區。
+. 使磁碟區可供資料主機使用。
+
+
+
+
+=== 如需詳細資訊、請參閱
+
+* 線上說明-說明如何使用SANtricity 「支援系統管理程式」來完成組態和儲存管理工作。產品內有此功能。
+* https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。
+* http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] -可讓您搜尋符合NetApp所指定標準與要求的NetApp產品與元件組態。
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["《Linux Unified Host Utilities 7.1安裝指南》"^] --說明如何使用Linux Unified Host Utilities 7.1。
+

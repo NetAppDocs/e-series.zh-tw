@@ -1,0 +1,24 @@
+---
+permalink: config-linux/fc-verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, 
+summary: 使用磁碟區之前、請先確認主機可以將資料寫入磁碟區並讀取回磁碟區。 
+---
+= 驗證主機上的儲存設備存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用磁碟區之前、請先確認主機可以將資料寫入磁碟區並將其讀取回。
+
+已初始化的Volume、格式化為檔案系統。
+
+.步驟
+. 在主機上、將一或多個檔案複製到磁碟的掛載點。
+. 將檔案複製回原始磁碟上的其他資料夾。
+. 執行「dIFF」命令、將複製的檔案與原始檔案進行比較。
+
+
+移除您複製的檔案和資料夾。

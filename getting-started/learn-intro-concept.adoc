@@ -1,0 +1,14 @@
+---
+permalink: getting-started/learn-intro-concept.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600 
+summary: 深入瞭解E系列系統、其中包含可滿足貴組織資料儲存需求的整合式硬體與軟體。 
+---
+= 深入瞭解E系列系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+深入瞭解E系列系統、其中包含可滿足貴組織資料儲存需求的整合式硬體與軟體。

@@ -1,0 +1,35 @@
+---
+permalink: remote-storage-volumes/index.html 
+sidebar: sidebar 
+keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
+summary: 使用遠端儲存磁碟區功能、將資料從遠端儲存設備直接匯入本機E系列磁碟區。 
+---
+= 遠端儲存磁碟區總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+使用SANtricity 「支援物件的遠端儲存磁碟區」功能、將遠端儲存設備的資料直接匯入本機E系列磁碟區。此功能有助於簡化設備升級程序、並提供資料移轉功能、將非E系列裝置的資料移轉至E系列系統。
+
+
+
+== 組態總覽
+
+「遠端儲存磁碟區」功能可搭配SANtricity 選定子機型ID上的「系統管理程式」使用。若要使用此功能、您必須設定遠端儲存系統和E系列儲存系統、以便彼此通訊。
+
+使用下列工作流程：
+
+. link:system-reqs-concept.html["檢閱要求與限制"]。
+. link:setup-remote-volumes-concept.html["設定硬體"]。
+. link:import-remote-storage-task.html["匯入遠端儲存設備"]。
+
+
+
+
+== 如需詳細資訊、請參閱
+
+* 線上說明、可在System Manager使用者介面或中取得 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0["文件中心"^]。
+* 如需遠端儲存磁碟區功能的其他技術資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["遠端儲存磁碟區技術報告"^]。
+

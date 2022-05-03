@@ -1,0 +1,24 @@
+---
+permalink: config-linux/srp-ib-determine-host-port-guids-task.html 
+sidebar: sidebar 
+keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 確定主機連接埠的GUI。 
+---
+= 確定主機連接埠的GUI並進行建議的設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。
+
+.步驟
+. 使用作業系統的套件管理命令來安裝InfiniBand診斷套件。
+. 執行「ibstat」命令以顯示連接埠資訊。
+. 在上記錄啟動器的GUID xref:srp-ib-worksheet-concept.adoc[SRP工作表]。
+. 在HBA公用程式中選取適當的設定。
++
+的「附註」欄中會列出您組態的適當設定 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+

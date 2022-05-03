@@ -1,0 +1,14 @@
+---
+permalink: maintenance-ef600/concept-sas-expansion-cards-wombat.html 
+sidebar: sidebar 
+keywords: sas, expansion, card, install, controller, canister, ef300, support 
+summary: SAS擴充卡可安裝在控制器容器內。EF300控制器支援SAS擴充。 
+---
+= SAS擴充卡
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SAS擴充卡可安裝在控制器容器內。EF300控制器支援SAS擴充。

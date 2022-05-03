@@ -1,0 +1,97 @@
+---
+permalink: config-linux/srp-ib-worksheet-concept.html 
+sidebar: sidebar 
+keywords: SRP over Infiniband worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表記錄SRP over Infiniband儲存組態資訊。 
+---
+= 記錄您的SRP over IB組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生並列印本頁的PDF、然後使用下列工作表記錄InfiniBand儲存組態資訊上的SRP。您需要這些資訊來執行資源配置工作。
+
+image::../media/port_identifiers_ib_srp.gif[連接埠識別碼IB SRP]
+
+
+
+== 主機識別碼
+
+
+NOTE: 啟動器的GUI是在工作中決定、 xref:srp-ib-determine-host-port-guids-task.adoc[確定主機連接埠的GUI並進行建議的設定]。
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | Guid 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+4.
+ a| 
+目標（儲存陣列）
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+主機連接埠1至IB交換器1（「A」路徑）
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主機連接埠2至IB交換器2（「B」路徑）
+ a| 
+
+|===
+
+
+== 建議的組態
+
+建議的組態包括兩個啟動器連接埠和四個目標連接埠。
+
+
+
+== 對應主機名稱
+
+
+NOTE: 對應主機名稱會在工作流程期間建立。
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

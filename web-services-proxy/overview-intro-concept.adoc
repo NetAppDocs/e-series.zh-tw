@@ -1,0 +1,87 @@
+---
+permalink: web-services-proxy/overview-intro-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: 深入瞭解Web服務API 
+---
+= Web服務與Unified Manager總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安裝及設定Web服務Proxy之前、請先閱讀Web服務與SANtricity 《Overview of Web Services》（英文）《Overview of Web Services》（英文）和《Overview Unified Manager》（英文）。
+
+
+
+== Web服務
+
+Web服務是一種應用程式設計介面（API）、可讓您設定、管理及監控NetApp E系列和EF系列儲存系統。透過發出API要求、您可以完成E系列儲存系統的組態、資源配置及效能監控等工作流程。
+
+使用Web Services API管理儲存系統時、您應熟悉下列事項：
+
+* JavaScript物件標記法（Json）：由於Web服務中的資料是透過Json編碼、因此您應該熟悉Json程式設計概念。如需詳細資訊、請參閱 http://www.json.org["JSON.簡介"^]。
+* 代表狀態傳輸（REST）：Web服務是一種RESTful API、可讓您存取幾乎所有SANtricity 的功能、因此您應該熟悉REST概念。如需詳細資訊、請參閱 http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["架構樣式與網路型軟體架構設計"^]。
+* 程式設計語言概念–Java和Python是Web Services API最常用的程式設計語言、但任何可發出HTTP要求的程式設計語言都足以進行API互動。
+
+
+Web服務有兩種實作：
+
+* *內嵌*：RESTful API伺服器內嵌於每個執行NetApp SANtricity 更新版本的E2800/EF280儲存系統控制器、執行SANtricity E11.40或更新版本的E5700/EF570、以及執行EF11.60 SANtricity 或更新版本的EF300或EF600上。無需安裝。
+* * Proxy*- SANtricity 《Sesome Web Services Proxy》（英文）是Windows或Linux伺服器上獨立安裝的RESTful API伺服器。此主機型應用程式可管理數百個全新和舊版NetApp E系列儲存系統。一般而言、您應該將Proxy用於具有10個以上儲存系統的網路。Proxy比內嵌API更有效率地處理多個要求。
+
+
+API的核心可在兩種實作中使用。
+
+image::../media/web_services_proxy_overview.gif[Web服務Proxy總覽]
+
+下表提供Proxy與內嵌版本的比較。
+
+|===
+| 考量 | Proxy | 內嵌 
+
+
+ a| 
+安裝
+ a| 
+需要主機系統（Linux或Windows）。您可以從下載Proxy http://mysupport.netapp.com/NOW/cgi-bin/software/?product=E-Series+SANtricity+Web+Services+%28REST+API%29&platform=WebServices["NetApp 支援網站"^] 或開啟 https://hub.docker.com/r/netapp/eseries-webservices/["DockerHub"^]。
+ a| 
+無需安裝或啟用。
+
+
+
+ a| 
+安全性
+ a| 
+預設為最低安全性設定。
+
+安全性設定很低、讓開發人員能夠快速輕鬆地開始使用API。如果需要、您可以使用與內嵌版本相同的安全性設定檔來設定Proxy。
+ a| 
+預設為高安全性設定。
+
+由於API直接在控制器上執行、因此安全性設定很高。例如、它不允許HTTP存取、而且會停用HTTPS的所有SSL和舊版TLS加密傳輸協定。
+
+
+
+ a| 
+集中管理
+ a| 
+從單一伺服器管理所有儲存系統。
+ a| 
+僅管理其內嵌的控制器。
+
+|===
+
+
+== Unified Manager
+
+Proxy安裝套件包含Unified Manager、這是一個網路型介面、可讓您存取較新的E系列和EF系列儲存系統、例如E2800、E5700、EF300和EF600。
+
+在Unified Manager中、您可以執行下列批次作業：
+
+* 從中央檢視檢視檢視多個儲存系統的狀態
+* 探索網路中的多個儲存系統
+* 將設定從單一儲存系統匯入多個系統
+* 升級多個儲存系統的韌體
+

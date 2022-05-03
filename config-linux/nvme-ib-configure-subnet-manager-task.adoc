@@ -1,0 +1,73 @@
+---
+permalink: config-linux/nvme-ib-configure-subnet-manager-task.html 
+sidebar: sidebar 
+keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host, 
+summary: 使用InfiniBand交換器執行子網路管理程式、可能會在高負載期間造成非預期的路徑遺失。若要避免路徑遺失、請使用opensm在一或多部主機上設定子網路管理程式。 
+---
+= 設定子網路管理程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+子網路管理程式必須在交換器或主機上的環境中執行。如果您執行的是主機端、請使用下列程序進行設定。
+
+.步驟
+. 在任何執行子網路管理程式的主機上安裝「opensm」套件。
+. 使用「ibstat -p」命令尋找HCA連接埠的「GUID0」和「GUID1」。例如：
++
+[listing]
+----
+# ibstat -p
+ 0x248a070300a80a80
+ 0x248a070300a80a81
+----
+. 在主機上連線HCA的每個連接埠上啟用子網路管理員：
++
+* SLES範例*
+
++
+** 將下列兩行新增至/etc/rc.d/rc.after。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：
++
+[listing]
+----
+ opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+ opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+使用值替代的命令範例：
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
++
+* RHEL範例*
+
++
+** 將下列兩行新增至/etc/rc.d/rc.local。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：
++
+[listing]
+----
+opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
+opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+----
++
+使用值替代的命令範例：
+
++
+[listing]
+----
+# cat /etc/rc.d/rc.local
+ opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+ opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+----
+
+
+

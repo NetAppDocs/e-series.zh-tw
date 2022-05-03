@@ -1,0 +1,69 @@
+---
+permalink: maintenance-e2800/batteries-remove-controller-canister-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 若要取出電池、請先從控制器機櫃中取出控制器機箱。 
+---
+= 拆下E2800控制器機箱
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您需要從控制器機櫃中取出控制器機箱、以便取出電池。
+
+當您移除控制器容器時、必須拔下所有纜線。然後、您可以將控制器外殼滑出控制器機櫃。
+
+.您需要的是 #8217 ；需要的是什麼
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+
+
+.步驟
+. 放置於防靜電腕帶上或採取其他防靜電預防措施。
+. 標示連接至控制器容器的每條纜線。
+. 從控制器容器拔下所有纜線。
++
+
+CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。
+
+. 如果控制器容器上的主機連接埠使用SFP+收發器、請保留安裝狀態。
+. 確認控制器背面的快取作用中LED已關閉。
+. 擠壓CAM握把上的栓鎖、直到其釋放、然後向右打開CAM握把、將控制器容器從機櫃中釋放。
++
+下圖為E2812控制器機櫃、E2824控制器機櫃或EF280快閃陣列的範例：
+
++
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28圖e2824移除控制器機箱維護e2800]
+
++
+*（1）*_控制器容器_
+
++
+*（2）*_CAM Handle_
+
++
+下圖是E2860控制器機櫃的範例：
+
++
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28圖e2860新增控制器機箱維護e2800]
+
++
+*（1）*_控制器容器_
+
++
+*（2）*_CAM Handle_
+
+. 使用兩隻手和CAM把把、將控制器箱滑出機櫃。
++
+
+CAUTION: 請務必用兩隻手支撐控制器容器的重量。
+
++
+如果您要從E2812控制器機櫃、E2824控制器機櫃或EF280快閃陣列移除控制器機箱、則會有一個蓋板移到位以封鎖閒置的機櫃、有助於維持氣流和冷卻。
+
+. 翻轉控制器外殼、使可拆式護蓋面朝上。
+. 將控制器容器放在無靜電的平面上。
+. 前往 link:batteries-remove-failed-task.html["取出故障的E2800電池"]。
+

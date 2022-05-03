@@ -1,0 +1,61 @@
+---
+permalink: web-services-proxy/overview-compat-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: WSP的相容性與限制。 
+---
+= 相容性與限制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下列相容性與限制適用於使用Web服務Proxy。
+
+|===
+| 考量 | 相容性或限制 
+
+
+ a| 
+HTTP支援
+ a| 
+Web服務Proxy允許使用HTTP或HTTPS。（基於安全考量、內嵌版本的Web Services需要HTTPS。）
+
+
+
+ a| 
+儲存系統與韌體
+ a| 
+Web Services Proxy可管理所有E系列儲存系統、包括混合使用舊系統與最新E2800、EF280、E5700、EF570、EF300、 和EF600系列系統。
+
+
+
+ a| 
+IP支援
+ a| 
+Web服務Proxy可支援IPV4傳輸協定或IPv6傳輸協定。
+
+
+NOTE: 當Web服務Proxy嘗試從控制器組態自動探索管理位址時、IPv6傳輸協定可能會失敗。可能導致故障的原因包括IP位址轉送期間發生問題、或是儲存系統啟用IPv6、但伺服器卻未啟用IPv6。
+
+
+
+ a| 
+NVSRAM.檔案名稱限制
+ a| 
+Web Services Proxy使用NVSRAM/檔案名稱來準確識別版本資訊。因此、您無法在NVSRAM/檔案名稱與Web服務Proxy搭配使用時加以變更。Web服務Proxy可能無法將重新命名的NVSRAM/檔案辨識為有效的韌體檔案。
+
+
+
+ a| 
+Symbol網路
+ a| 
+Symbol Web是REST API中的URL。它可存取幾乎所有的符號呼叫。SYMBOL函數是下列URL的一部分：
+
+http://host:port/devmgr/storage-system/storage陣列ID/symbol / symbol功能+
+
+
+NOTE: 停用符號的儲存系統可透過Web服務Proxy支援。
+
+|===

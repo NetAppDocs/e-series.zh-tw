@@ -1,0 +1,51 @@
+---
+permalink: cloud-connector/index.html 
+sidebar: sidebar 
+keywords: Cloud Connector 
+summary: 解決方案：Cloud Connector SANtricity 
+---
+= 概述《解決方案》（英文）SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援以主機為基礎的SANtricity Linux應用程式、可讓您執行完整的區塊型和檔案型備份、並將E系列磁碟區還原至S3客訴帳戶（例如Amazon Simple Storage Service和NetApp StorageGRID S還原）和NetApp AltaVault Sof應用裝置。
+
+可在RedHat和SUSE Linux平台上安裝SANtricity 、而《支援不支援的雲端連接器》是一套套裝解決方案（.bin檔案）。安裝SANtricity 完S還原Cloud Connector之後、您可以設定應用程式、將E系列磁碟區的備份與還原工作、設定為AltaVault 使用此功能的應用程式、或是執行現有的Amazon S3或StorageGRID 還原帳戶。所有透過SANtricity NetApp Cloud Connector執行的工作都使用REST型API。
+
+
+
+== 考量
+
+使用這些程序時、請注意：
+
+* 這些程序中所述的組態和備份/還原工作、適用於SANtricity 圖形化使用者介面版本的《支援者介面》。
+* 下列程序未說明適用於Rest Cloud SANtricity Connector應用程式的REST API工作流程。對於經驗豐富的開發人員而SANtricity 言、端點可在API文件中針對每個執行的E不到 位的Cloud Connector作業提供使用。您可以透過瀏覽器瀏覽至「http://<hostname.domain>:<port>/docs``」、以存取API文件。
+
+
+
+
+== 備份類型
+
+此解決方案SANtricity 提供兩種備份類型：映像型備份和檔案型備份。
+
+* *映像型備份*
++
+以映像為基礎的備份會從快照磁碟區讀取原始資料區塊、並將其備份至稱為映像的檔案。備份快照磁碟區上的所有資料區塊、包括空白區塊、被刪除檔案佔用的區塊、與分割區相關的區塊、以及檔案系統中繼資料。無論快照磁碟區的分割配置或檔案系統為何、映像備份都能利用快照磁碟區來儲存所有資訊。
+
++
+映像並未儲存在備份目標上、只是作為單一檔案、而是分成一系列大小為64MB的資料區塊。資料區塊可讓SANtricity VMware Cloud Connector使用多個連線來連線至備份目標、進而提升備份程序的效能。
+
++
+對於StorageGRID 備份到靜止和Amazon Web Services（S3）、每個資料區塊都會使用個別的加密金鑰來加密區塊。金鑰是SHA256雜湊、由使用者提供的通關密碼和使用者資料的SHA256雜湊組合而成。針對將資料區AltaVault 塊備份到無法執行此SANtricity 作業的功能、不需要將資料區塊加密AltaVault 。
+
+* *檔案型備份*
++
+檔案型備份會讀取檔案系統分割區所包含的檔案、並將其備份成大小為64MB的一系列資料區塊。檔案型備份不會備份刪除的檔案或分割區和檔案系統中繼資料。如同以映像為基礎的備份、資料區塊可讓SANtricity ImageCloud Connector使用多個連線至備份目標、進而提升備份程序的效能。
+
++
+對於StorageGRID 將資料備份至靜止和Amazon Web Services、每個資料區塊都會使用個別的加密金鑰來加密區塊。金鑰是SHA256雜湊、由使用者提供的密碼與使用者資料的SHA256雜湊組合而成。針對AltaVault 備份至功能性、SANtricity 由於AltaVault 執行此作業、所以不會由NetApp Cloud Connector加密資料區塊。
+
+

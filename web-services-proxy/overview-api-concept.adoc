@@ -1,0 +1,220 @@
+---
+permalink: web-services-proxy/overview-api-concept.html 
+sidebar: sidebar 
+keywords: Web Services, WSP, SANtricity API, 
+summary: 深入瞭解Web服務API 
+---
+= API基礎知識
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在Web Services API中、HTTP通訊涉及要求回應週期。
+
+
+
+== 要求中的URL元素
+
+無論使用何種程式設計語言或工具、對Web服務API的每個呼叫都有類似的結構、包含URL、HTTP動詞和Accept標頭。
+
+image::../media/web_services_proxy_api.gif[Web服務Proxy API]
+
+所有要求都包含URL、如下例所示、並包含表格中所述的元素。
+
+https://webservices.name.com:8443/devmgr/v2/storage-systems+`
+
+|===
+| 區域 | 說明 
+
+
+ a| 
+HTTP傳輸
+
+「https：//」
+ a| 
+Web服務Proxy可啟用HTTP或HTTPS。
+
+基於安全考量、內嵌式Web服務需要HTTPS。
+
+
+
+ a| 
+基礎URL和連接埠
+
+webservices.name.com:8443`
+ a| 
+每個要求都必須正確路由傳送至作用中的Web服務執行個體。需要FQDN（完整網域名稱）或執行個體的IP位址、以及聆聽連接埠。根據預設、Web Services會透過連接埠8080（用於HTTP）和連接埠8443（用於HTTPS）進行通訊。
+
+對於Web服務Proxy、兩個連接埠都可以在Proxy安裝期間或wsconfig.xml檔案中變更。在執行各種管理應用程式的資料中心主機上、連接埠爭用很常見。
+
+對於內嵌式Web服務、控制器上的連接埠無法變更；安全連線的連接埠預設為連接埠8443。
+
+
+
+ a| 
+API路徑
+
+「Devmgr/v2/storage系統」
+ a| 
+會要求Web Services API中的特定REST資源或端點。大多數端點的形式如下：
+
+「Devmgr/v2/<資源>/[id]」
+
+API路徑包含三個部分：
+
+* 「Devmgr"（裝置管理員）是Web Services API的命名空間。
+* 「v2」代表您正在存取的API版本。您也可以使用「utils」存取登入端點。
+* 「系統」是文件中的一項類別。
+
+
+|===
+
+
+== 支援的HTTP verb
+
+支援的HTTP verb包括GET、POST及DELETE：
+
+* 「Get要求」用於唯讀要求。
+* POST要求用於建立和更新物件、以及可能會影響安全性的讀取要求。
+* 刪除要求通常用於從管理中移除物件、完全移除物件、或是重設物件的狀態。
+
+
+
+NOTE: 目前、Web Services API不支援PUT或修補程式。您可以改用POST來提供這些動詞的典型功能。
+
+
+
+== 接受標頭
+
+傳回要求本文時、Web Services會以Json格式傳回資料（除非另有指定）。某些用戶端預設要求「'text/html」或類似的內容。在這些情況下、API會以HTTP代碼406回應、表示無法以這種格式提供資料。最佳實務做法是針對您預期Json為回應類型的任何情況、將Accept標頭定義為「application/json」。在未傳回回應本文的其他情況下（例如刪除）、提供Accept標頭不會造成任何非預期的影響。
+
+
+
+== 回應
+
+向API提出要求時、回應會傳回兩項重要資訊：
+
+* HTTP狀態代碼-指出要求是否成功。
+* 可選的回應本文-通常提供代表資源狀態的Json實體或實體、以提供更多故障性質的詳細資料。
+
+
+您必須檢查狀態代碼和內容類型標頭、以判斷所產生的回應本文的外觀。對於HTTP狀態代碼200-203-4222、Web服務會傳回回應的Json實體。對於其他HTTP狀態代碼、Web Services通常不會傳回額外的Json實體、因為規格不允許（204）、或是狀態是自我說明。下表列出常見的HTTP狀態代碼和定義。它也會指出是否傳回Json實體中與每個HTTP程式碼相關的資訊。
+
+|===
+| HTTP狀態代碼 | 說明 | Json本文 
+
+
+ a| 
+200正常
+ a| 
+表示回應成功。
+ a| 
+是的
+
+
+
+ a| 
+201已建立
+ a| 
+表示已建立物件。此程式碼僅用於少數罕見的情況、而非200個狀態。
+ a| 
+是的
+
+
+
+ a| 
+已接受202
+ a| 
+表示已接受要求以非同步要求的形式處理、但您必須提出後續要求才能取得實際結果。
+ a| 
+是的
+
+
+
+ a| 
+203非權威資訊
+ a| 
+類似於200個回應、但Web Services無法保證資料是最新的（例如、目前只有快取資料可用）。
+ a| 
+是的
+
+
+
+ a| 
+204無內容
+ a| 
+表示作業成功、但沒有回應實體。
+ a| 
+否
+
+
+
+ a| 
+400個錯誤要求
+ a| 
+表示要求中提供的Json實體無效。
+ a| 
+否
+
+
+
+ a| 
+401未獲授權
+ a| 
+表示發生驗證失敗。未提供任何認證、或使用者名稱或密碼無效。
+ a| 
+否
+
+
+
+ a| 
+403禁止
+ a| 
+授權失敗、表示已驗證的使用者無權存取要求的端點。
+ a| 
+否
+
+
+
+ a| 
+找不到404
+ a| 
+表示無法找到所要求的資源。此程式碼適用於不存在的API或識別碼所要求的不存在資源。
+ a| 
+否
+
+
+
+ a| 
+無法處理的實體
+ a| 
+表示要求通常格式良好、但輸入參數無效、或儲存系統的狀態不允許Web Services滿足要求。
+ a| 
+是的
+
+
+
+ a| 
+424失敗相依性
+ a| 
+用於Web服務Proxy、表示所要求的儲存系統目前無法存取。因此、Web服務無法滿足要求。
+ a| 
+否
+
+
+
+ a| 
+429太多要求
+ a| 
+表示已超過要求上限、應於稍後重試。
+ a| 
+否
+
+|===
+
+
+== 範例指令碼
+
+GitHub包含一個儲存庫、可用來收集和組織範例指令碼、說明如何使用NetApp SANtricity Web Services API。若要存取儲存庫、請參閱 https://github.com/NetApp/webservices-samples["NetApp Webservices範例"^]。

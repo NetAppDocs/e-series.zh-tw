@@ -1,0 +1,167 @@
+---
+permalink: config-linux/iser-ib-configure-network-attached-hosts-task.html 
+sidebar: sidebar 
+keywords: configure network Linux, configure hosts linux, express linux configuration, linux host, 
+summary: InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SRP、因此不需要額外的硬體。 
+---
+= 設定儲存附加主機的網路
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的組態使用iSER over InfiniBand傳輸協定、請執行本節中的步驟。
+
+InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SRP、因此不需要額外的硬體。
+
+NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+.步驟
+. 在主機上啟用和啟動iSCSI服務：
++
+* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+
++
+[listing]
+----
+
+# systemctl start iscsi
+# systemctl start iscsid
+# systemctl enable iscsi
+# systemctl enable iscsid
+----
++
+* SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*
+
++
+[listing]
+----
+
+# systemctl start iscsid.service
+# systemctl enable iscsid.service
+----
+. 設定IPoIB網路介面：
++
+.. 識別將要使用的InfiniBand連接埠。記錄每個連接埠的硬體位址（MAC位址）。
+.. 設定InfiniBand網路介面裝置的持續名稱。
+.. 針對識別的IPoIB介面設定IP位址和網路資訊。
++
+所需的特定介面組態可能會因使用的作業系統而異。如需實作的特定資訊、請參閱廠商的作業系統文件。
+
+.. 重新啟動網路服務或手動重新啟動每個介面、以啟動IB網路介面。例如：
++
+[listing]
+----
+systemctl restart network
+----
+.. 驗證與目標連接埠的連線能力。從主機ping您在設定網路連線時所設定的IP位址。
+
+
+. 重新啟動服務以載入iSER模組。
+. 在/etc/iscsi/iscsid.conf中編輯iSCSI設定
++
+[listing]
+----
+node.startup = automatic
+replacement_timeout = 20
+----
+. 建立iSCSI工作階段組態：
++
+.. 為每個InfiniBand介面建立iface組態檔。
++
+
+NOTE: iSCSI iface檔案的目錄位置取決於作業系統。本範例適用於使用Red Hat Enterprise Linux：
+
++
+[listing]
+----
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib0
+iscsiadm -m iface -I iser > /var/lib/iscsi/ifaces/iface-ib1
+----
+.. 編輯每個iface檔案以設定介面名稱和啟動器IQN。針對每個iface檔案適當設定下列參數：
++
+|===
+| 選項 | 價值 
+
+
+ a| 
+iface.net_ifacename
+ a| 
+介面裝置名稱（例如ib0）。
+
+
+
+ a| 
+iface.initiatorname
+ a| 
+工作表中記錄的主機啟動器IQN。
+
+|===
+.. 建立目標的iSCSI工作階段。
++
+建立工作階段的慣用方法是使用「傳送目標」探索方法。不過、此方法無法在某些作業系統版本上運作。
+
++
+
+NOTE: 使用*方法2 *執行RHEL 6.x或SLES 11.3或更新版本。
+
++
+*** *方法1 - SendTartes探索：*將SendTartes探索機制用於其中一個目標入口網站IP位址。這會為每個目標入口網站建立工作階段。
++
+[listing]
+----
+iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
+----
+*** *方法2 -手動建立：*針對每個目標入口網站IP位址、使用適當的主機介面iface組態建立工作階段。在此範例中、介面ib0位於子網路A、而介面ib1位於子網路B對於這些變數、請從工作表中取代適當的值：
++
+**** <Target IQN>=儲存陣列目標IQN
+**** =在指定目標連接埠上設定的IP位址
+
+
+
+
+
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller B Port 1
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+# Controller A Port 2
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+# Controller B Port 2
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+----
+. 登入iSCSI工作階段。
++
+對於每個工作階段、請執行iscsiadm命令以登入工作階段。
+
++
+[listing]
+----
+# Controller A Port 1
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller B Port 1
+iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+# Controller A Port 2
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+# Controller B Port 2
+iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+----
+. 驗證iSER / iSCSI工作階段。
++
+.. 從主機檢查iSCSI工作階段狀態：
++
+[listing]
+----
+iscsiadm -m session
+----
+.. 從陣列檢查iSCSI工作階段狀態。在「系統管理程式」中、瀏覽至*儲存陣列*>* iSER *>*檢視/結束工作階段*。SANtricity
+
+
+
+
+當OFED/RDMA服務啟動時、iSER核心模組預設會在iSCSI服務執行時載入。若要完成iSER連線設定、應載入iSER模組。目前這需要重新開機主機。

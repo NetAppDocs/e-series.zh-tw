@@ -1,0 +1,28 @@
+---
+permalink: config-linux/fc-configure-switches-task.html 
+sidebar: sidebar 
+keywords: FC switches, zoning, express linux configuration, software configuration, linux host, 
+summary: 設定Fibre Channel交換器、讓主機連線至儲存陣列、並限制路徑數量。 
+---
+= 設定FC交換器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
+
+.您需要的是 #8217 ；需要的是什麼
+* 交換器的系統管理員認證。
+* 每個主機啟動器連接埠的WWPN、以及連接至交換器的每個控制器目標連接埠。（使用HBA公用程式進行探索。）
+
+
+每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。
+
+.步驟
+. 登入FC交換器管理程式、然後選取分區組態選項。
+. 建立新的區域、其中包含第一個主機啟動器連接埠、也包含所有連接到啟動器所在FC交換器的目標連接埠。
+. 為交換器中的每個FC主機啟動器連接埠建立其他區域。
+. 儲存區域、然後啟動新的分區組態。
+

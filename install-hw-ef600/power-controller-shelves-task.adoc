@@ -1,0 +1,53 @@
+---
+permalink: install-hw-ef600/power-controller-shelves-task.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation, power on, power cables 
+summary: 連接電源線並開啟磁碟機櫃的電源。 
+---
+= 為控制器磁碟櫃供電
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何連接電源纜線、並在磁碟機櫃上開啟電源。
+
+開啟控制器磁碟櫃電源之前、請務必執行下列步驟：
+
+* 安裝硬體。
+* 採取防靜態預防措施。
+
+
+.步驟
+. 將電源線插入每個控制器（下圖為EF600）。
++
+|===
+
+
+ a| 
+image:../media/power_cable_inst-hw-ef600.png[""]
+ a| 
+*電源線*
+
+|===
++
+|===
+
+
+ a| 
+image:../media/cabling_power.png[""]
+
+|===
+. 將兩條電源線（每個控制器一條）連接至機櫃或機架中的兩個獨立的電力分配單元（PDU）。
++
+
+CAUTION: 從機櫃存取EF300或EF600控制器機箱可能會遭到第三方PDU封鎖。請勿使用控制器容器正後方的電源插座。
+
+. 在完成儲存系統設定與組態之前、請先讓控制器開機五分鐘。
+
+
+控制器會自動開機。LED會亮起、風扇也會開始亮起、表示控制器正在啟動。
+
+
+NOTE: 第一次開機時、風扇的聲音非常大。

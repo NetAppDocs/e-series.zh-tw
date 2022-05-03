@@ -1,0 +1,14 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-install-setup-task.html 
+sidebar: sidebar 
+keywords: instruction, describe, install, storage, system, provide, link, additional, content, installation, setup, e5724, ef570, ef280, e2812, e2824, de212c, de224c 
+summary: 這些指示說明如何安裝及設定新的儲存系統、並提供其他內容的連結。 
+---
+= E5724、EF570、EF280、E2812、E2824、 DE212C和DE224C
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+這些指示說明如何安裝及設定新的儲存系統、並提供其他內容的連結。

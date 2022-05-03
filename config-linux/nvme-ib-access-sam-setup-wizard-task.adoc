@@ -1,0 +1,95 @@
+---
+permalink: config-linux/nvme-ib-access-sam-setup-wizard-task.html 
+sidebar: sidebar 
+keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytration System Manager）來設定儲存陣列。 
+---
+= 存取SANtricity 「系統管理程式」並使用「設定精靈」
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定儲存陣列、您可以使用SANtricity 「系統管理程式」中的「設定精靈」。
+
+《系統管理程式》是內嵌於每個控制器的網路型介面。SANtricity若要存取使用者介面、請將瀏覽器指向控制器的IP位址。設定精靈可協助您開始進行系統組態。
+
+.您需要的是 #8217 ；需要的是什麼
+* 頻外管理：
+* 管理站可存取SANtricity 包含下列其中一種瀏覽器的《系統管理程式》：
++
+|===
+| 瀏覽器 | 最低版本 
+
+
+ a| 
+Google Chrome
+ a| 
+79
+
+
+
+ a| 
+Microsoft Internet Explorer
+ a| 
+11.
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+79
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+70
+
+
+
+ a| 
+Safari
+ a| 
+12.
+
+|===
+
+
+當您開啟System Manager或重新整理瀏覽器時、精靈會自動重新啟動、且至少符合下列條件之一：
+
+* 未偵測到資源池和磁碟區群組。
+* 未偵測到工作負載。
+* 未設定任何通知。
+
+
+.步驟
+. 在瀏覽器中輸入下列URL：「+https://<DomainNameOrIPAddress>+`」
++
+「IPAddress」是其中一個儲存陣列控制器的位址。
+
++
+第一次SANtricity 在尚未設定的陣列上開啟時、會出現「Set Administrator Password（設定管理員密碼）」提示字元。角色型存取管理可設定四種本機角色：管理、支援、安全性及監控。後三個角色的隨機密碼是無法猜測的。設定管理員角色的密碼之後、您可以使用管理員認證來變更所有密碼。如需四個本機使用者角色的詳細資訊、請參閱SANtricity 《支援系統》使用者介面中的線上說明。
+
+. 在Set Administrator Password（設定管理員密碼）和Confirm Password（確認密碼）欄位中輸入管理員角色的System Manager密碼、然後按一下* Set Password（設定密碼）*。
++
+如果未設定集區、磁碟區群組、工作負載或通知、則會啟動設定精靈。
+
+. 使用設定精靈執行下列工作：
++
+** *驗證硬體（控制器和磁碟機）*-驗證儲存陣列中的控制器和磁碟機數量。為陣列指派名稱。
+** *驗證主機和作業系統*-驗證儲存陣列可以存取的主機和作業系統類型。
+** *接受資源池*--接受快速安裝方法的建議資源池組態。集區是磁碟機的邏輯群組。
+** *設定警示*-允許系統管理員在儲存陣列發生問題時接收自動通知。
+** *啟用AutoSupport 此功能*：自動監控儲存陣列的健全狀況、並將派單傳送給技術支援部門。
+
+
+. 如果您尚未建立磁碟區、請前往功能表：「Storage[磁碟區>建立>磁碟區]來建立磁碟區。
++
+如需更多資訊、請參閱SANtricity 《關於功能不全系統管理程式的線上說明》。
+
+

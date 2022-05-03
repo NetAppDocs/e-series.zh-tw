@@ -1,0 +1,50 @@
+---
+permalink: maintenance-e5700/hics-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC 
+summary: 檢閱E5700 HIC更換要求。 
+---
+= E5700 HIC更換要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在E5700中新增、升級或更換主機介面卡（HIC）之前、請先檢閱相關要求和考量事項。
+
+
+
+== 程序總覽
+
+您可以在E5724控制器機櫃和E5760控制器機櫃中新增、升級或更換HIC。
+
+以下是更換E5700控制器（E5724或E5760）中HIC的步驟總覽：
+
+. 使控制器離線
+. 移除控制器容器
+. 更換電池
+. 更換控制器容器
+. 使控制器上線
+
+
+
+
+== 新增、升級或更換HIC的需求
+
+如果您打算新增、升級或更換主機介面卡（HIC）、請謹記下列需求。
+
+* 您必須為此程序排程停機維護時間。安裝HIC時必須關閉電源、因此在成功完成此程序之前、您無法存取儲存陣列上的資料。（在雙工組態中、這是因為兩個控制器在開機時必須具有相同的HIC組態。）
+* 您必須擁有兩個與控制器相容的HIC。
++
+對於雙工組態（兩個控制器）、安裝在兩個控制器容器中的HIC必須相同。如果出現不相符的HIC、則當您將更換的HIC上線時、控制器會鎖定。
+
+* 連接新主機連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。
++
+如需相容硬體的相關資訊、請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
+
+* 您有一個ESD腕帶、或是已採取其他防靜電預防措施。
+* 您有1號十字螺絲起子。
+* 您有標籤可識別連接至控制器容器的每條纜線。
+* 您有一個管理站、其中有一個瀏覽器可以存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
+

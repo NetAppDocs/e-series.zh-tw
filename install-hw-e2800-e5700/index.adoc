@@ -1,0 +1,36 @@
+---
+permalink: install-hw-e2800-e5700/index.html 
+sidebar: sidebar 
+keywords: E2800, E5700, installation 
+summary: 安裝並設定E2800或E5700陣列。 
+---
+= 安裝及設定E2800與E5700儲存系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何安裝及設定E2800或E5700儲存系統。
+
+您可以選擇下列其中一種格式、引導您完成新儲存系統的安裝與設定。
+
+* * PDF *
++
+這是可列印的PDF逐步說明、並提供其他內容的即時連結。請選擇下列其中一張海報、開始使用。
+
++
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2860、E5760和DE460C PDF海報"^]
+** https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E5724、EF570、EF280、E2812、E2824、 DE212C和DE224C PDF海報"^]
+
+
+* *線上指示*
++
+這些是本網站所述的設定指示。請從下列其中一個主題開始著手。
+
++
+** xref:e2860-e5760-prepare-task.adoc[準備安裝E2860、E5760和DE460C]
+** xref:e2824-e5724-prepare-task.adoc[準備安裝E5724、EF570、EF280、E2812、E2824、 DE212C和DE224C]
+
+
+

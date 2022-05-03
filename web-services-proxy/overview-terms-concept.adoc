@@ -1,0 +1,88 @@
+---
+permalink: web-services-proxy/overview-terms-concept.html 
+sidebar: sidebar 
+keywords: Web Services terms, WSP concepts 
+summary: 深入瞭解Web服務API 
+---
+= 詞彙與概念
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下列條款適用於Web服務Proxy。
+
+|===
+| 期限 | 定義 
+
+
+ a| 
+API
+ a| 
+應用程式設計介面（API）是一組可讓開發人員與裝置通訊的傳輸協定和方法。Web服務API用於與E系列儲存系統通訊。
+
+
+
+ a| 
+ASUP
+ a| 
+支援（ASUP）AutoSupport 功能會收集客戶支援套裝組合中的資料、並自動將訊息檔案傳送給技術支援部門、以進行遠端疑難排解和問題分析。
+
+
+
+ a| 
+端點
+ a| 
+端點是透過API提供的功能。端點包含HTTP動詞、加上URI路徑。在Web服務中、端點可以執行探索儲存系統和建立磁碟區等工作。
+
+
+
+ a| 
+HTTP Verb
+ a| 
+HTTP動詞是端點的對應動作、例如擷取和建立資料。在Web服務中、HTTP動詞包括POST、GET和DELETE。
+
+
+
+ a| 
+JSON
+ a| 
+JavaScript物件標記法（Json）是一種結構化資料格式、類似於XML、使用最小、可讀的格式。Web服務中的資料是透過Json編碼。
+
+
+
+ a| 
+休息/休息
+ a| 
+代表狀態傳輸（REST）是鬆散的規格、可定義API的架構樣式。由於大多數REST API並未完全符合規格、因此它們被稱為「準則」或「類似標準」。 一般而言、「準」API不受程式語言限制、具有下列特性：
+
+* HTTP型、遵循傳輸協定的一般語意
+* 結構化資料（Json、XML等）的產生者和使用者
+* 物件導向（相對於作業導向）
+
+
+Web Services是RESTful API、幾乎能存取SANtricity 所有的功能。
+
+
+
+ a| 
+儲存系統
+ a| 
+儲存系統是E系列陣列、包括磁碟櫃、控制器、磁碟機、軟體、 和韌體。
+
+
+
+ a| 
+Symbol API
+ a| 
+SYMBOL是用於管理E系列儲存系統的舊版API。Web Services API的基礎實作使用符號。
+
+
+
+ a| 
+Web服務
+ a| 
+Web服務是NetApp專為開發人員設計的API、可用於管理E系列儲存系統。Web服務有兩種實作：內嵌在控制器上、另一個可安裝在Linux或Windows上的Proxy。
+
+|===

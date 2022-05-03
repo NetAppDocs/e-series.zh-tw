@@ -1,0 +1,110 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/san-spvc-ic-installation.html 
+keywords: install vCenter plugin, installing vCenter plugin, vCenter plugin, 
+summary: 安裝SANtricity vCenter的VMware vCenter儲存外掛程式。 
+---
+= 安裝vCenter的儲存外掛程式
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以安裝vCenter的儲存外掛程式、並驗證外掛程式登錄。
+
+
+
+== 檢閱安裝先決條件
+
+請確定您的系統符合下列需求：
+
+* VMware vCenter Server設備支援的版本：6.7U3J、7.0U1或7。0U2
+* NetApp SANtricity 作業系統版本：11.60.2或更新版本
+* 支援的應用程式主機版本：Windows 2016或Windows 2019
+* 主機系統的CPU需求：
++
+** 系統記憶體：1.5GB
+** 儲存空間：275 MB + 200 MB（記錄）
+
+
+
+
+
+
+== 安裝外掛程式軟體
+
+若要安裝外掛程式軟體：
+
+. 將安裝程式檔案複製到將做為應用程式伺服器的主機、然後存取您下載安裝程式的資料夾。
+. 按兩下安裝檔案：
++
+「antricity儲存設備_vcenterplugin-windows_x64-- n.n.nn.nns.exe」
+
++
+在上述檔案名稱中、「n.n.n.nn.nnn.nnn」代表版本編號。
+
+. 安裝開始時、請遵循螢幕上的提示進行。
++
+安裝期間、系統會提示您輸入一些組態參數。
+
++
+.. 在第一個畫面上、選取您偏好的軟體語言、然後按一下*確定*。
+.. 在「簡介」畫面中、按一下*「下一步」*。
+.. 在Copyright（版權）畫面中、按一下* Next*（下一步*）。
+.. 在「授權合約」畫面中、選取接受條款的方塊、然後按「*下一步*」。
+.. 選取您要安裝軟體的資料夾、然後按「*下一步*」。
+.. 如果您要在外掛程式與儲存陣列之間強制執行憑證驗證、請在「憑證驗證」畫面中、勾選核取方塊。在這項強制措施下、儲存陣列憑證會根據外掛程式加以檢查、以確保可信。如果憑證不受信任、則不允許將其新增至外掛程式。如果您要置換憑證驗證、請取消選取核取方塊、以便使用自我簽署的憑證將所有儲存陣列新增至外掛程式。單擊 * 下一步 * 。
++
+若要深入瞭解憑證、請參閱外掛程式介面提供的線上說明。
+
+.. 在「HTTPS Web服務連接埠」畫面中、將預設值保留為84445、或視需要變更連接埠編號。單擊 * 下一步 * 。
+.. 在「預先安裝摘要」畫面中、按一下*「下一步*」以安裝檔案。
+.. 出現Webserver started（Webserver已啟動）訊息時、按一下「* OK（確定）*」以完成安裝。
+.. 按一下「 * 完成 * 」。
++
+
+NOTE: 如有必要、您可以在安裝後變更「憑證驗證」和「Web服務連接埠」設定。從安裝目錄開啟wsconfig.xml檔案。若要移除儲存陣列上的憑證驗證、請將「env」金鑰「trust．all.Array」變更為「true」。若要變更Web服務連接埠、請將「slport」值修改為所需的連接埠值、範圍從0-65535.請確定所使用的連接埠號碼未繫結至其他程序。完成後、請儲存變更並重新啟動外掛程式Web伺服器。如果將外掛程式登錄至vCSA之後、外掛程式Web伺服器的連接埠值已變更、則您必須取消登錄並重新登錄外掛程式、以便vCSA在變更的連接埠上與外掛程式Web伺服器通訊。
+
+
+
+. 執行* services.msc*命令、確認應用程式伺服器已成功安裝。
+. 確認已SANtricity 安裝應用程式伺服器（VCP）服務*適用於VCenter*的NetApp VMware vCenter儲存外掛程式、且服務已啟動。
+
+
+
+
+== 向vCenter Server Appliance註冊外掛程式
+
+安裝外掛程式軟體之後、請向vCSA註冊外掛程式。
+
+
+NOTE: 外掛程式一次只能登錄到一個vCSA。若要登錄至不同的vCSA、則必須從目前的vCSA取消登錄外掛程式、然後從應用程式主機解除安裝。然後您可以重新安裝外掛程式、並將其登錄至其他vCSA。
+
+. 透過命令列開啟提示字元、然後瀏覽至下列目錄：
++
+「<安裝目錄>\vCenter-Register \bin」
+
+. 執行* vCenter-Register．bat*檔案：「vcenter-register.bat」、「-action registerPlugin」、「-vcenterHostname」、「vCenter FQDN」、「-使用者名稱」、「^」
+. 驗證指令碼是否成功。
+
+
+記錄會儲存至「%install_dir%/工作日 誌/vC-registry.log」。
+
+
+
+== 驗證外掛程式登錄
+
+安裝外掛程式並執行登錄指令碼之後、請確認外掛程式已成功登錄vCenter Server Appliance。
+
+. 開啟vSphere Client至vCenter Server Appliance。
+. 在功能表列上、選取功能表：「Administrator」（管理員）[Client Plugins]（用戶端外掛程式）。
+. 請確定SANtricity vCenter的《支援的不支援的儲存外掛程式》列示為*已啟用*。
++
+如果外掛程式列為「已停用」、並顯示錯誤訊息指出無法與應用程式伺服器通訊、請確認已啟用為應用程式伺服器定義的連接埠號碼、以通過可能使用的任何防火牆。預設的應用程式伺服器傳輸控制傳輸協定（TCP）連接埠編號為84445。
+
+

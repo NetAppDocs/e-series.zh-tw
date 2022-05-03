@@ -1,0 +1,135 @@
+---
+permalink: install-hw-ef600/prepare-for-install-task.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation, create account, register hardware 
+summary: 若要安裝EF300或EF600、請建立帳戶並註冊硬體。 
+---
+= 準備安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何準備好安裝EF300或EF600系列儲存系統。
+
+如果您要將EF300纜線連接至SAS擴充、請檢閱下列資訊：
+
+* link:../maintenance-ef600/sas-add-supertask-task.html["新增SAS擴充卡"^] 用於SAS擴充卡安裝。
+* link:../install-hw-cabling/index.html["纜線配置總覽"] 適用於SAS擴充纜線。
+
+
+.步驟
+. 建立帳戶並在註冊硬體 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 確認您收到的包裝盒中有下列項目。
++
+|===
+
+
+ a| 
+image:../media/ef600_w_faceplate.png[""]
+ a| 
+安裝磁碟機的磁碟櫃（擋板和端蓋分開包裝）
+
+
+
+ a| 
+image:../media/superrails_inst-hw-ef600.png[""]
+ a| 
+機架安裝硬體
+
+|===
++
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://hwu.netapp.com/["Hardware Universe"] 找出纜線並識別其用途。
+
++
+|===
+| 連接器類型 | 纜線類型 | 使用 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-ef600.png[""]
+ a| 
+RJ-45乙太網路纜線（如有訂購）
+ a| 
+管理連線
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-ef600.png[""]
+ a| 
+I/O纜線（如有訂購）
+ a| 
+資料主機佈線
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-ef600.png[""]
+ a| 
+電源線（如有訂購）
+ a| 
+開啟儲存系統電源
+
+|===
+. 請務必提供下列項目。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-ef600.png[""]
+ a| 
+2號十字螺絲起子
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-ef600.png[""]
+ a| 
+手電筒
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-ef600.png[""]
+ a| 
+防靜電繫帶
+
+
+
+ a| 
+image:../media/2u_rackspace_inst-hw-ef600.png[""]
+ a| 
+2U機架空間：標準19吋（48.30公分）機架、可容納2U機櫃、尺寸如下。
+
+*深度*：19.0英寸（48.3公分）
+
+*寬度*：17.6吋（44.7公分）
+
+*高度*：3.34英吋（8.48公分）
+
+*機櫃*：24個磁碟機
+
+*最大重量*：60.5磅（27.4公斤）
+
+
+NOTE: 使用協力廠商機櫃可能會導致電源線限制控制器的存取。
+
+
+
+ a| 
+image:../media/management_station_inst-hw-ef600_g60b3.png[""]
+ a| 
+管理軟體支援的瀏覽器：
+
+** Google Chrome（78版及更新版本）
+** Microsoft Internet Explorer（11版及更新版本）
+** Microsoft Edge（88及更新版本）
+** Mozilla Firefox（70版及更新版本）
+** Safari（12版及更新版本）
+
+
+|===
+

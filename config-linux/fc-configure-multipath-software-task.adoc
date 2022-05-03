@@ -1,0 +1,91 @@
+---
+permalink: config-linux/fc-configure-multipath-software-task.html 
+sidebar: sidebar 
+keywords: multipath software for Linux, express linux configuration, software configuration, linux host, 
+summary: 設定多重路徑軟體、以便在其中一個實體路徑中斷時、提供通往儲存陣列的備援路徑。 
+---
+= 設定多重路徑軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要提供儲存陣列的備援路徑、您可以設定多重路徑軟體。
+
+您必須在系統上安裝所需的套件。
+
+* 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝。
+* 對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝。
+
+
+如果您尚未安裝作業系統、請使用作業系統廠商提供的媒體。
+
+多重路徑軟體可在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。多重路徑軟體為作業系統提供單一虛擬裝置、代表儲存設備的作用中實體路徑。多重路徑軟體也會管理更新虛擬裝置的容錯移轉程序。
+
+您可以使用裝置對應器的多重路徑（DM-MP）工具進行Linux安裝。根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。
+
+.步驟
+. 如果尚未建立多重路徑.conf檔案、請執行「# Touch /etc/multipath.conf」命令。
+. 使用預設的多重路徑設定、將多重路徑.conf檔案保留空白。
+. 啟動多重路徑服務。
++
+[listing]
+----
+# systemctl start multipathd
+----
+. 執行「uname -r」命令來儲存核心版本。
++
+[listing]
+----
+# uname -r
+3.10.0-327.el7.x86_64
+----
++
+當您將磁碟區指派給主機時、將會使用此資訊。
+
+. 執行下列其中一項、以在開機時啟用多路徑精靈。
++
+|===
+| 如果您正在使用 | 執行此動作... 
+
+
+ a| 
+RHEL 7.x與8.x系統：
+ a| 
+「ystemctl enable multipathd」
+
+
+
+ a| 
+SLES 12.x和15.x系統：
+ a| 
+「ystemctl enable multipathd」
+
+|===
+. 在/boot目錄下重建「initramfs」映像或「initrd-」映像：
++
+|===
+| 如果您正在使用 | 執行此動作... 
+
+
+ a| 
+RHEL 7.x與8.x系統：
+ a| 
+"Dracut --force --add multipath"
+
+
+
+ a| 
+SLES 12.x和15.x系統：
+ a| 
+"Dracut --force --add multipath"
+
+|===
+. 確保在引導配置文件中選擇了新創建的/boot/initrlas-*映像或/boot/initrd-*映像。
++
+例如、grub是指「/boot/grub / menu.lst」、而grub2則是「/boot/grub2/menu.cfg'」。
+
+. 使用線上說明中的「手動建立主機」程序、檢查是否已定義主機。如果您啟用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.10或更新版本）*、如果您停用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.9或更新版本）*。如有必要、請將選取的主機類型變更為適當的設定。
+. 重新啟動主機。
+

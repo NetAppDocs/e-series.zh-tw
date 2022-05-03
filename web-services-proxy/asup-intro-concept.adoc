@@ -1,0 +1,170 @@
+---
+permalink: web-services-proxy/asup-intro-concept.html 
+sidebar: sidebar 
+keywords: ASUP configuration Web Services, AutoSupport Web Services Proxy, WSP ASUP config 
+summary: 您可以設定AutoSupport 收集資料的功能（ASUP）、然後自動將資料傳送給技術支援部門、以進行遠端疑難排解和問題分析。 
+---
+= 使用Web服務Proxy管理AutoSupport
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定AutoSupport 收集資料的功能（ASUP）、然後自動將資料傳送給技術支援部門、以進行遠端疑難排解和問題分析。
+
+
+
+== 概述（ASUP）AutoSupport
+
+此功能會根據手動和排程型條件、自動將訊息傳輸至NetApp。AutoSupport
+
+每AutoSupport 個VMware資訊都是記錄檔、組態資料、狀態資料和效能指標的集合。根據預設AutoSupport 、每週將下表所列的檔案傳輸給NetApp支援團隊一次。
+
+|===
+| 檔案名稱 | 說明 
+
+
+ a| 
+x-headers-data.txt
+ a| 
+包含X-header資訊的.txt檔案。
+
+
+
+ a| 
+manifest.xml
+ a| 
+詳述訊息內容的.xml檔案。
+
+
+
+ a| 
+arraydata.xml
+ a| 
+包含用戶端持續資料清單的.xml檔案。
+
+
+
+ a| 
+appserver-config.txt
+ a| 
+包含應用程式伺服器組態資料的.txt檔案。
+
+
+
+ a| 
+wsconfig.txt
+ a| 
+包含Web服務組態資料的.txt檔案。
+
+
+
+ a| 
+host-info.txt
+ a| 
+包含主機環境相關資訊的.txt檔案。
+
+
+
+ a| 
+Server-logs.7z
+ a| 
+包含每個可用Web伺服器記錄檔的.7z檔案。
+
+
+
+ a| 
+client-info.txt
+ a| 
+含有任意金鑰/值配對的.txt檔案、適用於特定應用程式的計數器、例如方法和網頁點閱。
+
+
+
+ a| 
+WebService-profile.json
+ a| 
+這些檔案包含Webservices設定檔資料、以及球衣監控統計資料。根據預設、會啟用澤西島監控統計資料。您可以在wsconfig.xml檔案中啟用和停用這些功能、如下所示：
+
+* 啟用：「<env key="enable.jersect.edics">true（真）」）
+* 停用：「<env key="enable.jersect.edics">false」
+
+
+|===
+
+
+== 設定AutoSupport 功能
+
+根據預設、安裝時會啟用此功能；不過、您可以變更該設定或修改交付類型。AutoSupport
+
+
+
+=== 啟用或停用AutoSupport 功能
+
+在初始安裝Web Services Proxy時、會啟用或停用此功能、但您可以在ASUPConfig檔案中變更該設定。AutoSupport
+
+您可以AutoSupport 透過ASUPConfig.xml檔案啟用或停用功能、如下列步驟所述。或者、您也可以使用*組態*和* POST / asup *透過API啟用或停用此功能、然後輸入「true」或「假」。
+
+. 在工作目錄中開啟ASUPConfig.xml檔案。
+. 找到"<asupdata enabled=""（布林）" timestamp=>"的行
+. 輸入「true」（啟用）或「false」（停用）。例如：
++
+[listing]
+----
+<asupdata enabled="false" timestamp="0">
+----
++
+
+NOTE: 時間戳記項目是多餘的。
+
+. 儲存檔案。
+
+
+
+
+=== 設定AutoSupport 供應功能
+
+您可以設定AutoSupport 使用HTTPS、HTTP或SMTP傳輸方法的功能。HTTPS是預設的傳送方法。
+
+. 存取工作目錄中的ASUPConfig.xml檔案。
+. 在字串中、按下表所述輸入1、2或3、「<交付 類型="n">」：
++
+|===
+| 價值 | 說明 
+
+
+ a| 
+1.
+ a| 
+* HTTPS *（預設）
+
+<交付 類型="1">
+
+
+
+ a| 
+2.
+ a| 
+* HTTP *
+
+<交付 類型="2">
+
+
+
+ a| 
+3.
+ a| 
+* SMTP*-若要正確設定AutoSupport 將「不確定」傳送類型設定為SMTP,您必須加入以下範例所示的SMTP郵件伺服器位址以及寄件者和收件者使用者電子郵件：
+
+[listing]
+----
+<delivery type="3">
+<smtp>
+<mailserver>smtp.example.com</mailserver>
+<sender>user@example.com</sender>
+<replyto>user@example.com</replyto>
+</smtp>
+</delivery>
+----
+|===
+

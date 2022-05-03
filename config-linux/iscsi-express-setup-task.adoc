@@ -1,0 +1,12 @@
+---
+permalink: config-linux/iscsi-express-setup-task.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= iSCSI Express設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+

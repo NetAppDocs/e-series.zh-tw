@@ -1,0 +1,70 @@
+---
+permalink: maintenance-e2800/hics-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: E2800 replace HIC, E2800 replace host interface card, replacing E2800 HIC, E2800 replace HIC, adding E2800 HIC, upgrading E2800 HIC, E2800, E-Series, eseries 
+summary: 檢閱E2800 HIC更換要求。 
+---
+= E2800 HIC更換要求
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在E2800中新增、升級或更換主機介面卡（HIC）之前、請先檢閱相關要求與考量。
+
+
+
+== 程序總覽
+
+更換HIC的步驟取決於您是否有一或兩個控制器、如下所示：
+
+|===
+| 如果您的儲存陣列... | 您必須... 
+
+
+ a| 
+一個控制器（E2812或E2824單工）
+ a| 
+. 停止主機I/O作業
+. 關閉控制器磁碟櫃的電源
+. 移除控制器容器
+. 更換電池
+. 更換控制器容器
+. 為控制器機櫃供電
+
+
+
+
+ a| 
+兩個控制器（E2860、E2812或E2824雙工）
+ a| 
+. 使控制器離線
+. 移除控制器容器
+. 更換電池
+. 更換控制器容器
+. 使控制器上線
+
+
+|===
+
+
+== 新增、升級或更換HIC的需求
+
+如果您打算新增、升級或更換主機介面卡（HIC）、請謹記下列需求。
+
+* 您已排定此程序的停機維護時間。安裝HIC時必須關閉電源、因此在成功完成此程序之前、您無法存取儲存陣列上的資料。（在雙工組態中、這是因為兩個控制器在開機時必須具有相同的HIC組態。）
+* 您有一或兩個HIC、視儲存陣列中是否有一個或兩個控制器而定。HIC必須與您的控制器相容。
++
+如果您有雙工組態（兩個控制器）、則安裝在兩個控制器容器中的HIC必須相同。如果出現不相符的HIC、則當您將更換的HIC上線時、控制器會鎖定。
+
+* 連接新主機連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。
++
+如需相容硬體的相關資訊、請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"^]。
+
+* 您有一個ESD腕帶、或是已採取其他防靜電預防措施。
+* 您有1號十字螺絲起子。
+* 您有標籤可識別連接至控制器容器的每條纜線。
+* 您有一個管理站、其中有一個瀏覽器可以存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
+

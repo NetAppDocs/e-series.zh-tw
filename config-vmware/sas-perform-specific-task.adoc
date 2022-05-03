@@ -1,0 +1,116 @@
+---
+permalink: config-vmware/sas-perform-specific-task.html 
+sidebar: sidebar 
+keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。 
+---
+= 執行SAS專屬的工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。
+
+
+
+== 步驟1：判斷SAS主機識別碼—VMware
+
+使用HBA公用程式尋找SAS位址、然後使用HBA BIOS進行適當的組態設定。
+
+檢閱HBA公用程式的準則：
+
+* 大多數HBA廠商都提供HBA公用程式。
+* 如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。
+
+
+.步驟
+. 從HBA廠商的網站下載HBA公用程式。
+. 安裝公用程式。
+. 使用HBA BIOS為您的組態選取適當的設定。
++
+如需適當的設定、請參閱的「附註」欄 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得建議。
+
+
+
+
+
+== 步驟2：記錄您的組態
+
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄您的傳輸協定專屬儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+image::../media/sas_topology_diagram_conf-vmw.gif[圖：SAS拓撲]
+
+
+
+==== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | SAS位址 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+連接至控制器A連接埠1的主機（啟動器）連接埠1
+ a| 
+
+
+
+ a| 
+3.
+ a| 
+主機（啟動器）連接埠1連接至控制器B、連接埠1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+連接至控制器A連接埠1的主機（啟動器）連接埠2
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+主機（啟動器）連接埠2連接至控制器B、連接埠1
+ a| 
+
+|===
+
+
+==== 目標識別碼
+
+建議的組態包含兩個目標連接埠。
+
+
+
+==== 對應主機名稱
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

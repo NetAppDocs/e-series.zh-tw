@@ -1,0 +1,257 @@
+---
+permalink: cloud-connector/install-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector installation, install Cloud Connector 
+summary: 僅適用於RedHat和SUSE Linux平台的《支援解決方案SANtricity 》（.bin檔案）。 
+---
+= 安裝SANtricity NetApp Cloud Connector
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+僅適用於RedHat和SUSE Linux平台的《支援解決方案SANtricity 》（.bin檔案）。
+
+您可以SANtricity 透過圖形模式或主控台模式、在相容的Linux作業系統上安裝《支援不支援的Cloud Connector應用程式」。在安裝過程中、您必須指定SANtricity 非SSL和SSL連接埠號碼、以供使用。安裝SANtricity 時、將以監控程序的形式執行。
+
+請檢閱下列附註：
+
+* 如果SANtricity 將「支援服務Proxy」安裝在SANtricity 與「支援服務解決方案」相同的伺服器上、非SSL連接埠號碼與SSL連接埠號碼之間就會發生衝突。在這種情況下、請針對SANtricity 非SSL連接埠和SSL連接埠、在安裝過程中選擇適當的編號。
+* 如果您的主機發生任何硬體變更、請重新安裝SANtricity 此應用程式、以確保加密一致性。
+* 透過SANtricity 版本3.1建立的NetApp Cloud Connector應用程式備份、與SANtricity 版本4.0的版更新版不相容。如果您想要保留這些備份、您必須繼續使用先前版本SANtricity 的還原Cloud Connector。為確保SANtricity 成功安裝個別3.1版和4.0版的《EstresCloud Connector》、必須為每個應用程式版本指派唯一的連接埠號碼。
+
+
+
+
+== 安裝裝置對應表多重路徑（DM-MP）
+
+執行SANtricity VMware Cloud Connector的任何主機也必須執行Linux Device對應器多重路徑（DM-MP）、並安裝多重路徑工具套件。
+
+利用此功能、即可探索及辨識要備份或還原的磁碟區和檔案、而此解決方案仰賴多重路徑工具套件。SANtricity如需如何設定及設定Device對應表的詳細資訊、請參閱《_ SANtricity 關於您SANtricity 在中使用的發行版的_》《_》《儲存管理員多重路徑驅動程式指南》 https://mysupport.netapp.com/info/web/ECMP1658252.html["E系列和SANtricity 不完整的文件資源"^]。
+
+
+
+== 安裝Cloud Connector
+
+您可以SANtricity 在Linux作業系統上以圖形模式或主控台模式安裝支援Cloud Connector。
+
+
+
+=== 圖形模式
+
+您可以使用圖形模式、在SANtricity Linux作業系統上安裝支援不支援的Cloud Connector。
+
+指定SANtricity 安裝支援此解決方案的主機位置。
+
+.步驟
+. 下載SANtricity 《支援不受限的解決方案》安裝檔案至所需的主機位置。
+. 開啟終端機視窗。
+. 導覽至包含SANtricity 「解決方案」安裝檔案的目錄檔案。
+. 開始SANtricity 安裝過程：
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i gui
+----
++
+在此命令中、「XXXX」代表應用程式的版本編號。
+
++
+隨即顯示Installer（安裝程序）窗口。
+
+. 檢閱簡介聲明、然後按一下*下一步*。
++
+NetApp、Inc.軟體授權合約會顯示在安裝程式視窗中。
+
+. 接受授權合約條款、然後按「*下一步*」。
++
+此時會顯示以SANtricity 先前版本的《不適用的Cloud Connector》（英文）頁面所建立的備份。
+
+. 若要確認SANtricity 先前版本的《SURITCloud Connector》訊息所建立的備份、請按一下*「Next*（下一步*）」。
++
+
+NOTE: 若要安裝SANtricity 版本4.0的《ECloud Connector》、同時維持舊版、則必須為每個應用程式版本指派唯一的連接埠號碼。
+
++
+「選擇安裝」頁面會顯示在「安裝程式」視窗中。「您要安裝的位置」欄位會顯示下列預設安裝資料夾：「opt/netapp/SANtricity _Cloud _connector4/」
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設位置、請按一下*下一步*。
+** 若要變更預設位置、請輸入新的資料夾位置。隨即顯示Enter the Non-SSL Jetty Port Number（輸入非SSL端口號）頁面。預設值8080會指派給非SSL連接埠。
+
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設的SSL連接埠號碼、請按一下*下一步*。
+** 若要變更預設SSL連接埠號碼、請輸入新的所需連接埠號碼值。
+
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設的非SSL連接埠號碼、請按一下*下一步*。
+** 若要變更預設的非SSL連接埠號碼、請輸入新的所需連接埠號碼值。隨即顯示「安裝前摘要」頁面。
+
+
+. 檢閱顯示的「安裝前摘要」、然後按一下「*安裝*」。
++
+安裝完這個解決方案後、就會開始安裝SANtricity 這個解決方案、並顯示Webserver Daema Setup提示字元。
+
+. 按一下「*確定*」以確認Webserver精靈設定提示。
++
+此時會顯示Installation Complete（安裝完成）訊息。
+
+. 按一下「*完成*」結束SANtricity 「不適用的Cloud connecter安裝程式」。
+
+
+
+
+=== 主控台模式
+
+您可以使用主控台模式、在SANtricity Linux作業系統上安裝《支援不支援不支援的Cloud Connector」。
+
+指定SANtricity 安裝支援此解決方案的主機位置。
+
+.步驟
+. 下載SANtricity 《支援不支援的Cloud Connector安裝檔案》至所需的IO主機位置。
+. 開啟終端機視窗。
+. 導覽至包含SANtricity 「解決方案」安裝檔案的目錄檔案。
+. 開始SANtricity 安裝過程：
++
+[listing]
+----
+./cloudconnector-xxxx.bin –i console
+----
++
+在此命令中、「XXXX」表示應用程式的版本編號。
+
++
+已初始化安裝過程、以利SANtricity 執行安裝。
+
+. 按* Enter鍵*繼續安裝程序。
++
+NetApp、Inc.軟體的終端使用者授權合約會顯示在安裝程式視窗中。
+
++
+
+NOTE: 若要隨時取消安裝程序、請在安裝程式視窗下輸入「quit」。
+
+. 請按* Enter *鍵、繼續執行「使用者授權合約」的每個部分。
++
+授權合約驗收聲明會顯示在安裝程式視窗下方。
+
+. 若要接受終端使用者授權合約條款、並繼續安裝SANtricity 不完整的解決方案、請輸入「Y」、然後在安裝程式視窗下按* Enter鍵。
++
+此時會顯示以SANtricity 先前版本的《不適用的Cloud Connector》（英文）頁面所建立的備份。
+
++
+
+NOTE: 如果您不接受終端使用者協議的條款、請輸入「N」、然後按* Enter *終止SANtricity 適用於此解決方案的安裝程序。
+
+. 若要確認SANtricity 先前版本的《不適用不適用的問題》訊息所建立的備份、請按* Enter *。
++
+
+NOTE: 若要安裝SANtricity 版本4.0的《ECloud Connector》、同時維持舊版、則必須為每個應用程式版本指派唯一的連接埠號碼。
+
++
+畫面上會顯示一則選擇安裝資料夾訊息、其中包含SANtricity 下列適用於VMware Cloud Connector的預設安裝資料夾：「/opt /netapp/SANtricity雲端_connector4/`」。
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設安裝位置、請按* Enter *。
+** 若要變更預設安裝位置、請輸入新的資料夾位置。隨即顯示Enter the Non-SSL Jetty's Port Number訊息。預設值8080會指派給非SSL連接埠。
+
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設的SSL連接埠號碼、請按*「下一步」*。
+** 若要變更預設SSL連接埠號碼、請輸入新的所需連接埠號碼值。
+
+
+. 請選擇下列其中一個選項：
++
+** 若要接受預設的非SSL連接埠號碼、請按* Enter *。
+** 若要變更預設的非SSL連接埠號碼、請輸入新的連接埠號碼值。隨即顯示《安裝前摘要SANtricity 》、以供參閱。
+
+
+. 檢閱顯示的安裝前摘要、然後按* Enter *。
+. 按* Enter鍵*確認Webserver Daem服 器設定提示。
++
+此時會顯示Installation Complete（安裝完成）訊息。
+
+. 按* Enter *退出SANtricity 《Sof the Sof the》（英文）的「Cloud connecter」安裝程式。
+
+
+
+
+== 將伺服器憑證和CA憑證新增至Keystore
+
+若要從瀏覽器使用安全的https連線至SANtricity 支援不中斷的Cloud Connector主機、您可以接受SANtricity 來自支援不中斷的Cloud Connector主機的自我簽署憑證、或是新增瀏覽器和SANtricity 支援不中斷的Cloud Connector應用程式所識別的憑證和信任鏈。
+
+必須在主機上安裝此解決方案SANtricity 。
+
+.步驟
+. 使用「stystemctl」命令停止服務。
+. 從預設安裝位置存取工作目錄。
++
+
+NOTE: 不適用於SANtricity 此功能的預設安裝位置為：「/opt/netapp/SANtricity _Cloud _connector4」。
+
+. 使用「keytool]命令建立伺服器憑證和憑證簽署要求（CSR）。
++
+*範例*
+
++
+[listing]
+----
+keytool -genkey -dname "CN=host.example.com, OU=Engineering, O=Company, L=<CITY>, S=<STATE>, C=<COUNTRY>" -alias cloudconnect -keyalg "RSA" -sigalg SHA256withRSA -keysize 2048 -validity 365 -keystore keystore_cloudconnect.jks -storepass changeit
+keytool -certreq -alias cloudconnect -keystore keystore_cloudconnect.jks -storepass changeit -file cloudconnect.csr
+----
+. 將產生的CSR傳送至您選擇的憑證授權單位（CA）。
++
+憑證授權單位會簽署憑證要求、並傳回已簽署的憑證。此外、您還會收到CA本身的憑證。此CA憑證必須匯入至您的Keystore。
+
+. 將憑證和CA憑證鏈結匯入應用程式Keystore：「/<安裝路徑>/加上 工作/ Keystore」
++
+*範例*
+
++
+[listing]
+----
+keytool -import -alias ca-root -file root-ca.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -alias ca-issuing-1 -file issuing-ca-1.cer -keystore keystore_cloudconnect.jks -storepass <password> -noprompt
+keytool -import -trustcacerts -alias cloudconnect -file certnew.cer -keystore keystore_cloudconnect.jks -storepass <password>
+----
+. 重新啟動服務。
+
+
+
+
+== 將StorageGRID 驗證憑證新增至Keystore
+
+如果您要設定StorageGRID 以對象類型為SANtricity 目標類型的功能、則必須先將StorageGRID 此證書新增至SANtricity 《不景不景的雲端連接器密鑰庫中。
+
+.開始之前
+* 您擁有簽署StorageGRID 的不合格證書。
+* 您的SANtricity 主機上已安裝了這個解決方案。
+
+
+.步驟
+. 使用「stystemctl」命令停止服務。
+. 從預設安裝位置存取工作目錄。
++
+
+NOTE: 不適用於SANtricity 此功能的預設安裝位置為：「/opt/netapp/SANtricity _Cloud _connector4」。
+
+. 將StorageGRID 「物件」憑證匯入應用程式Keystore：「/<install Path>/工作日/Keystore」
++
+*範例*
+
++
+[listing]
+----
+opt/netapp/santricity_cloud_connector4/jre/bin/keytool -import -trustcacerts -storepass changeit -noprompt -alias StorageGrid_SSL -file /home/ictlabsg01.cer -keystore /opt/netapp/santricity_cloud_connector/jre/lib/security/cacerts
+----
+. 重新啟動服務。
+

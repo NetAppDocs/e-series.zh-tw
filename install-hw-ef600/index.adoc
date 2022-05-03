@@ -1,0 +1,27 @@
+---
+permalink: install-hw-ef600/index.html 
+sidebar: sidebar 
+keywords: EF300, EF600, installation 
+summary: 安裝並設定EF300和EF600陣列。 
+---
+= 安裝並設定EF300和EF600儲存系統
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+:pdfdir: ../pdf/
+
+
+[role="lead"]
+瞭解如何安裝及設定EF300或EF600儲存系統。
+
+您可以選擇下列其中一種格式、引導您完成新儲存系統的安裝與設定。
+
+* * PDF *
++
+這是 https://library.netapp.com/ecm/ecm_download_file/ECMLP2851449["PDF海報"^] 並提供其他內容的即時連結。
+
+* *線上指示*
++
+以下是本網站所述的線上安裝指示。從開始 xref:prepare-for-install-task.adoc[準備安裝] 開始使用。
+
+

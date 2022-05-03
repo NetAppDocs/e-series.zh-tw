@@ -1,0 +1,143 @@
+---
+permalink: config-linux/nvme-ib-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。 
+---
+= 從主機探索並連線至儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。
+
+.步驟
+. 使用下列命令探索所有路徑的NVMe目標子系統：
++
+[listing]
+----
+nvme discover -t rdma -a target_ip_address
+----
++
+在此命令中、「target ip_address'」是目標連接埠的IP位址。
+
++
+
+NOTE: 無論主機存取為何、「NVMe探索」命令都會探索子系統中的所有控制器連接埠。
+
++
+[listing]
+----
+# nvme discover  -t rdma -a 10.10.10.100
+ Discovery Log Number of Records 2, Generation counter 0
+ =====Discovery Log Entry 0======
+ trtype:  rdma
+ adrfam:  ipv4
+ subtype: nvme subsystem
+ treq:    not specified
+ portid:  0
+ trsvcid: 4420
+ subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
+ traddr: 10.10.10.100
+ rdma_prtype: infiniband
+ rdma_qptype: connected
+ rdma_cms:    rdma-cm
+ rdma_pkey: 0x0000
+=====Discovery Log Entry 1======
+ trtype:  rdma
+ adrfam:  ipv4
+ subtype: nvme subsystem
+ treq:    not specified
+ portid:  1
+ trsvcid: 4420
+ subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
+ traddr: 11.11.11.100
+ rdma_prtype: infiniband
+ rdma_qptype: connected
+ rdma_cms:    rdma-cm
+ rdma_pkey: 0x0000
+----
+. 對任何其他連線重複步驟1。
+. 使用命令「NVMe CONNECT -t RDMA -n Disclided_sub nqn -A target ip_address-Q queue_depth_setting -l控制器損失超時期間」連線至第一條路徑上探索到的子系統
++
+
+NOTE: 重新開機後、上述命令不會持續執行。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。
+
++
+
+NOTE: NVMe連線不會透過系統重新開機或長時間無法使用控制器而持續存在。
+
++
+
+NOTE: 不會針對主機無法存取的任何探索到的連接埠建立連線。
+
++
+
+NOTE: 如果您使用此命令指定連接埠號碼、連線將會失敗。預設連接埠是唯一設定用於連線的連接埠。
+
++
+
+NOTE: 建議的佇列深度設定為1024。使用'-Q 101010"'命令列選項、將預設設定128設為1024、如下例所示。
+
++
+
+NOTE: 建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3、600秒）。使用「-l 3600'命令列選項、以3、600秒取代預設的600秒設定、如下列範例所示：
+
++
+[listing]
+----
+# nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+----
+. 使用「NVMe清單」命令查看目前連線的NVMe裝置清單。在以下範例中、它是「nvme0n1」。
++
+[listing]
+----
+ # nvme list
+
+ Node          SN            Model             Namespace
+ -------------------------------------------------------
+ /dev/nvme0n1  021648023161  NetApp E-Series      1
+----
++
+[listing]
+----
+Usage                 Format           FW Rev
+--------------------------------------------------------------
+5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
+----
+. 連接到第二個路徑上探索到的子系統：
++
+[listing]
+----
+  # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+----
+. 使用Linux的「lsblk（lsblk）”和「grep（grep））指令、顯示每個區塊裝置的其他相關資訊：
++
+[listing]
+----
+ # lsblk | grep nvme
+
+ nvme0n1    259:0    0     5G  0 disk
+ nvme1n1    259:0    0     5G  0 disk
+----
+. 使用「NVMe清單」命令查看目前連線的NVMe裝置新清單。以下是"nvme0n1"和"nvme0n1"。
++
+[listing]
+----
+ # nvme list
+ Node          SN            Model                   Namespace
+ -------------------------------------------------------------
+ /dev/nvme0n1  021648023161  NetApp E-Series          1
+ /dev/nvme1n1  021648023161  NetApp E-Series          1
+----
++
+[listing]
+----
+Usage                 Format           FW Rev
+--------------------------------------------------------------
+5.37 GB /5.37 GB          512 B + 0 B      0842XXXX
+5.37 GB /5.37 GB          512 B + 0 B      0842XXXX
+----
+

@@ -1,0 +1,25 @@
+---
+permalink: install-hw-cabling/power-cable-task.html 
+sidebar: sidebar 
+keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
+summary: 將每個元件的電源供應器連接至獨立的電源電路。 
+---
+= 電源線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須將每個元件的電源供應器連接至獨立的電源電路。
+
+.開始之前
+* 您已確認您所在的位置提供必要的電力。
+* 兩個機櫃電源供應器上的兩個電源開關必須關閉。
+
+
+儲存系統的電源必須能夠滿足新磁碟機櫃的電源需求。如需儲存系統耗電量的相關資訊、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
+
+.步驟
+. 將每個機櫃的兩條電源線連接至機櫃或機架中的不同電力分配單元（PDU）。
+

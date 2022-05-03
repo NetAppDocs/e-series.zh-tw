@@ -1,0 +1,107 @@
+---
+permalink: install-hw-cabinet/cabinet-gather-tools-equipment-task.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600 
+summary: 安裝3040 40U機櫃之前、請先收集所需的工具和設備。 
+---
+= 收集所需的工具和設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝3040 40U機櫃之前、請先確定您擁有所需的工具和設備。
+
+.步驟
+. 收集下表所列的所有項目。
++
+|===
+|  | 項目 | 隨附於機櫃 
+
+
+ a| 
+image:../media/83009_02.gif[""]
+ a| 
+* 3/4-in。扳手*（隨附於運送箱中）-用於升高及降低機櫃下方的水平墊腳。
+
+* 1/4英寸內六角扳手*-用於升高和降低機櫃正面的穩定支腳。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+*《美國國家電機製造與製造》（NMAL6-30
+
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
+ a| 
+* AC電源線*-將機櫃連接至外部電源（牆上插座）。
+
+** 美國和加拿大均可使用NEMAL6-30連接器。
+** IEC-60309接頭適用於全球、美國和加拿大除外。
+
+
+
+NOTE: 每個PDU都必須連接至獨立的電源。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+** IEC-60309**
+
+image:../media/73122_01_dwg_iec_60309_power_cord.gif[""]
+
+
+
+ a| 
+image:../media/78038_21.png[""]
+ a| 
+** SAS纜線*（選購）：每個磁碟機匣隨附兩條纜線、主機端纜線則需另行購買。
+
+**通訊纜線（選購）：將匣連接至主機。
+
+如需其他必要項目、請參閱適當的控制器磁碟機匣安裝指南。
+ a| 
+
+
+
+ a| 
+image:../media/77038_06.gif[""]
+ a| 
+*可安裝纜線軸*：安裝於垂直電源分配插座的兩側、以配合過度的纜線長度和纜線佈線。每個控制器磁碟機匣都隨附兩個纜線軸纜線軸也隨附獨立式磁碟機匣。
+ a| 
+image:../media/77037_11.gif[""]
+
+
+
+ a| 
+ a| 
+** Shears**–切割出貨箱上的金屬條帶。
+ a| 
+
+
+
+ a| 
+ a| 
+叉車型**（選用）：從貨櫃上取下機櫃。
+ a| 
+
+
+
+ a| 
+ a| 
+**前面板套件（可選）–用於覆蓋機箱正面的空托架。
+ a| 
+
+
+
+ a| 
+ a| 
+**防靜電袋*（選購）：保護機櫃安裝程序中移除的元件。
+ a| 
+
+|===
+

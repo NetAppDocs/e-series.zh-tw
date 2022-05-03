@@ -1,0 +1,26 @@
+---
+permalink: config-linux/fc-install-configure-host-utilities-task.html 
+sidebar: sidebar 
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, 
+summary: 使用FC時、請安裝Linux Unified Host Utilities。 
+---
+= 安裝及設定Linux Unified Host Utilities
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux Unified Host Utilities工具可協助您管理NetApp儲存設備、包括容錯移轉原則和實體路徑。
+
+.步驟
+. 使用 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 判斷要安裝的Unified Host Utilities版本。
++
+這些版本會列在每個支援組態的欄位中。
+
+. 請從下載Unified Host Utilities https://mysupport.netapp.com/site/["NetApp支援"^]。
++
+
+NOTE: 或者、SANtricity 您也可以使用SESYSMdevices公用程式來執行與Unified Host公用程式工具相同的功能。SMdevices公用 程式包含在SMutils套件中。SMutils套件是一組公用程式、用於驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。
+
+

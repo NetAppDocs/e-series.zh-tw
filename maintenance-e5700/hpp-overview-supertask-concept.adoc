@@ -1,0 +1,103 @@
+---
+permalink: maintenance-e5700/hpp-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: E5700 change host protocol, E5700 baseboard ports, convert E5700 protocol, IB protocol, Infiniband protocol, Fibre Channel protocol, FC protocol, iSCSI protocol, converting host port protocol, 
+summary: 轉換E5700的主機傳輸協定。 
+---
+= 變更E5700主機連接埠傳輸協定的需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在E5700中轉換主機連接埠傳輸協定之前、請先檢閱相關要求。
+
+下圖顯示E5700及其SFP+（光纖）基板主機連接埠*（1）*和選用的兩個IB HIC連接埠*（2）*。
+
+image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[e5700含2埠100g EDR InfiniBand hic、含標註]
+
+
+
+== 需求
+
+* 您必須為此程序排程停機維護時間。
+* 執行轉換時、您必須停止主機I/O作業、而且在成功完成轉換之前、您將無法存取儲存陣列上的資料。
+* 您必須使用頻外管理。（您無法使用頻內管理來完成此程序。）
+* 您已取得轉換所需的硬體。您的NetApp銷售代表可協助您判斷所需的硬體、並協助您訂購正確的零件。
+* 如果您嘗試變更儲存陣列的基板主機連接埠、而且它目前使用您向NetApp購買的雙傳輸協定（也稱為「_Unified _」）SFP收發器、則不需要變更SFP收發器。
+* 請確定雙傳輸協定SFP收發器同時支援FC（4 Gbps或16 Gbps）和iSCSI（10 Gbps）、但不支援1 Gbps iSCSI。請參閱 link:hpp-change-host-protocol-task.html["步驟1：判斷您是否有雙傳輸協定SFP"] 確定安裝的SFP收發器類型。
+
+
+
+
+== 變更主機傳輸協定的考量事項
+
+變更主機傳輸協定的考量取決於基板主機連接埠和HIC連接埠的啟動和結束傳輸協定。
+
+如果您使用鏡射功能或資料保證（DA）功能、則必須瞭解當您變更主機連接埠傳輸協定時、這些功能會發生什麼變化。
+
+
+NOTE: 下列考量僅適用於轉換已在使用中的儲存陣列時。如果您要轉換尚未定義主機和磁碟區的新儲存陣列、則不適用這些考量。
+
+
+
+=== 從FC轉換為iSCSI
+
+* 非同步鏡射需要本機儲存陣列和遠端儲存陣列使用相同的傳輸協定。
++
+** 如果您目前透過基板使用非同步鏡射、則必須先使用這些連接埠停用非同步鏡射關係、再套用功能套件。
+** 請參閱SANtricity 《支援for the線上支援》以刪除所有鏡射一致性群組、並從本機和遠端儲存陣列移除所有鏡射配對。此外、請遵循線上說明中的指示、停用非同步鏡像。
++
+
+NOTE: 如果您的組態包含連接至FC基板連接埠的SAN開機主機、請檢查 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 確保iSCSI支援組態的工具。如果不是、您就無法將主機傳輸協定轉換成iSCSI。
+
+
+
+* iSCSI不支援同步鏡射功能。
++
+** 如果您目前透過基板連接埠使用同步鏡射關係、則必須停用這些同步鏡射關係。
+** 請參閱SANtricity 《支援for the線上協助》以移除所有同步鏡射配對、這會移除本機儲存陣列和遠端儲存陣列上的鏡射關係。此外、請遵循線上說明中的指示、停用同步鏡射。
++
+
+CAUTION: 如果您在轉換至iSCSI之前未停用同步鏡射關係、系統將會遺失資料存取、而且可能會遺失資料。
+
+
+
+
+
+
+
+=== 從iSCSI轉換為FC
+
+* 非同步鏡射需要本機儲存陣列和遠端儲存陣列使用相同的傳輸協定。如果您目前使用的是採用底板連接埠的非同步鏡射、則必須先停用非同步鏡射、才能變更傳輸協定。
+* 請參閱SANtricity 《支援for the線上支援》以刪除所有鏡射一致性群組、並從本機和遠端儲存陣列移除所有鏡射配對。此外、請遵循線上說明中的指示、停用非同步鏡像。
+
+
+
+
+=== 將IB-iSER轉換為/從IB-SRP
+
+* 從iSER轉換為SRP時、您不需要對硬體進行任何變更。
+* SRP不支援資料保證（DA）功能。
+* IB-SRP不支援DA功能。如果您目前透過IB-HIC使用此功能、且想要將這些連接埠從iSER轉換成SRP、則必須在所有磁碟區上永久停用DA。請參閱SANtricity 《支援關於功能不全系統管理程式》的線上說明、變更磁碟區的設定、以永久停用資料保證設定。
++
+
+NOTE: 停用磁碟區之後、就無法重新啟用磁碟區上的DA。
+
+* 確認下列事項：
++
+** 可透過網頁瀏覽器存取《系統管理程式》。SANtricity
+** 儲存系統執行SANtricity 的是08.40.11.00版或更新版本的作業系統（控制器韌體）。
+
+
+
+
+
+
+=== 鏡射作業需要相同的主機傳輸協定
+
+如果用於鏡射的主機連接埠在套用功能套件後仍維持相同的傳輸協定、鏡射作業將不受影響。即使如此、在套用功能套件之前、您仍應確認所有鏡射一致性群組均已同步。套用功能套件之後、您應該測試本機儲存陣列與遠端儲存陣列之間的通訊。如果您對如何執行此操作有任何疑問、請參閱SANtricity 《支援系統》的線上說明。
+
+
+NOTE: NVMe over Fabric不支援非同步與同步鏡射。若要停用非同步和同步鏡射、您可以透過命令列介面使用「停用storageArray feature =asyncdMirror」或「停用storageArray feature =SyncMirror」命令。請參閱 http://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/GUID-0F156C94-C2A7-4458-A922-56439A098C09.html["停用儲存陣列功能"^] 有關如何停用鏡射的詳細資訊、請參閱CLI命令參考線上說明下的鏡射命令。

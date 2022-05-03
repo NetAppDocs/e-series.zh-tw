@@ -1,0 +1,100 @@
+---
+permalink: install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html 
+sidebar: sidebar 
+keywords: E2800, E5700, connect power cables 
+summary: 連接電源線並開啟磁碟機櫃的電源。 
+---
+= 連接纜線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何連接電源纜線、並在磁碟機櫃上開啟電源。
+
+.開始之前
+* 安裝硬體。
+* 採取防靜態預防措施。
+
+
+此程序適用於IOM12和IOM12B磁碟機櫃。
+
+
+NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）
+
+.步驟
+. 連接磁碟櫃。
++
+根據您的組態來連接系統纜線。如果您需要的纜線選項比所示範例更多、請參閱 link:../install-hw-cabling/index.html["纜線"]。
+
++
+如需所示範例、您需要下列纜線：
+
++
+|===
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+* SAS纜線*
+
+|===
++
+image:../media/example_a_28_57.png[""]
+
++
+.. 將控制器A纜線連接至第一個磁碟機櫃的IOM A。
+.. 將第一個磁碟機櫃的IOM A纜線連接至第二個磁碟機櫃的IOM A。
+.. 將第二個磁碟機櫃的IOM A纜線連接至第三個磁碟機櫃的IOM A。
+.. 將控制器B纜線連接至第三個磁碟機櫃的IOM B。
+.. 將第二個磁碟機櫃的IOM B纜線連接至第三個磁碟機櫃的IOM B。
+.. 將第一個磁碟機櫃的IOM B纜線連接至第二個磁碟機櫃的IOM B。
+
+
++
+image:../media/example_b_57_28.png[""]
+
++
+.. 纜線控制器A至IOM A
+.. 纜線控制器B至IOM B
+
+
+. 為磁碟機櫃供電。
++
+您需要下列纜線：
+
++
+|===
+
+
+ a| 
+image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+ a| 
+*電源線*
+
+|===
++
+
+CAUTION: 確認磁碟機櫃電源開關已關閉。
+
++
+.. 將每個機櫃的兩條電源線連接至機櫃或機架中的不同電力分配單元（PDU）。
+.. 如果您有磁碟機櫃、請先開啟兩個電源開關。請先等待2分鐘、再為控制器機櫃供電。
+.. 開啟控制器機櫃上的兩個電源開關。
+.. 檢查每個控制器上的LED和七段顯示。
++
+在開機期間、七段顯示器會顯示重複的OS順序（SD）空白、表示控制器正在執行一天開始的處理。控制器開機後、會顯示機櫃ID。
+
+
+
++
+|===
+
+
+ a| 
+*範例：電源連線位於機櫃後方。*image:../media/trafford_power.png[""]
+
+|===
+

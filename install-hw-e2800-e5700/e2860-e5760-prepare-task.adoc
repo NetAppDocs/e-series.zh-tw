@@ -1,0 +1,141 @@
+---
+permalink: install-hw-e2800-e5700/e2860-e5760-prepare-task.html 
+sidebar: sidebar 
+keywords: E2860, E5760, DE460, installation 
+summary: 若要安裝E2860、E5760或DE460、請建立帳戶並註冊硬體。 
+---
+= 準備安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+瞭解如何準備安裝E2860、E5760或DE460系列儲存系統。
+
+.步驟
+. 建立帳戶並在註冊硬體 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 確認您收到的包裝盒中有下列項目。
++
+|===
+
+
+ a| 
+image:../media/trafford_overview.png[""]
+ a| 
+機櫃、擋板和機架安裝硬體
+
+
+
+ a| 
+image:../media/handles_counted.png[""]
+ a| 
+機櫃處理x4
+
+|===
++
+下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中、請參閱 https://hwu.netapp.com/["Hardware Universe"^] 找出纜線並識別其用途。
+
++
+|===
+| 連接器類型 | 纜線類型 | 使用 
+
+
+ a| 
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+ a| 
+乙太網路纜線
+
+（如有訂購）
+ a| 
+管理連線
+
+
+
+ a| 
+image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+ a| 
+I/O纜線
+
+（如有訂購）
+ a| 
+資料主機佈線
+
+
+
+ a| 
+image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+ a| 
+電源線
+
+每個機櫃的X2
+
+（如有訂購）
+ a| 
+開啟儲存系統電源
+
+
+
+ a| 
+image:../media/sas_cable.png[""]
+ a| 
+SAS纜線（僅隨磁碟機櫃提供）
+ a| 
+機櫃佈線
+
+|===
+. 請務必提供下列項目。
++
+|===
+
+
+ a| 
+image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+ a| 
+2號十字螺絲起子
+
+
+
+ a| 
+image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+ a| 
+手電筒
+
+
+
+ a| 
+image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+ a| 
+防靜電繫帶
+
+
+
+ a| 
+image:../media/4u_dummy.png[""]
+ a| 
+4U機架空間：標準19吋（48.30公分）機架、適合下列尺寸的4U機櫃。
+
+*深度*：38.25英英寸（97.16公分）
+
+*寬度*：17.66英吋（44.86公分）
+
+*高度*：6.87吋（17.46公分）
+
+*最大重量*：250磅（113公斤）
+
+
+
+ a| 
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+ a| 
+管理軟體支援的瀏覽器：
+
+** Google Chrome（47版及更新版本）
+** Microsoft Internet Explorer（11版及更新版本）
+** Microsoft Edge（EdgeHTML 12及更新版本）
+** Mozilla Firefox（版本31及更新版本）
+** Safari（9版及更新版本）
+
+
+|===
+

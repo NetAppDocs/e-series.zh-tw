@@ -1,0 +1,131 @@
+---
+permalink: config-linux/nvme-fc-worksheet-concept.html 
+sidebar: sidebar 
+keywords: NVMe over FC worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 請使用這份工作表單來記錄NVMe over Fibre Channel儲存組態資訊。 
+---
+= 記錄您的NVMe over FC組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生並列印本頁的PDF、然後使用下列工作表記錄NVMe over Fibre Channel儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+
+
+== 直接連線拓撲
+
+在直接連線拓撲中、一或多部主機會直接連線至控制器。
+
+image::../media/nvme_fc_direct_topology.png[NVMe光纖通道直接拓撲]
+
+* 主機1 HBA連接埠1和控制器A主機連接埠1
+* 主機1 HBA連接埠2和控制器B主機連接埠1
+* 主機2 HBA連接埠1和控制器A主機連接埠2
+* 主機2 HBA連接埠2和控制器B主機連接埠2
+* 主機3 HBA連接埠1和控制器A主機連接埠3
+* 主機3 HBA連接埠2和控制器B主機連接埠3
+* 主機4 HBA連接埠1和控制器A主機連接埠4
+* 主機4 HBA連接埠2和控制器B主機連接埠4
+
+
+
+
+== 交換器連線拓撲
+
+在網路拓撲中、會使用一或多個交換器。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得支援的交換器清單。
+
+image::../media/nvme_fc_fabric_topology.png[NVMe光纖網路拓撲]
+
+
+
+== 主機識別碼
+
+從每個主機找出並記錄啟動器NQN。
+
+|===
+| 主機連接埠連線 | 主機NQN 
+
+
+ a| 
+主機（啟動器）1.
+ a| 
+
+
+
+ a| 
+主機（啟動器）2.
+ a| 
+
+|===
+
+
+== 目標NQN
+
+記錄儲存陣列的目標NQN。
+
+|===
+| 陣列名稱 | 目標NQN 
+
+
+ a| 
+陣列控制器（目標）
+ a| 
+
+|===
+
+
+== 目標NQN
+
+記錄陣列連接埠要使用的NQN。
+
+|===
+| 陣列控制器（目標）連接埠連線 | NQN 
+
+
+ a| 
+控制器A、連接埠1
+ a| 
+
+
+
+ a| 
+控制器B、連接埠1
+ a| 
+
+
+
+ a| 
+控制器A、連接埠2
+ a| 
+
+
+
+ a| 
+控制器B、連接埠2
+ a| 
+
+|===
+
+
+== 對應主機名稱
+
+
+NOTE: 對應主機名稱會在工作流程期間建立。
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

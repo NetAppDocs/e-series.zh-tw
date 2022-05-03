@@ -1,0 +1,14 @@
+---
+permalink: maintenance-ef600/concept-dimms-wombat.html 
+sidebar: sidebar 
+keywords: replace, dimm, memory, mismatch, fail 
+summary: 如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM。 
+---
+= DIMM
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM。

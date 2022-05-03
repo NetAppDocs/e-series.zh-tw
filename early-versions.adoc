@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: early-versions.html 
+keywords: early versions, e-series, hardware, santricity, os 
+summary: 較早版本的文件 
+---
+= 舊版
+:allow-uri-read: 
+
+
+[role="lead"]
+請參閱下列連結、以取得E系列硬體與SANtricity EFlash軟體早期版本的文件。這些連結會帶您前往不同的文件網站。
+
+
+
+== 早期版本的硬體文件
+
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484026["安裝E2712、E2724、E5612、E5624控制器磁碟機匣、以及DE1600和DE5600擴充磁碟機匣"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484072["安裝E2760和E5660控制器磁碟機匣和DE6600擴充磁碟機匣"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2484108["安裝EF560 Flash Array和DE5600 Flash擴充支架"^]
+* https://mysupport.netapp.com/info/web/ECMP11392380.html["安裝舊系統"^]
+* https://mysupport.netapp.com/info/web/ECMP11751516.html["維護較舊的系統"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["將第二個控制器新增至E2600和E2700"^]
+* https://mysupport.netapp.com/info/web/ECMP11750309.html["變更或新增主機傳輸協定"^]
+* https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["從AC轉換為DC電源"^]
+
+
+
+
+== 較早版本的軟體文件
+
+
+
+=== 版本11.6% SANtricity
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["System Manager線上說明"^]
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-32/home.html["Unified Manager線上說明"^]
+
+
+
+
+=== 發行版11.5 SANtricity
+
+* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-115/home.html["System Manager線上說明"^]
+
+
+
+
+=== 發行版11.4 SANtricity
+
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862590["AMW（E2700、E5600 / EF560）線上說明"^]
+* https://mysupport.netapp.com/ecm/ecm_get_file/ECMLP2862588["EMW（E2700、E5600 / EF560）線上說明"^]
+

@@ -1,0 +1,49 @@
+---
+permalink: maintenance-e2800/batteries-remove-failed-task.html 
+sidebar: sidebar 
+keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
+summary: 從控制器機櫃中取出控制器機箱之後、您可以取出電池。 
+---
+= 取出故障的E2800電池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從控制器機櫃中取出控制器機箱之後、您可以取出電池。
+
+.步驟
+. 按下按鈕並將控制器外殼滑出、以取下控制器外殼。
+. 確認控制器內部的綠色LED（電池與DIMM之間）已關閉。
++
+如果此綠色LED亮起、表示控制器仍在使用電池電力。您必須等到LED熄滅後、才能移除任何元件。
+
++
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif[28圖e2800內部快取作用中LED維護e2800]
+
++
+*（1）*_內部快取作用中_
+
++
+*（2）*_電池_
+
+. 找到電池的藍色釋放栓鎖。
+. 向下推釋放栓鎖、將電池從控制器容器中取出。
++
+image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[28圖e2800移除電池維護e2800]
+
++
+*（1）*_電池釋放栓鎖_
+
++
+*（2）*_電池_
+
+. 提起電池、將其從控制器容器中滑出。
+. 請依照您所在位置的適當程序來回收或棄置故障電池。
++
+
+CAUTION: 為符合國際空運協會（IATA）規定、除非已安裝在控制器機櫃內、否則請勿以空運方式運送一顆電池。
+
+. 前往 link:batteries-install-new-task.html["安裝新電池"]。
+

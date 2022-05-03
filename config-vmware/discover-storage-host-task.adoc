@@ -1,0 +1,23 @@
+---
+permalink: config-vmware/discover-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 將磁碟區指派給主機之後、您可以執行重新掃描、以便主機偵測並設定磁碟區的多重路徑。 
+---
+= 探索主機上的儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將磁碟區指派給主機之後、您可以執行重新掃描、以便主機偵測並設定磁碟區的多重路徑。
+
+根據預設、ESXi主機會每五分鐘自動執行一次重新掃描。磁碟區可能會在您建立磁碟區並將其指派給主機之前出現、然後再執行手動重新掃描。無論如何、您都可以執行手動重新掃描、以確保所有磁碟區均已正確設定。
+
+.步驟
+. 建立一個或多個磁碟區、並將其指派給ESXi主機。
+. 如果使用vCenter Server、請將主機新增至伺服器的庫存。
+. 使用vSphere Client或vSphere Web Client直接連線至vCenter Server或ESXi主機。
+. 如需如何在ESXi主機上重新掃描儲存設備的指示、請搜尋 https://kb.vmware.com/s/["VMware知識庫"^] 關於本主題的文章。
+

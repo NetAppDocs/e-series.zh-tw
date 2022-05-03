@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/san-spvc-ic-login-and-navigation.html 
+keywords: log in vCenter plugin, login Plugin for vCenter, browsers vCenter plugin user interface, vCenter GUI, 
+summary: 登入並瀏覽外掛程式for vCenter。 
+---
+= 登入並瀏覽vCenter的儲存外掛程式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以登入Storage Plugin for vCenter、以瀏覽使用者介面。
+
+. 在登入外掛程式之前、請確定您使用下列其中一種瀏覽器：
++
+** Google Chrome 79或更新版本
+** Mozilla Firefox 70或更新版本
+** Microsoft Edge 79或更新版本
+
+
+. 以具有外掛程式讀取/寫入權限的使用者帳戶登入vSphere Client。
+. 在vSphere Client首頁中、按一下* SANtricity 適用於VvCenter的*《儲存外掛程式》*。
++
+外掛程式會在vSphere Client視窗中開啟。外掛程式的主頁會開啟*「管理-全部*」。
+
+. 從左側的導覽側欄存取儲存管理工作：
++
+** *管理*：探索網路中的儲存陣列、開啟陣列的System Manager、將設定從一個陣列匯入多個陣列、管理陣列群組、升級作業系統軟體、以及配置儲存設備。
+** *憑證管理*：管理在瀏覽器與用戶端之間驗證的憑證。
+** *作業*：檢視批次作業的進度、例如將設定從一個陣列匯入另一個陣列。
+** *支援*：檢視技術支援選項、資源和聯絡人。
+
+
+

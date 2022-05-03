@@ -1,0 +1,161 @@
+---
+permalink: web-services-proxy/install-login-task.html 
+sidebar: sidebar 
+keywords: log in API, log in Unified Manager 
+summary: 存取並登入Web Services API和Unified Manager。 
+---
+= 登入API和Unified Manager
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Web Services包含API文件、可讓您直接與REST API互動。它也包含Unified Manager、這是一個瀏覽器型介面、可用來管理多個E系列儲存系統。
+
+
+
+== 登入Web Services API
+
+安裝Web Services Proxy之後、您可以在瀏覽器中存取互動式API文件。
+
+API文件會與每個Web服務執行個體一起執行、也可從NetApp支援網站取得靜態PDF格式的文件。若要存取互動式版本、請開啟瀏覽器並輸入指向Web服務所在位置的URL（內嵌版本的控制器或Proxy的伺服器）。
+
+
+NOTE: Web Services API實作OpenAPI規格（原本稱為Swagger規格）。
+
+初次登入時、請使用「admin」認證資料。「管理員」被視為擁有所有功能和角色存取權的超級管理員。
+
+.步驟
+. 開啟瀏覽器。
+. 輸入內嵌或Proxy實作的URL：
++
+** 內嵌：`+https://<controller>:<port>/devmgr/docs/+`
++
+在此URL中、「<Controller（控制器）>」是控制器的IP位址或FQDN、而「<連接埠>」是控制器的管理連接埠號碼（預設為84443）。
+
+** Proxy：「+https[s]//<server>:<port>/devmgr/docs/+」
++
+在此URL中、「<server>'是安裝Proxy之伺服器的IP位址或FQDN、而「<port>'是接聽連接埠號碼（HTTP預設為8080、HTTPS預設為84443）。
+
++
+
+NOTE: 如果聆聽連接埠已在使用中、Proxy會偵測衝突並提示您選擇不同的聆聽連接埠。
+
++
+API文件會在瀏覽器中開啟。
+
+
+
+. 當互動式API文件開啟時、請前往頁面右上角的下拉式功能表、然後選取* util*。
+. 按一下「*登入*」類別以查看可用的端點。
+. 按一下* POST：/login*端點、然後按一下* Try it*。
+. 首次登入時、請輸入admin作為使用者名稱和密碼。
+. 按一下*執行*。
+. 若要存取端點以進行儲存管理、請前往右上角的下拉式功能表、然後選取* v2*。
++
+此時會顯示端點的高層級類別。您可以瀏覽API文件、如表所述。
+
++
+|===
+| 區域 | 說明 
+
+
+ a| 
+下拉式功能表
+ a| 
+頁面右上角的下拉式功能表提供選項、可在API文件（V2）版本2、符號介面（符號V2）和API公用程式（utils）之間切換以供登入。
+
+
+NOTE: 由於API文件的第1版為預先發佈版本、而且通常無法使用、因此下拉式功能表中不包含V1。
+
+
+
+ a| 
+類別
+ a| 
+API文件是依高層級類別（例如：管理、組態）來組織。按一下類別以查看相關的端點。
+
+
+
+ a| 
+端點
+ a| 
+選取一個端點、即可查看URL可能傳回的URL路徑、必要參數、回應實體及狀態代碼。
+
+
+
+ a| 
+歡迎試用
+ a| 
+按一下*試用*、直接與端點互動。此按鈕會在每個擴充檢視中提供給端點。
+
+當您按一下按鈕時、會顯示用於輸入參數的欄位（若適用）。然後您可以輸入值、然後按一下*執行*。
+
+互動式文件使用JavaScript直接向API提出要求、而非測試要求。
+
+|===
+
+
+
+
+== 登入Unified Manager
+
+安裝Web服務Proxy之後、您可以存取Unified Manager、在網路型介面中管理多個儲存系統。
+
+若要存取Unified Manager、請開啟瀏覽器並輸入指向安裝Proxy的URL。支援下列瀏覽器和版本。
+
+|===
+| 瀏覽器 | 最低版本 
+
+
+ a| 
+Google Chrome
+ a| 
+79
+
+
+
+ a| 
+Microsoft Internet Explorer
+ a| 
+11.
+
+
+
+ a| 
+Microsoft Edge
+ a| 
+79
+
+
+
+ a| 
+Mozilla Firefox
+ a| 
+70
+
+
+
+ a| 
+Safari
+ a| 
+12.
+
+|===
+.步驟
+. 開啟瀏覽器並輸入下列URL：
++
++http：//<server>:<port>/um+'
+
++
+在此URL中、「<server>'代表安裝Web服務Proxy之伺服器的IP位址或FQDN、而「<port>'代表接聽連接埠號碼（HTTP預設為8080、HTTPS預設為8443）。
+
++
+此時會開啟Unified Manager登入頁面。
+
+. 首次登入時、請輸入「admin」作為使用者名稱、然後設定並確認管理員使用者的密碼。
++
+密碼最多可包含30個字元。如需使用者和密碼的詳細資訊、請參閱Unified Manager線上說明的存取管理一節。
+
+

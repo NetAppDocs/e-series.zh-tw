@@ -1,0 +1,23 @@
+---
+permalink: upgrade-santricity/index.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller 
+summary: 升級SANtricity 版的概述 
+---
+= 升級SANtricity 版the過程概述
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將作業系統和系統硬體元件升級至SANtricity 最新版本的支援軟體和韌體。
+
+這些升級程序包括下列各項的個別指示：
+
+* 單一控制器-包括升級儲存陣列軟體的程序、以及選擇性的IOM韌體和非揮發性靜態隨機存取記憶體（NVSRAM）。
+* 多個控制器-包括在SANtricity 同類型的多個儲存陣列上升級支援的程序。
+* Drive（磁碟機）-包含升級磁碟機韌體的說明。
+
+
+開始升級之前、請務必先檢閱 link:overview-upgrade-consider-task.html["升級考量"]。

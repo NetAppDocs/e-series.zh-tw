@@ -1,0 +1,21 @@
+---
+permalink: config-vmware/configure-storage-host-task.html 
+sidebar: sidebar 
+keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 您可以使用指派給ESXi主機的儲存設備做為虛擬機器檔案系統（VMFS）資料存放區或原始裝置對應（RDM）。NVMe over Fibre Channel傳輸協定不支援RDM。 
+---
+= 設定主機上的儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用指派給ESXi主機的儲存設備做為虛擬機器檔案系統（VMFS）資料存放區或原始裝置對應（RDM）。NVMe over Fibre Channel傳輸協定不支援RDM。
+
+ESXi的所有6._x_和7_x_版本均支援VMFS版本5和6。
+
+.步驟
+. 請確定已正確探索對應至ESXi主機的磁碟區。
+. 如需建立VMFS資料存放區或使用磁碟區做為RDM搭配vSphere Client或vSphere Web Client的相關指示、請參閱 https://www.vmware.com/support/pubs/["VMware文件網站"^]。
+

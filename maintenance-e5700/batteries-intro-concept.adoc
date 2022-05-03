@@ -1,0 +1,64 @@
+---
+permalink: maintenance-e5700/batteries-intro-concept.html 
+sidebar: sidebar 
+keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E5700 battery 
+summary: 檢閱E5700電池更換要求與考量。 
+---
+= E5700電池更換需求
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換E5700電池之前、請先檢閱相關要求與考量事項。
+
+每個控制器機箱都有一個電池、可在AC電源故障時保留快取的資料。
+
+
+
+== Recovery Guru警示
+
+如果「恢復大師」SANtricity 報告下列其中一種狀態、您必須更換受影響的電池：
+
+* 電池故障
+* 需要更換電池
+
+
+從「還原系統管理程式」檢閱Recovery Guru中的詳細資料、確認電池有問題、並確保不需要先處理其他項目。SANtricity
+
+
+
+== 程序總覽
+
+若要保護資料、您必須盡快更換故障電池。
+
+以下是更換E5700控制器（E5724、EF570或E5760）電池的步驟總覽：
+
+. 使控制器離線（僅雙工）。
+. 移除控制器容器。
+. 更換電池。
+. 更換控制器容器。
+. 使控制器聯機（僅雙工）。
+
+
+
+
+== 需求
+
+如果您打算更換故障電池、則必須具備：
+
+* 替換電池。
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。如果您無法存取CLI、可以執行下列其中一項：
+
++
+** * for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統>附加元件>命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+** *《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。
+
+
+

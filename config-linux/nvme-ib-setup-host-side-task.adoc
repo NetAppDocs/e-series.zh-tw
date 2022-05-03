@@ -1,0 +1,231 @@
+---
+permalink: config-linux/nvme-ib-setup-host-side-task.html 
+sidebar: sidebar 
+keywords: configure Linux host, express linux configuration, linux host, 
+summary: 在InfiniBand環境中設定NVMe啟動器、包括安裝及設定InfiniBand、NVMe-CLI和RDMA套件、設定啟動器IP位址、以及在主機上設定NVMe層。 
+---
+= 在主機端設定NVMe over InfiniBand
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在InfiniBand環境中設定NVMe啟動器、包括安裝及設定InfiniBand、NVMe-CLI和RDMA套件、設定啟動器IP位址、以及在主機上設定NVMe層。
+
+您必須執行最新相容的RHEL 7、RHEL 8、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
+
+.步驟
+. 安裝RDMA、NVMe-CLI和InfiniBand套件：
++
+* SLES 12或SLES 15*
+
++
+[listing]
+----
+
+# zypper install infiniband-diags
+# zypper install rdma-core
+# zypper install nvme-cli
+----
++
+* RHEL 7或RHEL 8*
+
++
+[listing]
+----
+
+# yum install infiniband-diags
+# yum install rdma-core
+# yum install nvme-cli
+----
+. 啟用「IPoIB」。編輯/etc/Rdma/Rdma.conf檔案、並修改載入「IPoIB」的項目：
++
+[listing]
+----
+IPOIB_LOAD=yes
+----
+. 檢查IB連接埠連結是否正常、狀態=作用中：
++
+[listing]
+----
+ # ibstat
+----
++
+[listing]
+----
+CA 'mlx4_0'
+        CA type: MT4099
+        Number of ports: 2
+        Firmware version: 2.40.7000
+        Hardware version: 1
+        Node GUID: 0x0002c90300317850
+        System image GUID: 0x0002c90300317853
+        Port 1:
+                State: Active
+                Physical state: LinkUp
+                Rate: 40
+                Base lid: 4
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317851
+                Link layer: InfiniBand
+        Port 2:
+                State: Active
+                Physical state: LinkUp
+                Rate: 56
+                Base lid: 5
+                LMC: 0
+                SM lid: 4
+                Capability mask: 0x0259486a
+                Port GUID: 0x0002c90300317852
+                Link layer: InfiniBand
+----
+. 在IB連接埠上設定IPV4 IP位址。
++
+* SLES 12或SLES 15*
+
++
+建立內含下列內容的檔案/etc/sysconfig/network/ifcfg/ib0。
+
++
+[listing]
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='10.10.10.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+然後、建立檔案/etc/sysconfig/network/ifcfg/ib1。
+
++
+[listing]
+----
+
+  BOOTPROTO='static'
+  BROADCAST=
+  ETHTOOL_OPTIONS=
+  IPADDR='11.11.11.100/24'
+  IPOIB_MODE='connected'
+  MTU='65520'
+  NAME=
+  NETWORK=
+  REMOTE_IPADDR=
+  STARTMODE='auto'
+----
++
+* RHEL 7或RHEL 8*
+
++
+建立內含下列內容的檔案/etc/sysconfig/network-scripts/ifcfg/ib0。
+
++
+[listing]
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='10.10.10.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib0
+  ONBOOT=yes
+----
++
+然後、建立檔案/etc/sysconfig/network-scripts/ifcfg/ib1：
+
++
+[listing]
+----
+
+  CONNECTED_MODE=no
+  TYPE=InfiniBand
+  PROXY_METHOD=none
+  BROWSER_ONLY=no
+  BOOTPROTO=static
+  IPADDR='11.11.11.100/24'
+  DEFROUTE=no
+  IPV4=FAILURE_FATAL=yes
+  IPV6INIT=no
+  NAME=ib1
+  ONBOOT=yes
+----
+. 啟用「IB」介面：
++
+[listing]
+----
+
+# ifup ib0
+# ifup ib1
+----
+. 驗證用於連接陣列的IP位址。對「ib0」和「ib1」執行此命令：
++
+[listing]
+----
+
+# ip addr show ib0
+# ip addr show ib1
+----
++
+如下例所示、「ib0」的IP位址為「10.10.255」。
+
++
+[listing]
+----
+10: ib0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 10.10.10.255 brd 10.10.10.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
++
+如下例所示、「ib1」的IP位址為「11.11.11.255」。
+
++
+[listing]
+----
+10: ib1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 65520 qdisc pfifo_fast state UP group default qlen 256
+    link/infiniband 80:00:02:08:fe:80:00:00:00:00:00:00:00:02:c9:03:00:31:78:51 brd 00:ff:ff:ff:ff:12:40:1b:ff:ff:00:00:00:00:00:00:ff:ff:ff:ff
+    inet 11.11.11.255 brd 11.11.11.255 scope global ib0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::202:c903:31:7851/64 scope link
+       valid_lft forever preferred_lft forever
+----
+. 在主機上設定NVMe層。在/etc/modules-load.d/下建立下列檔案、以載入「NVMe-RDMA」核心模組、並確保即使重新開機、核心模組仍會開啟：
++
+[listing]
+----
+
+# cat /etc/modules-load.d/nvme-rdma.conf
+  nvme-rdma
+----
++
+若要驗證「NVMe - RDMA」核心模組是否已載入、請執行下列命令：
+
++
+[listing]
+----
+
+# lsmod | grep nvme
+nvme_rdma              36864  0
+nvme_fabrics           24576  1 nvme_rdma
+nvme_core             114688  5 nvme_rdma,nvme_fabrics
+rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_isert,rdma_ucm
+ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
+t10_pi                 16384  2 sd_mod,nvme_core
+----
+

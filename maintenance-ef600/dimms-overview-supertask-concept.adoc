@@ -1,0 +1,42 @@
+---
+permalink: maintenance-ef600/dimms-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 DIMM, replace EF600 DIMM, 
+summary: 在更換EF300或EF600 DIMM之前、請先檢閱相關要求和考量事項。 
+---
+= 更換EF300或EF600 DIMM的需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換EF300或EF600儲存陣列中的DIMM之前、請先檢閱需求與考量事項。
+
+如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM。請務必確認EF300或EF600控制器的組態、以確保更換正確的DIMM大小。
+
+
+CAUTION: 請注意、儲存陣列中的DIMM很脆弱、處理不當可能導致損壞。
+
+請遵循下列規則、以免損壞儲存陣列中的DIMM：
+
+* 防止靜電釋放（ESD）：
++
+** 請將DIMM放在防靜電袋中、直到準備好安裝為止。
+** 用手打開電子安全袋、或用一把剪器剪下頂端。請勿將金屬工具或刀插入電子設備保護袋。
+** 請保留ESD袋和任何包裝材料、以便日後必須送回DIMM時使用。
++
+
+CAUTION: 請務必戴上接地於儲存機箱機箱上未上漆表面的防靜電腕帶。
+
+
+
+* 小心處理DIMM：
++
+** 在移除、安裝或攜帶DIMM時、請務必使用兩隻手。
+** 切勿將DIMM強制放入機櫃、並以溫和、穩固的壓力將鎖扣完全卡入。
+** 在運送DIMM時、請務必使用核准的包裝。
+
+
+* 避免使用磁性射野。請將DIMM遠離磁性裝置。
+

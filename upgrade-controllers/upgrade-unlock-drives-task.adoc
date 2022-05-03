@@ -1,0 +1,75 @@
+---
+permalink: upgrade-controllers/upgrade-unlock-drives-task.html 
+sidebar: sidebar 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, unlock drives, key management, Drive Security, 
+summary: 如果您要升級E2800和E5700控制器、而且已啟用「磁碟機安全性」功能、則必須手動解除鎖定磁碟機。 
+---
+= 解除磁碟機鎖定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您要升級E2800和E5700控制器、這些控制器的磁碟機安全功能會導致部分、外部或內部的磁碟機鎖定。如果已啟用「磁碟機安全性」功能、您必須手動解除鎖定這些磁碟機。
+
+請遵循下列適當程序：
+
+* <<Internal key management>>
+* <<External key management>>
+
+
+
+
+== 內部金鑰管理
+
+當所有磁碟機都鎖定時、請遵循下列步驟進行內部金鑰管理。
+
+新換用的控制器會鎖定七段顯示代碼L5。當儲存陣列中的磁碟機無法執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。
+
+
+NOTE: 如果您不使用管理連接埠1、請嘗試使用其他預設IP位址：+ Ctrl a連接埠1：192．168．128．101 + Ctrl a連接埠2：192．168．128．102 + Ctrl B連接埠1：192．192．168．129．101 + Ctrl B連接埠2：192．168．129．102
+
+.步驟
+. 將SANtricity 該客戶端安裝到筆記型電腦或PC上、以便在步驟2中直接連接至陣列控制器。
+. 直接透過RJ45乙太網路纜線、將筆記型電腦或PC連接至控制器A管理連接埠1。此步驟也可能需要將筆記型電腦的IP位址設定為相同的子網路。
+. 使用IP位址192.168.1.128.101搭配使用者名稱* admin*和密碼空白、使用「匯入storageArray SECURITY Key file」CLI命令匯入內部金鑰、並從儲存安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱_Command Line Reference。
++
+*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory & Filene\" phraser=\"passPhraserString\""；」
+
+
+
+控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。
+
+
+
+== 外部金鑰管理
+
+當所有磁碟機都鎖定時、請遵循下列外部金鑰管理步驟。
+
+新換用的控制器會鎖定七段顯示代碼L5。當儲存陣列中的磁碟機無法執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。
+
+
+NOTE: 您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立並簽署新的CSR、並從EKMS下載伺服器憑證。
+
+.步驟
+. 將SANtricity 該客戶端安裝到筆記型電腦或PC上、以便在步驟2中直接連接至陣列控制器。
+. 直接透過RJ45乙太網路纜線、將筆記型電腦或PC連接至控制器A管理連接埠1。您可能還需要將筆記型電腦的IP位址設定為相同的子網路。
+. 使用預設IP位址：192．168．128．101、使用者名稱* admin *和密碼空白、使用「set storageArray externalKeyManagement」CLI命令設定外部金鑰管理伺服器、並提供儲存自的「伺服器位址」和「伺服器連接埠」 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱_Command Line Reference。
++
+*範例：*「Mcli 192.168.1.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;」
+
+. 使用預設IP位址192.168.1.128.101、使用者名稱* admin*和密碼保留空白、然後使用「儲存陣列keyManagementCertificate」CLI命令下載憑證：一次用於用戶端憑證、第二次用於伺服器憑證。如需使用此命令的相關資訊、請參閱_Command Line Reference。
++
+*範例A：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType =用戶端檔案=「Directory & FileName」；」
+
++
+*範例B：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType = server file=\「Directory & FileName」（下載storageArray keyManagement憑證類型=伺服器檔案=）；」
+
+. 使用儲存自的安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。如需使用此命令的相關資訊、請參閱_Command Line Reference。
++
+*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory & Filene\" phraser=\"passPhraserString\""；」
+
+
+
+控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。

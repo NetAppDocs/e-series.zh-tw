@@ -1,0 +1,130 @@
+---
+permalink: web-services-proxy/certificates-intro-concept.html 
+sidebar: sidebar 
+keywords: Certificates Web Services Proxy, WSP certificates, 
+summary: 使用Web服務Proxy組態檔、API命令或Unified Manager介面來管理憑證。 
+---
+= 管理Web Services Proxy中的安全性和憑證
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為確保Web服務Proxy的安全性、您可以指定SSL連接埠名稱、並管理憑證。憑證可識別網站擁有者、以確保用戶端與伺服器之間的安全連線。
+
+
+
+== 啟用SSL
+
+Web服務Proxy使用安全通訊端層（SSL）來確保安全性、此功能可在安裝期間啟用。您可以在wsconfig.xml檔案中變更SSL連接埠名稱。
+
+.步驟
+. 開啟wsconfig.xml檔案、網址為：
++
+** （Windows）- C：\Program Files\NetApp\SANtricity Web Services Proxy
+** （Linux）-/opt/netapp/SANtricity _web_services代理
+
+
+. 新增或變更SSL連接埠號碼、類似下列範例：
++
+[listing]
+----
+<sslport clientauth="request">8443</sslport>
+----
+
+
+當伺服器啟動時、伺服器會尋找Keystore和信任存放區檔案。
+
+* 如果伺服器找不到Keystore、伺服器會使用第一個偵測到的非迴路IPV4位址的IP位址來產生Keystore、然後將自我簽署的憑證新增至Keystore。
+* 如果伺服器找不到信任存放區、或未指定信任存放區、則伺服器會使用Keystore做為信任存放區。
+
+
+
+
+== 略過憑證驗證
+
+為了支援安全連線、Web Services Proxy會根據自己的信任憑證來驗證儲存系統的憑證。如果需要、您可以指定Proxy在連線至儲存系統之前略過該驗證。
+
+.開始之前
+* 所有儲存系統連線都必須安全無虞。
+
+
+.步驟
+. 開啟wsconfig.xml檔案、網址為：
++
+** （Windows）- C：\Program Files\NetApp\SANtricity Web Services Proxy
+** （Linux）-/opt/netapp/SANtricity _web_services代理
+
+
+. 在"trust．all.array"項中輸入"true"、如範例所示：
++
+[listing]
+----
+<env key="trust.all.arrays">true</env>
+----
+. 儲存檔案。
+
+
+
+
+== 產生並匯入主機管理憑證
+
+憑證可識別網站擁有者、以確保用戶端與伺服器之間的安全連線。若要為安裝Web服務Proxy的主機系統產生及匯入憑證授權單位（CA）憑證、您可以使用API端點。
+
+若要管理主機系統的憑證、請使用API執行下列工作：
+
+* 為主機系統建立憑證簽署要求（CSR）。
+* 將CSR檔案傳送至CA、然後等待他們傳送憑證檔案給您。
+* 將簽署的憑證匯入主機系統。
+
+
+
+NOTE: 您也可以在Unified Manager介面中管理憑證。如需詳細資訊、請參閱Unified Manager中的線上說明。
+
+.步驟
+. 登入 link:install-login-task.html["互動式API文件"]。
+. 移至右上角的下拉式功能表、然後選取* v2*。
+. 展開「*管理*」連結、然後向下捲動至「*/憑證*」端點。
+. 產生CSR檔案：
++
+.. 選取* POST：/certificates *、然後選取* Try it Out *。
++
+Web伺服器會重新產生自我簽署的憑證。然後、您可以在欄位中輸入資訊、以定義用於產生CSR的一般名稱、組織、組織單位、替代ID及其他資訊。
+
+.. 在「*範例值*」窗格中新增必要資訊、以產生有效的CA憑證、然後執行命令。
++
+
+NOTE: 請勿再次呼叫* POST：/certificates *或* POST：/certificates /RESET*、否則您必須重新產生CSR。當您撥打* POST：/憑證*或* POST：/憑證/重設*時、您會產生新的自我簽署憑證、其中含有新的私密金鑰。如果您傳送的CSR是在伺服器上私密金鑰上次重設之前產生的、則新的安全性憑證將無法運作。您必須產生新的CSR並要求新的CA憑證。
+
+.. 執行「*取得：/憑證/伺服器*」端點、確認目前的憑證狀態為自我簽署的憑證、其中含有從* POST：/certificates *命令新增的資訊。
++
+此時伺服器憑證（以別名「j防eat」表示）仍為自我簽署。
+
+.. 展開* post：/certificates /匯出*端點、選取* Try it out *、輸入CSR檔案的檔案名稱、然後按一下*執行*。
+
+
+. 將「fileUrl」複製並貼到新的瀏覽器索引標籤下載CSR檔案、然後將CSR檔案傳送到有效的CA、以申請新的Web伺服器憑證鏈結。
+. 當CA發行新的憑證鏈結時、請使用憑證管理工具來解密根、中繼和Web伺服器憑證、然後將它們匯入Web服務Proxy伺服器：
++
+.. 展開* post：/sslconfig/server*端點、然後選取* Try it out *。
+.. 在*別名*欄位中輸入CA根憑證的名稱。
+.. 在* replaceMainServerCertificated*欄位中選取*「假*」。
+.. 瀏覽並選取新的CA根憑證。
+.. 按一下*執行*。
+.. 確認已成功上傳憑證。
+.. 針對CA中繼憑證重複CA憑證上傳程序。
+.. 重複新Web伺服器安全性憑證檔案的憑證上傳程序、除非在這個步驟中、請在* replaceMainServerCertificated*下拉式清單中選取* true*。
+.. 確認已成功匯入Web伺服器安全性憑證。
+.. 若要確認新的根、中繼及Web伺服器憑證可在Keystore中使用、請執行* Get/certificates/server*。
+
+
+. 選取並展開* POST：/憑證/重新載入*端點、然後選取*試用*。出現提示時、無論是否要重新啟動兩個控制器、請選取*假*。（「True」僅適用於雙陣列控制器。） 按一下*執行*。
++
+每個憑證/重新載入*端點通常會傳回成功的http 202回應。不過、重新載入Web伺服器信任存放區和Keystore憑證、確實會在API程序和Web伺服器憑證重新載入程序之間建立競爭條件。在極少數情況下、Web伺服器憑證重新載入可能會擊敗API處理。在這種情況下、即使重新載入成功完成、重新載入仍會失敗。如果發生這種情況、請繼續下一步。如果重新載入實際上失敗、則下一步也會失敗。
+
+. 關閉Web服務Proxy的目前瀏覽器工作階段、開啟新的瀏覽器工作階段、並確認可以建立新的安全瀏覽器連線至Web服務Proxy。
++
+透過無痕式或私有瀏覽工作階段、您可以開啟與伺服器的連線、而不使用先前瀏覽工作階段中儲存的任何資料。
+
+

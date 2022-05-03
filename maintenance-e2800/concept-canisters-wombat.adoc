@@ -1,0 +1,14 @@
+---
+permalink: maintenance-e2800/concept-canisters-wombat.html 
+sidebar: sidebar 
+keywords: canister, power-fan, power, supplies, supply, redundant, source, adequate, cooling, 12-drive, 24-drive, controller, shelf, redundancy 
+summary: 迴路由三種不同類型組成：電源風扇迴路（電源供應器）、可在12個磁碟機或24個磁碟機的控制器機櫃或磁碟機櫃中提供備援電源、以及適當的冷卻；電源迴路機櫃可用於60個磁碟機控制器機櫃或磁碟機櫃中的電源備援； 以及用於冷卻60個磁碟機控制器機櫃或磁碟機櫃的風扇容器。 
+---
+= 迴廊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+迴路由三種不同類型組成：電源風扇迴路（電源供應器）、可在12個磁碟機或24個磁碟機的控制器機櫃或磁碟機櫃中提供備援電源、以及適當的冷卻；電源迴路機櫃（用於60個磁碟機控制器機櫃或磁碟機櫃中的電源備援）； 以及用於冷卻60個磁碟機控制器機櫃或磁碟機櫃的風扇容器。

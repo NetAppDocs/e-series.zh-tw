@@ -1,0 +1,84 @@
+---
+permalink: remote-storage-volumes/setup-remote-volumes-concept.html 
+sidebar: sidebar 
+keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes, set up remote storage E-Series 
+summary: 需要進行初始設定、才能讓E系列系統透過支援的iSCSI傳輸協定連線至遠端儲存設備。 
+---
+= 設定遠端儲存磁碟區的硬體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E系列儲存系統必須設定為透過支援的iSCSI傳輸協定與遠端儲存系統通訊。
+
+
+
+== 設定遠端儲存設備和E系列陣列
+
+在繼續SANtricity 執行「靜態系統管理程式」以設定「遠端儲存磁碟區」功能之前、請執行下列步驟：
+
+. 在E系列系統與遠端儲存系統之間手動建立纜線連線、以便將這兩個系統設定為透過iSCSI進行通訊。
+. 設定iSCSI連接埠、讓E系列系統和遠端儲存系統能夠順利彼此通訊。
+. 取得E系列系統的IQN。
+. 讓遠端儲存系統看到E系列系統。如果遠端儲存系統是E系列系統、請使用目的地E系列系統的IQN作為主機連接埠的連線資訊來建立主機。
+. 如果主機/應用程式正在使用遠端儲存設備：
++
+** 停止遠端儲存設備的I/O。
+** 取消對應/卸載遠端儲存設備。
+
+
+. 將遠端儲存設備對應至為E系列儲存系統定義的主機。
+. 取得用於對應的裝置LUN編號。
+
+
+
+NOTE: 建議：在開始匯入程序之前、請先備份遠端來源Volume。
+
+
+
+== 連接儲存陣列
+
+在設定程序中、儲存陣列和I/O主機必須連接至iSCSI相容介面。
+
+下圖提供如何連接系統的範例、以便它們透過iSCSI連線執行遠端儲存Volume作業。
+
+image:../media/remote_target_volumes_iscsi_use_case_1.png[""] image:../media/remote_target_volumes_iscsi_use_case_2.png[""]
+
+
+
+== 設定iSCSI連接埠
+
+您必須設定iSCSI連接埠、以確保目標（本機E系列儲存陣列）與來源（遠端儲存陣列）之間的通訊。
+
+iSCSI連接埠可根據您的子網路設定多種方式。以下是幾個範例、說明如何設定iSCSI連接埠以搭配遠端儲存磁碟區功能使用。
+
+|===
+| 來源A | 來源B | 目標A | 目標B 
+
+
+ a| 
+10.10.1.100/22
+ a| 
+10.10.2.100/22
+ a| 
+10.10.1.101/22
+ a| 
+10.10.2.101/22
+
+|===
+|===
+| 來源A | 來源B | 目標A | 目標B 
+
+
+ a| 
+10.10.0.100/16
+ a| 
+10.10.0.100/16
+ a| 
+10.10.0.101/16
+ a| 
+10.10.0.101/16
+
+|===

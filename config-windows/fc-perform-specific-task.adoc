@@ -1,0 +1,178 @@
+---
+permalink: config-windows/fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。 
+---
+= 執行FC特定工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。
+
+
+
+== 步驟1：設定FC交換器——Windows
+
+設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
+
+.您需要的是 #8217 ；需要的是什麼
+* 交換器的系統管理員認證。
+* 每個主機啟動器連接埠的WWPN、以及連接至交換器的每個控制器目標連接埠。（使用HBA公用程式進行探索。）
+
+
+您必須依WWPN進行區域、而非依實體連接埠。每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。
+
+.步驟
+. 登入FC交換器管理程式、然後選取分區組態選項。
+. 建立新的區域、其中包含第一個主機啟動器連接埠、也包含所有連接到啟動器所在FC交換器的目標連接埠。
+. 為交換器中的每個FC主機啟動器連接埠建立其他區域。
+. 儲存區域、然後啟動新的分區組態。
+
+
+
+
+== 步驟2：判斷主機WWPN並進行建議設定——支援功能、Windows
+
+您可以安裝FC HBA公用程式、以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外、您也可以使用HBA公用程式來變更的「附註」欄中建議的任何設定 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 支援的組態。
+
+請參閱以下HBA公用程式準則：
+
+* 大多數HBA廠商都提供HBA公用程式。您的主機作業系統和CPU需要正確版本的HBA。FC HBA公用程式的範例包括：
++
+** Emulex OneCommand Manager for Emulex HBA
+** 適用於QLogic HBA的QLogic QConvertge主控台
+
+
+* 如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。
+
+
+.步驟
+. 請從HBA廠商的網站下載適當的公用程式。
+. 安裝公用程式。
+. 在HBA公用程式中選取適當的設定。
++
+的「附註」欄中會列出您組態的適當設定 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+
+== 步驟3：記錄您的組態
+
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄FC儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。任何單一連接埠都有兩條通往儲存設備的路徑（每個控制器各一個）。
+
+image::../media/port_identifiers_host_and_target_conf-win.gif[連接埠識別碼主機和目標設定成功]
+
+
+
+=== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+主機連接埠0至FC交換器區域0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主機連接埠1至FC交換器區域1
+ a| 
+
+|===
+
+
+=== 目標識別碼
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+6.
+ a| 
+陣列控制器（目標）
+ a| 
+_不適用_
+
+
+
+ a| 
+5.
+ a| 
+控制器A、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器A、連接埠2至FC交換器2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器B、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器B、連接埠2至FC交換器2
+ a| 
+
+|===
+
+
+=== 對應主機名稱
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

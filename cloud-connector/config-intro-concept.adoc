@@ -1,0 +1,280 @@
+---
+permalink: cloud-connector/config-intro-concept.html 
+sidebar: sidebar 
+keywords: Cloud Connector configuration 
+summary: 成功安裝後、您可以SANtricity 透過組態精靈設定支援功能、以設定解決方案。組態精靈會在您一開始登入SANtricity 到NetApp Cloud Connector之後顯示。 
+---
+= 第一次設定SANtricity 這個解決方案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+成功安裝後、您可以SANtricity 透過組態精靈設定支援功能、以設定解決方案。組態精靈會在您一開始登入SANtricity 到NetApp Cloud Connector之後顯示。
+
+
+
+== 第一次登入SANtricity 到Cloud Connector
+
+第一次初始化SANtricity 時、您必須輸入預設密碼才能存取應用程式。
+
+請確定您可以存取連線至網際網路的瀏覽器。
+
+.步驟
+. 開啟支援的瀏覽器。
+. 連線至設定SANtricity 的《Cloud Connector》伺服器（例如：「+http://localhost:8080/+`」）。
++
+畫面上會顯示出適用於此應用程式的初始登入頁面SANtricity 。
+
+. 在「管理員密碼」欄位中、輸入預設密碼「password」。
+. 按一下*登入*。
++
+畫面會顯示「解決方案」「解決方案」SANtricity 。
+
+
+
+
+
+== 使用組態精靈
+
+組態精靈會在初次成功登入SANtricity 到NetApp時顯示。
+
+透過組態精靈、您可以設定管理員密碼、Web服務Proxy登入管理認證、所需的備份目標類型、SANtricity 以及適用於《不支援雲端連接器》的加密密碼。
+
+
+
+=== 步驟1：設定管理員密碼
+
+您可以透過SANtricity 「設定管理員密碼」頁面、自訂後續登入至此版本的密碼。
+
+透過「Set Administrator Password」（設定管理員密碼）頁面建立密碼、可有效取代SANtricity 在初次登入時使用的預設密碼、以供使用。
+
+.步驟
+. 在「Set Administrator Password」（設定管理員密碼）頁面的SANtricity 「* Enter the new Administrator password*」（輸入新的管理員密碼*）欄位中、輸入所需的NetApp Cloud Connector登入密碼。
+. 在*重新輸入新的管理員密碼*欄位中、重新輸入第一個欄位的密碼。
+. 單擊 * 下一步 * 。
++
+接受設定的密碼SANtricity 為適用於現象雲連接器、設定密碼頁面會顯示在「組態精靈」下方。
+
++
+
+NOTE: 在完成組態精靈之前、不會設定使用者定義的管理員密碼。
+
+
+
+
+
+=== 步驟2：設定密碼
+
+在「Enter the Encryption Pass Phrase（輸入加密密碼）」頁面下、您可以指定介於8到32個字元之間的英數字元密碼。
+
+使用者指定的密碼是SANtricity 指使用者指定的密碼、作為使用者使用的資料加密金鑰的一部分、以供使用。
+
+.步驟
+. 在*定義密碼*欄位中、輸入所需的密碼。
+. 在*重新輸入密碼*欄位中、重新輸入第一個欄位的密碼。
+. 單擊 * 下一步 * 。
++
+系統會接受輸入SANtricity 的適用於此應用程式的密碼、並顯示組態精靈的「Select Target Type」（選取目標類型）頁面。
+
+
+
+
+
+=== 步驟3：選取目標類型
+
+Amazon S3、AltaVault 版本介紹及StorageGRID 支援還原功能、可透過SANtricity 《支援還原的解決方案：您可以在SANtricity 「Select the Target Type」（選取目標類型）頁面下、為「精選Cloud Connector」應用程式指定所需的儲存目標類型。
+
+請確定您擁有下列其中一項：AltaVault Sure掛載點、Amazon AWS帳戶或StorageGRID S景 點帳戶。
+
+.步驟
+. 在下拉式功能表中、選取下列其中一個選項：
++
+** Amazon AWS
+** AltaVault
+** StorageGRID
++
+「組態精靈」中會顯示所選選項的「目標類型」頁面。
+
+
+
+. 請參閱AltaVault 適用於以下項目的組態說明：《關於功能的資訊》、《Amazon AWS》或StorageGRID 《關於功能的資訊》。
+
+
+
+
+==== 設定AltaVault 產品
+
+在AltaVault 「Select the Target Type」（選取目標類型）頁面下選取「不使用功能」選項之後AltaVault 、就會顯示適用於該類型的組態選項。
+
+.開始之前
+* 您擁有AltaVault 適用於整個應用程式的NFS掛載路徑。
+* 您指定AltaVault 了目標類型為使用本產品。
+
+
+.步驟
+. 在「* NFS Mount Path*」（* NFS掛載路徑*）欄位中、輸入AltaVault 適用於該目標類型的掛載點。
++
+
+NOTE: 「* NFS掛載路徑*」欄位中的值必須遵循Linux路徑格式。
+
+. 選取「在這個目標*上儲存組態資料庫的備份」核取方塊、即可在選取的目標類型上建立組態資料庫的備份。
++
+
+NOTE: 如果在測試連線時、在指定的目標類型上偵測到現有的資料庫組態、您可以選擇以SANtricity 在組態精靈下輸入的新備份資訊、來取代在「Clouf2 Cloud Connector」主機上的現有資料庫組態資訊。
+
+. 按一下*測試連線*、測試連線是否有指定AltaVault 的功能。
+. 單擊 * 下一步 * 。
++
+接受指定SANtricity 的目標類型以供使用、且「組態精靈」中會顯示「Web服務Proxy」頁面。
+
+. 繼續執行「步驟4：連線至Web服務Proxy」。
+
+
+
+
+==== 設定Amazon AWS帳戶
+
+在「Select the Target Type」（選取目標類型）頁面下選取Amazon AWS選項之後、便會顯示Amazon AWS目標類型的組態選項。
+
+.開始之前
+* 您已建立Amazon AWS帳戶。
+* 您將Amazon AWS指定為目標類型。
+
+
+.步驟
+. 在*存取金鑰ID*欄位中、輸入Amazon AWS目標的存取ID。
+. 在*秘密存取金鑰*欄位中、輸入目標的秘密存取金鑰。
+. 在* Bucket Name*欄位中、輸入目標的貯體名稱。
+. 選取「在這個目標*上儲存組態資料庫的備份」核取方塊、即可在選取的目標類型上建立組態資料庫的備份。
++
+
+NOTE: 建議您啟用此設定、以確保當資料庫遺失時、可以還原備份目標的資料。
+
++
+
+NOTE: 如果在測試連線時、在指定的目標類型上偵測到現有的資料庫組態、您可以選擇以SANtricity 在組態精靈下輸入的新備份資訊、來取代在「Clouf2 Cloud Connector」主機上的現有資料庫組態資訊。
+
+. 按一下*測試連線*以驗證輸入的Amazon AWS認證資料。
+. 單擊 * 下一步 * 。
++
+接受指定SANtricity 的目標類型以供使用、而「組態精靈」下方會顯示「Web服務Proxy」頁面。
+
+. 繼續執行「步驟4：連線至Web服務Proxy」。
+
+
+
+
+==== 設定StorageGRID 此帳戶
+
+在StorageGRID 「Select the Target Type」（選取目標類型）頁面下選取「/sfiting」（更新）選項之後StorageGRID 、就會顯示適用於該對象類型的組態選項。
+
+.開始之前
+* 您已擁有既定StorageGRID 的不實帳戶。
+* 您已在StorageGRID Cloud Connector Keystore中取得簽署的驗證憑證。SANtricity
+* 您指定StorageGRID 了目標類型為「不」。
+
+
+.步驟
+. 在* url*欄位中、輸入Amazon S3雲端服務的URL
+. 在*存取金鑰ID*欄位中、輸入S3目標的存取ID。
+. 在*秘密存取金鑰*欄位中、輸入S3目標的秘密存取金鑰。
+. 在* Bucket Name*欄位中、輸入S3目標的貯體名稱。
+. 若要使用路徑樣式存取、請選取*使用路徑樣式存取*核取方塊。
++
+
+NOTE: 如果未核取、則會使用虛擬主機樣式存取。
+
+. 選取「在這個目標*上儲存組態資料庫的備份」核取方塊、即可在選取的目標類型上建立組態資料庫的備份。
++
+
+NOTE: 建議您啟用此設定、以確保當資料庫遺失時、可以還原備份目標的資料。
+
++
+
+NOTE: 如果在測試連線時、在指定的目標類型上偵測到現有的資料庫組態、您可以選擇以SANtricity 在組態精靈中輸入的新備份資訊、來取代位於「Clouf2 Cloud Connector」主機上的現有資料庫組態資訊。
+
+. 按一下*測試連線*以驗證輸入的S3認證。
++
+
+NOTE: 某些S3相容的帳戶可能需要安全的HTTP連線。如需在StorageGRID Keystore中放置一個方面的資訊、請參閱 link:install-intro-concept.html#add-storagegrid-certificate-into-a-keystore["將StorageGRID 驗證憑證新增至Keystore"]。
+
+. 單擊 * 下一步 * 。
++
+接受指定SANtricity 的目標類型以供使用、且「組態精靈」下方會顯示「Web服務Proxy」頁面。
+
+. 繼續執行「步驟4：連線至Web服務Proxy」。
+
+
+
+
+=== 步驟4：連線至Web服務Proxy
+
+搭配SANtricity 使用的Web服務Proxy登入與連線資訊可透過「輸入Web服務Proxy URL與認證」頁面輸入。
+
+請確定您已建立與SANtricity 「the Sort供Web服務代理」的連線。
+
+.步驟
+. 在* url*欄位中、輸入SANtricity 用於《SeseCloud Connector》的Web Services Proxy URL。
+. 在*使用者名稱*欄位中、輸入Web服務Proxy連線的使用者名稱。
+. 在*密碼*欄位中、輸入Web服務Proxy連線的密碼。
+. 按一下*測試連線*以驗證輸入的Web服務Proxy認證資料的連線。
+. 透過測試連線驗證輸入的Web服務Proxy認證之後。
+. 單擊*下一步*
++
+接受適用於此解決方案SANtricity 的Web Services Proxy認證、並在組態精靈中顯示「Select Storage Arrays」（選擇儲存陣列）頁面。
+
+
+
+
+
+=== 步驟5：選擇儲存陣列
+
+根據SANtricity 透過組態精靈輸入的「驗證Web服務Proxy」認證、「選取儲存陣列」頁面下方會顯示可用的儲存陣列清單。透過本頁面、您可以選擇SANtricity 使用哪些儲存陣列來執行備份與還原工作。
+
+請確定您的儲存陣列已設定為SANtricity 使用您的SeschWeb Services Proxy應用程式。
+
+
+NOTE: 無法連線SANtricity 的儲存陣列若由現象雲連接器應用程式觀察、將會在記錄檔中產生API例外情況。這是SANtricity 從無法到達的陣列擷取Volume清單時、使用現象的功能。為了避免記錄檔中出現這些API例外狀況、您可以直接與儲存陣列一起解決root問題、或是將受影響的儲存陣列從SANtricity 「Web服務Proxy」應用程式中移除。
+
+.步驟
+. 選取您要指派給SANtricity 支援備份與還原作業的NetApp Cloud Connector應用程式之儲存陣列旁的每個核取方塊。
+. 單擊 * 下一步 * 。
++
+系統會接受選取的儲存陣列、並在組態精靈中顯示「Select hosts（選取主機）」頁面。
+
++
+
+NOTE: 您必須為在「Select Storage Arrays（選取儲存陣列）」頁面中選取的任何儲存陣列設定有效密碼。您可以透過SANtricity 《VMware網站服務Proxy API說明文件》來設定儲存陣列密碼。
+
+
+
+
+
+=== 步驟6：選取主機
+
+根據透過「組態精靈」選取的Web服務Proxy託管儲存陣列、您可以透過SANtricity 「Select hosts（選取主機）」頁面、選取可用的主機、將備份和還原候選磁碟區對應到「支援對象」應用程式。
+
+請務必透過SANtricity 「支援服務代理程式」提供主機。
+
+.步驟
+. 在所列儲存陣列的下拉式功能表中、選取所需的主機。
+. 針對「Select Host（選取主機）」頁面下所列的任何其他儲存陣列、重複步驟1。
+. 單擊 * 下一步 * 。
++
+系統會接受所選SANtricity 的主機以供選擇、並在組態精靈中顯示「Review」（檢閱）頁面。
+
+
+
+
+
+=== 步驟7：檢閱初始組態
+
+《支援不支援雲端的連接器組態精靈》的最後一頁SANtricity 提供輸入結果的摘要、供您檢閱。
+
+檢閱已驗證組態資料的結果。
+
+* 如果所有組態資料均已成功驗證並建立、請按一下*完成*以完成組態程序。
+* 如果組態資料的任何區段無法驗證、請按一下*上一步*、瀏覽至組態精靈的適用頁面、以修改提交的資料。
+

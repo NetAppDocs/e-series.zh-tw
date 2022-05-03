@@ -1,0 +1,14 @@
+---
+permalink: maintenance-e5700/concept-batteries-wombat.html 
+sidebar: sidebar 
+keywords: battery, controller, canister, preserve, cache, data, ac, power, fail, batteries 
+summary: 控制器容器隨附電池、如果AC電源故障、則會保留快取的資料。 
+---
+= 電池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+控制器容器隨附電池、如果AC電源故障、則會保留快取的資料。

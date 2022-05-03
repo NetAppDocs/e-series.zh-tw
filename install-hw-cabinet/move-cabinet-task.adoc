@@ -1,0 +1,35 @@
+---
+permalink: install-hw-cabinet/move-cabinet-task.html 
+sidebar: sidebar 
+keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600 
+summary: 將機櫃移至永久位置。 
+---
+= 將機櫃移至永久位置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+3040 40U機櫃具有大負荷腳輪、可讓您將機櫃移至永久位置。
+
+.開始之前
+* 檢閱從貨盤上滾出機櫃而不使用堆高機的說明。
++
+運送箱提供內建的斜道和指示。請參閱運送箱正面隨附的開箱說明。
+
+* 評估裝載底座與機櫃最終目的地之間的所有斜坡。
++
+您必須評估所有的斜坡、確保機櫃的重心（機櫃放在斜坡上並以某個角度坐著時）不會超出機櫃的空間。
+
+
+
+許多機櫃都裝有磁碟機匣。這種情況會使機櫃正面的大部分重量增加、使重心更靠近正面。
+
+.步驟
+. 移除機櫃中最上層的裝置、確保機櫃安全地移至最終位置。如果任何斜坡有斜坡或下降幅度大於10度、這點特別重要。
+. 請使用下圖所示的正確方法、將機櫃移至永久位置。請確定您是按下機箱正面、而非後端。
++
+image::../media/83004_01.gif[83004 01]
+
+

@@ -1,0 +1,24 @@
+---
+permalink: config-linux/nvme-roce-verify-storage-access-host-task.html 
+sidebar: sidebar 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。 
+---
+= 驗證主機上的儲存設備存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。
+
+以檔案系統格式化的初始化命名空間。
+
+.步驟
+. 在主機上、將一或多個檔案複製到磁碟的掛載點。
+. 將檔案複製回原始磁碟上的其他資料夾。
+. 執行「dIFF」命令、將複製的檔案與原始檔案進行比較。
+
+
+您將移除複製的檔案和資料夾。

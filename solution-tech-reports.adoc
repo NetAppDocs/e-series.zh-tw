@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: solution-tech-reports.html 
+keywords: solution technical reports, e-series, hardware, santricity, os 
+summary: E系列技術報告 
+---
+= 瀏覽解決方案技術報告
+:allow-uri-read: 
+
+
+
+
+== Splunk
+
+[cols="9,1,9,1,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/16851-tr-4623pdf.pdf["*《TR-4623：E5700 with Splunk Enterprise*》"^] |  | https://www.netapp.com/media/57104-tr-4903.pdf["*《TR-4903：EF300 with Splunk Enterprise*》"^] |  |  
+
+
+| 說明E5700系統與Splunk設計的整合式架構。本文也摘要說明從Splunk機器記錄事件模擬工具取得的效能測試結果。 |  | 說明EF300 All Flash Array與Splunk設計的整合式架構。本文也摘要說明從Splunk機器記錄事件模擬工具取得的效能測試結果。 |  |  
+|===
+
+
+== 企業資料庫
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17086-tr4764pdf.pdf["*《TR-4764：採用NetApp EF系列的Microsoft SQL Server最佳實務指南》*"^] | https://www.netapp.com/pdf.html?item=/media/17248-tr4794pdf.pdf["* TR-4794：NetApp EF系列*上的Oracle資料庫"^] |  
+
+
+| 協助儲存管理員和資料庫管理員在NetApp EF系列儲存設備上成功部署Microsoft SQL Server。 | 協助儲存管理員和資料庫管理員在NetApp EF系列儲存設備上成功部署Oracle。 |  
+|===
+
+
+== 備份與恢復
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["* TR-4320：CommVault Data Platform V11*的最佳實務做法"^] | https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["* TR-4471：Veeam備份與複寫的最佳實務做法*"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704：部署採用NetApp E系列儲存設備的Veritas NetBackup *"^] 
+
+
+| 說明在CommVault Data Platform V11環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。 | 說明在Veeam Backup & Replication 9.5環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。 | 說明在NetApp E系列儲存設備上部署Veritas NetBackup。 
+|===
+
+
+== VSS
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/17200-tr4825pdf.pdf["*《TR-4825：適用於視訊監控的NetApp E系列最佳實務做法指南》*"^] | https://www.netapp.com/pdf.html?item=/media/6143-tr4818pdf.pdf["* TR-4818：使用NetApp E系列儲存設備來虛擬化視訊管理系統*"^] | https://www.netapp.com/pdf.html?item=/media/19400-tr-4848.pdf["* TR-4848：採用NetApp E系列E2800磁碟儲存陣列*的Bosch Video Recording解決方案"^] 
+
+
+| 說明將E系列陣列部署到視訊監控環境的最佳實務做法。 | 說明如何使用NetApp E系列儲存設備來設計及部署視訊管理系統。 | 說明視訊監控解決方案架構、並包含元件和儲存最佳實務做法的詳細資料。 
+|===
+
+
+== 高效能運算
+
+[cols="9,9,9"]
+|===
+
+
+| https://www.netapp.com/pdf.html?item=/media/31665-tr-4884.pdf["* TR-4884：入門級HPC系統、採用NetApp E系列和IBM Spectrum scale *"^] | https://www.netapp.com/pdf.html?item=/media/22029-tr-4859.pdf["* TR-4859：使用NetApp E系列儲存設備*部署IBM Spectrum scale"^] | https://www.netapp.com/pdf.html?item=/media/19407-tr-4856-deploy.pdf["* TR-4856：BeeGFS高可用度搭配使用Red Hat Enterprise Linux Server*的E系列"^] 
+
+
+| 說明以NetApp E系列儲存系統和IBM Spectrum scale為基礎之入門級HPC系統的參考架構。 | 說明部署以IBM Spectrum scale軟體堆疊為基礎的完整平行檔案系統解決方案的程序。 | 說明在以NetApp E系列系統為後盾的BeeGFS架構中實作高可用度所需的組態、以及使用RedHat Enterprise Linux進行BeeGFS儲存、中繼資料和管理服務。 
+
+
+|  |  |  
+
+
+|  |  |  
+
+
+| https://www.netapp.com/pdf.html?item=/media/19431-tr-4862.pdf["* TR-4862：BeeGFS高可用度搭配使用SUSE Linux Enterprise Server*的E系列"^] |  |  
+
+
+| 說明在以NetApp E系列系統為後盾的BeeGFS架構中實作高可用度所需的組態、以及使用SUSE Linux Enterprise Server進行BeeGFS儲存、中繼資料和管理服務。 |  |  
+|===

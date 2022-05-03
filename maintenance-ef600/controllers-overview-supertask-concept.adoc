@@ -1,0 +1,39 @@
+---
+permalink: maintenance-ef600/controllers-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: replace EF300 controller, replace EF600 controller, 
+summary: EF300或EF600控制器更換的要求與考量 
+---
+= EF300或EF600控制器更換需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+更換EF300或EF600控制器之前、請先檢閱相關要求與考量事項。
+
+控制器由主機板、韌體和軟體組成。它控制磁碟機並執行SANtricity 「支援系統管理程式」功能。
+
+
+
+== 控制器更換要求
+
+更換控制器之前、您必須具備：
+
+* 更換控制器機箱的零件編號與您要更換的控制器機箱相同。
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+* 1號十字螺絲起子。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）
+
+
+
+
+== 電源開啟時更換
+
+如果符合下列條件、您可以在儲存陣列開機並執行主機I/O作業時更換控制器容器：
+
+* 機櫃中的第二個控制器機箱具有最佳狀態。
+* 「恢復大師」的「詳細資料」區域中的「*確定要移除*」欄SANtricity 位會顯示*「是」*、表示移除此元件是安全的。
+

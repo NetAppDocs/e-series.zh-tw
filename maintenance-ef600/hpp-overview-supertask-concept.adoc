@@ -1,0 +1,22 @@
+---
+permalink: maintenance-ef600/hpp-overview-supertask-concept.html 
+sidebar: sidebar 
+keywords: convert EF300 host protocol, convert EF600 host protocol, 
+summary: 在轉換EF300或EF600主機傳輸協定之前、請先檢閱相關要求和考量事項。 
+---
+= EF300或EF600主機傳輸協定轉換需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在轉換EF300或EF600陣列的主機傳輸協定之前、請先檢閱下列需求。
+
+* 您已排定此程序的停機維護時間。
+* 執行轉換時、您必須停止主機I/O作業。在成功完成轉換之前、您無法存取儲存陣列上的資料。
+* 您正在使用頻外管理。（您無法使用頻內管理來完成此程序。）
+* 您已取得轉換所需的硬體、其中可能包括一組新的HIC和/或SFP。您的NetApp銷售代表可協助您判斷所需的硬體、並協助您訂購正確的零件。
+* 雙傳輸協定SFP收發器支援16GB和8Gb FC、以及10Gb iSCSI。因此、如果您使用雙傳輸協定、而且只是在FC和iSCSI之間切換、或是在iSCSI之間切換、則不需要變更SFP。
+* 某些主機連接埠傳輸協定轉換可能需要新增或升級主機介面卡。
+
