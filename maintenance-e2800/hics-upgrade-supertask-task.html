@@ -1,0 +1,4162 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head class="at-element-marker">
+  <title>升級E2800主機介面卡（HIC）</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="升級E2800主機介面卡（HIC）" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-tw/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" />
+	<meta property="og:description" content="升級E2800陣列中的主機介面卡（HIC）。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-tw/e-series/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="升級E2800陣列中的主機介面卡（HIC）。">
+  <meta name="keywords" content=" upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries"><!-- Icons -->
+  <link rel="icon" href="/zh-tw/e-series/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/e-series/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-tw/e-series/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/e-series/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-tw/e-series/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-tw/e-series/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-tw/e-series/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-tw/e-series/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-tw/e-series/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-tw/e-series/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-tw/e-series/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/e-series/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/e-series/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/e-series/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-tw/e-series/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-tw/e-series/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-tw/e-series/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-tw/e-series/js/na-search.js'></script><script src='/zh-tw/e-series/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-tw/e-series/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-tw/e-series/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-tw/e-series/js/na-utility.js'></script>
+  <script src='/zh-tw/e-series/js/clouddocs.js'></script>
+  <script src='/zh-tw/e-series/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-tw/e-series/js/toc.js'></script>
+  <script src='/zh-tw/e-series/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/zh-tw/e-series/js/custom-dropdown.js'></script>
+  <script src='/zh-tw/e-series/js/FileSaver.min.js'></script>
+  <script src='/zh-tw/e-series/js/jszip-utils.min.js'></script>
+  <script src='/zh-tw/e-series/js/jszip.min.js'></script>
+  <script src='/zh-tw/e-series/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/e-series/issues/new?body=Page%3A%20[升級E2800主機介面卡（HIC）](https://docs.netapp.com/zh-tw/e-series/maintenance-e2800/hics-upgrade-supertask-task.html)" class="page-nav-contribute-link" role="button"><img src="/zh-tw/e-series/images/discuss-sm.svg" class="github-icon" />要求變更文件</a><a target="_blank" href="https://github.com/NetAppDocs/e-series/blob/main/maintenance-e2800/hics-upgrade-supertask-task.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-tw/e-series/images/edit-sm.svg" class="github-icon" />編輯此頁面</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-tw/e-series/images/article-sm.svg" class="github-icon" />瞭解如何作出貢獻</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此頁面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">產品與解決方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支援與訓練</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社群</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">部落格</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客戶成功案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">聯絡人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-tw/e-series/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-tw/e-series/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-tw/e-series/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-tw/e-series/search.html"
+          data-type="widget" 
+          data-placeholder="搜尋文件" 
+          data-no-results-found="找不到符合 {query} 的相關結果。" 
+          data-did-you-mean="搜尋 {suggestion}。" 
+          data-no-results-found-did-you-mean="找不到符合 {query} 的相關結果。您是否要找的是{suggestion}？" 
+          data-results-found="找到 {hitCount} 筆結果"  
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/e-series/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">繁體中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-tw/e-series/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/e-series/maintenance-e2800/hics-upgrade-supertask-task.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/zh-tw/e-series/pdfs/fullsite-sidebar/E系列與SANtricity_支援技術文件.pdf" >
+          <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>此文件網站（PDF 格式）</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/版本資訊.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            版本資訊
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/開始使用.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            開始使用
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/深入瞭解E系列系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            深入瞭解E系列系統
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/安裝硬體.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            安裝硬體
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300和EF600.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            EF300和EF600
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800與E5700.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            E2800與E5700
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/安裝及設定60個磁碟機.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            安裝及設定60個磁碟機
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/安裝並設定12個和24個磁碟機.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            安裝並設定12個和24個磁碟機
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/3040_40U機櫃.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            3040 40U機櫃
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/纜線.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            纜線
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/部署軟體.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            部署軟體
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/Linux_Express組態.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            Linux Express組態
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/Fibre_Channel_Express設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            Fibre Channel Express設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/SAS設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            SAS設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/iSCSI設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            iSCSI設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/透過InfiniBand設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            透過InfiniBand設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/SRP_over_InfiniBand設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            SRP over InfiniBand設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/NVMe_over_InfiniBand設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            NVMe over InfiniBand設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/NVMe_over_RoCE設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            NVMe over RoCE設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/NVMe_over_Fibre_Channel設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            NVMe over Fibre Channel設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/VMware_Express組態.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            VMware Express組態
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/Windows_Express組態.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            Windows Express組態
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/升級系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            升級系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/控制器硬體升級.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/軟件升級SANtricity.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            作業系統SANtricity
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/維護系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            維護系統
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            EF300和EF600
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護電池.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            電池
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護控制器.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600可維護DIMM.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            DIMM
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護磁碟機.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            磁碟機
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維持風扇運轉.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            風扇
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護HIC.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機介面卡
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護主機連接埠.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機連接埠傳輸協定轉換
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/EF300_EF600維護電源供應器.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            電源供應器
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/SAS擴充卡.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            SAS擴充卡
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800維護系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            E2800
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800可維護電池.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            電池
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800維護控制器.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800可維護迴廊.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            迴廊
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800維護磁碟機.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            磁碟機
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800維護HIC.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機介面卡
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-tw/e-series/pdfs/pages/maintenance-e2800/hics-upgrade-supertask-task.pdf" >
+    <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E2800轉換主機傳輸協定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機連接埠傳輸協定轉換
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700維護系統.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            E5700
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700可維護電池.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            電池
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700維護控制器.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            控制器
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700維護迴廊.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            迴廊
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700維護磁碟機.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            磁碟機
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700維護HIC.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機介面卡
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/E5700變更主機傳輸協定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            主機連接埠傳輸協定
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/使用SANtricity_解決方案.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            使用SANtricity 解決方案
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/Web服務Proxy.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            Web服務Proxy
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/深入瞭解Web服務.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            深入瞭解Web服務
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/安裝與設定.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            安裝與設定
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/遠端Volume鏡射.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            遠端Volume鏡射
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/vCenter的儲存外掛程式.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            vCenter的儲存外掛程式
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/老舊解決方案.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            老舊解決方案
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/雲端連接器.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            雲端連接器
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-tw/e-series/pdfs/sidebar/技術報告.pdf" 
+            
+          >
+            <img src="/zh-tw/e-series/images/pdf.png" width="16" height="16"/>
+            技術報告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-tw/e-series/images/pdf-zip.png" width="16" height="16"/>
+      <pre>個別 PDF 文件的集合<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/index.html">
+        E系列文件
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 版本資訊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/whats-new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/known-issues.html">
+        版本資訊
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 開始使用</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/index.html">
+        本網站內容
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 深入瞭解E系列系統</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/learn-terms-concept.html">
+        E系列術語
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/learn-hardware-concept.html">
+        E系列硬體總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/learn-shelf-concept.html">
+        E系列機櫃類型
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/learn-software-concept.html">
+        軟體概述SANtricity
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/learn-video-concept.html">
+        E系列影片
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/getting-started/getup-run-concept.html">
+        使用E系列開始運作
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝硬體</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> EF300和EF600</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/overview-concept.html">
+        安裝程序
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/prepare-for-install-task.html">
+        準備安裝
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/install-hardware-task.html">
+        安裝硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/power-controller-shelves-task.html">
+        開啟控制器磁碟櫃的電源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-ef600/complete-setup-task.html">
+        完整的儲存系統設定
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> E2800與E5700</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/install-setup-overview-concept.html">
+        安裝程序
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝及設定60個磁碟機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2860-e5760-prepare-task.html">
+        準備安裝
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2860-e5760-install-hardware-task.html">
+        安裝硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2860-e5760-connect-cables-task.html">
+        纜線架
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2860-e5760-complete-setup-task.html">
+        完整的儲存系統設定
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝並設定12個和24個磁碟機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2824-e5724-prepare-task.html">
+        準備安裝
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2824-e5724-install-hardware-task.html">
+        安裝硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2824-e5724-connect-cables-task.html">
+        連接纜線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-e2800-e5700/e2824-e5724-complete-setup-task.html">
+        完整的儲存系統設定
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 3040 40U機櫃</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/overview-cabinet-specs-concept.html">
+        規格
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/cabinet-gather-tools-equipment-task.html">
+        收集所需的工具和設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/prepare-move-cabinet-task.html">
+        準備搬移機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/move-cabinet-task.html">
+        將機櫃移至永久位置
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabinet/complete-cabinet-install-task.html">
+        完整的機櫃安裝
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/rackmount-hardware.html">
+        機架安裝硬體
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 纜線</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/cable-overview-requirements-concept.html">
+        需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/host-cable-task.html">
+        主機纜線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/driveshelf-cable-task.html">
+        磁碟機櫃纜線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/power-cable-task.html">
+        電源線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/hotadd-drive-shelf-task.html">
+        熱新增磁碟機櫃
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/install-hw-cabling/ethernet-cable-task.html">
+        乙太網路纜線
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 部署軟體</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Linux Express組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/overview-concept.html">
+        假設
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Fibre Channel Express設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-install-configure-host-utilities-task.html">
+        安裝及設定主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-setup-multipath-conf-file-concept.html">
+        設定多重路徑.conf檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-configure-switches-task.html">
+        設定FC交換器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-determine-host-port-wwpns-task.html">
+        判斷主機WWPN
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-create-partition-file-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-worksheet-concept.html">
+        Linux的FC工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SAS設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-install-configure-host-utilities-task.html">
+        安裝及設定主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-setup-multipath-conf-file-concept.html">
+        設定多重路徑.conf檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-determine-sas-host-ids-task.html">
+        判斷SAS主機識別碼
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-create-partitions-filesystems-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/sas-worksheet-concept.html">
+        適用於Linux的SAS工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> iSCSI設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-install-configure-host-utilities-task.html">
+        安裝及設定主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-setup-multipath-conf-file-concept.html">
+        設定多重路徑.conf檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-switches-concept.html">
+        設定交換器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-network-concept.html">
+        設定網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-array-side-network-task.html">
+        設定陣列端的網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-configure-host-side-network-task.html">
+        設定主機端網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-verify-ip-network-connections-task.html">
+        驗證IP網路連線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-create-partition-file-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iscsi-worksheet-concept.html">
+        適用於Linux的iSCSI工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 透過InfiniBand設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-configure-subnet-manager-task.html">
+        設定子網路管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-install-configure-host-utilities-task.html">
+        安裝及設定主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-setup-multipath-conf-file-concept.html">
+        設定多重路徑.conf檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-configure-network-connections-task.html">
+        設定網路連線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-configure-network-attached-hosts-task.html">
+        設定網路
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-create-partition-files-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/iser-ib-worksheet-concept.html">
+        在InfiniBand工作表上方
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SRP over InfiniBand設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-configure-subnet-manager-task.html">
+        設定子網路管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-install-configure-host-utilities-task.html">
+        安裝及設定主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-setup-multipath-conf-file-concept.html">
+        設定多重路徑.conf檔案
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-determine-host-port-guids-task.html">
+        確定主機連接埠的GUI
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-configure-network-connections-task.html">
+        設定網路連線—透過Infiniband的SRSRP
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-create-partitions-filesystems-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/srp-ib-worksheet-concept.html">
+        SRP over Infiniband工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NVMe over InfiniBand設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-install-smcli-11-53-task.html">
+        安裝SANtricity 適用於SMcli的SynopsStorage Manager
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-access-sam-setup-wizard-task.html">
+        存取SANtricity 「系統管理程式」並使用「設定精靈」
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-configure-subnet-manager-task.html">
+        設定子網路管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-setup-host-side-task.html">
+        在主機端設定NVMe over InfiniBand
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-configure-storage-connections-task.html">
+        設定儲存陣列NVMe over InfiniBand連線
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-discover-connect-storage-host-task.html">
+        從主機探索並連線至儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-define-host-task.html">
+        定義主機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/ib-assign-volume-nvme-task.html">
+        指派磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-display-devices-visible-host-task.html">
+        顯示主機可見的磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-set-up-failover-task.html">
+        設定容錯移轉
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-access-virtual-targets-concept.html">
+        存取適用於虛擬裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-access-physical-targets-concept.html">
+        存取適用於實體裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-create-filesystems-sles-12-task.html">
+        建立檔案系統（RHEL 7和SLES 12）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-create-filesystems-sles-15-task.html">
+        建立檔案系統（RHEL 8和SLES 15）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-ib-worksheet-concept.html">
+        NVMe over InfiniBand工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NVMe over RoCE設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-configure-switch-task.html">
+        設定交換器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-setup-host-side-task.html">
+        在主機上設定NVMe over RoCE
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-configure-storage-connections-task.html">
+        設定NVMe連接埠設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-discover-connect-storage-host-task.html">
+        從主機連線至儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-define-host-task.html">
+        定義主機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-assign-volume-task.html">
+        指派Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-display-volumes-visible-host-task.html">
+        顯示主機可見的磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-setup-failover-host-task.html">
+        在主機上設定容錯移轉
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-access-virtual-targets-concept.html">
+        存取適用於虛擬裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-access-physical-targets-concept.html">
+        存取適用於實體裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-create-filesystems-sles-12-task.html">
+        建立檔案系統（RHEL 7和SLES 12）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-create-filesystems-sles-15-task.html">
+        建立檔案系統（RHEL 8和SLES 15）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-roce-worksheet-for-concept.html">
+        適用於Linux的NVMe over RoCE工作表
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> NVMe over Fibre Channel設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-verify-linux-config-support-task.html">
+        驗證Linux組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-install-smcli-11-53-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-configure-fc-switches-task.html">
+        設定FC交換器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-setup-host-side-task.html">
+        在主機端設定NVMe over Fibre Channel
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-define-host-task.html">
+        定義主機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/fc-assign-volume-nvme-task.html">
+        指派Volume
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-display-volumes-visible-host-task.html">
+        顯示主機可見的磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-setup-failover-host-task.html">
+        在主機上設定容錯移轉
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-access-virtual-targets-concept.html">
+        存取適用於虛擬裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-access-physical-targets-concept.html">
+        存取適用於實體裝置目標的NVMe磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-create-partition-files-task.html">
+        建立分割區和檔案系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-linux/nvme-fc-worksheet-concept.html">
+        適用於Linux的NVMe over Fibre Channel工作表
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> VMware Express組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/overview-concept.html">
+        假設
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/understand-vmware-workflow-concept.html">
+        瞭解工作流程
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/verify-vmware-config-support-task.html">
+        驗證VMware組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/configure-ip-address-using-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/configure-multipath-software-concept.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/fc-perform-specific-task.html">
+        執行FC特定工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/nmve-fc-perform-specific-task.html">
+        針對FC特定工作執行NMVe
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/iscsi-perform-specific-task.html">
+        執行iSCSI專屬工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/sas-perform-specific-task.html">
+        執行SAS專屬的工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/discover-storage-host-task.html">
+        探索主機上的儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/configure-storage-host-task.html">
+        設定主機上的儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-vmware/verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Windows Express組態</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/overview-concept.html">
+        假設
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/understand-windows-concept.html">
+        瞭解工作流程
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/verify-windows-config-support-task.html">
+        驗證Windows組態
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/configure-ip-address-dhcp-task.html">
+        使用DHCP設定IP位址
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/configure-multipath-software-task.html">
+        設定多重路徑軟體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/install-configure-host-utilities-task.html">
+        安裝及設定統一化主機公用程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/install-storage-manager-for-smcli-task.html">
+        安裝SANtricity NetApp儲存管理程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/access-sam-setup-wizard-task.html">
+        存取SANtricity 《系統管理程式》
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/fc-perform-specific-task.html">
+        執行FC特定工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/iscsi-perform-specific-task.html">
+        執行iSCSI專屬工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/sas-perform-specific-task.html">
+        執行SAS專屬的工作
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/discover-storage-host-task.html">
+        探索主機上的儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/configure-storage-host-task.html">
+        設定主機上的儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/config-windows/verify-storage-access-host-task.html">
+        驗證主機上的儲存設備存取
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 升級系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/overview-requirements-concept.html">
+        升級考量
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/prepare-upgrade-controllers-task.html">
+        準備升級控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/remove-controllers-task.html">
+        移除控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/install-controllers-task.html">
+        安裝新的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/upgrade-unlock-drives-task.html">
+        解除磁碟機鎖定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/complete-upgrade-controllers-task.html">
+        完成控制器升級
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/remount-volumes-lsi-task.html">
+        將廠商從LSI改為NetApp之後、重新掛載磁碟區
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-controllers/reconfigure-sas-task.html">
+        重新設定SAS-2系統
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 作業系統SANtricity</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-santricity/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-santricity/overview-upgrade-consider-task.html">
+        升級考量
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-santricity/upgrade-single-controller-task.html">
+        升級單一控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-santricity/upgrade-multiple-controller-task.html">
+        升級多個控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/upgrade-santricity/upgrade-drive-firmware-task.html">
+        升級磁碟機韌體
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 維護系統</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> EF300和EF600</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 電池</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/batteries-overview-requirements-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/batteries-replace-supertask-task.html">
+        更換電池
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/controllers-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/controllers-replace-supertask-task.html">
+        更換控制器
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> DIMM</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/dimms-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/dimms-replace-supertask-task.html">
+        更換DIMM
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 磁碟機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/drives-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/drives-replace-EF300-task.html">
+        更換EF300磁碟機
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/drives-replace-supertask-task.html">
+        更換EF600磁碟機
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 風扇</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/fans-replace-supertask-task.html">
+        更換風扇
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機介面卡</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hics-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hics-add-supertask-task.html">
+        新增主機介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hics-upgrade-intro.html">
+        升級主機介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hics-replace-supertask-task.html">
+        更換故障主機介面卡
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機連接埠傳輸協定轉換</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hpp-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hpp-change-supertask-task.html">
+        變更主機傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/hpp-complete-protocol-conversion-task.html">
+        完整的主機傳輸協定轉換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 電源供應器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/power-overview-requirements2-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/power-replace-supertask-task.html">
+        更換電源供應器
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> SAS擴充卡</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/sas-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-ef600/sas-add-supertask-task.html">
+        新增SAS擴充卡
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> E2800</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 電池</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-overview-requirements-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-prepare-replace-task.html">
+        準備更換電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-remove-controller-canister-task.html">
+        拆下控制器容器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-remove-failed-task.html">
+        取出故障電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-install-new-task.html">
+        安裝新電池
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-reinstall-controller-canister-task.html">
+        重新安裝控制器容器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/batteries-complete-replacement-task.html">
+        完成電池更換
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/controllers-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/controllers-second-add-task.html">
+        新增第二個控制器容器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/controllers-duplex-supertask-task.html">
+        更換雙工組態中的控制器
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/controllers-simplex-supertask-task.html">
+        更換單工組態的控制器
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 迴廊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/canisters-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/canisters-supply-supertask-task.html">
+        更換電源供應器（12個磁碟機或24個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/canisters-60-replace-power-task.html">
+        更換動力箱（60個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/canisters-fan-supertask-task.html">
+        更換風扇容器（60個磁碟機）
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 磁碟機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/drives-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/drives-12-24-supertask-task.html">
+        更換磁碟機（12個磁碟機或24個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/drives-60-replace-task.html">
+        更換磁碟機（60個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/drives-60-supertask-task.html">
+        更換磁碟機抽屜（60個磁碟機）
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機介面卡</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hics-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hics-add-supertask-task.html">
+        新增主機介面卡
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hics-upgrade-supertask-task.html">
+        升級主機介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hics-replace-supertask-task.html">
+        更換主機介面卡
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機連接埠傳輸協定轉換</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hpp-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hpp-change-host-protocol-task.html">
+        變更主機傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e2800/hpp-complete-protocol-conversion-task.html">
+        完整的主機傳輸協定轉換
+      </a></li></ul></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> E5700</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 電池</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/batteries-intro-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/batteries-replace-supertask-task.html">
+        更換電池
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 控制器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/controllers-overview-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/controllers-duplex-supertask-task.html">
+        更換雙工組態中的控制器
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 迴廊</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/canisters-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/canisters-supply-replace-task.html">
+        更換電源供應器（24個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/canisters-power-supertask-task.html">
+        更換動力箱（60個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/canisters-fan-replace-task.html">
+        更換風扇容器（60個磁碟機）
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 磁碟機</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/drives-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/drives-24-supertask-task.html">
+        更換磁碟機（24個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/drives-60-replace-task.html">
+        更換磁碟機（60個磁碟機）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/drives-drawer-supertask-task.html">
+        更換磁碟機抽屜（60個磁碟機）
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機介面卡</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hics-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hics-add-supertask-task.html">
+        新增主機介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hics-upgrade-supertask-task.html">
+        升級主機介面卡
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hics-replace-supertask-task.html">
+        更換主機介面卡
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 主機連接埠傳輸協定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hpp-overview-supertask-concept.html">
+        總覽與需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hpp-change-host-protocol-task.html">
+        變更主機傳輸協定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/maintenance-e5700/hpp-complete-protocol-conversion-task.html">
+        完整的主機傳輸協定轉換
+      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/manage-storage.html">
+        管理儲存設備
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用SANtricity 解決方案</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> Web服務Proxy</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/index.html">
+        總覽
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 深入瞭解Web服務</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/overview-intro-concept.html">
+        Web服務API總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/overview-compat-concept.html">
+        相容性與限制
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/overview-api-concept.html">
+        API基礎知識
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/overview-terms-concept.html">
+        詞彙與概念
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 安裝與設定</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/install-reqs-task.html">
+        檢閱要求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/install-wsp-task.html">
+        安裝Web服務Proxy
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/install-login-task.html">
+        登入API和Unified Manager
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/install-config-task.html">
+        設定Web服務Proxy
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/install-uninstall-task.html">
+        解除安裝Web服務Proxy
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/access-intro-concept.html">
+        管理使用者存取權
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/certificates-intro-concept.html">
+        管理安全性與憑證
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/array-intro-concept.html">
+        管理儲存系統
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/polling-intro-concept.html">
+        管理自動輪詢
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/web-services-proxy/asup-intro-concept.html">
+        管理AutoSupport
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 遠端Volume鏡射</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/system-reqs-concept.html">
+        要求與限制
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/setup-remote-volumes-concept.html">
+        設定硬體
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/import-remote-storage-task.html">
+        匯入遠端儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/view-import-progress-task.html">
+        管理匯入進度
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/modify-remote-storage-task.html">
+        修改連線設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/remote-storage-volumes/remove-remote-storage-task.html">
+        移除遠端儲存物件
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> vCenter的儲存外掛程式</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-overview.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-installation.html">
+        安裝外掛程式
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-user-access.html">
+        設定存取權限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-login-and-navigation.html">
+        登入並瀏覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-storage-array-discovery.html">
+        探索儲存陣列
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-storage-provisioning.html">
+        配置儲存設備
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/vcenter-plugin/san-spvc-ic-plugin-removal.html">
+        移除外掛程式
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 老舊解決方案</div>
+      </a>
+      <ul><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 雲端連接器</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/index.html">
+        總覽
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/learn-intro-concept.html">
+        需求
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/install-intro-concept.html">
+        安裝Cloud Connector
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/config-intro-concept.html">
+        首次設定Cloud Connector
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/login-task.html">
+        登入Cloud Connector
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/backup-intro-concept.html">
+        備份
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/restore-intro-concept.html">
+        還原
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/modify-intro-concept.html">
+        修改設定
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/cloud-connector/uninstall-intro-concept.html">
+        解除安裝Cloud Connector
+      </a></li></ul></li></ul></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/early-versions.html">
+        舊版
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 技術報告</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/platform-tech-reports.html">
+        平台TR
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/security-tech-reports.html">
+        安全TRs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/feature-tech-reports.html">
+        特色TRs
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/solution-tech-reports.html">
+        解決方案TR
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/e-series/legal-notices.html">
+        法律聲明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-tw/e-series/">e-series</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-tw/e-series/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 本繁體中文版使用機器翻譯，譯文僅供參考，若與英文版本牴觸，應以英文版本為準。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">升級E2800主機介面卡（HIC）</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-05-03 06:29:47 +0000">05/03/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以升級E2800陣列中的主機介面卡（HIC）、以增加主機連接埠數量或變更主機傳輸協定。</p>
+</div>
+<div class="paragraph">
+<p>升級HIC時、您必須關閉儲存陣列的電源、從每個控制器移除現有的HIC、安裝新的HIC、然後重新接上電源。</p>
+</div>
+<div class="ulist">
+<div class="title">開始之前</div>
+<ul>
+<li>
+<p>檢閱 <a href="hics-overview-supertask-concept.html">"E2800 HIC更換要求"</a>。</p>
+</li>
+<li>
+<p>為此程序排定停機維護時間。安裝HIC時必須關閉電源、因此在成功完成此程序之前、您無法存取儲存陣列上的資料。（在雙工組態中、這是因為兩個控制器在開機時必須具有相同的HIC組態。）</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">您需要的是 #8217 ；需要的是什麼</div>
+<ul>
+<li>
+<p>一或兩個HIC、取決於您的儲存陣列中是否有一個或兩個控制器。HIC必須與您的控制器相容。</p>
+</li>
+<li>
+<p>用於識別連接至控制器容器的每條纜線的標籤。</p>
+</li>
+<li>
+<p>或您已採取其他防靜電預防措施。</p>
+</li>
+<li>
+<p>1號十字螺絲起子。</p>
+</li>
+<li>
+<p>為新主機連接埠安裝的任何新主機硬體、例如交換器或主機匯流排介面卡（HBA）。</p>
+</li>
+<li>
+<p>連接新主機連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。</p>
+<div class="paragraph">
+<p>如需相容硬體的相關資訊、請參閱 <a href="https://mysupport.netapp.com/NOW/products/interoperability" target="_blank" rel="noopener">"NetApp 互通性對照表"</a> 或 <a href="http://hwu.netapp.com/home.aspx" target="_blank" rel="noopener">"NetApp Hardware Universe"</a>。</p>
+</div>
+</li>
+<li>
+<p>管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟1準備升級主機介面卡">步驟1：準備升級主機介面卡</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>準備升級主機介面卡（HIC）、方法是備份儲存陣列的組態資料庫、收集支援資料、以及停止主機I/O作業。然後、您可以關閉控制器機櫃的電源。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>請從SANtricity 「無法使用的系統管理程式」首頁、確認儲存陣列的狀態為「最佳」。</p>
+<div class="paragraph">
+<p>如果狀態不是「最佳」、請使用Recovery Guru或聯絡技術支援部門來解決問題。請勿繼續執行此程序。</p>
+</div>
+</li>
+<li>
+<p>使用SANtricity NetApp System Manager備份儲存陣列的組態資料庫。</p>
+<div class="paragraph">
+<p>如果在此程序期間發生問題、您可以使用儲存的檔案來還原組態。系統會儲存RAID組態資料庫的目前狀態、其中包含控制器上磁碟區群組和磁碟集區的所有資料。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>從系統管理員：</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>選取功能表：Support（支援）[Support Center（支援中心）&gt; Diagnostics（診斷）]。</p>
+</li>
+<li>
+<p>選擇*收集組態資料*。</p>
+</li>
+<li>
+<p>按一下「* Collect*」。</p>
+<div class="paragraph">
+<p>檔案會以*組態Data-&lt;arrayName&gt;-&lt;DateTimer&gt;.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>或者、您也可以使用下列CLI命令來備份組態資料庫：</p>
+<div class="paragraph">
+<p>「ave storageArray dbmDatabase sourceLocation=Onboard contentID=all file="File"；」</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>使用SANtricity NetApp System Manager收集儲存陣列的支援資料。</p>
+<div class="paragraph">
+<p>如果在此程序期間發生問題、您可以使用儲存的檔案來疑難排解問題。系統會將儲存陣列的庫存、狀態和效能資料儲存在單一檔案中。</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>選取功能表：Support（支援）[Support Center（支援中心）&gt; Diagnostics（診斷）]。</p>
+</li>
+<li>
+<p>選擇*收集支援資料*。</p>
+</li>
+<li>
+<p>按一下「* Collect*」。</p>
+<div class="paragraph">
+<p>檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>確保儲存陣列與所有連線的主機之間不會發生I/O作業。例如、您可以執行下列步驟：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>停止所有涉及從儲存設備對應至主機之LUN的程序。</p>
+</li>
+<li>
+<p>確保沒有任何應用程式將資料寫入從儲存設備對應至主機的任何LUN。</p>
+</li>
+<li>
+<p>卸載陣列上與磁碟區相關的所有檔案系統。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/note.svg" alt="附註">
+</td>
+<td class="content">
+停止主機I/O作業的確切步驟取決於主機作業系統和組態、而這些步驟超出這些指示的範圍。如果您不確定如何停止環境中的主機I/O作業、請考慮關閉主機。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+<strong>可能的資料遺失</strong>-如果您在執行I/O作業時繼續執行此程序、主機應用程式可能會因為無法存取儲存設備而失去資料存取權。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>如果儲存陣列參與鏡射關係、請停止次要儲存陣列上的所有主機I/O作業。</p>
+</li>
+<li>
+<p>等待快取記憶體中的任何資料寫入磁碟機。</p>
+<div class="paragraph">
+<p>當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_2800_controller_attn_led_maint-e2800.gif" alt="28 dwg2800控制器收件人已引導維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*_快取作用中LED _</p>
+</div>
+</li>
+<li>
+<p>從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。請等待所有作業完成、然後再繼續下一步。</p>
+</li>
+<li>
+<p>關閉控制器磁碟櫃的電源。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>關閉控制器機櫃上的兩個電源開關。</p>
+</li>
+<li>
+<p>等待控制器機櫃上的所有LED關閉。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟2移除控制器容器">步驟2：移除控制器容器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>您可以移除控制器容器、以便升級新的主機介面卡（HIC）。當您移除控制器容器時、必須拔下所有纜線。然後、您可以將控制器外殼滑出控制器機櫃。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>標示連接至控制器容器的每條纜線。</p>
+</li>
+<li>
+<p>從控制器容器拔下所有纜線。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>如果HIC連接埠使用SFP+收發器、請將其移除。</p>
+<div class="paragraph">
+<p>視您要升級的HIC類型而定、您可能可以重複使用這些SFP。</p>
+</div>
+</li>
+<li>
+<p>確認控制器背面的快取作用中LED已關閉。</p>
+<div class="paragraph">
+<p>當需要將快取資料寫入磁碟機時、控制器背面的綠色快取作用中LED會亮起。您必須等到LED燈關閉後、才能移除控制器機箱。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_2800_controller_attn_led_maint-e2800.gif" alt="28 dwg2800控制器收件人已引導維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*_快取作用中LED _</p>
+</div>
+</li>
+<li>
+<p>擠壓CAM握把上的栓鎖、直到其釋放、然後向右打開CAM握把、將控制器容器從機櫃中釋放。</p>
+<div class="paragraph">
+<p>下圖為E2812控制器機櫃、E2824控制器機櫃或EF280快閃陣列的範例：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif" alt="28圖e2824移除控制器機箱維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>控制器容器</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>CAM Handle</em></p>
+</div>
+<div class="paragraph">
+<p>下圖是E2860控制器機櫃的範例：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif" alt="28圖e2860新增控制器機箱維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>控制器容器</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>CAM Handle</em></p>
+</div>
+</li>
+<li>
+<p>使用兩隻手和CAM把把、將控制器箱滑出機櫃。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+請務必用兩隻手支撐控制器容器的重量。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>如果您要從E2812控制器機櫃、E2824控制器機櫃或EF280快閃陣列移除控制器機箱、則會有一個蓋板移到位以封鎖閒置的機櫃、有助於維持氣流和冷卻。</p>
+</div>
+</li>
+<li>
+<p>翻轉控制器外殼、使可拆式護蓋面朝上。</p>
+</li>
+<li>
+<p>將控制器容器放在無靜電的平面上。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟3移除主機介面卡">步驟3：移除主機介面卡</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>移除原始主機介面卡（HIC）、以便更換為升級的主機介面卡。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>按下按鈕並將控制器外殼滑出、以取下控制器外殼。</p>
+</li>
+<li>
+<p>確認控制器內部的綠色LED（電池與DIMM之間）已關閉。</p>
+<div class="paragraph">
+<p>如果此綠色LED亮起、表示控制器仍在使用電池電力。您必須等到LED熄滅後、才能移除任何元件。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2800_internal_cache_active_led_maint-e2800.gif" alt="28圖e2800內部快取作用中LED維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>內部快取作用中</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>電池</em></p>
+</div>
+</li>
+<li>
+<p>使用1號十字螺絲起子、將HIC面板連接至控制器容器的螺絲卸下。</p>
+<div class="paragraph">
+<p>共有四顆螺絲：一顆在頂端、一顆在側邊、兩顆在正面。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif" alt="28圖e2800 hic faceplace螺絲mainstt e2800">
+</div>
+</div>
+</li>
+<li>
+<p>卸下HIC面板。</p>
+</li>
+<li>
+<p>使用手指或十字螺絲起子、旋鬆將HIC固定至控制器卡的三個指旋螺絲。</p>
+</li>
+<li>
+<p>向上提起HIC卡並將其滑回、以小心地將其從控制器卡上拆下。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+請注意、請勿刮傷或撞擊HIC底部或控制器卡頂端的元件。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif" alt="28 dwge2800 hic指旋螺絲維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*主機介面卡（HIC）_</p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>指旋螺絲</em></p>
+</div>
+</li>
+<li>
+<p>將HIC放置在無靜電的表面上。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟4安裝主機介面卡">步驟4：安裝主機介面卡</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>安裝新的主機介面卡（HIC）、以增加儲存陣列中的主機連接埠數量。</p>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+<strong>可能遺失資料存取</strong>-如果HIC是針對另一個E系列控制器所設計、請勿在E2800控制器容器中安裝HIC。此外、如果您有雙工組態、則兩個控制器和兩個HIC都必須相同。如果出現不相容或不相符的HIC、則當您使用電源時、控制器會鎖定。
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>打開新HIC和新HIC面板的包裝。</p>
+</li>
+<li>
+<p>使用1號十字螺絲起子、卸下將HIC面板連接至控制器機箱的四顆螺絲、然後卸下面板。</p>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif" alt="28圖e2800 hic faceplace螺絲mainstt e2800">
+</div>
+</div>
+</li>
+<li>
+<p>將HIC上的三個指旋螺絲對齊控制器上的對應孔、並將HIC底部的連接器對齊控制器卡上的HIC介面連接器。</p>
+<div class="paragraph">
+<p>請注意、請勿刮傷或撞擊HIC底部或控制器卡頂端的元件。</p>
+</div>
+</li>
+<li>
+<p>小心地將HIC降低到位、然後輕按HIC接頭以固定。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+<strong>可能的設備損壞</strong>：請非常小心、不要夾住HIC和指旋螺絲之間控制器LED的金帶狀連接器。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif" alt="28 dwge2800 hic指旋螺絲維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*主機介面卡_</p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>指旋螺絲</em></p>
+</div>
+</li>
+<li>
+<p>以手鎖緊HIC指旋螺絲。</p>
+<div class="paragraph">
+<p>請勿使用螺絲起子、否則可能會過度鎖緊螺絲。</p>
+</div>
+</li>
+<li>
+<p>使用1號十字螺絲起子、將新的HIC面板裝到控制器容器上、並使用您先前卸下的四顆螺絲。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟5重新安裝控制器容器">步驟5：重新安裝控制器容器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>安裝新的主機介面卡（HIC）之後、將控制器容器重新安裝到控制器機櫃中。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>將控制器機箱蓋從後端滑到前端、直到按鈕發出卡響為止、以重新安裝控制器機箱上的機箱蓋。</p>
+</li>
+<li>
+<p>翻轉控制器外殼、使可拆式護蓋面朝下。</p>
+</li>
+<li>
+<p>將CAM握把放在開啟位置時、將控制器外殼完全滑入控制器機櫃。</p>
+<div class="paragraph">
+<p>下圖為E2824控制器機櫃或EF280快閃陣列的範例：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif" alt="28圖e2824移除控制器機箱維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>控制器容器</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>CAM Handle</em></p>
+</div>
+<div class="paragraph">
+<p>下圖是E2860控制器機櫃的範例：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif" alt="28圖e2860新增控制器機箱維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>控制器容器</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>CAM Handle</em></p>
+</div>
+</li>
+<li>
+<p>將CAM握把往左移動、將控制器容器鎖定到位。</p>
+</li>
+<li>
+<p>重新連接所有拔下的纜線。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/note.svg" alt="附註">
+</td>
+<td class="content">
+此時請勿將資料纜線連接至新的HIC連接埠。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>（選用）如果您要升級雙工組態的HIC、請重複所有步驟以移除其他控制器機箱、移除HIC、安裝新的HIC、然後更換第二個控制器機箱。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="步驟6完整的主機介面卡升級">步驟6：完整的主機介面卡升級</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>檢查控制器LED和七段顯示、確認控制器狀態為最佳、以完成主機介面卡升級程序。</p>
+</div>
+<div class="olist arabic">
+<div class="title">步驟</div>
+<ol class="arabic">
+<li>
+<p>開啟控制器機櫃背面的兩個電源開關。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>請勿在開機程序期間關閉電源開關、通常需要90秒或更短時間才能完成。</p>
+</li>
+<li>
+<p>每個機櫃中的風扇在初次啟動時聲音非常大。開機期間的大聲雜訊是正常現象。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>控制器開機時、請檢查控制器LED和七段顯示。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>七區段顯示會顯示重複順序* OS*、* SD*、<strong>空白_</strong>、表示控制器正在執行「營業開始」（SOD）處理。控制器成功開機後、其七段顯示器應會顯示匣ID。</p>
+</li>
+<li>
+<p>除非發生錯誤、否則控制器上的黃色警示LED會開啟然後關閉。</p>
+</li>
+<li>
+<p>綠色的主機連結LED會持續亮起、直到您連接主機纜線為止。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/note.svg" alt="附註">
+</td>
+<td class="content">
+圖中顯示控制器容器範例。您的控制器可能有不同的編號和不同類型的主機連接埠。
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/28_dwg_attn_led_7s_display_maint-e2800.gif" alt="28 dgn tled 7s顯示器維護e2800">
+</div>
+</div>
+<div class="paragraph">
+<p>*（1）*<em>注意LED（黃色）</em></p>
+</div>
+<div class="paragraph">
+<p>*（2）*<em>se-seg段 顯示</em></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*（3）*_主機連結LED _</p>
+</div>
+</li>
+<li>
+<p>從「系統管理程式」確認控制器的狀態為「最佳」SANtricity 。</p>
+<div class="paragraph">
+<p>如果狀態不是「最佳」、或是有任何警示LED亮起、請確認所有纜線均已正確安裝、並檢查HIC和控制器機箱是否已正確安裝。如有必要、請移除並重新安裝控制器容器和HIC。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/e-series/images/note.svg" alt="附註">
+</td>
+<td class="content">
+如果您無法解決問題、請聯絡技術支援部門。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>如果新的HIC連接埠需要SFP+收發器、請安裝這些SFP。</p>
+</li>
+<li>
+<p>將控制器主機連接埠的纜線連接至資料主機。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>儲存陣列中的主機介面卡升級程序已經完成。您可以恢復正常作業。</p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">cookie-settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">對我們的網站有任何意見或要求？</span>
+              <a target="_self" href="javascript:netapp_mailto()">請與我們聯絡</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-tw/announcements/">公告</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-tw/e-series/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-tw/e-series/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-tw/e-series/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-tw/e-series/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-tw/e-series/js/www-ntap.js'></script>
+    <script src='/zh-tw/e-series/js/tabbed-blocks.js'></script>
+  </body></html>
