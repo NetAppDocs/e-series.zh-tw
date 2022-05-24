@@ -15,7 +15,7 @@ Windows Express安裝儲存陣列及存取SANtricity 《支援系統管理程式
 
 
 
-=== 程序總覽
+== 程序總覽
 
 Express方法包括下列步驟、如中所述 link:understand-windows-concept.html["Windows工作流程"]。
 
@@ -32,7 +32,7 @@ Express方法包括下列步驟、如中所述 link:understand-windows-concept.h
 
 
 
-=== 如需詳細資訊、請參閱
+== 如需詳細資訊、請參閱
 
 * 線上說明-說明如何使用SANtricity 「支援系統管理程式」來完成組態和儲存管理工作。產品內有此功能。
 * https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。

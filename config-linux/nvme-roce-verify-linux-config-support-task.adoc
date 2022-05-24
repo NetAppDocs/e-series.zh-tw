@@ -39,18 +39,7 @@ summary: 為了確保可靠的營運、您需要建立實作計畫、然後使�
 
 == 驗證NVMe over RoCE限制
 
-在使用NVMe over RoCE之前、請先檢閱控制器、交換器、主機和還原限制。如需所有限制的最新清單、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
-
-
-
-=== 控制器限制
-
-* NVMe over RoCE可設定用於EF300（僅100GB控制器）、EF600、EF570和E5700控制器。控制器必須具有100GB或200GB主機連接埠。
-* 此傳輸協定僅適用於EF300、EF600、EF570和E5700控制器。在EF600、EF570和E5700控制器上使用傳輸協定至少需要32 GB的實體記憶體。對於EF300、至少需要16 GB的實體記憶體。如果在一天開始作業期間未達到控制器的最低記憶體需求、則會顯示一則訊息、協助您診斷問題。
-* 不支援單工（單一控制器）組態。
-* 唯一支援的主機介面卡（HIC）是100g或200g EDR HIC、也支援InfiniBand上的NVMe、iSER和SRP。
-* 不支援採用NVMe over InfiniBand或SCSI主機介面的混合式NVMe over RoCE。
-
+在使用NVMe over RoCE之前、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 檢閱最新的控制器、主機和還原限制。
 
 
 
@@ -58,12 +47,6 @@ summary: 為了確保可靠的營運、您需要建立實作計畫、然後使�
 
 
 NOTE: *資料遺失風險。*您必須在交換器上啟用優先流程控制或全域暫停控制、以避免NVMe over RoCE環境中的資料遺失風險。
-
-
-
-=== 主機、主機傳輸協定及主機作業系統限制
-
-如需完整的需求清單、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 
 
 

@@ -77,6 +77,6 @@ image::../media/doccenterworkflow.gif[文件中心工作流程]
 
 選取您要使用的介面：
 
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html["適用於11.7x的系統管理程式線上說明SANtricity"]
-* https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-116/home.html["適用於11.6x的系統管理程式線上說明SANtricity"]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["適用於11.7x的系統管理程式線上說明SANtricity"]
+* https://docs.netapp.com/us-en/e-series-santricity-116/system-manager/index.html["適用於11.6x的系統管理程式線上說明SANtricity"]
 

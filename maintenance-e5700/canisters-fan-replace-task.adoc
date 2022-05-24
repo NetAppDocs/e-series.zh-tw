@@ -148,7 +148,7 @@ NOTE: 更換風扇容器後、警示LED會持續亮起（持續亮起黃色燈�
 
 
 
-. 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["零件歸還&替換頁面"] 以取得更多資訊。
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。
 
 
 您的風扇容器更換完成。您可以恢復正常作業。

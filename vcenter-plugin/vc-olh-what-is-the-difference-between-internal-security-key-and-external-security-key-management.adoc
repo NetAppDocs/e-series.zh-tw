@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 當您實作磁碟機安全功能時、可以使用內部安全金鑰或外部安全金鑰、在從儲存陣列移除已啟用安全功能的磁碟機時鎖定資料。 
+---
+= 內部安全金鑰與外部安全金鑰管理有何不同？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當您實作磁碟機安全功能時、可以使用內部安全金鑰或外部安全金鑰、在從儲存陣列移除已啟用安全功能的磁碟機時鎖定資料。
+
+安全金鑰是一串字元、可在已啟用安全功能的磁碟機和儲存陣列中的控制器之間共用。內部金鑰會保留在控制器的持續記憶體上。外部金鑰是使用金鑰管理互通性傳輸協定（KMIP）、在獨立的金鑰管理伺服器上維護。

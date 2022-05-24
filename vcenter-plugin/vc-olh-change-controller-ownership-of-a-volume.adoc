@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 變更磁碟區的慣用控制器擁有權、以便透過新路徑引導主機應用程式的I/O。 
+---
+= 變更磁碟區的控制器擁有權
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以變更磁碟區的慣用控制器擁有權、以便透過新路徑引導主機應用程式的I/O。
+
+如果您不使用多重路徑驅動程式、則必須關閉目前使用磁碟區的所有主機應用程式。此動作可防止I/O路徑變更時發生應用程式錯誤。
+
+您可以變更集區或磁碟區群組中一或多個磁碟區的控制器擁有權。
+
+.步驟
+. 從「Manage（管理）」頁面中、選取包含您要變更控制器擁有權之磁碟區的儲存陣列。
+. 選取功能表：資源配置[管理磁碟區]。
+. 選取任何Volume、然後選取功能表：More（更多）[Change所有權]（變更所有權）。
++
+「變更Volume Ownership」對話方塊隨即出現。儲存陣列上的所有磁碟區都會顯示在此對話方塊中。
+
+. 使用*偏好的擁有者*下拉式清單來變更您要變更之每個磁碟區的偏好控制器、並確認您要執行此作業。
+
+
+.結果
+* 系統會變更磁碟區的控制器擁有權。磁碟區的I/O現在會透過此I/O路徑導向。
+* 在多重路徑驅動程式重新設定以辨識新路徑之前、磁碟區可能不會使用新的I/O路徑。
+
+
+此動作通常只需不到五分鐘的時間。

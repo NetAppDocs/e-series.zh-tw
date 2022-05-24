@@ -59,6 +59,12 @@ summary: E系列技術報告
 
 
 | 說明將E系列陣列部署到視訊監控環境的最佳實務做法。 | 說明如何使用NetApp E系列儲存設備來設計及部署視訊管理系統。 | 說明視訊監控解決方案架構、並包含元件和儲存最佳實務做法的詳細資料。 
+
+
+| https://www.netapp.com/pdf.html?item=/media/19427-tr-4838.pdf&v=2020106216["*《TR-4838：E2800與E5700 with Milestone XProtect VMS Certification Report*》"^] | https://www.netapp.com/media/17106-tr4771design.pdf["* TR-4771-Design：NetApp E系列與Genetec影片管理軟體*"^] |  
+
+
+| 說明在NetApp E2800與E5700混合式儲存陣列上執行的認證測試結果。 | 說明Genetec Security Center Video Management Software（VMS）在NetApp E2800和E5700混合式儲存陣列上的認證結果。 |  
 |===
 
 

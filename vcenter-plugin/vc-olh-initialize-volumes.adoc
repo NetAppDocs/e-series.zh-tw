@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-initialize-volumes.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 手動初始化磁碟區、以從特定故障狀況中恢復。 
+---
+= 初始化磁碟區
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+第一次建立磁碟區時、就會自動初始化該磁碟區。不過、Recovery Guru可能會建議您手動初始化磁碟區、以便從某些故障情況中恢復。
+
+請僅在技術支援的指導下使用此選項。您可以選取一個或多個要初始化的磁碟區。
+
+.開始之前
+* 所有I/O作業都已停止。
+* 您要初始化的磁碟區上的任何裝置或檔案系統都必須卸載。
+* 磁碟區處於最佳狀態、且磁碟區上未進行任何修改作業。*注意：*您無法在作業啟動後取消作業。所有Volume資料都會被清除。除非Recovery Guru建議您這麼做、否則請勿嘗試此作業。請先聯絡技術支援部門、再開始此程序。
+
+
+初始化磁碟區時、磁碟區會保留其WWN、主機指派、已分配容量及保留容量設定。它也會保留相同的資料保證（DA）設定和安全性設定。
+
+下列類型的磁碟區無法初始化：
+
+* 快照Volume的基礎Volume
+* 鏡射關係中的主要Volume
+* 鏡射關係中的次要Volume
+* Volume複本中的來源Volume
+* 在Volume複本中鎖定Volume
+* 已有初始化進行中的磁碟區
+
+
+此程序僅適用於從集區或磁碟區群組建立的標準磁碟區。
+
+.步驟
+. 從「Manage（管理）」頁面中、選取包含您要初始化之磁碟區的儲存陣列。
+. 選取功能表：資源配置[管理磁碟區]。
+. 選取任何Volume、然後選取功能表：More（更多）[Initialize Volumes]（初始化Volume）。
++
+「初始化磁碟區」對話方塊隨即出現。儲存陣列上的所有磁碟區都會顯示在此對話方塊中。
+
+. 選取您要初始化的一或多個磁碟區、然後確認您要執行該作業。
+
+
+系統會執行下列動作：
+
+* 清除已初始化磁碟區的所有資料。
+* 清除區塊索引、這會使未寫入的區塊讀取、如同零填色（磁碟區看起來是完全空白的）。
+
+
+這項作業可能會耗費大量時間、並可能影響系統效能。

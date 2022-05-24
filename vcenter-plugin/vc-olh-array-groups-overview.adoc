@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-array-groups-overview.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 將一組儲存陣列分組、以管理實體與虛擬化的基礎架構。 
+---
+= 陣列群組總覽
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將一組儲存陣列分組、在vCenter的儲存外掛程式中管理實體與虛擬化基礎架構。您可能想要將儲存陣列分組、以便更輕鬆地執行監控或報告工作。
+
+儲存陣列群組類型：
+
+* *全部群組*：「全部」群組為預設群組、包含組織中探索到的所有儲存陣列。您可以從主檢視畫面存取All群組。
+* *使用者建立的群組*-使用者建立的群組包含您手動選取要新增至該群組的儲存陣列。使用者建立的群組可從主檢視存取。
+

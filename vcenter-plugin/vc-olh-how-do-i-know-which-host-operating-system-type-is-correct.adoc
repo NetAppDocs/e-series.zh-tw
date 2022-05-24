@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 主機作業系統類型欄位包含主機的作業系統。您可以從下拉式清單中選取建議的主機類型、或允許主機內容代理程式（HCA）設定主機和適當的主機作業系統類型。 
+---
+= 如何知道哪種主機作業系統類型正確？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+主機作業系統類型欄位包含主機的作業系統。您可以從下拉式清單中選取建議的主機類型、或允許主機內容代理程式（HCA）設定主機和適當的主機作業系統類型。
+
+下拉式清單中顯示的主機類型取決於儲存陣列機型和韌體版本。最新版本會先顯示最常見的選項、最可能是適當的選項。此清單上的外觀並不表示完全支援此選項。
+
+
+NOTE: 如需主機支援的詳細資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+清單中可能會出現下列部分主機類型：
+
+|===
+| 主機作業系統類型 | 作業系統（OS）和多重路徑驅動程式 
+
+
+| Linux DM-MP（核心3.10或更新版本） | 支援使用Device Mapper多重路徑容錯移轉解決方案搭配3.10或更新版本核心的Linux作業系統。 
+
+
+| VMware ESXi | 使用VMware內建的儲存陣列類型原則模組SATP_ALUA、支援執行原生多路徑外掛程式（NMP）架構的VMware ESXi作業系統。 
+
+
+| Windows（叢集式或非叢集式） | 支援未執行Atto多重路徑驅動程式的Windows叢集式或非叢集式組態。 
+
+
+| Atto叢集（所有作業系統） | 支援所有使用Atto Technology、Inc.、多重路徑驅動程式的叢集組態。 
+
+
+| Linux（Veritas DMP） | 使用Veritas DMP多重路徑解決方案支援Linux作業系統。 
+
+
+| Linux（Atto） | 支援使用Atto Technology、Inc.、多重路徑驅動程式的Linux作業系統。 
+
+
+| Mac OS | 支援使用Atto Technology、Inc.、多重路徑驅動程式的Mac OS版本。 
+
+
+| Windows（Atto） | 支援使用Atto Technology、Inc.、多重路徑驅動程式的Windows作業系統。 
+
+
+| 僅限部分（ALUA）FlexArray | 支援使用FlexArray ALUA進行多重路徑的NetApp支援系統。 
+
+
+| IBM服務 | 支援IBM SAN Volume Controller組態。 
+
+
+| 原廠預設值 | 保留用於儲存陣列的初始啟動。如果您的主機作業系統類型設為出廠預設值、請將其變更為符合主機作業系統和連接主機上執行的多重路徑驅動程式。 
+
+
+| Linux DM-MP（Kernal 3.9或更早版本） | 支援使用具備3.9或更早核心的Device Mapper多重路徑容錯移轉解決方案的Linux作業系統。 
+
+
+| 叢集式視窗（已過時） | 如果您的主機作業系統類型設定為此值、請改用Windows（叢集式或非叢集式）設定。 
+|===
+安裝HCA並將儲存設備連接至主機之後、HCA會透過I/O路徑將主機拓撲傳送至儲存控制器。根據主機拓撲、儲存控制器會自動定義主機和相關的主機連接埠、然後設定主機類型。
+
+
+NOTE: 如果HCA未選取建議的主機類型、您必須手動設定主機類型。

@@ -1,0 +1,50 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-import-autosupport-settings.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 將AutoSupport 一個物件組態從一個儲存陣列匯入其他儲存陣列。 
+---
+= 匯入AutoSupport 還原設定
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將AutoSupport 一個物件組態從一個儲存陣列匯入到其他儲存陣列。當您需要在網路中設定多個陣列時、這項批次作業可節省時間。
+
+請確定：
+
+* 系統管理程式（功能表：Support（支援中心）））會針對您要作為來源的儲存陣列進行設定。AutoSupport
+* 在System Manager中備份目標儲存陣列的現有組態（功能表：設定[系統>儲存儲存儲存陣列組態]）。
+* 您已檢閱中複寫儲存組態的需求 link:vc-olh-import-settings-overview.html["匯入設定總覽"]。
+
+
+匯入的設定包括獨立功能（基本AutoSupport 功能、AutoSupport 《不只支援此功能》、《不支援此功能》和《遠端診斷》）、維護時段、交付方法、 和分派排程。
+
+.步驟
+. 在「管理」頁面中、按一下功能表：「動作」[Import Settings]（匯入設定）。
++
+「匯入設定」精靈隨即開啟。
+
+. 在Select Settings（選擇設置）對話框中，選擇* AutoSupport 還原*，然後單擊* Next*（下一步*）。
++
+此時會開啟一個對話方塊、供您選取來源陣列。
+
+. 在「選取來源」對話方塊中、選取含有您要匯入之設定的陣列、然後按一下「*下一步*」。
+. 在「選取目標」對話方塊中、選取一或多個陣列以接收新設定。
++
+
+NOTE: 韌體低於8.50的儲存陣列無法選取。此外、如果外掛程式無法與該陣列通訊（例如離線或有憑證、密碼或網路問題）、則陣列不會出現在此對話方塊中。
+
+. 單擊*完成*。
++
+「作業」頁面會顯示匯入作業的結果。如果作業失敗、您可以按一下其列以查看更多資訊。
+
+
+
+現在、目標儲存陣列的AutoSupport 功能與來源陣列的功能相同。

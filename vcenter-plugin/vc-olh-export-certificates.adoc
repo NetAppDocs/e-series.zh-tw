@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-export-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 匯出憑證以檢視其完整詳細資料。 
+---
+= 匯出憑證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以匯出憑證以檢視其完整詳細資料。
+
+若要開啟匯出的檔案、您必須擁有憑證檢視器應用程式。
+
+.步驟
+. 選擇*憑證管理*。
+. 選取下列其中一個索引標籤：
++
+** *管理*：顯示託管外掛程式之系統的憑證。管理憑證可由憑證授權單位（CA）自行簽署或核准。它允許安全存取外掛程式。
+** * Trusted *（受信任的*）-顯示外掛程式可存取儲存陣列和其他遠端伺服器（例如LDAP伺服器）的憑證。這些憑證可以從憑證授權單位（CA）核發、也可以自行簽署。
+
+
+. 從頁面選取憑證、然後按一下列結尾的省略符號。
+. 按一下「*匯出*」、然後儲存憑證檔案。
+. 在憑證檢視器應用程式中開啟檔案。
+

@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-rename-storage-array.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 變更「管理」頁面上顯示的儲存陣列名稱。 
+---
+= 重新命名儲存陣列
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以變更儲存陣列名稱、顯示於vCenter的Storage Plugin管理頁面。
+
+.步驟
+. 從*管理*頁面、選取儲存陣列名稱左側的核取方塊。
+. 選取列最右側的省略符號、然後從快顯功能表中選取*重新命名儲存陣列*。
+. 輸入新名稱、然後按一下「*儲存*」。
+

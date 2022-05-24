@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-data-assurance.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 資料保證（DA）實作T10保護資訊（PI）標準、藉由檢查及修正在I/O路徑傳輸資料時可能發生的錯誤、來提升資料完整性。 
+---
+= 什麼是資料保證？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+資料保證（DA）實作T10保護資訊（PI）標準、藉由檢查及修正在I/O路徑傳輸資料時可能發生的錯誤、來提升資料完整性。
+
+「資料保證」功能的一般用途是檢查控制器與磁碟機之間I/O路徑的部分。在資源池和Volume群組層級提供DA功能。
+
+啟用此功能時、儲存陣列會將錯誤檢查代碼（也稱為循環備援檢查或CRC）附加到磁碟區中的每個資料區塊。資料區塊移動之後、儲存陣列會使用這些CRC代碼來判斷傳輸期間是否發生任何錯誤。可能毀損的資料既不會寫入磁碟、也不會傳回主機。如果您想要使用DA功能、請在建立新磁碟區時、選取具有DA功能的資源池或磁碟區群組（請在「資源池和磁碟區群組候選資料表」中尋找「* Yes*」旁邊的資料池或磁碟區群組）。
+
+請務必使用能夠執行DA的I/O介面、將這些啟用DA的磁碟區指派給主機。具備DA功能的I/O介面包括光纖通道、SAS、TCP/IP iSCSI、NVMe / FC、NVMe / IB、 適用於InfiniBand的NVMe/RoCE和iSER（適用於RDMA/ IB的iSCSI擴充功能）。SRP不支援DA over InfiniBand。

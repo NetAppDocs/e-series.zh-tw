@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果您不想再從特定儲存群組中管理一個或多個託管儲存陣列、請將其從群組中移除。 
+---
+= 從群組中移除儲存陣列
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您不想再從特定儲存群組進行管理、可以從群組中移除一或多個託管儲存陣列。
+
+從群組中移除儲存陣列並不會以任何方式影響儲存陣列或其資料。如果您的儲存陣列是由System Manager管理、您仍然可以使用瀏覽器來管理。如果不小心從群組中移除儲存陣列、則可以再次新增。
+
+.步驟
+. 從「Manage（管理）」頁面、選取功能表：「Manage Groups [Remove storage Array from group（管理群組[從群組移除儲存陣列]
+. 從下拉式清單中、選取包含您要移除之儲存陣列的群組、然後按一下您要從群組中移除之每個儲存陣列旁的核取方塊。
+. 按一下「*移除*」。
+

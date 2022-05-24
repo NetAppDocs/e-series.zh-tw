@@ -24,8 +24,8 @@ summary: 移除vCenter的外掛程式。
 
 若要從vCenter Server Appliance取消登錄外掛程式、請選取下列其中一種方法：
 
-* 方法1：執行登錄指令碼
-* 方法2：使用vCenter Server Mob頁面
+* <<Method 1: Execute the registration script>>
+* <<Method 2: Use the vCenter Server Mob pages>>
 
 
 
@@ -74,11 +74,7 @@ vcenter-register.bat
 
 
 
-NOTE: 此程序會從vCenter Server Appliance解除登錄外掛程式、但不會從伺服器移除外掛程式套件檔案。若要移除套件檔案、請使用SSH存取vCenter Server Appliance並瀏覽至下列目錄：
-
-「etc/VMware/vSphere-ui/ vC-packages/vSphere-client-cronity/」
-
-然後移除與外掛程式相關的目錄。
+NOTE: 此程序會從vCenter Server Appliance解除登錄外掛程式、但不會從伺服器移除外掛程式套件檔案。若要移除套件檔案、請使用SSH存取vCenter Server Appliance、並瀏覽至下列目錄：「etc/VMware / vSphere-UI/vC-packages/vSphere-client-nancility/」。然後移除與外掛程式相關的目錄。
 
 
 

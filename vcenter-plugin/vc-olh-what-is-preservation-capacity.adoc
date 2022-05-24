@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-preservation-capacity.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 保留容量是指為支援潛在磁碟機故障而保留在集區中的容量（磁碟機數量）。 
+---
+= 什麼是保留容量？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+保留容量是指為支援潛在磁碟機故障而保留在集區中的容量（磁碟機數量）。
+
+建立集區時、系統會根據集區中的磁碟機數量、自動保留預設的保留容量。
+
+資源池會在重建期間使用保留容量、而磁碟區群組則會將熱備援磁碟機用於相同用途。保留容量方法是比熱備援磁碟機更好的方法、因為它可讓重建作業更快完成。保留容量會分散在集區中的多個磁碟機上、而非熱備援磁碟機上的一個磁碟機、因此您不會受限於單一磁碟機的速度或可用度。

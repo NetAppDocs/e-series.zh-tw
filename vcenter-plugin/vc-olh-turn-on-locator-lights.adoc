@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-turn-on-locator-lights.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 您可以找到磁碟機、以實體方式識別組成所選集區、磁碟區群組或SSD快取的所有磁碟機。所選集區、Volume群組或SSD快取中的每個磁碟機上都會亮起LED指示燈。 
+---
+= 開啟定位燈
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以找到磁碟機、以實體方式識別組成所選集區、磁碟區群組或SSD快取的所有磁碟機。所選集區、Volume群組或SSD快取中的每個磁碟機上都會亮起LED指示燈。
+
+.步驟
+. 在「Manage（管理）」頁面中、選取儲存陣列。
+. 選取功能表：資源配置[設定資源池和磁碟區群組]。
+. 選取您要尋找的資源池、磁碟區群組或SSD快取、然後按一下功能表：More（更多）[開啟定位器指示燈]。
++
+此時會出現一個對話方塊、指出包含所選集區、磁碟區群組或SSD快取的磁碟機亮起。
+
+. 成功找到磁碟機後、按一下*「Turn off*（關閉*）」。
+

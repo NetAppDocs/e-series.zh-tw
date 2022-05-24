@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-create-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 儲存設備群組會定義哪些磁碟機提供組成磁碟區的儲存設備。 
+---
+= 建立儲存陣列群組
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以建立儲存群組、然後將儲存陣列新增至群組。儲存設備群組會定義哪些磁碟機提供組成磁碟區的儲存設備。
+
+*步驟*
+
+. 在「Manage（管理）」頁面中、選取功能表：Manage Groups（管理群組）[ Create storage Array group（建立儲存陣列群組）
+. 在*名稱*欄位中、輸入新群組的名稱。
+. 選取您要新增至新群組的儲存陣列。
+. 按一下「 * 建立 * 」。
+

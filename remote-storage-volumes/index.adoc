@@ -30,6 +30,6 @@ summary: 使用遠端儲存磁碟區功能、將資料從遠端儲存設備直�
 
 == 如需詳細資訊、請參閱
 
-* 線上說明、可在System Manager使用者介面或中取得 https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html?cp=5_0["文件中心"^]。
+* 線上說明、可在System Manager使用者介面或中取得 https://docs.netapp.com/us-en/e-series-santricity/index.html["軟體文件網站SANtricity"^]。
 * 如需遠端儲存磁碟區功能的其他技術資訊、請參閱 https://www.netapp.com/pdf.html?item=/media/28697-tr-4893-deploy.pdf["遠端儲存磁碟區技術報告"^]。
 

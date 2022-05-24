@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-add-storage-array-to-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 將一個或多個儲存陣列新增至使用者建立的群組。 
+---
+= 將儲存陣列新增至群組
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將一個或多個儲存陣列新增至使用者建立的群組。
+
+*步驟*
+
+. 從主檢視畫面選取*管理*、然後選取您要新增儲存陣列的群組。
+. 選取功能表：管理群組[新增儲存陣列至群組]。
+. 選取您要新增至群組的儲存陣列。
+. 按一下「 * 新增 * 」。
+

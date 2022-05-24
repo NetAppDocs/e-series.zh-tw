@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-launch-system-manager.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 若要管理單一陣列、請使用「Launch（啟動）」選項、在新的瀏覽器視窗中開啟「System Manager（系統管理程式）」。 
+---
+= 啟動System Manager
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要管理單一陣列、請使用「Launch」（啟動）選項、SANtricity 在新的瀏覽器視窗中開啟「等效系統管理程式」。
+
+System Manager是儲存陣列控制器上的內嵌應用程式、透過乙太網路管理連接埠連線至網路。System Manager包含所有陣列型功能。若要存取System Manager、您必須使用網頁瀏覽器、建立到網路管理用戶端的頻外連線。
+
+.步驟
+. 從「*管理*」頁面中、選取您要管理的一或多個儲存陣列。
+. 按一下 * 「 Launch * 」。
++
+系統會在瀏覽器中開啟新的索引標籤、然後顯示System Manager登入頁面。
+
+. 輸入您的使用者名稱和密碼、然後按一下*登入*。
+

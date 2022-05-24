@@ -1,15 +1,15 @@
 ---
 settings:
-  name: e-series
+  name: E-Series Systems
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
 sidebar:
   entries:
-  - title: E系列文件
+  - title: E系列系統文件
     url: "/index.html"
   - title: 版本資訊
     entries:
@@ -510,8 +510,6 @@ sidebar:
         entries:
         - title: 總覽與需求
           url: "/maintenance-ef600/hics-overview-supertask-concept.html"
-        - title: 新增主機介面卡
-          url: "/maintenance-ef600/hics-add-supertask-task.html"
         - title: 升級主機介面卡
           url: "/maintenance-ef600/hics-upgrade-intro.html"
         - title: 更換故障主機介面卡
@@ -734,18 +732,238 @@ sidebar:
       entries:
       - title: 總覽
         url: "/vcenter-plugin/san-spvc-ic-overview.html"
-      - title: 安裝外掛程式
-        url: "/vcenter-plugin/san-spvc-ic-installation.html"
-      - title: 設定存取權限
-        url: "/vcenter-plugin/san-spvc-ic-user-access.html"
-      - title: 登入並瀏覽
-        url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
-      - title: 探索儲存陣列
-        url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+      - title: 開始使用
+        entries:
+        - title: 安裝外掛程式
+          url: "/vcenter-plugin/san-spvc-ic-installation.html"
+        - title: 設定存取權限
+          url: "/vcenter-plugin/san-spvc-ic-user-access.html"
+        - title: 登入並瀏覽
+          url: "/vcenter-plugin/san-spvc-ic-login-and-navigation.html"
+        - title: 探索儲存陣列
+          url: "/vcenter-plugin/san-spvc-ic-storage-array-discovery.html"
+        - title: 配置儲存設備
+          url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+        - title: 檢視狀態
+          url: "/vcenter-plugin/vc-olh-view-status.html"
+      - title: 管理憑證
+        entries:
+        - title: 憑證總覽
+          url: "/vcenter-plugin/vc-olh-certificates-overview.html"
+        - title: 使用CA簽署的憑證
+          url: "/vcenter-plugin/vc-olh-use-ca-signed-certificates.html"
+        - title: 重設管理憑證
+          url: "/vcenter-plugin/vc-olh-reset-management-certificates.html"
+        - title: 匯入陣列的憑證
+          url: "/vcenter-plugin/vc-olh-import-certificates-for-arrays.html"
+        - title: 檢視憑證
+          url: "/vcenter-plugin/vc-olh-view-certificates.html"
+        - title: 匯出憑證
+          url: "/vcenter-plugin/vc-olh-export-certificates.html"
+        - title: 刪除信任的憑證
+          url: "/vcenter-plugin/vc-olh-delete-trusted-certificates.html"
+        - title: 解決不受信任的憑證
+          url: "/vcenter-plugin/vc-olh-resolve-untrusted-certificates.html"
+      - title: 管理陣列
+        entries:
+        - title: 陣列管理總覽
+          url: "/vcenter-plugin/vc-olh-array-management-overview.html"
+        - title: 探索儲存陣列
+          url: "/vcenter-plugin/vc-olh-discover-storage-arrays.html"
+        - title: 重新命名儲存陣列
+          url: "/vcenter-plugin/vc-olh-rename-storage-array.html"
+        - title: 變更儲存陣列密碼
+          url: "/vcenter-plugin/vc-olh-change-storage-array-passwords.html"
+        - title: 移除儲存陣列
+          url: "/vcenter-plugin/vc-olh-remove-storage-arrays.html"
+        - title: 啟動System Manager
+          url: "/vcenter-plugin/vc-olh-launch-system-manager.html"
+      - title: 匯入設定
+        entries:
+        - title: 匯入設定總覽
+          url: "/vcenter-plugin/vc-olh-import-settings-overview.html"
+        - title: 匯入警示設定
+          url: "/vcenter-plugin/vc-olh-import-alert-settings.html"
+        - title: 匯入AutoSupport 還原設定
+          url: "/vcenter-plugin/vc-olh-import-autosupport-settings.html"
+        - title: 匯入目錄服務設定
+          url: "/vcenter-plugin/vc-olh-import-directory-services-settings.html"
+        - title: 匯入系統設定
+          url: "/vcenter-plugin/vc-olh-import-system-settings.html"
+        - title: 匯入儲存組態設定
+          url: "/vcenter-plugin/vc-olh-import-storage-configuration-settings.html"
+      - title: 管理陣列群組
+        entries:
+        - title: 陣列群組總覽
+          url: "/vcenter-plugin/vc-olh-array-groups-overview.html"
+        - title: 建立儲存陣列群組
+          url: "/vcenter-plugin/vc-olh-create-storage-array-group.html"
+        - title: 將儲存陣列新增至群組
+          url: "/vcenter-plugin/vc-olh-add-storage-array-to-group.html"
+        - title: 重新命名儲存陣列群組
+          url: "/vcenter-plugin/vc-olh-rename-storage-array-group.html"
+        - title: 從群組中移除儲存陣列
+          url: "/vcenter-plugin/vc-olh-remove-storage-arrays-from-group.html"
+        - title: 刪除儲存陣列群組
+          url: "/vcenter-plugin/vc-olh-delete-storage-array-group.html"
+      - title: 升級作業系統軟體
+        entries:
+        - title: 升級總覽
+          url: "/vcenter-plugin/vc-olh-upgrade-overview.html"
+        - title: 執行升級前健全狀況檢查
+          url: "/vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html"
+        - title: 升級SANtricity 作業系統
+          url: "/vcenter-plugin/vc-olh-upgrade-santricity-os.html"
+        - title: 啟動分段作業系統軟體
+          url: "/vcenter-plugin/vc-olh-activate-staged-os-software.html"
+        - title: 清除分段作業系統軟體
+          url: "/vcenter-plugin/vc-olh-clear-staged-os-software.html"
+        - title: 管理軟體儲存庫
+          url: "/vcenter-plugin/vc-olh-manage-software-repository.html"
       - title: 配置儲存設備
-        url: "/vcenter-plugin/san-spvc-ic-storage-provisioning.html"
+        entries:
+        - title: 資源配置總覽
+          url: "/vcenter-plugin/vc-olh-provisioning-overview.html"
+        - title: 建立儲存設備
+          url: "/vcenter-plugin/vc-olh-create-storage.html"
+        - title: 增加磁碟區的容量
+          url: "/vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html"
+        - title: 變更Volume的設定
+          url: "/vcenter-plugin/vc-olh-change-settings-for-a-volume.html"
+        - title: 新增磁碟區至工作負載
+          url: "/vcenter-plugin/vc-olh-add-volumes-to-workload.html"
+        - title: 變更工作負載設定
+          url: "/vcenter-plugin/vc-olh-change-workload-settings.html"
+        - title: 初始化磁碟區
+          url: "/vcenter-plugin/vc-olh-initialize-volumes.html"
+        - title: 重新分配磁碟區
+          url: "/vcenter-plugin/vc-olh-redistribute-volumes.html"
+        - title: 變更磁碟區的控制器擁有權
+          url: "/vcenter-plugin/vc-olh-change-controller-ownership-of-a-volume.html"
+        - title: 變更磁碟區的快取設定
+          url: "/vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html"
+        - title: 變更Volume的媒體掃描設定
+          url: "/vcenter-plugin/vc-olh-change-media-scan-settings-for-a-volume.html"
+        - title: 刪除Volume
+          url: "/vcenter-plugin/vc-olh-delete-volume.html"
+      - title: 設定主機
+        entries:
+        - title: 主機建立總覽
+          url: "/vcenter-plugin/vc-olh-host-creation-overview.html"
+        - title: 建立主機存取
+          url: "/vcenter-plugin/vc-olh-create-host-access.html"
+        - title: 建立主機叢集
+          url: "/vcenter-plugin/vc-olh-create-host-cluster.html"
+        - title: 將磁碟區指派給主機
+          url: "/vcenter-plugin/vc-olh-assign-volumes-to-hosts.html"
+        - title: 取消指派磁碟區
+          url: "/vcenter-plugin/vc-olh-unassign-volumes.html"
+        - title: 變更主機的設定
+          url: "/vcenter-plugin/vc-olh-change-the-settings-for-a-host.html"
+        - title: 刪除主機或主機叢集
+          url: "/vcenter-plugin/vc-olh-delete-host-or-host-cluster.html"
+      - title: 設定集區和Volume群組
+        entries:
+        - title: 資源池與磁碟區群組總覽
+          url: "/vcenter-plugin/vc-olh-pools-and-volume-group-overview.html"
+        - title: 自動建立集區
+          url: "/vcenter-plugin/vc-olh-create-pool-automatically.html"
+        - title: 手動建立資源池
+          url: "/vcenter-plugin/vc-olh-create-pool-manually.html"
+        - title: 建立Volume群組
+          url: "/vcenter-plugin/vc-olh-create-a-volume-group.html"
+        - title: 新增容量至資源池或磁碟區群組
+          url: "/vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html"
+        - title: 建立SSD快取
+          url: "/vcenter-plugin/vc-olh-create-ssd-cache.html"
+        - title: 變更集區的組態設定
+          url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-pool.html"
+        - title: 變更Volume群組的組態設定
+          url: "/vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-group.html"
+        - title: 變更SSD快取設定
+          url: "/vcenter-plugin/vc-olh-change-ssd-cache-settings.html"
+        - title: 檢視SSD快取統計資料
+          url: "/vcenter-plugin/vc-olh-view-ssd-cache-statistics.html"
+        - title: 檢查磁碟區備援
+          url: "/vcenter-plugin/vc-olh-check-volume-redundancy.html"
+        - title: 刪除資源池或磁碟區群組
+          url: "/vcenter-plugin/vc-olh-delete-pool-or-volume-group.html"
+        - title: 整合Volume群組的可用容量
+          url: "/vcenter-plugin/vc-olh-consolidate-free-capacity-for-a-volume-group.html"
+        - title: 開啟定位燈
+          url: "/vcenter-plugin/vc-olh-turn-on-locator-lights.html"
+        - title: 移除容量
+          url: "/vcenter-plugin/vc-olh-remove-capacity.html"
+        - title: 啟用集區或Volume群組的安全性
+          url: "/vcenter-plugin/vc-olh-enable-security-for-a-pool-or-volume-group.html"
       - title: 移除外掛程式
         url: "/vcenter-plugin/san-spvc-ic-plugin-removal.html"
+      - title: 常見問題集
+        entries:
+        - title: 匯入哪些設定？
+          url: "/vcenter-plugin/vc-olh-what-settings-are-imported.html"
+        - title: 為什麼我看不到所有的儲存陣列？
+          url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-of-my-storage-arrays.html"
+        - title: 為什麼這些磁碟區與工作負載無關？
+          url: "/vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html"
+        - title: 我所選的工作負載如何影響磁碟區建立？
+          url: "/vcenter-plugin/vc-olh-how-does-my-selected-workload-impact-volume-creation.html"
+        - title: 為什麼我看不到所有的磁碟區、主機或主機叢集？
+          url: "/vcenter-plugin/vc-olh-why-do-i-not-see-all-my-volumes,-hosts,-or-host-clusters.html"
+        - title: 為什麼我無法刪除選取的工作負載？
+          url: "/vcenter-plugin/vc-olh-why-can-i-not-delete-the-selected-workload.html"
+        - title: 應用程式專屬的工作負載如何協助我管理儲存陣列？
+          url: "/vcenter-plugin/vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
+        - title: 我需要如何辨識擴充的容量？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
+        - title: 我想在何時使用「稍後指派主機」選項？
+          url: "/vcenter-plugin/vc-olh-when-would-i-want-to-use-the-assign-host-later-selection.html"
+        - title: 我需要知道哪些關於主機區塊大小需求的資訊？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-host-block-size-requirements.html"
+        - title: 為什麼我需要建立主機叢集？
+          url: "/vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html"
+        - title: 如何知道哪種主機作業系統類型正確？
+          url: "/vcenter-plugin/vc-olh-how-do-i-know-which-host-operating-system-type-is-correct.html"
+        - title: 如何將主機連接埠與主機配對？
+          url: "/vcenter-plugin/vc-olh-how-do-i-match-the-host-ports-to-a-host.html"
+        - title: 什麼是預設叢集？
+          url: "/vcenter-plugin/vc-olh-what-is-the-default-cluster.html"
+        - title: 什麼是備援檢查？
+          url: "/vcenter-plugin/vc-olh-what-is-redundancy-check.html"
+        - title: 什麼是保留容量？
+          url: "/vcenter-plugin/vc-olh-what-is-preservation-capacity.html"
+        - title: 哪種RAID層級最適合我的應用程式？
+          url: "/vcenter-plugin/vc-olh-what-raid-level-is-best-for-my-application.html"
+        - title: 為什麼有些磁碟機沒有顯示？
+          url: "/vcenter-plugin/vc-olh-why-are-some-drives-not-showing-up.html"
+        - title: 為什麼我無法增加保留容量？
+          url: "/vcenter-plugin/vc-olh-why-can-i-not-increase-my-preservation-capacity.html"
+        - title: 什麼是資料保證？
+          url: "/vcenter-plugin/vc-olh-what-is-data-assurance.html"
+        - title: 什麼是FDE/FIPS安全性？
+          url: "/vcenter-plugin/vc-olh-what-is-fde-fips-security.html"
+        - title: 什麼是安全功能（磁碟機安全性）？
+          url: "/vcenter-plugin/vc-olh-what-is-secure-capable-drive-security.html"
+        - title: 如何檢視及解讀所有SSD快取統計資料？
+          url: "/vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
+        - title: 什麼是機櫃損失保護和藥櫃損失保護？
+          url: "/vcenter-plugin/vc-olh-what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+        - title: 如何維護機櫃和藥櫃遺失保護？
+          url: "/vcenter-plugin/vc-olh-how-do-i-maintain-shelf-and-drawer-loss-protection.html"
+        - title: 集區的最佳化容量為何？
+          url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-pools.html"
+        - title: 什麼是Volume群組的最佳化容量？
+          url: "/vcenter-plugin/vc-olh-what-is-optimization-capacity-for-volume-groups.html"
+        - title: 什麼是資源資源配置功能？
+          url: "/vcenter-plugin/vc-olh-what-is-resource-provisioning-capable.html"
+        - title: 關於資源配置的Volume功能、我需要知道什麼？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-about-the-resource-provisioned-volumes-feature.html"
+        - title: 內部安全金鑰與外部安全金鑰管理有何不同？
+          url: "/vcenter-plugin/vc-olh-what-is-the-difference-between-internal-security-key-and-external-security-key-management.html"
+        - title: 在建立安全金鑰之前、我需要知道什麼？
+          url: "/vcenter-plugin/vc-olh-what-do-i-need-to-know-before-creating-a-security-key.html"
+        - title: 為什麼我需要定義密碼？
+          url: "/vcenter-plugin/vc-olh-why-do-i-need-to-define-a-pass-phrase.html"
     - title: 老舊解決方案
       entries:
       - title: 雲端連接器
@@ -788,28 +1006,26 @@ homepage:
     links:
     - title: 快速入門
       url: "/getting-started/getup-run-concept.html"
-    - title: EF系列總覽
+    - title: EF系列產品型錄
       url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
-    - title: E5700系列總覽
+    - title: E5700產品型錄
       url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
-    - title: E2800系列總覽
+    - title: E2800產品型錄
       url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
-    - title: 軟體概述SANtricity
-      url: https://www.netapp.com/pdf.html?item=/media/7676-ds-3891.pdf
-  - title: 線上說明
+  - title: 軟件SANtricity
     links:
     - title: 系統管理程式11.7 SANtricity
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-sam-117/home.html
+      url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
     - title: 統一化管理程式5. SANtricity
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-uni-5/home.html
+      url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: 命令列介面（CLI）參考
-      url: https://docs.netapp.com/ess-11/topic/com.netapp.doc.ssm-cli-115/home.html
+      url: https://docs.netapp.com/us-en/e-series-cli/index.html
   - title: 資訊API SANtricity
     links:
     - title: Web服務
       url: "/web-services-proxy/index.html"
     - title: vCenter的外掛程式
-      url: "/vcenter-plugin/san-spvc-ic-overview.html"
+      url: "/san-spvc-ic-overview.html"
     - title: SMI-S供應商
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
   - title: 效能應用程式附加元件
@@ -840,3 +1056,6 @@ homepage:
       url: https://activeiq.netapp.com/?source=aiqnsspage
     - title: E系列/SANtricity下載（需要登入）
       url: https://mysupport.netapp.com/site/downloads#E
+product-family:
+  name: E-Series
+  repo: e-series-family

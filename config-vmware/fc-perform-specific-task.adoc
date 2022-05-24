@@ -14,6 +14,9 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。
 
 
+NOTE: 對於EF300和EF600、您必須將區塊大小設為512位元組、以確保與VMware相容。如SANtricity 需將Volume設為512位元組的詳細資訊、請參閱《支援功能》線上說明。
+
+
 
 == 步驟1：設定FC交換器—VMware
 

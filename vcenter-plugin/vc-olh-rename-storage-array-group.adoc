@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-rename-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 當目前名稱不再有意義或適用時、請變更儲存陣列群組的名稱。 
+---
+= 重新命名儲存陣列群組
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當目前名稱不再有意義或適用時、您可以變更儲存陣列群組的名稱。
+
+請謹記這些準則。
+
+* 名稱可以包含字母、數字和特殊字元、例如底線（_）、連字號（-）和井號（#）。如果您選擇任何其他字元、則會出現錯誤訊息。系統會提示您選擇其他名稱。
+* 名稱上限為30個字元。名稱中的任何前置和後置空格都會刪除。
+* 使用易於理解和記住的獨特、有意義的名稱。
+* 避免日後很快失去意義的任意名稱或名稱。
+
+
+.步驟
+. 從主檢視畫面選取*管理*、然後選取您要重新命名的儲存陣列群組。
+. 選取功能表：管理群組[重新命名儲存陣列群組]。
+. 在*群組名稱*欄位中、輸入群組的新名稱。
+. 按一下*重新命名*。
+

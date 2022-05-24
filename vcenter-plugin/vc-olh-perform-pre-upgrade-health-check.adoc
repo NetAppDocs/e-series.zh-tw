@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 健全狀況檢查會在升級程序中執行、但您也可以在開始之前分別執行健全狀況檢查。 
+---
+= 執行升級前健全狀況檢查
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+健全狀況檢查會在升級程序中執行、但您也可以在開始之前分別執行健全狀況檢查。健全狀況檢查會評估儲存陣列的元件、以確保升級能夠繼續進行。
+
+*步驟*
+
+. 從主檢視畫面選取*管理*、然後選取功能表：升級中心[升級前狀況檢查]。
++
+「預先升級健全狀況檢查」對話方塊隨即開啟、並列出所有探索到的儲存系統。
+
+. 如有需要、請篩選或排序清單中的儲存系統、以便檢視目前未處於最佳狀態的所有系統。
+. 選取要執行健全狀況檢查之儲存系統的核取方塊。
+. 按一下* Start*。
++
+執行健全狀況檢查時、進度會顯示在對話方塊中。
+
+. 健全狀況檢查完成後、您可以按一下每列右側的省略符號（...）、以檢視更多資訊並執行其他工作。
+
+
+
+NOTE: 如果有任何陣列未通過健全狀況檢查、您可以跳過該特定陣列並繼續升級其他陣列、或是停止整個程序、並疑難排解未通過的陣列。

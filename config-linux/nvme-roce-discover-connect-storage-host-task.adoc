@@ -60,7 +60,7 @@ rdma_cms:    rdma-cm
 rdma_pkey: 0x0000
 ----
 . 對任何其他連線重複步驟1。
-. 使用命令「NVMe CONNECT -t RDMA -n Disclided_sub nqn-A target IP位址-Q queue_thre深度_setting - l控制器損失超時期間」連線至第一條路徑上探索到的子系統
+. 使用命令「NVMe CONNECT -t RDMA -n Disclided_sub nqn -A target ip_address-Q queue_depth_setting -l控制器損失超時期間」連線至第一條路徑上探索到的子系統
 +
 
 NOTE: 以上所列的命令不會在重新開機時持續存在。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。

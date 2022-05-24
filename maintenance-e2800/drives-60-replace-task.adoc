@@ -182,7 +182,7 @@ NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 
 
 . 視需要重新安裝擋板。
-. 如套件隨附的RMA指示所述、將故障零件退回NetApp。請參閱 https://mysupport.netapp.com/site/info/rma["零件歸還&替換頁面"] 以取得更多資訊。
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。
 
 
 您的磁碟機更換已完成。您可以恢復正常作業。

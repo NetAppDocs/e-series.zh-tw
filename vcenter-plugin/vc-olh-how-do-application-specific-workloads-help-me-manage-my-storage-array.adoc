@@ -1,0 +1,19 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-application-specific-workloads-help-me-manage-my-storage-array.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 應用程式專屬工作負載的Volume特性決定了工作負載與儲存陣列元件的互動方式、並有助於在特定組態下判斷環境的效能。 
+---
+= 應用程式專屬的工作負載如何協助我管理儲存陣列？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+應用程式專屬工作負載的Volume特性決定了工作負載與儲存陣列元件的互動方式、並有助於在特定組態下判斷環境的效能。
+
+應用程式是SQL Server或Exchange等軟體。您可以定義一或多個工作負載來支援每個應用程式。對於某些應用程式、系統會自動建議最佳化儲存設備的Volume組態。磁碟區組態中包含I/O類型、區段大小、控制器擁有權、讀寫快取等特性。

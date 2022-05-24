@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-are-these-volumes-not-associated-with-a-workload.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果磁碟區是使用命令列介面（CLI）建立、或是已從不同的儲存陣列移轉（匯入/匯出）、則不會與工作負載建立關聯。 
+---
+= 為什麼這些磁碟區與工作負載無關？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果磁碟區是使用命令列介面（CLI）建立、或是已從不同的儲存陣列移轉（匯入/匯出）、則不會與工作負載建立關聯。

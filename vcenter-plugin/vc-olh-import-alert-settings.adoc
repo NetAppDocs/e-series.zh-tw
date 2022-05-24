@@ -1,0 +1,55 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-import-alert-settings.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 將警示組態從一個儲存陣列匯入其他儲存陣列。 
+---
+= 匯入警示設定
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將警示組態從一個儲存陣列匯入其他儲存陣列。當您需要在網路中設定多個陣列時、這項批次作業可節省時間。
+
+請確定：
+
+* 警示是在系統管理員（功能表：設定[警示]）中針對您要作為來源的儲存陣列進行設定。
+* 在System Manager中備份目標儲存陣列的現有組態（功能表：設定[系統>儲存儲存儲存陣列組態]）。
+* 您已檢閱中複寫儲存組態的需求 link:vc-olh-import-settings-overview.html["匯入設定總覽"]。
+
+
+您可以為匯入作業選取電子郵件、SNMP或syslog警示：
+
+* *電子郵件警示*-警示收件者的郵件伺服器位址和電子郵件位址。
+* *系統記錄警示*：系統記錄伺服器位址和udp連接埠。
+* * SNMP alerts *（SNMP警報*）- SNMP伺服器的社群名稱和IP位址。
+
+
+.步驟
+. 在「管理」頁面中、按一下功能表：「動作」[Import Settings]（匯入設定）。
++
+「匯入設定」精靈隨即開啟。
+
+. 在「選取設定」對話方塊中、選取*電子郵件警示*、* SNMP警示*或*系統記錄警示*、然後按「*下一步*」。
++
+此時會開啟一個對話方塊、供您選取來源陣列。
+
+. 在「選取來源」對話方塊中、選取含有您要匯入之設定的陣列、然後按一下「*下一步*」。
+. 在「選取目標」對話方塊中、選取一或多個陣列以接收新設定。
++
+
+NOTE: 韌體低於8.50的儲存陣列無法選取。此外、如果外掛程式無法與該陣列通訊（例如離線或有憑證、密碼或網路問題）、則陣列不會出現在此對話方塊中。
+
+. 單擊*完成*。
++
+「作業」頁面會顯示匯入作業的結果。如果作業失敗、您可以按一下其列以查看更多資訊。
+
+
+
+現在已將目標儲存陣列設定為透過電子郵件、SNMP或syslog傳送警示給系統管理員。

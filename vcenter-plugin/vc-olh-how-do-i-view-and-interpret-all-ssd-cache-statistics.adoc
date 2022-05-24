@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-how-do-i-view-and-interpret-all-ssd-cache-statistics.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 您可以檢視SSD快取的名義統計資料和詳細統計資料。 
+---
+= 如何檢視及解讀所有SSD快取統計資料？
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以檢視SSD快取的名義統計資料和詳細統計資料。
+
+名義統計資料是詳細統計資料的子集。只有當您將所有SSD統計資料匯出至CSV檔案時、才能檢視詳細的統計資料。當您檢閱及解讀統計資料時、請記住、有些解讀是由統計資料的組合所衍生而來。
+
+
+
+=== 名義統計資料
+
+若要檢視SSD快取統計資料、請前往*管理*頁面。選取功能表：資源配置[設定資源池與磁碟區群組]。選取您要檢視統計資料的SSD快取、然後選取功能表：More（更多）[View Statistics（檢視統計資料）]。名義統計資料會顯示在「檢視SSD快取統計資料」對話方塊中。
+
+
+NOTE: EF600或EF300儲存系統無法使用此功能。
+
+清單中包含名義統計資料、這是詳細統計資料的子集。
+
+
+
+=== 詳細統計資料
+
+詳細統計資料包括名義統計資料、以及其他統計資料。這些額外的統計資料會連同名義統計資料一起儲存、但與名義統計資料不同的是、它們不會顯示在「檢視SSD快取統計資料」對話方塊中。您只能在將統計資料匯出至.csv檔案之後、才能檢視詳細的統計資料。
+
+詳細統計資料會列在名義統計資料之後。

@@ -32,7 +32,7 @@ NOTE: 如果您使用的是AIX®、則必須先在主機上安裝E系列多重�
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/2U_DirectTopology.png[""]
  a| 
 . 將每個主機介面卡直接連接到控制器上的主機連接埠。
 
@@ -48,7 +48,7 @@ image:../media/trafford_direct.png[""]
 
 
  a| 
-image:../media/trafford_direct.png[""]
+image:../media/2U_FabricTopology.png[""]
  a| 
 . 將每個主機介面卡直接連接到交換器。
 . 將每個交換器直接連接至控制器上的主機連接埠。

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-settings-are-imported.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 匯入設定功能是批次作業、可將組態從一個儲存陣列載入至多個儲存陣列。在此作業期間匯入的設定取決於來源儲存陣列在System Manager中的設定方式。 
+---
+= 匯入哪些設定？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+匯入設定功能是批次作業、可將組態從一個儲存陣列載入至多個儲存陣列。
+
+在此作業期間匯入的設定取決於來源儲存陣列在System Manager中的設定方式。下列設定可匯入多個儲存陣列：
+
+* *電子郵件警示*-設定包含電子郵件伺服器位址和警示收件者的電子郵件位址。
+* *系統記錄警示*-設定包括系統記錄伺服器位址和一個udp連接埠。
+* * SNMP警示*-設定包含SNMP伺服器的社群名稱和IP位址。
+* * AutoSupport 《*》*《設定》包括獨立的功能（基本AutoSupport 功能、AutoSupport 《不限需求》和《遠端診斷》）、維護時間、交付方法、 和分派排程。
+* *目錄服務*-組態包括LDAP（輕量型目錄存取傳輸協定）伺服器的網域名稱和URL、以及LDAP伺服器使用者群組與儲存陣列預先定義角色的對應。
+* *儲存組態*-組態包括磁碟區（僅限完整磁碟區和非儲存庫磁碟區）、磁碟區群組、集區和熱備援磁碟機指派。
+* *系統設定*-組態包括磁碟區的媒體掃描設定、控制器的SSD快取、以及自動負載平衡（不包括主機連線報告）。
+

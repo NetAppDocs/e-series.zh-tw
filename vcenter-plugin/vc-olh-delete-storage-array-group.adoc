@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 移除不再需要的一或多個儲存陣列群組。 
+---
+= 刪除儲存陣列群組
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以移除一或多個不再需要的儲存陣列群組。
+
+此作業只會刪除儲存陣列群組。與刪除群組相關聯的儲存陣列仍可透過「管理全部」檢視或與其相關聯的任何其他群組存取。
+
+.步驟
+. 從「Manage（管理）」頁面、選取功能表：Manage Groups（管理群組）[Delete storage Array group（刪除儲存陣列群組）]
+. 選取您要刪除的一或多個儲存陣列群組。
+. 按一下*刪除*。
+

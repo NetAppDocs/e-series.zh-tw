@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-delete-pool-or-volume-group.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 刪除資源池或磁碟區群組以建立更多未指派的容量、您可以重新設定以滿足應用程式儲存需求 
+---
+= 刪除資源池或磁碟區群組
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以刪除資源池或磁碟區群組、以建立更多未指派的容量、您可以重新設定以滿足應用程式儲存需求。
+
+.開始之前
+* 您必須已備份集區或Volume群組中所有磁碟區的資料。
+* 您必須停止所有輸入/輸出（I/O）。
+* 您必須卸載磁碟區上的任何檔案系統。
+* 您必須刪除資源池或磁碟區群組中的任何鏡射關係。
+* 您必須停止集區或Volume群組的任何進行中Volume複製作業。
+* 集區或磁碟區群組不得參與非同步鏡射作業。
+* 磁碟區群組中的磁碟機不得具有持續保留。
+
+
+.步驟
+. 從「Manage（管理）」頁面中、選取具有Pool（資源池）或Volume（磁碟區）群組的儲存陣列。
+. 選取功能表：資源配置[設定資源池和磁碟區群組]。
+. 從清單中選取一個集區或磁碟區群組。
++
+一次只能選取一個集區或磁碟區群組。向下捲動清單以查看其他資源池或磁碟區群組。
+
+. 選取功能表：Uncommon Tasks（非正常工作）[Delete（刪除）]並確認。
+
+
+系統會執行下列動作：
+
+* 刪除集區或Volume群組中的所有資料。
+* 刪除與集區或磁碟區群組相關聯的所有磁碟機。
+* 取消指派相關的磁碟機、讓您可以在新的或現有的資源池或磁碟區群組中重複使用這些磁碟機。
+

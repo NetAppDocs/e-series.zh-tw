@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-what-is-redundancy-check.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 備援檢查可決定集區或磁碟區群組中磁碟區上的資料是否一致。 
+---
+= 什麼是備援檢查？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+備援檢查可決定集區或磁碟區群組中磁碟區上的資料是否一致。如果資源池或磁碟區群組中的某個磁碟機故障、備援資料可用於快速重建替換磁碟機上的資訊。
+
+您一次只能在一個集區或磁碟區群組上執行此檢查。磁碟區備援檢查會執行下列動作：
+
+* 掃描RAID 3 Volume、RAID 5 Volume或RAID 6 Volume中的資料區塊、然後檢查每個區塊的備援資訊。（RAID 3只能使用命令列介面指派給Volume群組。）
+* 比較RAID 1鏡射磁碟機上的資料區塊。
+* 如果控制器韌體判定資料不一致、則傳回備援錯誤。
+
+
+
+NOTE: 在相同的集區或磁碟區群組上立即執行備援檢查可能會導致錯誤。若要避免此問題、請先等待一到兩分鐘、再在同一個集區或磁碟區群組上執行另一個備援檢查。

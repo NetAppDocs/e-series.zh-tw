@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-clear-staged-os-software.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 您可以移除分段作業系統軟體、以確保稍後不會意外啟動擱置的版本。 
+---
+= 清除分段作業系統軟體
+:hardbreaks:
+:allow-uri-read: 
+:experimental: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以移除分段作業系統軟體、以確保稍後不會意外啟動擱置的版本。移除分段作業系統軟體不會影響儲存陣列上目前執行的版本。
+
+.步驟
+. 從主視圖中、選取*管理*、然後選取功能表：升級中心[清除分段SANtricity 式VMware軟體]。
++
+「清除分段SANtricity 式的更新軟體」對話方塊隨即開啟、並列出所有探索到的儲存系統、其中包含擱置中的軟體或NVSRAM.
+
+. 如有需要、請篩選或排序清單中的儲存系統、以便檢視所有已分段軟體的系統。
+. 選取您要清除擱置軟體的儲存系統核取方塊。
+. 按一下*清除*。
++
+此操作的狀態會顯示在對話方塊中。
+
+

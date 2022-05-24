@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-reset-management-certificates.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 將管理憑證還原為原廠自我簽署狀態。 
+---
+= 重設管理憑證
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+對於託管Storage Plugin for vCenter的管理系統、您可以將管理憑證還原為原始的原廠自我簽署狀態。
+
+此工作會從執行vCenter儲存外掛程式的主機系統刪除目前的管理憑證。重設憑證後、主機系統會恢復使用自我簽署的憑證。
+
+.步驟
+. 選擇*憑證管理*。
+. 從*管理*索引標籤、選取*重設*。
++
+隨即開啟「確認重設管理憑證」對話方塊。
+
+. 在欄位中輸入重設、然後按一下*重設*。
++
+瀏覽器重新整理之後、瀏覽器可能會封鎖對目的地站台的存取、並回報該站台使用HTTP嚴格傳輸安全性。當您切換回自我簽署的憑證時、就會出現這種情況。若要清除封鎖目的地存取的條件、您必須從瀏覽器清除瀏覽資料。
+
+
+
+系統會從伺服器恢復使用自我簽署的憑證。因此、系統會提示使用者手動接受其工作階段的自我簽署憑證。

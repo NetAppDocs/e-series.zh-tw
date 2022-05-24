@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-would-i-need-to-create-a-host-cluster.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果您想要讓兩個以上的主機共用同一組磁碟區的存取權、則需要建立主機叢集。 
+---
+= 為什麼我需要建立主機叢集？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您想要讓兩個以上的主機共用同一組磁碟區的存取權、則需要建立主機叢集。一般而言、個別主機上安裝了叢集軟體、以協調磁碟區存取。

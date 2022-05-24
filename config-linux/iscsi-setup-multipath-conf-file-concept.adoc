@@ -13,19 +13,9 @@ summary: 使用多重路徑.conf檔案、這是多重路徑精靈的組態檔、
 [role="lead"]
 多重路徑.conf檔案是多重路徑精靈的組態檔、即多重路徑d。
 
-multipath.conf檔案會覆寫多路徑的內建組態表。檔案中第一個非空白字元為#的任何一行都視為註解行。
+multipath.conf檔案會覆寫多路徑的內建組態表。
 
 
 NOTE: 對於更新的作業系統8.30、NetApp建議使用提供的預設設定。SANtricity
 
-多重路徑.conf檔案位於下列位置：
-
-* 對於SLES：
-+
-usr/share/doc/packages/multipath-tools/multipath.conf.合成 文件
-
-* 適用於RHEL：
-+
-usr/share/doc/device-mapper-multipath-0.4.9/multipath.conf
-
-
+不需要變更/etc/multipath.conf。

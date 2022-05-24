@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-view-status.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 從vCenter的儲存外掛程式或vSphere Client檢視系統狀態 
+---
+= 檢視狀態
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以從vCenter的儲存外掛程式或vSphere Client檢視系統狀態。
+
+. 從vSphere Client中開啟外掛程式。
+. 從下列面板檢視狀態：
++
+** *儲存陣列狀態*-移至*管理全部*面板。對於每個探索到的陣列、該列都會提供「Status（狀態）」欄。
+** *作業進行中*-按一下側邊面板上的*作業*、即可檢視所有執行中的工作、例如匯入設定。您也可以從「資源配置」下拉式清單檢視長期執行的作業。對於「作業進行中」對話方塊中所列的每個作業、會顯示完成百分比和完成作業所需的預估時間。在某些情況下、您可以停止某項作業、或將其設為較高或較低的優先順序。如果需要、請使用「動作」欄中的連結來停止或變更作業的優先順序。
+
+
+
+
+
+CAUTION: 請閱讀對話方塊中提供的所有警示文字、尤其是在停止作業時。
+
+下表列出外掛程式可能出現的作業。其他作業也可能會出現在System Manager介面中。
+
+|===
+| 營運 | 作業的可能狀態 | 您可以採取的行動 
+
+
+| Volume建立（僅適用於大於64TiB的大型集區磁碟區） | 進行中 | 無 
+
+
+| Volume刪除（僅適用於大於64TiB的大型集區磁碟區） | 進行中 | 無 
+
+
+| 新增容量至資源池或磁碟區群組 | 進行中 | 無 
+
+
+| 變更磁碟區的RAID層級 | 進行中 | 無 
+
+
+| 減少資源池的容量 | 進行中 | 無 
+
+
+| 檢查集區磁碟區立即可用度格式（IAF）作業的剩餘時間 | 進行中 | 無 
+
+
+| 檢查磁碟區群組的資料備援 | 進行中 | 無 
+
+
+| 初始化磁碟區 | 進行中 | 無 
+
+
+| 增加磁碟區的容量 | 進行中 | 無 
+
+
+| 變更磁碟區的區段大小 | 進行中 | 無 
+|===

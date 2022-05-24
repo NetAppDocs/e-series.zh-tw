@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: vcenter-plugin/vc-olh-why-can-i-not-increase-my-preservation-capacity.html 
+keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
+summary: 如果您已在所有可用容量上建立磁碟區、則可能無法增加保留容量。 
+---
+= 為什麼我無法增加保留容量？
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您已在所有可用容量上建立磁碟區、則可能無法增加保留容量。
+
+保留容量是指為支援潛在磁碟機故障而保留在集區上的容量（磁碟機數量）。建立集區時、系統會根據集區中的磁碟機數量、自動保留預設的保留容量。如果您已在所有可用容量上建立磁碟區、則無法透過新增磁碟機或刪除磁碟區、來增加保留容量、而不將容量新增至資源池。
+
+您可以變更資源池和Volume群組的保留容量。選取您要編輯的資源池。按一下「*檢視/編輯設定*」、然後選取「*設定*」索引標籤。
+
+
+NOTE: 保留容量會指定為多個磁碟機、即使實際保留容量會分散在集區中的磁碟機上。
