@@ -6141,8 +6141,6 @@
   <block id="c6941703005adb7144c53a6fa1e9031b" category="section-title">步驟6：設定儲存設備</block>
   <block id="9bc4dbdc4b0ba32e879477f6d380d1f2" category="paragraph">若要設定儲存設備、您可以將瀏覽器指向控制器的IP位址、以存取網路型介面System Manager。設定精靈可協助您開始進行系統組態。此外、您也可以使用命令列介面（CLI）。</block>
   <block id="dc319fa18c0e449181d9af17b46cb41d" category="paragraph">選取您要使用的介面：</block>
-  <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">適用於11.7x的系統管理程式線上說明SANtricity</block>
-  <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">適用於11.6x的系統管理程式線上說明SANtricity</block>
   <block id="ae57e705c83e0b20d768cee453b91d4c" category="summary">E系列儲存陣列有多種組態和機型可供選擇。</block>
   <block id="d2bf6cf91aae10964c05d43904777ddb" category="doc">E系列硬體總覽</block>
   <block id="d234c0641fc33cad6a6c3c6ea71df215" category="paragraph">儲存陣列包括磁碟櫃、控制器、磁碟機、軟體和韌體。陣列可安裝在機架或機櫃中、並可在12、24或60個磁碟機的機櫃中、針對一或兩個控制器提供可自訂的硬體。您可以將儲存陣列從多種介面類型連接至SAN、並連接至各種主機作業系統。</block>
@@ -7126,8 +7124,6 @@
   <block id="738a8c736dcf0a5ae4920a6448ab8da7" category="paragraph">請聯絡技術支援人員：<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>如果您需要RMA號碼、請撥打888-463-8277（北美）、00-800-44-638277（歐洲）或+800-800-80-800（亞太地區）。</block>
   <block id="edb3c50e1624e1c64455cc9c6b567531" category="inline-link">軟體文件網站SANtricity</block>
   <block id="b4f5988f99b045705684a7692efed8d6" category="list-text">線上說明、可在System Manager使用者介面或中取得<block ref="173d089ddf996dbd066dc04ffeb10dca" category="inline-link-rx"></block>。</block>
-  <block id="5c78b830f7bd834501154848ce310440" category="list-text"><block ref="5c78b830f7bd834501154848ce310440" category="inline-link-rx"></block></block>
-  <block id="553343f1040951376da0b5928b9f5ce6" category="list-text"><block ref="553343f1040951376da0b5928b9f5ce6" category="inline-link-rx"></block></block>
   <block id="829fea797e3072814f3b223d66b72f1a" category="inline-link">*《TR-4838：E2800與E5700 with Milestone XProtect VMS Certification Report*》</block>
   <block id="bda3fde6fc7c495545a73026a8a05e44" category="cell"><block ref="af8284118427afcf1ac4e1e4465162e1" category="inline-link-rx"></block></block>
   <block id="10cd7a5a5e5e238ed0a260ca5ca1f4af" category="inline-link">* TR-4771-Design：NetApp E系列與Genetec影片管理軟體*</block>
@@ -8802,4 +8798,8 @@
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800產品型錄</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">軟件SANtricity</block>
   <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成中的步驟 <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
+  <block id="82c87a954533f4f73c4568a90d45d795" category="inline-link">適用於11.7x的系統管理程式說明SANtricity</block>
+  <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
+  <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">適用於11.6x的系統管理程式說明SANtricity</block>
+  <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
 </blocks>
