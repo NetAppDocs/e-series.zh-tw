@@ -450,7 +450,6 @@
   <block id="e5dcf520a1b25b17e87573413fb7bb6c" category="paragraph">若要設定具有基本備援功能的iSCSI網路、請將每個主機連接埠和每個控制器的一個連接埠連接至不同的交換器、並將每組主機連接埠和控制器連接埠分割至不同的網路區段或VLAN。</block>
   <block id="1374ba4a3b800b667c2d22bc12c95878" category="paragraph">您必須啟用「傳送及接收硬體流程控制*端點對端點*」。您必須停用優先順序流程控制。</block>
   <block id="7e37f4cc4c72af636a462f4562f809e5" category="inline-link-macro">設定陣列端的網路</block>
-  <block id="bfd77f2e9284c82bb0898c1fc8ee96a2" category="paragraph">如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成中的步驟 <block ref="2ed754c1ecdb6cf89d6f4fd9390a16d0" category="inline-link-macro-rx"></block>。</block>
   <block id="544de7ba1dbbebfb99a713dc8014fa98" category="admonition">許多網路交換器的IP負荷必須設定在9、000位元組以上。如需詳細資訊、請參閱交換器文件。</block>
   <block id="c5d480d7eeb52b900ba2c6d310329c30" category="summary">在Linux Express方法中安裝適用於CLI和HCA的Storage Manager。</block>
   <block id="e5a3d9eb7eb53d8bf662cba07321306b" category="doc">安裝SANtricity 適用於SMcli的Syn-Storage Manager SANtricity （適用於11.53版或更早版本的軟體）</block>
@@ -8802,4 +8801,5 @@
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700產品型錄</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800產品型錄</block>
   <block id="eecdfe99dab1ba77ed2b7b1d9b86256b" category="sidebar">軟件SANtricity</block>
+  <block id="b9d208fcce9c26f3aacf7b49c9cdbaef" category="paragraph">如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成中的步驟 <block ref="16d4528e3823d381a97af6e1811e489a" category="inline-link-macro-rx"></block>。</block>
 </blocks>
