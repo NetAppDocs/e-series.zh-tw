@@ -1025,7 +1025,7 @@ homepage:
     - title: Web服務
       url: "/web-services-proxy/index.html"
     - title: vCenter的外掛程式
-      url: "/san-spvc-ic-overview.html"
+      url: "/vcenter-plugin/san-spvc-ic-overview.html"
     - title: SMI-S供應商
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
   - title: 效能應用程式附加元件
