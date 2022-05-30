@@ -783,10 +783,8 @@
   <block id="f5468ecf76be3bb4cf77cf63a591d098" category="paragraph">如果您的組態使用iSER over InfiniBand傳輸協定、請執行本節中的步驟。</block>
   <block id="123fafa39d80ebd469e4bb58a4001fda" category="paragraph">NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="7f02faf8a07269a5ab98e244f089148d" category="list-text">在主機上啟用和啟動iSCSI服務：</block>
-  <block id="9f20bfce60dbc91ad764d37dadffc227" category="list-text">設定IPoIB網路介面：</block>
   <block id="49688998ea00bb073d084abbb307e708" category="list-text">識別將要使用的InfiniBand連接埠。記錄每個連接埠的硬體位址（MAC位址）。</block>
   <block id="6b4ef7dc778070c5ee2f7456ae2e252c" category="list-text">設定InfiniBand網路介面裝置的持續名稱。</block>
-  <block id="713824554266fc9376f3db256933c6af" category="list-text">針對識別的IPoIB介面設定IP位址和網路資訊。</block>
   <block id="4ecefee9b1283cd8f82d4b55f24122c7" category="paragraph">所需的特定介面組態可能會因使用的作業系統而異。如需實作的特定資訊、請參閱廠商的作業系統文件。</block>
   <block id="61c924231a8595eeee332cc71a80361b" category="list-text">重新啟動網路服務或手動重新啟動每個介面、以啟動IB網路介面。例如：</block>
   <block id="ac1bbea8797a5c18374a7eb5a191169e" category="list-text">驗證與目標連接埠的連線能力。從主機ping您在設定網路連線時所設定的IP位址。</block>
@@ -8802,4 +8800,6 @@
   <block id="b6adf77a8fd2cb1ee566051ed64b7bbb" category="list-text"><block ref="b6adf77a8fd2cb1ee566051ed64b7bbb" category="inline-link-rx"></block></block>
   <block id="73ea8f8143966cdb241af48e230354bb" category="inline-link">適用於11.6x的系統管理程式說明SANtricity</block>
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
+  <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">設定InfiniBand卡網路介面：</block>
+  <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">針對識別的InfiniBand介面設定IP位址和網路資訊。</block>
 </blocks>

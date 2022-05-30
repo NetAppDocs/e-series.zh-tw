@@ -41,11 +41,11 @@ NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱 https://mysu
 # systemctl start iscsid.service
 # systemctl enable iscsid.service
 ----
-. 設定IPoIB網路介面：
+. 設定InfiniBand卡網路介面：
 +
 .. 識別將要使用的InfiniBand連接埠。記錄每個連接埠的硬體位址（MAC位址）。
 .. 設定InfiniBand網路介面裝置的持續名稱。
-.. 針對識別的IPoIB介面設定IP位址和網路資訊。
+.. 針對識別的InfiniBand介面設定IP位址和網路資訊。
 +
 所需的特定介面組態可能會因使用的作業系統而異。如需實作的特定資訊、請參閱廠商的作業系統文件。
 
