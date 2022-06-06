@@ -65,7 +65,7 @@ devices {
 
 
 
-== 為RHEL 8設定原生NMVe Multibathign
+== 為RHEL 8設定原生NMVe多路徑
 
 原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列步驟啟用。
 
