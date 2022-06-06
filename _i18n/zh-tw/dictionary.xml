@@ -8801,5 +8801,5 @@
   <block id="00f0cc59eb519b0e3ccef23f32fc3242" category="list-text"><block ref="00f0cc59eb519b0e3ccef23f32fc3242" category="inline-link-rx"></block></block>
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">設定InfiniBand卡網路介面：</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">針對識別的InfiniBand介面設定IP位址和網路資訊。</block>
-  <block id="076b3ed1d1bebd5a14f9e01695f62e5b" category="section-title">為RHEL 8設定原生NMVe多路徑</block>
+  <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">為RHEL 8設定原生NVMe多路徑</block>
 </blocks>
