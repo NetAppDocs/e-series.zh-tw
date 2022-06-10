@@ -37,6 +37,12 @@ RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套
 # yum install rdma-core
 # yum install nvme-cli
 ----
+. 取得用於將主機設定為陣列的主機NQN。
++
+[listing]
+----
+# cat /etc/nvme/hostnqn
+----
 . 在乙太網路連接埠上設定用於透過RoCE連接NVMe的IPV4 IP位址。針對每個網路介面、建立包含該介面的不同變數的組態指令碼。
 +
 此步驟所使用的變數取決於伺服器硬體和網路環境。這些變數包括「IPADDR」和「閘道」。以下是SLES和RHEL的範例指示：
@@ -45,71 +51,76 @@ RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套
 * SLES 12與SLES 15*
 
 +
-** 建立範例檔「etc/sysconfig/network/ifcfg/eth4」、如下所示：
+使用下列內容建立範例檔「etc/sysconfig/network/ifcfg/eth4」。
+
 +
 [listing]
 ----
 BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.1.87/24'
-   GATEWAY='192.168.1.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24'
+GATEWAY='192.168.1.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
-** 建立檔案「etc/sysconfig/network/ifcfg/eth5」、如下所示：
++
+然後、建立範例檔案「etc/sysconfig/network/ifcfg/eth5」：
+
 +
 [listing]
 ----
 BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.2.87/24'
-   GATEWAY='192.168.2.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
 +
 * RHEL 7與RHEL 8*
 
-** 建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」、如下所示：
++
+使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。
+
 +
 [listing]
 ----
 BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='192.168.1.87/24’
-  GATEWAY='192.168.1.1'
-  MTU=
-  NAME='MT27800 Family [ConnectX-5]'
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.1.87/24’
+GATEWAY='192.168.1.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
-** 建立檔案「etc/sysconfig/network-scripts/ifcfg/eth5」、如下所示：
++
+然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：
+
 +
 [listing]
 ----
 BOOTPROTO='static'
-   BROADCAST=
-   ETHTOOL_OPTIONS=
-   IPADDR='192.168.2.87/24'
-   GATEWAY='192.168.2.1'
-   MTU=
-   NAME='MT27800 Family [ConnectX-5]'
-   NETWORK=
-   REMOTE_IPADDR=
-   STARTMODE='auto'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='192.168.2.87/24'
+GATEWAY='192.168.2.1'
+MTU=
+NAME='MT27800 Family [ConnectX-5]'
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'
 ----
-
-
 . 啟用網路介面：
 +
 [listing]
@@ -118,9 +129,7 @@ BOOTPROTO='static'
 # ifup eth4
 # ifup eth5
 ----
-. 在主機上設定NVMe層。
-+
-.. 在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：
+. 在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：
 +
 [listing]
 ----
@@ -142,6 +151,4 @@ rdma_cm               114688  7 rpcrdma,ib_srpt,ib_srp,nvme_rdma,ib_iser,ib_iser
 ib_core               393216  15 rdma_cm,ib_ipoib,rpcrdma,ib_srpt,ib_srp,nvme_rdma,iw_cm,ib_iser,ib_umad,ib_isert,rdma_ucm,ib_uverbs,mlx5_ib,qedr,ib_cm
 t10_pi                 16384  2 sd_mod,nvme_core
 ----
-
-
 

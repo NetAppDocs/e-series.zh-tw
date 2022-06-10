@@ -927,14 +927,8 @@
   <block id="f402a19f86f854f295aa371b9abbbb90" category="list-text">在乙太網路連接埠上設定用於透過RoCE連接NVMe的IPV4 IP位址。針對每個網路介面、建立包含該介面的不同變數的組態指令碼。</block>
   <block id="a4e34f0c64fbeb3078a510eb36f68d56" category="paragraph">此步驟所使用的變數取決於伺服器硬體和網路環境。這些變數包括「IPADDR」和「閘道」。以下是SLES和RHEL的範例指示：</block>
   <block id="111d867a53d45d2348ae37042fdb7310" category="paragraph">* SLES 12與SLES 15*</block>
-  <block id="f6514b428d1fd5726b92cca56eb95b3c" category="list-text">建立範例檔「etc/sysconfig/network/ifcfg/eth4」、如下所示：</block>
-  <block id="d55ed1bf19b44803d0334a7a27528dc6" category="list-text">建立檔案「etc/sysconfig/network/ifcfg/eth5」、如下所示：</block>
   <block id="931ff3112ed27bc061711c73637ae331" category="paragraph">* RHEL 7與RHEL 8*</block>
-  <block id="5192cc69fe00a7c3a969c48a5e3aa2a6" category="list-text">建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」、如下所示：</block>
-  <block id="7a70ebfc3edf87c293a5e2122f53d20b" category="list-text">建立檔案「etc/sysconfig/network-scripts/ifcfg/eth5」、如下所示：</block>
   <block id="28a17096963f5398d9b941a85c3ea321" category="list-text">啟用網路介面：</block>
-  <block id="350bbc41930d958a772f9a6d5c8e35db" category="list-text">在主機上設定NVMe層。</block>
-  <block id="8197e84458a5343d64dab5ea199ec4ec" category="list-text">在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
   <block id="5dd9d62ce4e8e03736012f8834a6e4fd" category="summary">您可以根據Linux版本設定導向裝置目標的I/O。DM-MP會管理這些虛擬目標的基礎實體路徑。</block>
   <block id="23a1a118541ab0d1766faa1805b06432" category="paragraph">您可以透過「dm」裝置或「dev/mapper」中的「mlink」來存取這些區塊裝置、例如：</block>
   <block id="32bf53c51f7fc63be42581f2a476221f" category="paragraph">若要檢視E系列磁碟區的每個NVMe路徑相關資訊、請使用「NVMe NetApp SMdevices（NVMe NetApp SMdevices）」（英文）[-o &lt;format（格式）&gt;]）命令。</block>
@@ -8802,4 +8796,10 @@
   <block id="3bf3cbc109a52d0d37f5d3c9ecf3e14a" category="list-text">設定InfiniBand卡網路介面：</block>
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">針對識別的InfiniBand介面設定IP位址和網路資訊。</block>
   <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">為RHEL 8設定原生NVMe多路徑</block>
+  <block id="5536244c6a701b654692a01af6b8b81c" category="list-text">取得用於將主機設定為陣列的主機NQN。</block>
+  <block id="7811a322c7116bb2055841124b0d8911" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network/ifcfg/eth4」。</block>
+  <block id="27a81685959fe491960811c61481c35d" category="paragraph">然後、建立範例檔案「etc/sysconfig/network/ifcfg/eth5」：</block>
+  <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。</block>
+  <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：</block>
+  <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
 </blocks>
