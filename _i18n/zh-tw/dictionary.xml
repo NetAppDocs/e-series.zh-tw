@@ -708,7 +708,6 @@
   <block id="bcf0de3382ed44110d33151f9f7f21d3" category="admonition">無論主機存取為何、「NVMe探索」命令都會探索子系統中的所有控制器連接埠。</block>
   <block id="960290d96363dc001406e70916604c1b" category="list-text">對任何其他連線重複步驟1。</block>
   <block id="c3458af35a87b205befdafb97cfb818c" category="list-text">使用命令「NVMe CONNECT -t RDMA -n Disclided_sub nqn -A target ip_address-Q queue_depth_setting -l控制器損失超時期間」連線至第一條路徑上探索到的子系統</block>
-  <block id="deb62e4f060ee587d63b8541c57636c6" category="admonition">重新開機後、上述命令不會持續執行。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。</block>
   <block id="ecee470708b06c136afc8296235d59d1" category="admonition">NVMe連線不會透過系統重新開機或長時間無法使用控制器而持續存在。</block>
   <block id="d1609c8e9223523ac353a50df0e2cda2" category="admonition">不會針對主機無法存取的任何探索到的連接埠建立連線。</block>
   <block id="68cd57fed05c917fe34e6a66040d3bd6" category="admonition">如果您使用此命令指定連接埠號碼、連線將會失敗。預設連接埠是唯一設定用於連線的連接埠。</block>
@@ -8804,4 +8803,5 @@
   <block id="d43f0c1ac820c0cdc6a73e7a6f943df2" category="paragraph">新增：</block>
   <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
+  <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">重新開機後、上述命令不會持續執行。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。</block>
 </blocks>

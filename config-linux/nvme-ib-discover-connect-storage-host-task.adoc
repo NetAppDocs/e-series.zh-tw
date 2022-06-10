@@ -30,7 +30,7 @@ NOTE: 無論主機存取為何、「NVMe探索」命令都會探索子系統中�
 +
 [listing]
 ----
-# nvme discover  -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.100
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -88,7 +88,7 @@ NOTE: 建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3�
 +
 [listing]
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 . 使用「NVMe清單」命令查看目前連線的NVMe裝置清單。在以下範例中、它是「nvme0n1」。
 +
@@ -111,7 +111,7 @@ Usage                 Format           FW Rev
 +
 [listing]
 ----
-  # nvme connect -t rdma -a 11.11.11.100 -n  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+  # nvme connect -t rdma -a 11.11.11.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
 . 使用Linux的「lsblk（lsblk）”和「grep（grep））指令、顯示每個區塊裝置的其他相關資訊：
 +
