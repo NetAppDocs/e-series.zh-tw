@@ -17,7 +17,7 @@ summary: 將主機介面卡（HIC）新增至E2800陣列。
 在此程序中、您必須關閉儲存陣列電源、安裝HIC、然後重新接上電源。
 
 .開始之前
-* 檢閱 link:hics_overview_supertask_concept.html["E2800 HIC更換要求"]。
+* 檢閱 link:hics-overview-supertask-concept.html["E2800 HIC更換要求"]。
 * 為此程序排定停機維護時間。安裝HIC時必須關閉電源、因此在成功完成此程序之前、您無法存取儲存陣列上的資料。（在雙工組態中、這是因為兩個控制器在開機時必須具有相同的HIC組態。）
 
 
