@@ -4051,7 +4051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:29:47 +0000">05/03/2022</time>
+    <time datetime="2022-06-10 13:46:32 +0000">06/10/2022</time>
     
   
 
@@ -4103,10 +4103,18 @@
 </div>
 </li>
 <li>
+<p>取得用於將主機設定為陣列的主機NQN。</p>
+<div class="listingblock">
+<div class="content">
+<pre># cat /etc/nvme/hostnqn</pre>
+</div>
+</div>
+</li>
+<li>
 <p>檢查IB連接埠連結是否正常、狀態=作用中：</p>
 <div class="listingblock">
 <div class="content">
-<pre> # ibstat</pre>
+<pre># ibstat</pre>
 </div>
 </div>
 <div class="listingblock">
@@ -4152,33 +4160,33 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='10.10.10.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'</pre>
+<pre>BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='10.10.10.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>然後、建立檔案/etc/sysconfig/network/ifcfg/ib1。</p>
+<p>然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>  BOOTPROTO='static'
-  BROADCAST=
-  ETHTOOL_OPTIONS=
-  IPADDR='11.11.11.100/24'
-  IPOIB_MODE='connected'
-  MTU='65520'
-  NAME=
-  NETWORK=
-  REMOTE_IPADDR=
-  STARTMODE='auto'</pre>
+<pre>BOOTPROTO='static'
+BROADCAST=
+ETHTOOL_OPTIONS=
+IPADDR='11.11.11.100/24'
+IPOIB_MODE='connected'
+MTU='65520'
+NAME=
+NETWORK=
+REMOTE_IPADDR=
+STARTMODE='auto'</pre>
 </div>
 </div>
 </li>
@@ -4189,17 +4197,17 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='10.10.10.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib0
-  ONBOOT=yes</pre>
+<pre>CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='10.10.10.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib0
+ONBOOT=yes</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -4210,17 +4218,17 @@
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>  CONNECTED_MODE=no
-  TYPE=InfiniBand
-  PROXY_METHOD=none
-  BROWSER_ONLY=no
-  BOOTPROTO=static
-  IPADDR='11.11.11.100/24'
-  DEFROUTE=no
-  IPV4=FAILURE_FATAL=yes
-  IPV6INIT=no
-  NAME=ib1
-  ONBOOT=yes</pre>
+<pre>CONNECTED_MODE=no
+TYPE=InfiniBand
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+IPADDR='11.11.11.100/24'
+DEFROUTE=no
+IPV4=FAILURE_FATAL=yes
+IPV6INIT=no
+NAME=ib1
+ONBOOT=yes</pre>
 </div>
 </div>
 </li>
