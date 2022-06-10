@@ -66,17 +66,29 @@ node.session.timeo.replacement_timeout=20
 NOTE: 除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段或VLAN上使用兩個或多個NIC。
 
 +
-.. 使用`# ifconfig-A'命令確定iSCSI連接埠名稱。
+.. 使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。
 .. 設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。
 +
 [listing]
 ----
 # vim /etc/sysconfig/network-scripts/ifcfg-<NIC port>
-Edit:
+----
++
+編輯：
+
++
+[listing]
+----
 BOOTPROTO=none
 ONBOOT=yes
 NM_CONTROLLED=no
-Add:
+----
++
+新增：
+
++
+[listing]
+----
 IPADDR=192.168.xxx.xxx
 NETMASK=255.255.255.0
 ----
@@ -93,30 +105,38 @@ NOTE: 請務必設定兩個iSCSI啟動器連接埠的位址。
 .. 確定Linux伺服器可以ping通所有iSCSI目標連接埠。
 
 
-. 建立兩個iSCSI iface繫結來設定iSCSI介面。
+. 在啟動器和目標之間建立iSCSI工作階段（總共四個）。
++
+.. 使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。
 +
 [listing]
 ----
-iscsiadm -m iface -I iface0 -o new
-iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
+# iscsiadm -m iface -I iface0 -o new
+# iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v <NIC port1>
 ----
 +
 [listing]
 ----
-iscsiadm -m iface -I iface1 -o new
-iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
+# iscsiadm -m iface -I iface1 -o new
+# iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v <NIC port2>
 ----
 +
 
 NOTE: 若要列出介面、請使用「iscsiadm -m iface'」。
 
-. 在啟動器和目標之間建立iSCSI工作階段（總共四個）。
-+
 .. 探索iSCSI目標。在工作表中儲存IQN（每次探索都相同）、以進行下一步。
 +
 [listing]
 ----
-iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1
+----
++
+或
+
++
+[listing]
+----
+# iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260
 ----
 +
 
@@ -127,12 +147,20 @@ NOTE: IQN如下所示：
 ----
 iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 ----
-.. 使用ifaces建立iSCSI啟動器與iSCSI目標之間的連線。
+.. 建立iSCSI啟動器與iSCSI目標之間的連線。
 +
 [listing]
 ----
-iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+# iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 -p 192.168.0.1:3260 -I iface0 -l
+----
++
+或
+
++
+[listing]
+----
+# iscsiadm -m node -L all
 ----
 .. 列出在主機上建立的iSCSI工作階段。
 +

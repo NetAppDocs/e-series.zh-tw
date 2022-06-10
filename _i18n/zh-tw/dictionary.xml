@@ -748,17 +748,14 @@
   <block id="22573cb1d3a24e811b00be3cdf11ed07" category="list-text">取得用於將主機設定為陣列的主機IQN啟動器名稱。</block>
   <block id="d707e35eeedda41c6a0cfa761fd2a07b" category="list-text">設定iSCSI連接埠的網路：</block>
   <block id="d2ac38f00dee7d2a262b2bf0fa6f3b64" category="admonition">除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段或VLAN上使用兩個或多個NIC。</block>
-  <block id="8e547ae67948248f9f4d0b6b7f0d1f40" category="list-text">使用`# ifconfig-A'命令確定iSCSI連接埠名稱。</block>
   <block id="a055f9d8150408cf1633c42de1d3c847" category="list-text">設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。</block>
   <block id="068968b47b209b5ab4b2bf2a892a53da" category="admonition">請務必設定兩個iSCSI啟動器連接埠的位址。</block>
   <block id="3ec57145ad99ba132ea5906182fa7d34" category="list-text">重新啟動網路服務。</block>
   <block id="3aa61be860f27f859aed628c7d7a8783" category="list-text">確定Linux伺服器可以ping通所有iSCSI目標連接埠。</block>
-  <block id="7d34b9feee6c2fc8bab1f6efe921cf88" category="list-text">建立兩個iSCSI iface繫結來設定iSCSI介面。</block>
   <block id="64adb9e225feb356ed6ec628cd40671f" category="admonition">若要列出介面、請使用「iscsiadm -m iface'」。</block>
   <block id="a6575d77a64e40bfa8e81ab8ade7d7a1" category="list-text">在啟動器和目標之間建立iSCSI工作階段（總共四個）。</block>
   <block id="ac8ddbbb791a17c089f8b72f6801a3dc" category="list-text">探索iSCSI目標。在工作表中儲存IQN（每次探索都相同）、以進行下一步。</block>
   <block id="8329426ded9436d4fbff44b5e4b4c72c" category="admonition">IQN如下所示：</block>
-  <block id="bac665002aa2ee48216bcd8d60fd7784" category="list-text">使用ifaces建立iSCSI啟動器與iSCSI目標之間的連線。</block>
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">列出在主機上建立的iSCSI工作階段。</block>
   <block id="5199a73d3ec25068a8e5789109022997" category="summary">在InfiniBand環境中設定NVMe啟動器、包括安裝及設定InfiniBand、NVMe-CLI和RDMA套件、設定啟動器IP位址、以及在主機上設定NVMe層。</block>
   <block id="9e54c935a03ff772bcf7612b86de79a1" category="doc">在主機端設定NVMe over InfiniBand</block>
@@ -8802,4 +8799,9 @@
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：</block>
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</block>
+  <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。</block>
+  <block id="c13ee4fd00cee57d25631dda7a3afcfc" category="paragraph">編輯：</block>
+  <block id="d43f0c1ac820c0cdc6a73e7a6f943df2" category="paragraph">新增：</block>
+  <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。</block>
+  <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
 </blocks>
