@@ -770,7 +770,6 @@
   <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">在IB連接埠上設定IPV4 IP位址。</block>
   <block id="08fa0114b0d6dc928f4c7ac5eb67c374" category="paragraph">建立內含下列內容的檔案/etc/sysconfig/network/ifcfg/ib0。</block>
-  <block id="033848f8e5f29b66fa491a6133c35ab8" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1。</block>
   <block id="736d155a06721b3c243a2d11dd71cf06" category="paragraph">建立內含下列內容的檔案/etc/sysconfig/network-scripts/ifcfg/ib0。</block>
   <block id="2ec96b50b65cad4cbdf3961da2c339d2" category="paragraph">然後、建立檔案/etc/sysconfig/network-scripts/ifcfg/ib1：</block>
   <block id="9830a61f8841b6d0b5bd803cf5c60d44" category="list-text">啟用「IB」介面：</block>
@@ -8802,4 +8801,5 @@
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：</block>
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
+  <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</block>
 </blocks>
