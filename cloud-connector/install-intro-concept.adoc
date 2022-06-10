@@ -15,6 +15,9 @@ summary: 僅適用於RedHat和SUSE Linux平台的《支援解決方案SANtricity
 
 您可以SANtricity 透過圖形模式或主控台模式、在相容的Linux作業系統上安裝《支援不支援的Cloud Connector應用程式」。在安裝過程中、您必須指定SANtricity 非SSL和SSL連接埠號碼、以供使用。安裝SANtricity 時、將以監控程序的形式執行。
 
+
+NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
+
 請檢閱下列附註：
 
 * 如果SANtricity 將「支援服務Proxy」安裝在SANtricity 與「支援服務解決方案」相同的伺服器上、非SSL連接埠號碼與SSL連接埠號碼之間就會發生衝突。在這種情況下、請針對SANtricity 非SSL連接埠和SSL連接埠、在安裝過程中選擇適當的編號。
