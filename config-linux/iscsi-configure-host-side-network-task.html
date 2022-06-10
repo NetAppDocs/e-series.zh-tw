@@ -4051,7 +4051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:29:47 +0000">05/03/2022</time>
+    <time datetime="2022-06-10 14:10:53 +0000">06/10/2022</time>
     
   
 
@@ -4142,21 +4142,39 @@
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>使用`# ifconfig-A&#8217;命令確定iSCSI連接埠名稱。</p>
+<p>使用「ifconfig-A&#8217;命令來判斷iSCSI連接埠名稱。</p>
 </li>
 <li>
 <p>設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。</p>
 <div class="listingblock">
 <div class="content">
-<pre># vim /etc/sysconfig/network-scripts/ifcfg-&lt;NIC port&gt;
-Edit:
-BOOTPROTO=none
+<pre># vim /etc/sysconfig/network-scripts/ifcfg-&lt;NIC port&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>編輯：</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>BOOTPROTO=none
 ONBOOT=yes
-NM_CONTROLLED=no
-Add:
-IPADDR=192.168.xxx.xxx
+NM_CONTROLLED=no</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>新增：</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>IPADDR=192.168.xxx.xxx
 NETMASK=255.255.255.0</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>+</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -4170,7 +4188,8 @@ NETMASK=255.255.255.0</pre>
 </tr>
 </table>
 </div>
-</li>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>重新啟動網路服務。</p>
 <div class="listingblock">
@@ -4186,17 +4205,21 @@ NETMASK=255.255.255.0</pre>
 </div>
 </li>
 <li>
-<p>建立兩個iSCSI iface繫結來設定iSCSI介面。</p>
+<p>在啟動器和目標之間建立iSCSI工作階段（總共四個）。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。</p>
 <div class="listingblock">
 <div class="content">
-<pre>iscsiadm -m iface -I iface0 -o new
-iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v &lt;NIC port1&gt;</pre>
+<pre># iscsiadm -m iface -I iface0 -o new
+# iscsiadm -m iface -I iface0 -o update -n iface.net_ifacename -v &lt;NIC port1&gt;</pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>iscsiadm -m iface -I iface1 -o new
-iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v &lt;NIC port2&gt;</pre>
+<pre># iscsiadm -m iface -I iface1 -o new
+# iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v &lt;NIC port2&gt;</pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -4213,14 +4236,18 @@ iscsiadm -m iface -I iface1 -o update -n iface.net_ifacename -v &lt;NIC port2&gt
 </div>
 </li>
 <li>
-<p>在啟動器和目標之間建立iSCSI工作階段（總共四個）。</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
 <p>探索iSCSI目標。在工作表中儲存IQN（每次探索都相同）、以進行下一步。</p>
 <div class="listingblock">
 <div class="content">
-<pre>iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1</pre>
+<pre># iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260 -I iface0 -P 1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>或</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># iscsiadm -m discovery -t sendtargets -p 192.168.0.1:3260</pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -4235,25 +4262,33 @@ IQN如下所示：
 </tr>
 </table>
 </div>
-</li>
-</ol>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3</pre>
 </div>
 </div>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
+</li>
 <li>
-<p>使用ifaces建立iSCSI啟動器與iSCSI目標之間的連線。</p>
+<p>建立iSCSI啟動器與iSCSI目標之間的連線。</p>
 <div class="listingblock">
 <div class="content">
-<pre>iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
+<pre># iscsiadm -m node -T iqn.1992-01.com.netapp:2365.60080e50001bf1600000000531d7be3
 -p 192.168.0.1:3260 -I iface0 -l</pre>
 </div>
 </div>
+<div class="paragraph">
+<p>或</p>
+</div>
 </li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># iscsiadm -m node -L all</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
 <li>
 <p>列出在主機上建立的iSCSI工作階段。</p>
 <div class="listingblock">
