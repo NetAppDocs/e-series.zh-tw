@@ -8804,4 +8804,5 @@
   <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">重新開機後、上述命令不會持續執行。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。</block>
   <block id="67abfdf061a5203871b27c16ec885ea9" category="list-text">檢閱 <block ref="75c4b5f7794c0531679941f5aad7b091" category="inline-link-macro-rx"></block>。</block>
+  <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">不再使用此解決方案SANtricity 、也不再提供下載。</block>
 </blocks>

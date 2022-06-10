@@ -16,6 +16,9 @@ summary: 解決方案：Cloud Connector SANtricity
 可在RedHat和SUSE Linux平台上安裝SANtricity 、而《支援不支援的雲端連接器》是一套套裝解決方案（.bin檔案）。安裝SANtricity 完S還原Cloud Connector之後、您可以設定應用程式、將E系列磁碟區的備份與還原工作、設定為AltaVault 使用此功能的應用程式、或是執行現有的Amazon S3或StorageGRID 還原帳戶。所有透過SANtricity NetApp Cloud Connector執行的工作都使用REST型API。
 
 
+NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
+
+
 
 == 考量
 
