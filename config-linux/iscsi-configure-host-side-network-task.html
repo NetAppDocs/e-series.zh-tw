@@ -4051,7 +4051,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-10 14:10:53 +0000">06/10/2022</time>
+    <time datetime="2022-06-22 22:05:51 +0000">06/22/2022</time>
     
   
 
@@ -4146,13 +4146,28 @@
 </li>
 <li>
 <p>設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*</p>
 <div class="listingblock">
 <div class="content">
 <pre># vim /etc/sysconfig/network-scripts/ifcfg-&lt;NIC port&gt;</pre>
 </div>
 </div>
+</li>
+<li>
+<p>SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*</p>
+<div class="listingblock">
+<div class="content">
+<pre># vim /etc/sysconfig/network/ifcfg-&lt;NIC port&gt;</pre>
+</div>
+</div>
 <div class="paragraph">
 <p>編輯：</p>
+</div>
+</li>
+</ul>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -4162,7 +4177,8 @@ NM_CONTROLLED=no</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>新增：</p>
+<p>+
+新增：</p>
 </div>
 </li>
 </ol>
