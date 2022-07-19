@@ -1000,13 +1000,6 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-cabinet/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
       <loc>https://docs.netapp.com/zh-tw/e-series/config-windows/</loc>
       
       <lastmod>2022-05-24T13:44:22+00:00</lastmod>
@@ -1028,49 +1021,7 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/getting-started/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/maintenance-e5700/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-e2800-e5700/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-cabling/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/cloud-connector/</loc>
-      
-      <lastmod>2022-06-10T16:02:56+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/maintenance-e2800/</loc>
-      
-      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
-      
-    </url>
-  
-    <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/web-services-proxy/</loc>
+      <loc>https://docs.netapp.com/zh-tw/e-series/remote-storage-volumes/</loc>
       
       <lastmod>2022-05-24T13:44:22+00:00</lastmod>
       
@@ -1084,16 +1035,23 @@
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-ef600/</loc>
+      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-cabinet/</loc>
       
       <lastmod>2022-05-03T06:29:47+00:00</lastmod>
       
     </url>
   
     <url>
-      <loc>https://docs.netapp.com/zh-tw/e-series/remote-storage-volumes/</loc>
+      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-cabling/</loc>
       
-      <lastmod>2022-05-24T13:44:22+00:00</lastmod>
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-e2800-e5700/</loc>
+      
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
       
     </url>
   
@@ -1105,9 +1063,51 @@
     </url>
   
     <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/install-hw-ef600/</loc>
+      
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/maintenance-e5700/</loc>
+      
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/maintenance-e2800/</loc>
+      
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
       <loc>https://docs.netapp.com/zh-tw/e-series/config-vmware/</loc>
       
       <lastmod>2022-05-24T13:44:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/web-services-proxy/</loc>
+      
+      <lastmod>2022-05-24T13:44:22+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/getting-started/</loc>
+      
+      <lastmod>2022-05-03T06:29:47+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/e-series/cloud-connector/</loc>
+      
+      <lastmod>2022-06-10T16:02:56+00:00</lastmod>
       
     </url>
   
@@ -2234,7 +2234,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-tw/e-series//search.html</loc>
       
-      <lastmod>2022-07-14T20:40:25+00:00</lastmod>
+      <lastmod>2022-07-19T11:42:08+00:00</lastmod>
       
     </url>
   
