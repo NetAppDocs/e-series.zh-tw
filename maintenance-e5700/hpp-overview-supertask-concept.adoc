@@ -13,6 +13,13 @@ summary: 轉換E5700的主機傳輸協定。
 [role="lead"]
 在E5700中轉換主機連接埠傳輸協定之前、請先檢閱相關要求。
 
+
+
+== 您可以變更的主機連接埠
+
+
+NOTE: 只有E5700控制器上的光纖基礎連接埠可以轉換。
+
 下圖顯示E5700及其SFP+（光纖）基板主機連接埠*（1）*和選用的兩個IB HIC連接埠*（2）*。
 
 image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[e5700含2埠100g EDR InfiniBand hic、含標註]

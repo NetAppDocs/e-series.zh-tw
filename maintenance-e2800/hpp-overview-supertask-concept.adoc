@@ -17,6 +17,9 @@ summary: 檢閱E2800上的主機連接埠傳輸協定轉換需求。
 
 == 您可以變更的主機連接埠
 
+
+NOTE: 只有E2800控制器上的16GB FC/10Gb iSCSI HIC和光纖基礎連接埠可以轉換。
+
 下圖顯示E2800控制器的背面、該控制器具有兩個SFP+（光纖）基板主機連接埠*（1）*和四個SFP+（光纖）HIC連接埠*（2）*。
 
 image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[28圖e2800光學基礎四SFP硬體]
