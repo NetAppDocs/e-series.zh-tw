@@ -4,24 +4,24 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 對於RHEL 8和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。 
 ---
-= 建立檔案系統（RHEL 8和SLES 15）
+= 建立檔案系統（RHEL 8、RHEL 9、SLES 15）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-對於RHEL 8和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。
+對於RHEL 8、RHEL 9、SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。
 
 .步驟
-. 執行「multiPath-ll」命令、取得「/dev/NVMe」裝置清單。
+. 執行 `multipath -ll` 命令以取得NVMe裝置清單。
 +
 [listing]
 ----
 # multipath -ll
 ----
 +
-此命令的結果顯示設備"nvme0n6"。
+此命令的結果可用於尋找與相關聯的裝置 `/dev/disk/by-id/nvme-eui.[uuid#]` 位置。以下範例將會是 `/dev/disc/by-id/nvme-eui.000082dd5c05d39300a0980000a52225`。
 
 +
 [listing]
@@ -37,7 +37,7 @@ size=4194304 features='n/a' hwhandler='ANA' wp=rw
 `-+- policy='n/a' prio=10 status=non-optimized
   `- 0:3:1 nvme0c3n1 0:0 n/a non-optimized live
 ----
-. 在每個「/dev/nvmest0n#」裝置的分割區上建立檔案系統。
+. 使用該位置在磁碟分割上建立所需NVMe裝置的檔案系統 `/dev/disk/by-id/nvme-eui.[id#]`。
 +
 建立檔案系統的方法會因所選的檔案系統而異。此範例顯示如何建立「ext4」檔案系統。
 

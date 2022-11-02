@@ -23,7 +23,7 @@ NOTE: 請參閱  https://mysupport.netapp.com/matrix["NetApp 互通性對照表�
 
 
 
-RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。
+RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。
 
 
 
@@ -105,4 +105,4 @@ devices {
 
 
 
-NOTE: 對於SLES 15、原生NVMe多路徑預設為啟用、不需要額外的組態。
+NOTE: 對於SLES 15和RHEL 9、原生NVMe多路徑預設為啟用、不需要額外的組態。

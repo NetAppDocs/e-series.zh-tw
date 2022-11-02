@@ -14,8 +14,8 @@ summary: 請依照雙工或單工的適當步驟、準備更換E2800電池。
 [role="lead"]
 準備更換電池的步驟取決於您使用的是雙工組態（兩個控制器）或單工組態（一個控制器）。
 
-* 如需雙工組態、請參閱 <<Place controller offline (duplex)>>。
-* 如需單工組態、請參閱 <<Power down the controller shelf (simplex)>>。
+* 如需雙工組態、請參閱  controller offline (duplex)。
+* 如需單工組態、請參閱  down the controller shelf (simplex)。
 
 
 .開始之前

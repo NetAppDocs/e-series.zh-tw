@@ -206,6 +206,8 @@ sidebar:
           url: "/config-linux/iser-ib-verify-linux-config-support-task.html"
         - title: 使用DHCP設定IP位址
           url: "/config-linux/iser-ib-configure-ip-address-dhcp-task.html"
+        - title: 確定主機連接埠的GUI並進行建議的設定
+          url: "/config-linux/iser-ib-determine-host-port-guids-task.html"
         - title: 設定子網路管理程式
           url: "/config-linux/iser-ib-configure-subnet-manager-task.html"
         - title: 安裝及設定主機公用程式
@@ -234,6 +236,8 @@ sidebar:
           url: "/config-linux/srp-ib-verify-linux-config-support-task.html"
         - title: 使用DHCP設定IP位址
           url: "/config-linux/srp-ib-configure-ip-address-dhcp-task.html"
+        - title: 確定主機連接埠的GUI
+          url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
         - title: 設定子網路管理程式
           url: "/config-linux/srp-ib-configure-subnet-manager-task.html"
         - title: 安裝及設定主機公用程式
@@ -246,8 +250,6 @@ sidebar:
           url: "/config-linux/srp-ib-configure-multipath-software-task.html"
         - title: 設定多重路徑.conf檔案
           url: "/config-linux/srp-ib-setup-multipath-conf-file-concept.html"
-        - title: 確定主機連接埠的GUI
-          url: "/config-linux/srp-ib-determine-host-port-guids-task.html"
         - title: 設定網路連線—透過Infiniband的SRSRP
           url: "/config-linux/srp-ib-configure-network-connections-task.html"
         - title: 建立分割區和檔案系統
@@ -266,6 +268,8 @@ sidebar:
           url: "/config-linux/nvme-ib-install-smcli-11-53-task.html"
         - title: 存取SANtricity 「系統管理程式」並使用「設定精靈」
           url: "/config-linux/nvme-ib-access-sam-setup-wizard-task.html"
+        - title: 確定主機連接埠的GUI並進行建議的設定
+          url: "/config-linux/nvme-ib-determine-host-port-guids-task.html"
         - title: 設定子網路管理程式
           url: "/config-linux/nvme-ib-configure-subnet-manager-task.html"
         - title: 在主機端設定NVMe over InfiniBand
@@ -288,7 +292,7 @@ sidebar:
           url: "/config-linux/nvme-ib-access-physical-targets-concept.html"
         - title: 建立檔案系統（RHEL 7和SLES 12）
           url: "/config-linux/nvme-ib-create-filesystems-sles-12-task.html"
-        - title: 建立檔案系統（RHEL 8和SLES 15）
+        - title: 建立檔案系統（RHEL 8、RHEL 9和SLES 15）
           url: "/config-linux/nvme-ib-create-filesystems-sles-15-task.html"
         - title: 驗證主機上的儲存設備存取
           url: "/config-linux/nvme-ib-verify-storage-access-host-task.html"
@@ -326,7 +330,7 @@ sidebar:
           url: "/config-linux/nvme-roce-access-physical-targets-concept.html"
         - title: 建立檔案系統（RHEL 7和SLES 12）
           url: "/config-linux/nvme-roce-create-filesystems-sles-12-task.html"
-        - title: 建立檔案系統（RHEL 8和SLES 15）
+        - title: 建立檔案系統（RHEL 8、RHEL 9和SLES 15）
           url: "/config-linux/nvme-roce-create-filesystems-sles-15-task.html"
         - title: 驗證主機上的儲存設備存取
           url: "/config-linux/nvme-roce-verify-storage-access-host-task.html"
@@ -358,8 +362,10 @@ sidebar:
           url: "/config-linux/nvme-fc-access-virtual-targets-concept.html"
         - title: 存取適用於實體裝置目標的NVMe磁碟區
           url: "/config-linux/nvme-fc-access-physical-targets-concept.html"
-        - title: 建立分割區和檔案系統
-          url: "/config-linux/nvme-fc-create-partition-files-task.html"
+        - title: 建立檔案系統（RHEL 7和SLES 12）
+          url: "/config-linux/nvme-fc-create-filesystems-sles-12-task.html"
+        - title: 建立檔案系統（RHEL 8、RHEL 9和SLES 15）
+          url: "/config-linux/nvme-fc-create-filesystems-sles-15-task.html"
         - title: 驗證主機上的儲存設備存取
           url: "/config-linux/nvme-fc-verify-storage-access-host-task.html"
         - title: 適用於Linux的NVMe over Fibre Channel工作表

@@ -20,7 +20,7 @@ NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱 https://mysu
 .步驟
 . 在主機上啟用和啟動iSCSI服務：
 +
-* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL 9）*
 
 +
 [listing]
@@ -127,13 +127,13 @@ iscsiadm -m discovery -t st -p 192.168.130.101 -I iser
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l -o new
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o new
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l -o new
 ----
 . 登入iSCSI工作階段。
 +
@@ -143,13 +143,13 @@ iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l -o 
 [listing]
 ----
 # Controller A Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller B Port 1
-iscsiadm -m node --target <Target IQN\> -I iface-ib0 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib0 -p <Target Port IP\> -l
 # Controller A Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 # Controller B Port 2
-iscsiadm -m node --target <Target IQN\> -I iface-ib1 -p <Target Port IP\> -l
+iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 . 驗證iSER / iSCSI工作階段。
 +

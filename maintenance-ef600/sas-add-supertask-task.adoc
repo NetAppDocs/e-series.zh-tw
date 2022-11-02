@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
 summary: 將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。 
 ---
-= 將SAS擴充卡新增至EF300
+= 將SAS擴充卡新增至EF300和EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,12 +12,12 @@ summary: 將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。
 
 
 [role="lead"]
-您可以將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。
+您可以將SAS擴充卡新增至EF300或EF600控制器、以便擴充磁碟機匣。
 
 新增SAS擴充卡時、您必須關閉儲存陣列電源、安裝新的SAS擴充卡、然後重新接上電源。
 
 .開始之前
-* 檢閱 link:sas-overview-supertask-concept.html["EF300 SAS擴充卡更換需求"]。
+* 檢閱 link:sas-overview-supertask-concept.html["更換EF300和EF600 SAS擴充卡的需求"]。
 * 您必須為此程序排程停機維護時間。在成功完成此程序之前、您無法存取儲存陣列上的資料。
 
 

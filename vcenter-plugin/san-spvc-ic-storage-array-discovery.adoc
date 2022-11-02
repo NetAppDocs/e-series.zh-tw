@@ -49,10 +49,10 @@ summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址�
 
 . 單擊*下一步*繼續執行精靈中的下一步。
 +
-如果儲存陣列擁有有效的憑證、請前往 <<Step 3: Provide passwords>>。
+如果儲存陣列擁有有效的憑證、請前往  3: Provide passwords。
 
 +
-如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊就會出現。前往 <<Step 2: Resolve untrusted certificates during discovery>>。
+如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊就會出現。前往  2: Resolve untrusted certificates during discovery。
 
 +
 如果您要匯入CA簽署的憑證、請取消探索精靈、然後從左側面板按一下「*憑證管理*」。如需進一步指示、請參閱線上說明。

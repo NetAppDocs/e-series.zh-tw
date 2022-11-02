@@ -29,7 +29,6 @@
   <block id="05ed80d1233d90c62b52eb88f5b39c76" category="paragraph">此外掛程式需要部署在VMware環境中的VMware vCenter Server Appliance、以及安裝及執行外掛程式Web伺服器的應用程式主機。</block>
   <block id="48d764802fe6e980e3b6bd8569912134" category="paragraph">如需vCenter環境中通訊的詳細資訊、請參閱下圖。</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
-  <block id="103c35d06a9326cb406be18b9f01dd19" category="paragraph"><block ref="103c35d06a9326cb406be18b9f01dd19" category="inline-image-macro-rx" type="image"></block></block>
   <block id="282155126a94a0702cfd80daf38d4362" category="section-title">組態總覽</block>
   <block id="4c325e0efa9d7efb489577d6f330275e" category="inline-link-macro">安裝並註冊外掛程式</block>
   <block id="9670be495e136856463c7e5aa230b55e" category="list-text"><block ref="086335fac0a72f6b7709b869613c6621" category="inline-link-macro-rx"></block>。</block>
@@ -306,9 +305,6 @@
   <block id="c540e1c2b74d6cd0488d7a85392bcce7" category="doc">登入並瀏覽vCenter的儲存外掛程式</block>
   <block id="d757ce74b8b4beebd250f87703bb77a0" category="paragraph">您可以登入Storage Plugin for vCenter、以瀏覽使用者介面。</block>
   <block id="fafafcacc0c7e56c42ed033a5079fec5" category="list-text">在登入外掛程式之前、請確定您使用下列其中一種瀏覽器：</block>
-  <block id="08000d961df99d61f6c68808ab6f3e8e" category="list-text">Google Chrome 79或更新版本</block>
-  <block id="16aad70318d28e2da3f720e425920295" category="list-text">Mozilla Firefox 70或更新版本</block>
-  <block id="feaa9bcbbbd61235d4ed08a4258effc0" category="list-text">Microsoft Edge 79或更新版本</block>
   <block id="d0da619744a3e2a22622a4025e190ae4" category="list-text">以具有外掛程式讀取/寫入權限的使用者帳戶登入vSphere Client。</block>
   <block id="16cd9ea1e85d6517d1275bb4ed04bc2f" category="list-text">在vSphere Client首頁中、按一下* SANtricity 適用於VvCenter的*《儲存外掛程式》*。</block>
   <block id="baeffe396fb6653c4e7e1188dd53c114" category="paragraph">外掛程式會在vSphere Client視窗中開啟。外掛程式的主頁會開啟*「管理-全部*」。</block>
@@ -322,11 +318,8 @@
   <block id="b343a8501c81a39ccd85e7ffcb042c9a" category="paragraph">您可以安裝vCenter的儲存外掛程式、並驗證外掛程式登錄。</block>
   <block id="f648da22c98e52c918faa560efe4f898" category="section-title">檢閱安裝先決條件</block>
   <block id="3f2d2f00d799dde329a804cc37f26a7c" category="paragraph">請確定您的系統符合下列需求：</block>
-  <block id="ed19c109921c5c29f6da8270a6e0ebf7" category="list-text">VMware vCenter Server設備支援的版本：6.7U3J、7.0U1或7。0U2</block>
   <block id="2ce43ab0f5d314b47dd9cb618dcc2844" category="list-text">NetApp SANtricity 作業系統版本：11.60.2或更新版本</block>
-  <block id="10b1615e46aa25019530e64f669f8006" category="list-text">支援的應用程式主機版本：Windows 2016或Windows 2019</block>
   <block id="85826baa206c427868f3feaff8a9870b" category="list-text">主機系統的CPU需求：</block>
-  <block id="4e70f00d5663223429744a99f98d7a97" category="list-text">系統記憶體：1.5GB</block>
   <block id="567b36d352655c36a5a725d1ebf33c0f" category="list-text">儲存空間：275 MB + 200 MB（記錄）</block>
   <block id="dc7364d3899f846fdf1224ed73fd1f69" category="section-title">安裝外掛程式軟體</block>
   <block id="77ceebed4c1a4af4acd87fb741a6c682" category="paragraph">若要安裝外掛程式軟體：</block>
@@ -489,17 +482,9 @@
   <block id="794a654f60052714db9eba2a7ff4b608" category="list-text">啟動多重路徑服務。</block>
   <block id="c0cc8ee2a0c43361edcb15edea63163e" category="list-text">執行「uname -r」命令來儲存核心版本。</block>
   <block id="c337e113727158cfe4fdbba2c30e4ce8" category="paragraph">當您將磁碟區指派給主機時、將會使用此資訊。</block>
-  <block id="dbe6f9256adc4fa22b5959ef611567f7" category="list-text">執行下列其中一項、以在開機時啟用「multiPathd」精靈。</block>
-  <block id="ed4b3f73d806d44b50bf78b3c81db12f" category="cell">如果您正在使用</block>
-  <block id="5e2ad6fd9deb412d871137094ee43ef0" category="cell">執行此動作...</block>
-  <block id="4a0bed0f7e4accae9bb8dbdb781c2738" category="paragraph">RHEL 7.x與8.x系統：</block>
-  <block id="7d34f3326402c0ff0d7f264c515eba14" category="paragraph">「ystemctl enable multipathd」</block>
-  <block id="e83b87baf70b511c64fd07116caa707e" category="paragraph">SLES 12.x和15.x系統：</block>
   <block id="4cb5bccf1f31e6b4f08f0f5237bf3b77" category="list-text">在/boot目錄下重建「initramfs」映像或「initrd-」映像：</block>
-  <block id="e89611cf6fd57162d12b3332f0b5531d" category="paragraph">"Dracut --force --add multipath"</block>
   <block id="ee916e0d414bc638aa03071c909609ac" category="list-text">確保在引導配置文件中選擇了新創建的/boot/initrlas-*映像或/boot/initrd-*映像。</block>
   <block id="46bcd2758b72eff5e80f3a63941f1254" category="paragraph">例如、grub是指「/boot/grub / menu.lst」、而grub2則是「/boot/grub2/menu.cfg'」。</block>
-  <block id="1cf4d30b229d59f9ea9684345daf5e8e" category="list-text">使用線上說明中的「手動建立主機」程序、檢查是否已定義主機。如果您啟用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.10或更新版本）*、如果您停用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.9或更新版本）*。如有必要、請將選取的主機類型變更為適當的設定。</block>
   <block id="8418b94a2a307b3e96b6474bc55e08b7" category="list-text">重新啟動主機。</block>
   <block id="4602dcfd013b54bf15be5b77349548cb" category="summary">當Linux主機第一次發現新LUN時、新LUN沒有分割區或檔案系統。您必須先格式化LUN、才能使用。</block>
   <block id="a5a10a86827fd978b04c7cef4a2e4cb5" category="doc">建立分割區和檔案系統</block>
@@ -519,11 +504,7 @@
   <block id="97a3eb8ccb8953c4e693e0a18d5cab3d" category="summary">根據您的Linux版本設定導向裝置目標的I/O。</block>
   <block id="74edfb8093c3393073b74b0c56ede7e1" category="doc">存取適用於實體NVMe裝置目標的NVMe磁碟區</block>
   <block id="71a0145e77943169ac5f0e901f7138e7" category="paragraph">您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。</block>
-  <block id="50ffee4e99291a6caaf616f9e2f6769c" category="paragraph">對於RHEL 8和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。</block>
-  <block id="f966e3eae36b74bb8976b80aae84e622" category="paragraph">最佳實務做法是使用/dev/disk/by-id/中的連結、而非使用/dev/nvme0n1。例如：</block>
   <block id="cdd4271d15c07cc5753d0bf12b5c1239" category="section-title">實體NVMe裝置是I/O目標</block>
-  <block id="19f329bb748f07185cdd93291f39a9dd" category="paragraph">執行I/O至實體NVMe裝置路徑。每個命名空間只能使用下列格式的其中一個裝置：</block>
-  <block id="5aa28c6a9a394b8380b5c0ea6d5bf26c" category="paragraph">所有路徑都會使用此裝置下的原生多重路徑解決方案進行虛擬化。</block>
   <block id="4d2213a9c28aae69f853e1a9e1039c9a" category="paragraph">您可以執行下列命令來檢視您的路徑：</block>
   <block id="8637d6c1f3e0436f7f2ec935b829bd22" category="paragraph">輸出範例：</block>
   <block id="828525ca8b1efb36cde84d36d90d300d" category="paragraph">如果您在使用「NVMe list-SUBSYs」命令時指定命名空間裝置、它會提供有關該命名空間路徑的其他資訊：</block>
@@ -681,7 +662,6 @@
   <block id="917b830bef791dbce4285c83adef2377" category="list-text">指派的Volume會接收下一個可用的NSID。主機使用NSID存取磁碟區。</block>
   <block id="2b05781e34e2d192e693365f7f3be3e0" category="list-text">使用者提供的Volume名稱會出現在與主機相關聯的Volume清單中。</block>
   <block id="043f48efc67b05810da1b2104ee96280" category="summary">設定多重路徑軟體、以便在其中一個實體路徑中斷時、提供通往儲存陣列的備援路徑。</block>
-  <block id="a5974dd8ce70a548614c8d5d17a3d822" category="list-text">執行下列其中一項、以在開機時啟用多路徑精靈。</block>
   <block id="210e6499642ef4cb56b0a0b8f858e5a6" category="summary">如果您的組態使用SRP over Infiniband傳輸協定、請遵循本節中的步驟。</block>
   <block id="82e361f392a68c54a4e7d72ceec97843" category="doc">設定網路連線—透過Infiniband的SRSRP</block>
   <block id="6ad990bbfc5964e82429678d558d6312" category="paragraph">若要將Linux主機連線至儲存陣列、您必須使用適當的選項來啟用InfiniBand驅動程式堆疊。Linux套裝作業系統的特定設定可能有所不同。請檢查<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得解決方案的特定指示和其他建議設定。</block>
@@ -741,7 +721,6 @@
   <block id="7e470e1466f12fa596adb6f0ed2e3983" category="list-text">檢查/etc/iscsi/iscsid.conf檔案中的「node.session.nr_sessions`」變數、查看每個實體路徑的預設工作階段數。如有必要、請將預設的工作階段數變更為一個工作階段。</block>
   <block id="dac50a4bf77e8de98c9f0ecbf1efd96c" category="list-text">將/etc/iscsi/iscsid.conf檔案中的「node.session.timeo.replacement_timeout`」變數變更為「20」、預設值為「120」。</block>
   <block id="79148913b006ee398551d3b206312f29" category="list-text">確保已開啟「iscsid」和「（open-）iSCSI」服務並啟用開機。</block>
-  <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*</block>
   <block id="03255405207be9e847f2d898e05048a4" category="paragraph">* SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*</block>
   <block id="a41a1bbdcdc59cf69e7fb285339a9625" category="paragraph">您也可以在/etc/iscsi/iscsid.conf中設定「node.start = automatic」、然後再執行任何「iscsiadm'命令、讓工作階段在重新開機後持續存在。</block>
   <block id="22573cb1d3a24e811b00be3cdf11ed07" category="list-text">取得用於將主機設定為陣列的主機IQN啟動器名稱。</block>
@@ -758,10 +737,8 @@
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">列出在主機上建立的iSCSI工作階段。</block>
   <block id="5199a73d3ec25068a8e5789109022997" category="summary">在InfiniBand環境中設定NVMe啟動器、包括安裝及設定InfiniBand、NVMe-CLI和RDMA套件、設定啟動器IP位址、以及在主機上設定NVMe層。</block>
   <block id="9e54c935a03ff772bcf7612b86de79a1" category="doc">在主機端設定NVMe over InfiniBand</block>
-  <block id="2110905b63632314a973c76a08dfec96" category="paragraph">您必須執行最新相容的RHEL 7、RHEL 8、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="c35fc67c4b5efd31552d96e3eec5e293" category="list-text">安裝RDMA、NVMe-CLI和InfiniBand套件：</block>
   <block id="ddeec0610c6dfff21c284cac06924a6e" category="paragraph">* SLES 12或SLES 15*</block>
-  <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7或RHEL 8*</block>
   <block id="76769149b150e336b1382f8eef619a50" category="list-text">啟用「IPoIB」。編輯/etc/Rdma/Rdma.conf檔案、並修改載入「IPoIB」的項目：</block>
   <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">在IB連接埠上設定IPV4 IP位址。</block>
@@ -823,7 +800,6 @@
   <block id="be5555e7e670df8f8d0c725b9043fb16" category="summary">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
   <block id="f4959eb49cd0d468fb22d0fde13f93d1" category="doc">設定交換器</block>
   <block id="1016395fecd4787707233fc026c56bb5" category="paragraph">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
-  <block id="9d1e5b0282d87f9cba0ae31481cedb4e" category="admonition">*資料遺失風險。*您必須在交換器上啟用優先流程控制或全域暫停控制、以避免NVMe over RoCE環境中的資料遺失風險。</block>
   <block id="2947e68550fb96566fb0a799660394a2" category="list-text">啟用乙太網路暫停影格流程控制*端點對端點*作為最佳實務設定。</block>
   <block id="b672e0a91ab26c755c6523b52301f265" category="summary">請使用這份工作表單來記錄NVMe over Fibre Channel儲存組態資訊。</block>
   <block id="0adabebb059206d194f1093271694dfb" category="doc">記錄您的NVMe over FC組態</block>
@@ -892,14 +868,8 @@
   <block id="c662d30c7d8344ca5094b8d63dc5eef2" category="paragraph">您可以使用SMdevices工具來檢視主機上目前可見的磁碟區。此工具是NVMe CLI套件的一部分、可用來取代「NVMe清單」命令。</block>
   <block id="9ba0e91b9dc1e138e7c9c64d8795890a" category="paragraph">若要檢視E系列磁碟區的每個NVMe路徑相關資訊、請使用「NVMe NetApp SMdevices（NVMe NetApp SMdevices）」（英文）[-o &lt;format（格式）&gt;]）命令。輸出「&lt;format（格式）&gt;」可以是正常的（如果不使用-o則是預設值）、欄或json。</block>
   <block id="b3e50929a30cfc00afbc55d231a50cdc" category="summary">您可以在多重路徑裝置上建立分割區、選擇性地在命名空間上建立檔案系統、然後掛載分割區。</block>
-  <block id="805eb1d81197f7063faa2748049cf91c" category="doc">建立檔案系統</block>
-  <block id="f9dea2d3c7f8af6583db29734dbffbb5" category="paragraph">您可以在命名空間或原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="59c71eb9f304131ed908d87a5f9303f9" category="paragraph">對於RHEL 7和SLES 12、您可以在所需的dm裝置上建立檔案系統、然後掛載檔案系統。</block>
-  <block id="fe62cf3be519ba46aa9154f36e9ed31f" category="section-title">建立檔案系統（RHEL 8和SLES 15）</block>
   <block id="a50e35ff2f76c0ac349de732916c537b" category="paragraph">對於RHEL 8和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
-  <block id="2228cb557f787fa07a95687d51f4e507" category="list-text">執行multipath-ll命令以取得/dev/NVMe裝置清單。</block>
-  <block id="3a13fe203d816730a5f1357720191e8a" category="paragraph">此命令的結果顯示設備nvme0n6。</block>
-  <block id="5cc7c9b3b68ed8ae2859d858791a2dc5" category="list-text">在每個/dev/nvme0n#裝置的分割區上建立檔案系統。</block>
   <block id="446e80fe7b2b546a067aa727557f83e0" category="paragraph">建立檔案系統的方法會因所選的檔案系統而異。此範例顯示如何建立ext4檔案系統。</block>
   <block id="3710c6fd95e8087b7e4f2fd5c68bd9b1" category="summary">SMdevices工具是NVMe CLI套件的一部分、可讓您檢視主機上目前可見的磁碟區。此工具是NVMe清單命令的替代工具。</block>
   <block id="16ca841d20a206f2a2f351c206d2f01f" category="paragraph">若要檢視E系列磁碟區的每個NVMe路徑相關資訊、請使用「NVMe NetApp SMdevices（NVMe NetApp SMdevices）」（英文）[-o &lt;format（格式）&gt;]）命令。輸出可以是正常的（如果不使用-o則為預設）、欄或json。</block>
@@ -917,12 +887,10 @@
   <block id="e8d56faf4efb3b55e17e9cf705e146de" category="paragraph">主機作業系統類型</block>
   <block id="c612d2b91ede7407a062457604df3133" category="summary">RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套件、設定啟動器IP位址、以及在主機上設定NVMe層。</block>
   <block id="7962181454b192f5714ecc94bc40c37a" category="doc">在主機端設定NVMe over RoCE</block>
-  <block id="300600c41942943b67305db8cc1cf264" category="paragraph">您必須執行RHEL 7、RHEL 8、以及最新相容的SUSE Linux Enterprise Server 12和15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="5efb38dd01fabddcbff948ba98eb16ed" category="list-text">安裝RDMA和NVMe-CLI套件：</block>
   <block id="f402a19f86f854f295aa371b9abbbb90" category="list-text">在乙太網路連接埠上設定用於透過RoCE連接NVMe的IPV4 IP位址。針對每個網路介面、建立包含該介面的不同變數的組態指令碼。</block>
   <block id="a4e34f0c64fbeb3078a510eb36f68d56" category="paragraph">此步驟所使用的變數取決於伺服器硬體和網路環境。這些變數包括「IPADDR」和「閘道」。以下是SLES和RHEL的範例指示：</block>
   <block id="111d867a53d45d2348ae37042fdb7310" category="paragraph">* SLES 12與SLES 15*</block>
-  <block id="931ff3112ed27bc061711c73637ae331" category="paragraph">* RHEL 7與RHEL 8*</block>
   <block id="28a17096963f5398d9b941a85c3ea321" category="list-text">啟用網路介面：</block>
   <block id="5dd9d62ce4e8e03736012f8834a6e4fd" category="summary">您可以根據Linux版本設定導向裝置目標的I/O。DM-MP會管理這些虛擬目標的基礎實體路徑。</block>
   <block id="23a1a118541ab0d1766faa1805b06432" category="paragraph">您可以透過「dm」裝置或「dev/mapper」中的「mlink」來存取這些區塊裝置、例如：</block>
@@ -934,7 +902,6 @@
   <block id="9e780c0c06dd0edf0f09bcc9516acc1c" category="list-text">對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝</block>
   <block id="2176d0eb1d2a0a5ab5201af565e0b30b" category="list-text">對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝</block>
   <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 為了確保已安裝任何必要的更新、因為多重路徑可能無法與GA版的SLES或RHEL正常運作。</block>
-  <block id="430e338b43df2565d67585931c63d36e" category="paragraph">RHEL 7和SLES 12使用Device對應器多重路徑（DMP）來進行NVMe over RoCE的多重路徑。RHEL 8和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="7cab16eb74754bbe232b8775c104e66a" category="section-title">啟用適用於RHEL 7或SLES 12的Device Mapper多重路徑（DMP）</block>
   <block id="2c2e807f6a8822a2d088dfdcc394203e" category="paragraph">根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。</block>
   <block id="adfe61fc58186ce1f905fe93a482817f" category="list-text">將NVMe E系列裝置項目新增至「/etc/multipath.conf」檔案的「裝置」區段、如下列範例所示：</block>
@@ -949,16 +916,12 @@
   <block id="070373c9b8bfb5900abe9ee69cfae4e4" category="list-text">驗證在主機開機備份後、原生NVMe多路徑功能已啟用。</block>
   <block id="c694b074c8a7887bcd4ebbfc99adf268" category="list-text">如果命令輸出為「N」、則原生NVMe多路徑仍會停用。</block>
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。</block>
-  <block id="c6d2cbe524754a93e33c6a6214065d08" category="admonition">對於SLES 15、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
   <block id="fe4b136586896fd70617258689052356" category="summary">SRP over InfiniBand Express設定</block>
   <block id="147c2a561fc8233057480b38f1176725" category="doc">存取適用於實體NVMe裝置目標的NVMe磁碟區</block>
   <block id="d307d6c12e3fd81b58d2d458107c75d8" category="admonition">若要檢視路徑資訊、必須在/etc/multipath.conf中設定下列項目：</block>
   <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">使用FC時、請安裝Linux Unified Host Utilities。</block>
   <block id="c96c96aa9e9942faabac2551c9847a4a" category="doc">透過InfiniBand Express設定</block>
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">對於SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
-  <block id="a1c89b566c2d2e717b8523f745beaac1" category="list-text">執行「multiPath-ll」命令、取得「/dev/NVMe」裝置清單。</block>
-  <block id="2867a29d02bf9d154a02e9752cb000b6" category="paragraph">此命令的結果顯示設備"nvme0n6"。</block>
-  <block id="041c133d93a6779fe18d59b5eaba8a63" category="list-text">在每個「/dev/nvmest0n#」裝置的分割區上建立檔案系統。</block>
   <block id="afdd2ec17dd3d3ada5dd7c591efb8373" category="doc">驗證Linux支援並審查限制</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">首先、您應該確認Linux組態是否受到支援、並檢閱控制器、主機和還原限制。</block>
   <block id="866ff13f8fd6c13e35bc42557fe3a185" category="paragraph">「精簡搜尋條件」區段隨即顯示。在本節中、您可以選擇適用的傳輸協定、以及其他組態條件、例如作業系統、NetApp作業系統和主機多重路徑驅動程式。</block>
@@ -994,7 +957,6 @@
   <block id="d3ee509b6b54fd93ab3fc5007dc6efd8" category="cell">主機資訊</block>
   <block id="4a9172948edbe8ef90adc511dba40d20" category="cell">名稱與類型</block>
   <block id="532217e36a41f25d96ffca7947284f5c" category="paragraph">如果您是iSCSI使用者、請在設定iSCSI時關閉設定精靈。</block>
-  <block id="4d8c7109afb8533630e6b060d83f938e" category="paragraph">RHEL 7和SLES 12在使用NVMe over Fibre Channel時、會使用Device對應器多重路徑（DMP）來執行多重路徑。RHEL 8和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="95be6b7c132218bd8782b6a7b0b982ed" category="list-text">將NVMe E系列裝置項目新增至/etc/multipath.conf檔案的「裝置」區段、如下列範例所示：</block>
   <block id="1b92b0dfb7ed1148646290f749b1cc46" category="paragraph">原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列步驟啟用。</block>
   <block id="b59587c81820de51280ab04cd5288b02" category="list-text">設定「modProbe」規則以開啟原生NVMe多路徑。</block>
@@ -1095,7 +1057,6 @@
   <block id="dcb07d8ae16ab2bd4fcf3f16bb1e166b" category="summary">Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。</block>
   <block id="eee710143ae29bf272d75ad40d2ede5a" category="doc">在主機端設定NVMe over Fibre Channel</block>
   <block id="a273add3419b2d63bd738c3a4f1e5e3a" category="paragraph">Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。</block>
-  <block id="2235896888d61445f6eb8d993bea8ac5" category="paragraph">下列程序適用於使用Broadcom Emulex或支援QLogic NVMe/FC的FC HBA的RHEL 7、RHEL 8、SLES 12和SLES 15。如需這些作業系統或HBA支援哪些版本的詳細資訊、請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="6ba6a18088999d632ca174b9873a3b12" category="list-text">安裝「NVMe-CLI（NVMe - CLI）套件：</block>
   <block id="969b64ee6a8c67d01b4cd1635a747bd2" category="inline-link">Broadcom網站</block>
   <block id="d55f94d596bbb6493b1bdec1808b9783" category="list-text">僅適用於RHEL 7、請透過下載並安裝適用於NVMe / FC連線的外部Broadcom AutoConnect指令碼<block ref="54ac045dab92bf3efc1a15209419902d" category="inline-link-rx"></block>。輸入關鍵字* AutoConnect指令碼檔案以供採用FC驅動程式*的收件匣NVMe使用、並選擇您作業系統專屬的最新版本。</block>
@@ -1119,15 +1080,9 @@
   <block id="53ff0f9470cfba9144606f2d37d0e938" category="paragraph">子網路管理程式必須在交換器或主機上的環境中執行。如果您執行的是主機端、請使用下列程序進行設定。</block>
   <block id="142539265ad8550d4918fa9ba04c0977" category="list-text">在任何執行子網路管理程式的主機上安裝「opensm」套件。</block>
   <block id="c41e730f9f37056cb416306d96b426fa" category="list-text">使用「ibstat -p」命令尋找HCA連接埠的「GUID0」和「GUID1」。例如：</block>
-  <block id="34f8b244e11b4390ee3338ff117ddca0" category="list-text">在主機上連線HCA的每個連接埠上啟用子網路管理員：</block>
-  <block id="10612c07d02337ca01a3c46fc28548f1" category="paragraph">* SLES範例*</block>
-  <block id="620f6614376195c8a778efb9d63452db" category="list-text">將下列兩行新增至/etc/rc.d/rc.after。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：</block>
   <block id="01310ef017ef25d822f741c21c117a36" category="paragraph">使用值替代的命令範例：</block>
-  <block id="9f02febaba0653c0eaad0ff1bbaad908" category="paragraph">* RHEL範例*</block>
-  <block id="ab3920ef337c66be846f600286085d4d" category="list-text">將下列兩行新增至/etc/rc.d/rc.local。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：</block>
   <block id="b0f1d70653db761a75c6f50a1fb48a15" category="doc">設定容錯移轉</block>
   <block id="7149b8af09961dfba911fe06ae6a3540" category="admonition">請參閱 <block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 為了確保安裝任何必要的更新、因為多重路徑可能無法與GA版本的SLES或RHEL正常運作。</block>
-  <block id="86fa68effebcb36d3c558702403af269" category="paragraph">RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="47496a5d6d97e4ed1f8066d8f8baf9df" category="section-title">使用原生NVMe多路徑設定RHEL 8</block>
   <block id="de03e018f8bc6e06a0b11a6a211dd67e" category="list-text">使用新的"modProp"參數重新建立"initramfs"。</block>
   <block id="518df87a5011ff1168a7c6c9a264b38f" category="list-text">重新開機伺服器以啟用原生NVMe多路徑來啟動伺服器。</block>
@@ -1155,7 +1110,6 @@
   <block id="2e71e539473524a77fed5be033e08099" category="list-text">使用「ibstat -p」命令尋找HBA連接埠的「GUID0」和「GUID1」。例如：</block>
   <block id="b8428f61ce61bd64b7ac15710b5f5150" category="list-text">執行diff命令、將複製的檔案與原始檔案進行比較。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">確定主機連接埠的GUI。</block>
-  <block id="68af6e141859c31c2fea1d91a1bde08e" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。</block>
   <block id="5e8bb43a311db3e4eae61b5de50a3e70" category="list-text">使用作業系統的套件管理命令來安裝InfiniBand診斷套件。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">執行「ibstat」命令以顯示連接埠資訊。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP工作表</block>
@@ -1165,7 +1119,6 @@
   <block id="20c0f0097f3320f5306bdf21ab85b003" category="summary">設定Fibre Channel交換器、讓主機連線至儲存陣列、並限制路徑數量。</block>
   <block id="9e4a27b8968a6b111c638303a2edd4c4" category="paragraph">每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。</block>
   <block id="58d9983406bc12350a998273a03fa2cd" category="summary">您可以根據您的SLES（SUSE Linux版本）版本來設定導向至裝置目標的I/O。</block>
-  <block id="e5f2e97d358bd40bf390321fbe3531af" category="paragraph">如果您在使用「NVMe list-SUBsys」命令時指定命名空間裝置、則會提供有關該命名空間路徑的其他資訊：</block>
   <block id="fa74964c5c74c111309afef2dec3ccb9" category="paragraph">首先、您應該確認Linux組態是否受到支援、並檢閱控制器、交換器、主機和還原限制。</block>
   <block id="c6179d2fb67eca2c2f51c1dd8a357e71" category="section-title">驗證NVMe over RoCE限制</block>
   <block id="f384907c3dd58bb2d8f3b9ac157c0414" category="section-title">交換器限制</block>
@@ -1397,8 +1350,6 @@
   <block id="29a68d61d60066cd588a1db699936685" category="paragraph">檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。</block>
   <block id="a23dd0aafd5877a2e518f1317e8acbfb" category="paragraph">儲存陣列中的主機介面卡升級程序已經完成。您可以恢復正常作業。</block>
   <block id="4a3c8c03cdcb016f4690174be36a72be" category="summary">在更換EF300 SAS擴充卡之前、請先檢閱相關要求和考量事項。</block>
-  <block id="99cee295e97c436f94052b1fa0681a05" category="doc">EF300 SAS擴充卡更換需求</block>
-  <block id="30a31e634edf619d4889ff2de64f6fbf" category="paragraph">如果您打算將SAS擴充卡新增至EF300、請檢閱下列需求。</block>
   <block id="c5e4de94858244e1042696464bdaa282" category="inline-link-macro">安裝並設定EF300和EF600儲存系統</block>
   <block id="3d52e0419c7f8a010e6fc5f98c25da0f" category="list-text">您必須遵循 <block ref="333b8feab226020b2ee6e03f5e462ace" category="inline-link-macro-rx"></block> 以設定控制器。</block>
   <block id="44358da7cef962731faab21103a86c3e" category="inline-link-macro">升級SANtricity 作業系統</block>
@@ -1652,10 +1603,7 @@
   <block id="8efc2bb6da7e629c408a29a1c453f118" category="summary">您可以將主機的傳輸協定轉換成不同的傳輸協定、以便相容、並將主機連線的傳輸協定轉換成不同的傳輸協定、以符合基礎架構需求。</block>
   <block id="48e2b045fa39b95719036a981e221f27" category="doc">主機連接埠傳輸協定轉換</block>
   <block id="8af1af6830937a72d5cd88e0d6c25265" category="summary">將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。</block>
-  <block id="72665326c71824fb027639c3a39ce42f" category="doc">將SAS擴充卡新增至EF300</block>
-  <block id="6966571f58170f7a2e6240467ccea895" category="paragraph">您可以將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。</block>
   <block id="76b6d67ba2d43b0e0d5354712cf5475c" category="paragraph">新增SAS擴充卡時、您必須關閉儲存陣列電源、安裝新的SAS擴充卡、然後重新接上電源。</block>
-  <block id="246a0c933a57b2f744690422b191ba93" category="list-text">檢閱 <block ref="eab64bf907e0db066a6f4d223bd36851" category="inline-link-macro-rx"></block>。</block>
   <block id="67bd69d1c6f17ed45863d20c2ffa895c" category="list-text">與控制器相容的SAS擴充卡。</block>
   <block id="5a9ac7fcdfe78893d8ddc29edd5ea74a" category="paragraph">將控制器機櫃離線放置、以便安全地新增SAS擴充卡。</block>
   <block id="058f06400fb3e1f0bea8c8d18a4c12fe" category="paragraph">移除控制器容器、以便新增SAS擴充卡。</block>
@@ -2227,30 +2175,20 @@
   <block id="075df837bf753b5aee2b8bcb4b81e05c" category="cell">說明在以NetApp E系列系統為後盾的BeeGFS架構中實作高可用度所需的組態、以及使用SUSE Linux Enterprise Server進行BeeGFS儲存、中繼資料和管理服務。</block>
   <block id="b5f6d401afe8de86cc5d4d7d2aacbf13" category="summary">如果您要升級E2800和E5700控制器、而且已啟用「磁碟機安全性」功能、則必須手動解除鎖定磁碟機。</block>
   <block id="7181e0661bd87ad481c6f13fa05c1d54" category="doc">解除磁碟機鎖定</block>
-  <block id="9c9f0ddf9eadbeacbc009c0c28e2677d" category="paragraph">如果您要升級E2800和E5700控制器、這些控制器的磁碟機安全功能會導致部分、外部或內部的磁碟機鎖定。如果已啟用「磁碟機安全性」功能、您必須手動解除鎖定這些磁碟機。</block>
   <block id="1f70f07f8e4ec5ab7238fd5af593be19" category="paragraph">請遵循下列適當程序：</block>
   <block id="bac17238f1685a2fb47f34768a9cb871" category="list-text"><block ref="6b6e70d2a3cc0100509ee51e7050731c" category="inline-xref-macro-rx"></block></block>
   <block id="8c4bd0c1a96bcaf797782a18b54daf7a" category="list-text"><block ref="8640eb68a955f6f5591f0dd1a3bd30e7" category="inline-xref-macro-rx"></block></block>
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">內部金鑰管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">當所有磁碟機都鎖定時、請遵循下列步驟進行內部金鑰管理。</block>
-  <block id="ad8d2c986eff2547831bfe87f724aced" category="paragraph">新換用的控制器會鎖定七段顯示代碼L5。當儲存陣列中的磁碟機無法執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。</block>
   <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">如果您不使用管理連接埠1、請嘗試使用其他預設IP位址：+ Ctrl a連接埠1：192．168．128．101 + Ctrl a連接埠2：192．168．128．102 + Ctrl B連接埠1：192．192．168．129．101 + Ctrl B連接埠2：192．168．129．102</block>
-  <block id="00c4bfa4b085fb71f178560371d3c082" category="list-text">將SANtricity 該客戶端安裝到筆記型電腦或PC上、以便在步驟2中直接連接至陣列控制器。</block>
-  <block id="b51273d65ac8122425fb296e1de63fd5" category="list-text">直接透過RJ45乙太網路纜線、將筆記型電腦或PC連接至控制器A管理連接埠1。此步驟也可能需要將筆記型電腦的IP位址設定為相同的子網路。</block>
   <block id="a5d4d11eb9b0d2db382d91e1ab585594" category="inline-link-macro">準備升級控制器</block>
-  <block id="667d5cb3d48e19f0bf9fde11f330d110" category="list-text">使用IP位址192.168.1.128.101搭配使用者名稱* admin*和密碼空白、使用「匯入storageArray SECURITY Key file」CLI命令匯入內部金鑰、並從儲存安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
   <block id="451adf9dc612afcfa43e2c0797313ea1" category="paragraph">*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory &amp; Filene\" phraser=\"passPhraserString\""；」</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部金鑰管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">當所有磁碟機都鎖定時、請遵循下列外部金鑰管理步驟。</block>
-  <block id="9fab40c340a50dc566e1060dd32e768d" category="admonition">您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立並簽署新的CSR、並從EKMS下載伺服器憑證。</block>
-  <block id="2476683a1fa558c58a96b1e243b9bd93" category="list-text">直接透過RJ45乙太網路纜線、將筆記型電腦或PC連接至控制器A管理連接埠1。您可能還需要將筆記型電腦的IP位址設定為相同的子網路。</block>
-  <block id="d426dcac554b17b0ffa58b2c2059698d" category="list-text">使用預設IP位址：192．168．128．101、使用者名稱* admin *和密碼空白、使用「set storageArray externalKeyManagement」CLI命令設定外部金鑰管理伺服器、並提供儲存自的「伺服器位址」和「伺服器連接埠」 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
   <block id="203b2e157336601775297d64e8b01713" category="paragraph">*範例：*「Mcli 192.168.1.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=&lt;ServerIPAddress&gt; serverPort=&lt;serverPort&gt;;」</block>
-  <block id="23a9bcc70faf273e9531cc467fce40b9" category="list-text">使用預設IP位址192.168.1.128.101、使用者名稱* admin*和密碼保留空白、然後使用「儲存陣列keyManagementCertificate」CLI命令下載憑證：一次用於用戶端憑證、第二次用於伺服器憑證。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
   <block id="ff8ee4661fbac57cdf8a71747f69e4ed" category="paragraph">*範例A：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType =用戶端檔案=「Directory &amp; FileName」；」</block>
   <block id="0558f36aa79582296ec1f39019ce4f53" category="paragraph">*範例B：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType = server file=\「Directory &amp; FileName」（下載storageArray keyManagement憑證類型=伺服器檔案=）；」</block>
-  <block id="b4dc6e5f08ce4751ab0c78b1ca428e80" category="list-text">使用儲存自的安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
   <block id="9b8f75142fa8f63d3a07466821af806f" category="summary">透過更換控制器來升級E系列陣列的總覽。</block>
   <block id="24463e7617d2f5ce7ba25cd74fcbc4b7" category="doc">升級控制器總覽</block>
   <block id="8f718558a81e73e281f038eaf59dd3c1" category="paragraph">您可以透過更換現有控制器來升級儲存陣列。</block>
@@ -2517,18 +2455,12 @@
   <block id="743789e5f09a2f94b255326448f6f396" category="paragraph">儲存磁碟機安全金鑰（如果使用）、記錄序號、收集支援資料、停用某些功能（如果使用）、以及使控制器離線、以準備升級控制器。</block>
   <block id="746459dc6fbce120e006b20e2af77fc6" category="list-text">請確定現有的儲存陣列已更新至目前控制器可用的最新版本作業系統（控制器韌體）。從「支援系統管理程式」、前往功能表：「支援」（Upgrade Center）以檢視您的軟體和韌體庫存。SANtricity</block>
   <block id="057749e934272e52f7531107c174dd36" category="admonition">如果您要升級至支援SANtricity SRAOS 8.50版的控制器、則必須SANtricity 在安裝新控制器並開啟電源後、安裝最新版的作業系統和最新的NVSRAM.如果您不執行此升級、可能無法將儲存陣列設定為自動負載平衡（ALb）。</block>
-  <block id="aac551b33e7212c83248dd33ba9dfdd9" category="list-text">如果您正在執行完整的控制器更換、同時也在使用磁碟機安全功能、請依照下表中的安全類型（內部或外部）和磁碟機狀態、完成適當的步驟。</block>
-  <block id="c25c41a16df0261f3b03820882c9e0e3" category="admonition">磁碟機安全性是一項儲存陣列功能、可透過全磁碟加密（FDE）磁碟機或聯邦資訊處理標準（FIPS）磁碟機提供額外的安全層級。當這些磁碟機搭配磁碟機安全功能使用時、它們需要安全金鑰才能存取其資料。</block>
   <block id="e9c3e91cd342c6baba0bb5fbb8b4cc83" category="cell">安全性類型與內容</block>
   <block id="684480da0a61b5fd6cf2e46b520c3351" category="paragraph">內部金鑰管理、一個或多個磁碟機已鎖定</block>
-  <block id="a0d507d0d6214f4a31d8dfd392bfa45f" category="list-text">將內部安全金鑰檔案匯出至管理用戶端上的已知位置（使用瀏覽器存取System Manager的系統）。使用「匯出storageArray securityKey」CLI命令。您必須提供與安全金鑰相關的密碼、並指定要儲存命令的位置。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
-  <block id="1422050f23c3d0abcdb3bd0b14c8fe43" category="list-text">瞭解與內部安全金鑰相關的密碼。</block>
   <block id="c2c5a5e2eaae3a66cafeafd63fdafafb" category="paragraph">外部金鑰管理（所有磁碟機都已鎖定）、您可以暫時轉換至內部金鑰管理、以更換控制器（建議）。</block>
   <block id="183868d76b85de765e8fb5cdff8b83e9" category="paragraph">請依序執行下列步驟：</block>
   <block id="cc0b85a30952319de472a358dbfa49b7" category="list-text">記錄外部KMS伺服器位址和連接埠號碼。從系統管理員移至功能表：設定[系統&gt;安全金鑰管理&gt;檢視/編輯金鑰管理伺服器設定]。</block>
-  <block id="80d5780ccb673e7edd1e8626c87f2e22" category="list-text">請確定本機主機上有可用的用戶端和伺服器憑證、以便在控制器更換完成後、儲存陣列和金鑰管理伺服器能夠相互驗證。使用「儲存陣列keyManagementCertificate」（儲存陣列金鑰管理憑證）CLI命令來儲存憑證。請務必執行兩次命令、一次將「certicateType」參數設為「client」、另一次則將參數設為「伺服器」。如需使用此命令的相關資訊、請參閱_Command Line Reference。</block>
   <block id="ea62a72ef7a4fd0d6569107b016ea8b9" category="list-text">執行「停用storageArray externalKeyManagement」CLI命令、轉換至內部金鑰管理。</block>
-  <block id="59cae0969356d095163e6b4ab9985152" category="paragraph">外部金鑰管理（所有磁碟機均已鎖定）、您無法暫時轉換至內部金鑰管理、以更換控制器。</block>
   <block id="6dac5529ca8369b34ee04d8dc13baa0d" category="paragraph">外部金鑰管理、部分磁碟機已鎖定</block>
   <block id="adc86bc2b1821c7fd63f8f3234bebd08" category="paragraph">無需執行其他步驟。</block>
   <block id="e0a6db37b541fcba6242bac86b3c14cb" category="list-text">記錄儲存陣列的序號：</block>
@@ -3467,7 +3399,6 @@
   <block id="46856129ff7b8487da67b53791b91914" category="list-text">必須具有有效狀態（最佳）。</block>
   <block id="5fb948998adfdac8e0f9af0fce4187c5" category="list-text">無法建立下列任何關係：磁碟區複本、快照複本、非同步或同步鏡射。</block>
   <block id="5513710fb545a93c8c1b7cb7e2c3ffd8" category="list-text">無法進行任何重新設定作業：動態Volume擴充、動態容量擴充、動態區段大小、動態RAID移轉、動態容量減量、 或重組。</block>
-  <block id="112376f710d60f9bdb057b1f2719cd42" category="list-text">無法在匯入開始之前將其對應至主機（不過、匯入完成後即可將其對應）。</block>
   <block id="dc975b3034f82fb41f27bc8c632d1c90" category="list-text">無法啟用Flash讀取快取（FRC）。</block>
   <block id="c905dd1bfaa4af0602293a252e3f90aa" category="paragraph">System Manager會在匯入遠端儲存精靈中自動檢查這些需求。只有符合所有需求的磁碟區才會顯示以供選擇目的地磁碟區。</block>
   <block id="e3e16bb73c0250a6a229fb457b4f957e" category="section-title">限制</block>
@@ -4763,8 +4694,6 @@
   <block id="1458d41ed1532a66aec83e0f005887a5" category="paragraph">佈線資訊適用於下列硬體機型。</block>
   <block id="bd5c641408f65aa18580861a6ce2400c" category="cell">*控制器機櫃*</block>
   <block id="0980e5858005022a7297657f3c4b364f" category="cell">*磁碟機櫃*</block>
-  <block id="ae149e14affd7d147aaaac4e778a78b9" category="paragraph">EF600</block>
-  <block id="1727ed989c7f4287136d81d78aeb960e" category="paragraph">不適用。</block>
   <block id="d50ce06b100342390b04b3af9e03c19c" category="paragraph">E5724、EF570、E2812、E2824、EF280</block>
   <block id="e2601a92435cce9fb17f276fae4332e9" category="paragraph">DE212C、DE224C</block>
   <block id="1c9e2fe8efd22ec76e7d02eb34d33b99" category="paragraph">E2860、E5760</block>
@@ -4907,9 +4836,6 @@
   <block id="aafac493f2e35b6f1c326279401ced51" category="paragraph">您可以將控制器機櫃纜線連接至一個或多個60個磁碟機機機櫃。</block>
   <block id="9829150d11210fb5e6fc62e793db934e" category="section-title">控制器機櫃和60個磁碟機機機櫃</block>
   <block id="b0c29970a72a5299c667300a0e5395b3" category="image-alt">60個纜線</block>
-  <block id="c09b2479232208dadee51c21afff6c13" category="section-title">EF300纜線</block>
-  <block id="af68192c22e06c7d813d28700111551b" category="paragraph">以下資訊適用於將EF300控制器機櫃纜線連接至DE212C、DE224C或DE460磁碟機機櫃。</block>
-  <block id="b61a95e1240c6e12ebdce3c2918a7b76" category="paragraph">在連接EF300纜線之前、請確定韌體已更新至最新版本。若要更新韌體、請依照中的指示進行 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
   <block id="611e6715a131d9ea8207c202e4454e5c" category="image-alt">EF移除224c四個磁碟櫃</block>
   <block id="8a208046a6b803359c25cc4e6428c75c" category="image-alt">EF至DE460c</block>
   <block id="24a41762ea380b3a02f5c695d2bce024" category="summary">將每個元件的電源供應器連接至獨立的電源電路。</block>
@@ -8520,7 +8446,6 @@
   <block id="1e378a7b5fff684817c3105f1e0e9acb" category="paragraph">安全功能</block>
   <block id="435543dd5b111649d2821616c83647ce" category="paragraph">指出此候選資源池是否完全由具備安全功能的磁碟機組成、磁碟機可以是全磁碟加密（FDE）磁碟機、也可以是聯邦資訊處理標準（FIPS）磁碟機。</block>
   <block id="bfd689c2919bef8ea3bbcf8d503c6d34" category="list-text">您可以使用磁碟機安全性來保護集區、但所有磁碟機都必須具備安全功能、才能使用此功能。</block>
-  <block id="6da70de51f5f1cd26dacf80567a4d967" category="list-text">如果您要建立僅FDE集區、請在「安全功能」欄中尋找*是- FDE*。如果您想要建立僅限FIPS的資源池、請在「Secure Capable（安全功能）」欄中尋找* Yes - FIPS-*。</block>
   <block id="0216a158e72795d96c1d073fcfd6671d" category="list-text">您可以建立由磁碟機所組成的集區、這些磁碟機可能具有安全功能、也可能不具有安全功能、或是混合了安全性層級。如果集區中的磁碟機包含不安全的磁碟機、您就無法確保集區安全無虞。</block>
   <block id="b75e12d3bf891eeff4e4a2f5289ab643" category="paragraph">啟用安全性？</block>
   <block id="85729c6c15dbbffe9072f1b86eac0746" category="paragraph">提供選項、讓磁碟機安全功能可與安全的磁碟機搭配使用。如果集區具備安全功能、而且您已建立安全金鑰、則可選取核取方塊來啟用安全性。</block>
@@ -8598,7 +8523,6 @@
   <block id="ed1a06a3349f801df7f8dc60fd207c5e" category="list-text">您可以使用「磁碟機安全性」功能來保護集區或磁碟區群組、但所有磁碟機都必須具備安全功能才能使用此功能。</block>
   <block id="0455355db1ae7ae64795d29e86c7508c" category="list-text">您可以建立集區或磁碟區群組、混合使用安全功能和不安全功能的磁碟機、但無法啟用「磁碟機安全性」功能。</block>
   <block id="ce763bd4f7575899bdc4bf65103b7654" category="list-text">具有所有安全功能磁碟機的集區或Volume群組、即使未使用加密功能、也無法接受不安全的磁碟機來進行備援或擴充。</block>
-  <block id="ee73b90368c68fce233818cc3748850e" category="list-text">安全的磁碟機可以是全磁碟加密（FDE）磁碟機、也可以是聯邦資訊處理標準（FIPS）磁碟機</block>
   <block id="2437e7b5729be1d1d1d2028feb8574dc" category="paragraph">指出磁碟機是否具備資料保證（DA）功能。</block>
   <block id="aaeb09a40f9775414c6761b3be7f7b1e" category="list-text">不建議使用不具備資料保證（DA）功能的磁碟機、將容量新增至具有DA功能的資源池或磁碟區群組。集區或磁碟區群組不再具有DA功能、而且您不再可以在集區或磁碟區群組中新建立的磁碟區上啟用DA。</block>
   <block id="234bef12bb34b9dbf16feca527a40e45" category="list-text">不建議使用資料保證（DA）功能的磁碟機、將容量新增至不支援DA的資源池或磁碟區群組、因為該資源池或磁碟區群組無法利用具有DA功能的磁碟機（磁碟機屬性不相符）的功能。在此情況下、請考慮使用不具備DA功能的磁碟機。</block>
@@ -8746,7 +8670,6 @@
   <block id="9f815abac29ec844ad55f4d8a311f365" category="paragraph">若要手動選取磁碟機、請按一下*手動選取磁碟機（進階）*連結。按一下時、它會變更為*自動選取磁碟機（進階）*。</block>
   <block id="eb142ad108a2399e9f5b1b76e4ffb2d9" category="paragraph">「手動」方法可讓您選取組成磁碟區群組的特定磁碟機。您可以選取特定的未指派磁碟機、以取得所需的容量。如果儲存陣列包含具有不同媒體類型或不同介面類型的磁碟機、您只能選擇單一磁碟機類型的未設定容量、以建立新的Volume群組。</block>
   <block id="a0e1301bf3f6ad63d069da8822502821" category="list-text">根據顯示的磁碟機特性、選取您要在磁碟區群組中使用的磁碟機、然後按一下*「Create」（建立）*。</block>
-  <block id="4ad6b740c7f78364ebdee3b255705adc" category="paragraph">顯示的磁碟機特性取決於您選擇的是自動方法或手動方法。</block>
   <block id="2afe183b896704c07136eb695f3307db" category="inline-link">System Manager說明</block>
   <block id="5b7e22fbd3a5668e77861533204c5375" category="list-text"><block ref="5b7e22fbd3a5668e77861533204c5375" category="inline-link-rx"></block></block>
   <block id="cf8a999b482df507a3f20c75b83f1ecf" category="inline-link">Unified Manager說明</block>
@@ -8805,7 +8728,108 @@
   <block id="273dcb16af41ba30a29aa8335c08a790" category="inline-link">*《TR-49330：EF600 with Splunk Enterprise*》</block>
   <block id="d037693956f399ee3ef1299cb9175342" category="cell"><block ref="d037693956f399ee3ef1299cb9175342" category="inline-link-rx"></block></block>
   <block id="709b2345a804dd3959ae288cc98408cf" category="cell">說明EF600 All Flash Array與Splunk設計的整合式架構。本文也摘要說明從Splunk機器記錄事件模擬工具取得的效能測試結果。</block>
-  <block id="61f60d8a815e8676572295c4ba06ca47" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.07.02的版本上受支援。在安裝或升級至IOM12B之前、請先確認您的控制器韌體已更新。</block>
   <block id="b8de54c02bf690e0071da3924487271e" category="admonition">只有E5700控制器上的光纖基礎連接埠可以轉換。</block>
   <block id="59f90aba4c7b3944a7e31f23bff5d8a2" category="admonition">只有E2800控制器上的16GB FC/10Gb iSCSI HIC和光纖基礎連接埠可以轉換。</block>
+  <block id="f212760efdd1ee6ecc6a822f380627cd" category="paragraph">EF300、EF600</block>
+  <block id="a49b136089a95385ac24b13d585982b3" category="paragraph">DE212C、DE224C、DE460</block>
+  <block id="c5d218090776dbcf38627065b13e6caa" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.07.2的版本上受支援。在安裝或升級至IOM12B之前、請先確認您的控制器韌體已更新。</block>
+  <block id="add241dc5ececee27088b6736250072e" category="section-title">EF300和EF600的纜線連接</block>
+  <block id="aa7f7f642f0f31272aec24455af2999f" category="paragraph">以下資訊適用於將EF300或EF600控制器機櫃纜線連接至DE212C、DE224C或DE460磁碟機櫃。</block>
+  <block id="e20bd51b5e818feb7ae7162ff2a5040b" category="paragraph">在連接EF300或EF600纜線之前、請確定韌體已更新至最新版本。若要更新韌體、請依照中的指示進行 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9fc6b3246246d57c13f601aad6408d6" category="list-text">無法在匯入開始之前將其對應至主機（不過、匯入開始後即可將其對應）。</block>
+  <block id="cf505540e6b324232d096ecbbeb36457" category="doc">將SAS擴充卡新增至EF300和EF600</block>
+  <block id="a06914d93f698c6a8bb3f09a21efd671" category="paragraph">您可以將SAS擴充卡新增至EF300或EF600控制器、以便擴充磁碟機匣。</block>
+  <block id="b18049a57fbb2ec5fd47fae049bd965b" category="inline-link-macro">更換EF300和EF600 SAS擴充卡的需求</block>
+  <block id="8cce61d9b8e3a90145210a9516fd4eb4" category="list-text">檢閱 <block ref="171e03e043e11d80ccbb4c5420424ae5" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f5dcc5008bfb9c123def7609109a915" category="paragraph">如果您打算將SAS擴充卡新增至EF300或EF600、請檢閱下列需求。</block>
+  <block id="9f1734fc5e3e56de56de5feb0b21d81b" category="list-text">在開機時啟用多路徑精靈。</block>
+  <block id="f0e0ce722ec3a3c41f0dbc73c527938e" category="inline-link">手動建立主機</block>
+  <block id="10f5dacfa6ac3fb3d44d134b3d8aa6b7" category="inline-xref">步驟4.</block>
+  <block id="ba2591378a65f0c927a05da1af50afb3" category="list-text">使用<block ref="14f8440b35f7d1516604c69c142bce0a" category="inline-link-rx"></block> 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 <block ref="fe91593b1a1221385d96e8bb5f09f386" category="inline-xref-macro-rx"></block>。</block>
+  <block id="0c3fecf1aae3fdfaeeaf18eba4ed3cfd" category="admonition">對於任何對應至執行核心3.9或更早版本之主機的磁碟區、都會停用自動負載平衡。</block>
+  <block id="3e0d4696992cb009b792ca52c4080196" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="33c9296cee3d3d5ec5f21b481b8c30ca" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
+  <block id="7f055c1166dd665b0b44651bedc2cbc8" category="list-text">建立子網路管理程式指令碼、作為開機程序的一部分執行一次。</block>
+  <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">新增下列行：將您在步驟2中找到的值替換為<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> 和<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。適用於<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> 和<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>的優先順序為：使用子網路管理程式的優先順序、1是最低優先順序、15是最高優先順序。</block>
+  <block id="233a179301cf4de0df435df2eb7e929a" category="list-text">建立名為的systemd服務單元檔案<block ref="c0248303a9c396ef63e7c8d1b55865fa" prefix=" " category="inline-code"></block>。</block>
+  <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">新增下列行：</block>
+  <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">將新服務通知系統。</block>
+  <block id="053dd33688a35b5cefe88637ff4e2a16" category="list-text">啟用並啟動<block ref="43be3ee7567c2cce7cc16a0555c90bf3" prefix=" " category="inline-code"></block>。</block>
+  <block id="941060fc12806a5c3d9302d2624cb774" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12或15個Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
+  <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
+  <block id="7965a5bdacca6ec4414d73846a2effc0" category="doc">建立檔案系統（RHEL 8、RHEL 9、SLES 15）</block>
+  <block id="709e243fec7f9a41a7ff766bf8716ce5" category="paragraph">對於RHEL 8、RHEL 9、SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
+  <block id="8c986ed4d501b7f34013f1474891eb88" category="list-text">執行<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令以取得NVMe裝置清單。</block>
+  <block id="c2254fad4178ca4085391a6ac3fc163a" category="paragraph">此命令的結果可用於尋找與相關聯的裝置<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下範例將會是<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
+  <block id="3c13ae5aa52bded0c438a34b3cfaf588" category="list-text">使用該位置在磁碟分割上建立所需NVMe裝置的檔案系統<block ref="68221a414d1be30f2d7ab0b100538ad1" prefix=" " category="inline-code"></block>。</block>
+  <block id="95aeb1de4d389845f041ab3587500dc3" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。</block>
+  <block id="3762f5d6da93d64fb2c80f51749495f7" category="paragraph">最佳實務做法是將I/O執行至中的連結<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 而非直接連接至實體NVMe裝置路徑<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>。您可以使用下列命令來找到這兩個位置之間的連結：</block>
+  <block id="cdd98f8f112f01967c6cf544d1185a31" category="paragraph">I/O執行至<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 將直接通過<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block> 使用原生NVMe多重路徑解決方案、將所有路徑都虛擬化至其下。</block>
+  <block id="489b1f76dfc3d23f283bb56e173cfce5" category="paragraph">下列程序適用於使用Broadcom Emulex或支援QLogic NVMe/FC的FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。如需這些作業系統或HBA支援哪些版本的詳細資訊、請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
+  <block id="efdd564b9ec4f2056fa78b410b589c82" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
+  <block id="08fb030e8ad0e09b4e56de467f54c0b0" category="paragraph">RHEL 7和SLES 12使用Device對應器多重路徑（DMP）來進行NVMe over RoCE的多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
+  <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">對於RHEL 9和SLES 15、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
+  <block id="b850731c1bffd8d6372e832c36232f3e" category="admonition">*資料遺失風險。*您必須啟用流量控制、才能與交換器上的「全域暫停控制」搭配使用、以避免NVMe over RoCE環境中的資料遺失風險。</block>
+  <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
+  <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">對於SLES 15和RHEL 9、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
+  <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">RHEL 7和SLES 12在使用NVMe over Fibre Channel時、會使用Device對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
+  <block id="509b37f1b5674ea3fcdd6f53b4a83cb8" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。</block>
+  <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
+  <block id="44da8255024278223616706dabffdcf2" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
+  <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">啟用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 開機時的精靈。</block>
+  <block id="52430bef221dfe0288778cdfd54cab9b" category="paragraph">* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL9）*</block>
+  <block id="519a88244e86ab9ce17209c219a4969a" category="paragraph">如果您在使用「NVMe list-SUBsys」命令時指定實體NVMe裝置、則會提供有關該命名空間路徑的其他資訊：</block>
+  <block id="b3e41b03ef621f7814aead1762d37e57" category="doc">建立檔案系統（RHEL 8、RHEL 9和SLES 15）</block>
+  <block id="278d29980d384d87e03c8f99681b0980" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
+  <block id="8e11cf4b8ef8251a1517afd1c236dd0f" category="paragraph">此命令的結果可用於尋找相關的裝置<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下範例為<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
+  <block id="1d17dd3572733d46cea446a1f0d4ef11" category="list-text">在上記錄啟動器的GUID <block ref="c3a1c379b3d644ae20d101147cd0dfd9" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cdbf7b73734bd4442fcc96a6195b7a15" category="paragraph">* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL 9）*</block>
+  <block id="04d05aed6c7b8c4bb3939966572e118e" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8及RHEL 9 SUSE Linux Enterprise Server 12及15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
+  <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8及RHEL 9*</block>
+  <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">執行multipath-ll命令以取得NVMe裝置清單。</block>
+  <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上記錄啟動器的GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">此工作適用於資料中心管理員和DCM2磁碟機櫃。</block>
+  <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">支援iSCSI的Data Assurance功能、適用於SANtricity 11.40版及更新版本。</block>
+  <block id="d8877bd06791feeb2257a189554b10c0" category="paragraph">這些程序適用於IOM12和IOM12B磁碟機櫃。</block>
+  <block id="9d5445db77f905ba92077d0b48806948" category="admonition">這些程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）</block>
+  <block id="47d3211aa170795dac5249cedd4befb3" category="paragraph"><block ref="47d3211aa170795dac5249cedd4befb3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="63651a0b8ef66d63649c69f52dd02292" category="list-text">Google Chrome 89或更新版本</block>
+  <block id="695a09770fa3da1385898775bfef82b9" category="list-text">Mozilla Firefox 80或更新版本</block>
+  <block id="de651d67770cb856f4d13c0980010807" category="list-text">Microsoft Edge 90或更新版本</block>
+  <block id="e3ef1fa2600da4921ead110fb0d1606b" category="paragraph">顯示的磁碟機特性取決於您選擇的是自動方法或手動方法。如需更多資訊、請參閱SANtricity 《關於系統管理程式的資訊》文件、<block ref="a35ecfb4da00f746430c0cae02d730d0" category="inline-link-rx"></block>。</block>
+  <block id="30ec052a906564798e129e10f7d39ab0" category="list-text">VMware vCenter Server設備支援的版本：6.7U3J、7.0U1、7.0U2、7.0U3及8.0。</block>
+  <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">支援的應用程式主機版本：Windows 2016、Windows 2019、Windows 2022。</block>
+  <block id="02e5141224b0a2ac9f9a2b07a05b90b3" category="list-text">系統記憶體：512 MB</block>
+  <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">安全的磁碟機可以是全磁碟加密（FDE）磁碟機、也可以是聯邦資訊處理標準（FIPS）磁碟機。FIPS磁碟機可以是140-2或140-3級、而層級140-2則是較高的安全層級。如果您混合選擇140-2和140-2層級磁碟機、則集區或Volume群組將會以較低的安全性層級（140-2）運作。</block>
+  <block id="1974aafa112f63127faafcfced06eda0" category="list-text">如果您想要建立僅FDE集區、請在「Secure Capable（安全功能）」欄中尋找* Yes - FDE*。如果您要建立僅限FIPS的集區、請尋找*是- FIPS-或*是- FIPS（混合）*。「混合」表示混合使用140-2和140-2級磁碟機。如果混合使用這些層級、請注意集區將會以較低的安全層級（1402）運作。</block>
+  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">11.74版的新功能</block>
+  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">支援FIPS 140-2</block>
+  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">FIPS 140-2和NVMe型SSD目前支援特定磁碟機使用FIPS 140-2。FIPS 140-2層級SSD磁碟機可與FIPS 140-2層級SSD磁碟機共存、但前提是這些磁碟機均為NVMe型或所有SAS型。在Volume群組和磁碟集區中混合使用這些層級時、請注意群組或集區將會以較低的安全性層級（1402）運作。</block>
+  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">MFA與SSH支援</block>
+  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">針對版本11.74及更新版本、遠端登入功能可讓您設定多因素授權（MFA）、方法是要求使用者輸入SSH金鑰及/或SSH密碼。SANtricity「硬體」區段中的功能表選項已從*變更遠端登入*變更為*設定遠端登入（SSH）*。</block>
+  <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">存取權杖</block>
+  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">此版本包含一項新功能、可用來建立存取權杖。這些權杖可讓您使用REST API或命令列介面（CLI）進行驗證、而不會洩漏使用者名稱和密碼。存取管理區段提供此功能。</block>
+  <block id="8eb80b537576ff75cd5bd8c229446b07" category="paragraph">美國政府執行令</block>
+  <block id="7b15a260552ea825bd80b5e7eee74344" category="paragraph">為了遵守執行訂單、本版本包含數項安全性變更。</block>
+  <block id="a2eca216cb41a80426c839353357173b" category="list-text">如果您已安裝啟用安全功能的磁碟機、並打算執行完整的控制器更換、請參閱下表、以完成安全類型（內部或外部）和磁碟機狀態的適當步驟。如果您*未*安裝啟用安全功能的磁碟機、您可以跳過此步驟、前往表格下方的步驟3。</block>
+  <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">命令列介面參考</block>
+  <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表中的某些步驟需要命令列介面（CLI）命令。如需使用這些命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="85c48cfb74af06db032bff9111d9f1bf" category="paragraph">將內部安全金鑰檔案匯出至管理用戶端上的已知位置（使用瀏覽器存取System Manager的系統）。使用<block ref="2ccd87610f73906ee34956b568a9cf6a" prefix=" " category="inline-code"></block> CLI命令。您必須提供與安全金鑰相關的密碼、並指定要儲存金鑰的位置。</block>
+  <block id="ec82f3000a1f272f3b52a6cb3a712565" category="list-text">請確定本機主機上有可用的用戶端和伺服器憑證、以便在控制器更換完成後、儲存陣列和金鑰管理伺服器能夠相互驗證。使用<block ref="54ece6d76b91cfb8106c5509aeb559ce" prefix=" " category="inline-code"></block> 用於儲存憑證的CLI命令。請務必使用執行兩次命令、一次執行<block ref="739d95452c2d9219acbe14532ab12dc9" prefix=" " category="inline-code"></block> 參數設為<block ref="62608e08adc29a8d6dbc9754e659f125" prefix=" " category="inline-code"></block>，另一個參數設為<block ref="cf1e8c14e54505f60aa10ceb8d5d8ab3" prefix=" " category="inline-code"></block>。</block>
+  <block id="7899232529cacb9c338bc512d9eaacb0" category="paragraph">外部金鑰管理、所有磁碟機均已鎖定、您*無法*暫時轉換至內部金鑰管理、以供更換控制器。</block>
+  <block id="fe657b834891c023451265db43c3f8cd" category="admonition">您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立新的CSR、簽署CSR、然後從外部金鑰管理伺服器（EKMS）下載伺服器憑證。</block>
+  <block id="a5e794f462468fa21e970eb4785f8925" category="paragraph">如果您要升級E2800和E5700控制器、這些控制器的磁碟機安全功能將會部分鎖定磁碟機、外部或內部磁碟機。如果已啟用「磁碟機安全性」功能、您必須手動解除鎖定這些磁碟機。</block>
+  <block id="cfbb469ee896c6d8312eac3cd3f10e34" category="paragraph">新換用的控制器將鎖定七段顯示代碼* L5*。當沒有磁碟機可以執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。</block>
+  <block id="3ed7bb77bb34146d7096e92088802232" category="list-text">在儲存陣列與SANtricity 該用戶端的筆記型電腦或PC之間建立直接的私有乙太網路連線。若要這麼做：</block>
+  <block id="c305cf92456cd4decb6725b96d759b94" category="list-text">使用RJ45乙太網路纜線將筆記型電腦連接至控制器A的管理連接埠1</block>
+  <block id="e770dd108a378a501b36f5bbae01f82a" category="list-text">若要完成連線、您可能需要將筆記型電腦指派給與控制器A相同子網路的IP位址控制器鎖定期間、控制器A預設為管理位址192．168．128.101。因此您可以將筆記型電腦指派至子網路、例如「192．168．128．201」。</block>
+  <block id="9d74567b7f3c3f33bbc54f827296074f" category="list-text">使用IP位址192.168.1.128.101加上使用者名稱* admin*和密碼空白、使用匯入內部金鑰<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block> CLI命令、並儲存安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="fb86a1495e405ddd56a3a1c076f876aa" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入內部金鑰：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
+  <block id="7b9f327d01db82c07c36d41b777ae840" category="admonition">您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立新的憑證簽署要求（CSR）、然後從外部金鑰管理伺服器匯入伺服器憑證。</block>
+  <block id="4bbb422ffd22264952cbb6eeeda41faa" category="list-text">使用預設IP位址192．168．128．101、使用者名稱* admin *和密碼空白、使用設定外部金鑰管理伺服器<block ref="15b894b6e4c06871df1e10de89d60168" prefix=" " category="inline-code"></block> CLI命令並提供<block ref="836c673259e51101a01e755a34f97359" prefix=" " category="inline-code"></block> 和<block ref="83fdf6a03b86c7990e1460cdc7d81dd1" prefix=" " category="inline-code"></block> 儲存自 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="781b6e9f0e82576c9634ecfe8a61f455" category="paragraph">或者、您也可以透過REST API透過下列呼叫來設定外部金鑰管理伺服器：<block ref="03e0d1fcf5a43cf1714fcbfa1f856800" prefix=" " category="inline-code"></block></block>
+  <block id="157bc9956975fd17471f6bdcb9f966ee" category="list-text">使用預設IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白、然後使用匯入憑證<block ref="872d2d44d951f842ae2823eb6febd102" prefix=" " category="inline-code"></block> CLI命令：一次用於用戶端憑證、第二次用於伺服器憑證。</block>
+  <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入Keyserver憑證：<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
+  <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">使用儲存自的安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。</block>
+  <block id="4097f6992eb560447325a703f31e2270" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入外部金鑰：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
+  <block id="e2acb831b00c32f1c83710aa634a7625" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.07.2的版本上受支援。在安裝或升級至IOM12B之前、請先確認控制器的韌體已更新。</block>
 </blocks>

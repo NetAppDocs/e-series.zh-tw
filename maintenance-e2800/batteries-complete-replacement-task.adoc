@@ -14,8 +14,8 @@ summary: 完成電池更換。
 [role="lead"]
 完成電池更換的步驟取決於您使用的是雙工組態（兩個控制器）或單工組態（一個控制器）。
 
-* 如需雙工組態、請參閱 <<Place controller online (duplex)>>。
-* 如需單工組態、請參閱 <<Power up controller (simplex)>>。
+* 如需雙工組態、請參閱  controller online (duplex)。
+* 如需單工組態、請參閱  up controller (simplex)。
 
 
 

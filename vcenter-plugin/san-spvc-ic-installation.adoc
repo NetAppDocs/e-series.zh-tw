@@ -23,12 +23,12 @@ summary: 安裝SANtricity vCenter的VMware vCenter儲存外掛程式。
 
 請確定您的系統符合下列需求：
 
-* VMware vCenter Server設備支援的版本：6.7U3J、7.0U1或7。0U2
+* VMware vCenter Server設備支援的版本：6.7U3J、7.0U1、7.0U2、7.0U3及8.0。
 * NetApp SANtricity 作業系統版本：11.60.2或更新版本
-* 支援的應用程式主機版本：Windows 2016或Windows 2019
+* 支援的應用程式主機版本：Windows 2016、Windows 2019、Windows 2022。
 * 主機系統的CPU需求：
 +
-** 系統記憶體：1.5GB
+** 系統記憶體：512 MB
 ** 儲存空間：275 MB + 200 MB（記錄）
 
 

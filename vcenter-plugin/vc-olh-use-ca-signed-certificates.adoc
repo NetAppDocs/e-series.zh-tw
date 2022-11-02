@@ -19,16 +19,16 @@ summary: 取得並匯入CA簽署的憑證、以安全存取裝載Storage Plugin 
 
 使用CA簽署的憑證是三個步驟的程序：
 
-* <<Step 1: Complete a CSR file>>。
-* <<Step 2: Submit CSR file>>。
-* <<Step 3: Import management certificates>>。
+*  1: Complete a CSR file。
+*  2: Submit CSR file。
+*  3: Import management certificates。
 
 
 
 
 == 步驟1：完成CSR檔案
 
-您必須先產生憑證簽署要求（CSR）檔案、以識別您的組織和執行外掛程式的主機系統。或者、您也可以使用諸如OpenSSL的工具來產生CSR檔案、然後跳至 <<Step 2: Submit CSR file>>。
+您必須先產生憑證簽署要求（CSR）檔案、以識別您的組織和執行外掛程式的主機系統。或者、您也可以使用諸如OpenSSL的工具來產生CSR檔案、然後跳至  2: Submit CSR file。
 
 .步驟
 . 選擇*憑證管理*。

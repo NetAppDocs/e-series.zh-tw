@@ -32,7 +32,7 @@ node.session.timeo.replacement_timeout=20
 ----
 . 確保已開啟「iscsid」和「（open-）iSCSI」服務並啟用開機。
 +
-* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL9）*
 
 +
 [listing]
@@ -69,7 +69,7 @@ NOTE: 除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段
 .. 使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。
 .. 設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。
 +
-* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL9）*
 
 +
 [listing]

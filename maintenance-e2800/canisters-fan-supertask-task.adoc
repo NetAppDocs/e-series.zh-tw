@@ -129,7 +129,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 NOTE: 更換風扇容器後、警示LED會持續亮起（持續亮起黃色燈）、同時韌體會檢查風扇容器是否安裝正確。此程序完成後、LED會熄滅。
 
 . 從「還原系統管理程式」的「恢復大師SANtricity 」中、選取「*重新檢查*」以確保問題已解決。
-. 如果仍報告故障的風扇容器、請重複中的步驟 <<Step 2: Remove failed fan canister and install new one>>。如果問題持續發生、請聯絡技術支援部門。
+. 如果仍報告故障的風扇容器、請重複中的步驟  2: Remove failed fan canister and install new one。如果問題持續發生、請聯絡技術支援部門。
 . 移除防靜電保護。
 . 使用SANtricity NetApp System Manager收集儲存陣列的支援資料。
 +

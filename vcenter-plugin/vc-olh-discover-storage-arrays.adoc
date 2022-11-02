@@ -24,9 +24,9 @@ summary: 若要在vCenter的儲存外掛程式中顯示及管理儲存資源、�
 
 陣列探索是一個多步驟程序：
 
-* <<Step 1: Enter network addresses for discovery>>
-* <<Step 2: Resolve untrusted certificates during discovery>>
-* <<Step 3: Provide passwords>>
+*  1: Enter network addresses for discovery
+*  2: Resolve untrusted certificates during discovery
+*  3: Provide passwords
 
 
 
@@ -59,7 +59,7 @@ NOTE: 如果未找到可管理的陣列、請確認儲存陣列已正確連線�
 系統會對您要新增至管理網域的每個陣列執行認證檢查。您可能需要先解決不受信任憑證的任何問題、然後再繼續。
 
 . 單擊*下一步*繼續執行精靈中的下一步。
-. 如果儲存陣列擁有有效的憑證、請前往 <<Step 3: Provide passwords>>。如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊會出現、請前往 <<Step 2: Resolve untrusted certificates during discovery>>。如果您要匯入CA簽署的憑證、請從探索對話方塊中取消、然後前往 link:vc-olh-import-certificates-for-arrays.html["匯入陣列的憑證"]。
+. 如果儲存陣列擁有有效的憑證、請前往  3: Provide passwords。如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊會出現、請前往  2: Resolve untrusted certificates during discovery。如果您要匯入CA簽署的憑證、請從探索對話方塊中取消、然後前往 link:vc-olh-import-certificates-for-arrays.html["匯入陣列的憑證"]。
 
 
 

@@ -36,8 +36,8 @@ summary: 更換發生故障的主機介面卡（HIC）。
 
 控制器離線的步驟取決於您使用的是單一控制器（單工）或兩個控制器（雙工）。請參閱適當的指示：
 
-* <<Duplex: Place controller offline>>
-* <<Simplex: Power down the controller shelf>>
+*  Place controller offline
+*  Power down the controller shelf
 
 
 

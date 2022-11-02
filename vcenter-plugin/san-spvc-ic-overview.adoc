@@ -37,7 +37,7 @@ NOTE: 外掛程式並非直接取代系統管理員介面、而系統管理員�
 
 如需vCenter環境中通訊的詳細資訊、請參閱下圖。
 
-image:../media/vcenter_communication.png[""]
+image:../media/vcenter_communication2.png[""]
 
 
 
@@ -68,9 +68,9 @@ NOTE: 當儲存陣列處於非最佳狀態時、部分作業無法使用。
 
 vCenter的儲存外掛程式可從多種瀏覽器存取。支援下列瀏覽器和版本。
 
-* Google Chrome 79或更新版本
-* Mozilla Firefox 70或更新版本
-* Microsoft Edge 79或更新版本
+* Google Chrome 89或更新版本
+* Mozilla Firefox 80或更新版本
+* Microsoft Edge 90或更新版本
 
 
 

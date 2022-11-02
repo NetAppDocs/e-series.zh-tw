@@ -15,8 +15,8 @@ summary: 更換EF300陣列中的磁碟機。
 
 EF300支援SAS擴充、提供24個磁碟機和60個磁碟機磁碟櫃。您所遵循的程序取決於您是否擁有24個磁碟機櫃或60個磁碟機櫃：
 
-* <<Replace drive in an EF300 (24-drive shelf)>>
-* <<Replace drive in an EF300 (60-drive shelf)>>
+*  drive in an EF300 (24-drive shelf)
+*  drive in an EF300 (60-drive shelf)
 
 
 

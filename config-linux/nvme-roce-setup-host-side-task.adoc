@@ -13,7 +13,7 @@ summary: RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NV
 [role="lead"]
 RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套件、設定啟動器IP位址、以及在主機上設定NVMe層。
 
-您必須執行RHEL 7、RHEL 8、以及最新相容的SUSE Linux Enterprise Server 12和15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
+您必須執行最新的相容RHEL 7、RHEL 8及RHEL 9 SUSE Linux Enterprise Server 12及15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
 
 .步驟
 . 安裝RDMA和NVMe-CLI套件：
@@ -28,7 +28,7 @@ RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套
 # zypper install nvme-cli
 ----
 +
-* RHEL 7或RHEL 8*
+* RHEL 7、RHEL 8及RHEL 9*
 
 +
 [listing]
@@ -85,7 +85,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7與RHEL 8*
+* RHEL 7、RHEL 8及RHEL 9*
 
 +
 使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。

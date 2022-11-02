@@ -16,7 +16,7 @@ summary: 更換E5700 60磁碟機櫃中的磁碟機。
 
 《恢復大師》（Recovery Guru in SANtricity the in the SytrSystem Manager）會監控儲存陣列中的磁碟機、並通知您即將發生磁碟機故障或實際發生磁碟機故障。磁碟機故障時、其黃色警示LED會亮起。您可以在儲存陣列接收I/O作業時、熱交換故障磁碟機。
 
-本程序適用於資料中心管理員和DCM2磁碟機櫃。
+此工作適用於資料中心管理員和DCM2磁碟機櫃。
 
 .開始之前
 * 檢閱中的磁碟機處理需求 link:drives-overview-supertask-concept.html["E5700磁碟機更換需求"]。

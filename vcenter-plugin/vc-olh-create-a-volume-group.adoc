@@ -66,4 +66,4 @@ CAUTION: 除非您是瞭解磁碟機備援和最佳磁碟機組態的專家、�
 . 根據顯示的磁碟機特性、選取您要在磁碟區群組中使用的磁碟機、然後按一下*「Create」（建立）*。
 
 
-顯示的磁碟機特性取決於您選擇的是自動方法或手動方法。
+顯示的磁碟機特性取決於您選擇的是自動方法或手動方法。如需更多資訊、請參閱SANtricity 《關於系統管理程式的資訊》文件、 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-volume-group.html["建立Volume群組"^]。

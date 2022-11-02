@@ -13,9 +13,9 @@ summary: 如果您的控制器升級導致廠商ID從LSI變更為NetApp、您就
 [role="lead"]
 如果您的控制器升級導致廠商ID從LSI變更為NetApp、請依照您主機類型的適當程序進行：
 
-* <<Remount volumes on an AIX host>>
-* <<Remount volumes on a VMware host>>
-* <<Remount volumes on a Windows host>>
+*  volumes on an AIX host
+*  volumes on a VMware host
+*  volumes on a Windows host
 
 
 

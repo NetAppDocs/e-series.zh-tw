@@ -13,6 +13,9 @@ summary: 使用InfiniBand交換器執行子網路管理程式、可能會在高�
 [role="lead"]
 子網路管理程式必須在交換器或主機上的環境中執行。如果您執行的是主機端、請使用下列程序進行設定。
 
+
+NOTE: 在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID） `ibstat -p` 命令。請參閱 xref:iser-ib-determine-host-port-guids-task.adoc[確定主機連接埠的GUI並進行建議的設定] 如需有關如何安裝InfiniBand診斷套件的資訊、
+
 .步驟
 . 在任何執行子網路管理程式的主機上安裝「opensm」套件。
 . 使用「ibstat -p」命令尋找HBA連接埠的「GUID0」和「GUID1」。例如：
@@ -23,17 +26,20 @@ summary: 使用InfiniBand交換器執行子網路管理程式、可能會在高�
  0x248a070300a80a80
  0x248a070300a80a81
 ----
-. 在主機上連線HCA的每個連接埠上啟用子網路管理員：
-+
-* SLES範例*
-
-+
-** 將下列兩行新增至/etc/rc.d/rc.after。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：
+. 建立子網路管理程式指令碼、作為開機程序的一部分執行一次。
 +
 [listing]
 ----
- opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
- opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+# vim /usr/sbin/subnet-manager.sh
+----
+. 新增下列行：將您在步驟2中找到的值替換為 `GUID0` 和 `GUID1`。適用於 `P0` 和 `P1`的優先順序為：使用子網路管理程式的優先順序、1是最低優先順序、15是最高優先順序。
++
+[listing]
+----
+#!/bin/bash
+
+opensm -B -g <GUID0> -p <P0> -f /var/log/opensm-ib0.log
+opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 ----
 +
 使用值替代的命令範例：
@@ -41,33 +47,42 @@ summary: 使用InfiniBand交換器執行子網路管理程式、可能會在高�
 +
 [listing]
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+#!/bin/bash
+
+opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
+opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
-
-
-+
-* RHEL範例*
-
-+
-** 將下列兩行新增至/etc/rc.d/rc.local。將您在步驟2中找到的值改為「GUID0」和「GUID1」。對於「P0」和「P1」、請使用子網路管理程式優先順序、其中1為最低、15為最高：
+. 建立名為的systemd服務單元檔案 `subnet-manager service`。
 +
 [listing]
 ----
-opensm -B -g GUID0 -p P0 -f /var/log/opensm-ib0.log
-opensm -B -g GUID1 -p P1 -f /var/log/opensm-ib1.log
+# vim /etc/systemd/system/subnet-manager.service
 ----
-+
-使用值替代的命令範例：
-
+. 新增下列行：
 +
 [listing]
 ----
-# cat /etc/rc.d/rc.local
- opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
- opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
+[Unit]
+Description=systemd service unit file for subnet manager
+
+[Service]
+Type=forking
+ExecStart=/bin/bash /usr/sbin/subnet-manager.sh
+
+[Install]
+WantedBy=multi-user.target
 ----
-
-
+. 將新服務通知系統。
++
+[listing]
+----
+# systemctl daemon-reload
+----
+. 啟用並啟動 `subnet manager service`。
++
+[listing]
+----
+# systemctl enable subnet-manager.service
+# systemctl start subnet-manager.service
+----
 

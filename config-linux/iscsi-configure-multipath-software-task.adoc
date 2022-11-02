@@ -44,44 +44,23 @@ summary: 設定多重路徑軟體、以便在其中一個實體路徑中斷時�
 +
 當您將磁碟區指派給主機時、將會使用此資訊。
 
-. 執行下列其中一項、以在開機時啟用「multiPathd」精靈。
+. 啟用 `multipathd` 開機時的精靈。
 +
-|===
-| 如果您正在使用 | 執行此動作... 
-
-
- a| 
-RHEL 7.x與8.x系統：
- a| 
-「ystemctl enable multipathd」
-
-
-
- a| 
-SLES 12.x和15.x系統：
- a| 
-「ystemctl enable multipathd」
-
-|===
+[listing]
+----
+systemctl enable multipathd
+----
 . 在/boot目錄下重建「initramfs」映像或「initrd-」映像：
 +
-|===
-| 如果您正在使用 | 執行此動作... 
-
-
- a| 
-RHEL 7.x與8.x系統：
- a| 
-"Dracut --force --add multipath"
+[listing]
+----
+dracut --force --add multipath
+----
+. 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手動建立主機"] 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 ,步驟4.。
 
 
 
- a| 
-SLES 12.x和15.x系統：
- a| 
-"Dracut --force --add multipath"
+NOTE: 對於任何對應至執行核心3.9或更早版本之主機的磁碟區、都會停用自動負載平衡。
 
-|===
-. 使用線上說明中的「手動建立主機」程序、檢查是否已定義主機。如果您啟用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.10或更新版本）*、如果您停用「自動負載平衡」功能、請確認每個主機類型都是* Linux DM-MP（Kernel 3.9或更新版本）*。如有必要、請將選取的主機類型變更為適當的設定。
 . 重新啟動主機。
 

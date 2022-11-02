@@ -13,26 +13,20 @@ summary: 您可以根據Linux版本設定導向裝置目標的I/O。
 [role="lead"]
 您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。
 
-對於RHEL 8和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。
+對於RHEL 8、RHEL 9和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。
 
-最佳實務做法是使用/dev/disk/by-id/中的連結、而非使用/dev/nvme0n1。例如：
-
-[listing]
-----
-# ls /dev/disk/by-id/ -l lrwxrwxrwx 1 root root 13 Oct 18 15:14
-nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
-----
 
 
 == 實體NVMe裝置是I/O目標
 
-執行I/O至實體NVMe裝置路徑。每個命名空間只能使用下列格式的其中一個裝置：
+最佳實務做法是將I/O執行至中的連結 `/dev/disk/by-id/nvme-eui.[uuid#]` 而非直接連接至實體NVMe裝置路徑 `/dev/nvme[subsys#]n[id#]`。您可以使用下列命令來找到這兩個位置之間的連結：
 
 [listing]
 ----
-/dev/nvme[subsys#]n[id#]
+# ls /dev/disk/by-id/ -l
+lrwxrwxrwx 1 root root 13 Oct 18 15:14 nvme-eui.0000320f5cad32cf00a0980000af4112 -> ../../nvme0n1
 ----
-所有路徑都會使用此裝置下的原生多重路徑解決方案進行虛擬化。
+I/O執行至 `/dev/disk/by-id/nvme-eui.[uuid#]` 將直接通過 `/dev/nvme[subsys#]n[id#]` 使用原生NVMe多重路徑解決方案、將所有路徑都虛擬化至其下。
 
 您可以執行下列命令來檢視您的路徑：
 
