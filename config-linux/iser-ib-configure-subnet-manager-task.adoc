@@ -23,8 +23,8 @@ NOTE: 在設定子網路管理程式之前、您必須先安裝InfiniBand診斷�
 [listing]
 ----
 # ibstat -p
- 0x248a070300a80a80
- 0x248a070300a80a81
+0x248a070300a80a80
+0x248a070300a80a81
 ----
 . 建立子網路管理程式指令碼、作為開機程序的一部分執行一次。
 +
@@ -52,7 +52,7 @@ opensm -B -g <GUID1> -p <P1> -f /var/log/opensm-ib1.log
 opensm -B -g 0x248a070300a80a80 -p 15 -f /var/log/opensm-ib0.log
 opensm -B -g 0x248a070300a80a81 -p 1 -f /var/log/opensm-ib1.log
 ----
-. 建立名為的systemd服務單元檔案 `subnet-manager service`。
+. 建立名為的systemd服務單元檔案 `subnet-manager.service`。
 +
 [listing]
 ----
@@ -78,7 +78,7 @@ WantedBy=multi-user.target
 ----
 # systemctl daemon-reload
 ----
-. 啟用並啟動 `subnet manager service`。
+. 啟用並啟動 `subnet-manager` 服務：
 +
 [listing]
 ----
