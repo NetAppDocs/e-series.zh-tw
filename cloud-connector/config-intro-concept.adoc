@@ -19,6 +19,7 @@ summary: 成功安裝後、您可以SANtricity 透過組態精靈設定支援功
 
 第一次初始化SANtricity 時、您必須輸入預設密碼才能存取應用程式。
 
+.開始之前
 請確定您可以存取連線至網際網路的瀏覽器。
 
 .步驟
@@ -86,6 +87,7 @@ NOTE: 在完成組態精靈之前、不會設定使用者定義的管理員密�
 
 Amazon S3、AltaVault 版本介紹及StorageGRID 支援還原功能、可透過SANtricity 《支援還原的解決方案：您可以在SANtricity 「Select the Target Type」（選取目標類型）頁面下、為「精選Cloud Connector」應用程式指定所需的儲存目標類型。
 
+.開始之前
 請確定您擁有下列其中一項：AltaVault Sure掛載點、Amazon AWS帳戶或StorageGRID S景 點帳戶。
 
 .步驟
@@ -213,6 +215,7 @@ NOTE: 某些S3相容的帳戶可能需要安全的HTTP連線。如需在StorageG
 
 搭配SANtricity 使用的Web服務Proxy登入與連線資訊可透過「輸入Web服務Proxy URL與認證」頁面輸入。
 
+.開始之前
 請確定您已建立與SANtricity 「the Sort供Web服務代理」的連線。
 
 .步驟
@@ -233,6 +236,7 @@ NOTE: 某些S3相容的帳戶可能需要安全的HTTP連線。如需在StorageG
 
 根據SANtricity 透過組態精靈輸入的「驗證Web服務Proxy」認證、「選取儲存陣列」頁面下方會顯示可用的儲存陣列清單。透過本頁面、您可以選擇SANtricity 使用哪些儲存陣列來執行備份與還原工作。
 
+.開始之前
 請確定您的儲存陣列已設定為SANtricity 使用您的SeschWeb Services Proxy應用程式。
 
 
@@ -256,6 +260,7 @@ NOTE: 您必須為在「Select Storage Arrays（選取儲存陣列）」頁面�
 
 根據透過「組態精靈」選取的Web服務Proxy託管儲存陣列、您可以透過SANtricity 「Select hosts（選取主機）」頁面、選取可用的主機、將備份和還原候選磁碟區對應到「支援對象」應用程式。
 
+.開始之前
 請務必透過SANtricity 「支援服務代理程式」提供主機。
 
 .步驟

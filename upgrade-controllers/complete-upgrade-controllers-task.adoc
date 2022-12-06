@@ -200,4 +200,5 @@ NOTE: 收集支援資料可能會暫時影響儲存陣列的效能。
 
 
 
+.接下來呢？
 如果您的控制器升級導致廠商ID從LSI變更為NetApp、請前往 link:remount-volumes-lsi-task.html["將廠商從LSI改為NetApp之後、重新掛載磁碟區"]；否則、您的控制器升級已完成、您可以恢復正常作業。

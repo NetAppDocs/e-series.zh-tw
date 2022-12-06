@@ -24,6 +24,7 @@ NOTE: 所有備份與還原工作的時間戳記、都會SANtricity 使用本地
 
 您可以透過SANtricity 「ImageCloud Connector」應用程式備份頁面上的「Create」（建立）功能、建立新的映像型備份。
 
+.開始之前
 請務必將Web Services Proxy中的儲存陣列登錄至SANtricity 《解決方案與解決方案與解決方案：
 
 .步驟
@@ -76,6 +77,7 @@ NOTE: 您可以稍後透過備份頁面上的執行功能、執行所選映像�
 
 您可以透過SANtricity 位於「還原Cloud Connector」應用程式備份頁面的「Create」（建立）功能、建立新的資料夾/檔案型備份。
 
+.開始之前
 請務必將Web Services Proxy中的儲存陣列登錄至SANtricity 《解決方案與解決方案與解決方案：
 
 檔案型備份會無條件備份您指定檔案系統上的所有檔案。不過、您可以選擇性地還原檔案和資料夾。
@@ -138,6 +140,7 @@ NOTE: 您也可以稍後透過備份頁面上的執行功能、執行所選檔�
 
 您可以透過備份頁面上的執行功能執行完整和遞增備份。遞增備份僅適用於檔案型備份。
 
+.開始之前
 請確定您已透過SANtricity 《Sfor the Sure Cloud Connector（英文）」建立備份工作。
 
 .步驟
@@ -171,6 +174,7 @@ NOTE: 根據上次透過SANtricity NetApp Cloud Connector應用程式執行的�
 
 刪除功能會刪除所選備份與備份集所在之指定目標位置的備份資料。
 
+.開始之前
 請確定備份狀態為「已完成」、「失敗」或「已取消」。
 
 .步驟

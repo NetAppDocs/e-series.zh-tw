@@ -17,6 +17,7 @@ summary: 匯入儲存陣列的憑證、以便與裝載Storage Plugin for vCenter
 [role="lead"]
 如有必要、您可以匯入儲存陣列的憑證、以便與裝載Storage Plugin for vCenter的系統進行驗證。憑證可以由憑證授權單位（CA）簽署、也可以自行簽署。
 
+.開始之前
 如果您要匯入信任的憑證、則必須使用System Manager匯入儲存陣列控制器的憑證。
 
 .步驟

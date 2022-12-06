@@ -13,6 +13,7 @@ summary: 若要安裝EF300或EF600、請建立帳戶並註冊硬體。
 [role="lead"]
 瞭解如何準備好安裝EF300或EF600系列儲存系統。
 
+.開始之前
 如果您要將EF300纜線連接至SAS擴充、請檢閱下列資訊：
 
 * link:../maintenance-ef600/sas-add-supertask-task.html["新增SAS擴充卡"^] 用於SAS擴充卡安裝。

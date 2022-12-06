@@ -18,6 +18,7 @@ summary: 僅適用於RedHat和SUSE Linux平台的《支援解決方案SANtricity
 
 NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
 
+.開始之前
 請檢閱下列附註：
 
 * 如果SANtricity 將「支援服務Proxy」安裝在SANtricity 與「支援服務解決方案」相同的伺服器上、非SSL連接埠號碼與SSL連接埠號碼之間就會發生衝突。在這種情況下、請針對SANtricity 非SSL連接埠和SSL連接埠、在安裝過程中選擇適當的編號。
@@ -45,6 +46,7 @@ NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
 
 您可以使用圖形模式、在SANtricity Linux作業系統上安裝支援不支援的Cloud Connector。
 
+.開始之前
 指定SANtricity 安裝支援此解決方案的主機位置。
 
 .步驟
@@ -114,6 +116,7 @@ NOTE: 若要安裝SANtricity 版本4.0的《ECloud Connector》、同時維持�
 
 您可以使用主控台模式、在SANtricity Linux作業系統上安裝《支援不支援不支援的Cloud Connector」。
 
+.開始之前
 指定SANtricity 安裝支援此解決方案的主機位置。
 
 .步驟
@@ -192,6 +195,7 @@ NOTE: 若要安裝SANtricity 版本4.0的《ECloud Connector》、同時維持�
 
 若要從瀏覽器使用安全的https連線至SANtricity 支援不中斷的Cloud Connector主機、您可以接受SANtricity 來自支援不中斷的Cloud Connector主機的自我簽署憑證、或是新增瀏覽器和SANtricity 支援不中斷的Cloud Connector應用程式所識別的憑證和信任鏈。
 
+.開始之前
 必須在主機上安裝此解決方案SANtricity 。
 
 .步驟

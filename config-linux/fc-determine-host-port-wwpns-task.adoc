@@ -15,6 +15,7 @@ summary: 您可以安裝FC HBA公用程式、以便檢視每個主機連接埠�
 
 此外、您也可以使用HBA公用程式來變更的「附註」欄中建議的任何設定 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 支援的組態。
 
+.關於這項工作
 請參閱以下HBA公用程式準則：
 
 * 大多數HBA廠商都提供HBA公用程式。您的主機作業系統和CPU需要正確版本的HBA。FC HBA公用程式的範例包括：

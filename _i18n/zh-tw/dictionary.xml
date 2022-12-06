@@ -9,13 +9,10 @@
   <block id="7a0a9c41b30d67f285b02b6001f734dc" category="list-text">DE1600或DE5600</block>
   <block id="6f90f0e892dcbad9cc3c5c7a2f71e22a" category="list-text">E2612或E2624</block>
   <block id="e58072e70303cdd370fa9dc168dfa8e8" category="list-text">E5412、E5424、E5512或E5524</block>
-  <block id="10aa710125be51cc73af248b454958aa" category="section-title">雙柱機架—2U</block>
   <block id="6c9c9493e3710515edb0e087658e5c24" category="inline-link">將2U設備安裝到雙柱機架中</block>
   <block id="0413abfef8aae89542d15125dba4d96b" category="paragraph">存取<block ref="fc9b704cab109303261cec9768bb3291" category="inline-link-rx"></block>。</block>
-  <block id="b3e8b82dc764d0e6bd4fd78c3ecd968d" category="section-title">四柱機架或機櫃—2U</block>
   <block id="ae4141f22c2ed3b7878fa2ff3a1e6cfe" category="inline-link">在四柱機架或機櫃中安裝2U 12個磁碟機機箱</block>
   <block id="5eba68d12705561c14a5cf782039d9a6" category="paragraph">存取<block ref="790da98275795a97c8f97401754053cf" category="inline-link-rx"></block>。</block>
-  <block id="eef7cecc379e5c2c29880cbc37d1d2ad" category="section-title">四柱機架—超級軌道</block>
   <block id="10b221abe33d91a2165eab967641529e" category="inline-link">將超級滑軌安裝至四柱機架（DE224C/DE460C機櫃）</block>
   <block id="a6d47447094eb5b7920c8d1f16d0d25d" category="paragraph">存取<block ref="384159b715a893ce026df1e06010cefa" category="inline-link-rx"></block>。</block>
   <block id="98d8050fe87ace4e377bf1699943169c" category="summary">適用於vCenter的《VMware vSphere儲存外掛程式》SANtricity 可從VMware vSphere Client工作階段中、提供E系列儲存陣列的整合式管理功能。</block>
@@ -313,38 +310,20 @@
   <block id="9fb794be4150b7763c0a4833d06c9e31" category="list-text">*憑證管理*：管理在瀏覽器與用戶端之間驗證的憑證。</block>
   <block id="b2a734e63e69490e094f416eda4eeb72" category="list-text">*作業*：檢視批次作業的進度、例如將設定從一個陣列匯入另一個陣列。</block>
   <block id="c39f2962708144021250f1c1774ee46b" category="list-text">*支援*：檢視技術支援選項、資源和聯絡人。</block>
-  <block id="4f5e7bcbe41e887700d69a7347fc4ec4" category="summary">安裝SANtricity vCenter的VMware vCenter儲存外掛程式。</block>
-  <block id="480dbff7fe3f36c7e40bb55917ce4363" category="doc">安裝vCenter的儲存外掛程式</block>
-  <block id="b343a8501c81a39ccd85e7ffcb042c9a" category="paragraph">您可以安裝vCenter的儲存外掛程式、並驗證外掛程式登錄。</block>
   <block id="f648da22c98e52c918faa560efe4f898" category="section-title">檢閱安裝先決條件</block>
-  <block id="3f2d2f00d799dde329a804cc37f26a7c" category="paragraph">請確定您的系統符合下列需求：</block>
   <block id="2ce43ab0f5d314b47dd9cb618dcc2844" category="list-text">NetApp SANtricity 作業系統版本：11.60.2或更新版本</block>
-  <block id="85826baa206c427868f3feaff8a9870b" category="list-text">主機系統的CPU需求：</block>
-  <block id="567b36d352655c36a5a725d1ebf33c0f" category="list-text">儲存空間：275 MB + 200 MB（記錄）</block>
   <block id="dc7364d3899f846fdf1224ed73fd1f69" category="section-title">安裝外掛程式軟體</block>
   <block id="77ceebed4c1a4af4acd87fb741a6c682" category="paragraph">若要安裝外掛程式軟體：</block>
   <block id="96de9428e796ae7fd12aa7eb5f8c47eb" category="list-text">將安裝程式檔案複製到將做為應用程式伺服器的主機、然後存取您下載安裝程式的資料夾。</block>
   <block id="5615a5290f7916cea22366db3afe36ca" category="list-text">按兩下安裝檔案：</block>
   <block id="7bf75a37617fe76a3416d2424deced05" category="paragraph">「antricity儲存設備_vcenterplugin-windows_x64-- n.n.nn.nns.exe」</block>
   <block id="01eb9f6780fbba151f0f50844a4c1df7" category="paragraph">在上述檔案名稱中、「n.n.n.nn.nnn.nnn」代表版本編號。</block>
-  <block id="7cfae2e1d2ea7368589cf5db38e58545" category="list-text">安裝開始時、請遵循螢幕上的提示進行。</block>
-  <block id="0a15cde063d5ad5f4517618505eec23e" category="paragraph">安裝期間、系統會提示您輸入一些組態參數。</block>
-  <block id="d820ee7ec02fc2a6d8be199849df9b2f" category="list-text">在第一個畫面上、選取您偏好的軟體語言、然後按一下*確定*。</block>
-  <block id="b989796b66ff1d9406ec1c531d469666" category="list-text">在「簡介」畫面中、按一下*「下一步」*。</block>
-  <block id="325b33ff6ecded6095d73d040e6a1fea" category="list-text">在Copyright（版權）畫面中、按一下* Next*（下一步*）。</block>
-  <block id="5c8aa03abd50920e0f0c126d643020ea" category="list-text">在「授權合約」畫面中、選取接受條款的方塊、然後按「*下一步*」。</block>
-  <block id="0b231efa0d0ec3e7d3e43cf4892ac5bf" category="list-text">選取您要安裝軟體的資料夾、然後按「*下一步*」。</block>
-  <block id="184a98dbb91e62e80b288dedf3c5a47b" category="list-text">如果您要在外掛程式與儲存陣列之間強制執行憑證驗證、請在「憑證驗證」畫面中、勾選核取方塊。在這項強制措施下、儲存陣列憑證會根據外掛程式加以檢查、以確保可信。如果憑證不受信任、則不允許將其新增至外掛程式。如果您要置換憑證驗證、請取消選取核取方塊、以便使用自我簽署的憑證將所有儲存陣列新增至外掛程式。單擊 * 下一步 * 。</block>
-  <block id="330978dd5354b46e213f942edf959eb0" category="paragraph">若要深入瞭解憑證、請參閱外掛程式介面提供的線上說明。</block>
-  <block id="9cae702ab26aef3182168c3ef66b420a" category="list-text">在「HTTPS Web服務連接埠」畫面中、將預設值保留為84445、或視需要變更連接埠編號。單擊 * 下一步 * 。</block>
-  <block id="116a92bc310fb5fa8eacab83ecfddf66" category="list-text">在「預先安裝摘要」畫面中、按一下*「下一步*」以安裝檔案。</block>
   <block id="9964b55b18c628445831aa8f480ccdc5" category="list-text">出現Webserver started（Webserver已啟動）訊息時、按一下「* OK（確定）*」以完成安裝。</block>
   <block id="4f64b1596007c92e3ab2a4bf215f3ab0" category="admonition">如有必要、您可以在安裝後變更「憑證驗證」和「Web服務連接埠」設定。從安裝目錄開啟wsconfig.xml檔案。若要移除儲存陣列上的憑證驗證、請將「env」金鑰「trust．all.Array」變更為「true」。若要變更Web服務連接埠、請將「slport」值修改為所需的連接埠值、範圍從0-65535.請確定所使用的連接埠號碼未繫結至其他程序。完成後、請儲存變更並重新啟動外掛程式Web伺服器。如果將外掛程式登錄至vCSA之後、外掛程式Web伺服器的連接埠值已變更、則您必須取消登錄並重新登錄外掛程式、以便vCSA在變更的連接埠上與外掛程式Web伺服器通訊。</block>
   <block id="9d17039867ca33fdd770d1d9de41479f" category="list-text">執行* services.msc*命令、確認應用程式伺服器已成功安裝。</block>
   <block id="220cd7bbad8213b2212fe72d054af003" category="list-text">確認已SANtricity 安裝應用程式伺服器（VCP）服務*適用於VCenter*的NetApp VMware vCenter儲存外掛程式、且服務已啟動。</block>
   <block id="dd0f5711b4dbdc0f95aaf96b06c2d059" category="section-title">向vCenter Server Appliance註冊外掛程式</block>
   <block id="73d0e801912fc9ea82e6f5937e17c0cc" category="paragraph">安裝外掛程式軟體之後、請向vCSA註冊外掛程式。</block>
-  <block id="145e65fcacf3fc703ceb2a4eaedbf1c9" category="admonition">外掛程式一次只能登錄到一個vCSA。若要登錄至不同的vCSA、則必須從目前的vCSA取消登錄外掛程式、然後從應用程式主機解除安裝。然後您可以重新安裝外掛程式、並將其登錄至其他vCSA。</block>
   <block id="6bb899b55f01bce9e8af1c2f60672bc3" category="list-text">執行* vCenter-Register．bat*檔案：「vcenter-register.bat」、「-action registerPlugin」、「-vcenterHostname」、「vCenter FQDN」、「-使用者名稱」、「^」</block>
   <block id="c52d155f7acb8ad88031033b1cb3c79a" category="list-text">驗證指令碼是否成功。</block>
   <block id="c5c434aad7d7d3e6ed02ff2fc27ec08f" category="section-title">驗證外掛程式登錄</block>
@@ -449,7 +428,6 @@
   <block id="ef71c4d60b721871a9a1acefb72e13e4" category="paragraph">如果您使用SANtricity 的是版本11.53或更低版本的支援、您可以在SANtricity Management Station上安裝《支援資料》軟體、以協助管理陣列。</block>
   <block id="501a2ad13300e0aa28ebe2f8b5f896f5" category="paragraph">包含用於其他管理工作的命令列介面（CLI）、以及用於透過I/O路徑將主機組態資訊推送至儲存陣列控制器的主機內容代理程式。SANtricity</block>
   <block id="5d2dd026d83ed1ae31b7c46f98cd9d34" category="admonition">如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需更多關於如何透過SANtricity 「支援系統管理程式」下載SMcli的資訊、請參閱SANtricity 《支援服務》（英文）下方的「下載命令列介面（CLI）」主題。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="333a1ae397172ffa7f074eb82c021e4e" category="list-text">軟件11.53或更早版本。SANtricity</block>
   <block id="9884a6d86c5ef3ebfdff2afde0ea13dd" category="list-text">正確的系統管理員或超級使用者權限。</block>
   <block id="82d7e3e3a829c410689b0d6b724bfe6b" category="list-text">適用於下列最低需求的系統：SANtricity</block>
@@ -1110,7 +1088,6 @@
   <block id="2e71e539473524a77fed5be033e08099" category="list-text">使用「ibstat -p」命令尋找HBA連接埠的「GUID0」和「GUID1」。例如：</block>
   <block id="b8428f61ce61bd64b7ac15710b5f5150" category="list-text">執行diff命令、將複製的檔案與原始檔案進行比較。</block>
   <block id="43256533b4d88b90a519151bb6b8744e" category="summary">確定主機連接埠的GUI。</block>
-  <block id="5e8bb43a311db3e4eae61b5de50a3e70" category="list-text">使用作業系統的套件管理命令來安裝InfiniBand診斷套件。</block>
   <block id="d405d36a5a07f387a8a07ebe6eeb8c55" category="list-text">執行「ibstat」命令以顯示連接埠資訊。</block>
   <block id="9fd1ccf35b45152e10c1dcc3a278a357" category="inline-xref-macro">SRP工作表</block>
   <block id="e8377a168400202c4d751db31f2af66a" category="list-text">在上記錄啟動器的GUID <block ref="637e124a730f0905ce6e480d5b773394" category="inline-xref-macro-rx"></block>。</block>
@@ -1976,9 +1953,7 @@
   <block id="99958fd8a8267b3560ce1c363b5be7e7" category="list-text"><block ref="f8c7ff95c6f2730c965212cb5ee95d98" category="inline-link-rx"></block> --提供目前Windows Unified Host Utilities版本的文件。</block>
   <block id="dc9a3adad931bcc95bb908edc1ca137c" category="summary">對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。</block>
   <block id="500f35e1a49050d329695333eb443f53" category="doc">執行FC特定工作</block>
-  <block id="2f04e704a7a815c0e774ed659cc504c3" category="section-title">步驟1：設定FC交換器——Windows</block>
   <block id="5192c4044ff1350931950a13c0344c96" category="paragraph">您必須依WWPN進行區域、而非依實體連接埠。每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。</block>
-  <block id="cf835a04573e0610ec8897238c527f88" category="section-title">步驟2：判斷主機WWPN並進行建議設定——支援功能、Windows</block>
   <block id="be45f039274998f659527af3c0750a6a" category="paragraph">您可以安裝FC HBA公用程式、以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外、您也可以使用HBA公用程式來變更的「附註」欄中建議的任何設定<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> 支援的組態。</block>
   <block id="8ad4e3bd74027104bf8b878b3914822a" category="paragraph">的「附註」欄中會列出您組態的適當設定<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
   <block id="937eaba2c714abd2c87056b5288c7f8f" category="section-title">步驟3：記錄您的組態</block>
@@ -2048,19 +2023,16 @@
   <block id="50b44e77204c03afe37922911ec47676" category="summary">對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換器和網路。然後驗證IP網路連線。</block>
   <block id="1073617cb349d634023f3f6c0c581f80" category="doc">執行iSCSI專屬工作</block>
   <block id="44fc66161e7a43ac157626f024173dde" category="paragraph">對於iSCSI傳輸協定、您可以設定交換器、在陣列端和主機端設定網路、然後驗證IP網路連線。</block>
-  <block id="e21c632eff4dcb4c33312f2048c1bdfd" category="section-title">步驟1：設定交換器——iSCSI、Windows</block>
   <block id="9c8c6bc1dd1c6a33336d55ccb262a475" category="list-text">兩個獨立的網路提供高可用度。請務必使用VLAN或兩個獨立的網路、將iSCSI流量隔離至不同的網路區段。</block>
   <block id="f63ed564dfb8701d9a01a826ed8b7184" category="list-text">已啟用「傳送及接收硬體流程控制*端點對端點*」。</block>
   <block id="8a15fc8cc90b121809398331bd4e3fcc" category="list-text">停用優先順序流程控制。</block>
   <block id="5c1f4c531be5dc78e029acb7423171cb" category="list-text">如果適用、請啟用巨型框架。</block>
   <block id="565c3a2d9c34937aa961e9ed85bb8ba7" category="admonition">控制器的交換器連接埠不支援連接埠通道/LACP。不建議使用主機端LACP；多重路徑可提供相同或更好的效益。</block>
   <block id="fa1a4bd3bc0839afda794c9adf85f500" category="paragraph">請參閱交換器廠商的文件。</block>
-  <block id="96d6d5da6e7c9c318bc8a1f7571ca765" category="section-title">步驟2：設定網路功能—iSCSI Windows</block>
   <block id="664f6e0bf6d6470056c04546c10ee78f" category="paragraph">您可以根據資料儲存需求、以多種方式設定iSCSI網路。如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。</block>
   <block id="7a0cbf02537e0c5675240097a5e290c6" category="paragraph">使用基本備援設定iSCSI網路的有效策略、是將每個主機連接埠和每個控制器的一個連接埠、分別連接不同的交換器、並使用VLAN將每組主機和控制器連接埠分割成不同的網路區段。</block>
   <block id="193ade8f53ce0d3769717269d5021a04" category="paragraph">如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成步驟3中的程序。</block>
   <block id="f15f906f7bea6ec29e2979d8f1f2fcfb" category="admonition">許多網路交換器必須設定在超過9、000位元組的IP負荷上。如需詳細資訊、請參閱交換器文件。</block>
-  <block id="71aa525f4580797cdff57e0dd639aa22" category="section-title">步驟3：設定陣列端的網路功能：《支援iSCSI、Windows *</block>
   <block id="21075a2c147c20a9ef54f587da0a2a84" category="paragraph">本工作說明如何從「硬體」頁面存取iSCSI連接埠組態。您也可以從功能表：系統[設定&gt;設定iSCSI連接埠]存取組態。</block>
   <block id="c19209cfbefda33b942ed6c39ecb5ddf" category="paragraph">第一次SANtricity 在尚未設定的陣列上開啟時、會出現「Set Administrator Password（設定管理員密碼）」提示字元。角色型存取管理可設定四種本機角色：管理、支援、安全性及監控。後三個角色的隨機密碼是無法猜測的。設定管理員角色的密碼之後、您可以使用管理員認證來變更所有密碼。如SANtricity 需四種本機使用者角色的詳細資訊、請參閱《支援系統》線上說明。</block>
   <block id="79ea1ff8d5f0ec26c8c8cc72a7085a20" category="list-text">在Set Administrator Password（設定管理員密碼）和Confirm Password（確認密碼）欄位中輸入管理員角色的System Manager密碼、然後選取* Set Password（設定密碼）*按鈕。</block>
@@ -2070,7 +2042,6 @@
   <block id="a36a3384316e76a836daabd6d282661d" category="paragraph">如有必要、請為最大傳輸單元（MTU）輸入新的位元組大小。預設的最大傳輸單元（MTU）大小為每個框架1500位元組。您必須輸入介於1500和9000之間的值。</block>
   <block id="a7fd6114aef59ac6b5af7d433e881a99" category="paragraph">選取此選項可啟用VLAN並輸入其ID。VLAN是一種邏輯網路、其運作方式類似於實體獨立於其他實體和虛擬區域網路（LAN）、這些區域網路由相同的交換器、相同的路由器或兩者支援。</block>
   <block id="e1dec6fa399efb239b24db822cc588e7" category="paragraph">選取此選項可啟用決定存取網路優先順序的參數。使用滑桿選取1到7之間的優先順序。在共享區域網路（LAN）環境（例如乙太網路）中、許多站台可能會爭用網路存取權。存取權以先到先得的方式提供。兩個站台可能會同時嘗試存取網路、這會導致兩個站台都關機並等待、然後再試一次。交換式乙太網路只有一個站台連接到交換器連接埠、此程序就會最小化。</block>
-  <block id="d6982b7cb99590941b0d9dd21f85a639" category="section-title">步驟4：設定主機端網路——支援iSCSI</block>
   <block id="486e308943214a1af2fb7f8bf923cef8" category="paragraph">您必須在主機端設定iSCSI網路、才能讓Microsoft iSCSI啟動器與陣列建立工作階段。</block>
   <block id="4d7942b5b9d1f93de2ce551ea37c0a45" category="list-text">將用於傳輸iSCSI儲存流量的完整設定交換器。</block>
   <block id="11bb9d681849f3cf6851e3ac4bf50fa4" category="list-text">已啟用「傳送及接收硬體流程控制*端點對端點*」</block>
@@ -2090,7 +2061,6 @@
   <block id="11067f76259f391bcf91a2a3d2955b1e" category="list-text">返回*連線到目標*對話方塊時、請再次選取*確定*。</block>
   <block id="385b4af64bde28fe3449616f51738066" category="list-text">針對您要建立的儲存陣列、對每個啟動器連接埠和工作階段（邏輯路徑）重複此程序。</block>
   <block id="15b6118a81aee81c1a1d53b3df6273bd" category="image-alt">82012 00</block>
-  <block id="1d67ee0bcd66df5d64d6595ef7f9d10e" category="section-title">步驟5：驗證IP網路連線——《支援iSCSI、Windows</block>
   <block id="e67855cd7e9b1c8568edde29dc1e19d1" category="list-text">選取功能表：開始[所有程式&gt;附屬應用程式&gt;命令提示字元]、然後使用Windows CLI執行下列其中一個命令、視是否啟用巨型框架而定：</block>
   <block id="82b036dc1c9aac368948e60ed01a1cd4" category="list-text">如果啟用巨型框架、請執行有效負載大小為8、972位元組的ping命令。IP和ICMP的合併標頭為28個位元組、新增至有效負載時、等於9、000個位元組。f交換器會設定「do’t fragment（DF）」位元。l交換器可讓您設定大小。這些選項可在iSCSI啟動器與目標之間成功傳輸9、000個位元組的巨型框架。</block>
   <block id="a27ae6575cfc8a5983e41f037d38c392" category="section-title">步驟6：記錄您的組態</block>
@@ -2112,7 +2082,6 @@
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。</block>
   <block id="782074a892923ea9433c10e2d684625e" category="doc">執行SAS專屬的工作</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">對於SAS傳輸協定、您可以決定主機連接埠位址並進行適當的設定。</block>
-  <block id="949def9e74c32b2d76220ef2a708fcd7" category="section-title">步驟1：判斷SAS主機識別碼—Windows</block>
   <block id="bfcd4b5a45e2121dd605c54a4da4bd65" category="paragraph">使用HBA公用程式尋找SAS位址、然後使用HBA BIOS進行適當的組態設定。</block>
   <block id="b769f2f457baf26b76c0285eaf26cac1" category="paragraph">檢閱HBA公用程式的準則：</block>
   <block id="24e8d96ea66cd40afc07c55bd24a3685" category="list-text">請從HBA廠商的網站下載lsi_sas2flash（6G）或sas3flash（12G）公用程式。</block>
@@ -4740,7 +4709,6 @@
   <block id="d60c0bc605d3ea38eff56a862b5a189c" category="paragraph">由於此程序的複雜度、建議採取下列步驟：</block>
   <block id="8322d8f6737b683258acd6d9233af80a" category="list-text">請先閱讀所有步驟、再開始執行程序。</block>
   <block id="8567550b0509793441808f6c97ce695d" category="list-text">確保熱新增磁碟機櫃是您所需的程序。</block>
-  <block id="67b64abed949ae2b1a2626ebe211fd47" category="paragraph">此程序適用於熱新增DE212C、DE224C或DE460C磁碟機櫃至E2800、E2800B、EF280、E5700、E5700B、 EF570或EF300控制器機櫃。</block>
   <block id="5a1179aaa65f35de522ce2a2ea82749a" category="inline-link">將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃</block>
   <block id="a6f3f1b5a23e23fffe14cffdfdd4e3e6" category="paragraph">如果您要將較舊的控制器機櫃佈線至DE212C、DE224C或DE460、請參閱<block ref="0198df91334a412ebbcbbf86e387ec1b" category="inline-link-rx"></block>。</block>
   <block id="160e453c42b3cffabeeb1eac7a869cc4" category="admonition">若要維護系統完整性、您必須依照所顯示的順序執行程序。</block>
@@ -4772,10 +4740,6 @@
   <block id="a001f7630ca6df494681b2daba776c8b" category="admonition">如需實體安裝與電源線的完整程序、請參閱機型的安裝說明。您的機型安裝說明包含安全安裝磁碟機櫃時必須考量的注意事項與警告。</block>
   <block id="8e48f6475dbee2032869e2a0715b2460" category="list-text">開啟新磁碟機櫃的電源、並確認磁碟機櫃上沒有亮起黃色的警示LED。如有可能、請先解決任何故障狀況、再繼續執行此程序。</block>
   <block id="e741aab45a4bd68c7c79e39d156c970e" category="section-title">步驟3：連接系統纜線</block>
-  <block id="f56eb649ef27dab12f2b4eb0a88a0d8a" category="paragraph">根據您的E2800和E5700儲存系統或EF300儲存系統佈線、選擇下列其中一個選項。</block>
-  <block id="6d1579b454943360f37cf77c92fdbd30" category="list-text"><block ref="d2d4be73706180bc7597d299c249d866" category="inline-xref-macro-rx"></block></block>
-  <block id="73a1596c6d50d92b7125c8d88323bace" category="list-text"><block ref="307f269e3c3fe9adffe68a2a198897ec" category="inline-xref-macro-rx"></block></block>
-  <block id="9831b6f8d53301f978e5645721ea5cc8" category="section-title">選項1：連接E2800和E5700的磁碟機櫃</block>
   <block id="628770b160427a4fb650a632638d7a51" category="paragraph">您將磁碟機櫃連接至控制器A、確認IOM狀態、然後將磁碟機櫃連接至控制器B</block>
   <block id="37d23d5b85350384fbdd960e5a148cb3" category="list-text">將磁碟機櫃連接至控制器A</block>
   <block id="243467d3e3a9a5fe56202ff382d14981" category="paragraph">下圖顯示其他磁碟機櫃與控制器A之間的連線範例若要在您的機型上找到連接埠、請參閱<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
@@ -4797,7 +4761,6 @@
   <block id="ebd1f3c2a319b70999092b11ab0edcb6" category="image-alt">Hot e5700 2.</block>
   <block id="7260d6d9ae9fe1625d41a3d42ae918f7" category="list-text">如果尚未選取、請選取「*機架元件設定*」對話方塊中的「* ESM/IOM*」索引標籤、然後選取「*顯示更多選項*」。驗證卡通訊是否為*是*。</block>
   <block id="1eae9337ad28fcd392d68a768a69a453" category="admonition">Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤已解決、且儲存系統已穩定。</block>
-  <block id="f4ff3b64fac713387048943adcb0bfb5" category="section-title">選項2：連接EF300的磁碟機櫃</block>
   <block id="2e769f075fc7c30e7206b0cb5e2b8799" category="list-text">您已將韌體更新為最新版本。若要更新韌體、請遵循中的指示 <block ref="bf6a098eae1df274d91ef498db89d4bb" category="inline-link-macro-rx"></block>。</block>
   <block id="65983bbf5ef58a0867c94fb0138a7307" category="list-text">從IOM12連接埠1和2拔下堆疊中前一個機櫃的兩條A側控制器纜線、然後將它們連接至新的IOM12連接埠1和2。</block>
   <block id="5ec9b6a676f306ce94355634225aba8d" category="image-alt">去除224c側邊</block>
@@ -4912,7 +4875,6 @@
   <block id="fac8dec8997a2b6acc0da0c38c936391" category="list-text">或採取其他防靜電預防措施。</block>
   <block id="4ac60dfd435aae167fae752e804adc62" category="list-text">用於識別新纜線的標籤。如需相容硬體的相關資訊、請參閱<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block> 或<block ref="654b66baa180d1959dc74b2dcae2e81b" category="inline-link-rx"></block>。</block>
   <block id="78e3c7b76bdce29005fd828d203f3811" category="list-text">連接新控制器連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。</block>
-  <block id="57e1256d4794c404d0c7bcf46a11428e" category="section-title">步驟1：驗證新控制器的零件編號</block>
   <block id="189edd72c022821058abae88a6795697" category="paragraph">確認新控制器的零件編號與目前安裝的控制器相同。</block>
   <block id="b116bbca7c5a236cab561a14348c06cc" category="image-alt">28個dwge2800標籤維護e2800</block>
   <block id="b6e156797ee2c8838880295fe99ef9f0" category="paragraph">*（1）*_MAC位址：_管理連接埠1（「P1」）的MAC位址。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。</block>
@@ -5758,9 +5720,7 @@
   <block id="094bf2c199fb9ef7ac29e64a12fd7cad" category="inline-link">VMware NVMe儲存設備的需求與限制</block>
   <block id="8f853bc18ffad192705726f50eff4144" category="list-text"><block ref="6e8a1449bb92590a7f42c1a30534b1da" category="inline-link-rx"></block>。</block>
   <block id="9779d294487414d92ca919d114654e00" category="list-text"><block ref="29363e1f838b703a5f0d926c5c21352a" category="inline-link-rx"></block> 提供ESXi vCenter Server文件。</block>
-  <block id="6e7cc21a437cf9286fc0875901a94774" category="section-title">步驟1：設定FC交換器—VMware</block>
   <block id="fade4bab2fd0f89725f2b63bace4692b" category="admonition">廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如需如何取得HBA公用程式的指示、請參閱廠商網站的支援區段。</block>
-  <block id="00f995e1d9cfe3e72e90c3642382bae8" category="section-title">步驟2：判斷主機連接埠WWPN——FFC</block>
   <block id="47fe6177a7ca4fc05ab663890e75ee90" category="paragraph">若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。</block>
   <block id="f33f5a2f363be35d2aef36d0895f8c7d" category="list-text">使用SSH或ESXi Shell連線至ESXi主機。</block>
   <block id="337d79852891a37d41285c9101c3fff4" category="list-text">執行下列命令：</block>
@@ -5785,7 +5745,6 @@
   <block id="cf8e74e7bc142ae49e8ffacaa17daf8f" category="paragraph">對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。</block>
   <block id="675ea8f932a00b7f3fd1edb5c0ec6225" category="section-title">步驟1：設定NVMe / FC交換器</block>
   <block id="cb55431fe4c81e8d397e92164a617d29" category="paragraph">設定（分區）NVMe over Fibre Channel（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。</block>
-  <block id="1a1c52b433357855334fa98cf2fbdd0f" category="section-title">步驟2：判斷主機連接埠WWPN——VMware的不支援NVMe或FC</block>
   <block id="827459d65b8b2eab53a971a8f467f8a0" category="section-title">步驟3：啟用HBA驅動程式</block>
   <block id="f66805415cd0cc537042c8d56a23a39b" category="paragraph">您必須在Broadcom / Emulex和Marvell / QLogic HBA驅動程式中啟用NVMe支援。</block>
   <block id="50a8286816ecad1bc678a89bc1e2ca6d" category="list-text">從ESXi Shell執行下列其中一個命令：</block>
@@ -5799,9 +5758,7 @@
   <block id="76396d67dd77259021ebf0fb548f01b1" category="inline-link">VMware SATA</block>
   <block id="b727d60f538e12a1454c06e1d11eeb34" category="paragraph">如需詳細資訊、請參閱<block ref="f5138598972e8ce9573784b0e79a74b0" category="inline-link-rx"></block>。</block>
   <block id="d4d1574f3860bf39a465cd31ebecf0e8" category="admonition">對於EF300和EF600、您必須將區塊大小設為512位元組、以確保與VMware相容。如SANtricity 需將Volume設為512位元組的詳細資訊、請參閱《支援功能》線上說明。</block>
-  <block id="7e43b51d16efc204bf64cbc8fd4839e4" category="section-title">步驟1：設定交換器：VMware、iSCSI</block>
   <block id="d55a36a933d309c8f14fd52063711862" category="list-text">兩個獨立的網路提供高可用度。請確定您將iSCSI流量隔離至不同的網路區段。</block>
-  <block id="bb5b71b867bf5283ded7116e41b2e1f0" category="section-title">步驟2：設定網路功能—VMware支援iSCSI</block>
   <block id="1040198bf6f7f968d14e3eb526c9e1f4" category="paragraph">如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成步驟3中的步驟。</block>
   <block id="e3c33c4d6f040ce1b7c6ce6945b882d8" category="paragraph">在規劃iSCSI網路時、請記住<block ref="77dd64a7dc10e62a77dced60fd52828b" category="inline-link-rx"></block> 指南指出支援的iSCSI儲存路徑上限為8。您必須考量此需求、以免設定太多路徑。</block>
   <block id="ecb3eae36555245dd97b57edf925b519" category="paragraph">根據預設、當您不使用iSCSI連接埠繫結時、VMware iSCSI軟體啟動器會針對每個iSCSI目標建立單一工作階段。</block>
@@ -5809,7 +5766,6 @@
   <block id="bcf2befa67a21b602de7c9607a256fdd" category="admonition">VMware iSCSI連接埠繫結是一項功能、可強制所有繫結的VMkernel連接埠登入已設定網路區段上可存取的所有目標連接埠。它用於提供iSCSI目標單一網路位址的陣列。NetApp建議不要使用iSCSI連接埠繫結。如需其他資訊、請參閱<block ref="f51a555352ce97fa9606c6453ba145eb" category="inline-link-rx"></block> 以瞭解有關在ESX/ESXi中使用軟體iSCSI連接埠繫結的考量。如果ESXi主機連接至其他廠商的儲存設備、NetApp建議您使用個別的iSCSI vmkernel連接埠、以避免與連接埠繫結發生衝突。</block>
   <block id="0995e93f2d32176a9594170326076188" category="paragraph">為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。</block>
   <block id="4d58b104819df733df379625cb1928bb" category="paragraph">為確保良好的多重路徑組態、iSCSI網路可使用多個網路區段。在一個網路區段上、至少放置一個主機端連接埠和每個陣列控制器的一個連接埠、並在另一個網路區段上放置一組相同的主機端連接埠和陣列端連接埠。如有可能、請使用多個乙太網路交換器來提供額外的備援。</block>
-  <block id="f7455ef6422846d98816708b27dee294" category="section-title">步驟3：設定陣列端的網路功能：VMware、VMware、VMware</block>
   <block id="7da05d75fd1c28b0ff4d04d30f85aa5b" category="list-text">系統管理員GUI的密碼、或角色型存取控制（RBAC）或LDAP及目錄服務的密碼、已設定為適當的儲存陣列安全存取。如SANtricity 需存取管理的詳細資訊、請參閱《支援系統》線上說明。</block>
   <block id="d112a4595d7d618458e0e407fe3798c1" category="inline-link">《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.x和7.x整合》</block>
   <block id="afc25a4106d05ed660ffe38cacd9e41e" category="admonition">如需有關如何在VMware組態上設定陣列端網路的其他資訊、請參閱下列技術報告：<block ref="2b0010fda48675021938d8a7e0b75245" category="inline-link-rx"></block>。</block>
@@ -5825,7 +5781,6 @@
   <block id="05b5dfc4fb1314c8f84b1aa1f6716ac8" category="list-text">使用兩個NIC連接埠進行iSCSI流量。</block>
   <block id="0e615d5b228749c24eb37ff17dbc56eb" category="list-text">使用vSphere用戶端或vSphere Web用戶端來執行主機端組態。</block>
   <block id="4f2551c8e6a460403dafc0762e48ee59" category="paragraph">介面功能各不相同、實際工作流程也各不相同。</block>
-  <block id="bed1d6d39d380a9f84c5ba4b6c11a167" category="section-title">步驟5：驗證IP網路連線：VMware、iSCSI</block>
   <block id="aa48a9289cf078b654e1ada8ea4e4f11" category="list-text">如果啟用巨型框架、請執行有效負載大小為8、972位元組的ping命令。IP和ICMP的合併標頭為28個位元組、新增至有效負載時、等於9、000個位元組。s交換器會設定「封包大小」位元。d交換器會在IPV4封包上設定DF（請勿分段）位元。這些選項可在iSCSI啟動器與目標之間成功傳輸9、000個位元組的巨型框架。</block>
   <block id="a072d4fc417b223e56d88917611b36f2" category="list-text">從每個主機的啟動器位址（用於iSCSI的主機乙太網路連接埠IP位址）、發出「vmkping」命令至每個控制器iSCSI連接埠。從組態中的每個主機伺服器執行此動作、視需要變更IP位址。</block>
   <block id="32faa9c1177096ed967fa2dc3c231fe6" category="admonition">如果命令失敗並顯示訊息「傳送失敗（訊息太長）」、請確認主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的MTU大小（巨型框架支援）。</block>
@@ -5838,7 +5793,6 @@
   <block id="443d786d0c7508b9a020b93f4475a71c" category="list-text">使用vSphere Client或vSphere Web Client直接連線至vCenter Server或ESXi主機。</block>
   <block id="401cad0ae4bff8b7e90228770a1cf04a" category="list-text">如需如何在ESXi主機上重新掃描儲存設備的指示、請搜尋<block ref="b59d8a8e31498a8c15f36411329cc9e4" category="inline-link-rx"></block> 關於本主題的文章。</block>
   <block id="4182da09b2e38e1306891b2c7db5433d" category="summary">對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。</block>
-  <block id="31e25a16522d6e2086ecfa78b4821b3c" category="section-title">步驟1：判斷SAS主機識別碼—VMware</block>
   <block id="e987e7fa5c9abc75335a066329ba6eaa" category="paragraph">使用HBA公用程式尋找SAS位址、然後使用HBA BIOS進行適當的組態設定。</block>
   <block id="4191e9e13f8a201f560ff4eb7e03a2b8" category="list-text">大多數HBA廠商都提供HBA公用程式。</block>
   <block id="9b8559206ada039cba294689bd60173a" category="paragraph">如需適當的設定、請參閱的「附註」欄<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> 以取得建議。</block>
@@ -6083,7 +6037,6 @@
   <block id="dabaf1be0a9b702645c2034751bb93e4" category="paragraph">最多支援96個SSD 2.5吋磁碟機</block>
   <block id="630bf7189f1f48a3d15afca1b43ffe75" category="section-title">EF300機型</block>
   <block id="d0b7c338ed0be5f3b1669af1d792b13b" category="paragraph">磁碟機與HIC：</block>
-  <block id="fd3993a989139216c6567b19ff6319e8" category="paragraph">每個控制器最多可支援24個NVMe SSD、每個控制器只需一張主機介面卡（HIC）。</block>
   <block id="c4b9deb88d9cf1b1a2160cb28a2c41ca" category="list-text">25GB iSCSI</block>
   <block id="caa2bae7a0bf9eeb472d0be37b3ddb33" category="list-text">32GB NVMe /光纖通道</block>
   <block id="ceec84279e4dcf98176b72979318c9cb" category="list-text">32GB SCSI /光纖通道</block>
@@ -6099,7 +6052,6 @@
   <block id="d5f44c6d91cc30efaab6d46dd6163d11" category="section-title">EF570機型</block>
   <block id="c28c25ae4438c2bd5f4ba6029ca86d13" category="paragraph">最多支援120個SSD 2.5吋磁碟機</block>
   <block id="177e7abf37e275d36b66b48e65ce67fd" category="section-title">EF600機型</block>
-  <block id="167a31a7be26c9816ae2b5c7bec480cc" category="paragraph">最多支援24個NVMe SSD、每個控制器有兩個主機介面卡（HIC）。</block>
   <block id="02e7dbfc793e4b39dcedafabef1c51ea" category="list-text">200GB iSER / IB</block>
   <block id="70b3564018ed1ee2f8101886edc0d765" category="list-text">200GB NVMe / IB</block>
   <block id="3a01d70cdb33efe48884ef541815818b" category="list-text">200GB NVMe / RoCE</block>
@@ -6268,7 +6220,6 @@
   <block id="f53c8aca4a29351426197b65cd5ebc4a" category="paragraph">在初始安裝Web Services Proxy時、會啟用或停用此功能、但您可以在ASUPConfig檔案中變更該設定。AutoSupport</block>
   <block id="0828dd7a23feb7374b137534d8ca660c" category="paragraph">您可以AutoSupport 透過ASUPConfig.xml檔案啟用或停用功能、如下列步驟所述。或者、您也可以使用*組態*和* POST / asup *透過API啟用或停用此功能、然後輸入「true」或「假」。</block>
   <block id="b1421bfcff007d81c137a2b1a26be812" category="list-text">在工作目錄中開啟ASUPConfig.xml檔案。</block>
-  <block id="feb82637a6c110761417be91fc1124d2" category="list-text">找到"&lt;asupdata enabled=""（布林）" timestamp=&gt;"的行</block>
   <block id="6d246a645a6d81f96b7b3d8250715fca" category="list-text">輸入「true」（啟用）或「false」（停用）。例如：</block>
   <block id="2f9941ce39306cfceb39a95b6bd40bfe" category="admonition">時間戳記項目是多餘的。</block>
   <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">儲存檔案。</block>
@@ -6501,9 +6452,7 @@
   <block id="c83a555962427b3fafdbf4afa3ef4e12" category="paragraph">負責硬體資源、故障資料和韌體升級的使用者。此使用者包括下列角色：support.admin和storage。監控。在設定密碼之前、此帳戶會停用。</block>
   <block id="08b5411f848a2581a41672a759c87380" category="paragraph">監控</block>
   <block id="7190d6a7c60ba57f0e040dd38d0f3840" category="paragraph">具有系統唯讀存取權的使用者。此使用者僅包含儲存設備監控角色。在設定密碼之前、此帳戶會停用。</block>
-  <block id="038c0dc8a958ffea17af047244fb6960" category="paragraph">rw</block>
   <block id="06389059e144364d36df5aa491caefa7" category="paragraph">RW（讀取/寫入）使用者包括下列角色：儲存區.admin、support.admin及儲存區.Monitor。在設定密碼之前、此帳戶會停用。</block>
-  <block id="3605c251087b88216c9bca890e07ad9c" category="paragraph">ro</block>
   <block id="f3b685b126aa5da84d79a12555b91220" category="paragraph">RO（唯讀）使用者僅包含儲存設備。監控角色。在設定密碼之前、此帳戶會停用。</block>
   <block id="a7febdf14c9271294814ce07e57de3f2" category="section-title">密碼加密</block>
   <block id="86e5da53020f59199dc5c88501bcd76b" category="paragraph">對於每個密碼、您可以使用現有的SHA256密碼編碼來套用額外的加密程序。這項額外的加密程序會針對每個SHA256雜湊加密、隨機套用一組位元組至每個密碼（SALT）。Salted SHA256加密會套用至所有新建立的密碼。</block>
@@ -8750,10 +8699,8 @@
   <block id="3e0d4696992cb009b792ca52c4080196" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="33c9296cee3d3d5ec5f21b481b8c30ca" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="7f055c1166dd665b0b44651bedc2cbc8" category="list-text">建立子網路管理程式指令碼、作為開機程序的一部分執行一次。</block>
   <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">新增下列行：將您在步驟2中找到的值替換為<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> 和<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。適用於<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> 和<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>的優先順序為：使用子網路管理程式的優先順序、1是最低優先順序、15是最高優先順序。</block>
-  <block id="233a179301cf4de0df435df2eb7e929a" category="list-text">建立名為的systemd服務單元檔案<block ref="c0248303a9c396ef63e7c8d1b55865fa" prefix=" " category="inline-code"></block>。</block>
   <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">新增下列行：</block>
   <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">將新服務通知系統。</block>
-  <block id="053dd33688a35b5cefe88637ff4e2a16" category="list-text">啟用並啟動<block ref="43be3ee7567c2cce7cc16a0555c90bf3" prefix=" " category="inline-code"></block>。</block>
   <block id="941060fc12806a5c3d9302d2624cb774" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12或15個Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
   <block id="7965a5bdacca6ec4414d73846a2effc0" category="doc">建立檔案系統（RHEL 8、RHEL 9、SLES 15）</block>
@@ -8772,7 +8719,6 @@
   <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">對於SLES 15和RHEL 9、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
   <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">RHEL 7和SLES 12在使用NVMe over Fibre Channel時、會使用Device對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
-  <block id="509b37f1b5674ea3fcdd6f53b4a83cb8" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。</block>
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">啟用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 開機時的精靈。</block>
@@ -8798,7 +8744,6 @@
   <block id="e3ef1fa2600da4921ead110fb0d1606b" category="paragraph">顯示的磁碟機特性取決於您選擇的是自動方法或手動方法。如需更多資訊、請參閱SANtricity 《關於系統管理程式的資訊》文件、<block ref="a35ecfb4da00f746430c0cae02d730d0" category="inline-link-rx"></block>。</block>
   <block id="30ec052a906564798e129e10f7d39ab0" category="list-text">VMware vCenter Server設備支援的版本：6.7U3J、7.0U1、7.0U2、7.0U3及8.0。</block>
   <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">支援的應用程式主機版本：Windows 2016、Windows 2019、Windows 2022。</block>
-  <block id="02e5141224b0a2ac9f9a2b07a05b90b3" category="list-text">系統記憶體：512 MB</block>
   <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">安全的磁碟機可以是全磁碟加密（FDE）磁碟機、也可以是聯邦資訊處理標準（FIPS）磁碟機。FIPS磁碟機可以是140-2或140-3級、而層級140-2則是較高的安全層級。如果您混合選擇140-2和140-2層級磁碟機、則集區或Volume群組將會以較低的安全性層級（140-2）運作。</block>
   <block id="1974aafa112f63127faafcfced06eda0" category="list-text">如果您想要建立僅FDE集區、請在「Secure Capable（安全功能）」欄中尋找* Yes - FDE*。如果您要建立僅限FIPS的集區、請尋找*是- FIPS-或*是- FIPS（混合）*。「混合」表示混合使用140-2和140-2級磁碟機。如果混合使用這些層級、請注意集區將會以較低的安全層級（1402）運作。</block>
   <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">11.74版的新功能</block>
@@ -8834,4 +8779,73 @@
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安裝<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用作業系統的套件管理命令來封裝。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">建立名為的systemd服務單元檔案<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">啟用並啟動<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服務：</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
+  <block id="6e45870f8629b562b79da969a290951f" category="section-title">步驟2：判斷主機連接埠WWPNS-NVMe / FC VMware</block>
+  <block id="2f5a12ce7256b2085ffbd47c6ada5cab" category="section-title">步驟1：設定FC交換器- VMware</block>
+  <block id="8177490e8cadc7f4b772200e86180fb2" category="section-title">步驟2：確定主機連接埠WWPNS-FC</block>
+  <block id="20ce9a06abc9195bebe0e59b26293e21" category="section-title">步驟1：設定交換器- iSCSI、VMware</block>
+  <block id="7ffd227cb5a9d8c313e27ae6d4060249" category="section-title">步驟2：設定網路功能- iSCSI VMware</block>
+  <block id="c68a106f59b3a963f6045af07b07b0c6" category="section-title">步驟3：設定陣列端的網路功能- iSCSI、VMware</block>
+  <block id="d8055035001bdb0000b27f355301370e" category="section-title">步驟4：設定主機端網路功能- iSCSI</block>
+  <block id="6a767cf6bee4c3579f40439895fda2b7" category="section-title">步驟5：驗證IP網路連線- iSCSI、VMware</block>
+  <block id="063b0df0c14bee863fd6d206304aaf27" category="section-title">步驟1：判斷SAS主機識別碼- VMware</block>
+  <block id="047294bc09f8ed4e396d9739a1462dab" category="section-title">步驟1：設定FC交換器- Windows</block>
+  <block id="e4211d8cdea679b81e26d9910d042052" category="section-title">步驟2：判斷主機WWPN並進行建議設定- FC、Windows</block>
+  <block id="eec7a038ccdf3e900f836e0ad0064352" category="section-title">步驟1：設定交換器- iSCSI、Windows</block>
+  <block id="86809c62a485c6e1f1cd50f8a442bedc" category="section-title">步驟2：設定網路功能- iSCSI Windows</block>
+  <block id="8d7771526174dcfe25e99ed7f2ec957b" category="section-title">步驟3：設定陣列端的網路功能、例如iSCSI、Windows</block>
+  <block id="5628dcecfdc23242b9050ffd0f4e0ca8" category="section-title">步驟5：驗證IP網路連線- iSCSI、Windows</block>
+  <block id="a26b6112f0f78db7ee6507f0fe0deaeb" category="section-title">步驟6：記錄您的組態</block>
+  <block id="3e2fccfcb2c1e5332c5dbf8b36d7aa80" category="section-title">步驟1：判斷SAS主機識別碼- Windows</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="a6157a9850788d9c0341e93d5f79de31" category="summary">vCenter外掛程式的安裝與升級需求與考量。</block>
+  <block id="d4dbf4915d26814b90635132e02de3a1" category="paragraph">在安裝或升級SANtricity 適用於vCenter的VMware vCenter儲存外掛程式之前、請先檢閱安裝需求和升級考量事項。</block>
+  <block id="dbb4458edca7c5733da82369529b938e" category="paragraph">您可以在Windows主機系統上安裝及設定vCenter的儲存外掛程式。外掛程式安裝包括下列需求：</block>
+  <block id="2e5d14f7919ff3c6138e7845aec4f915" category="paragraph">支援的版本</block>
+  <block id="b41bb59cbbaa2802af53d977c440f2c8" category="paragraph">如需相容性的詳細資訊、請參閱<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
+  <block id="361484a234b118c769c841cb7b8351d8" category="paragraph">您只能在Windows主機上安裝一個Storage Plugin for vCenter執行個體、而且只能將其登錄至一個vCSA。</block>
+  <block id="11b02af429676c3e4ef0b14f72c58b44" category="paragraph">vCenter的儲存外掛程式需要足夠的空間來執行和記錄。請確定您的系統符合下列可用磁碟空間需求：</block>
+  <block id="5f5fc15545b1dee5b3f1c2ee92f47de0" category="list-text">所需安裝空間—275 MB</block>
+  <block id="9bcf5bd8266f8eea99112a520f67ad79" category="list-text">儲存空間—275 MB + 200 MB（記錄）</block>
+  <block id="4cdb1974fd7f08cb281a8396b499d8f7" category="list-text">系統記憶體—512 MB</block>
+  <block id="206c0580c23a54528ad2d285e97454b4" category="paragraph">vCenter的儲存外掛程式是免費的獨立式產品、不需要授權金鑰。然而、適用的版權與服務條款仍適用。</block>
+  <block id="cdd47ce62ae0283ba81fbbfac98aa0be" category="paragraph">如果您要從舊版升級、請注意、在升級之前、必須從vCSA取消註冊外掛程式。</block>
+  <block id="167e9fb1b11b78bdc503cae6390a6818" category="list-text">在升級期間、大部分的外掛程式先前的組態設定都會保留下來。這些設定包括使用者密碼、所有探索到的儲存系統、伺服器憑證、信任的憑證、以及伺服器執行時間組態。</block>
+  <block id="4dcf1264688d388f8c1ead31971aded6" category="list-text">升級程序不會保留* vcenter.properties*檔案、因此您必須在升級前取消登錄外掛程式。一旦升級成功、您就可以再次將外掛程式登錄至vCSA。</block>
+  <block id="23d80e8f2ebb14976e8d910eea4d386b" category="list-text">先前載入儲存庫中的所有支援功能檔案、都SANtricity 會在升級期間移除。</block>
+  <block id="2e7d2097c91ceed4e818c5518afa994a" category="summary">安裝或升級SANtricity 適用於vCenter的《The VMware vCenter儲存外掛程式》。</block>
+  <block id="259aa472928a9297b2dc9f3f8b125b3b" category="doc">安裝或升級vCenter的儲存外掛程式</block>
+  <block id="3b840adf9a5dcc09c69daab725b7c465" category="paragraph">請依照下列步驟安裝vCenter的儲存外掛程式、並驗證外掛程式登錄。您也可以使用這些指示來升級外掛程式。</block>
+  <block id="bda87156c434adbda0ab9a9dfdf4203c" category="paragraph">請確定您的系統符合中的要求 <block ref="20ce28c64503bb775dd7ac22c0aadd0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="84f59f102df96e2886b696e130b28443" category="admonition">升級程序不會保留* vcenter.properties*檔案。如果您要升級、則必須在升級前取消登錄外掛程式。一旦升級成功、您就可以再次將外掛程式登錄至vCSA。</block>
+  <block id="a2c33f0d50276fb56d5066c659a36281" category="list-text">安裝開始時、請依照畫面上的提示啟用多項功能、並輸入一些組態參數。如有必要、您可以稍後在組態檔中變更這些選項。</block>
+  <block id="685fd8088c2b843b61f4afa2c0588163" category="admonition">在升級期間、系統不會提示您輸入組態參數。</block>
+  <block id="5a71fa4a4c3dcb9f7fb7866f2d54b837" category="admonition">安裝期間、系統會提示您進行憑證驗證。如果您要在外掛程式與儲存陣列之間強制執行憑證驗證、請保持核取方塊的選取狀態。在這項強制措施下、儲存陣列憑證會根據外掛程式加以檢查、以確保可信。如果憑證不受信任、則不允許將其新增至外掛程式。如果您要置換憑證驗證、請取消選取核取方塊、以便使用自我簽署的憑證將所有儲存陣列新增至外掛程式。若要深入瞭解憑證、請參閱外掛程式介面提供的線上說明。</block>
+  <block id="9aa965893e984bad2c9729b6444a575c" category="list-text">出現Webserver started（Webserver已啟動）訊息時、按一下* OK（確定）*完成安裝、然後按一下* DOU*（*完成）。</block>
+  <block id="127bf35b11d9e63d1023ec8556d4bcaf" category="admonition">外掛程式一次只能登錄到一個vCSA。若要登錄至不同的vCSA、您必須從目前的vCSA中取消登錄外掛程式、然後從應用程式主機解除安裝。然後您可以重新安裝外掛程式、並將其登錄至其他vCSA。</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">接下來呢？</block>
+  <block id="6d4f7aaea60249778cba2f48ab44265c" category="list-text">找出&lt;asupdata enable="Boolean_value" timestamp="timestamp"&gt; 要使用的線路</block>
+  <block id="9f8389aeec49fcf74df4811ae74671bb" category="paragraph">RW（舊陣列的舊版）</block>
+  <block id="da4eb5c5c70275ba4c87430e9eb2caa1" category="paragraph">RO（舊陣列的舊版）</block>
+  <block id="520ae3e14dc7dcddbce514f73ae5f9c9" category="doc">安裝或升級Web Services Proxy檔案</block>
+  <block id="f036aa96cb85f83dc2dad71a70ca9ab9" category="paragraph">安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。您也可以依照下列指示升級Proxy。</block>
+  <block id="9ab5a43912057c3f252ae0aa5ffafa08" category="paragraph">每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：</block>
+  <block id="d7873c5a31e9fb583fb911435316e255" category="list-text">NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。</block>
+  <block id="99017918290ad98fceaa8544139404ea" category="list-text">含擴充磁碟櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過240個NL-SAS磁碟機插槽與4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、4個DE460C磁碟櫃或8個DE212C磁碟櫃、或2個DE460C磁碟櫃加上2個DE212磁碟櫃。</block>
+  <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、不得超過96個SAS SSD磁碟機插槽和4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
+  <block id="d4f4328db6f2e4f903874bc046fd613f" category="list-text">含擴充櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過420個NL-SAS磁碟機插槽與7個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、7個DE460C磁碟櫃或8個DE212C磁碟櫃、或5個DE460C磁碟櫃加上2個DE212磁碟櫃。</block>
+  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
+  <block id="731e4c243221cff11b35e735d54a097c" category="section-title">雙柱機架- 2U</block>
+  <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">四柱機架或機櫃- 2U</block>
+  <block id="f7e582702fa43947010600df41688562" category="section-title">四柱式機架：超級軌道</block>
+  <block id="88587640720455d00dd679a1ce9fe099" category="paragraph-title">範例A：E2860控制器機櫃、標準SAS組態中有兩個DE460C磁碟櫃。</block>
+  <block id="5e2cc996382bb24824986ff473c63abc" category="paragraph-title">範例B：E2860控制器機櫃、標準SAS組態中有一個DE460C磁碟櫃。</block>
+  <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">範例A：E5700控制器機櫃採用標準SAS組態、具有三個DE212C/DE224磁碟櫃。</block>
+  <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">範例B：E5700控制器機櫃、標準SAS組態中有一個DE212C/DE224磁碟櫃。</block>
+  <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">步驟1：驗證新控制器的零件編號</block>
+  <block id="80517d3f6b5fb7efb65f606eaba16467" category="paragraph">此程序適用於熱新增DE212C、DE224C或DE460C磁碟機櫃至E2800、E2800B、EF280、E5700、E5700B、EF570、EF300或EF600控制器機櫃。</block>
+  <block id="8a8126e8cdb353719a24e8201a310aee" category="list-text"><block ref="5b1d5e9837fad271f198b7479454fb9a" category="inline-xref-macro-rx"></block></block>
+  <block id="294b3397fedca884072c918fc613f61d" category="list-text"><block ref="b1d2c45bc75ed5d4a6faa0261f1569e8" category="inline-xref-macro-rx"></block></block>
+  <block id="04c5c6e14f0bbd925f3877a16bc2c6a5" category="section-title">選項1：連接E2800或E5700的磁碟機櫃</block>
+  <block id="3519a93182c0883a5ee2951208ede7c9" category="section-title">選項2：連接EF300或EF600的磁碟機櫃</block>
 </blocks>

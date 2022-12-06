@@ -18,6 +18,7 @@ summary: 將每個元件的電源供應器連接至獨立的電源電路。
 * 兩個機櫃電源供應器上的兩個電源開關必須關閉。
 
 
+.關於這項工作
 儲存系統的電源必須能夠滿足新磁碟機櫃的電源需求。如需儲存系統耗電量的相關資訊、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 .步驟

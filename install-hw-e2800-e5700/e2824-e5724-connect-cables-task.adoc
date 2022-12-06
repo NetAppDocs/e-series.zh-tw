@@ -45,6 +45,7 @@ image:../media/sas_cable.png[""]
 
 |===
 +
+.範例A：E5700控制器機櫃採用標準SAS組態、具有三個DE212C/DE224磁碟櫃。
 image:../media/example_a_28_57.png[""]
 
 +
@@ -57,6 +58,7 @@ image:../media/example_a_28_57.png[""]
 
 
 +
+.範例B：E5700控制器機櫃、標準SAS組態中有一個DE212C/DE224磁碟櫃。
 image:../media/example_b_57_28.png[""]
 
 +

@@ -24,18 +24,18 @@ summary: 機架安裝硬體。
 
 
 
-== 雙柱機架—2U
+== 雙柱機架- 2U
 
 存取 https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["將2U設備安裝到雙柱機架中"^]。
 
 
 
-== 四柱機架或機櫃—2U
+== 四柱機架或機櫃- 2U
 
 存取 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["在四柱機架或機櫃中安裝2U 12個磁碟機機箱"^]。
 
 
 
-== 四柱機架—超級軌道
+== 四柱式機架：超級軌道
 
 存取 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["將超級滑軌安裝至四柱機架（DE224C/DE460C機櫃）"^]。

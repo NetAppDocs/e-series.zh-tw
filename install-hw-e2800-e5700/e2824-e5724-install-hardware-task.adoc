@@ -13,6 +13,7 @@ summary: 在雙柱機架或NetApp系統機櫃中安裝E2800或E5700。
 [role="lead"]
 瞭解如何安裝E5724、EF570、EF280、E2812、E2824、 DE212C或DE224C儲存系統、位於雙柱機架或NetApp系統機櫃中。
 
+.開始之前
 在安裝硬體之前、請務必執行下列動作：
 
 * 請至以下網址註冊硬體： http://mysupport.netapp.com/["mysupport.netapp.com"^]。

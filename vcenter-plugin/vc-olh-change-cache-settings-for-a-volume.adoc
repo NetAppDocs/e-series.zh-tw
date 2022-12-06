@@ -17,6 +17,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 [role="lead"]
 您可以變更讀取快取和寫入快取設定、以影響磁碟區的整體I/O效能。
 
+.關於這項工作
 變更磁碟區的快取設定時、請謹記以下準則：
 
 * 開啟「變更快取設定」對話方塊之後、您可能會看到所選快取內容旁顯示的圖示。此圖示表示控制器已暫停快取作業。當新電池正在充電、控制器已移除、或控制器偵測到快取大小不相符時、可能會發生此動作。清除條件之後、對話方塊中選取的快取內容就會變成作用中。如果所選的快取內容未啟用、請聯絡技術支援部門。
@@ -33,6 +34,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 . 選取*基礎*索引標籤、以變更讀取快取和寫入快取的設定。
 +
 .欄位詳細資料
+[%collapsible]
 ====
 [cols="25h,~"]
 |===
@@ -48,6 +50,7 @@ keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter
 . 選取*進階*索引標籤以變更大型磁碟區的進階設定。進階快取設定僅適用於厚磁碟區。
 +
 .欄位詳細資料
+[%collapsible]
 ====
 [cols="25h,~"]
 |===

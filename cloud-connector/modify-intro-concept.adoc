@@ -20,6 +20,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 您可以在SANtricity 「S3帳戶設定」視窗中修改現有的S3設定、以供使用。
 
+.開始之前
 修改URL或S3 Bucket Label設定時、請注意、透過SANtricity 該解決方案設定的任何現有備份、都會受到影響。
 
 .步驟
@@ -91,6 +92,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 您可以在SANtricity 「Web服務Proxy設定」視窗中修改現有的「Web服務Proxy」應用程式的「Web服務Proxy」設定。
 
+.開始之前
 搭配使用的Web Services Proxy SANtricity 需要新增適當的陣列、並設定相應的密碼。
 
 .步驟

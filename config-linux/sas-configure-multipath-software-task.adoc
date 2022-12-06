@@ -13,6 +13,7 @@ summary: 設定多重路徑軟體、以便在其中一個實體路徑中斷時�
 [role="lead"]
 若要提供儲存陣列的備援路徑、您可以設定多重路徑軟體。
 
+.您需要的產品
 您必須在系統上安裝所需的套件。
 
 * 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝。
@@ -21,6 +22,7 @@ summary: 設定多重路徑軟體、以便在其中一個實體路徑中斷時�
 
 如果您尚未安裝作業系統、請使用作業系統廠商提供的媒體。
 
+.關於這項工作
 多重路徑軟體可在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。多重路徑軟體為作業系統提供單一虛擬裝置、代表儲存設備的作用中實體路徑。多重路徑軟體也會管理更新虛擬裝置的容錯移轉程序。
 
 您可以使用裝置對應器的多重路徑（DM-MP）工具進行Linux安裝。根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。
@@ -60,7 +62,7 @@ dracut --force --add multipath
 +
 例如、grub是指「/boot/grub / menu.lst」、而grub2則是「/boot/grub2/menu.cfg'」。
 
-. 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手動建立主機"] 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 ,步驟4.。
+. 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手動建立主機"] 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 <<step4,步驟4.>>。
 
 
 

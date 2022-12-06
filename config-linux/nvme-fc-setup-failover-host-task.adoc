@@ -13,12 +13,14 @@ summary: 設定主機執行容錯移轉。
 [role="lead"]
 若要提供儲存陣列的備援路徑、您可以設定主機執行容錯移轉。
 
+.您需要的產品
 您必須在系統上安裝所需的套件。
 
 * 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝
 * 對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝
 
 
+.關於這項工作
 RHEL 7和SLES 12在使用NVMe over Fibre Channel時、會使用Device對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。
 
 
@@ -67,6 +69,7 @@ devices {
 
 == 為RHEL 8設定原生NVMe多路徑
 
+.關於這項工作
 原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列步驟啟用。
 
 .步驟

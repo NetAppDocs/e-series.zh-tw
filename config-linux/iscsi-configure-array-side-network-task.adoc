@@ -14,11 +14,12 @@ summary: 在陣列端設定iSCSI網路。
 [role="lead"]
 您可以使用SANtricity 支援支援系統的圖形使用者介面、在陣列端設定iSCSI網路。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 其中一個儲存陣列控制器的IP位址或網域名稱。
 * System Manager GUI、角色型存取控制（RBAC）或LDAP的密碼、以及為儲存陣列的適當安全存取設定的目錄服務。如SANtricity 需存取管理的詳細資訊、請參閱《支援系統》線上說明。
 
 
+.關於這項工作
 本工作說明如何從System Manager的「Hardware（硬體）」頁面存取iSCSI連接埠組態。您也可以從功能表：系統[設定>設定iSCSI連接埠]存取組態。
 
 .步驟

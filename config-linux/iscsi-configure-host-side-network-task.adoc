@@ -13,6 +13,7 @@ summary: 在主機端設定iSCSI網路。
 [role="lead"]
 若要設定主機端網路、您必須執行數個步驟。
 
+.關於這項工作
 您可以在主機端設定iSCSI網路、方法是設定每個實體路徑的節點工作階段數目、開啟適當的iSCSI服務、設定iSCSI連接埠的網路、建立iSCSI介面繫結、以及在啟動器和目標之間建立iSCSI工作階段。
 
 在大多數情況下、您可以使用內建的軟體啟動器來執行iSCSI CNA/NIC。您不需要下載最新的驅動程式、韌體和BIOS。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以判斷程式碼需求。

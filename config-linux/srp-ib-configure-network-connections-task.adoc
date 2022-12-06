@@ -13,6 +13,7 @@ summary: 如果您的組態使用SRP over Infiniband傳輸協定、請遵循本�
 [role="lead"]
 如果您的組態使用SRP over Infiniband傳輸協定、請遵循本節中的步驟。
 
+.您需要的產品
 若要將Linux主機連線至儲存陣列、您必須使用適當的選項來啟用InfiniBand驅動程式堆疊。Linux套裝作業系統的特定設定可能有所不同。請檢查 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得解決方案的特定指示和其他建議設定。
 
 .步驟

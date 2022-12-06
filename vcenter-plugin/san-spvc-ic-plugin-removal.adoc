@@ -24,8 +24,8 @@ summary: 移除vCenter的外掛程式。
 
 若要從vCenter Server Appliance取消登錄外掛程式、請選取下列其中一種方法：
 
-*  1: Execute the registration script
-*  2: Use the vCenter Server Mob pages
+* <<方法1：執行登錄指令碼>>
+* <<方法2：使用vCenter Server Mob頁面>>
 
 
 

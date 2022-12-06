@@ -692,4 +692,5 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[Sam11330 s
 
 
 
+.接下來呢？
 前往 link:hpp-complete-protocol-conversion-task.html["完整的主機傳輸協定轉換"]。

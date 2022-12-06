@@ -19,7 +19,7 @@ summary: 在Linux Express方法中安裝適用於CLI和HCA的Storage Manager。
 
 NOTE: 如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需更多關於如何透過SANtricity 「支援系統管理程式」下載SMcli的資訊、請參閱SANtricity 《支援服務》（英文）下方的「下載命令列介面（CLI）」主題。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 軟件11.53或更早版本。SANtricity
 * 正確的系統管理員或超級使用者權限。
 * 適用於下列最低需求的系統：SANtricity
@@ -31,6 +31,7 @@ NOTE: 如果您使用SANtricity 的是版本11.60及更新版本的更新版本�
 
 
 
+.關於這項工作
 本工作說明如何在SANtricity Windows和Linux作業系統平台上安裝支援資料儲存管理程式、因為當資料主機使用Linux時、Windows和Linux都是通用的管理工作站平台。
 
 .步驟

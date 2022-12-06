@@ -106,7 +106,7 @@ WebService-profile.json
 您可以AutoSupport 透過ASUPConfig.xml檔案啟用或停用功能、如下列步驟所述。或者、您也可以使用*組態*和* POST / asup *透過API啟用或停用此功能、然後輸入「true」或「假」。
 
 . 在工作目錄中開啟ASUPConfig.xml檔案。
-. 找到"<asupdata enabled=""（布林）" timestamp=>"的行
+. 找出<asupdata enable="Boolean_value" timestamp="timestamp"> 要使用的線路
 . 輸入「true」（啟用）或「false」（停用）。例如：
 +
 [listing]

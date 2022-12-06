@@ -1,0 +1,73 @@
+---
+permalink: vcenter-plugin/san-spvc-ic-reqs.html 
+sidebar: sidebar 
+keywords: upgrade vCenter 
+summary: vCenter外掛程式的安裝與升級需求與考量。 
+---
+= 檢閱安裝與升級需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安裝或升級SANtricity 適用於vCenter的VMware vCenter儲存外掛程式之前、請先檢閱安裝需求和升級考量事項。
+
+
+
+== 安裝需求
+
+您可以在Windows主機系統上安裝及設定vCenter的儲存外掛程式。外掛程式安裝包括下列需求：
+
+[cols="35h,~"]
+|===
+| 需求 | 說明 
+
+
+ a| 
+支援的版本
+ a| 
+* VMware vCenter Server設備支援的版本：6.7U3J、7.0U1、7.0U2、7.0U3及8.0。
+* NetApp SANtricity 作業系統版本：11.60.2或更新版本
+* 支援的應用程式主機版本：Windows 2016、Windows 2019、Windows 2022。
+
+
+如需相容性的詳細資訊、請參閱 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+ a| 
+多個執行個體
+ a| 
+您只能在Windows主機上安裝一個Storage Plugin for vCenter執行個體、而且只能將其登錄至一個vCSA。
+
+
+
+ a| 
+容量規劃
+ a| 
+vCenter的儲存外掛程式需要足夠的空間來執行和記錄。請確定您的系統符合下列可用磁碟空間需求：
+
+* 所需安裝空間—275 MB
+* 儲存空間—275 MB + 200 MB（記錄）
+* 系統記憶體—512 MB
+
+
+
+
+ a| 
+授權
+ a| 
+vCenter的儲存外掛程式是免費的獨立式產品、不需要授權金鑰。然而、適用的版權與服務條款仍適用。
+
+|===
+
+
+== 升級考量
+
+如果您要從舊版升級、請注意、在升級之前、必須從vCSA取消註冊外掛程式。
+
+* 在升級期間、大部分的外掛程式先前的組態設定都會保留下來。這些設定包括使用者密碼、所有探索到的儲存系統、伺服器憑證、信任的憑證、以及伺服器執行時間組態。
+* 升級程序不會保留* vcenter.properties*檔案、因此您必須在升級前取消登錄外掛程式。一旦升級成功、您就可以再次將外掛程式登錄至vCSA。
+* 先前載入儲存庫中的所有支援功能檔案、都SANtricity 會在升級期間移除。
+

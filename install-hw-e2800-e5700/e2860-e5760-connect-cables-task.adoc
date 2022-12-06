@@ -45,6 +45,7 @@ image:../media/sas_cable.png[""]
 
 |===
 +
+.範例A：E2860控制器機櫃、標準SAS組態中有兩個DE460C磁碟櫃。
 image:../media/example_a_2860.png[""]
 
 +
@@ -55,6 +56,7 @@ image:../media/example_a_2860.png[""]
 
 
 +
+.範例B：E2860控制器機櫃、標準SAS組態中有一個DE460C磁碟櫃。
 image:../media/example_b_2860.png[""]
 
 +

@@ -13,9 +13,9 @@ summary: 如果您的控制器升級導致廠商ID從LSI變更為NetApp、您就
 [role="lead"]
 如果您的控制器升級導致廠商ID從LSI變更為NetApp、請依照您主機類型的適當程序進行：
 
-*  volumes on an AIX host
-*  volumes on a VMware host
-*  volumes on a Windows host
+* <<在AIX主機上重新掛載磁碟區>>
+* <<在VMware主機上重新掛載磁碟區>>
+* <<在Windows主機上重新掛載磁碟區>>
 
 
 
@@ -24,6 +24,7 @@ summary: 如果您的控制器升級導致廠商ID從LSI變更為NetApp、您就
 
 更換控制器之後、您可能會發現主機在儲存陣列上顯示新的磁碟區、但也會將原始磁碟區顯示為故障。
 
+.步驟
 如果出現故障磁碟區、請執行「cfgmgr'」命令。
 
 

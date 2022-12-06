@@ -22,11 +22,12 @@ summary: 若要在vCenter的儲存外掛程式中顯示及管理儲存資源、�
 * 儲存陣列密碼必須使用System Manager的「存取管理」方塊來設定。
 
 
+.關於這項工作
 陣列探索是一個多步驟程序：
 
-*  1: Enter network addresses for discovery
-*  2: Resolve untrusted certificates during discovery
-*  3: Provide passwords
+* <<步驟1：輸入網路位址進行探索>>
+* <<步驟2：在探索期間解析不受信任的憑證>>
+* <<步驟3：提供密碼>>
 
 
 
@@ -59,7 +60,7 @@ NOTE: 如果未找到可管理的陣列、請確認儲存陣列已正確連線�
 系統會對您要新增至管理網域的每個陣列執行認證檢查。您可能需要先解決不受信任憑證的任何問題、然後再繼續。
 
 . 單擊*下一步*繼續執行精靈中的下一步。
-. 如果儲存陣列擁有有效的憑證、請前往  3: Provide passwords。如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊會出現、請前往  2: Resolve untrusted certificates during discovery。如果您要匯入CA簽署的憑證、請從探索對話方塊中取消、然後前往 link:vc-olh-import-certificates-for-arrays.html["匯入陣列的憑證"]。
+. 如果儲存陣列擁有有效的憑證、請前往 <<步驟3：提供密碼>>。如果任何儲存陣列沒有有效的憑證、「解析自我簽署的憑證」對話方塊會出現、請前往 <<步驟2：在探索期間解析不受信任的憑證>>。如果您要匯入CA簽署的憑證、請從探索對話方塊中取消、然後前往 link:vc-olh-import-certificates-for-arrays.html["匯入陣列的憑證"]。
 
 
 
@@ -95,6 +96,7 @@ NOTE: 如果未找到可管理的陣列、請確認儲存陣列已正確連線�
 
 NOTE: 系統連線至指定的儲存陣列可能需要數分鐘的時間。
 
+.結果
 儲存陣列會新增至您的管理網域、並與選取的群組相關聯（若有指定）。
 
 

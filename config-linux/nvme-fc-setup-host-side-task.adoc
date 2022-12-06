@@ -13,6 +13,7 @@ summary: Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe C
 [role="lead"]
 Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。
 
+.關於這項工作
 下列程序適用於使用Broadcom Emulex或支援QLogic NVMe/FC的FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。如需這些作業系統或HBA支援哪些版本的詳細資訊、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 
 .步驟

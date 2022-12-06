@@ -22,6 +22,7 @@ summary: 完成E5700主機傳輸協定轉換。
 
 如果您先前有FC主機連接埠、但轉換成iSCSI、則可能需要修改現有的組態以支援iSCSI。下列程序僅適用於不存在iSCSI HIC的情況。
 
+.關於這項工作
 只有在轉換已使用的儲存陣列時、此工作才適用。
 
 如果您要轉換尚未定義主機和磁碟區的新儲存陣列、則此工作不適用。如果您已轉換新儲存陣列的主機連接埠傳輸協定、請參閱 link:../install-hw-cabling/index.html["佈線程序"] 安裝纜線和SFP。然後依照中的指示進行 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"] 以完成每個傳輸協定的設定。
@@ -67,6 +68,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[Sam113
 . 重新掛載Volume或開始使用區塊Volume。
 
 
+.接下來呢？
 您的主機傳輸協定轉換已完成。您可以恢復正常作業。
 
 
@@ -112,6 +114,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[Sam113
 . 重新掛載Volume或開始使用區塊Volume。
 
 
+.接下來呢？
 您的主機傳輸協定轉換已完成。您可以恢復正常作業。
 
 
@@ -131,4 +134,5 @@ Linux套裝作業系統的特定設定可能有所不同。請檢查 http://mysu
 
 
 
+.接下來呢？
 您的主機傳輸協定轉換已完成。您可以恢復正常作業。

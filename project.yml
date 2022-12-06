@@ -741,6 +741,8 @@ sidebar:
         url: "/vcenter-plugin/san-spvc-ic-overview.html"
       - title: 開始使用
         entries:
+        - title: 檢閱要求
+          url: "/vcenter-plugin/san-spvc-ic-reqs.html"
         - title: 安裝外掛程式
           url: "/vcenter-plugin/san-spvc-ic-installation.html"
         - title: 設定存取權限

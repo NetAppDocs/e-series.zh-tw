@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。 
 ---
-= 下載並安裝Web Services Proxy檔案
+= 安裝或升級Web Services Proxy檔案
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。
+安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。您也可以依照下列指示升級Proxy。
 
 
 
@@ -66,6 +66,10 @@ summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上�
 +
 安裝期間、系統會提示您啟用多項功能、並輸入一些組態參數。如有必要、您可以稍後在組態檔中變更這些選項。
 
++
+
+NOTE: 在升級期間、系統不會提示您輸入組態參數。
+
 . 出現Webserver started（Webserver已啟動）訊息時、按一下「* OK（確定）*」以完成安裝。
 +
 此時將顯示Install Complete（安裝完成）對話框。
@@ -94,6 +98,10 @@ NOTE: 若要在安裝程序期間隨時取消安裝、請在命令提示字元�
 . 依照螢幕上的提示進行。
 +
 安裝期間、系統會提示您啟用多項功能、並輸入一些組態參數。如有必要、您可以稍後在組態檔中變更這些選項。
+
++
+
+NOTE: 在升級期間、系統不會提示您輸入組態參數。
 
 . 安裝完成後、請按* Enter *退出安裝程式。
 
