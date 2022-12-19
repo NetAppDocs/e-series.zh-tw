@@ -502,9 +502,9 @@ sidebar:
         - title: 總覽與需求
           url: "/maintenance-ef600/drives-overview-supertask-concept.html"
         - title: 更換EF300磁碟機
-          url: "/maintenance-ef600/drives-replace-EF300-task.html"
+          url: "/maintenance-ef600/drives-replace-EF300-supertask-task.html"
         - title: 更換EF600磁碟機
-          url: "/maintenance-ef600/drives-replace-supertask-task.html"
+          url: "/maintenance-ef600/drives-replace-EF600-supertask-task.html"
         - title: 熱新增磁碟機櫃
           url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: 風扇
