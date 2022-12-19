@@ -1,13 +1,5 @@
----
-permalink: install-hw-cabling/hotadd-drive-shelf-task.html 
-sidebar: sidebar 
-keywords: cabling, cables, hot add, hot add drive shelf, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
-summary: 新增磁碟機櫃、但其他元件仍有電力。 
----
-= 熱新增磁碟機櫃
+= 步驟1：準備新增磁碟機櫃
 :allow-uri-read: 
-:icons: font
-:imagesdir: ../media/
 
 
 [role="lead"]

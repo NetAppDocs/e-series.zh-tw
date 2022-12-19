@@ -505,6 +505,8 @@ sidebar:
           url: "/maintenance-ef600/drives-replace-EF300-task.html"
         - title: 更換EF600磁碟機
           url: "/maintenance-ef600/drives-replace-supertask-task.html"
+        - title: 熱新增磁碟機櫃
+          url: "/maintenance-ef600/drives-hotadd-drive-shelf-task.html"
       - title: 風扇
         pdf-filename: EF300-EF600維持風扇運轉
         entries:
@@ -598,6 +600,8 @@ sidebar:
           url: "/maintenance-e2800/drives-60-replace-task.html"
         - title: 更換磁碟機抽屜（60個磁碟機）
           url: "/maintenance-e2800/drives-60-supertask-task.html"
+        - title: 熱新增磁碟機櫃
+          url: "/maintenance-e2800/drives-hotadd-drive-shelf-task.html"
       - title: 主機介面卡
         pdf-filename: E2800維護HIC
         entries:
@@ -659,6 +663,8 @@ sidebar:
           url: "/maintenance-e5700/drives-60-replace-task.html"
         - title: 更換磁碟機抽屜（60個磁碟機）
           url: "/maintenance-e5700/drives-drawer-supertask-task.html"
+        - title: 熱新增磁碟機櫃
+          url: "/maintenance-e5700/drives-hotadd-drive-shelf-task.html"
       - title: 主機介面卡
         pdf-filename: E5700維護HIC
         entries:
