@@ -14,7 +14,7 @@ summary: RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NV
 RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套件、設定啟動器IP位址、以及在主機上設定NVMe層。
 
 .您需要的產品
-您必須執行最新的相容RHEL 7、RHEL 8及RHEL 9 SUSE Linux Enterprise Server 12及15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
+您必須執行最新的相容RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得最新需求的完整清單。
 
 .步驟
 . 安裝RDMA和NVMe-CLI套件：
@@ -37,6 +37,23 @@ RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套
 
 # yum install rdma-core
 # yum install nvme-cli
+----
+. 對於RHEL 8和RHEL 9、請安裝網路指令碼：
++
+* RHEL 8*
+
++
+[listing]
+----
+# yum install network-scripts
+----
++
+* RHEL 9*
+
++
+[listing]
+----
+# yum install NetworkManager-initscripts-updown
 ----
 . 取得用於將主機設定為陣列的主機NQN。
 +
@@ -86,7 +103,7 @@ REMOTE_IPADDR=
 STARTMODE='auto'
 ----
 +
-* RHEL 7、RHEL 8及RHEL 9*
+* RHEL 7或RHEL 8*
 
 +
 使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。
@@ -121,6 +138,61 @@ NAME='MT27800 Family [ConnectX-5]'
 NETWORK=
 REMOTE_IPADDR=
 STARTMODE='auto'
+----
++
+* RHEL 9*
+
++
+使用 `nmtui` 用於啟動和編輯連線的工具。以下是範例檔案 `/etc/NetworkManager/system-connections/eth4.nmconnection` 此工具將產生：
+
++
+[listing]
+----
+
+[connection]
+id=eth4
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth4
+
+[ethernet]
+mtu=4200
+
+[ipv4]
+address1=192.168.1.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
+----
++
+以下是範例檔案 `/etc/NetworkManager/system-connections/eth5.nmconnection` 此工具將產生：
+
++
+[listing]
+----
+
+[connection]
+id=eth5
+uuid=<unique uuid>
+type=ethernet
+interface-name=eth5
+
+[ethernet]
+mtu=4200
+
+[ipv4]
+address1=192.168.2.87/24
+method=manual
+
+[ipv6]
+addr-gen-mode=default
+method=auto
+
+[proxy]
 ----
 . 啟用網路介面：
 +

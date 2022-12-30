@@ -8728,7 +8728,6 @@
   <block id="8e11cf4b8ef8251a1517afd1c236dd0f" category="paragraph">此命令的結果可用於尋找相關的裝置<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下範例為<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
   <block id="1d17dd3572733d46cea446a1f0d4ef11" category="list-text">在上記錄啟動器的GUID <block ref="c3a1c379b3d644ae20d101147cd0dfd9" category="inline-xref-macro-rx"></block>。</block>
   <block id="cdbf7b73734bd4442fcc96a6195b7a15" category="paragraph">* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL 9）*</block>
-  <block id="04d05aed6c7b8c4bb3939966572e118e" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8及RHEL 9 SUSE Linux Enterprise Server 12及15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8及RHEL 9*</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">執行multipath-ll命令以取得NVMe裝置清單。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上記錄啟動器的GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
@@ -8849,4 +8848,11 @@
   <block id="f2ad0f8f286ab81e3d2722fa3c383e9b" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12B之前、請先確認您的控制器韌體已更新。</block>
   <block id="562b06bc197dd94e4462675caa7022b0" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12B之前、請先確認控制器的韌體已更新。</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">熱新增磁碟機櫃</block>
+  <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
+  <block id="889869e1d3bab19951bb91f386d721de" category="list-text">對於RHEL 8和RHEL 9、請安裝網路指令碼：</block>
+  <block id="8b8d5d75fe765c0900e1083326e233eb" category="paragraph">* RHEL 8*</block>
+  <block id="40ae81b37293ba1a886134269b1c76e5" category="paragraph">* RHEL 9*</block>
+  <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7或RHEL 8*</block>
+  <block id="8ce810d5ab2863c317f14fafb62a5090" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="a8490166956a7c69a385a3a3169f183e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
+  <block id="e5e4c27b43623332619bb7b742c025ee" category="paragraph">以下是範例檔案<block ref="4a417e605245176a0337befebb3390ec" prefix=" " category="inline-code"></block> 此工具將產生：</block>
 </blocks>
