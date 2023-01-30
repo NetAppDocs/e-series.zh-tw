@@ -717,8 +717,6 @@
   <block id="9e54c935a03ff772bcf7612b86de79a1" category="doc">在主機端設定NVMe over InfiniBand</block>
   <block id="c35fc67c4b5efd31552d96e3eec5e293" category="list-text">安裝RDMA、NVMe-CLI和InfiniBand套件：</block>
   <block id="ddeec0610c6dfff21c284cac06924a6e" category="paragraph">* SLES 12或SLES 15*</block>
-  <block id="76769149b150e336b1382f8eef619a50" category="list-text">啟用「IPoIB」。編輯/etc/Rdma/Rdma.conf檔案、並修改載入「IPoIB」的項目：</block>
-  <block id="e180dcda700b7114bbf7cbdb821df4a6" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
   <block id="22b4a25f95365479298f378bbf161e6f" category="list-text">在IB連接埠上設定IPV4 IP位址。</block>
   <block id="08fa0114b0d6dc928f4c7ac5eb67c374" category="paragraph">建立內含下列內容的檔案/etc/sysconfig/network/ifcfg/ib0。</block>
   <block id="736d155a06721b3c243a2d11dd71cf06" category="paragraph">建立內含下列內容的檔案/etc/sysconfig/network-scripts/ifcfg/ib0。</block>
@@ -8700,7 +8698,6 @@
   <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">新增下列行：將您在步驟2中找到的值替換為<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> 和<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。適用於<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> 和<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>的優先順序為：使用子網路管理程式的優先順序、1是最低優先順序、15是最高優先順序。</block>
   <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">新增下列行：</block>
   <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">將新服務通知系統。</block>
-  <block id="941060fc12806a5c3d9302d2624cb774" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL9、SUSE Linux Enterprise Server 12或15個Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
   <block id="7965a5bdacca6ec4414d73846a2effc0" category="doc">建立檔案系統（RHEL 8、RHEL 9、SLES 15）</block>
   <block id="709e243fec7f9a41a7ff766bf8716ce5" category="paragraph">對於RHEL 8、RHEL 9、SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
@@ -8855,4 +8852,9 @@
   <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7或RHEL 8*</block>
   <block id="8ce810d5ab2863c317f14fafb62a5090" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="a8490166956a7c69a385a3a3169f183e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="e5e4c27b43623332619bb7b742c025ee" category="paragraph">以下是範例檔案<block ref="4a417e605245176a0337befebb3390ec" prefix=" " category="inline-code"></block> 此工具將產生：</block>
+  <block id="775835480314574c6cd9244c8c9b879b" category="list-text">對於RHEL 8或RHEL 9、請安裝網路指令碼：</block>
+  <block id="6836b58aebbdd815358ecf435e05e390" category="list-text">若為RHEL 7、請啟用<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>。編輯/etc/Rdma/Rdma.conf檔案、然後修改要載入的項目<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>：</block>
+  <block id="0cd1f8d86f769c38f1483db60702ae30" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
+  <block id="b19174b79ffa987ea20abbce564e973e" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="9c2912b95ccba22459cf5353437988de" prefix=" " category="inline-code"></block> 此工具將產生：</block>
+  <block id="2662a31940eac2df0a6809d02c631cbb" category="paragraph">以下是範例檔案<block ref="c9f0a91feab8e55b8d9d166acc79562e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
 </blocks>
