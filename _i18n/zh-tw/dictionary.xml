@@ -700,16 +700,13 @@
   <block id="dac50a4bf77e8de98c9f0ecbf1efd96c" category="list-text">將/etc/iscsi/iscsid.conf檔案中的「node.session.timeo.replacement_timeout`」變數變更為「20」、預設值為「120」。</block>
   <block id="79148913b006ee398551d3b206312f29" category="list-text">確保已開啟「iscsid」和「（open-）iSCSI」服務並啟用開機。</block>
   <block id="03255405207be9e847f2d898e05048a4" category="paragraph">* SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*</block>
-  <block id="a41a1bbdcdc59cf69e7fb285339a9625" category="paragraph">您也可以在/etc/iscsi/iscsid.conf中設定「node.start = automatic」、然後再執行任何「iscsiadm'命令、讓工作階段在重新開機後持續存在。</block>
   <block id="22573cb1d3a24e811b00be3cdf11ed07" category="list-text">取得用於將主機設定為陣列的主機IQN啟動器名稱。</block>
-  <block id="d707e35eeedda41c6a0cfa761fd2a07b" category="list-text">設定iSCSI連接埠的網路：</block>
   <block id="d2ac38f00dee7d2a262b2bf0fa6f3b64" category="admonition">除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段或VLAN上使用兩個或多個NIC。</block>
   <block id="a055f9d8150408cf1633c42de1d3c847" category="list-text">設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。</block>
   <block id="068968b47b209b5ab4b2bf2a892a53da" category="admonition">請務必設定兩個iSCSI啟動器連接埠的位址。</block>
   <block id="3ec57145ad99ba132ea5906182fa7d34" category="list-text">重新啟動網路服務。</block>
   <block id="3aa61be860f27f859aed628c7d7a8783" category="list-text">確定Linux伺服器可以ping通所有iSCSI目標連接埠。</block>
   <block id="64adb9e225feb356ed6ec628cd40671f" category="admonition">若要列出介面、請使用「iscsiadm -m iface'」。</block>
-  <block id="a6575d77a64e40bfa8e81ab8ade7d7a1" category="list-text">在啟動器和目標之間建立iSCSI工作階段（總共四個）。</block>
   <block id="ac8ddbbb791a17c089f8b72f6801a3dc" category="list-text">探索iSCSI目標。在工作表中儲存IQN（每次探索都相同）、以進行下一步。</block>
   <block id="8329426ded9436d4fbff44b5e4b4c72c" category="admonition">IQN如下所示：</block>
   <block id="e6fa7633cc6e723b63becb0e5f1d6bb5" category="list-text">列出在主機上建立的iSCSI工作階段。</block>
@@ -8666,9 +8663,6 @@
   <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</block>
   <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。</block>
-  <block id="c13ee4fd00cee57d25631dda7a3afcfc" category="paragraph">編輯：</block>
-  <block id="d43f0c1ac820c0cdc6a73e7a6f943df2" category="paragraph">新增：</block>
-  <block id="65c76cf8b4c172d7378f288e8af8a08c" category="list-text">使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
   <block id="f53443405a6562d0b3e4c7cf9bc15b23" category="admonition">重新開機後、上述命令不會持續執行。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。</block>
   <block id="d29230a83d49c7722d815a3203b64bef" category="admonition">不再使用此解決方案SANtricity 、也不再提供下載。</block>
@@ -8718,7 +8712,6 @@
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">啟用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 開機時的精靈。</block>
-  <block id="52430bef221dfe0288778cdfd54cab9b" category="paragraph">* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL9）*</block>
   <block id="519a88244e86ab9ce17209c219a4969a" category="paragraph">如果您在使用「NVMe list-SUBsys」命令時指定實體NVMe裝置、則會提供有關該命名空間路徑的其他資訊：</block>
   <block id="b3e41b03ef621f7814aead1762d37e57" category="doc">建立檔案系統（RHEL 8、RHEL 9和SLES 15）</block>
   <block id="278d29980d384d87e03c8f99681b0980" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
@@ -8857,4 +8850,17 @@
   <block id="0cd1f8d86f769c38f1483db60702ae30" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
   <block id="b19174b79ffa987ea20abbce564e973e" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="9c2912b95ccba22459cf5353437988de" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="2662a31940eac2df0a6809d02c631cbb" category="paragraph">以下是範例檔案<block ref="c9f0a91feab8e55b8d9d166acc79562e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
+  <block id="b7577216b0e50cc5bbbbf4483bbc37cd" category="list-text">您也可以選擇設定<block ref="68e21a6780edcb6acab77e2a42f4f506" prefix=" " category="inline-code"></block> 在/etc/iscsi/iscsid.conf中、執行任何<block ref="f88921f58beaaae5bcb9dffac54bf5ad" prefix=" " category="inline-code"></block> 重新開機後、用於讓工作階段持續執行的命令。</block>
+  <block id="d0c7f819a9c352ec47123255b7bea069" category="list-text">設定iSCSI連接埠的網路。以下是RHEL和SLES的範例指示：</block>
+  <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*</block>
+  <block id="9dabae4a06d30c9c7f51e5f507819763" category="paragraph">建立範例檔案<block ref="0d7d3fc433b1b9e503de96fc98959275" prefix=" " category="inline-code"></block> 內容如下：</block>
+  <block id="d495950a6cee8eefb9fec72eb4759f52" category="paragraph">IPv6的選擇性新增項目：</block>
+  <block id="8a242e9b511ac07bc46f6d5758b40101" category="paragraph">* Red Hat Enterprise Linux 9（RHEL 9）*</block>
+  <block id="42b36daf2d76a2e6ced2edcf1ac0780c" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。此工具將產生<block ref="b9b1a8ef49e07c55d90e41f053c5f240" prefix=" " category="inline-code"></block> 檔案位於<block ref="1580a184ac85703ca1cfde026b32109e" prefix=" " category="inline-code"></block>。</block>
+  <block id="a708543f0c471392232ef363aa304233" category="paragraph">建立範例檔案<block ref="07c8ad3b1f5865fe6e3186f131aad980" prefix=" " category="inline-code"></block> 內容如下：</block>
+  <block id="2b9d337912530454459670ef2f6000d4" category="paragraph">可選擇是否新增IPv6：</block>
+  <block id="caa9c7e5ca67cc93af5e1a5af13b5f06" category="list-text">使用兩種方法之一、在啟動器與目標之間建立iSCSI工作階段（總共四種）。</block>
+  <block id="629d95b23c4787247cb60bd0d79ce58b" category="list-text">（選用）使用ifaces時、請建立兩個iSCSI iface繫結來設定iSCSI介面。</block>
+  <block id="c40ee4712318216da52bf38dda83bd0b" category="paragraph">*方法1（含ifaces）*</block>
+  <block id="340e742b206cd41d5a3527d53de73cf7" category="paragraph">*方法2（不含ifaces）*</block>
 </blocks>
