@@ -34,7 +34,7 @@ sidebar:
         url: "/getting-started/learn-software-concept.html"
       - title: E系列影片
         url: "/getting-started/learn-video-concept.html"
-    - title: 使用E系列開始運作
+    - title: 快速入門
       url: "/getting-started/getup-run-concept.html"
   - title: 安裝硬體
     entries:

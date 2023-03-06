@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
 summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件、設定主機系統及設定儲存設備。 
 ---
-= 使用E系列開始運作
+= E系列的快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,70 +13,61 @@ summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件�
 [role="lead"]
 若要使用E系列系統啟動及執行、您需要安裝硬體元件、設定主機系統及設定儲存設備。
 
-部署儲存陣列需要下列工作流程：
-
-image::../media/doccenterworkflow.gif[文件中心工作流程]
-
-
-
-== 步驟1：安裝硬體
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝硬體
+[role="quick-margin-para"]
 若要安裝E系列硬體、請存取儲存陣列和機櫃類型的安裝與設定說明：
 
+[role="quick-margin-list"]
 * link:../install-hw-ef600/index.html["EF600或EF300系列、含24個磁碟機櫃"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800/EF280或E5700/EF570系列、含12或24個磁碟機櫃"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800或E5700系列搭載60個磁碟機機櫃"^]
 
 
-
-
-== 步驟2：設定機櫃
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定機櫃
+[role="quick-margin-para"]
 如果您要為儲存陣列設定新機櫃、則必須將機櫃移至其永久位置、安裝硬體、然後將其連接至電源。若要設定機櫃、請參閱下列指示：
 
+[role="quick-margin-list"]
 * link:../install-hw-cabinet/index.html["安裝3040 40U機櫃"^]
 
 
-
-
-== 步驟3：安裝軌道
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 安裝軌道
+[role="quick-margin-para"]
 出貨時、每個機櫃均隨附機架安裝硬體。如需安裝滑軌的詳細說明、請選取您的滑軌類型：
 
+[role="quick-margin-list"]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["安裝可調式支撐軌道"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["將2U機箱安裝到四柱機架中"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["將DE224C磁碟櫃安裝到雙柱機架中"^]
 * http://docs.netapp.com/platstor/topic/com.netapp.doc.hw-rail-superrail/home.html["將超級滑軌安裝至四柱機架（DE224C/DE460C機櫃）"^]
 
 
-
-
-== 步驟4：連接纜線
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 連接纜線
+[role="quick-margin-para"]
 安裝與設定說明（步驟1）包含連接纜線的說明。不過、如果您需要支援的纜線和收發器清單、纜線最佳實務做法、以及控制器主機連接埠的詳細資訊、請參閱下列指示：
 
+[role="quick-margin-list"]
 * link:../install-hw-cabling/index.html["E系列硬體纜線"]
 
 
-
-
-== 步驟5：設定主機
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 設定主機
+[role="quick-margin-para"]
 若要讓主機使用儲存設備、請選取主機作業系統類型的指南：
 
+[role="quick-margin-list"]
 * link:../config-linux/index.html["Linux Express組態"]
 * link:../config-vmware/index.html["VMware Express組態"]
 * link:../config-windows/index.html["Windows Express組態"]
 
 
-
-
-== 步驟6：設定儲存設備
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 設定儲存設備
+[role="quick-margin-para"]
 若要設定儲存設備、您可以將瀏覽器指向控制器的IP位址、以存取網路型介面System Manager。設定精靈可協助您開始進行系統組態。此外、您也可以使用命令列介面（CLI）。
 
+[role="quick-margin-para"]
 選取您要使用的介面：
 
+[role="quick-margin-list"]
 * https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["適用於11.7x的系統管理程式說明SANtricity"]
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["適用於11.6x的系統管理程式說明SANtricity"]
 
