@@ -8868,6 +8868,5 @@
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 設定儲存設備</block>
   <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">11.75 版的新功能</block>
-  <block id="a4b7d4d589fe2fdcc52596432d9392ed" category="paragraph">允許升級至 11.80/x</block>
-  <block id="7c2f19d039e9dc3e3394a748e8ac016e" category="paragraph">系統必須執行 11.70.5 才能升級至 11.8.x 或更新版本。FIPS 140-2和NVMe型SSD目前支援特定磁碟機使用FIPS 140-2。FIPS 140-2層級SSD磁碟機可與FIPS 140-2層級SSD磁碟機共存、但前提是這些磁碟機均為NVMe型或所有SAS型。在Volume群組和磁碟集區中混合使用這些層級時、請注意群組或集區將會以較低的安全性層級（1402）運作。</block>
+  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">系統必須執行 11.70.5 才能升級至 11.8.x 或更新版本。</block>
 </blocks>
