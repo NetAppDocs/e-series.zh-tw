@@ -47,7 +47,7 @@ summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件�
 安裝與設定說明（步驟1）包含連接纜線的說明。不過、如果您需要支援的纜線和收發器清單、纜線最佳實務做法、以及控制器主機連接埠的詳細資訊、請參閱下列指示：
 
 [role="quick-margin-list"]
-* link:../install-hw-cabling/index.html["E系列硬體纜線"]
+* link:../install-hw-cabling/index.html["E系列硬體纜線"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 設定主機
@@ -55,9 +55,9 @@ summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件�
 若要讓主機使用儲存設備、請選取主機作業系統類型的指南：
 
 [role="quick-margin-list"]
-* link:../config-linux/index.html["Linux Express組態"]
-* link:../config-vmware/index.html["VMware Express組態"]
-* link:../config-windows/index.html["Windows Express組態"]
+* link:../config-linux/index.html["Linux Express組態"^]
+* link:../config-vmware/index.html["VMware Express組態"^]
+* link:../config-windows/index.html["Windows Express組態"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 設定儲存設備
@@ -68,6 +68,7 @@ summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件�
 選取您要使用的介面：
 
 [role="quick-margin-list"]
-* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["適用於11.7x的系統管理程式說明SANtricity"]
-* https://docs.netapp.com/us-en/e-series-santricity-116/index.html["適用於11.6x的系統管理程式說明SANtricity"]
+* https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity System Manager 11.8x 線上說明"^]
+* https://docs.netapp.com/us-en/e-series-santricity-117/system-manager/index.html["適用於11.7x的系統管理程式線上說明SANtricity"^]
+* https://docs.netapp.com/us-en/e-series-santricity-116/index.html["SANtricity 系統管理員 11.6x 線上說明"^]
 

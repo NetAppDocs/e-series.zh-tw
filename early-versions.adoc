@@ -31,6 +31,14 @@ summary: 較早版本的文件
 
 
 
+=== SANtricity 11.7 版
+
+* https://docs.netapp.com/us-en/e-series-santricity-117/index.html["System Manager說明"^]
+* https://docs.netapp.com/us-en/e-series-santricity-117/index.html["Unified Manager說明"^]
+
+
+
+
 === 版本11.6% SANtricity
 
 * https://docs.netapp.com/us-en/e-series-santricity-116/index.html["System Manager說明"^]
