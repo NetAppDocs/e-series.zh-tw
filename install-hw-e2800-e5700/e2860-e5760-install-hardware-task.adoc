@@ -14,7 +14,7 @@ summary: 在雙柱機架或NetApp系統機櫃中安裝E2800或E5700。
 瞭解如何在雙柱機架或NetApp系統機櫃中安裝E2860、E5760或DE460儲存系統。
 
 .開始之前
-* 請至以下網址註冊硬體： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+* 請至以下網址註冊硬體： http://mysupport.netapp.com/["NetApp支援"^]。
 * 準備一個無靜電的平坦工作區。
 * 取得一個防靜電腕帶、並採取防靜態預防措施。
 

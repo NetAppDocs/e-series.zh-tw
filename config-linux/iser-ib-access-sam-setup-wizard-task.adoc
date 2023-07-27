@@ -16,7 +16,9 @@ summary: 您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytr
 
 《系統管理程式》是內嵌於每個控制器的網路型介面。SANtricity若要存取使用者介面、請將瀏覽器指向控制器的IP位址。設定精靈可協助您開始進行系統組態。
 
-.您需要的產品
+.開始之前
+請確定您擁有下列項目：
+
 * 頻外管理：
 * 管理站可存取SANtricity 包含下列其中一種瀏覽器的《系統管理程式》：
 +
@@ -27,35 +29,28 @@ summary: 您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytr
  a| 
 Google Chrome
  a| 
-79
-
-
-
- a| 
-Microsoft Internet Explorer
- a| 
-11.
+89
 
 
 
  a| 
 Microsoft Edge
  a| 
-79
+90
 
 
 
  a| 
 Mozilla Firefox
  a| 
-70
+80
 
 
 
  a| 
 Safari
  a| 
-12.
+14.
 
 |===
 

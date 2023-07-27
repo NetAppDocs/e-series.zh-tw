@@ -13,7 +13,7 @@ summary: 設定多重路徑軟體、以便在其中一個實體路徑中斷時�
 [role="lead"]
 若要提供儲存陣列的備援路徑、您可以設定多重路徑軟體。
 
-.您需要的產品
+.開始之前
 您必須在系統上安裝所需的套件。
 
 * 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝。
@@ -59,8 +59,7 @@ systemctl enable multipathd
 dracut --force --add multipath
 ----
 . 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手動建立主機"] 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 <<step4,步驟4.>>。
-
-
++
 
 NOTE: 對於任何對應至執行核心3.9或更早版本之主機的磁碟區、都會停用自動負載平衡。
 

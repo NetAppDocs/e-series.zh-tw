@@ -13,7 +13,7 @@ summary: 設定主機執行容錯移轉。
 [role="lead"]
 若要提供儲存陣列的備援路徑、您可以設定主機執行容錯移轉。
 
-.您需要的產品
+.開始之前
 您必須在系統上安裝所需的套件。
 
 * 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝

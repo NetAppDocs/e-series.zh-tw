@@ -112,6 +112,10 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-e5700.
 .. 選取*支援中心*方塊。
 .. 在Support Resources（支持資源）選項卡上，找到並選擇* Storage Array Profile*（*儲存陣列配置文件*）鏈接。
 .. 在文字方塊中輸入*功能套件子模型ID*、然後按一下*尋找*。
++
+
+NOTE: 「子模型」也可以寫入為「子模型」。
+
 .. 找出用於初始組態的功能套件子模型ID。
 +
 image::../media/storage_array_profile2_maint-e5700.gif[儲存陣列設定檔2 maint e5700]

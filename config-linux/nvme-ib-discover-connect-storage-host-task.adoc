@@ -30,7 +30,7 @@ NOTE: 無論主機存取為何、「NVMe探索」命令都會探索子系統中�
 +
 [listing]
 ----
-# nvme discover -t rdma -a 10.10.10.100
+# nvme discover -t rdma -a 10.10.10.200
  Discovery Log Number of Records 2, Generation counter 0
  =====Discovery Log Entry 0======
  trtype:  rdma
@@ -40,7 +40,7 @@ NOTE: 無論主機存取為何、「NVMe探索」命令都會探索子系統中�
  portid:  0
  trsvcid: 4420
  subnqn:  nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be
- traddr: 10.10.10.100
+ traddr: 10.10.10.200
  rdma_prtype: infiniband
  rdma_qptype: connected
  rdma_cms:    rdma-cm
@@ -88,25 +88,9 @@ NOTE: 建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3�
 +
 [listing]
 ----
-# nvme connect -t rdma -a 10.10.10.100 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
+# nvme connect -t rdma -a 10.10.10.200 -n nqn.1992-08.com.netapp:5700.600a098000af41580000000058ed54be -Q 1024 -l 3600
 ----
-. 使用「NVMe清單」命令查看目前連線的NVMe裝置清單。在以下範例中、它是「nvme0n1」。
-+
-[listing]
-----
- # nvme list
-
- Node          SN            Model             Namespace
- -------------------------------------------------------
- /dev/nvme0n1  021648023161  NetApp E-Series      1
-----
-+
-[listing]
-----
-Usage                 Format           FW Rev
---------------------------------------------------------------
-5.37 GB /5.37 GB      512 B + 0 B      0842XXXX
-----
+. 使用 `nvme list-subsys` 命令以查看目前連線的 NVMe 裝置清單。
 . 連接到第二個路徑上探索到的子系統：
 +
 [listing]

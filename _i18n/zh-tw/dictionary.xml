@@ -191,9 +191,7 @@
   <block id="958b076f7e1539852bedf91e5fe7a516" category="paragraph">系統會執行下列動作：</block>
   <block id="00c9f8995e9e372b1b21f15fc0c9001b" category="list-text">指派的磁碟區會收到下一個可用的LUN號碼。主機使用LUN編號來存取磁碟區。</block>
   <block id="4faf06e0466760e50f45759abdf2041c" category="list-text">使用者提供的Volume名稱會出現在與主機相關聯的Volume清單中。如果適用、原廠設定的存取Volume也會顯示在與主機相關的Volume清單中。</block>
-  <block id="03fea832838d48ebb15f527aa6abd2cd" category="paragraph">若要在vSphere Client中建立資料存放區、請參閱VMware Doc Center中的下列主題：</block>
   <block id="7c7e75114a8c9222d975bdcf65b6e447" category="inline-link">在vSphere Client中建立VMFS資料存放區</block>
-  <block id="23665d1daa8ffb139110bacef48d674f" category="list-text"><block ref="23665d1daa8ffb139110bacef48d674f" category="inline-link-rx"></block></block>
   <block id="3f6b953b35e3c46b4c78f3358ab087c5" category="section-title">增加磁碟區容量、以增加現有資料存放區的容量</block>
   <block id="9656b5c122337f9fc73cb071b360a0e6" category="paragraph">請確定：</block>
   <block id="7cf61abe29c59213c314036c21f30dcc" category="list-text">磁碟區相關聯的資源池或磁碟區群組中有足夠的可用容量可用。</block>
@@ -211,11 +209,8 @@
   <block id="8ebea0904dbbd79829b4e8e18700fe35" category="list-text">使用「*透過新增...*來增加報告容量」方塊、將容量新增至目前可用的報告容量。您可以變更容量值、以百萬位元組（mebibbytes、mibibibbytes、GiB）或tebibbytes（TiB）顯示。</block>
   <block id="47e3d95a3adbde336a43e0c9f80a08f6" category="list-text">按一下*「增加*」。</block>
   <block id="8eced8651ea7da59ed5fb12085b185c0" category="list-text">檢視「近期工作」窗格、以取得目前針對所選磁碟區執行的增加容量作業進度。這項作業可能會耗費大量時間、並可能影響系統效能。</block>
-  <block id="0315ca638646397d429dc910d02c61c1" category="list-text">磁碟區容量完成後、您必須手動增加VMFS大小以符合下列主題所述：</block>
   <block id="9577a4dae7ff56da7f4a9a7339b5aeba" category="inline-link">增加vSphere Client中的VMFS資料存放區容量</block>
-  <block id="6732b2858e611126190f8b1ce8d187c4" category="list-text"><block ref="6732b2858e611126190f8b1ce8d187c4" category="inline-link-rx"></block></block>
   <block id="17771615949b8b68fe1647ab628a8c8b" category="section-title">新增磁碟區以增加現有資料存放區的容量</block>
-  <block id="69e5b3af9cd470d8eb1ebb0fc532f6df" category="list-text">接下來、將磁碟區指派給所需的主機、以增加資料存放區的容量。請參閱下列主題：</block>
   <block id="bb798028256b1940dae374efe12fb88d" category="summary">設定vCenter的儲存外掛程式存取權限。</block>
   <block id="e58a1df9ff4ef90404ac129df04af04c" category="paragraph">您可以設定vCenter儲存外掛程式的存取權限、其中包括使用者、角色和權限。</block>
   <block id="004094b0375e66bd89f639744ee01bc6" category="section-title">檢閱所需的vSphere權限</block>
@@ -671,7 +666,6 @@
   <block id="68cd57fed05c917fe34e6a66040d3bd6" category="admonition">如果您使用此命令指定連接埠號碼、連線將會失敗。預設連接埠是唯一設定用於連線的連接埠。</block>
   <block id="5814d031a198a94d2a46bf6e83390543" category="admonition">建議的佇列深度設定為1024。使用'-Q 101010"'命令列選項、將預設設定128設為1024、如下例所示。</block>
   <block id="e11d5f2201c0be606810cbfc93d96891" category="admonition">建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3、600秒）。使用「-l 3600'命令列選項、以3、600秒取代預設的600秒設定、如下列範例所示：</block>
-  <block id="f8110983d42b31fcea81a67a2d155ebd" category="list-text">使用「NVMe清單」命令查看目前連線的NVMe裝置清單。在以下範例中、它是「nvme0n1」。</block>
   <block id="74d1b12d5ed308f971911d78804f8e6e" category="list-text">連接到第二個路徑上探索到的子系統：</block>
   <block id="f4aa860cb7f0d6983de8527030da8ac6" category="list-text">使用Linux的「lsblk（lsblk）”和「grep（grep））指令、顯示每個區塊裝置的其他相關資訊：</block>
   <block id="dd5b930833e0c8dd64b64e8f609f510e" category="list-text">使用「NVMe清單」命令查看目前連線的NVMe裝置新清單。以下是"nvme0n1"和"nvme0n1"。</block>
@@ -722,8 +716,6 @@
   <block id="40efdf97c6552799245c0bb9c7156cae" category="list-text">驗證用於連接陣列的IP位址。對「ib0」和「ib1」執行此命令：</block>
   <block id="7895a100cce2fb9f671116c88a243a18" category="paragraph">如下例所示、「ib0」的IP位址為「10.10.255」。</block>
   <block id="0693aaa7965eda2507b31a871e54b133" category="paragraph">如下例所示、「ib1」的IP位址為「11.11.11.255」。</block>
-  <block id="1eab8c276623416692f2ab15fbfca861" category="list-text">在主機上設定NVMe層。在/etc/modules-load.d/下建立下列檔案、以載入「NVMe-RDMA」核心模組、並確保即使重新開機、核心模組仍會開啟：</block>
-  <block id="86e856206affbccd36d96e0932a14510" category="paragraph">若要驗證「NVMe - RDMA」核心模組是否已載入、請執行下列命令：</block>
   <block id="ee732210e813ba3c59eefd70d8487e35" category="summary">InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SRP、因此不需要額外的硬體。</block>
   <block id="f5468ecf76be3bb4cf77cf63a591d098" category="paragraph">如果您的組態使用iSER over InfiniBand傳輸協定、請執行本節中的步驟。</block>
   <block id="123fafa39d80ebd469e4bb58a4001fda" category="paragraph">NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
@@ -828,7 +820,6 @@
   <block id="bcae685fd81100483c46f5ac55f04b94" category="list-text">將檔案複製回原始磁碟上的其他資料夾。</block>
   <block id="902bc0f0e4bf7414bb5a92ff0daa7055" category="list-text">執行「dIFF」命令、將複製的檔案與原始檔案進行比較。</block>
   <block id="86cd25e1b1566d77f5af83eb0ffcd3f0" category="paragraph">移除您複製的檔案和資料夾。</block>
-  <block id="ad4806aee44ec3656193fc16283c1d1b" category="summary">為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具（IMT NetApp Interoperability Matrix Tool）（簡稱「可靠性」）來驗證是否支援整個組態。</block>
   <block id="658a1cfb9f949bb607568daa62dab461" category="doc">驗證是否支援Linux組態</block>
   <block id="984ba5b9994eaef658daaa71d9ffeb2e" category="paragraph">為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「可靠性」）來驗證是否支援整個組態。</block>
   <block id="4da3965cf19b955b2ac32d45d1702ddf" category="list-text">前往<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
@@ -1735,9 +1726,6 @@
   <block id="c32d2f2a600be52dff5b6675ea4163e2" category="cell">控制器子機型ID</block>
   <block id="2d9e8ffd5beeb436de047407b4134b6a" category="cell">HIC連接埠</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="paragraph">443..</block>
-  <block id="26bcb9f1cb6f391f4b2c18e676bb458d" category="paragraph">NVMe / FC</block>
-  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">或</block>
-  <block id="bb0b9e255a3bf215a4f994ef912a5fd7" category="paragraph">NVMe / RoCE</block>
   <block id="550a141f12de6341fba65b0ad0433500" category="paragraph">444..</block>
   <block id="10c103240eb7689c62b54e419902d174" category="paragraph">NVMe / IB</block>
   <block id="ec81c0ed52c5a94736046090d59f4c39" category="paragraph">DH5-HB4-ZK9QH</block>
@@ -1758,7 +1746,6 @@
   <block id="a0b1bce25bf7a94aa21101339f6a3843" category="paragraph">LHS-RB4-ZDV29</block>
   <block id="e44d6de45bb7cb73e6a01a992336541f" category="paragraph">胎心音6-977-Z7Q7H</block>
   <block id="4d1e8fc0882f290c9e2561465e9e6c69" category="paragraph">0HI-Z75-ZE4L5</block>
-  <block id="d7e5cfec25fe3fb66317ebf2e558a317" category="paragraph">NVMe / FC或NVMe / RoCE</block>
   <block id="8187d1a072ddc99fdb2f9f038025d4ad" category="paragraph">MHQ - M85 - ZIJNT</block>
   <block id="706be4b242185f32a6c7d7a71d9fd4cb" category="paragraph">NVMe / FC或NVMe / IB</block>
   <block id="35b790bc7550e5221bca9853a4fb14f9" category="paragraph">4HS-685-ZJZ1U</block>
@@ -1793,7 +1780,6 @@
   <block id="666af42e109021e79993186039164ef0" category="paragraph">8HX-U95-Z5K6F</block>
   <block id="791acc53567cc150ccd705f42e68fd49" category="paragraph">UHZ-E95-Z71LH</block>
   <block id="dcc777a7b03231f109065e1444bb7a84" category="paragraph">SH2-X95-Z8IVS</block>
-  <block id="2a16fa59791f84533ec66e92db634cf7" category="paragraph">NVMe / FC或</block>
   <block id="7343cf71ac168e95ba7a9736d35e848d" category="paragraph">UH5-H95-Z9Z58</block>
   <block id="dd767b9b76063bd2d8539c97aba6c64e" category="paragraph">XH7-195-ZBGJC</block>
   <block id="b99d53e698fc9df4219b55fbbfda1a25" category="paragraph">FHA-K95-ZCXX0</block>
@@ -2011,7 +1997,6 @@
   <block id="2f42837cf7042dcd613c4776cd821f9b" category="list-text">適用於下列最低需求的系統：SANtricity</block>
   <block id="caef7b812dd9258e6ad6319525abc8c0" category="list-text">請至下載SANtricity 更新版本的《》<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。從* Downloads（下載）*標籤、功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。</block>
   <block id="12693d4ef6502030dd3dd97adbaad017" category="list-text">執行SANtricity 此安裝程式。按兩下要執行的SMIA*。exe安裝套件。</block>
-  <block id="89751b656ecdf8b63b8070935b0ff14a" category="paragraph">Microsoft Internet Explorer（MSE）</block>
   <block id="65cd5127778adc70f489a66043ff60f3" category="paragraph">如果您是iSCSI使用者、請確定在設定iSCSI時已關閉設定精靈。</block>
   <block id="5a138d4de967691cc64add5999aa9ced" category="list-text">未偵測到資源池或磁碟區群組。</block>
   <block id="295b321dbc21ae5598506b937ffb2634" category="paragraph">如果安裝精靈未自動出現、請聯絡技術支援部門。</block>
@@ -3394,7 +3379,6 @@
   <block id="a879ee66e249fbeee1ae138438d18fe8" category="list-text">單一控制器-包括升級儲存陣列軟體的程序、以及選擇性的IOM韌體和非揮發性靜態隨機存取記憶體（NVSRAM）。</block>
   <block id="46bc8576a7815e8eb9a10ff5d59cac56" category="list-text">多個控制器-包括在SANtricity 同類型的多個儲存陣列上升級支援的程序。</block>
   <block id="48c1ca5defe26b3e0c4d1e2e7368d701" category="list-text">Drive（磁碟機）-包含升級磁碟機韌體的說明。</block>
-  <block id="296e602ec8cd8c899029840a49ce97ab" category="paragraph">開始升級之前、請務必先檢閱 <block ref="397a7b6697218a46323b6c580312f9dd" category="inline-link-macro-rx"></block>。</block>
   <block id="1201ec882a66f6ac52431a9b6989524a" category="summary">使用「支援支援統一化管理程式」、在同類型的多個儲存陣列上升級支援不支援的作業系統軟體。SANtricity SANtricity</block>
   <block id="c4cb0f00e618857765be61d1dfd44ad8" category="doc">升級多個控制器的軟體與韌體</block>
   <block id="a0f41f7d25651e2518941d252d8d19db" category="paragraph">您可以使用SANtricity 《Sings統一 化管理程式》來升級同類型的多個控制器。</block>
@@ -4302,8 +4286,6 @@
   <block id="110591307a30fe38d9a123895392650e" category="list-text">如果電源關閉、您必須手動判斷要中斷連接的五條纜線鏈中的哪一條。圖中所示為磁碟機櫃右側、風扇箱已拆下。卸下風扇容器後、您可以看到每個抽屜的五個纜線鏈、以及垂直和水平連接器。</block>
   <block id="45cf6cdbf3770c81ac201cb107e00eaf" category="paragraph">頂端纜線鏈連接至磁碟機抽屜1。底部的纜線鏈連接至磁碟機抽屜5。提供磁碟機匣1的標註。</block>
   <block id="893f37fd9fe04c8eed04d6e7e810b584" category="image-alt">Trap纜線軌道1維護e5700</block>
-  <block id="ddb7e82d39051012ec7c4fa3f231186f" category="paragraph">*（1）*_垂直連接器（連接至中板）_</block>
-  <block id="6e0b9db3328f962af7c2596bee521640" category="paragraph">*（2）*_纜線鏈_</block>
   <block id="e66a45e25286ebd6f89b037f813d2d97" category="paragraph">*（3）*_水平連接器（連接至藥櫃）_</block>
   <block id="d85c0e4b7f943005f1d369e2e79a43e5" category="list-text">為了方便存取、請用手指將右側的纜線鏈往左移動。</block>
   <block id="7a80980e0ab3c4a96cc4d5b19f3f93ff" category="list-text">從相應的垂直導軌上拔下任何正確的纜線鏈。</block>
@@ -4577,33 +4559,7 @@
   <block id="6e8602d76e9fef34df4842cd3e73e25b" category="section-title">命令參考資料</block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">更新功能。SANtricity</block>
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">更新功能SANtricity</block>
-  <block id="1a75366a6d4c821ee7e455bce4cffa25" category="section-title">11.72版的新功能</block>
   <block id="824a3a83a007a97494ec5981cebf67a5" category="cell">新功能</block>
-  <block id="28b46397fb020adcaf0b119cbfa693b5" category="cell">支援v3</block>
-  <block id="c2e4a04d91c5a3b8fe7446de157eb681" category="cell">支援將金鑰複寫至多個金鑰伺服器</block>
-  <block id="292510d91cd4366627aba2eec79ec942" category="cell">針對自我加密磁碟機的外部金鑰管理、「建立外部金鑰管理」對話方塊中包含新的選項、可新增多個金鑰伺服器。</block>
-  <block id="68a7548c04bd5ae4d9d965b924cc722e" category="cell">更新瀏覽器版本</block>
-  <block id="2d7d47101a0ad5c71e2101ebb7e5f475" category="cell">已更新System Manager最低瀏覽器版本。</block>
-  <block id="3c7e7b17dae4906b0da9248a0e7f39e2" category="section-title">11.71版的新功能</block>
-  <block id="9f498a936b91eb825293b845ab4c4a34" category="cell">EF300擴充</block>
-  <block id="e26cc7c9038cf4d3175e8bf30d816d86" category="cell">iSCSI組態中的FEC模式選項</block>
-  <block id="ea9c177239be0bc55bf551920e73ec9e" category="cell">遠端儲存磁碟區</block>
-  <block id="ae376d8e855c99ce33d3f6e542edc956" category="cell">為非FDE磁碟機新增掃用（清除）功能</block>
-  <block id="e85e5cd7a142a229a3e8752a4502bb6a" category="cell">電子郵件警示的安全連線</block>
-  <block id="a98e92b119d04e5ca0c2e3a8c6cc6159" category="cell">補充項目AutoSupport</block>
-  <block id="5994d3724fb50db3bc66184d3f47b830" category="cell">系統記錄警示格式變更</block>
-  <block id="c91b20af8c08d49b519596d358be5e0f" category="section-title">11.70版的新功能</block>
-  <block id="fd6d564757d9bebb4afdcbc6e49ae663" category="cell">全新儲存系統機型–EF300</block>
-  <block id="c3164ba2335231fad0057dbe03d6e8dc" category="cell">新的資源配置功能（僅限EF300和EF600）</block>
-  <block id="86fffc443dc49ef49131fe738b172a29" category="cell">新增512e區塊大小選項（僅限EF300和EF600）</block>
-  <block id="97815730af7a32b4bee2bd50133bcc3b" category="cell">可AutoSupport 隨需傳送功能不全的更新選項</block>
-  <block id="7648787a2f72ca73c563621d8f772039" category="cell">外部金鑰管理伺服器增強功能</block>
-  <block id="5ce158a574155a1dbf2c52d1112ea5c9" category="list-text">略過建立備份金鑰的功能。</block>
-  <block id="a83cf593b4f7f5cb340b9eb8c9b13daa" category="list-text">除了用戶端和伺服器憑證之外、請為金鑰管理伺服器選擇中繼憑證。</block>
-  <block id="a41ead92ad6d32095eee6328103a4c8f" category="cell">憑證增強功能</block>
-  <block id="0d3d43e6247ef530e5466168527ca61c" category="cell">Volume群組的全新離線初始化功能</block>
-  <block id="0587e4aa2345855c1a604c02193816de" category="cell">全新的「收集組態資料」功能</block>
-  <block id="fa255949f43078f9547e0b38d42d3df0" category="cell">在12個磁碟機案例中變更磁碟集區的預設保留容量</block>
   <block id="93abfbfe31ac8cb67502c94e622ee8a8" category="cell">統一化管理程式SANtricity</block>
   <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="summary">較早版本的文件</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="doc">舊版</block>
@@ -5555,9 +5511,6 @@
   <block id="602581c7f4fef4e0ffc7c312b3efa341" category="summary">在雙柱機架或NetApp系統機櫃中安裝EF300或EF600。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="doc">安裝硬體</block>
   <block id="d751bcfe66df83ffc12435f4dd821d73" category="paragraph">您可以在雙柱機架或NetApp系統機櫃中安裝EF300或EF600儲存系統。</block>
-  <block id="a8c48c071808ad2651b915b013b97fef" category="paragraph">在安裝EF300或EF600儲存系統之前、請務必執行下列動作：</block>
-  <block id="0373910e51252c7b97dcbea9f4942604" category="inline-link">mysupport.netapp.com</block>
-  <block id="9d7ace3094547dba44a6a710e588173b" category="list-text">請至以下網址註冊硬體：<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="2d25dc407855f99aa2a0fe96d3aaffc7" category="list-text">準備一個無靜電的平坦工作區。</block>
   <block id="672881f5c2cd0335072eb2cb47e8f2e5" category="list-text">採取防靜態預防措施。</block>
   <block id="9ad20405ed7442681aff80b87cb2dba2" category="list-text">打開硬體包裝。</block>
@@ -5584,7 +5537,6 @@
   <block id="ae4728ced8957babaccab930d6730f18" category="inline-link-macro">新增SAS擴充卡</block>
   <block id="ed340a74210414952184f18bdea46abb" category="list-text"><block ref="59592944f1499a5ed0c513d73204b10a" category="inline-link-macro-rx"></block> 用於SAS擴充卡安裝。</block>
   <block id="03d8927d2b1d15f40bf2f3ed72e44a9e" category="list-text"><block ref="cd760802de300bde5638960df8d1f993" category="inline-link-macro-rx"></block> 適用於SAS擴充纜線。</block>
-  <block id="9a1088df44acd632befae6a589d43474" category="list-text">建立帳戶並在註冊硬體<block ref="28649c93049a329043d206ec7fa0c6f8" category="inline-link-rx"></block>。</block>
   <block id="eac0c4bdb6359eb499e188351f5a9f2d" category="list-text">確認您收到的包裝盒中有下列項目。</block>
   <block id="f63066afb77d7c003e18251ee221aefc" category="paragraph"><block ref="f63066afb77d7c003e18251ee221aefc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b6a1b586f8ed315e7d110da72191a0" category="paragraph">安裝磁碟機的磁碟櫃（擋板和端蓋分開包裝）</block>
@@ -5619,11 +5571,6 @@
   <block id="900e4c394955e0720a8b42172aa18c8f" category="admonition">使用協力廠商機櫃可能會導致電源線限制控制器的存取。</block>
   <block id="49fc51b075dc8edf1412b9c9514e429f" category="paragraph"><block ref="49fc51b075dc8edf1412b9c9514e429f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dcc887df0958a24f414c58b89298bc9b" category="paragraph">管理軟體支援的瀏覽器：</block>
-  <block id="4aed86ee8496175fd7faafa5c35fd6a1" category="list-text">Google Chrome（78版及更新版本）</block>
-  <block id="9471ea9488231b3eec10e1195279e441" category="list-text">Microsoft Internet Explorer（11版及更新版本）</block>
-  <block id="c3767efdeacb446b6fa6f38fb0ebcc8e" category="list-text">Microsoft Edge（88及更新版本）</block>
-  <block id="97cd5d08f3ac321127d6b56ff35b6274" category="list-text">Mozilla Firefox（70版及更新版本）</block>
-  <block id="412c6f332067d9b9f2a99e4bf825afdf" category="list-text">Safari（12版及更新版本）</block>
   <block id="4d3d862716fe69a21fb74abfd0035b2c" category="summary">您可以將控制器連接至網路、以完成儲存系統的設定與組態。</block>
   <block id="6be903907d4a6ed0342253dd37020027" category="doc">完整的儲存系統設定與組態</block>
   <block id="f1cb9cd9d8d75df1988e53e41e4dff92" category="paragraph">瞭解如何將控制器纜線連接至網路、然後完成設定與組態。</block>
@@ -5684,7 +5631,6 @@
   <block id="7664fe7044214c4315cb67d769e21a1a" category="summary">連接電源線並開啟磁碟機櫃的電源。</block>
   <block id="6113d267d99dfbff350dce7d26009671" category="doc">為控制器磁碟櫃供電</block>
   <block id="d2bc0d64dd760b202ec2907fd44810aa" category="paragraph">瞭解如何連接電源纜線、並在磁碟機櫃上開啟電源。</block>
-  <block id="be957f4123963c8a3a4d8d8b36e8dc9e" category="paragraph">開啟控制器磁碟櫃電源之前、請務必執行下列步驟：</block>
   <block id="5ceb28979bbe59f9cfcee59ae10968dd" category="list-text">安裝硬體。</block>
   <block id="c61d7b3418bd253d4dcd746096fe1266" category="list-text">將電源線插入每個控制器（下圖為EF600）。</block>
   <block id="ee0055e03bb537d2c6549ca206b4bb19" category="paragraph"><block ref="ee0055e03bb537d2c6549ca206b4bb19" category="inline-image-macro-rx" type="image"></block></block>
@@ -5829,10 +5775,6 @@
   <block id="ee469072217f458e10d64df6379eca0a" category="paragraph">*高度*：6.87吋（17.46公分）</block>
   <block id="de886572d93cfb540958bcd9e52245d8" category="paragraph">*最大重量*：250磅（113公斤）</block>
   <block id="9505009e6f019f71841892b4d68ccc72" category="paragraph"><block ref="9505009e6f019f71841892b4d68ccc72" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="781e38e727b5ccea6637b8f5ad2e7e6c" category="list-text">Google Chrome（47版及更新版本）</block>
-  <block id="d69d70a03d263bd459a54e45ce547a58" category="list-text">Microsoft Edge（EdgeHTML 12及更新版本）</block>
-  <block id="ae6f094417120830192cad13d1b6c8cd" category="list-text">Mozilla Firefox（版本31及更新版本）</block>
-  <block id="fc54174a9d1e55650ad7538d8b9506a0" category="list-text">Safari（9版及更新版本）</block>
   <block id="2b5fa483b9fa6f84f3edf32ecca8cf32" category="summary">將控制器連接至網路、以完成儲存系統的設定與組態。</block>
   <block id="4185cbaf8ea10895bfa974c52b310e78" category="paragraph">瞭解如何將控制器連接至網路、並完成儲存系統的設定與組態設定。</block>
   <block id="6b1c1999e4628dd074efc087b964e334" category="paragraph">根據您的網路拓撲佈線系統。</block>
@@ -5894,7 +5836,6 @@
   <block id="f0e4d108bd327aa0295d08fc98aaafd0" category="list-text">連接前擋板。</block>
   <block id="d9917739114ac3a4e015dfd5fd132dc7" category="admonition">設備受損風險：如果感到卡住、請停止推動抽屜。使用抽屜正面的釋放拉桿、將抽屜滑出。然後小心地將抽屜重新插入插槽。</block>
   <block id="448a97577ce7b342ad9a761abecb2e5e" category="paragraph">瞭解如何安裝E5724、EF570、EF280、E2812、E2824、 DE212C或DE224C儲存系統、位於雙柱機架或NetApp系統機櫃中。</block>
-  <block id="84d3553cd5edfee96bc4530427b049ec" category="paragraph">在安裝硬體之前、請務必執行下列動作：</block>
   <block id="6a6d02bf23666d641bc077a5985e2541" category="paragraph">如果機架安裝硬體隨附說明、請參閱以取得有關如何安裝軌道的詳細資訊。如需其他機架安裝指示、請參閱 <block ref="d52e431030e2f3e076bf966941775b1c" category="inline-link-macro-rx"></block>。</block>
   <block id="87786d7292cd0816b9f897eca2d386b9" category="admonition">從機架或機櫃底部到頂端安裝硬體、以避免設備翻覆。</block>
   <block id="cdf076763273c6d309567b8b7c98ad88" category="admonition">裝滿磁碟機時、每個磁碟櫃的重量約為64磅（29公斤）。需要兩人或機械搬移、才能安全搬移機櫃。</block>
@@ -6974,37 +6915,6 @@
   <block id="228099d750c1289b9bfa62e7687ee971" category="cell"><block ref="228099d750c1289b9bfa62e7687ee971" category="inline-link-rx"></block></block>
   <block id="279a877b44d5476b61408bc38e5178f7" category="cell">說明在NetApp E2800與E5700混合式儲存陣列上執行的認證測試結果。</block>
   <block id="bf37ab4daa569311ecb03e0f71cfe44e" category="cell">說明Genetec Security Center Video Management Software（VMS）在NetApp E2800和E5700混合式儲存陣列上的認證結果。</block>
-  <block id="09f15da1ede715dd9ce4f8fc402f6aa5" category="paragraph">下表說明SANtricity 適用於EF300、EF600、E2800/EF280及E5700/EF570控制器的內嵌式管理功能的更新功能。</block>
-  <block id="09ebea90b63074ba83d2ad844e89d70c" category="section-title">11.73版的新功能</block>
-  <block id="36349de7ac0eb86303bed03895c1dcc2" category="paragraph">資源配置與DULBE支援</block>
-  <block id="16fb65d0cddfe2d4c247fdab06b8cc43" category="paragraph">此版本現在完全支援資源配置功能和DULBE磁碟機功能。這項支援包括讓主機導向的未對應資源配置磁碟區更容易使用。</block>
-  <block id="e3b2852f4ef13c9d9eb1a41a50d744b5" category="paragraph">EF600 SAS（512e）擴充</block>
-  <block id="299fb5bbb23387835d58bf5165cddeba" category="paragraph">此版本支援EF600儲存系統擴充至SAS-3機箱。藉由這項擴充、4KiB-block NVMe SSD可與512e SAS SSD和HDD共存。但是、無法在相同的集區或磁碟區群組中設定具有不同區塊大小的磁碟機。</block>
-  <block id="c73d7f2c67532a6b036251cdeb908f76" category="paragraph">支援qlc SSD</block>
-  <block id="e7049769f502b79dadcc8c63383bd373" category="paragraph">此版本支援ONTAP 目前一代的QLC SSD、該SSD在磁碟機韌體中已設定了一些功能、但沒有完整的E系列專屬功能集。qlc磁碟機（僅限NVMe）成本較低、但寫入效能較低、耐受度較低、因此不應用於寫入密集的工作負載。</block>
-  <block id="854da640a0760b1616bb0284c5ac42aa" category="paragraph">TLS 1.3支援</block>
-  <block id="a1ebc729e73cec123d0c98336b6e1c01" category="paragraph">TLS 1.3現在支援內嵌管理。這項支援適用於System Manager和內嵌式Web服務、可啟用或停用。（在先前的Web服務Proxy和Unified Manager版本中新增了TLS 1.3支援。）</block>
-  <block id="f1f2fd644d915b365b5abb8c91c74bfa" category="paragraph">RAID 1 DDP（至少8個磁碟機）</block>
-  <block id="7b17410dd494661b52f2ac79eab0c721" category="paragraph">在此版本中、RAID 1 DDP不再需要集區中至少11個SSD。如果池中只建立RAID 1磁碟區、則最低容量現在允許8個磁碟機SSD集區。</block>
-  <block id="8b4b67bab63907548f025722a3d981e6" category="paragraph">EKMS金鑰刪除</block>
-  <block id="7aaef9b529c633049aca22e386a95abc" category="paragraph">儲存管理員現在可以要求外部金鑰管理伺服器（EKMS）刪除舊金鑰。金鑰刪除只會在安裝磁碟機有新金鑰之後、於重新金鑰程序期間進行。</block>
-  <block id="a9ed1ee525d0d08488f9de3235270743" category="paragraph">您現在可以在功能表：設定[警示]中設定警示通知、支援使用v3。v3可透過強式驗證和資料加密來提供安全性。</block>
-  <block id="4cd824b82861a81d3a34355af5534978" category="cell">此版本支援EF300儲存系統擴充至SAS-3機箱。藉由這項擴充、4KiB-block NVMe SSD可與512e SAS SSD和HDD共存。但是、無法在相同的集區或磁碟區群組中設定具有不同區塊大小的磁碟機。</block>
-  <block id="96d538d953209d533cee6c90da4de1a1" category="paragraph">對於使用25GB iSCSI主機介面卡的儲存陣列、當您設定iSCSI連接埠時、可以使用新選項來設定轉送錯誤修正（FEC）模式。</block>
-  <block id="4c46d61572ef34b4dbdbc7690d745c3d" category="paragraph">選用的遠端儲存磁碟區功能可讓您使用iSCSI連線、從遠端儲存系統將磁碟區匯入本機E系列儲存系統。遠端儲存設備的品牌可能與您的E系列系統相同、也可能來自不同的儲存設備廠商、只要透過iSCSI即可存取即可。</block>
-  <block id="7113199ede26393de60c4e8d5222d08d" category="paragraph">磁碟機清理功能現在已在程序中包含非FDE磁碟機。在「Hardware（硬體）」頁面中、您可以開啟磁碟機的內容功能表、然後選取「Erase（清除）」（此選項先前為「Secure Erase（安全清除）」）。</block>
-  <block id="50c890918fa832fcbdebb84798840bcc" category="paragraph">若要啟用加密電子郵件通知、您可以選擇性地設定傳出電子郵件（警示、ASUP派單）以提供驗證認證。加密類型包括SMTPS和ARTTLS。</block>
-  <block id="31d5de0104fd289863adccff1475589e" category="paragraph">若未啟用功能、「通知」區域會出現警示AutoSupport 。</block>
-  <block id="6972891f094c169717c1d2cc01a9c332" category="paragraph">Syslog警示格式現在支援RFC 5424。</block>
-  <block id="1d9b013014a7b904368939502c5b6aad" category="paragraph">此版本推出EF300低成本All NVMe Flash儲存系統。EF300包括24個NVMe SSD磁碟機、以及每個控制器一個主機介面卡（HIC）。支援的NVMe over Fabrics主機介面包括NVMe over IB、NVMe over RoCE和NVMe over FC。支援的SCSI介面包括FC、IB over iSER和IB over SRP。可在Unified Manager中檢視及管理多個EF300儲存系統和其他E系列儲存系統。</block>
-  <block id="43fc15888e6c15a34af56dfc2d49240a" category="paragraph">EF300和EF600儲存系統的資源配置功能是新功能。資源配置的磁碟區可立即投入使用、無需背景初始化程序。</block>
-  <block id="34e8ca8f8da7ea96f1b8450def8131aa" category="paragraph">對於EF300和EF600儲存系統、可以設定一個磁碟區來支援512位元組或4KiB區塊大小。新增512e功能、可支援iSCSI主機介面和VMware OS。如果可能、System Manager會建議適當的預設值。</block>
-  <block id="caf318d779d33bdcaf1cb8e5ddefea9d" category="paragraph">全新的「傳送AutoSupport 支援資料」功能可讓您將資料傳送至技術支援部門、而無需等待排定的派單。此選項可在AutoSupport 支援中心的「支援中心」的「資訊」索引標籤中找到。</block>
-  <block id="d71804131a489a34d629405530d25a01" category="paragraph">連線至外部金鑰管理伺服器的功能包括下列增強功能：</block>
-  <block id="734830643da23e9370e728f64d10f308" category="paragraph">此版本可讓您使用外部工具（例如、OpenSSL）來產生憑證簽署要求（CSR）、這也需要您匯入私密金鑰檔案及簽署的憑證。</block>
-  <block id="428d905bdf1b0c959591111aad19309d" category="paragraph">對於Volume建立、System Manager提供跳過主機指派步驟的方法、以便離線初始化新建立的Volume。此功能僅適用於SAS磁碟機上的RAID Volume群組（亦即、不適用於動態磁碟集區或EF300和EF600儲存系統中隨附的NVMe SSD）。此功能適用於需要在使用開始時讓磁碟區達到完整效能的工作負載、而非在背景執行初始化。</block>
-  <block id="3caef3194845d0349b1fde3b790187bf" category="paragraph">這項新功能可儲存控制器的RAID組態資料、其中包含Volume群組和磁碟集區的所有資料（與「儲存陣列dbmDatabase」的CLI命令相同）。此功能已新增至輔助技術支援、位於支援中心的診斷標籤中。</block>
-  <block id="5a4dc582c4bbb046fe16599fb3458522" category="paragraph">先前建立的12個磁碟機磁碟集區具有足夠的保留（備援）容量、可容納兩個磁碟機。現在、預設值已變更為處理單一磁碟機故障、以提供更具成本效益的小型集區預設值。</block>
   <block id="3570beeead25c3023d709f9c9ee19c83" category="paragraph"><block ref="3570beeead25c3023d709f9c9ee19c83" category="inline-image-macro-rx" type="image"></block></block>
   <block id="594d2774cd1596c3aabeb365f5c0efb5" category="paragraph"><block ref="594d2774cd1596c3aabeb365f5c0efb5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c59d0d383e44f01e66e32a395b91289" category="paragraph"><block ref="1c59d0d383e44f01e66e32a395b91289" category="inline-image-macro-rx" type="image"></block></block>
@@ -8651,7 +8561,6 @@
   <block id="27a81685959fe491960811c61481c35d" category="paragraph">然後、建立範例檔案「etc/sysconfig/network/ifcfg/eth5」：</block>
   <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。</block>
   <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：</block>
-  <block id="ffbb9e9bc4bfe3481683088489b9c286" category="list-text">在主機上設定NVMe層。在「/etc/modules-load.d/」下建立下列檔案、以載入「NVMe RDMA」核心模組、並確保核心模組在重新開機後仍會持續開啟：</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</block>
   <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
@@ -8725,13 +8634,6 @@
   <block id="35372cbcff3be2cc25be5129c31c81c6" category="list-text">支援的應用程式主機版本：Windows 2016、Windows 2019、Windows 2022。</block>
   <block id="e3cf47c6cb2c608927e7de97ecbf20d2" category="list-text">安全的磁碟機可以是全磁碟加密（FDE）磁碟機、也可以是聯邦資訊處理標準（FIPS）磁碟機。FIPS磁碟機可以是140-2或140-3級、而層級140-2則是較高的安全層級。如果您混合選擇140-2和140-2層級磁碟機、則集區或Volume群組將會以較低的安全性層級（140-2）運作。</block>
   <block id="1974aafa112f63127faafcfced06eda0" category="list-text">如果您想要建立僅FDE集區、請在「Secure Capable（安全功能）」欄中尋找* Yes - FDE*。如果您要建立僅限FIPS的集區、請尋找*是- FIPS-或*是- FIPS（混合）*。「混合」表示混合使用140-2和140-2級磁碟機。如果混合使用這些層級、請注意集區將會以較低的安全層級（1402）運作。</block>
-  <block id="b2d3e7c610f3962f9a7e3b9baa02c363" category="section-title">11.74版的新功能</block>
-  <block id="158083b77acf87778347dd8cf3138b12" category="paragraph">支援FIPS 140-2</block>
-  <block id="93752d0e76882be98725c8b860259db3" category="paragraph">FIPS 140-2和NVMe型SSD目前支援特定磁碟機使用FIPS 140-2。FIPS 140-2層級SSD磁碟機可與FIPS 140-2層級SSD磁碟機共存、但前提是這些磁碟機均為NVMe型或所有SAS型。在Volume群組和磁碟集區中混合使用這些層級時、請注意群組或集區將會以較低的安全性層級（1402）運作。</block>
-  <block id="3f470942a1817eaa19da47ff83fd59ca" category="paragraph">MFA與SSH支援</block>
-  <block id="272f8c73e52dc0fe2c42cfc42fdbefc9" category="paragraph">針對版本11.74及更新版本、遠端登入功能可讓您設定多因素授權（MFA）、方法是要求使用者輸入SSH金鑰及/或SSH密碼。SANtricity「硬體」區段中的功能表選項已從*變更遠端登入*變更為*設定遠端登入（SSH）*。</block>
-  <block id="3b5b5feef66adc0768f35b724a334827" category="paragraph">存取權杖</block>
-  <block id="e91c1fbb7ef80926929c6a0e87d2cea2" category="paragraph">此版本包含一項新功能、可用來建立存取權杖。這些權杖可讓您使用REST API或命令列介面（CLI）進行驗證、而不會洩漏使用者名稱和密碼。存取管理區段提供此功能。</block>
   <block id="a2eca216cb41a80426c839353357173b" category="list-text">如果您已安裝啟用安全功能的磁碟機、並打算執行完整的控制器更換、請參閱下表、以完成安全類型（內部或外部）和磁碟機狀態的適當步驟。如果您*未*安裝啟用安全功能的磁碟機、您可以跳過此步驟、前往表格下方的步驟3。</block>
   <block id="58d3a1b91b20c93e431800a59ecffea8" category="inline-link">命令列介面參考</block>
   <block id="7ee6d87fe161d4b56a5ae818d36005c2" category="admonition">表中的某些步驟需要命令列介面（CLI）命令。如需使用這些命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
@@ -8757,7 +8659,6 @@
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安裝<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用作業系統的套件管理命令來封裝。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">建立名為的systemd服務單元檔案<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">啟用並啟動<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服務：</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
   <block id="6e45870f8629b562b79da969a290951f" category="section-title">步驟2：判斷主機連接埠WWPNS-NVMe / FC VMware</block>
   <block id="2f5a12ce7256b2085ffbd47c6ada5cab" category="section-title">步驟1：設定FC交換器- VMware</block>
   <block id="8177490e8cadc7f4b772200e86180fb2" category="section-title">步驟2：確定主機連接埠WWPNS-FC</block>
@@ -8785,7 +8686,6 @@
   <block id="11b02af429676c3e4ef0b14f72c58b44" category="paragraph">vCenter的儲存外掛程式需要足夠的空間來執行和記錄。請確定您的系統符合下列可用磁碟空間需求：</block>
   <block id="5f5fc15545b1dee5b3f1c2ee92f47de0" category="list-text">所需安裝空間—275 MB</block>
   <block id="9bcf5bd8266f8eea99112a520f67ad79" category="list-text">儲存空間—275 MB + 200 MB（記錄）</block>
-  <block id="4cdb1974fd7f08cb281a8396b499d8f7" category="list-text">系統記憶體—512 MB</block>
   <block id="206c0580c23a54528ad2d285e97454b4" category="paragraph">vCenter的儲存外掛程式是免費的獨立式產品、不需要授權金鑰。然而、適用的版權與服務條款仍適用。</block>
   <block id="cdd47ce62ae0283ba81fbbfac98aa0be" category="paragraph">如果您要從舊版升級、請注意、在升級之前、必須從vCSA取消註冊外掛程式。</block>
   <block id="167e9fb1b11b78bdc503cae6390a6818" category="list-text">在升級期間、大部分的外掛程式先前的組態設定都會保留下來。這些設定包括使用者密碼、所有探索到的儲存系統、伺服器憑證、信任的憑證、以及伺服器執行時間組態。</block>
@@ -8812,7 +8712,6 @@
   <block id="99017918290ad98fceaa8544139404ea" category="list-text">含擴充磁碟櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過240個NL-SAS磁碟機插槽與4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、4個DE460C磁碟櫃或8個DE212C磁碟櫃、或2個DE460C磁碟櫃加上2個DE212磁碟櫃。</block>
   <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、不得超過96個SAS SSD磁碟機插槽和4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
   <block id="d4f4328db6f2e4f903874bc046fd613f" category="list-text">含擴充櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過420個NL-SAS磁碟機插槽與7個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、7個DE460C磁碟櫃或8個DE212C磁碟櫃、或5個DE460C磁碟櫃加上2個DE212磁碟櫃。</block>
-  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">雙柱機架- 2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">四柱機架或機櫃- 2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱式機架：超級軌道</block>
@@ -8867,6 +8766,74 @@
   <block id="4d34b8dd475537b31eded726b5f109a4" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 設定主機</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="8cb633130263590fcb215001ddbab715" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 設定儲存設備</block>
-  <block id="17fbe20fbbd5b537dbcef5b0ec0d1dea" category="section-title">11.75 版的新功能</block>
-  <block id="fc663b28a8d6054c2d97e0b897d7291f" category="paragraph">系統必須執行 11.70.5 才能升級至 11.8.x 或更新版本。</block>
+  <block id="ddd0020a0684c14dbd50622f84d8917a" category="paragraph">請確定您擁有下列項目：</block>
+  <block id="7647966b7343c29048673252e490f736" category="paragraph">89</block>
+  <block id="8613985ec49eb8f757ae6439e879bb2a" category="paragraph">90</block>
+  <block id="f033ab37c30201f73f142449d037028d" category="paragraph">80</block>
+  <block id="aab3238922bcc25a6f606eb525ffdc56" category="paragraph">14.</block>
+  <block id="48302d2fba01b598c24ef8cb5486c530" category="list-text">在主機上設定NVMe層。在 /etc/modules-load.d/ 下建立下列檔案以載入<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 核心模組、並確保核心模組永遠開啟、即使在重新開機之後：</block>
+  <block id="bb648e7fc0d366deef63d637e0a76377" category="paragraph">以驗證<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 已載入核心模組、請執行此命令：</block>
+  <block id="070e96bf6a4ddc9c8e8882425927de45" category="list-text">使用<block ref="f3d48156832e70ac41335c007fa76798" prefix=" " category="inline-code"></block> 命令以查看目前連線的 NVMe 裝置清單。</block>
+  <block id="3421354e6a9adde19a7c53b4efb8cb05" category="list-text">在主機上設定NVMe層。在下列位置建立下列檔案<block ref="5b084c473f7842460c228cc4f4e08f98" prefix=" " category="inline-code"></block> 載入<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 核心模組、並確保核心模組永遠開啟、即使在重新開機之後：</block>
+  <block id="9fe35a3f27c999e8d5bccf07e605e703" category="paragraph">請確定您擁有下列項目：
+* 在與儲存管理連接埠相同的子網路上安裝和設定的 DHCP 伺服器。</block>
+  <block id="1bdb35aa1d3b8abd63ef262600e1c9d9" category="list-text">系統記憶體— 1.5 GB</block>
+  <block id="45c4e24bcbb96005a9f6413a6d3e8d61" category="paragraph">若要在 vSphere Client 中建立資料存放區、請參閱<block ref="1935085257ca6f59c3fa99634c576530" category="inline-link-rx"></block> VMware 文件中心主題。</block>
+  <block id="e1b44e87bdbcd1ae906703fecba966cf" category="list-text">磁碟區容量完成後、您必須手動增加 VMFS 大小、以符合中所述<block ref="736c08ebbc8283f30abdffe8a802b25a" category="inline-link-rx"></block> VMware 文件中心下的主題。</block>
+  <block id="3e51eb8a98e37cd2bee48affec6b3f02" category="list-text">接下來、將磁碟區指派給所需的主機、以增加資料存放區的容量。</block>
+  <block id="d295d58115f15821d21734fad82dce5c" category="paragraph">請參閱<block ref="05fc437e4ce8c739576db569ed487331" category="inline-link-rx"></block> 如需詳細資訊、請參閱 VMware 文件中心下的主題。</block>
+  <block id="8def14e5183fbb5677794536682b7d45" category="admonition">「子模型」也可以寫入為「子模型」。</block>
+  <block id="b4c31a3654f7f34af7d451e582bf910c" category="paragraph">* （ 1 ） * _ 有線鏈 _</block>
+  <block id="4591a73cfd3cb0cf1a08402845480b71" category="list-text">執行 SMClient 命令、<block ref="66131a22d885314a8385d34d18407d77" prefix=" " category="inline-code"></block>。</block>
+  <block id="ed6ef0e289dde2b4b0d96e83a84886ed" category="list-text">等待兩個控制器重新開機。</block>
+  <block id="7b7a6e706bdcec884d822bcb95a94ff6" category="list-text">請至以下網址註冊硬體：<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="9e03f2920bb645354640e8c3351f138b" category="list-text">建立帳戶並在註冊硬體<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>。</block>
+  <block id="1592b862f4a1becd28d412c41f36cb11" category="list-text">Google Chrome （第 89 版及更新版本）</block>
+  <block id="c7d212f9925e21aba22cc40abf3a28b1" category="list-text">Microsoft Edge （ 90 版及更新版本）</block>
+  <block id="c6d379ca14207b822732863fc2d321b4" category="list-text">Mozilla Firefox （ 80 版及更新版本）</block>
+  <block id="0e2cf8121bf46167d098bd693e028a06" category="list-text">Safari （版本 14 及更新版本）</block>
+  <block id="ece376b7acc25f86ff2e09f80d38755c" category="paragraph">請務必執行下列動作：</block>
+  <block id="9be4f8ee760eeaa38f44e28753bb0c03" category="paragraph">下表說明 SANtricity OS 11.8 中嵌入式管理 EF300 、 EF600 、 E2800/EF280 和 E5700/EF570 控制器的新功能。</block>
+  <block id="b88fbe45e9e75bdd6c5127ce8a22abe1" category="section-title">11.80 版的新功能</block>
+  <block id="8f407366493ebfbb4a6dec746e7c89f5" category="paragraph">增強的 Volume 同位檢查掃描</block>
+  <block id="07c3c6708618172f589685373ed71a5d" category="paragraph">Volume 同位元檢查掃描現在可以透過 REST API 或 CLI 作為背景程序啟動。只要需要完成掃描作業、所產生的同位元檢查掃描就會在背景中執行。在控制器重新開機和容錯移轉作業之後、掃描作業仍可繼續執行。</block>
+  <block id="b9a173a4a6a7b368e4cd4fde15879372" category="paragraph">Unified Manager 的 SAML 支援</block>
+  <block id="dc505118a542aefe283668ff60bf1633" category="paragraph">Unified Manager 現在支援 SAML （安全聲明標記語言）。啟用 Unified Manager 的 SAML 後、使用者必須針對身分識別提供者使用多因素驗證、才能與使用者介面互動。請注意、在 Unified Manager 上啟用 SAML 之後、只有透過 IDP 驗證要求、才能使用 REST API 。</block>
+  <block id="43a12a9165de329d02388e8e878f20ca" category="paragraph">自動組態功能</block>
+  <block id="ef6a29a31f9fb810c02278975cd6cd39" category="paragraph">現在支援設定 Volume 區塊大小參數的功能、以搭配自動組態功能進行初始陣列設定。此功能僅在 CLI 中以「區塊大小」參數提供。</block>
+  <block id="017965dda869643c4d632c18853208a2" category="paragraph">控制器韌體密碼編譯簽署</block>
+  <block id="f9b1cc083f0890b8fff17a83a0360f47" category="paragraph">控制器韌體經過密碼編譯簽署。在初始下載期間和每個控制器開機時、都會檢查簽名。預期不會對終端使用者造成影響。簽章由 CA 核發的延伸驗證憑證作為後盾。</block>
+  <block id="637780f8b22fe474ce198ef516dd7d6f" category="paragraph">磁碟機韌體密碼編譯簽署</block>
+  <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">磁碟機韌體經過密碼編譯簽署。在初始下載期間會檢查簽名、並以 CA 核發的延伸驗證憑證作為後盾。磁碟機韌體內容現在會以 ZIP 檔案形式提供、其中包含舊版的未簽署韌體、以及新簽署的韌體。使用者必須根據目標系統上執行的程式碼發行版本、選擇適當的檔案。</block>
+  <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部金鑰伺服器管理 - 憑證金鑰大小</block>
+  <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新的預設憑證金鑰大小為 3072 位元（ 2048 位元）。支援的金鑰大小最高可達 4096 位元。必須變更 NVSRAM 位元、才能支援非預設金鑰大小。</block>
+  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">使用容量為 512B 區塊的磁碟機、支援更大的動態磁碟集區大小</block>
+  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">使用版本 1 集區版本類型的客戶現在可以擁有 48 TB 最大容量的磁碟集區。較舊版本最多可支援 24 TB 磁碟集區大小。如果要將現有的磁碟集區轉換成較大的大小、則必須先移除所有磁碟區。存在版本 1 磁碟集區時、降級作業會受到限制。</block>
+  <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">除非符合最低瀏覽器需求、否則 System Manager 和 Unified Manager 將不會啟動</block>
+  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。以下是支援的最低版本：</block>
+  <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox 最低版本 80</block>
+  <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome 最低版本 89</block>
+  <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">Edge 最低版本 90</block>
+  <block id="3534d42485ecd595e87248bbb2c6fb1b" category="list-text">Safari 最低版本 14</block>
+  <block id="bb4e0c918ecc32e775e010bc9f6eff59" category="paragraph">支援 FIPS 140-3 NVMe SSD 磁碟機</block>
+  <block id="eca8285b82a553e8fbe1803bfdeced3e" category="paragraph">NetApp 認證的 FIPS 140-3 NVMe SSD 磁碟機現在受到支援。在儲存陣列設定檔和 System Manager 中、這些設定檔將會正確識別。</block>
+  <block id="fb8aaa0a635cb460bcf41d9303fca571" category="paragraph">支援 EF300 和 EF600 上的 SSD 讀取快取</block>
+  <block id="14d2cdc88c041d0313b6c691ee27338f" category="paragraph">使用 SAS 擴充硬碟的 EF300 和 EF600 控制器現在支援 SSD 讀取快取。</block>
+  <block id="8a00db0b101a6946d9caffef7979d8c4" category="paragraph">支援 EF300 和 EF600 上的 iSCSI 和光纖通道非同步遠端鏡射</block>
+  <block id="8ea61c04007ddc1b703be50a63a1b3ee" category="paragraph">採用 NVMe 和 SAS 型磁碟區的 EF300 和 EF600 控制器現在支援非同步遠端鏡射（ ARVM ）。</block>
+  <block id="d99731ca7d5c671cea9d584100385335" category="paragraph">支援 EF300 和 EF600 、不需在基本托盤上安裝磁碟機</block>
+  <block id="65c8d39e2e73985a77ff0c8a61c30608" category="paragraph">現在支援基礎托盤上沒有 NVMe 磁碟機的 EF300 和 EF600 控制器組態。</block>
+  <block id="248bd33e5007bccdca76e9d0459df99c" category="paragraph">已停用所有平台的 USB 連接埠</block>
+  <block id="3ea3899fea5b85d0cc4b9b3bf6291d51" category="paragraph">現在所有平台上的 USB 連接埠都已停用。</block>
+  <block id="9a64b980fbe41aeaf8ecb2f99c2385a9" category="paragraph">NVMe / FC 、 NVMe / Roce 或 iSCSI</block>
+  <block id="64f514f53e9a2ebedc121c63efdf12c0" category="paragraph">NVMe / FC 或 NVMe / IB</block>
+  <block id="41bdfc03cf6a112f92ffe96cc4938a68" category="paragraph">NVMe / IB 或 NVMe / FC</block>
+  <block id="6d7b18f9c306b8578ca261d6f6b6adee" category="paragraph">開始升級之前、請務必先檢閱  <block ref="dc69c58b5cd4f4fb6b0ef459d59315bd" category="inline-link-macro-rx"></block>。</block>
+  <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">您需要的一切</block>
+  <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">請務必執行下列動作：</block>
+  <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge （ 90 及更新版本）</block>
+  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。</block>
+  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
+  <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、 1 個 DE460C 機櫃加上 1 個 DE224C 機櫃加上 1 個 DE212C 機櫃、 4 個 DE224C 機櫃或 8 個 DE212C 機櫃</block>
+  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
 </blocks>

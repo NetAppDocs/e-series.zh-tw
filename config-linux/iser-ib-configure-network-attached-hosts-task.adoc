@@ -15,8 +15,11 @@ summary: InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行
 
 InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SRP、因此不需要額外的硬體。
 
-.您需要的產品
-NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+.開始之前
+請確定您擁有下列項目：
+
+* NetApp建議在系統上安裝OFED。如需詳細資訊、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
 
 .步驟
 . 在主機上啟用和啟動iSCSI服務：

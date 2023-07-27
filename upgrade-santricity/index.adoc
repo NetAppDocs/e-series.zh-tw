@@ -20,4 +20,4 @@ summary: 升級SANtricity 版的概述
 * Drive（磁碟機）-包含升級磁碟機韌體的說明。
 
 
-開始升級之前、請務必先檢閱 link:overview-upgrade-consider-task.html["升級考量"]。
+開始升級之前、請務必先檢閱  link:overview-upgrade-consider-task.html["升級考量"^]。

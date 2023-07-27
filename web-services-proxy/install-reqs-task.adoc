@@ -21,6 +21,7 @@ summary: Web Services Proxy的安裝與升級需求與考量。
 
 Proxy安裝包括下列需求。
 
+[cols="35h,~"]
 |===
 | 需求 | 說明 
 
