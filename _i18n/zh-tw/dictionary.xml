@@ -3642,7 +3642,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E系列/EF系列SANtricity 的注意事項</block>
-  <block id="2dae7f81af3097152530b0bc519d7eb1" category="paragraph"><block ref="2dae7f81af3097152530b0bc519d7eb1" category="inline-link-rx"></block></block>
   <block id="086932e63e7e97d12e0f5f2f280c6bb7" category="summary">更換E5700 24磁碟機櫃中的磁碟機。</block>
   <block id="2209054aed327450a6370894127d6451" category="doc">更換E5700（24個磁碟機櫃）中的磁碟機</block>
   <block id="08ee2b422ae47dae9b80953fb8c85e8f" category="paragraph">您可以更換24個磁碟機櫃中的磁碟機。</block>
@@ -6884,8 +6883,6 @@
   <block id="00f36bd2b4cd1d9e59ff895b5e131be2" category="sidebar">技術報告</block>
   <block id="ecf549e9fad795bd98e9fd921c59f8e9" category="sidebar">解決方案TR</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="sidebar">快速入門</block>
-  <block id="e35d3866f0babedb61a0f1ba9102cafd" category="sidebar">系統管理程式11.7 SANtricity</block>
-  <block id="0ce99b430e0880d9c5b01d46d038d4dd" category="sidebar">統一化管理程式5. SANtricity</block>
   <block id="06e7eb701ce804d46bd8c25ab5b395f0" category="sidebar">命令列介面（CLI）參考</block>
   <block id="8a47162648ffc3ff0cf630036d36f2d6" category="sidebar">資訊API SANtricity</block>
   <block id="92850b78bdc20bc1df259e9c026d1744" category="sidebar">Web服務</block>
@@ -8846,4 +8843,7 @@
   <block id="57ceabd1bd2acd18e97acd2a27a09688" category="list-text"><block ref="57ceabd1bd2acd18e97acd2a27a09688" category="inline-link-rx"></block></block>
   <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">SANtricity 系統管理員 11.6x 線上說明</block>
   <block id="8200e232e26f3c94f328c9f6cf840844" category="list-text"><block ref="8200e232e26f3c94f328c9f6cf840844" category="inline-link-rx"></block></block>
+  <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
+  <block id="050910c569f1cb9044086ceee795e2f8" category="sidebar">SANtricity 系統管理員 11.8</block>
+  <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="sidebar">SANtricity Unified Manager 6.</block>
 </blocks>
