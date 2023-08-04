@@ -3630,15 +3630,11 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="cc1ba14f8dc9bd7ba20e2aa654cde10b" category="inline-link">E系列/EF系列SANtricity 的注意事項</block>
@@ -8799,8 +8795,6 @@
   <block id="a8c2ab0b22d074faf460a15d6648a3e7" category="paragraph">磁碟機韌體經過密碼編譯簽署。在初始下載期間會檢查簽名、並以 CA 核發的延伸驗證憑證作為後盾。磁碟機韌體內容現在會以 ZIP 檔案形式提供、其中包含舊版的未簽署韌體、以及新簽署的韌體。使用者必須根據目標系統上執行的程式碼發行版本、選擇適當的檔案。</block>
   <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部金鑰伺服器管理 - 憑證金鑰大小</block>
   <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新的預設憑證金鑰大小為 3072 位元（ 2048 位元）。支援的金鑰大小最高可達 4096 位元。必須變更 NVSRAM 位元、才能支援非預設金鑰大小。</block>
-  <block id="710e42f1cedbf3e670aace3815d6e451" category="paragraph">使用容量為 512B 區塊的磁碟機、支援更大的動態磁碟集區大小</block>
-  <block id="7a4f6b11e091466663e9c7d3c9480717" category="paragraph">使用版本 1 集區版本類型的客戶現在可以擁有 48 TB 最大容量的磁碟集區。較舊版本最多可支援 24 TB 磁碟集區大小。如果要將現有的磁碟集區轉換成較大的大小、則必須先移除所有磁碟區。存在版本 1 磁碟集區時、降級作業會受到限制。</block>
   <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">除非符合最低瀏覽器需求、否則 System Manager 和 Unified Manager 將不會啟動</block>
   <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。以下是支援的最低版本：</block>
   <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox 最低版本 80</block>
@@ -8846,4 +8840,24 @@
   <block id="df9168fd1981b1464f7c0d38b2207c30" category="paragraph"><block ref="df9168fd1981b1464f7c0d38b2207c30" category="inline-link-rx"></block></block>
   <block id="050910c569f1cb9044086ceee795e2f8" category="sidebar">SANtricity 系統管理員 11.8</block>
   <block id="1cf9153cf0b1bfe4b703e41b4509763e" category="sidebar">SANtricity Unified Manager 6.</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="deab0ae4ee87e153ce15a1182bf91617" category="paragraph">金鑰大小選擇值如下：</block>
+  <block id="92c9cd6ce879c70c929395d49566fca3" category="list-text">預設值 = 0</block>
+  <block id="91d66be9b353d488558a2fc87f866263" category="list-text">長度 2048 = 1</block>
+  <block id="60f95b27118522aa50716737cc578a39" category="list-text">長度 3072 = 2</block>
+  <block id="46b1448aca55d48c198834955f8e6b6a" category="list-text">長度 4096 = 3</block>
+  <block id="80b104f769b8bbef5d4b39ffe2efd816" category="paragraph">若要透過 SMcli 將金鑰大小變更為 4096 ：</block>
+  <block id="7f1a49e026d5afc827c5a0184af45fe0" category="paragraph"><block ref="53d52ccae7296ad3c52a5cc86881da22" prefix="" category="inline-code"></block><block ref="52baead6a42dd6532784cc33f69d8d94" prefix=" " category="inline-code"></block></block>
+  <block id="ad7ca0ac2dce92cb837bf072818ce860" category="paragraph">詢問金鑰大小：</block>
+  <block id="dc8f09004148c8853414b2fe2f19c503" category="paragraph"><block ref="5dfae352b2be729a121ea8024c5dc604" prefix="" category="inline-code"></block></block>
+  <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">磁碟集區改善</block>
+  <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用執行 11.80 或更高版本的控制器所建立的磁碟集區會是 _Version 1_ 集區、而不是 _Version 0_ 集區。當存在 _Version 1_ 磁碟集區時、降級作業會受到限制。</block>
+  <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">磁碟集區的版本可在儲存陣列設定檔中識別。</block>
 </blocks>
