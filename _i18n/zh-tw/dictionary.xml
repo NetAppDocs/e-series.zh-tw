@@ -8860,4 +8860,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">磁碟集區改善</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用執行 11.80 或更高版本的控制器所建立的磁碟集區會是 _Version 1_ 集區、而不是 _Version 0_ 集區。當存在 _Version 1_ 磁碟集區時、降級作業會受到限制。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">磁碟集區的版本可在儲存陣列設定檔中識別。</block>
+  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">這是可列印的PDF逐步說明、並提供其他內容的即時連結。</block>
+  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">這些是本網站所述的設定指示。</block>
 </blocks>
