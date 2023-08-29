@@ -94,7 +94,9 @@ Unified Manager 現在支援 SAML （安全聲明標記語言）。啟用 Unifie
  a| 
 除非符合最低瀏覽器需求、否則 System Manager 和 Unified Manager 將不會啟動
  a| 
-系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。以下是支援的最低版本：
+系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。
+
+以下是支援的最低版本：
 
 * Firefox 最低版本 80
 * Chrome 最低版本 89
@@ -136,5 +138,101 @@ NetApp 認證的 FIPS 140-3 NVMe SSD 磁碟機現在受到支援。在儲存陣�
 已停用所有平台的 USB 連接埠
  a| 
 現在所有平台上的 USB 連接埠都已停用。
+
+
+
+ a| 
+增加 SSD 讀取快取上限
+ a| 
+SSD 讀取快取記憶體上限從 5TB 增加至 8TB 。
+
+
+
+ a| 
+以雙工組態將所有 Flash 讀取快取指派給單一磁碟區
+ a| 
+只要單一磁碟區使用整個 SSD 快取、就能將所有 SSD 讀取快取指派給雙工系統上的相同磁碟區。
+
+
+
+ a| 
+磁碟機序號已新增至儲存陣列設定檔的磁碟機摘要表
+ a| 
+磁碟機序號已新增至儲存陣列設定檔中的磁碟機摘要表。
+
+
+
+ a| 
+新增 dom0-misc-logs 至每日 ASUP
+ a| 
+控制器 A 和 B 的 dom0-miscs 記錄已新增至每日的 ASUP 。
+
+
+
+ a| 
+預設會使用連接埠 443 與內嵌 Web 服務進行應用程式通訊
+ a| 
+現在、連接埠 443 會在與內嵌式 Web 伺服器通訊時依預設使用。。  `-useLegacyTransferPort` 已為想要改用舊版 8443 傳輸連接埠的使用者新增 CLI 命令。如需全新 -useLegacyTransferPort CLI 命令的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/whats-new.html["SANtricity CLI 新增功能"]。
+
+
+
+ a| 
+掃描 Volume 同位檢查進度功能
+ a| 
+實作下列 CLI 命令以支援工作型 Volume 同位元檢查掃描作業：
+
+* 開始檢查磁碟區同位檢查
+* 儲存檢查 Volume 同位檢查工作錯誤
+* 停止檢查 Volume 同位檢查工作
+* 顯示檢查 Volume 同位檢查工作或工作
+
+
+如需新的工作型 Volume 同位元檢查掃描 CLI 命令的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/whats-new.html["SANtricity CLI 新增功能"]。
+
+
+
+ a| 
+適用於 Unified Manager 的 MFA 支援
+ a| 
+Unified Manager 現在支援多重驗證（ MFA ）。
+
+
+
+ a| 
+切換前端硬體檢視的圖示
+ a| 
+在 System Manager/Unified Manager 的硬體檢視中、現在有兩個索引標籤可供控制正面和背面檢視：
+
+* 磁碟機索引標籤
+* 控制器與元件索引標籤
+
+
+
+
+ a| 
+vCenter Storage 外掛程式
+ a| 
+vCenter Storage 外掛程式已更新、與 E 系列 11.80 版本相容。
+
+
+
+ a| 
+Web Services Proxy 6.0
+ a| 
+Web 服務 Proxy 已更新至 6.0 版、以與 E 系列 11.80 版本相容。
+
+
+
+ a| 
+移除 E 系列標稱和最大溫度超出事件的 ASUP 案例建立旗標
+ a| 
+現在已停用「案例建立」旗標、以處理不需採取行動的名義和最高溫度超出事件。
+
+
+
+ a| 
+已啟用 0x1209 MEL 事件的優先案例建立旗標
+ a| 
+現已為建立案例建立旗標 `MEL_EV_DEGRADE_CHANNEL 0x1209` MEL 事件。
 
 |===

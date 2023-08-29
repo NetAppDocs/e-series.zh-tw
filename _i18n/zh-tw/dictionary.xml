@@ -8796,7 +8796,6 @@
   <block id="3c65e3636111523111e45a49a80face3" category="paragraph">外部金鑰伺服器管理 - 憑證金鑰大小</block>
   <block id="406774a2d5f641d5566318ef7eb88033" category="paragraph">新的預設憑證金鑰大小為 3072 位元（ 2048 位元）。支援的金鑰大小最高可達 4096 位元。必須變更 NVSRAM 位元、才能支援非預設金鑰大小。</block>
   <block id="9a1c6a24950fba4eade84dc9952a77dd" category="paragraph">除非符合最低瀏覽器需求、否則 System Manager 和 Unified Manager 將不會啟動</block>
-  <block id="09a616fc9241625ec6003f2da3c0cff9" category="paragraph">系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。以下是支援的最低版本：</block>
   <block id="6cdb1f943282038a6441359c5c88f812" category="list-text">Firefox 最低版本 80</block>
   <block id="773389fc57f11b52dbe4c622adc51a3b" category="list-text">Chrome 最低版本 89</block>
   <block id="2ac44b1b15c0ea01cbb812f5c6cf9b1e" category="list-text">Edge 最低版本 90</block>
@@ -8862,4 +8861,38 @@
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">磁碟集區的版本可在儲存陣列設定檔中識別。</block>
   <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">這是可列印的PDF逐步說明、並提供其他內容的即時連結。</block>
   <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">這些是本網站所述的設定指示。</block>
+  <block id="746ff5a72ad1791e39c47dc0abcdffe3" category="paragraph">系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。</block>
+  <block id="488c35a42ee48966247c5cc643d96708" category="paragraph">以下是支援的最低版本：</block>
+  <block id="5f7273b60d2186e7b7a65eb2cee83294" category="paragraph">增加 SSD 讀取快取上限</block>
+  <block id="b88a2dc6fb8e71c6877b713109600d31" category="paragraph">SSD 讀取快取記憶體上限從 5TB 增加至 8TB 。</block>
+  <block id="0fcc90fc3cc76dc629299a26e9902d23" category="paragraph">以雙工組態將所有 Flash 讀取快取指派給單一磁碟區</block>
+  <block id="6d78f845696ad97b7b7e169fc5375d79" category="paragraph">只要單一磁碟區使用整個 SSD 快取、就能將所有 SSD 讀取快取指派給雙工系統上的相同磁碟區。</block>
+  <block id="d11eb1a833f3aa6a6f8e288a6f2ed677" category="paragraph">磁碟機序號已新增至儲存陣列設定檔的磁碟機摘要表</block>
+  <block id="b84b5ed2d3f0ce14a401d770d1134670" category="paragraph">磁碟機序號已新增至儲存陣列設定檔中的磁碟機摘要表。</block>
+  <block id="d6038dc26b052a3a064752f0146b5f9b" category="paragraph">新增 dom0-misc-logs 至每日 ASUP</block>
+  <block id="85417dc8935dcc8606a9ce644880ed8f" category="paragraph">控制器 A 和 B 的 dom0-miscs 記錄已新增至每日的 ASUP 。</block>
+  <block id="afc03e3c62dfaee81d570aea0bd2b630" category="paragraph">預設會使用連接埠 443 與內嵌 Web 服務進行應用程式通訊</block>
+  <block id="eacd3a01aace39f1f6e66917c8940ef1" category="inline-link">SANtricity CLI 新增功能</block>
+  <block id="83b8b5d49e97331a225fa2dbbd1a62e3" category="paragraph">現在、連接埠 443 會在與內嵌式 Web 伺服器通訊時依預設使用。。 <block ref="ab1f19425d80842e646857a8f89eeecb" prefix=" " category="inline-code"></block> 已為想要改用舊版 8443 傳輸連接埠的使用者新增 CLI 命令。如需全新 -useLegacyTransferPort CLI 命令的詳細資訊、請參閱<block ref="3f687888503820df36991007e34e41c4" category="inline-link-rx"></block>。</block>
+  <block id="52d0d651e479545a9dfd4a2149790d3a" category="paragraph">掃描 Volume 同位檢查進度功能</block>
+  <block id="bc35f25d66e2f2680880d507f3957650" category="paragraph">實作下列 CLI 命令以支援工作型 Volume 同位元檢查掃描作業：</block>
+  <block id="327134a83c506a23113bb7582b9047e6" category="list-text">開始檢查磁碟區同位檢查</block>
+  <block id="c53504f672ba9ced05d212f101968d7b" category="list-text">儲存檢查 Volume 同位檢查工作錯誤</block>
+  <block id="3fc6c33101584c7bde9838ff559f7748" category="list-text">停止檢查 Volume 同位檢查工作</block>
+  <block id="0cb9ae9fc51fc2b828c3c3435509b033" category="list-text">顯示檢查 Volume 同位檢查工作或工作</block>
+  <block id="fc414e3a242c3a9cb3274ecb244ff804" category="paragraph">如需新的工作型 Volume 同位元檢查掃描 CLI 命令的詳細資訊、請參閱<block ref="3f687888503820df36991007e34e41c4" category="inline-link-rx"></block>。</block>
+  <block id="af9f4d4514238eb39039de48310827c0" category="paragraph">適用於 Unified Manager 的 MFA 支援</block>
+  <block id="a0471e6b01957f4852bf9d902116f837" category="paragraph">Unified Manager 現在支援多重驗證（ MFA ）。</block>
+  <block id="ec68da29293899e68bdbfb3726ee4772" category="paragraph">切換前端硬體檢視的圖示</block>
+  <block id="7dec11df2782d6016c4dda7dc026b74c" category="paragraph">在 System Manager/Unified Manager 的硬體檢視中、現在有兩個索引標籤可供控制正面和背面檢視：</block>
+  <block id="f43358a4d6ad58adb39ef28c39d4476d" category="list-text">磁碟機索引標籤</block>
+  <block id="be11932b8d4098dedf49767b73baa0ec" category="list-text">控制器與元件索引標籤</block>
+  <block id="85873696abedac8fb70b86eef30b99fe" category="paragraph">vCenter Storage 外掛程式</block>
+  <block id="a0ed2d9ab2c9fcb9427af6913c300885" category="paragraph">vCenter Storage 外掛程式已更新、與 E 系列 11.80 版本相容。</block>
+  <block id="3bffe499935be0a3f4ea37f8ab57bb72" category="paragraph">Web Services Proxy 6.0</block>
+  <block id="632af5f75596f275f6e09a1a48a3c8ff" category="paragraph">Web 服務 Proxy 已更新至 6.0 版、以與 E 系列 11.80 版本相容。</block>
+  <block id="c7e5752f01cddef599a3ea12895dd067" category="paragraph">移除 E 系列標稱和最大溫度超出事件的 ASUP 案例建立旗標</block>
+  <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">現在已停用「案例建立」旗標、以處理不需採取行動的名義和最高溫度超出事件。</block>
+  <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">已啟用 0x1209 MEL 事件的優先案例建立旗標</block>
+  <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">現已為建立案例建立旗標<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MEL 事件。</block>
 </blocks>
