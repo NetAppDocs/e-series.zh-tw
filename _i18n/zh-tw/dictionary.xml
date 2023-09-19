@@ -8817,10 +8817,7 @@
   <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">您需要的一切</block>
   <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">請務必執行下列動作：</block>
   <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge （ 90 及更新版本）</block>
-  <block id="055c49f32e97721509c3ba8e800b7d0e" category="admonition">E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。</block>
-  <block id="9fed5991090e027f2348c873d605f4d6" category="admonition">EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、 1 個 DE460C 機櫃加上 1 個 DE224C 機櫃加上 1 個 DE212C 機櫃、 4 個 DE224C 機櫃或 8 個 DE212C 機櫃</block>
-  <block id="e1602ccaec81c1829eb2a83bd391bfb8" category="admonition">EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity 11.7 版</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
   <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
@@ -8895,4 +8892,7 @@
   <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">現在已停用「案例建立」旗標、以處理不需採取行動的名義和最高溫度超出事件。</block>
   <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">已啟用 0x1209 MEL 事件的優先案例建立旗標</block>
   <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">現已為建立案例建立旗標<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MEL 事件。</block>
+  <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">對於 SANtricity OS 11.80GA 及更新版本、 E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。</block>
+  <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
+  <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
 </blocks>
