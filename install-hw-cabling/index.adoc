@@ -70,6 +70,4 @@ E2760、E5660
 DE460C
 
 |===
-如需其他纜線選項的相關資訊、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2773533["E系列硬體佈線指南"^] 適用於較舊的系統。
-
 如需支援鏡射功能的纜線連接資訊、請參閱 https://www.netapp.com/us/media/tr-4656.pdf["同步與非同步鏡射功能說明與部署指南"^]。
