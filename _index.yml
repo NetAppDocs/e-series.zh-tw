@@ -1,0 +1,62 @@
+---
+indexpage:
+  title: E系列系統文件
+  summary: E系列系統提供整合式硬體與軟體解決方案、適用於需要簡單、快速、可靠的SAN儲存設備的專屬高頻寬應用程式、例如資料分析、視訊監控和磁碟型備份。
+  keywords: e-series, integrated hardware, software, data analytics, video surveillance,
+    disk-based backup
+  lead: E系列系統提供整合式硬體與軟體解決方案、適用於需要簡單、快速、可靠的SAN儲存設備的專屬高頻寬應用程式、例如資料分析、視訊監控和磁碟型備份。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 快速入門
+      url: "/getting-started/getup-run-concept.html"
+    - title: EF系列產品型錄
+      url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
+    - title: E5700產品型錄
+      url: https://www.netapp.com/pdf.html?item=/media/7572-ds-3894.pdf
+    - title: E2800產品型錄
+      url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
+  - title: 軟件SANtricity
+    links:
+    - title: SANtricity 系統管理員 11.8
+      url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
+    - title: SANtricity Unified Manager 6.
+      url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
+    - title: 命令列介面（CLI）參考
+      url: https://docs.netapp.com/us-en/e-series-cli/index.html
+  - title: 資訊API SANtricity
+    links:
+    - title: Web服務
+      url: "/web-services-proxy/index.html"
+    - title: vCenter的外掛程式
+      url: "/vcenter-plugin/san-spvc-ic-overview.html"
+    - title: SMI-S供應商
+      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=62208
+  - title: 效能應用程式附加元件
+    links:
+    - title: Splunk Enterprise適用的應用程式SANtricity
+      url: https://splunkbase.splunk.com/app/1932/
+    - title: Splunk技術附加SANtricity 元件、適用於
+      url: https://splunkbase.splunk.com/app/1933/
+    - title: 效能分析器搭配E系列+ Grafana
+      url: https://github.com/NetApp/eseries-perf-analyzer
+    - title: E系列效能分析器的部落格
+      url: https://blog.netapp.com/monitoring-netapp-eseries
+  - title: 適用於SE
+    links:
+    - title: E系列/EF系列技術訓練（需登入）
+      url: https://fieldportal.netapp.com/content/199944
+    - title: EF300總覽與技術詳細資料（需登入）
+      url: https://fieldportal.netapp.com/content/1417672
+    - title: NetApp Fusion 產品（需登入）
+      url: https://fusion.netapp.com/
+  - title: 工具支援
+    links:
+    - title: NetApp 互通性對照表
+      url: http://mysupport.netapp.com/matrix/
+    - title: NetApp知識庫
+      url: https://kb.netapp.com/
+    - title: "（需要登入）Active IQ"
+      url: https://activeiq.netapp.com/?source=aiqnsspage
+    - title: E系列/SANtricity下載（需要登入）
+      url: https://mysupport.netapp.com/site/downloads#E
