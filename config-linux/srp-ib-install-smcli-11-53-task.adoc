@@ -17,7 +17,10 @@ summary: 當您在SANtricity Management Station上安裝時、預設會安裝圖
 包含用於其他管理工作的命令列介面（CLI）、以及用於透過I/O路徑將主機組態資訊推送至儲存陣列控制器的主機內容代理程式。SANtricity
 
 
-NOTE: 如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需更多關於如何透過SANtricity 「支援系統管理程式」下載SMcli的資訊、請參閱SANtricity 《支援服務》（英文）下方的「下載命令列介面（CLI）」主題。
+NOTE: 如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 link:https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]
+
+
+NOTE: 從 SANtricity 軟體 11.80.1 版開始、不再支援主機內容代理程式。
 
 .開始之前
 請確定您擁有下列項目：

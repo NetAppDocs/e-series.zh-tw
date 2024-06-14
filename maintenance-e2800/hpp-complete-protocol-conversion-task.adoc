@@ -133,7 +133,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam113
 . 編輯主機分割區以新增iSCSI主機連接埠ID、並移除FC主機連接埠ID。
 . iSCSI主機重新開機後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
 +
-** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可以使用 SMCLI 命令 `-identifyDevices` 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 ** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
 
 
@@ -170,7 +170,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam113
 . 編輯主機分割區以新增FC主機連接埠ID、並移除iSCSI主機連接埠ID。
 . 在新的FC主機重新開機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
 +
-** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可以使用 SMCLI 命令 `-identifyDevices` 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 ** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
 
 
@@ -207,7 +207,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam113
 . 編輯主機分割區以新增FC主機連接埠ID、並移除iSCSI主機連接埠ID。
 . 在新的FC主機重新開機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
 +
-** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可以使用 SMCLI 命令 `-identifyDevices` 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 ** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
 
 
@@ -243,7 +243,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e2800.gif[Sam113
 . 編輯主機分割區以新增iSCSI主機連接埠ID、並移除FC主機連接埠ID。
 . 重新啟動新的iSCSI主機之後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。
 +
-** 視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。
+** 您可以使用 SMCLI 命令 `-identifyDevices` 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 ** 您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。
 
 

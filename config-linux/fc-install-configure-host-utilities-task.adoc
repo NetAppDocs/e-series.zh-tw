@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/fc-install-configure-host-utilities-task.html 
 sidebar: sidebar 
-keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, 
+keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, SMcli, SMdevices 
 summary: 使用FC時、請安裝Linux Unified Host Utilities。 
 ---
 = 安裝及設定Linux Unified Host Utilities
@@ -21,6 +21,6 @@ Linux Unified Host Utilities工具可協助您管理NetApp儲存設備、包括�
 . 請從下載Unified Host Utilities https://mysupport.netapp.com/site/["NetApp支援"^]。
 +
 
-NOTE: 或者、SANtricity 您也可以使用SESYSMdevices公用程式來執行與Unified Host公用程式工具相同的功能。SMdevices公用 程式包含在SMutils套件中。SMutils套件是一組公用程式、用於驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。
+NOTE: 或者、您也可以使用 SMCLI 命令 `-identifyDevices` 執行與 Unified Host Utility 工具相同的功能。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 
 

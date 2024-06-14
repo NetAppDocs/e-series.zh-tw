@@ -24,7 +24,6 @@ summary: 您可以安裝FC HBA公用程式、以便檢視每個主機連接埠�
 ** 適用於QLogic HBA的QLogic QConvertge主控台
 
 
-* 如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。
 
 
 .步驟

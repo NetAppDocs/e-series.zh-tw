@@ -11,7 +11,7 @@ summary: 確定主機連接埠的GUI。
 
 
 [role="lead"]
-InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。
+InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援 OFED/RDMA 的 Linux 套裝作業系統也有 InfiniBand 診斷套件、其中包含顯示主機通道介面卡（ HCA ）相關資訊的命令。
 
 .步驟
 . 安裝 `infiniband-diags` 使用作業系統的套件管理命令來封裝。

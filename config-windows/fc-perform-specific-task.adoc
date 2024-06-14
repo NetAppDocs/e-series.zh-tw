@@ -51,7 +51,6 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 ** 適用於QLogic HBA的QLogic QConvertge主控台
 
 
-* 如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。
 
 
 .步驟

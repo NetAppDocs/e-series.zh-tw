@@ -26,6 +26,19 @@ summary: 檢閱E5700控制器類型與需求。
 
 * 《恢復大師SANtricity 》（Recovery Guru in the SytrSystem Manager）會引導您更換控制器容器。
 * 控制器機箱上的黃色警示LED亮起、表示控制器發生故障。
++
+[]
+====
+
+NOTE: 只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會熄滅：
+
+** 替代磁碟機路徑失敗
+** 藥屜開啟 / 遺失
+** 風扇故障 / 遺失
+** 電源供應器遺失
+
+
+====
 
 
 image::../media/e5700_attention_led_callout.png[e5700注意力主導的標註]

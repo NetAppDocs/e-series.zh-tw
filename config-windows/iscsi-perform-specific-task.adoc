@@ -247,7 +247,7 @@ image::../media/82012_00.gif[82012 00]
 +
 [listing]
 ----
-ping -s <hostIP\> <targetIP\>
+ping -S <hostIP\> <targetIP\>
 ----
 ** 如果啟用巨型框架、請執行有效負載大小為8、972位元組的ping命令。IP和ICMP的合併標頭為28個位元組、新增至有效負載時、等於9、000個位元組。f交換器會設定「do’t fragment（DF）」位元。l交換器可讓您設定大小。這些選項可在iSCSI啟動器與目標之間成功傳輸9、000個位元組的巨型框架。
 +

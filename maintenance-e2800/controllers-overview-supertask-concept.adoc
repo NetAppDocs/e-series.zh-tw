@@ -76,6 +76,19 @@ NOTE: 圖中顯示控制器容器範例、控制器容器上的主機連接埠�
 
 * 《恢復大師SANtricity 》（Recovery Guru in the SytrSystem Manager）會引導您更換控制器容器。
 * 控制器機箱上的黃色警示LED亮起、表示控制器發生故障。
++
+[]
+====
+
+NOTE: 只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會熄滅：
+
+** 替代磁碟機路徑失敗
+** 藥屜開啟 / 遺失
+** 風扇故障 / 遺失
+** 電源供應器遺失
+
+
+====
 
 
 image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 dwg2800控制器收件人已引導維護e2800]

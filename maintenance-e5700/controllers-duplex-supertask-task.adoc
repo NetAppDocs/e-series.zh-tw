@@ -422,7 +422,24 @@ CAUTION: *可能會遺失資料存取*-如果您剛安裝的控制器顯示其�
 
 
 
-. 當控制器重新連線時、請確認其狀態為最佳、並檢查控制器機櫃的注意LED。
+. 當控制器重新連線時、請檢查 Recovery Guru 中是否報告了 NVSRAM 不相符。
++
+.. 如果報告了 NVSRAM 不匹配問題、請使用下列 SMCLI 命令升級 NVSRAM ：
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+。 `-k` 如果陣列不安全、則需要參數。
+
+
+
++
+
+NOTE: 如果無法完成 SMCLI 命令、請聯絡 https://www.netapp.com/company/contact-us/support/["NetApp 技術支援"^] 或登入 https://mysupport.netapp.com["NetApp 支援網站"^] 以建立案例。
+
+. 確認系統狀態為最佳狀態、並檢查控制器機櫃的注意 LED 。
 +
 如果狀態不是最佳、或是有任何警示LED亮起、請確認所有纜線都已正確安裝、且控制器機箱已正確安裝。如有必要、請移除並重新安裝控制器容器。
 
@@ -430,13 +447,13 @@ CAUTION: *可能會遺失資料存取*-如果您剛安裝的控制器顯示其�
 
 NOTE: 如果您無法解決問題、請聯絡技術支援部門。
 
-. 如有必要、請將所有磁碟區重新分配回其偏好的擁有者。
+. 如有需要、請使用SANtricity NetApp System Manager將所有磁碟區重新分配給偏好的擁有者。
 +
 .. 選取功能表：Storage[磁碟區]。
 .. 選取功能表：More（更多）[重新分配磁碟區]。
 
 
-. 按一下功能表：硬體[支援>升級中心]以確保SANtricity 安裝最新版本的作業系統軟體（控制器韌體）。
+. 按一下功能表： Hardware （硬體） [ Support （支援） > Upgrade Center （升級中心） ] 、確保系統上的韌體和 NVSRAM 版本達到所需的層級。
 +
 視需要安裝最新版本。
 

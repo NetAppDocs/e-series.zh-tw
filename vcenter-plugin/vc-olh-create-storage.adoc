@@ -341,8 +341,8 @@ Volume區塊大小（僅限EF300和EF600）
 .完成後
 * 在vSphere Client中、為磁碟區建立資料存放區。
 * 在應用程式主機上執行任何必要的作業系統修改、以便應用程式使用該磁碟區。
-* 執行主機型的「hot_add」公用程式或作業系統專用的公用程式（可從協力廠商取得）、然後執行「simmdevices」公用程式、將磁碟區名稱與主機儲存陣列名稱建立關聯。
+* 執行作業系統專屬公用程式（可從協力廠商取得）、然後執行 SMCLI 命令 `-identifyDevices` 將磁碟區名稱與主機儲存陣列名稱建立關聯。
 +
-「hot_add」公用程式和「Mdevices'公用程式都包含在「Msutils」套件中。「ututils」套件是一組公用程式、用來驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。
+SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 
 

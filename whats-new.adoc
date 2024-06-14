@@ -16,6 +16,56 @@ summary: 更新功能。SANtricity
 
 
 
+== 11.80.1 版的新功能
+
+[cols="35h,~"]
+|===
+| 新功能 | 說明 
+
+
+ a| 
+`-identifyDevices` 參數
+ a| 
+全新 `-identifyDevices` SMCLI 中現在提供參數。此新參數可讓您尋找與儲存陣列相關聯的所有 SCSI 原生區塊裝置。如需更多資訊、請參閱連結： https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMCLI 命令列參數 ^] 。
+
+
+
+ a| 
+乙太網路核心統計資料
+ a| 
+系統管理員的「檢視 iSCSI 統計資料套件」頁面下方現在提供新的「乙太網路核心統計資料」選項。此新選項可讓您檢視 iSCSI 裝置平台核心驅動程式的統計資料。如需詳細資訊、請參閱連結： https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI 統計資料套件 ^] 。
+
+
+
+ a| 
+改善系統管理員中未指派和已啟用安全功能的磁碟機篩選功能
+ a| 
+現在、 System Manager 會在選取手動磁碟機時、篩選出未指派和安全啟用的磁碟機。因此、 System Manager 磁碟機選擇計數現在會符合 CLI 和 REST API 下的自動磁碟機選擇候選清單。獨特的圖示和游標文字現在也會套用至 System Manager 中的 Unassigned 和 Secure Enabled 磁碟機。
+
+
+
+ a| 
+新增透過 REST API 端點封鎖 IP 位址的功能
+ a| 
+使用者現在可以透過「設定」端點封鎖特定 IP 位址 (`/devmgr/v2/settings`）。一旦透過「設定」端點進行設定、只有透過白名單指定的 IP 位址才能與儲存設備通訊。這項新功能支援 IPv4 和 IPv6 位址清單。
+
+
+
+ a| 
+vCenter Storage 外掛程式
+ a| 
+vCenter Storage 外掛程式已更新、與 E 系列 11.80.1 版本相容。
+
+
+
+ a| 
+Web服務Proxy
+ a| 
+Web 服務 Proxy 已更新至 6.1 版、以與 E 系列 11.80.1 版相容。
+
+|===
+
+
 == 11.80 版的新功能
 
 [cols="35h,~"]

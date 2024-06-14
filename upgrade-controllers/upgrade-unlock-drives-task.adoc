@@ -40,7 +40,7 @@ NOTE: 如果您不使用管理連接埠1、請嘗試使用其他預設IP位址�
 
 . 使用IP位址192.168.1.128.101加上使用者名稱* admin*和密碼空白、使用匯入內部金鑰 `import storageArray securityKey file` CLI命令、並儲存安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/index.html["命令列介面參考"]。
 +
-*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory & Filene\" phraser=\"passPhraserString\""；」
+*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以透過REST API透過下列呼叫匯入內部金鑰： `/storage-systems/{system-id}/security-key/import`
@@ -70,24 +70,24 @@ NOTE: 您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺�
 
 . 使用預設IP位址192．168．128．101、使用者名稱* admin *和密碼空白、使用設定外部金鑰管理伺服器 `set storageArray externalKeyManagement` CLI命令並提供 `serverAddress` 和 `serverPort` 儲存自 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/index.html["命令列介面參考"]。
 +
-*範例：*「Mcli 192.168.1.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;」
+*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
 
 +
 或者、您也可以透過REST API透過下列呼叫來設定外部金鑰管理伺服器： `/storage-systems/{system-id}/external-key-server`
 
 . 使用預設IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白、然後使用匯入憑證 `storageArray keyManagementCertificate` CLI命令：一次用於用戶端憑證、第二次用於伺服器憑證。
 +
-*範例A：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType =用戶端檔案=「Directory & FileName」；」
+* 範例 A ： * `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
 
 +
-*範例B：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType = server file=\「Directory & FileName」（下載storageArray keyManagement憑證類型=伺服器檔案=）；」
+* 範例 B ： * `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
 
 +
 或者、您也可以透過REST API透過下列呼叫匯入Keyserver憑證： `/storage-systems/{system-id}/external-key-server/certificate`
 
 . 使用儲存自的安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。
 +
-*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory & Filene\" phraser=\"passPhraserString\""；」
+*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以透過REST API透過下列呼叫匯入外部金鑰： `/storage-systems/{system-id}/security-key/import`

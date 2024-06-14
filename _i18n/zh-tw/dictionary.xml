@@ -140,24 +140,12 @@
   <block id="36a6c85baeb45ad7d6b182928148783d" category="cell">*是*僅當集區或磁碟區群組中的磁碟機支援Data Assurance（DA）時、「DA」旁邊才會顯示「Yes（是）」。DA可提升整個儲存系統的資料完整性。DA可讓儲存陣列檢查資料經由控制器向下傳輸到磁碟機時可能發生的錯誤。將DA用於新磁碟區可確保偵測到任何錯誤。</block>
   <block id="ad2bbf8f4eaa2e5c1f2dc065812618ee" category="list-text">若要繼續選取應用程式的磁碟區建立順序、請按一下「*下一步*」。</block>
   <block id="05ac61cded1d64877319e6fc3303a304" category="list-text">在最後一個步驟中、檢閱您要建立的磁碟區摘要、並進行任何必要的變更。若要進行變更、請按一下*上一步*。當您對磁碟區組態感到滿意時、請按一下*完成*。</block>
-  <block id="6ce56c3d2a347e8eec31ca9a5f266cb2" category="paragraph">可以自動或手動建立主機：</block>
-  <block id="3f6aae0d6b07b0c0c3753a29f5ea7bbb" category="list-text">*自動*：主機內容代理程式（HCA）會啟動SCSI型（非NVMe型）主機的自動主機建立。HCA是一個公用程式、您可以在連接至儲存陣列的每個主機上安裝。安裝HCA的每個主機都會透過I/O路徑、將其組態資訊推送至儲存陣列控制器。根據主機資訊、控制器會自動建立主機及相關的主機連接埠、並設定主機類型。如有需要、您可以對主機組態進行任何其他變更。HCA執行自動偵測之後、會自動設定具有下列屬性的主機：</block>
-  <block id="f83da56133b643da9e77e51cd6c5bb60" category="list-text">主機名稱衍生自主機的系統名稱。</block>
-  <block id="ff355485c71c980dad7d2bcc738031e3" category="list-text">與主機相關聯的主機識別碼連接埠。</block>
-  <block id="9216f53a8757b69a9763476f633bafcd" category="list-text">主機的主機作業系統類型。</block>
   <block id="8b261088a6c6ed749f082d5672940ffb" category="inline-link">NetApp支援-下載</block>
-  <block id="4954a64a167635ad19317842780fc1e2" category="admonition">適用於Linux和Windows的主機內容代理軟體可從取得<block ref="d4d0bd08778a1eda2e214061987877dd" category="inline-link-rx"></block>。</block>
-  <block id="ce20270f9f59c29940789eed21ca0ad1" category="admonition">主機會建立為獨立主機、HCA不會自動建立或新增至主機叢集。</block>
   <block id="b4f69aa1a7313b31e977a8c463cdf13b" category="list-text">*手動*–在手動建立主機期間、您可以從清單中選取主機連接埠識別碼、或手動輸入識別碼、藉此建立關聯。建立主機之後、如果您打算共用對磁碟區的存取權、可以將磁碟區指派給主機叢集或將其新增至主機叢集。</block>
-  <block id="97af09f89abd52bc4528726a62f75580" category="section-title">使用HCA自動探索主機</block>
-  <block id="5f96931891fdfe6d097d700182501d44" category="paragraph">您可以允許主機內容代理程式（HCA）自動偵測主機、然後驗證資訊是否正確。</block>
   <block id="2f3d16ae594f1458b2df0f43ad9132a5" category="list-text">在「Manage（管理）」頁面中、選取具有主機連線的儲存陣列。</block>
   <block id="47369607937ea8b62ad0a5349cee6fb8" category="list-text">選取功能表：資源配置[設定主機]。</block>
   <block id="41dbd6041fd556f06750dc1495be7b10" category="paragraph">此時會開啟「設定主機」頁面。</block>
   <block id="0924796085f7df98cb7ab62924c6e73c" category="list-text">選取功能表：Storage[hosts]。</block>
-  <block id="33c6b73b3842ba3a2a3c555bf1ce0cd6" category="paragraph">下表列出自動建立的主機。</block>
-  <block id="4519f1c84733049cbbfffe94fa4d88d1" category="list-text">確認HCA提供的資訊正確無誤（名稱、主機類型、主機連接埠識別碼）。</block>
-  <block id="b36dd028d4cc9fd23358d580eca639f1" category="list-text">如果您需要變更任何資訊、請選取主機、然後按一下「*檢視/編輯設定*」。</block>
   <block id="390c57ab50f691d4eb0f2ff4e5c42c23" category="section-title">手動建立主機</block>
   <block id="882cb68e5d863b419d0d4d5f61d4f0bf" category="paragraph">請閱讀下列準則：</block>
   <block id="6ed30639f30e0f37f0053ee840f7df42" category="list-text">您必須已經在環境中新增或探索儲存陣列。</block>
@@ -422,7 +410,6 @@
   <block id="e5a3d9eb7eb53d8bf662cba07321306b" category="doc">安裝SANtricity 適用於SMcli的Syn-Storage Manager SANtricity （適用於11.53版或更早版本的軟體）</block>
   <block id="ef71c4d60b721871a9a1acefb72e13e4" category="paragraph">如果您使用SANtricity 的是版本11.53或更低版本的支援、您可以在SANtricity Management Station上安裝《支援資料》軟體、以協助管理陣列。</block>
   <block id="501a2ad13300e0aa28ebe2f8b5f896f5" category="paragraph">包含用於其他管理工作的命令列介面（CLI）、以及用於透過I/O路徑將主機組態資訊推送至儲存陣列控制器的主機內容代理程式。SANtricity</block>
-  <block id="5d2dd026d83ed1ae31b7c46f98cd9d34" category="admonition">如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需更多關於如何透過SANtricity 「支援系統管理程式」下載SMcli的資訊、請參閱SANtricity 《支援服務》（英文）下方的「下載命令列介面（CLI）」主題。</block>
   <block id="333a1ae397172ffa7f074eb82c021e4e" category="list-text">軟件11.53或更早版本。SANtricity</block>
   <block id="9884a6d86c5ef3ebfdff2afde0ea13dd" category="list-text">正確的系統管理員或超級使用者權限。</block>
   <block id="82d7e3e3a829c410689b0d6b724bfe6b" category="list-text">適用於下列最低需求的系統：SANtricity</block>
@@ -494,7 +481,6 @@
   <block id="8a761de12813fd81d6a6c12a762a07f1" category="list-text">使用<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 判斷要安裝的Unified Host Utilities版本。</block>
   <block id="d7b565023737aad44d6724a49bd2b673" category="paragraph">這些版本會列在每個支援組態的欄位中。</block>
   <block id="f4011c90372ee12814aefc97e4debb36" category="list-text">請從下載Unified Host Utilities<block ref="4ce7a3cde07b85b80ee4fe046584534d" category="inline-link-rx"></block>。</block>
-  <block id="fe2b572228681d85876f1c2ffc7023a9" category="admonition">或者、SANtricity 您也可以使用SESYSMdevices公用程式來執行與Unified Host公用程式工具相同的功能。SMdevices公用 程式包含在SMutils套件中。SMutils套件是一組公用程式、用於驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。</block>
   <block id="600c6d3fd1229d63ffae79514c2f27e3" category="summary">您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytration System Manager）來設定儲存陣列。</block>
   <block id="94b4ad86e06aef47700795d7b02c35e0" category="doc">存取SANtricity 「系統管理程式」並使用「設定精靈」</block>
   <block id="123720bd3f372d5f3ff303c79fd143d9" category="paragraph">若要設定儲存陣列、您可以使用SANtricity 「系統管理程式」中的「設定精靈」。</block>
@@ -754,7 +740,6 @@
   <block id="ed2ca45fd61e2a2e0a7ba3db761166a7" category="doc">判斷SAS主機識別碼- Linux</block>
   <block id="bc2a327cbf5067ba22b3f62235282061" category="paragraph">開始執行此程序之前、請先檢閱以下HBA公用程式準則：</block>
   <block id="c06b839abd65c201b1c005767294828c" category="list-text">大多數HBA廠商都提供HBA公用程式。視主機作業系統和CPU而定、請使用lsi-sas2flash（6G）或sas3flash（12G）公用程式。</block>
-  <block id="8e23f53043423e6715229ae35c668a80" category="list-text">如果安裝了主機內容代理程式、主機I/O連接埠可能會自動登錄。</block>
   <block id="f839e1b7c3a21e269ed4802e2a8f478a" category="list-text">從HBA廠商的網站下載HBA公用程式。</block>
   <block id="32e3cf2b76364e5780ea7c673b668437" category="list-text">安裝公用程式。</block>
   <block id="87e85b9ea37f21226023282c05abc3b0" category="list-text">使用HBA BIOS為您的組態選取適當的設定。</block>
@@ -1993,7 +1978,6 @@
   <block id="9dd7a385a5c1c7bad3ed1e33c14edd08" category="list-text">格式化磁碟。</block>
   <block id="8e41eb2c8d763441607de18928e7bbd6" category="list-text">結束磁碟零件內容。</block>
   <block id="7baddc80f2f90c28721d910489b197cb" category="summary">在Windows Express方法中安裝適用於CLI和HCA的Storage Manager。</block>
-  <block id="dc3fbfd52a78c903e6de09d05ddfc27d" category="doc">安裝SANtricity 適用於SMcli和Host contextAgent（HCA）的Synopic Storage Manager</block>
   <block id="2f42837cf7042dcd613c4776cd821f9b" category="list-text">適用於下列最低需求的系統：SANtricity</block>
   <block id="caef7b812dd9258e6ad6319525abc8c0" category="list-text">請至下載SANtricity 更新版本的《》<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。從* Downloads（下載）*標籤、功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。</block>
   <block id="12693d4ef6502030dd3dd97adbaad017" category="list-text">執行SANtricity 此安裝程式。按兩下要執行的SMIA*。exe安裝套件。</block>
@@ -2131,13 +2115,9 @@
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">當所有磁碟機都鎖定時、請遵循下列步驟進行內部金鑰管理。</block>
   <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">如果您不使用管理連接埠1、請嘗試使用其他預設IP位址：+ Ctrl a連接埠1：192．168．128．101 + Ctrl a連接埠2：192．168．128．102 + Ctrl B連接埠1：192．192．168．129．101 + Ctrl B連接埠2：192．168．129．102</block>
   <block id="a5d4d11eb9b0d2db382d91e1ab585594" category="inline-link-macro">準備升級控制器</block>
-  <block id="451adf9dc612afcfa43e2c0797313ea1" category="paragraph">*範例：*「Mcli 192．168．128.101 -u admin－c「Import storageArray securityKey file=\"Directory &amp; Filene\" phraser=\"passPhraserString\""；」</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部金鑰管理</block>
   <block id="9208cd3893f8fbd0715f391ac0195354" category="paragraph">當所有磁碟機都鎖定時、請遵循下列外部金鑰管理步驟。</block>
-  <block id="203b2e157336601775297d64e8b01713" category="paragraph">*範例：*「Mcli 192.168.1.128.101 -u admin -c "set storageArray externalKeyManagement serverAddress=&lt;ServerIPAddress&gt; serverPort=&lt;serverPort&gt;;」</block>
-  <block id="ff8ee4661fbac57cdf8a71747f69e4ed" category="paragraph">*範例A：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType =用戶端檔案=「Directory &amp; FileName」；」</block>
-  <block id="0558f36aa79582296ec1f39019ce4f53" category="paragraph">*範例B：*「Mcli 192．168．128.101－u admin－c「downloadstorageArray keyManagement Certificate certicateType = server file=\「Directory &amp; FileName」（下載storageArray keyManagement憑證類型=伺服器檔案=）；」</block>
   <block id="9b8f75142fa8f63d3a07466821af806f" category="summary">透過更換控制器來升級E系列陣列的總覽。</block>
   <block id="24463e7617d2f5ce7ba25cd74fcbc4b7" category="doc">升級控制器總覽</block>
   <block id="8f718558a81e73e281f038eaf59dd3c1" category="paragraph">您可以透過更換現有控制器來升級儲存陣列。</block>
@@ -3853,10 +3833,8 @@
   <block id="4c18da87eeeca2542b36be79e5009779" category="list-text">* OE*、* L0*、*空白_*（不相符的控制器）</block>
   <block id="5b8c8709d13582b5781b03aaf8a33f7d" category="list-text">* OE*、* L6*、*空白_*（不支援HIC）</block>
   <block id="e93d2afef215287e7ea403b7d93a1042" category="admonition">*可能會遺失資料存取*-如果您剛安裝的控制器顯示其中一個代碼、而另一個控制器因任何原因而重設、則第二個控制器也可能會鎖定。</block>
-  <block id="79985a6d5d752cdcbb9bbb8340fa510f" category="list-text">如有必要、請將所有磁碟區重新分配回其偏好的擁有者。</block>
   <block id="bbf46f9beb7cca84a6bd9b9ad7a9d701" category="list-text">選取功能表：Storage[磁碟區]。</block>
   <block id="cd836d5607a72e58c28486ef83128f85" category="list-text">選取功能表：More（更多）[重新分配磁碟區]。</block>
-  <block id="09a5aa9209154ff3bed809e609a7760d" category="list-text">按一下功能表：硬體[支援&gt;升級中心]以確保SANtricity 安裝最新版本的作業系統軟體（控制器韌體）。</block>
   <block id="0c22149e65198db3a96e4fd3ea84a34e" category="list-text">如有需要、請使用SANtricity 《支援系統管理程式》為儲存陣列收集支援資料。</block>
   <block id="a82b59cfd5f44a982c27f1cf9e91bfbb" category="summary">更換E5700儲存系統中故障的電池。</block>
   <block id="9526c286d8e10af122a103f6ee3de0f8" category="doc">更換E5700電池</block>
@@ -4573,7 +4551,6 @@
   <block id="b54e5effb0684297a425f4b4d27a0901" category="inline-link">將第二個控制器新增至E2600和E2700</block>
   <block id="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="list-text"><block ref="8873c4daaa79b4f2a0a76d2d60e0f4d2" category="inline-link-rx"></block></block>
   <block id="cc2c4e05a565a41e24830b8e20a407fa" category="inline-link">變更或新增主機傳輸協定</block>
-  <block id="6ef4b2f0ae71e9e178116859d849d637" category="list-text"><block ref="6ef4b2f0ae71e9e178116859d849d637" category="inline-link-rx"></block></block>
   <block id="4a24ac39c4082dcb978a418e7c412751" category="inline-link">從AC轉換為DC電源</block>
   <block id="60d69132ac18e209751d2055249f9499" category="list-text"><block ref="60d69132ac18e209751d2055249f9499" category="inline-link-rx"></block></block>
   <block id="8538359cd0d88b60011df2ea127fcda4" category="section-title">較早版本的軟體文件</block>
@@ -4618,7 +4595,6 @@
   <block id="4fffce6a4208f525b6fa4c44cc5bf6ce" category="paragraph">如果您要進行下列組態的佈線、請參閱<block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block></block>
   <block id="de79e6b334ef3f5c38431ae360ff09f6" category="paragraph">E2712、E2724、E5612、E5624、EF560</block>
   <block id="f2a12ad5f52528054619d431dc7c3054" category="paragraph">E2760、E5660</block>
-  <block id="588ea625981b26f278d5da4ff8ceb15d" category="paragraph">如需其他纜線選項的相關資訊、請參閱<block ref="b81b0da72978e2b90766cbfae5ed2466" category="inline-link-rx"></block> 適用於較舊的系統。</block>
   <block id="5c8edef9c398c6792341850977901070" category="inline-link">同步與非同步鏡射功能說明與部署指南</block>
   <block id="9696fa6d39ba9aab453fe1ba80da0669" category="paragraph">如需支援鏡射功能的纜線連接資訊、請參閱<block ref="ecbdbcda2695048a35af4e9c40e978db" category="inline-link-rx"></block>。</block>
   <block id="884e4b17699b99636612bfcbdb77ee3f" category="summary">您可以將主機直接連接至控制器或使用交換器。</block>
@@ -5441,7 +5417,6 @@
   <block id="28c74601cab51ec0f572b112f7aee948" category="list-text">使用<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block> 設定iSCSI主機的工具。</block>
   <block id="84a0100270817ab949ead0850e5c7934" category="list-text">編輯主機分割區以新增iSCSI主機連接埠ID、並移除FC主機連接埠ID。</block>
   <block id="e13345f5a8fed2baefb676e54c837f9b" category="list-text">iSCSI主機重新開機後、請使用主機上適用的程序來登錄磁碟區、並將其提供給您的作業系統。</block>
-  <block id="dc11132834c12745a593ada748aa2908" category="list-text">視作業系統而定、儲存管理軟體隨附兩個公用程式（hot_add和SMdevices）。這些公用程式有助於向主機登錄磁碟區、並顯示磁碟區的適用裝置名稱。</block>
   <block id="1ee6a2654832926bb18e15e40f4d7110" category="list-text">您可能需要使用作業系統隨附的特定工具和選項、才能使用磁碟區（也就是指派磁碟機代號、建立掛載點等）。如需詳細資料、請參閱主機作業系統文件。</block>
   <block id="9728e1a98137d35970e4f40061b6f1b6" category="section-title">完成iSCSI到FC/iSCSI的轉換</block>
   <block id="016bce178ce0362a322d720a4763b0cd" category="paragraph">如果您先前擁有所有iSCSI主機連接埠、並將其中一些連接埠轉換成FC、則可能需要修改現有的組態以支援FC。</block>
@@ -5700,7 +5675,6 @@
   <block id="ecb3eae36555245dd97b57edf925b519" category="paragraph">根據預設、當您不使用iSCSI連接埠繫結時、VMware iSCSI軟體啟動器會針對每個iSCSI目標建立單一工作階段。</block>
   <block id="84b339ef337149fb55dc73165dd441d4" category="inline-link">VMware知識庫</block>
   <block id="bcf2befa67a21b602de7c9607a256fdd" category="admonition">VMware iSCSI連接埠繫結是一項功能、可強制所有繫結的VMkernel連接埠登入已設定網路區段上可存取的所有目標連接埠。它用於提供iSCSI目標單一網路位址的陣列。NetApp建議不要使用iSCSI連接埠繫結。如需其他資訊、請參閱<block ref="f51a555352ce97fa9606c6453ba145eb" category="inline-link-rx"></block> 以瞭解有關在ESX/ESXi中使用軟體iSCSI連接埠繫結的考量。如果ESXi主機連接至其他廠商的儲存設備、NetApp建議您使用個別的iSCSI vmkernel連接埠、以避免與連接埠繫結發生衝突。</block>
-  <block id="0995e93f2d32176a9594170326076188" category="paragraph">為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。</block>
   <block id="4d58b104819df733df379625cb1928bb" category="paragraph">為確保良好的多重路徑組態、iSCSI網路可使用多個網路區段。在一個網路區段上、至少放置一個主機端連接埠和每個陣列控制器的一個連接埠、並在另一個網路區段上放置一組相同的主機端連接埠和陣列端連接埠。如有可能、請使用多個乙太網路交換器來提供額外的備援。</block>
   <block id="7da05d75fd1c28b0ff4d04d30f85aa5b" category="list-text">系統管理員GUI的密碼、或角色型存取控制（RBAC）或LDAP及目錄服務的密碼、已設定為適當的儲存陣列安全存取。如SANtricity 需存取管理的詳細資訊、請參閱《支援系統》線上說明。</block>
   <block id="d112a4595d7d618458e0e407fe3798c1" category="inline-link">《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.x和7.x整合》</block>
@@ -7206,8 +7180,6 @@
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成後</block>
   <block id="9c9c42da70924dff53917fd5752cd0a9" category="list-text">在vSphere Client中、為磁碟區建立資料存放區。</block>
   <block id="27288924eb00279da6258f216a826ce6" category="list-text">在應用程式主機上執行任何必要的作業系統修改、以便應用程式使用該磁碟區。</block>
-  <block id="f4c48f2383ce25f158cf33df12dc65ee" category="list-text">執行主機型的「hot_add」公用程式或作業系統專用的公用程式（可從協力廠商取得）、然後執行「simmdevices」公用程式、將磁碟區名稱與主機儲存陣列名稱建立關聯。</block>
-  <block id="fc689e3fec7436f0795ba215ddaea02c" category="paragraph">「hot_add」公用程式和「Mdevices'公用程式都包含在「Msutils」套件中。「ututils」套件是一組公用程式、用來驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。</block>
   <block id="4db4ceee2891d65f714f908305bf69f5" category="summary">取得並匯入CA簽署的憑證、以安全存取裝載Storage Plugin for vCenter的管理系統。</block>
   <block id="07d971b4a5a654450d917b608d4ec4f8" category="doc">使用CA簽署的憑證</block>
   <block id="020e8003add330567e5f0d10609d0973" category="paragraph">您可以取得並匯入CA簽署的憑證、以安全地存取裝載Storage Plugin for vCenter的管理系統。</block>
@@ -7269,14 +7241,12 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">如何將主機連接埠與主機配對？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">取得此資訊後、請從「Create Host（建立主機）」對話方塊中提供的清單中、選取已登入儲存陣列的主機連接埠識別碼。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">請務必為您要建立的主機選取適當的主機連接埠識別碼。如果您將錯誤的主機連接埠識別碼關聯起來、可能會導致無法預期地從其他主機存取此資料。</block>
-  <block id="805b5a8d335604839f980870f92238c2" category="paragraph">如果您使用安裝在每個主機上的主機內容代理程式（HCA）自動建立主機、HCA應自動將主機連接埠識別碼與每個主機建立關聯、並適當地進行設定。</block>
   <block id="490911223ced9bd35d325330312a99b5" category="summary">密碼用於加密及解密儲存在本機管理用戶端上的安全金鑰檔案。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">為什麼我需要定義密碼？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">密碼用於加密及解密儲存在本機管理用戶端上的安全金鑰檔案。如果安全金鑰重新安裝在另一個儲存陣列中、則沒有密碼、就無法解密安全金鑰、也無法用來解除鎖定已啟用安全功能的磁碟機中的資料。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">預設叢集是系統定義的實體、可讓登入儲存陣列的任何未關聯主機連接埠識別碼、存取指派給預設叢集的磁碟區。</block>
   <block id="b8d724212008baee7a5c6030da8fa5bc" category="doc">什麼是預設叢集？</block>
   <block id="9624dccf17eb4cce07a5a0013616c0f9" category="paragraph">未關聯的主機連接埠識別碼是與特定主機邏輯上並未關聯的主機連接埠、而是實際安裝在主機上並登入儲存陣列。</block>
-  <block id="b4c67a8296dafaccaed924668fa901da" category="admonition">如果您想讓主機對儲存陣列中的特定磁碟區擁有特定存取權、則不得使用預設叢集。您必須將主機連接埠識別碼與其對應的主機建立關聯。您可以在「建立主機」作業期間手動完成此工作、也可以使用安裝在每個主機上的主機內容代理程式（HCA）自動完成。然後、您可以將磁碟區指派給個別主機或主機叢集。</block>
   <block id="854135f279202e145fddcf81f6d69dab" category="paragraph">在特殊情況下、您只能使用預設叢集、因為外部儲存環境有助於讓所有主機和所有登入的主機連接埠識別碼都能存取儲存陣列的所有磁碟區（全存取模式）。 而不讓儲存陣列或使用者介面知道主機。</block>
   <block id="c167b87ad97a717ca19e8302324a61d6" category="paragraph">一開始、您只能透過命令列介面（CLI）將磁碟區指派給預設叢集。不過、在您將至少一個Volume指派給預設叢集之後、此實體（稱為預設叢集）會顯示在使用者介面中、您可以在其中管理此實體。</block>
   <block id="369faeb4aa443a86445a9cdfb023bb83" category="summary">使用「新增/探索」功能、尋找並新增您要在組織網路中管理的儲存陣列。</block>
@@ -7445,7 +7415,6 @@
   <block id="2f405cc1b427d24720c2cc7d7dda7e2c" category="list-text">從主檢視畫面選取*管理*、然後選取您要新增儲存陣列的群組。</block>
   <block id="78d46085734b1546832159391eb2b467" category="list-text">選取功能表：管理群組[新增儲存陣列至群組]。</block>
   <block id="875510c22480d2f647cff890742474ab" category="list-text">選取您要新增至群組的儲存陣列。</block>
-  <block id="158015df88d990434f1a9d713f772baa" category="summary">主機作業系統類型欄位包含主機的作業系統。您可以從下拉式清單中選取建議的主機類型、或允許主機內容代理程式（HCA）設定主機和適當的主機作業系統類型。</block>
   <block id="c99be05276e49867c3c82a7022f31b32" category="doc">如何知道哪種主機作業系統類型正確？</block>
   <block id="e13be85800aed175412a62f5b2b23406" category="paragraph">下拉式清單中顯示的主機類型取決於儲存陣列機型和韌體版本。最新版本會先顯示最常見的選項、最可能是適當的選項。此清單上的外觀並不表示完全支援此選項。</block>
   <block id="d11b94f400203a9104d040cb12cd7ca1" category="admonition">如需主機支援的詳細資訊、請參閱<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>。</block>
@@ -7478,8 +7447,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">支援使用具備3.9或更早核心的Device Mapper多重路徑容錯移轉解決方案的Linux作業系統。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">叢集式視窗（已過時）</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">如果您的主機作業系統類型設定為此值、請改用Windows（叢集式或非叢集式）設定。</block>
-  <block id="c4a63ba39b5ca841704abea6cb2fb44a" category="paragraph">安裝HCA並將儲存設備連接至主機之後、HCA會透過I/O路徑將主機拓撲傳送至儲存控制器。根據主機拓撲、儲存控制器會自動定義主機和相關的主機連接埠、然後設定主機類型。</block>
-  <block id="1ddb6810aa8c1c6572287f48e53a765f" category="admonition">如果HCA未選取建議的主機類型、您必須手動設定主機類型。</block>
   <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">在磁碟區建立期間、系統會提示您提供工作負載使用的相關資訊。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">我所選的工作負載如何影響磁碟區建立？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">在磁碟區建立期間、系統會提示您提供工作負載使用的相關資訊。系統會使用此資訊為您建立最佳Volume組態、並可視需要加以編輯。您也可以在磁碟區建立順序中跳過此步驟。</block>
@@ -8097,8 +8064,6 @@
   <block id="2c7bb5c0c4cf1c8a98580db96306828f" category="summary">若要使用vCenter的儲存外掛程式來管理儲存設備、您必須探索或定義網路中的每個主機。</block>
   <block id="3377964f846f087c85bfa55b8e435603" category="doc">主機建立總覽</block>
   <block id="dd4be5e22b2713a377fc88babf216418" category="paragraph">若要使用vCenter的儲存外掛程式來管理儲存設備、您必須探索或定義網路中的每個主機。主機是一種伺服器、可將I/O傳送至儲存陣列上的磁碟區。</block>
-  <block id="14e74c56c083745010899e49908977f0" category="section-title">自動與手動建立主機</block>
-  <block id="ae1c3c63ab898ce42b5595fdbc2e91fc" category="paragraph">建立主機是讓儲存陣列瞭解其連接的主機、以及允許I/O存取磁碟區所需的步驟之一。可以自動或手動建立主機。</block>
   <block id="ed871627754400dea09f1a125da2eff2" category="list-text">*手動*-在手動建立主機期間、您可以從清單中選取主機連接埠識別碼、或手動輸入識別碼、藉此建立關聯。建立主機之後、如果您打算共用對磁碟區的存取權、可以將磁碟區指派給主機叢集或將其新增至主機叢集。</block>
   <block id="cf9a49f1bff1d19decdde49cdbdae169" category="section-title">如何指派磁碟區</block>
   <block id="e82214f920b58da315913ddaf6ee6c4a" category="paragraph">若要讓主機將I/O傳送至磁碟區、您必須將該磁碟區指派給該磁碟區。您可以在建立磁碟區時選取主機或主機叢集、也可以稍後將磁碟區指派給主機或主機叢集。主機叢集是一組主機。您可以建立主機叢集、以便輕鬆將相同的磁碟區指派給多個主機。</block>
@@ -8302,7 +8267,6 @@
   <block id="4b5189c89fc982fea1db0f47f6bca6ac" category="list-text">4K - 4、096位元組。</block>
   <block id="9df105cfb95359552740abf1d9863ac1" category="doc">建立主機存取</block>
   <block id="3c6c09b90537af17f7537af5bcbf33f8" category="paragraph">藉由建立主機、您可以定義主機參數、以便連線至儲存陣列、並存取磁碟區的I/O。</block>
-  <block id="69517bdc763a3da40b243d4bb6b4875c" category="paragraph">您可以允許主機內容代理程式（HCA）自動偵測主機、然後從「設定主機」頁面選取*檢視/編輯設定*、以驗證資訊是否正確。但是、HCA並非所有支援的作業系統都能使用、您必須手動建立主機。</block>
   <block id="e2fb84e873c35950636aa48dbab40f62" category="paragraph">建立主機時、請謹記以下準則：</block>
   <block id="5d79fe33f11555546005cfbd02dcc6b8" category="list-text">*手動新增*-如果清單中未顯示主機連接埠識別碼、表示主機連接埠尚未登入。HBA公用程式或iSCSI啟動器公用程式可用來尋找主機連接埠識別碼、並將其與主機建立關聯。您可以手動輸入主機連接埠識別碼、或從公用程式（一次一個）複製/貼到主機連接埠欄位。您一次必須選取一個主機連接埠識別碼、才能將其與主機建立關聯、但您可以繼續選取與主機相關聯的識別碼數目。每個識別碼都會顯示在主機連接埠欄位中。如有必要、您也可以選取旁邊的* X*來移除識別碼。</block>
   <block id="a7a6bda88008827c24afa07e951218a9" category="paragraph">（選用）如果您選取或手動輸入iSCSI IQN的主機連接埠、且想要要求嘗試存取儲存陣列以使用Challenge Handshake驗證傳輸協定（CHAP）進行驗證的主機、請選取「Set CHAP Initiator secret（設定CHAP啟動器密碼）」核取方塊。針對您選取或手動輸入的每個iSCSI主機連接埠、執行下列動作：</block>
@@ -8643,7 +8607,6 @@
   <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入Keyserver憑證：<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
   <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">使用儲存自的安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入外部金鑰：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="5dd94bd0b7c84a6ccc9fc7c3a1fa82e6" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援ODED/RDMA的Linux發行版本也有InfiniBand診斷套件、其中包含顯示HCA相關資訊的命令。</block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安裝<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用作業系統的套件管理命令來封裝。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">建立名為的systemd服務單元檔案<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
   <block id="d40e479d6bc1cf9824be2cfa7e837140" category="list-text">啟用並啟動<block ref="6b64648adbe124ad96531f7f0dd977a4" prefix=" " category="inline-code"></block> 服務：</block>
@@ -8895,4 +8858,53 @@
   <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">對於 SANtricity OS 11.80GA 及更新版本、 E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。</block>
   <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
+  <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
+  <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題</block>
+  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">或者、您也可以使用 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 執行與 Unified Host Utility 工具相同的功能。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
+  <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">從 SANtricity 軟體 11.80.1 版開始、不再支援主機內容代理程式。</block>
+  <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">對於執行 SANtricity 11.60 以上版本的平台、預設子網路遮罩為 255.255.0.0 。</block>
+  <block id="b62cb85461ac6e99d68c9332f3dcd4fc" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援 OFED/RDMA 的 Linux 套裝作業系統也有 InfiniBand 診斷套件、其中包含用於顯示主機通道介面卡（ HCA ）相關資訊的命令。</block>
+  <block id="e2c48d6f7dc54c69caaee62695c56d1b" category="paragraph">InfiniBand診斷套件包含命令、可顯示每個InfiniBand（IB）連接埠的全域唯一ID（Guid）。大部分透過隨附套件支援 OFED/RDMA 的 Linux 套裝作業系統也有 InfiniBand 診斷套件、其中包含顯示主機通道介面卡（ HCA ）相關資訊的命令。</block>
+  <block id="4fef884c45e5beb8a0176970f056d2b1" category="admonition">或者、您也可以透過擷取這些結果<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="38be852a7469b47a9544ad44f92c4a87" category="list-text">當控制器重新連線時、請檢查 Recovery Guru 中是否報告了 NVSRAM 不相符。</block>
+  <block id="835e1e289164a83cd62a957064a6d333" category="list-text">如果報告了 NVSRAM 不匹配問題、請使用下列 SMCLI 命令升級 NVSRAM ：</block>
+  <block id="188409731f46449038b85e358a882871" category="paragraph">。<block ref="ff2bddd61609f26dc3255408781890ad" prefix=" " category="inline-code"></block> 如果陣列不安全、則需要參數。</block>
+  <block id="898884f576d3c785b2b6fb9b78fc56d8" category="inline-link">NetApp 技術支援</block>
+  <block id="be078623b1a43475081fe909e7280f94" category="admonition">如果無法完成 SMCLI 命令、請聯絡<block ref="0116d50fc8feadbb0d1b3f97da5f8144" category="inline-link-rx"></block> 或登入<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 以建立案例。</block>
+  <block id="29ff5c5c99e35fef2700d4d5f0f036de" category="list-text">確認系統狀態為最佳狀態、並檢查控制器機櫃的注意 LED 。</block>
+  <block id="447181afc701fd84c26bf3596e763049" category="list-text">按一下功能表： Hardware （硬體） [ Support （支援） &gt; Upgrade Center （升級中心） ] 、確保系統上的韌體和 NVSRAM 版本達到所需的層級。</block>
+  <block id="815fe3ef7733928259b45b99a5ecfc49" category="admonition">只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會熄滅：</block>
+  <block id="d6a28a344ee78ec0d5fd738bc338db3f" category="list-text">替代磁碟機路徑失敗</block>
+  <block id="2f9cb3ec0fe7cfbcedfda207100269a8" category="list-text">藥屜開啟 / 遺失</block>
+  <block id="c33de3a09d49fe0c9f425a18bc68b004" category="list-text">風扇故障 / 遺失</block>
+  <block id="cbf7b24ce0d93efff84abb6dca91dc9e" category="list-text">電源供應器遺失</block>
+  <block id="07ed085acfb4f203e63427ca4494f863" category="section-title">11.80.1 版的新功能</block>
+  <block id="65e6e49c7d0840983a93edfc482a4650" category="paragraph"><block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix="" category="inline-code"></block> 參數</block>
+  <block id="f853f0f729e70cf8d4d12c4bb6b0dbfc" category="paragraph">全新<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> SMCLI 中現在提供參數。此新參數可讓您尋找與儲存陣列相關聯的所有 SCSI 原生區塊裝置。如需更多資訊、請參閱連結： https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-Devices[Downloadable SMCLI 命令列參數 ^] 。</block>
+  <block id="907ce89001794064fd8d544a753cf6cf" category="paragraph">乙太網路核心統計資料</block>
+  <block id="d1c09bea07e8eb52df56a18fb41d1ba1" category="paragraph">系統管理員的「檢視 iSCSI 統計資料套件」頁面下方現在提供新的「乙太網路核心統計資料」選項。此新選項可讓您檢視 iSCSI 裝置平台核心驅動程式的統計資料。如需詳細資訊、請參閱連結： https://docs.netapp.com/us-en/e-series-santricity/sm-support/view-iscsi-statistics-packages-support.html[View iSCSI 統計資料套件 ^] 。</block>
+  <block id="bf4fed8d63aecfc1a30be488a115892c" category="paragraph">改善系統管理員中未指派和已啟用安全功能的磁碟機篩選功能</block>
+  <block id="22d3d7b49042c93caf0303e50dd503e1" category="paragraph">現在、 System Manager 會在選取手動磁碟機時、篩選出未指派和安全啟用的磁碟機。因此、 System Manager 磁碟機選擇計數現在會符合 CLI 和 REST API 下的自動磁碟機選擇候選清單。獨特的圖示和游標文字現在也會套用至 System Manager 中的 Unassigned 和 Secure Enabled 磁碟機。</block>
+  <block id="8aa767f8b92cfb3b4eab1f415d112646" category="paragraph">新增透過 REST API 端點封鎖 IP 位址的功能</block>
+  <block id="676be4f62b5637bef1c26018afa904d4" category="paragraph">使用者現在可以透過「設定」端點封鎖特定 IP 位址 <block ref="4b697cabc8d99483a2ddfc38c4cb6766" prefix="(" category="inline-code"></block>）。一旦透過「設定」端點進行設定、只有透過白名單指定的 IP 位址才能與儲存設備通訊。這項新功能支援 IPv4 和 IPv6 位址清單。</block>
+  <block id="c55dbb17c221990804802e322335dc65" category="paragraph">vCenter Storage 外掛程式已更新、與 E 系列 11.80.1 版本相容。</block>
+  <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web服務Proxy</block>
+  <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web 服務 Proxy 已更新至 6.1 版、以與 E 系列 11.80.1 版相容。</block>
+  <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789 ：適用於 E 系列 SANtricity iSCSI 的 VMware 組態指南、可與 ESXi 6.x 和 7.x 整合</block>
+  <block id="d449697e3f0e2e82550c5b9a353fbb21" category="paragraph">為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。請參閱<block ref="b18137069ebac12afacac28918c3703b" category="inline-link-rx"></block> 以取得更多資訊。</block>
+  <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">*範例：*<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
+  <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">*範例：*<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
+  <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">* 範例 A ： *<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
+  <block id="1f30cbc7228c9c1478541fac65592fdd" category="paragraph">* 範例 B ： *<block ref="ce9fafaa9a800b6d0168143573308013" prefix=" " category="inline-code"></block></block>
+  <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="section-title">手動建立主機</block>
+  <block id="9a3eb00d2d24e24125d1dfecb99a47e1" category="paragraph">建立主機是讓儲存陣列瞭解其連接的主機、以及允許I/O存取磁碟區所需的步驟之一。可以手動建立主機。</block>
+  <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">執行作業系統專屬公用程式（可從協力廠商取得）、然後執行 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 將磁碟區名稱與主機儲存陣列名稱建立關聯。</block>
+  <block id="4f939d909de82f0b6db329c93f1bf479" category="paragraph">SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
+  <block id="a543598a03d2f4a4c65c995fe07c12e1" category="summary">主機作業系統類型欄位包含主機的作業系統。您可以從下拉式清單中選取建議的主機類型。</block>
+  <block id="e93513455b64fd664d3f89e3161de3ae" category="paragraph">可手動建立主機：</block>
+  <block id="2ff8f9ab0a5cf81ee962ea6fda131b40" category="admonition">如果您想讓主機對儲存陣列中的特定磁碟區擁有特定存取權、則不得使用預設叢集。您必須將主機連接埠識別碼與其對應的主機建立關聯。此工作可在「建立主機」作業期間手動完成。然後、您可以將磁碟區指派給個別主機或主機叢集。</block>
+  <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會熄滅：</block>
+  <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">替代電源供應器故障</block>
+  <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">您可以使用 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
 </blocks>

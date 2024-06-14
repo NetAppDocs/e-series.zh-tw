@@ -1,7 +1,7 @@
 ---
 permalink: config-linux/nvme-ib-display-devices-visible-host-task.html 
 sidebar: sidebar 
-keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: 使用SMdevices工具（NVMe CLI套件的一部分）來檢視主機上目前可見的磁碟區。這是NVMe清單命令的替代選項。 
 ---
 = 顯示主機可見的磁碟區

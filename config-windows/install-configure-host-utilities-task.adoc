@@ -1,7 +1,7 @@
 ---
 permalink: config-windows/install-configure-host-utilities-task.html 
 sidebar: sidebar 
-keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: 安裝Windows Unified Host Utilities for Windows Express方法。 
 ---
 = 安裝及設定Windows Unified Host Utilities
@@ -28,6 +28,6 @@ NOTE: 此公用程式套件無法使用SANtricity 無法安裝的現象儲存管
 
 +
 
-NOTE: 或者、SANtricity 您也可以使用SESYSMdevices公用程式來執行與Unified Host公用程式工具相同的功能。SMdevices公用 程式包含在SMutils套件中。SMutils套件是一組公用程式、用於驗證主機從儲存陣列看到的內容。它是SANtricity 包含在整個軟件安裝過程中的一部分。
+NOTE: 或者、您也可以使用 SMCLI 命令 `-identifyDevices` 執行與 Unified Host Utility 工具相同的功能。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-settings/download-cli.html["下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題"^]。
 
 

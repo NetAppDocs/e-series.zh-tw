@@ -506,6 +506,23 @@ passPhrase="passPhrase";
 .. 如果狀態不是「最佳」、請反白顯示控制器、然後選取*「線上放置」*。
 
 
+. 當控制器重新連線時、請檢查 Recovery Guru 中是否報告了 NVSRAM 不相符。
++
+.. 如果報告了 NVSRAM 不匹配問題、請使用下列 SMCLI 命令升級 NVSRAM ：
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+。 `-k` 如果陣列不安全、則需要參數。
+
+
+
++
+
+NOTE: 如果無法完成 SMCLI 命令、請聯絡 https://www.netapp.com/company/contact-us/support/["NetApp 技術支援"^] 或登入 https://mysupport.netapp.com["NetApp 支援網站"^] 以建立案例。
+
 . 使用SANtricity NetApp System Manager收集儲存陣列的支援資料。
 +
 .. 選取功能表：Support[支援中心>*診斷]。

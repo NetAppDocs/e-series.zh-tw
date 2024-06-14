@@ -21,7 +21,7 @@ summary: 較早版本的文件
 * https://mysupport.netapp.com/info/web/ECMP11392380.html["安裝舊系統"^]
 * https://mysupport.netapp.com/info/web/ECMP11751516.html["維護較舊的系統"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["將第二個控制器新增至E2600和E2700"^]
-* https://mysupport.netapp.com/info/web/ECMP11750309.html["變更或新增主機傳輸協定"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["變更或新增主機傳輸協定"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["從AC轉換為DC電源"^]
 
 
