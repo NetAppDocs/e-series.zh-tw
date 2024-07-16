@@ -38,13 +38,6 @@ summary: 更新功能。SANtricity
 
 
  a| 
-改善系統管理員中未指派和已啟用安全功能的磁碟機篩選功能
- a| 
-現在、 System Manager 會在選取手動磁碟機時、篩選出未指派和安全啟用的磁碟機。因此、 System Manager 磁碟機選擇計數現在會符合 CLI 和 REST API 下的自動磁碟機選擇候選清單。獨特的圖示和游標文字現在也會套用至 System Manager 中的 Unassigned 和 Secure Enabled 磁碟機。
-
-
-
- a| 
 新增透過 REST API 端點封鎖 IP 位址的功能
  a| 
 使用者現在可以透過「設定」端點封鎖特定 IP 位址 (`/devmgr/v2/settings`）。一旦透過「設定」端點進行設定、只有透過白名單指定的 IP 位址才能與儲存設備通訊。這項新功能支援 IPv4 和 IPv6 位址清單。
