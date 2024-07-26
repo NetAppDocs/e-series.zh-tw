@@ -42,5 +42,5 @@ Linux Express方法包括下列步驟。
 * 線上說明-說明如何使用SANtricity 「支援系統管理程式」來完成組態和儲存管理工作。產品內有此功能。
 * https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。
 * http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] -可讓您搜尋符合NetApp所指定標準與要求的NetApp產品與元件組態。
-* https://library.netapp.com/ecm/ecm_download_file/ECMLP2547936["《Linux Unified Host Utilities 7.1安裝指南》"^] --說明如何使用Linux Unified Host Utilities 7.1。
+* https://docs.netapp.com/us-en/ontap-sanhost/hu_luhu_71.html#recommended-driver-settings-with-linux-kernel["安裝 Linux Unified Host Utilities 7.1"^] -- 介紹如何安裝 Linux Unified Host Utilities 7.1 。
 
