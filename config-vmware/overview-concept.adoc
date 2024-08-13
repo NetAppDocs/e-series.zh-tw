@@ -105,4 +105,4 @@ IP定址
 
 
 |===
-如果這些假設不適用於您的安裝、或您想要更多概念背景資訊、請參閱下列技術報告： https://www.netapp.com/us/media/tr-4789.pdf["《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.X整合》"^]
+如果這些假設不適用於您的安裝、或您想要瞭解更多概念性背景資訊、請參閱下列技術報告： https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.X整合》"^]
