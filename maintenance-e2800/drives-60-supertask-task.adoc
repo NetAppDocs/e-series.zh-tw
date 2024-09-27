@@ -48,6 +48,9 @@ CAUTION: *可能會遺失資料存取*-如果磁碟區已處於降級狀態、�
 
 
 
+NOTE: 如果您需要有關如何更換 E 系列 DE460c 擴充機櫃的資訊，請參閱 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp 知識庫"^]。
+
+
 
 == 步驟1：準備更換磁碟機抽屜
 
