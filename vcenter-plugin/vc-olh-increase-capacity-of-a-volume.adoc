@@ -11,7 +11,7 @@ summary: 調整磁碟區大小以增加其報告容量。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

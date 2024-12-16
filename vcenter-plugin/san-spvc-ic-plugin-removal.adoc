@@ -10,7 +10,7 @@ summary: 移除vCenter的外掛程式。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 若要將磁碟區群組的效能最大化、您必須選取適當的RA
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

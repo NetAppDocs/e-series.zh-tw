@@ -50,7 +50,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 .. 單擊*主機端口*選項卡。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[Sam11330 s host settings（主機設定）對話方塊連接埠索引標籤maut e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[主機設定對話方塊]
 
 .. 按一下「*新增*」、然後使用「*新增主機連接埠*」對話方塊、將新的主機連接埠識別碼與主機建立關聯。
 +
@@ -96,7 +96,7 @@ image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[Sam113
 
 .. 單擊*主機端口*選項卡。
 +
-image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[Sam11330 s host settings（主機設定）對話方塊連接埠索引標籤maut e5700]
+image::../media/sam1130_ss_host_settings_dialog_ports_tab_maint-e5700.gif[主機設定對話方塊]
 
 .. 按一下「*新增*」、然後使用「*新增主機連接埠*」對話方塊、將新的主機連接埠識別碼與主機建立關聯。
 +

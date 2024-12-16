@@ -98,7 +98,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。每個區域都包含一個啟動器連接埠和所有目標連接埠。
 
-image::../media/port_identifiers_host_and_target_conf-vmw.gif[連接埠識別碼主機和目標設定vmw]
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Channel 連接埠識別碼 "]
 
 
 

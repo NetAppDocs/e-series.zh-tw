@@ -6,6 +6,8 @@ summary: 較早版本的文件
 ---
 = 舊版
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -23,11 +25,20 @@ summary: 較早版本的文件
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1394872["將第二個控制器新增至E2600和E2700"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2353447["變更或新增主機傳輸協定"^]
 * https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1656638["從AC轉換為DC電源"^]
+* https://library.netapp.com/ecm/ecm_download_file/ECMLP2589397["控制器升級指南 - 舊版控制器機型"^]
 
 
 
 
 == 較早版本的軟體文件
+
+
+
+=== SANtricity 11.8 版
+
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html["System Manager說明"^]
+* https://docs.netapp.com/us-en/e-series-santricity-118/index.html["Unified Manager說明"^]
+
 
 
 

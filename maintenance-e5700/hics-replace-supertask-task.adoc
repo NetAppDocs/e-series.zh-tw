@@ -126,7 +126,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 當需要將快取資料寫入磁碟機時、控制器背面的綠色快取作用中LED會亮起。您必須等到LED燈關閉後、才能移除控制器機箱。
 
 +
-image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 IB hic w快取主導標註維護e5700]
+image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[E5700 控制器上的快取作用中 LED]
 
 +
 *（1）*_快取作用中LED _
@@ -136,7 +136,7 @@ image::../media/e5700_ib_hic_w_cache_led_callouts_maint-e5700.gif[e5700 IB hic w
 下圖是E5724控制器機櫃的範例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28圖e2824移除控制器機箱維護e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[拆下控制器容器]
 
 +
 *（1）*_控制器容器_
@@ -148,7 +148,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28圖e28
 下圖是E5760控制器機櫃的範例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28圖e2860新增控制器機箱維護e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[拆下控制器容器]
 
 +
 *（1）*_控制器容器_
@@ -185,7 +185,7 @@ CAUTION: *可能的資料存取遺失*-如果HIC是針對另一個E系列控制�
 如果此綠色LED亮起、表示控制器仍在使用電池電力。您必須等到LED熄滅後、才能移除任何元件。
 
 +
-image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28圖e2800內部快取主動式維護e5700]
+image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[內部快取作用中 LED]
 
 +
 *（1）*_內部快取作用中LED _
@@ -204,7 +204,7 @@ image::../media/28_dwg_e2800_internal_cache_active_led_maint-e5700.gif[28圖e280
 CAUTION: *可能的設備損壞*：請非常小心、不要夾住HIC和指旋螺絲之間控制器LED的金帶狀連接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwge2800 hic指旋螺絲維護e5700]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[將 HIC 安裝到控制器卡上]
 
 +
 *（1）*主機介面卡_
@@ -218,7 +218,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e5700.gif[28 dwge2800 hic指�
 
 . 使用1號十字螺絲起子、將新的HIC面板裝到控制器容器上、並使用您先前卸下的四顆螺絲。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28圖e2800 hic facplace螺絲maut e5700]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[將面板安裝到控制器上]
 
 
 
@@ -235,7 +235,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[28圖e2800 hic
 下圖是E5724控制器機櫃的範例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28圖e2824移除控制器機箱維護e5700]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[安裝控制器圓筒]
 
 +
 *（1）*_控制器容器_
@@ -247,7 +247,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e5700.gif[28圖e28
 下圖是E5760控制器機櫃的範例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[28圖e2860新增控制器機箱維護e5700]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[安裝控制器圓筒]
 
 +
 *（1）*_控制器容器_
@@ -285,7 +285,7 @@ NOTE: 圖中顯示控制器容器範例。您的控制器可能有不同的編�
 +
 ** 七區段顯示會顯示重複順序* OS*、* OL*、*空白_*、表示控制器離線。
 ** 黃色警示LED持續亮起。
-** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。image:../media/e5700_hic_3_callouts_maint-e5700.gif[""]
+** 主機連結 LED 可能會亮起，閃爍或熄滅，視主機介面而定。image:../media/e5700_hic_3_callouts_maint-e5700.gif["E5700 控制器 LED \""]
 +
 *（1）*主機連結LED
 

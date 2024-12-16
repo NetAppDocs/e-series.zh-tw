@@ -27,11 +27,11 @@ summary: 檢閱E2800磁碟機更換要求。
 
 * E2812控制器機櫃或DE212C磁碟機櫃中的磁碟機編號：*
 
-image::../media/28_dwg_e2812_de212c_drive_numbering.gif[28圖e2812 de212c磁碟機編號]
+image::../media/28_dwg_e2812_de212c_drive_numbering.gif[12 磁碟機櫃的磁碟機編號]
 
 * E2824控制器機櫃、EF280快閃陣列或DE224C磁碟機櫃中的磁碟機編號：*
 
-image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[28圖e2824 de224c磁碟機編號維護e2800]
+image::../media/28_dwg_e2824_de224c_drive_numbering_maint-e2800.gif[24 磁碟機櫃的磁碟機編號]
 
 
 NOTE: E2812、E2824、EF280儲存陣列可能包含一個或多個SAS-2傳統擴充磁碟機匣、包括DE1600 12磁碟機匣、DE5600 24磁碟機匣或DE6600 60磁碟機匣如需更換其中一個磁碟機匣中磁碟機的說明、請參閱 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["更換E2660、E2760、E5460、E5560或E5660磁碟機"^] 和 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["更換E2600、E2700、E5400、E5500和E5600 12個磁碟機或24個磁碟機磁碟機匣中的磁碟機"^]。
@@ -42,11 +42,11 @@ NOTE: E2812、E2824、EF280儲存陣列可能包含一個或多個SAS-2傳統擴
 
 E2860控制器機櫃和DE460C磁碟機機機櫃均由五個磁碟機抽取器組成、每個抽取器均包含12個磁碟機插槽。磁碟機抽屜1位於頂端、磁碟機抽屜5位於底部。
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[28圖e2860 de460c正面無標註維護e2800]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60 個磁碟機抽取盒 "]
 
 對於E2860控制器櫃抽屜和DE460C磁碟機櫃抽屜、磁碟機在磁碟櫃內的每個磁碟機抽屜中都會編號為0到11。
 
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[具備HDD標註的Dwgt Trap抽屜維護e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[磁碟機插槽編號]
 
 
 NOTE: E2860儲存陣列可能包含一個或多個SAS-2傳統擴充磁碟機匣、包括DE1600 12磁碟機匣、DE5600 24磁碟機匣或DE6600 60磁碟機匣如需更換其中一個磁碟機匣中磁碟機的說明、請參閱 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577975["更換E2660、E2760、E5460、E5560或E5660磁碟機"^] 和 link:https://library.netapp.com/ecm/ecm_download_file/ECMLP2577971["更換E2600、E2700、E5400、E5500和E5600 12個磁碟機或24個磁碟機磁碟機匣中的磁碟機"^]。
@@ -57,11 +57,11 @@ NOTE: E2860儲存陣列可能包含一個或多個SAS-2傳統擴充磁碟機匣�
 
 您可以更換E2860控制器櫃和DE460C磁碟機櫃中的磁碟機匣。每個60個磁碟機磁碟櫃都有五個磁碟機匣。
 
-image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[28圖e2860 de460c正面無標註維護e2800]
+image::../media/28_dwg_e2860_de460c_front_no_callouts_maint-e2800.gif[60 個磁碟機抽取盒 "]
 
 五個抽屜各可容納12個磁碟機。
 
-image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[""]
+image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif["裝有磁碟機的抽屜"]
 
 
 
@@ -91,7 +91,7 @@ image:../media/92_dwg_de6600_drawer_with_hdds_no_callouts_maint-e2800.gif[""]
 ** 切勿將磁碟機強制放入磁碟櫃、並以溫和、穩固的壓力將磁碟機栓鎖完全卡入。
 ** 將磁碟機放在軟墊表面上、切勿將磁碟機堆疊在彼此上面。
 ** 請勿將磁碟機碰到其他表面。
-** 從磁碟櫃中取出磁碟機之前、請先解開握把、然後等待30秒、讓磁碟機減少磁碟機轉速。
+** 從磁碟櫃中取出磁碟機之前、請先解開握把、然後等待60秒、讓磁碟機減少磁碟機轉速。
 ** 在運送磁碟機時、請務必使用核准的包裝。
 
 

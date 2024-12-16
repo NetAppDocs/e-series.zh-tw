@@ -11,7 +11,7 @@ summary: 您可以移除分段作業系統軟體、以確保稍後不會意外�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

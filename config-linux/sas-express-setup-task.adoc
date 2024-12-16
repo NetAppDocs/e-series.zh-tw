@@ -2,7 +2,7 @@
 permalink: config-linux/sas-express-setup-task.html 
 sidebar: sidebar 
 keywords: sas, express, setup 
-summary: SAS Express設定 
+summary: 您可以在 E 系列系統上的 Linux 主機上使用 SAS 傳輸協定。 
 ---
 = SAS Express設定
 :allow-uri-read: 
@@ -10,3 +10,5 @@ summary: SAS Express設定
 :imagesdir: ../media/
 
 
+[role="lead"]
+您可以在 E 系列系統上的 Linux 主機上使用 SAS 傳輸協定。

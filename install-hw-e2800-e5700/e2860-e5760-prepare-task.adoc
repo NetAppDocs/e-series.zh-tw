@@ -21,14 +21,14 @@ summary: 若要安裝E2860、E5760或DE460、請建立帳戶並註冊硬體。
 
 
  a| 
-image:../media/trafford_overview.png[""]
+image:../media/trafford_overview.png["機櫃內有安裝的磁碟機和擋板"]
  a| 
 機櫃、擋板和機架安裝硬體
 
 
 
  a| 
-image:../media/handles_counted.png[""]
+image:../media/handles_counted.png["機櫃把手"]
  a| 
 機櫃處理x4
 
@@ -42,7 +42,7 @@ image:../media/handles_counted.png[""]
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["乙太網路纜線"]
  a| 
 乙太網路纜線
 
@@ -53,7 +53,7 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/cable_io_inst-hw-e2800-e5700.png[""]
+image:../media/cable_io_inst-hw-e2800-e5700.png["I/O纜線"]
  a| 
 I/O纜線
 
@@ -64,7 +64,7 @@ I/O纜線
 
 
  a| 
-image:../media/cable_power_inst-hw-e2800-e5700.png[""]
+image:../media/cable_power_inst-hw-e2800-e5700.png["電源線"]
  a| 
 電源線
 
@@ -77,7 +77,7 @@ image:../media/cable_power_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS纜線"]
  a| 
 SAS纜線（僅隨磁碟機櫃提供）
  a| 
@@ -90,28 +90,28 @@ SAS纜線（僅隨磁碟機櫃提供）
 
 
  a| 
-image:../media/screwdriver_inst-hw-e2800-e5700.png[""]
+image:../media/screwdriver_inst-hw-e2800-e5700.png["2號十字螺絲起子"]
  a| 
 2號十字螺絲起子
 
 
 
  a| 
-image:../media/flashlight_inst-hw-e2800-e5700.png[""]
+image:../media/flashlight_inst-hw-e2800-e5700.png["手電筒"]
  a| 
 手電筒
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-e2800-e5700.png[""]
+image:../media/wrist_strap_inst-hw-e2800-e5700.png["防靜電繫帶"]
  a| 
 防靜電繫帶
 
 
 
  a| 
-image:../media/4u_dummy.png[""]
+image:../media/4u_dummy.png["4U 機架 \""]
  a| 
 4U機架空間：標準19吋（48.30公分）機架、適合下列尺寸的4U機櫃。
 
@@ -126,7 +126,7 @@ image:../media/4u_dummy.png[""]
 
 
  a| 
-image:../media/management_station_inst-hw-e2800-e5700_g60b3.png[""]
+image:../media/management_station_inst-hw-e2800-e5700_g60b3.png["Management Station ，並搭配支援的管理軟體瀏覽器"]
  a| 
 管理軟體支援的瀏覽器：
 

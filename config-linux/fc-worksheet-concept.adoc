@@ -15,7 +15,7 @@ summary: 使用這份工作表單記錄FC儲存組態資訊。
 
 圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。任何單一連接埠都有兩條通往儲存設備的路徑（每個控制器各一個）。
 
-image::../media/port_identifiers_host_and_target_conf-lin.gif[連接埠識別碼主機和目標設定lin]
+image::../media/port_identifiers_host_and_target_conf-lin.gif[網路組態FC]
 
 
 

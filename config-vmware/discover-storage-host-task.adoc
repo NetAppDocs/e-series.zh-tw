@@ -19,5 +19,5 @@ summary: 將磁碟區指派給主機之後、您可以執行重新掃描、以�
 . 建立一個或多個磁碟區、並將其指派給ESXi主機。
 . 如果使用vCenter Server、請將主機新增至伺服器的庫存。
 . 使用vSphere Client或vSphere Web Client直接連線至vCenter Server或ESXi主機。
-. 如需如何在ESXi主機上重新掃描儲存設備的指示、請搜尋 https://kb.vmware.com/s/["VMware知識庫"^] 關於本主題的文章。
+. 如需如何在 ESXi 主機上執行儲存設備重新掃描的指示，請搜尋 https://support.broadcom.com/["VMware知識庫"^]本主題的文章。
 

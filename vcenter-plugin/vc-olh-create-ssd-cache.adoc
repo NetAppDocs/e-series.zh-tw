@@ -11,7 +11,7 @@ summary: 若要動態加速系統效能、您可以使用SSD快取功能、將�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -67,7 +67,7 @@ NOTE: 軟體啟動器NQN是在工作期間決定的。
 
 在直接連線拓撲中、一或多部主機會直接連線至子系統。在支援從每個主機到子系統控制器的單一連線、如下所示。SANtricity在此組態中、每個主機的一個HCA（主機通道介面卡）連接埠應與所連接的E系列控制器連接埠位於同一子網路、但與其他HCA連接埠位於不同的子網路上。
 
-image::../media/nvmeof_direct_connect.gif[nvme直接連線]
+image::../media/nvmeof_direct_connect.gif[NVMe over Infiniband 直接連線範例]
 
 
 

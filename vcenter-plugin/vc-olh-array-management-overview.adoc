@@ -10,7 +10,7 @@ summary: 使用「新增/探索」功能、尋找並新增您要在組織網路�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

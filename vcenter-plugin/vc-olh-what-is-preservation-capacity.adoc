@@ -10,7 +10,7 @@ summary: 保留容量是指為支援潛在磁碟機故障而保留在集區中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

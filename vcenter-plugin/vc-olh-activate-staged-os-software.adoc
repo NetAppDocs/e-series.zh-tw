@@ -11,7 +11,7 @@ summary: 您可以選擇在更方便的時間啟動軟體檔案。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

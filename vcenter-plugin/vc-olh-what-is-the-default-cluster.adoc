@@ -10,7 +10,7 @@ summary: 預設叢集是系統定義的實體、可讓登入儲存陣列的任�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

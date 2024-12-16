@@ -57,7 +57,7 @@ summary: 更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包
 . 從「支援系統管理程式」中、判斷哪個電力容器故障。SANtricity
 +
 .. 選取*硬體*。
-.. 請看效能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃有故障的電力箱。
+.. 查看 * 機櫃 * 下拉式清單右側的電源圖示、判斷哪個機櫃的電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"]箱故障。
 +
 如果某個元件故障、此圖示為紅色。
 
@@ -82,7 +82,7 @@ NOTE: 您也可以在Recovery Guru的「詳細資料」區域中、找到故障�
 您必須更換注意LED亮起的電力箱。
 
 +
-image::../media/28_dwg_e2860_de460c_psu_w_callouts_maint-e2800.gif[28圖e2860 de460c PSU、含標註維護e2800]
+image::../media/28_dwg_e2860_de460c_psu_w_callouts_maint-e2800.gif[電源箱 LED]
 
 +
 *（1）*_電源LED _。如果是*恆亮綠色*、則表示電力容器運作正常。如果是*關*、則表示電源箱故障、AC開關已關閉、AC電源線未正確安裝、或AC電源線輸入電壓不在保證範圍內（AC電源線的來源端有問題）。

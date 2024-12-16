@@ -11,7 +11,7 @@ summary: 您可以為集區或磁碟區群組啟用「磁碟機安全性」、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 對於EF300和EF600系統、可以設定一個磁碟區來支援512位�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

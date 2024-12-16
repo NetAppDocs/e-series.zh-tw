@@ -53,12 +53,12 @@ NOTE: 控制器的交換器連接埠不支援連接埠通道/LACP。不建議使
 
 
 .關於這項工作
-在規劃iSCSI網路時、請記住 https://configmax.vmware.com/home["VMware組態上限"^] 指南指出支援的iSCSI儲存路徑上限為8。您必須考量此需求、以免設定太多路徑。
+規劃 iSCSI 網路時，請記住本 https://configmax.broadcom.com/home["VMware組態上限"^]指南指出支援的 iSCSI 儲存路徑上限為 8 條。您必須考量此需求、以免設定太多路徑。
 
 根據預設、當您不使用iSCSI連接埠繫結時、VMware iSCSI軟體啟動器會針對每個iSCSI目標建立單一工作階段。
 
 
-NOTE: VMware iSCSI連接埠繫結是一項功能、可強制所有繫結的VMkernel連接埠登入已設定網路區段上可存取的所有目標連接埠。它用於提供iSCSI目標單一網路位址的陣列。NetApp建議不要使用iSCSI連接埠繫結。如需其他資訊、請參閱 http://kb.vmware.com/["VMware知識庫"] 以瞭解有關在ESX/ESXi中使用軟體iSCSI連接埠繫結的考量。如果ESXi主機連接至其他廠商的儲存設備、NetApp建議您使用個別的iSCSI vmkernel連接埠、以避免與連接埠繫結發生衝突。
+NOTE: VMware iSCSI連接埠繫結是一項功能、可強制所有繫結的VMkernel連接埠登入已設定網路區段上可存取的所有目標連接埠。它用於提供iSCSI目標單一網路位址的陣列。NetApp建議不要使用iSCSI連接埠繫結。如需其他資訊，請參閱文章，瞭 https://support.broadcom.com/["VMware知識庫"]解在 ESX/ESXi 中使用軟體 iSCSI 連接埠繫結的相關考量。如果ESXi主機連接至其他廠商的儲存設備、NetApp建議您使用個別的iSCSI vmkernel連接埠、以避免與連接埠繫結發生衝突。
 
 為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。如需詳細資訊、請參閱 https://www.netapp.com/media/17017-tr4789.pdf["TR-4789 ：適用於 E 系列 SANtricity iSCSI 的 VMware 組態指南、可與 ESXi 6.x 和 7.x 整合"^] 。
 
@@ -280,7 +280,7 @@ NOTE: 如果命令失敗並顯示訊息「傳送失敗（訊息太長）」、�
 
 建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
 
-image::../media/50001_01_conf-vmw.gif[50001 01設定vmw]
+image::../media/50001_01_conf-vmw.gif[iSCSI 連接埠識別碼]
 
 
 

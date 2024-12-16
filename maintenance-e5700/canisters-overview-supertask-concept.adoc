@@ -36,7 +36,7 @@ NOTE: 電源供應器更換程序適用於IOM更換。若要更換IOM、請執�
 
 下圖顯示E5724控制器機櫃的範例、其中包含兩個電源供應器（電源風扇容器）。DE224C磁碟機櫃是相同的、但它們包含I/O模組（IOM）、而非控制器容器。
 
-image::../media/e5700_power_supply_callout.png[e5700電源供應器標註]
+image::../media/e5700_power_supply_callout.png[E5700 控制器電源供應器]
 
 控制器機櫃下方有兩個電源供應器（電源風扇機櫃）*（1）*_
 
@@ -82,11 +82,11 @@ NOTE: 如果機櫃中的第二個電源供應器（電源風扇外殼）沒有�
 
 下圖顯示DE460C磁碟機櫃的背面以及兩個電源容器：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwx de460c後端無標註維護e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C 配備兩個動力迴廊]
 
 下圖顯示電力箱：
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[28圖e2860 de460c PSU維護e5700]
+image::../media/28_dwg_e2860_de460c_psu_maint-e5700.gif[電力箱]
 
 
 
@@ -130,11 +130,11 @@ NOTE: 如果機櫃中的第二個電源箱沒有最佳狀態、或是Recovery Gu
 
 下圖顯示風扇容器：
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[28圖e2860 de460c單風扇箱、無標註維護e5700]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e5700.gif[風扇容器]
 
 下圖顯示DE460C機櫃的背面、其中有兩個風扇容器：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[28 dwx de460c後端無標註維護e5700]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e5700.gif[DE460C 搭配兩個風扇迴廊]
 
 
 CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下更換風扇容器、您必須在30分鐘內完成更換程序、以避免設備過熱。

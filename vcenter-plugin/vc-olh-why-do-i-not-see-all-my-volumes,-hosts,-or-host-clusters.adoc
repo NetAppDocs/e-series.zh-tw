@@ -10,7 +10,7 @@ summary: 具有啟用DA基礎磁碟區的Snapshot Volume不符合指派給不具
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

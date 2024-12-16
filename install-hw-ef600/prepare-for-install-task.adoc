@@ -28,14 +28,14 @@ summary: 若要安裝EF300或EF600、請建立帳戶並註冊硬體。
 
 
  a| 
-image:../media/ef600_w_faceplate.png[""]
+image:../media/ef600_w_faceplate.png["機櫃內有安裝的磁碟機和擋板"]
  a| 
 安裝磁碟機的磁碟櫃（擋板和端蓋分開包裝）
 
 
 
  a| 
-image:../media/superrails_inst-hw-ef600.png[""]
+image:../media/superrails_inst-hw-ef600.png["機架安裝硬體"]
  a| 
 機架安裝硬體
 
@@ -49,7 +49,7 @@ image:../media/superrails_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-ef600.png[""]
+image:../media/cable_ethernet_inst-hw-ef600.png["RJ-45 乙太網路纜線"]
  a| 
 RJ-45乙太網路纜線（如有訂購）
  a| 
@@ -58,7 +58,7 @@ RJ-45乙太網路纜線（如有訂購）
 
 
  a| 
-image:../media/cable_io_inst-hw-ef600.png[""]
+image:../media/cable_io_inst-hw-ef600.png["I/O 纜線"]
  a| 
 I/O纜線（如有訂購）
  a| 
@@ -67,7 +67,7 @@ I/O纜線（如有訂購）
 
 
  a| 
-image:../media/cable_power_inst-hw-ef600.png[""]
+image:../media/cable_power_inst-hw-ef600.png["電源線"]
  a| 
 電源線（如有訂購）
  a| 
@@ -80,28 +80,28 @@ image:../media/cable_power_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/screwdriver_inst-hw-ef600.png[""]
+image:../media/screwdriver_inst-hw-ef600.png["2號十字螺絲起子"]
  a| 
 2號十字螺絲起子
 
 
 
  a| 
-image:../media/flashlight_inst-hw-ef600.png[""]
+image:../media/flashlight_inst-hw-ef600.png["手電筒"]
  a| 
 手電筒
 
 
 
  a| 
-image:../media/wrist_strap_inst-hw-ef600.png[""]
+image:../media/wrist_strap_inst-hw-ef600.png["防靜電繫帶"]
  a| 
 防靜電繫帶
 
 
 
  a| 
-image:../media/2u_rackspace_inst-hw-ef600.png[""]
+image:../media/2u_rackspace_inst-hw-ef600.png["2U 機架"]
  a| 
 2U機架空間：標準19吋（48.30公分）機架、可容納2U機櫃、尺寸如下。
 
@@ -121,7 +121,7 @@ NOTE: 使用協力廠商機櫃可能會導致電源線限制控制器的存取�
 
 
  a| 
-image:../media/management_station_inst-hw-ef600_g60b3.png[""]
+image:../media/management_station_inst-hw-ef600_g60b3.png["Management Station ，並搭配支援的管理軟體瀏覽器"]
  a| 
 管理軟體支援的瀏覽器：
 

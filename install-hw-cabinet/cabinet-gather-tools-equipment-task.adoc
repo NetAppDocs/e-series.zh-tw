@@ -21,20 +21,20 @@ summary: 安裝3040 40U機櫃之前、請先收集所需的工具和設備。
 
 
  a| 
-image:../media/83009_02.gif[""]
+image:../media/83009_02.gif["3/4 英寸扳手和內六角扳手"]
  a| 
 * 3/4-in。扳手*（隨附於運送箱中）-用於升高及降低機櫃下方的水平墊腳。
 
 * 1/4英寸內六角扳手*-用於升高和降低機櫃正面的穩定支腳。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["隨附於機櫃"]
 
 
 
  a| 
 *《美國國家電機製造與製造》（NMAL6-30
 
-image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
+image:../media/73121_01_dwg_nema_l6_30_power_cord.gif["NEMA L6-30 電源線"]
  a| 
 * AC電源線*-將機櫃連接至外部電源（牆上插座）。
 
@@ -45,19 +45,19 @@ image:../media/73121_01_dwg_nema_l6_30_power_cord.gif[""]
 
 NOTE: 每個PDU都必須連接至獨立的電源。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["隨附於機櫃"]
 
 
 
  a| 
 ** IEC-60309**
 
-image:../media/73122_01_dwg_iec_60309_power_cord.gif[""]
+image:../media/73122_01_dwg_iec_60309_power_cord.gif["IEC-60309 電源線"]
 
 
 
  a| 
-image:../media/78038_21.png[""]
+image:../media/78038_21.png["隨附於機櫃"]
  a| 
 ** SAS纜線*（選購）：每個磁碟機匣隨附兩條纜線、主機端纜線則需另行購買。
 
@@ -69,11 +69,11 @@ image:../media/78038_21.png[""]
 
 
  a| 
-image:../media/77038_06.gif[""]
+image:../media/77038_06.gif["SAS 和通訊纜線"]
  a| 
 *可安裝纜線軸*：安裝於垂直電源分配插座的兩側、以配合過度的纜線長度和纜線佈線。每個控制器磁碟機匣都隨附兩個纜線軸纜線軸也隨附獨立式磁碟機匣。
  a| 
-image:../media/77037_11.gif[""]
+image:../media/77037_11.gif["可安裝的纜線軸"]
 
 
 

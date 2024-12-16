@@ -11,7 +11,7 @@ summary: 將一個或多個儲存陣列新增至使用者建立的群組。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 編輯集區的設定、包括其名稱、容量警示設定、修改�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

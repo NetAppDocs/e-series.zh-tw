@@ -11,7 +11,7 @@ summary: 您可以檢查集區或磁碟區群組中某個磁碟區的備援、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

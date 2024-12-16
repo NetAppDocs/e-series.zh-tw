@@ -70,7 +70,7 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 
 圖示顯示兩個區域中連接至E系列儲存陣列的主機。其中一個區域以藍色線表示、另一個區域則以紅色線表示。任何單一連接埠都有兩條通往儲存設備的路徑（每個控制器各一個）。
 
-image::../media/port_identifiers_host_and_target_conf-win.gif[連接埠識別碼主機和目標設定成功]
+image::../media/port_identifiers_host_and_target_conf-win.gif[光纖通道連接埠識別碼]
 
 
 

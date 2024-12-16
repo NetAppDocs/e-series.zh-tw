@@ -13,4 +13,4 @@ summary: 檢閱EF300或EF600的安裝與設定程序。
 [role="lead"]
 安裝及設定新的儲存系統之前、請先熟悉安裝程序：
 
-image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[ef600 ISI工作流程v 2安裝硬體ef600]
+image::../media/ef600_isi_workflow_v_2_inst-hw-ef600.bmp[EF600 和 EF300 安裝程序工作流程]

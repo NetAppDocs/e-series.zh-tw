@@ -11,7 +11,7 @@ summary: 如果您的設定不符合自動集區組態的需求、則可以手�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

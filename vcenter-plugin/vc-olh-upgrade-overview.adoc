@@ -10,7 +10,7 @@ summary: 您可以管理SANtricity 同類型多個儲存陣列的支援功能、
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

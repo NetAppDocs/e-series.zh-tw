@@ -10,7 +10,7 @@ summary: 如果您想要讓兩個以上的主機共用同一組磁碟區的存�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 您可以移除主機或主機叢集、使磁碟區不再與該主機�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

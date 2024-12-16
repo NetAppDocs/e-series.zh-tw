@@ -11,7 +11,7 @@ summary: 您必須將磁碟區指派給主機或主機叢集、以便用於I/O�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

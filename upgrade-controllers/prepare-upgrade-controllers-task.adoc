@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/prepare-upgrade-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, upgrade controller requirements, upgrade controller key management, prepare upgrade controller, upgrade controller preparation, preparing controller upgrade 
 summary: 準備升級控制器、方法是儲存磁碟機安全金鑰、收集支援資料、以及使控制器離線。 
 ---
 = 準備升級控制器
@@ -94,10 +94,9 @@ NOTE: 您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺�
 
 . 使用GUI或CLI收集有關儲存陣列的支援資料：
 +
-** 使用Storage Manager中的System Manager或Array Management（陣列管理）窗口來收集和保存儲存儲存陣列的支援產品組合。
+** 使用 System Manager 收集並儲存儲存儲存陣列的支援套件。
 +
 *** 從System Manager中、選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）索引標籤]。然後選擇*收集支援資料*、再按一下*收集*。
-*** 從Array Management（陣列管理）視窗工具列中、選取功能表：Monitor（監控）[Health（健全狀況）> Collect Support Data Manually（手動收集支援資料然後輸入名稱、並在系統上指定您要儲存支援服務組合的位置。
 +
 檔案會以「support-data.7z」的名稱儲存在瀏覽器的「下載」資料夾中。
 
@@ -133,7 +132,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 +
 「變更快取設定」對話方塊隨即出現。儲存陣列上的所有磁碟區都會顯示在此對話方塊中。
 
-.. 選取* Basic *索引標籤、然後變更讀取快取和寫入快取的設定。
+.. 選擇 *Basic* 選項卡並禁用讀取高速緩存和寫入高速緩存的設置。
 .. 按一下「 * 儲存 * 」。
 .. 等待五分鐘、讓快取記憶體中的任何資料都能排清到磁碟。
 

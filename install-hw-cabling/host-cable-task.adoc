@@ -22,9 +22,12 @@ summary: 您可以將主機直接連接至控制器或使用交換器。
 下圖顯示連線範例。若要確保最高效能、請使用所有可用的主機介面卡連接埠。
 
 .兩個主機和兩個控制器
-image::../media/topology_host_direct_generic_web_low.png[拓撲主機直接通用網路不足]
+image::../media/topology_host_direct_generic_web_low.png[兩個主機和兩個控制器的纜線]
 
 *（1）*_將每個主機介面卡連接埠直接連接至控制器上的主機連接埠。_
+
+
+NOTE: 若為 E4000 ，請連線至主機連接埠 e0a 和 e0b 。
 
 
 
@@ -35,8 +38,11 @@ image::../media/topology_host_direct_generic_web_low.png[拓撲主機直接通�
 下圖顯示連線範例。對於提供資源配置功能的交換器、您應該隔離每個啟動器和目標配對。
 
 .兩台主機和兩台交換器
-image::../media/topology_host_fabric_generic.png[一般拓撲主機架構]
+image::../media/topology_host_fabric_generic.png[兩台主機和兩台交換器纜線]
 
 *（1）*_將每個主機介面卡直接連接到交換器。_
 
 *（2）*_將每個交換器直接連接至控制器上的主機連接埠。若要確保最高效能、請使用所有可用的主機介面卡連接埠。_
+
+
+NOTE: 若為 E4000 ，請連線至主機連接埠 e0a 和 e0b 。

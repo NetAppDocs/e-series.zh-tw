@@ -10,7 +10,7 @@ summary: 若要管理單一陣列、請使用「Launch（啟動）」選項、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

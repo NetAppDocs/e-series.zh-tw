@@ -11,7 +11,7 @@ summary: 您可以找到磁碟機、以實體方式識別組成所選集區、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

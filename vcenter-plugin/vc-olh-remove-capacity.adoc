@@ -11,7 +11,7 @@ summary: 您可以移除磁碟機、以降低現有資源池或SSD快取的容�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

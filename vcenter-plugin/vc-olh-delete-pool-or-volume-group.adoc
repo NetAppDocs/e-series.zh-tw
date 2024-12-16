@@ -11,7 +11,7 @@ summary: 刪除資源池或磁碟區群組以建立更多未指派的容量、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

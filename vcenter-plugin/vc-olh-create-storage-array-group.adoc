@@ -11,7 +11,7 @@ summary: 儲存設備群組會定義哪些磁碟機提供組成磁碟區的儲�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

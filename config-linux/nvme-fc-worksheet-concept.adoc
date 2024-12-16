@@ -19,7 +19,7 @@ summary: 請使用這份工作表單來記錄NVMe over Fibre Channel儲存組態
 
 在直接連線拓撲中、一或多部主機會直接連線至控制器。
 
-image::../media/nvme_fc_direct_topology.png[NVMe光纖通道直接拓撲]
+image::../media/nvme_fc_direct_topology.png[直接連線拓撲範例]
 
 * 主機1 HBA連接埠1和控制器A主機連接埠1
 * 主機1 HBA連接埠2和控制器B主機連接埠1
@@ -37,7 +37,7 @@ image::../media/nvme_fc_direct_topology.png[NVMe光纖通道直接拓撲]
 
 在網路拓撲中、會使用一或多個交換器。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得支援的交換器清單。
 
-image::../media/nvme_fc_fabric_topology.png[NVMe光纖網路拓撲]
+image::../media/nvme_fc_fabric_topology.png[交換器連線拓撲範例]
 
 
 

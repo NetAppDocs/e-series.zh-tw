@@ -32,7 +32,7 @@ NOTE: 如果您使用的是AIX®、則必須先在主機上安裝E系列多重�
 
 
  a| 
-image:../media/4U_DirectTopology.png[""]
+image:../media/4U_DirectTopology.png["直接附加拓撲纜線"]
  a| 
 . 將每個主機介面卡直接連接到控制器上的主機連接埠。
 
@@ -48,7 +48,7 @@ image:../media/4U_DirectTopology.png[""]
 
 
  a| 
-image:../media/4U_FabricTopology.png[""]
+image:../media/4U_FabricTopology.png["Fabrix 拓撲佈線"]
  a| 
 . 將每個主機介面卡直接連接到交換器。
 . 將每個交換器直接連接至控制器上的主機連接埠。
@@ -79,7 +79,7 @@ image:../media/4U_FabricTopology.png[""]
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["乙太網路纜線"]
  a| 
 乙太網路纜線（如有訂購）
 
@@ -92,11 +92,11 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/e2800_mgmt_ports.png[""]
+image:../media/e2800_mgmt_ports.png["E2800 管理連接埠"]
 
 E2800控制器P1管理連接埠
  a| 
-image:../media/e5700_mgmt_ports.png[""]
+image:../media/e5700_mgmt_ports.png["E5700 管理連接埠"]
 
 E5700控制器P1管理連接埠
 
@@ -122,7 +122,7 @@ E5700控制器P1管理連接埠
 
 
  a| 
-image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
+image:../media/cable_ethernet_inst-hw-e2800-e5700.png["乙太網路纜線"]
  a| 
 乙太網路纜線（如有訂購）
 
@@ -135,11 +135,11 @@ image:../media/cable_ethernet_inst-hw-e2800-e5700.png[""]
 
 
  a| 
-image:../media/e2800_mgmt_ports.png[""]
+image:../media/e2800_mgmt_ports.png["E2800 管理連接埠"]
 
 E2800控制器P1管理連接埠
  a| 
-image:../media/e5700_mgmt_ports.png[""]
+image:../media/e5700_mgmt_ports.png["E5700 管理連接埠"]
 
 E5700控制器P1管理連接埠
 
@@ -199,7 +199,7 @@ NOTE: 如果失去控制器B的連線、您可以使用先前驗證的控制器A
 
 
  a| 
-image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png[""]
+image:../media/management_s_g2285tation_inst-hw-e2800-e5700_g2285.png["存取 System Manager 以設定管理連接埠"]
  a| 
 若要存取System Manager、請使用您用來設定管理連接埠的相同IP位址。
 

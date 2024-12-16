@@ -10,7 +10,7 @@ summary: 如果您增加磁碟區的容量、主機可能無法立即辨識磁�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

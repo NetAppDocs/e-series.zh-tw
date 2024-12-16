@@ -27,14 +27,14 @@ summary: 在雙柱機架或NetApp系統機櫃中安裝E2800或E5700。
 . 打開硬體內容物的包裝、然後將內含的硬體與裝箱單進行庫存。
 . 安裝滑軌。
 +
-如果機架安裝硬體隨附說明、請參閱以取得有關如何安裝軌道的詳細資訊。如需其他機架安裝指示、請參閱 link:../rackmount-hardware.html["機架安裝硬體"]。
+如果機架安裝硬體隨附說明、請參閱以取得有關如何安裝軌道的詳細資訊。有關機架安裝的其他說明，請參閱link:../rackmount-hardware.html["機架安裝硬體"^]。
 
 +
 
 NOTE: 從機架或機櫃底部到頂端安裝硬體、以避免設備翻覆。
 
 +
-image:../media/install_rails_inst-hw-e2800-e5700.png[""]
+image:../media/install_rails_inst-hw-e2800-e5700.png["安裝軌道"]
 
 . 安裝機櫃。
 +
@@ -43,7 +43,7 @@ CAUTION: 裝滿磁碟機時、每個磁碟櫃的重量約為64磅（29公斤）�
 
 +
 .. 從機櫃底部所需的機櫃開始、將機櫃背面（連接器的一端）放在軌道上。
-.. 從底部支撐機櫃、將其滑入機櫃。image:../media/4_person_lift_source.png[""]
+.. 從底部支撐機架，將其滑入機櫃。image:../media/4_person_lift_source.png["需要四個人將機櫃搬入機櫃"]
 
 
 . 固定機櫃。
@@ -56,7 +56,7 @@ CAUTION: 裝滿磁碟機時、每個磁碟櫃的重量約為64磅（29公斤）�
 
 
 +
-image:../media/trafford_secure.png[""]
+image:../media/trafford_secure.png["將托架固定在機架後方"]
 
 . 安裝擋板或端蓋。
 +
@@ -69,4 +69,4 @@ image:../media/trafford_secure.png[""]
 
 
 
-image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png[""]
+image:../media/install_faceplate_2_0_inst-hw-e2800-e5700.png["安裝面板"]

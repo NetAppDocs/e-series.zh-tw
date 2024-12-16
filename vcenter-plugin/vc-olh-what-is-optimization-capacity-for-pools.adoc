@@ -10,7 +10,7 @@ summary: 當SSD磁碟機的一部分容量未配置時、其壽命將更長、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

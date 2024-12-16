@@ -13,4 +13,4 @@ summary: 使用Windows Express組態工作流程。
 [role="lead"]
 此工作流程會引導您完成快速方法、以設定儲存陣列和SANtricity 使用支援Windows主機的功能。
 
-image::../media/1130_flw_sys_mgr_windows_express_guide_all_protocols.png[1130 FLW sys manager windows Express可引導所有傳輸協定]
+image::../media/1130_flw_sys_mgr_windows_express_guide_all_protocols.png[Windows Express 指南工作流程]

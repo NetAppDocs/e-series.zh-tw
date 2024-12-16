@@ -27,7 +27,7 @@ summary: 連接電源線並開啟磁碟機櫃的電源。
 
 
  a| 
-image:../media/power_cable_inst-hw-ef600.png[""]
+image:../media/power_cable_inst-hw-ef600.png["電源線"]
  a| 
 *電源線*
 
@@ -37,7 +37,7 @@ image:../media/power_cable_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/cabling_power.png[""]
+image:../media/cabling_power.png["EF600/EF300 電源線"]
 
 |===
 . 將兩條電源線（每個控制器一條）連接至機櫃或機架中的兩個獨立的電力分配單元（PDU）。

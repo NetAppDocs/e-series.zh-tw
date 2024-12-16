@@ -41,7 +41,7 @@ NOTE: 只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會
 ====
 
 
-image::../media/e5700_attention_led_callout.png[e5700注意力主導的標註]
+image::../media/e5700_attention_led_callout.png[E5700 控制器注意 LED]
 
 *（1）*_注意LED _
 

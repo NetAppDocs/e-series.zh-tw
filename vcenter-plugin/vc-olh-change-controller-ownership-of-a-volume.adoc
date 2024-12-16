@@ -11,7 +11,7 @@ summary: 變更磁碟區的慣用控制器擁有權、以便透過新路徑引�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

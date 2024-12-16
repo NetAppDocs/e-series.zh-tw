@@ -11,7 +11,7 @@ summary: 當系統偵測到至少11個未指派的磁碟機、或偵測到一個
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

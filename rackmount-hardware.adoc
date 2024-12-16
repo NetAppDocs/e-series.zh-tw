@@ -6,6 +6,8 @@ summary: 機架安裝硬體。
 ---
 = 機架安裝硬體
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

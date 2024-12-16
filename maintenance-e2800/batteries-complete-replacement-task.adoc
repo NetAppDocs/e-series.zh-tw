@@ -39,7 +39,7 @@ NOTE: 圖中顯示控制器容器範例。您的控制器可能有不同的編�
 +
 ** 七區段顯示會顯示重複順序* OS*、* OL*、*空白_*、表示控制器離線。
 ** 黃色警示LED持續亮起。
-** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** 主機連結 LED 可能會亮起，閃爍或熄滅，視主機介面而定。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 LED 顯示器"]
 +
 *（1）*_注意LED（黃色）_
 
@@ -122,7 +122,7 @@ NOTE: 僅當您的儲存陣列有一個控制器時、才執行此工作。
 NOTE: 圖中顯示控制器容器範例。您的控制器可能有不同的編號和不同類型的主機連接埠。
 
 +
-image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[28 dgn tled 7s顯示器維護e2800]
+image::../media/28_dwg_attn_led_7s_display_maint-e2800.gif[E2800 LED 顯示器]
 
 +
 *（1）*_注意LED（黃色）_

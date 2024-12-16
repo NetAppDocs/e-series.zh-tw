@@ -11,7 +11,7 @@ summary: 如果您不想再從特定儲存群組中管理一個或多個託管�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

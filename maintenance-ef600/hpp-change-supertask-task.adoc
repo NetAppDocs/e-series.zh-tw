@@ -27,7 +27,7 @@ summary: 變更EF300或EF600陣列的主機連接埠傳輸協定。
 .. 選取*支援資源*索引標籤後、捲動至*檢視頂端儲存陣列內容*區段。
 .. 找到*機箱序號*、然後將此值複製到文字檔。
 +
-image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[sam1130s e2800儲存陣列設定檔sn SMID複本mainstt ef600]
+image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.gif[機箱序號]
 
 
 
@@ -39,7 +39,7 @@ image::../media/sam1130_ss_e2800_storage_array_profile_sn_smid_copy_maint-ef600.
 .. 在文字方塊中輸入*功能套件子模型ID*、然後按一下*尋找*。
 .. 找出用於初始組態的功能套件子模型ID。
 +
-image::../media/storage_array_profile2_maint-ef600.gif[儲存陣列設定檔2維護ef600]
+image::../media/storage_array_profile2_maint-ef600.gif[儲存陣列設定檔]
 
 
 
@@ -596,7 +596,7 @@ NOTE: 如果未列出您的控制器子機型ID、請聯絡 https://mysupport.ne
 .. 在「*變更功能套件*」下、找到「*功能啟用識別碼*」。
 .. 複製此32位數號碼並貼到文字檔。
 +
-image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[Sam11330 s e2800變更功能套件功能可啟用識別碼複製維護ef600]
+image::../media/sam1130_ss_e2800_change_feature_pack_feature_enable_identifier_copy_maint-ef600.gif[變更 Feature Pack 對話方塊]
 
 
 
@@ -652,7 +652,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 . 從「系統管理程式」中選取功能表：「設定」[System]。SANtricity
 . 在*附加元件*下、選取*變更功能套件*。
 +
-image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[Sam11330 sss系統變更功能套件維護ef600]
+image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[變更功能套件]
 
 . 按一下*瀏覽*、然後選取您要套用的功能套件。
 . 在欄位中輸入*變更*。

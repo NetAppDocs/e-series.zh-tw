@@ -2,7 +2,7 @@
 permalink: config-linux/srp-ib-express-setup-task.html 
 sidebar: sidebar 
 keywords: srp, infiniband, express, setup 
-summary: SRP over InfiniBand Express設定 
+summary: 您可以將 SRP over InfiniBand 傳輸協定搭配 E 系列系統上的 Linux 主機使用。 
 ---
 = SRP over InfiniBand Express設定
 :allow-uri-read: 
@@ -10,3 +10,5 @@ summary: SRP over InfiniBand Express設定
 :imagesdir: ../media/
 
 
+[role="lead"]
+您可以將 SRP over InfiniBand 傳輸協定搭配 E 系列系統上的 Linux 主機使用。

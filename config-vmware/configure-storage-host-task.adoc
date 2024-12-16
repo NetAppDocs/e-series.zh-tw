@@ -17,5 +17,5 @@ ESXi的所有6._x_和7_x_版本均支援VMFS版本5和6。
 
 .步驟
 . 請確定已正確探索對應至ESXi主機的磁碟區。
-. 如需建立VMFS資料存放區或使用磁碟區做為RDM搭配vSphere Client或vSphere Web Client的相關指示、請參閱 https://www.vmware.com/support/pubs/["VMware文件網站"^]。
+. 如需建立 VMFS 資料存放區或將磁碟區作為 RDM 搭配 vSphere Client 或 vSphere Web Client 的說明，請參閱 https://docs.vmware.com/index.html["VMware文件網站"^]。
 

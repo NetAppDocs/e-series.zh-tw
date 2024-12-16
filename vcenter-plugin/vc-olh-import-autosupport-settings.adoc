@@ -11,7 +11,7 @@ summary: 將AutoSupport 一個物件組態從一個儲存陣列匯入其他儲�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

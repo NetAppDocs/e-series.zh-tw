@@ -19,7 +19,7 @@ summary: 使用此工作表記錄iSCSI儲存組態資訊。
 
 建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
 
-image::../media/50001_01_conf-lin.gif[50001 01會議林]
+image::../media/50001_01_conf-lin.gif[iSCSI 網路組態]
 
 
 

@@ -6,6 +6,8 @@ summary: 管理儲存設備
 ---
 = 管理儲存設備
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
 
 [role="lead"]

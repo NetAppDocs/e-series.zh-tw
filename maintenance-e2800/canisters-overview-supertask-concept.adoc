@@ -39,7 +39,7 @@ NOTE: 電源供應器更換程序適用於IOM更換。若要更換IOM、請執�
 
 下圖顯示E2812控制器機櫃、E2824控制器機櫃和EF280快閃陣列的範例、其中包含兩個電源供應器（電源風扇機櫃）。DE212C和DE224C磁碟機櫃相同、但它們包含I/O模組（IOM）、而非控制器容器。
 
-image::../media/28_dwg_e2812_power_fan_canisters.gif[28圖e2812電源風扇容器]
+image::../media/28_dwg_e2812_power_fan_canisters.gif[E2800 配備電源風扇迴廊]
 
 控制器機櫃下方有兩個電源供應器（電源風扇機櫃）*（1）*_
 
@@ -85,11 +85,11 @@ NOTE: 如果機櫃中的第二個電源供應器（電源風扇外殼）沒有�
 
 下圖顯示DE460C磁碟機櫃的背面以及兩個電源容器：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[28 dwx ded460c後端無標註維護e2800]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[DE460C 配備動力迴廊]
 
 下圖顯示電力箱：
 
-image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[28圖e2860 de460c PSU維護e2800]
+image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[動力迴廊]
 
 
 
@@ -136,11 +136,11 @@ NOTE: 如果機櫃中的第二個電源箱沒有最佳狀態、或是Recovery Gu
 
 下圖顯示風扇容器：
 
-image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e2800.gif[28圖e2860 de460c單風扇箱無標註維護e2800]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_no_callouts_maint-e2800.gif[風扇容器]
 
 下圖顯示DE460C機櫃的背面、其中有兩個風扇容器：
 
-image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[28 dwx ded460c後端無標註維護e2800]
+image::../media/28_dwg_de460c_rear_no_callouts_maint-e2800.gif[DE460c 配備兩個風扇迴廊]
 
 
 CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下更換風扇容器、您必須在30分鐘內完成更換程序、以避免設備過熱。

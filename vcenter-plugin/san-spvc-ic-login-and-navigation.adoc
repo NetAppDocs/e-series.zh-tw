@@ -10,7 +10,7 @@ summary: 登入並瀏覽外掛程式for vCenter。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

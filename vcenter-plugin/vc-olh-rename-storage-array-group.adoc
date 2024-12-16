@@ -11,7 +11,7 @@ summary: 當目前名稱不再有意義或適用時、請變更儲存陣列群�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

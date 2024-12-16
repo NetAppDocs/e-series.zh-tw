@@ -11,7 +11,7 @@ summary: 當兩個或多個主機需要I/O存取相同的磁碟區時、您可�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

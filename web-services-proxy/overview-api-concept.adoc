@@ -19,7 +19,7 @@ summary: 深入瞭解Web服務API
 
 無論使用何種程式設計語言或工具、對Web服務API的每個呼叫都有類似的結構、包含URL、HTTP動詞和Accept標頭。
 
-image::../media/web_services_proxy_api.gif[Web服務Proxy API]
+image::../media/web_services_proxy_api.gif[Web 服務 API 呼叫圖表]
 
 所有要求都包含URL、如下例所示、並包含表格中所述的元素。
 

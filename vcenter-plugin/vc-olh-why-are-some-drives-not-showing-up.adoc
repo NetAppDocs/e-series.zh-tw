@@ -10,7 +10,7 @@ summary: 在「Add Capacity」（新增容量）對話方塊中、並非所有�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

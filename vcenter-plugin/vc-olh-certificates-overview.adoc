@@ -10,7 +10,7 @@ summary: 「憑證管理」可讓您建立憑證簽署要求（CSR）、匯入�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

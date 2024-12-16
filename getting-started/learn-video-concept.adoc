@@ -17,7 +17,6 @@ summary: 觀看影片示範、深入瞭解E系列系統。
 
 == E系列：快速、簡單、可靠的儲存設備
 
-[role="lead"]
 本影片重點介紹使用NetApp E系列系統與使用市售伺服器進行儲存的主要優點。
 
 https://www.youtube.com/embed/FjFkU2z_hIo?rel=0["NetApp影片：使用NetApp E系列系統與使用市售伺服器進行儲存的主要效益"^]
@@ -26,7 +25,6 @@ https://www.youtube.com/embed/FjFkU2z_hIo?rel=0["NetApp影片：使用NetApp E�
 
 == System Manager：簡易設定與組態
 
-[role="lead"]
 本技術示範說明網路SANtricity 型的《支援NetApp E2800的功能》介面如何輕鬆設定及設定。
 
 https://www.youtube.com/embed/I0W0AjKpCO8?rel=0["NetApp影片：SANtricity 《NetApp系統管理程式：簡易設定與組態》"^]

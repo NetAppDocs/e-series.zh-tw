@@ -19,7 +19,7 @@ summary: 使用這份工作表單記錄NVMe over RoCE儲存組態資訊。
 
 在直接連線拓撲中、一或多部主機會直接連線至子系統。在支援從每個主機到子系統控制器的單一連線、如下所示。SANtricity在此組態中、每個主機的一個HCA（主機通道介面卡）連接埠應與所連接的E系列控制器連接埠位於同一子網路、但與其他HCA連接埠位於不同的子網路上。
 
-image::../media/nvmeof_direct_connect.gif[nvme直接連線]
+image::../media/nvmeof_direct_connect.gif[NVMe over roce 直接連線範例]
 
 滿足需求的範例組態包括四個子網路、如下所示：
 
@@ -35,7 +35,7 @@ image::../media/nvmeof_direct_connect.gif[nvme直接連線]
 
 在網路拓撲中、會使用一或多個交換器。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得支援的交換器清單。
 
-image::../media/nvmeof_switch_connect.gif[nvmeof交換器連線]
+image::../media/nvmeof_switch_connect.gif[NVMe over roce 交換器連線範例]
 
 
 

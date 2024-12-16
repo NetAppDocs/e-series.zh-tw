@@ -11,7 +11,7 @@ summary: 取得並匯入CA簽署的憑證、以安全存取裝載Storage Plugin 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

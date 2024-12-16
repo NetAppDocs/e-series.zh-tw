@@ -10,7 +10,7 @@ summary: 檢視憑證的摘要資訊、包括使用憑證的組織、發行憑�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -6,7 +6,12 @@ summary: E系列技術報告
 ---
 = 瀏覽解決方案技術報告
 :allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
 
+
+[role="lead"]
+請查看下列連結，以取得 E 系列硬體和 SANtricity 軟體的相關解決方案技術報告。這些連結會帶您前往不同的文件網站。
 
 
 

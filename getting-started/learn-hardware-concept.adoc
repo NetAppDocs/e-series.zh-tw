@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-hardware-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
 summary: E系列儲存陣列有多種組態和機型可供選擇。 
 ---
 = E系列硬體總覽
@@ -20,6 +20,7 @@ E系列陣列提供下列機型：
 * E2800系列-入門級混合式
 * EF280系列-入門級All Flash
 * EF300系列：入門級All Flash、All NVMe
+* E4000系列-入門級混合式
 * E5700系列-中階混合式
 * EF570系列-中階All Flash
 * EF600系列-中階All Flash、All NVMe
@@ -28,34 +29,28 @@ E系列陣列提供下列機型：
 
 NOTE: 對於 SANtricity OS 11.80GA 及更新版本、 E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。
 
-
-
-== E2800機型
-
-[cols="35h,~"]
-|===
-| 元件 | 規格 
-
-
- a| 
-機架尺寸：
- a| 
+[role="tabbed-block"]
+====
+.E2800機型
+--
+機架尺寸::
++
+--
 * 2U12（2個機架單元；12個磁碟機）
 * 2U24（2個機架單元；24個磁碟機）
 +
-image::../media/e2800_2u_front.gif[e2800 2U正面]
+image::../media/e2800_2u_front.gif[E2800 2U]
 
 * 4U60（4個機架單元；60個磁碟機）
 +
-image::../media/e2860_front.gif[正面e2860]
+image::../media/e2860_front.gif[「 E2800 44U 」]
 
 
 
-
-
- a| 
-磁碟機：
- a| 
+--
+磁碟機::
++
+--
 支援下列磁碟機類型：
 
 * 3.5吋NL-SAS（最多180個）
@@ -63,11 +58,10 @@ image::../media/e2860_front.gif[正面e2860]
 * 2.5吋SAS HDD（最多180個）
 
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 12GB SAS
@@ -75,33 +69,29 @@ image::../media/e2860_front.gif[正面e2860]
 * 16GB或32GB光纖通道
 
 
-|===
+--
 
 
-== EF280機型
+--
+.EF280機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
 
-[cols="35h,~"]
-|===
-| 元件 | 規格 
+image:../media/ef570_front.gif["EF280 2U"]
 
-
- a| 
-機架尺寸：
- a| 
-2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-磁碟機：
- a| 
+--
+磁碟機::
++
+--
 最多支援96個SSD 2.5吋磁碟機
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 12GB SAS
@@ -109,26 +99,23 @@ image::../media/e2860_front.gif[正面e2860]
 * 16GB或32GB光纖通道
 
 
-|===
+--
 
 
-== EF300機型
+--
+.EF300機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
 
-[cols="35h,~"]
-|===
-| 元件 | 規格 
+image:../media/ef570_front.gif["EF300 2U"]
 
-
- a| 
-機架尺寸：
- a| 
-2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-磁碟機與HIC：
- a| 
+--
+磁碟機與 HIC::
++
+--
 每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：
 
 * NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。
@@ -139,11 +126,10 @@ image::../media/e2860_front.gif[正面e2860]
 
 NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 25GB iSCSI
@@ -155,34 +141,29 @@ NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃�
 * 100GB NVMe / RoCE
 
 
-|===
+--
 
 
-== E5700機型
-
-[cols="35h,~"]
-|===
-| 元件 | 規格 
-
-
- a| 
-機架尺寸：
- a| 
+--
+.E5700機型
+--
+機架尺寸::
++
+--
 * 2U24（2個機架單元；24個磁碟機）
 +
-image::../media/e2800_2u_front.gif[e2800 2U正面]
+image::../media/e2800_2u_front.gif[E5700 2U]
 
 * 4U60（4個機架單元；60個磁碟機）
 +
-image::../media/e2860_front.gif[正面e2860]
+image::../media/e2860_front.gif[E5700 4U]
 
 
 
-
-
- a| 
-磁碟機：
- a| 
+--
+磁碟機::
++
+--
 最多支援480種下列磁碟機類型：
 
 * 3.5吋NL-SAS磁碟機
@@ -190,11 +171,10 @@ image::../media/e2860_front.gif[正面e2860]
 * 2.5吋SAS HDD磁碟機
 
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 12GB SAS
@@ -207,33 +187,29 @@ image::../media/e2860_front.gif[正面e2860]
 * 100GB NVMe / RoCE
 
 
-|===
+--
 
 
-== EF570機型
+--
+.EF570機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
 
-[cols="35h,~"]
-|===
-| 元件 | 規格 
+image:../media/ef570_front.gif["EF570 2U"]
 
-
- a| 
-機架尺寸：
- a| 
-2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-磁碟機：
- a| 
+--
+磁碟機::
++
+--
 最多支援120個SSD 2.5吋磁碟機
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 12GB SAS
@@ -246,26 +222,23 @@ image::../media/e2860_front.gif[正面e2860]
 * 100GB NVMe / RoCE
 
 
-|===
+--
 
 
-== EF600機型
+--
+.EF600機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
 
-[cols="35h,~"]
-|===
-| 元件 | 規格 
+image:../media/ef570_front.gif["EF600 2U"]
 
-
- a| 
-機架尺寸：
- a| 
-2U24（2個機架單元；24個磁碟機）image:../media/ef570_front.gif[""]
-
-
-
- a| 
-磁碟機與HIC：
- a| 
+--
+磁碟機與 HIC::
++
+--
 每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：
 
 * NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。
@@ -276,11 +249,10 @@ image::../media/e2860_front.gif[正面e2860]
 
 NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。
 
-
-
- a| 
-介面：
- a| 
+--
+介面::
++
+--
 可搭配下列介面使用：
 
 * 25GB iSCSI
@@ -295,4 +267,49 @@ NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃�
 * 200GB NVMe / RoCE
 
 
-|===
+--
+
+
+--
+.E4000機型
+--
+機架尺寸::
++
+--
+* 2U12（2個機架單元；12個磁碟機）
++
+image::../media/e4000_2u_front.png[E4000 2U]
+
+* 4U60（4個機架單元；60個磁碟機）
++
+image::../media/e4000_4u_front.png[E4000 4U]
+
+
+
+--
+磁碟機::
++
+--
+支援下列磁碟機類型：
+
+* 3.5吋NL-SAS（最多300個）
+* 2.5吋SAS SSD（最多120個）
+
+
+--
+介面::
++
+--
+可搭配下列介面使用：
+
+* 12GB SAS
+* 1 GB 或 10GBASE-T iSCSI
+* 1GB ， 10Gb 或 25GB iSCSI
+* 8GB ， 16GB 或 32GB FC
+
+
+--
+
+
+--
+====

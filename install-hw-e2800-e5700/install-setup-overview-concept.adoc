@@ -13,4 +13,4 @@ summary: 檢閱E2800與E5700的安裝與設定程序。
 [role="lead"]
 安裝及設定新的儲存系統之前、請先熟悉安裝程序：
 
-image::../media/ef600_isi_workflow_v_2_inst-hw-e2800-e5700.bmp[ef600 ISI工作流程v 2 inst HW e2800 e5700]
+image::../media/ef600_isi_workflow_v_2_inst-hw-e2800-e5700.bmp[E2800 和 E5700 安裝程序工作流程]

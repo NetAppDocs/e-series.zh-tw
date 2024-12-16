@@ -10,7 +10,7 @@ summary: 匯入設定功能是批次作業、可將組態從一個儲存陣列�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

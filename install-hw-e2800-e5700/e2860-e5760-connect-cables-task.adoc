@@ -39,14 +39,14 @@ NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只�
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS纜線"]
  a| 
 * SAS纜線*
 
 |===
 +
 .範例A：E2860控制器機櫃、標準SAS組態中有兩個DE460C磁碟櫃。
-image:../media/example_a_2860.png[""]
+image:../media/example_a_2860.png["SAS 組態中的 E2860 控制器"]
 
 +
 .. 將控制器A纜線連接至第一個磁碟機櫃的IOM A。
@@ -57,7 +57,7 @@ image:../media/example_a_2860.png[""]
 
 +
 .範例B：E2860控制器機櫃、標準SAS組態中有一個DE460C磁碟櫃。
-image:../media/example_b_2860.png[""]
+image:../media/example_b_2860.png["SAS 組態中的 E2860 控制器"]
 
 +
 .. 纜線控制器A至IOM A
@@ -73,7 +73,7 @@ image:../media/example_b_2860.png[""]
 
 
  a| 
-image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+image:../media/power_cable_inst-hw-e2800-e5700.png["電源線"]
  a| 
 *電源線*
 
@@ -97,7 +97,7 @@ CAUTION: 確認磁碟機櫃電源開關已關閉。
 
 
  a| 
-*範例：電源連線位於機櫃後方。*image:../media/trafford_power.png[""]
+* 範例：電源連線位於機櫃後方。 *image:../media/trafford_power.png["機櫃後方的電源連接"]
 
 |===
 

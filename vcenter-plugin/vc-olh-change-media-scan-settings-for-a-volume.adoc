@@ -11,7 +11,7 @@ summary: 媒體掃描是一種背景作業、可掃描磁碟區中的所有資�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

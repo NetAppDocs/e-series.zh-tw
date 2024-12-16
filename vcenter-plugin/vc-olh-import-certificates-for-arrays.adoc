@@ -11,7 +11,7 @@ summary: 匯入儲存陣列的憑證、以便與裝載Storage Plugin for vCenter
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

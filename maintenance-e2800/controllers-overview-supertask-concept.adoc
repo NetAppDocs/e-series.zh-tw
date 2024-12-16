@@ -36,9 +36,9 @@ NOTE: 這些程序適用於類似的機櫃IOM熱交換或更換。這表示您�
 
 圖中顯示了在新增第二個控制器（一個控制器容器和一個控制器空白）之前、以及在新增第二個控制器（兩個控制器容器）之後、控制器機櫃的範例。
 
-image::../media/28_dwg_2800_controller_simplex.gif[28 dwg2800控制器單工]
+image::../media/28_dwg_2800_controller_simplex.gif[E2800 單工組態]
 
-image::../media/28_dwg_2800_controller_duplex.gif[28圖2800控制器雙工]
+image::../media/28_dwg_2800_controller_duplex.gif[E2800 雙工組態]
 
 
 NOTE: 圖中顯示控制器容器範例、控制器容器上的主機連接埠可能有所不同。
@@ -91,7 +91,7 @@ NOTE: 只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會
 ====
 
 
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 dwg2800控制器收件人已引導維護e2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800 注意 LED]
 
 *（1）*_注意LED _
 

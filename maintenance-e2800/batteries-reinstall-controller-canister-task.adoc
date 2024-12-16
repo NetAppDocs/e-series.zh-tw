@@ -18,7 +18,7 @@ summary: 安裝新電池後、將控制器外殼重新裝入控制器櫃。
 . 翻轉控制器外殼、使可拆式護蓋面朝下。
 . 將CAM握把放在開啟位置時、將控制器外殼完全滑入控制器機櫃。
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28圖e2824移除控制器機箱維護e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[24 磁碟機控制器重新安裝]
 
 +
 *（1）*_控制器容器_
@@ -27,7 +27,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28圖e28
 *（2）*_CAM Handle_
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28圖e2860新增控制器機箱維護e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[60 磁碟機控制器重新安裝]
 
 +
 *（1）*_控制器容器_

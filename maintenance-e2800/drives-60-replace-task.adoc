@@ -56,7 +56,7 @@ summary: 將E2800中的磁碟機更換為60個磁碟機櫃。
 磁碟機匣的警示LED（黃色）會開始閃爍、以便您開啟正確的磁碟機抽屜、以識別要更換的磁碟機。
 
 +
-image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[2860 wx收件人已在藥櫃維護e2800上登入]
+image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[E2800 磁碟機抽屜上的注意 LED]
 
 +
 *（1）*_注意LED _
@@ -65,7 +65,7 @@ image::../media/2860_dwg_attn_led_on_drawer_maint-e2800.gif[2860 wx收件人已�
 .. 使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。
 .. 查看磁碟機匣頂端、找出每個磁碟機前面的警示LED。
 +
-image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[磁碟機維護e2800上有2860 dwx am黃色]
+image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[E2800 磁碟機抽屜上的注意 LED]
 
 
 
@@ -75,7 +75,7 @@ image::../media/2860_dwg_amber_on_drive_maint-e2800.gif[磁碟機維護e2800上�
 
 磁碟機匣警示LED位於每個磁碟機的左側、磁碟機握把上的警示圖示就在LED後面。
 
-image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[28圖e2860 de460c注意主導磁碟機維護e2800]
+image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[磁碟機抽屜上的注意圖示和 LED]
 
 *（1）*_注意圖示_
 
@@ -99,22 +99,22 @@ image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[28圖e28
 磁碟機彈簧上的CAM握把部分開啟、磁碟機從抽屜中釋放。
 
 +
-image::../media/trafford_drive_rel_button_maint-e2800.gif[Trap磁碟機磁碟機磁碟機磁碟機按鈕維護e2800]
+image::../media/trafford_drive_rel_button_maint-e2800.gif[磁碟機抽屜上的橘色釋放閂鎖]
 
 +
 *（1）*_橘色釋放栓鎖_
 
 . 打開CAM握把、然後稍微拉出磁碟機。
-. 等待30秒。
+. 等待60秒。
 . 使用CAM握把將磁碟機從磁碟櫃中提出。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600安裝或移除磁碟機維護e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用 CAM 把手將磁碟機從機櫃抬起]
 
 . 將磁碟機放在防靜電、緩衝的表面上、遠離磁區。
-. 等待30秒、讓軟體辨識磁碟機已移除。
+. 等待60秒、讓軟體辨識磁碟機已移除。
 +
 
-NOTE: 如果您不小心移除作用中的磁碟機、請等待至少30秒、然後重新安裝。如需恢復程序、請參閱儲存管理軟體。
+NOTE: 如果您不小心移除作用中的磁碟機、請等待至少60秒、然後重新安裝。如需恢復程序、請參閱儲存管理軟體。
 
 
 
@@ -134,7 +134,7 @@ CAUTION: *可能會遺失資料存取*-將磁碟機抽屜推回機箱時、請�
 . 將新磁碟機上的CAM握把垂直提起。
 . 將磁碟機承載器兩側的兩個凸起按鈕對齊磁碟機承載器上磁碟機通道的對應間隙。
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[28圖e2860 de460c磁碟機的CRU維護e2800]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[磁碟機承載器上的凸起按鈕必須與磁碟機抽屜上的磁碟機通道相符]
 
 +
 磁碟機承載器右側的*（1）*_凸起按鈕_
@@ -160,7 +160,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[28圖e2860 de460c�
 . 檢查您更換的磁碟機上的電源LED和警示LED。（首次插入磁碟機時、其注意LED可能亮起。不過、LED應會在一分鐘內熄滅。）
 +
 ** 電源LED亮起或不停閃、警示LED燈熄滅：表示新磁碟機運作正常。
-** 電源LED燈不亮：表示磁碟機可能未正確安裝。卸下磁碟機、等待30秒、然後重新安裝。
+** 電源LED燈不亮：表示磁碟機可能未正確安裝。卸下磁碟機、等待60秒、然後重新安裝。
 ** 警示LED亮起：表示新磁碟機可能有故障。請更換另一個新磁碟機。
 
 

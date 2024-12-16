@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/complete-upgrade-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate 
 summary: 開啟控制器機櫃電源並驗證控制器軟體版本、以完成控制器升級。然後、您可以收集支援資料並恢復作業。 
 ---
 = 完成控制器升級
@@ -88,7 +88,7 @@ NOTE: 如果您在使用內部金鑰管理來更換混合式安全磁碟機的�
  a| 
 所有受保護的磁碟機、外部金鑰管理、您尚未暫時切換至內部金鑰管理來進行控制器更換程序
  a| 
-控制器可與外部金鑰管理及所有受保護的磁碟機交換
+控制器可交換外部金鑰管理，並保護所有磁碟機。如需詳細指示，請參閱 https://docs.netapp.com/us-en/e-series/upgrade-controllers/upgrade-unlock-drives-task.html#external-key-management["外部金鑰管理"^]。
 
 |===
 
@@ -102,10 +102,10 @@ NOTE: 如果您在使用內部金鑰管理來更換混合式安全磁碟機的�
 .步驟
 . 查看控制器A上的LED、確定其開機正確。
 +
-重新開機期間、Host Link Service Action Required LED會變成綠色。七區段顯示器會顯示OS+ SD+空白順序、表示控制器正在執行「營業開始」（SOD）處理。
+重新開機期間、Host Link Service Action Required LED會變成綠色。
 
 +
-控制器成功完成重新開機之後、七段顯示器會顯示與第二個控制器上的七段顯示器相符的匣ID。然後您可以使用儲存管理軟體來探索新的控制器容器。
+控制器成功完成重新開機後，您就可以使用儲存管理軟體來探索新的控制器容器。
 
 . 如果控制器磁碟機匣的任何「需要維修行動」LED為_on_、或「需要控制器維修行動」LED為_on_：
 +
@@ -124,12 +124,6 @@ NOTE: 如果您在使用內部金鑰管理來更換混合式安全磁碟機的�
 您必須確保新的控制器以正確的作業系統（控制器韌體）層級和NVSRAM.
 
 .步驟
-. 執行下列其中一項：
-+
-** 如果您要升級至不支援SANtricity 還原11.30和控制器韌體8.30的控制器、請確定新控制器上執行的版本與上次在原始控制器上執行的版本相符。通常、這是舊控制器支援的最新版本。如有必要、請在新的控制器上安裝適當的版本。
-** 如果您要升級至執行SANtricity 《SKEE11.30》和控制器韌體8.30的控制器、請在開啟新控制器電源後、下載並安裝最新的NVSRAM.
-
-
 . 如果您的控制器升級涉及傳輸協定變更（例如、光纖通道至iSCSI）、而且您已為儲存陣列定義主機、請將新的主機連接埠與主機建立關聯：
 +
 .. 從System Manager中選取功能表：Storage[hosts]。
@@ -156,7 +150,7 @@ NOTE: 如果您在使用內部金鑰管理來更換混合式安全磁碟機的�
 +
 「變更快取設定」對話方塊隨即出現。儲存陣列上的所有磁碟區都會顯示在此對話方塊中。
 
-.. 選取* Basic *索引標籤、然後變更讀取快取和寫入快取的設定。
+.. 選取 * 基本 * 索引標籤，並啟用讀取快取和寫入快取的設定。
 .. 按一下「 * 儲存 * 」。
 
 
@@ -168,10 +162,9 @@ NOTE: 如果您在使用內部金鑰管理來更換混合式安全磁碟機的�
 
 . 使用GUI或CLI收集有關儲存陣列的支援資料：
 +
-** 使用System Manager或Storage Manager的Array Management（陣列管理）窗口來收集並儲存儲存儲存陣列的支援產品組合。
+** 使用 System Manager 收集並儲存儲存儲存陣列的支援套件。
 +
 *** 從System Manager中、選取功能表：Support（支援）[Support Center（支援中心）> Diagnostics（診斷）索引標籤]。然後選擇*收集支援資料*、再按一下*收集*。
-*** 從Array Management（陣列管理）視窗工具列中、選取功能表：Monitor（監控）[Health（健全狀況）> Collect Support Data Manually（手動收集支援資料然後輸入名稱、並在系統上指定您要儲存支援服務組合的位置。
 +
 檔案會以「support-data.7z」的名稱儲存在瀏覽器的「下載」資料夾中。
 
@@ -205,4 +198,4 @@ NOTE: 收集支援資料可能會暫時影響儲存陣列的效能。
 
 
 .接下來呢？
-如果您的控制器升級導致廠商ID從LSI變更為NetApp、請前往 link:remount-volumes-lsi-task.html["將廠商從LSI改為NetApp之後、重新掛載磁碟區"]；否則、您的控制器升級已完成、您可以恢復正常作業。
+控制器升級已完成，您可以恢復正常作業。

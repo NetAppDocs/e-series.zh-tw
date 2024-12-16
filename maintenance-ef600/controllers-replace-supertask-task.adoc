@@ -145,7 +145,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 
 . 擠壓控制器兩側的握把、然後向後拉、直到它從機櫃中釋放為止。
 +
-image::../media/remove_controller_5.png[移除控制器5]
+image::../media/remove_controller_5.png[擠壓把手以移除控制器]
 
 . 使用兩隻手和握把、將控制器外殼滑出機櫃。當控制器正面脫離機箱時、請用兩隻手將其完全拉出。
 +
@@ -153,7 +153,7 @@ image::../media/remove_controller_5.png[移除控制器5]
 CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 +
-image::../media/remove_controller_6.png[移除控制器6]
+image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐控制器的重量]
 
 . 將控制器容器放在無靜電的平面上。
 
@@ -169,10 +169,10 @@ image::../media/remove_controller_6.png[移除控制器6]
 . 找到控制器側邊的「Press」（按下）索引標籤。
 . 按下彈片並擠壓電池外殼、以解開電池。
 +
-image::../media/batt_3.png[電池3.]
+image::../media/batt_3.png[" 按下彈片以解除電池鎖定]
 
-. 輕壓裝有電池線路的連接器。將電池從主機板上拔下。image:../media/batt_2.png[""]
-. 將電池從控制器中取出、然後放在無靜電的平面上。image:../media/batt_4.png[""]
+. 輕壓裝有電池線路的連接器。向上拉動電池，將電池從主機板上拔下。image:../media/batt_2.png["取下電池線路的連接器外殼"]
+. 將電池從控制器中取出，然後放在平坦，無靜電的表面上。image:../media/batt_4.png["將電池從控制器中取出"]
 
 
 
@@ -184,7 +184,7 @@ image::../media/batt_3.png[電池3.]
 .步驟
 . 使用十字螺絲起子、卸下將HIC面板連接至控制器容器的兩顆螺絲。
 +
-image::../media/hic_2.png[HIC 2.]
+image::../media/hic_2.png[取下 HIC 面板]
 
 +
 
@@ -193,7 +193,7 @@ NOTE: 上圖為HIC外觀可能有所不同的範例。
 . 卸下HIC面板。
 . 使用手指或十字螺絲起子、旋鬆將HIC固定至控制器卡的單一指旋螺絲。
 +
-image::../media/hic_3.png[HIC 3.]
+image::../media/hic_3.png[鬆開 HIC 指旋螺絲]
 
 +
 
@@ -205,7 +205,7 @@ NOTE: HIC的頂端有三個螺絲位置、但只有一個。
 CAUTION: 請注意、請勿刮傷或撞擊HIC底部或控制器卡頂端的元件。
 
 +
-image::../media/hic_4.png[HIC 4.]
+image::../media/hic_4.png[從控制器卡上卸下 HIC]
 
 . 將HIC放置在無靜電的平面上。
 
@@ -225,12 +225,12 @@ image::../media/hic_4.png[HIC 4.]
 
 . 找到電源供應器右側的彈片、然後朝電源供應器單元方向按下。
 +
-image::../media/psup_2.png[psup 2]
+image::../media/psup_2.png[按下電源供應器旁的標籤]
 
 . 找到電源供應器正面的握把。
 . 使用握把將電源供應器直接滑出系統。
 +
-image::../media/psup_3.png[psup 3.]
+image::../media/psup_3.png[將電源供應器滑出]
 
 +
 
@@ -257,10 +257,10 @@ NOTE: DIMM底部有一個缺口、可協助您在安裝期間對齊DIMM。
 NOTE: 小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓力。
 
 +
-image::../media/dimm_2.png[DIMM 2]
+image::../media/dimm_2.png[按下 DIMM 插槽上的彈出卡舌]
 
 +
-image::../media/dimim_3.png[小點心3.]
+image::../media/dimim_3.png[移除 DIMM]
 
 
 
@@ -273,7 +273,7 @@ image::../media/dimim_3.png[小點心3.]
 .步驟
 . 從控制器中輕拉風扇。
 +
-image::../media/fan_2.png[風扇2]
+image::../media/fan_2.png[卸下風扇]
 
 . 重複上述步驟、直到所有風扇都移除為止。
 
@@ -301,7 +301,7 @@ image::../media/fan_2.png[風扇2]
 
 . 將電池裝入控制器、方法是將電池外殼與控制器側邊的金屬栓鎖對齊。
 +
-image::../media/batt_5.png[電池5.]
+image::../media/batt_5.png[安裝電池]
 
 +
 電池卡入定位。
@@ -322,7 +322,7 @@ image::../media/batt_5.png[電池5.]
 請注意、請勿刮傷或撞擊HIC底部或控制器卡頂端的元件。
 
 +
-image::../media/hic_7.png[HIC 7.]
+image::../media/hic_7.png[安裝HIC]
 
 +
 
@@ -338,7 +338,7 @@ CAUTION: *可能的設備損壞*：請非常小心、不要夾住HIC和指旋螺
 請勿使用螺絲起子、否則螺絲可能會過緊。
 
 +
-image::../media/hic_3.png[HIC 3.]
+image::../media/hic_3.png[用手將 HIC 指旋螺絲鎖緊至控制器]
 
 +
 
@@ -363,7 +363,7 @@ NOTE: 上圖為範例、您的HIC外觀可能有所不同。
 CAUTION: 將電源供應器滑入系統時、請勿過度施力、否則可能會損壞連接器。
 
 +
-image::../media/psup_4.png[psup 4.]
+image::../media/psup_4.png[將電源供應器安裝至控制器]
 
 
 
@@ -380,7 +380,7 @@ DIMM插針之間的槽口應與插槽中的卡舌對齊。
 
 . 將DIMM正面插入插槽。
 +
-image::../media/dimm_4.png[DIMM 4]
+image::../media/dimm_4.png[將 DIMM 安裝到控制器的插槽中]
 
 +
 DIMM可緊密插入插槽、但應該很容易就能裝入。如果沒有、請重新將DIMM與插槽對齊、然後重新插入。
@@ -395,7 +395,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 NOTE: DIMM可緊密安裝。您可能需要一次輕按一側、並分別固定每個彈片。
 
 +
-image::../media/dimm_5.png[DIMM 5.]
+image::../media/dimm_5.png[將 DIMM 插槽上的閂鎖往上壓以固定]
 
 
 
@@ -408,10 +408,10 @@ image::../media/dimm_5.png[DIMM 5.]
 .步驟
 . 將風扇完全滑入更換的控制器。
 +
-image::../media/fan_3.png[風扇3]
+image::../media/fan_3.png[將風扇安裝到控制器中]
 
 +
-image::../media/fan_3_a.png[風扇3 A]
+image::../media/fan_3_a.png[將風扇安裝到控制器中]
 
 . 重複上述步驟、直到安裝完所有風扇為止。
 
@@ -430,7 +430,7 @@ image::../media/fan_3_a.png[風扇3 A]
 NOTE: 正確安裝到機櫃時、控制器會發出喀聲。
 
 +
-image::../media/remove_controller_7.png[移除控制器7]
+image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 
 . 將原始控制器的SFP安裝在新控制器的主機連接埠中（如果它們安裝在原始控制器中）、然後重新連接所有纜線。
 +

@@ -47,7 +47,7 @@ summary: 當EF300或EF600控制器故障時、請更換電源供應器。
 
 . 找到電源供應器右側的彈片、然後朝電源供應器單元方向按下。
 +
-image::../media/psup_2.png[psup 2]
+image::../media/psup_2.png[按下電源供應器旁的標籤]
 
 . 找到電源供應器正面的握把。
 . 使用握把將電源供應器直接滑出系統。
@@ -56,7 +56,7 @@ image::../media/psup_2.png[psup 2]
 CAUTION: 移除電源供應器時、請務必用兩隻手支撐其重量。
 
 +
-image::../media/psup_3.png[psup 3.]
+image::../media/psup_3.png[將電源供應器滑出]
 
 
 
@@ -76,7 +76,7 @@ image::../media/psup_3.png[psup 3.]
 CAUTION: 將電源供應器滑入系統時、請勿過度施力、否則可能會損壞連接器。
 
 +
-image::../media/psup_4.png[psup 4.]
+image::../media/psup_4.png[將電源供應器安裝至控制器]
 
 . 確認其狀態為最佳狀態、並檢查控制器機櫃的注意LED。
 +

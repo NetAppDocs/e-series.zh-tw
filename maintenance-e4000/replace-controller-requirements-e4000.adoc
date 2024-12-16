@@ -1,0 +1,81 @@
+---
+permalink: maintenance-e4000/replace-controller-requirements-e4000.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= E4000控制器更換要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在更換或新增E4000控制器之前、請先檢閱相關要求與考量事項。
+
+每個控制器箱都包含一個控制器卡和一個電池。您可以將第二個控制器新增至單工組態或更換故障的控制器。
+
+
+
+== 新增第二個控制器的需求
+
+您可以在單工版本的 E4000 控制器機櫃中新增第二個控制器機箱。在新增第二個控制器之前、您必須具備：
+
+* 新的控制器機箱、其零件編號與目前安裝的控制器機箱相同。
++
+
+NOTE: 這不適用於 StorageGRID 應用裝置。
+
+* 連接新控制器連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。
++
+如需相容硬體的相關資訊，請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"]或 http://hwu.netapp.com/home.aspx["NetApp Hardware Universe"]。
+
+* 安裝在主機上的多重路徑驅動程式、以便您使用這兩個控制器。有關說明，請參閱 https://docs.netapp.com/us-en/e-series/config-linux/index.html["Linux Express組態"]， https://docs.netapp.com/us-en/e-series/config-windows/index.html["Windows Express組態"]或 https://docs.netapp.com/us-en/e-series/config-vmware/index.html["VMware Express組態"]。
+* 或您已採取其他防靜電預防措施。
+* 1號十字螺絲起子。
+* 用於識別新纜線的標籤。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟 System Manager 介面，請將瀏覽器指向控制器的網域名稱或 IP 位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。對於 SANtricity 系統管理程式（ 11.60 版以上），您可以從系統管理程式下載 CLI 套件（ zip 檔案）。若要這麼做，請前往 System Manager 中的 * 設定 > 系統 > 附加元件 > 命令列介面 * 。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+
+
+
+
+
+== 更換控制器的需求
+
+更換故障的控制器箱時，您必須從原始控制器箱中取出電池， HIC 和 DIMM ，然後將它們安裝在更換的控制器箱中。
+
+您可以透過兩種方式判斷控制器容器是否故障：
+
+* 《恢復大師SANtricity 》（Recovery Guru in the SytrSystem Manager）會引導您更換控制器容器。
+* 控制器機箱上的黃色警示LED亮起、表示控制器發生故障。
+
+
+更換控制器之前、您必須具備：
+
+* 更換控制器機箱的零件編號與您要更換的控制器機箱相同。
+* 或您已採取其他防靜電預防措施。
+* 用於識別連接至控制器容器的每條纜線的標籤。
+* 1號十字螺絲起子。
+* 管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟 System Manager 介面，請將瀏覽器指向控制器的網域名稱或 IP 位址。）
++
+您也可以選擇使用命令列介面（CLI）來執行部分程序。對於 SANtricity 系統管理程式（ 11.60 版以上），您可以從系統管理程式下載 CLI 套件（ zip 檔案）。若要這麼做，請前往 System Manager 中的 * 設定 > 系統 > 附加元件 > 命令列介面 * 。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
+
+
+
+
+
+=== 雙工組態需求
+
+如果控制器機櫃有兩個控制器（雙工組態）、您可以在儲存陣列開機並執行主機I/O作業時更換控制器機箱、前提是符合下列條件：
+
+* 機櫃中的第二個控制器機箱具有最佳狀態。
+* 「恢復大師」的「詳細資料」區域中的「*確定要移除*」欄SANtricity 位會顯示*「是」*、表示移除此元件是安全的。
+
+
+
+
+=== 單工組態需求
+
+如果您只有一個控制器容器（單工組態）、則在您更換控制器容器之前、將無法存取儲存陣列上的資料。您必須停止主機I/O作業並關閉儲存陣列的電源。

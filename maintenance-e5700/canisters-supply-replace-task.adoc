@@ -59,7 +59,7 @@ summary: 更換E5700 24磁碟機的電源供應器。
 . 從「支援系統管理程式」中、判斷哪個電源供應器故障。SANtricity您可以在Recovery Guru的「Details（詳細資料）」區域中找到此資訊、也可以檢閱顯示的機櫃資訊。
 +
 .. 選取*硬體*。
-.. 請看效能 image:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif[""] 和FAN image:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif[""] *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃的電源供應器故障。
+.. 查看 * 機櫃 * 下拉式清單右側的電源image:../media/sam1130_ss_hardware_power_icon_maint-e5700.gif["電源圖示"]和風扇image:../media/sam1130_ss_hardware_fan_icon_maint-e5700.gif["風扇圖示"]圖示、以判斷哪個機櫃的電源供應器故障。
 +
 如果某個元件故障、其中一個或兩個圖示都會變成紅色。
 
@@ -80,12 +80,12 @@ CAUTION: 如果磁碟櫃中的第二個電源供應器磁碟櫃沒有*最佳*狀
 您必須更換注意LED亮起的電源供應器。
 
 +
-image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[28圖913w電源供應器後視圖maint e5700]
+image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[電源注意 LED]
 
 +
-** 如果電源LED image:../media/drw_sas_power_icon_maint-e5700.gif[""] 為*穩定綠色*、表示電源供應器運作正常。如果是*關*、電源供應器故障、AC開關關閉、AC電源線未正確安裝、或AC電源線輸入電壓不在保證範圍內（AC電源線的來源端有問題）。
+** 如果電源 LED image:../media/drw_sas_power_icon_maint-e5700.gif["電源 LED 圖示"] 為 * 持續亮起的綠色 * ，表示電源供應器運作正常。如果是*關*、電源供應器故障、AC開關關閉、AC電源線未正確安裝、或AC電源線輸入電壓不在保證範圍內（AC電源線的來源端有問題）。
 +
-如果注意LED image:../media/drw_sas_fault_icon_maint-e5700.gif[""] 為*穩定的Amber*、表示電源供應器或其整合式風扇故障。
+如果警示 LED image:../media/drw_sas_fault_icon_maint-e5700.gif["故障圖示"] 為 * 穩定琥珀色 * ，表示電源供應器或其整合式風扇故障。
 
 
 
@@ -111,7 +111,7 @@ image::../media/28_dwg_913w_power_supply_back_view_maint-e5700.gif[28圖913w電�
 
 . 擠壓電源供應器CAM握把上的栓鎖、然後打開CAM握把、從中間面完全釋放電源供應器。
 +
-image::../media/drw_2600_psu_maint-e5700.gif[DRW 2600 PSU維護e5700]
+image::../media/drw_2600_psu_maint-e5700.gif[使用閂鎖從中間板釋放電源供應器]
 
 . 使用CAM握把將電源供應器滑出系統。
 +

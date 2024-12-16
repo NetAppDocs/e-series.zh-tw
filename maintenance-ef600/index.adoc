@@ -11,58 +11,79 @@ summary: 維護EF300和EF600硬體
 
 
 [role="lead"]
+您可能需要在硬體上執行維護程序。本節說明維護 EF300 或 EF600 系統元件的特定程序。
+
+本節中的程序假設 EF300 或 EF600 系統已部署在 E 系列環境中。
+
+
+
+== 系統元件
+
 對於EF300和EF600儲存系統、您可以對下列元件執行維護程序。
 
+[cols="25,65"]
+|===
 
 
-== 電池
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/batteries-overview-requirements-concept.html["電池"]
+ a| 
 控制器隨附電池、當AC電源故障時、會保留快取的資料。
 
 
 
-== 控制器
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/controllers-overview-supertask-concept.html["控制器"]
+ a| 
 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行SANtricity 「支援系統管理程式」功能。
 
 
 
-== DIMM
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertask-concept.html["DIMM"]
+ a| 
 如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM（雙列直插式記憶體模組）。
 
 
 
-== 磁碟機
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html["磁碟機"]
+ a| 
 磁碟機是提供資料實體儲存媒體的裝置。
 
 
 
-== 風扇
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/fans-overview-requirements-replacing2-concept.html["風扇"]
+ a| 
 每個EF300或EF600控制器機櫃或磁碟機櫃均包含五個風扇、可用來冷卻控制器。
 
 
 
-== 主機介面卡（HIC）
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/hics-overview-supertask-concept.html["主機介面卡（HIC）"]
+ a| 
 主機介面卡（HIC）必須安裝在控制器容器內。EF600控制器包含選用HIC上的主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。
 
 
 
-== 主機連接埠傳輸協定
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/hpp-overview-supertask-concept.html["主機連接埠傳輸協定"]
+ a| 
 您可以將主機的傳輸協定轉換成不同的傳輸協定、以便建立相容性與通訊。
 
 
 
-== 電源供應器
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/power-overview-requirements2-concept.html["電源供應器"]
+ a| 
 電源供應器可在控制器機櫃中提供備援電源。
 
 
 
-== SAS擴充卡
-
+ a| 
+https://docs.netapp.com/us-en/e-series/maintenance-ef600/sas-overview-supertask-concept.html["SAS擴充卡"]
+ a| 
 SAS擴充卡可安裝在控制器容器內。EF300控制器支援SAS擴充。
+
+|===

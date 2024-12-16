@@ -10,7 +10,7 @@ summary: 在磁碟區建立期間、系統會提示您提供工作負載使用�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

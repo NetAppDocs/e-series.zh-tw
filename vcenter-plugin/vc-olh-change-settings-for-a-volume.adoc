@@ -11,7 +11,7 @@ summary: 變更磁碟區的設定、例如名稱、主機指派、區段大小�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

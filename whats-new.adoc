@@ -1,19 +1,62 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.73 
+keywords: whats new, new features, SANtricity 11.90 
 summary: 更新功能。SANtricity 
 ---
 = 更新功能SANtricity
 :allow-uri-read: 
 :experimental: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
-下表說明 SANtricity OS 11.8 中嵌入式管理 EF300 、 EF600 、 E2800/EF280 和 E5700/EF570 控制器的新功能。
+下表說明 E4000 ， EF300 ， EF600 ， E2800/EF280 和 E5700/EF570 控制器的最新 SANtricity OS 版本中的新功能。
 
+
+
+== 11.90 版的新功能
+
+[cols="35h,~"]
+|===
+| 新功能 | 說明 
+
+
+ a| 
+全新儲存系統機型–E4000
+ a| 
+此版本推出 E4000 低成本儲存系統。E4000 支援每個控制器 12 個和 60 個磁碟機，以及單一主機介面卡（ HIC ）。在初始版本中，支援的主機介面卡包括 iSCSI 和 Fibre Channel 。E4000 儲存系統和其他 E 系列儲存系統可在 Unified Manager 中檢視和管理。
+
+
+
+ a| 
+增加動態磁碟集區的容量
+ a| 
+只要集區中每個個別磁碟機的容量大於 23 TB ，動態磁碟集區（ DDP ）的容量就會增加至 12 PB 。如果個別磁碟機容量小於 23 TB ，則 DDP 容量為 6 PB 。
+
+
+
+ a| 
+預設媒體掃描設定已增加
+ a| 
+預設的媒體掃描速率已增加至 120 天。
+
+
+
+ a| 
+現在已接受外部金鑰管理的私密金鑰
+ a| 
+透過私密金鑰和公開金鑰配對從外部產生的憑證簽署要求（ CSR ）檔案，現在可以透過 System Manager 匯入。
+
+
+
+ a| 
+Web 服務現在可使用登入鎖定功能
+ a| 
+只能透過 REST API 進行設定，內嵌式和 Proxy Web Services 現在可以使用新的登入鎖定設定。
+
+|===
 
 
 == 11.80.1R1 版的新功能

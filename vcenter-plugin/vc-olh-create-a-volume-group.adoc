@@ -11,7 +11,7 @@ summary: 您可以為一或多個可供主機存取的磁碟區建立磁碟區�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

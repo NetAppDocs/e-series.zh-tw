@@ -10,7 +10,7 @@ summary: 刪除不再需要的一或多個憑證。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 健全狀況檢查會在升級程序中執行、但您也可以在開�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -96,7 +96,7 @@ serviceAllowedIndicator=forceOnWarning;"
 ** 如果命令成功、您就不需要停止主機I/O活動。藥櫃中的所有磁碟機均位於「資源池」或「磁碟區群組」中、且具有藥櫃遺失保護功能。前往 <<步驟2：移除纜線鏈>>。
 +
 
-CAUTION: *可能損壞磁碟機*-在命令完成30秒後再開啟磁碟機匣。等待30秒可讓磁碟機減少磁碟機轉速、避免可能損壞硬體。
+CAUTION: *可能損壞磁碟機*-在命令完成60秒後再開啟磁碟機匣。等待60秒可讓磁碟機減少磁碟機轉速、避免可能損壞硬體。
 
 ** 如果顯示警告、指出無法完成此命令、您必須先停止主機I/O活動、再移除藥櫃。顯示此警告是因為受影響的藥櫃中有一或多個磁碟機位於集區或磁碟區群組中、且無藥櫃遺失保護。若要避免遺失資料、您必須完成後續步驟、以停止主機I/O活動、並關閉磁碟機櫃和控制器機櫃的電源。
 
@@ -122,7 +122,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
 
 +
-image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[28 dwg2800控制器收件人已引導維護e2800]
+image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800 控制器上的快取作用中 LED]
 
 +
 *（1）*_快取作用中LED _
@@ -177,7 +177,7 @@ CAUTION: *可能的硬體損壞*-如果磁碟機匣已開啟電源、纜線鏈�
 圖中所示為從左側橘色標籤中展開及釋放的風扇容器握把。
 
 +
-image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[28圖e2860 de460c風扇容器握把、附有標註維護e2800]
+image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800.gif[風扇箱把手]
 
 +
 *（1）*風扇容器握把_
@@ -198,7 +198,7 @@ CAUTION: *設備可能因過熱而受損*-如果系統匣已開機、請勿同�
 頂端纜線鏈連接至磁碟機抽屜1。底部的纜線鏈連接至磁碟機抽屜5。提供磁碟機匣1的標註。
 
 +
-image::../media/trafford_cable_rail_1_maint-e2800.gif[Trap纜線軌道1維護e2800]
+image::../media/trafford_cable_rail_1_maint-e2800.gif[磁碟機抽屜的纜線鏈和連接器]
 
 +
 *（1）*_纜線鏈_
@@ -216,7 +216,7 @@ image::../media/trafford_cable_rail_1_maint-e2800.gif[Trap纜線軌道1維護e28
 +
 .. 使用手電筒、找到連接至機箱中垂直導軌的纜線鏈末端橘色環。
 +
-image::../media/trafford_cable_rail_3_maint-e2800.gif[Trap纜線軌道3維護e2800]
+image::../media/trafford_cable_rail_3_maint-e2800.gif[用於驅動器抽屜的垂直軌道和纜線鏈的橘色環]
 
 +
 垂直導軌上的*（1）*_橘色環_
@@ -235,7 +235,7 @@ image::../media/trafford_cable_rail_3_maint-e2800.gif[Trap纜線軌道3維護e28
 圖中所示為右側的橫式連接器、而纜線鏈已中斷連接、並部分拉出左側。
 
 +
-image::../media/trafford_cable_rail_2_maint-e2800.gif[Trap纜線軌道2維護e2800]
+image::../media/trafford_cable_rail_2_maint-e2800.gif[橘色環用於磁碟機抽屜的橫式軌道和纜線鏈]
 
 +
 *（1）*_橫式導軌上的橘環_
@@ -312,7 +312,7 @@ CAUTION: *可能遺失資料存取*-磁區可能會破壞磁碟機上的所有�
 . 使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。請勿將磁碟機匣從磁碟機櫃中完全移除。
 . 如果已建立並指派磁碟區、請使用永久性標記來記錄每個磁碟機的確切位置。例如、使用下列圖示做為參考、在每個磁碟機的頂端寫下適當的插槽編號。
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[具備HDD標註的Dwgt Trap抽屜維護e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[磁碟機插槽編號]
 
 +
 
@@ -324,7 +324,7 @@ CAUTION: *可能會遺失資料存取權*-請務必在移除每個磁碟機之�
 .. 將磁碟機握把垂直提起。
 .. 使用握把將磁碟機從磁碟機匣中提出。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600安裝或移除磁碟機維護e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用 CAM 把手將磁碟機從抽屜抬起]
 
 .. 將磁碟機放在無靜電的平面上、遠離磁性裝置。
 
@@ -333,7 +333,7 @@ image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6
 +
 .. 找到磁碟機抽屜兩側的塑膠釋放拉桿。
 +
-image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[92 PHT DE6600磁碟機抽屜釋放槓桿維護e2800]
+image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[釋放拉桿以移除抽屜]
 
 +
 *（1）*_磁碟機抽屜釋放槓桿_
@@ -357,7 +357,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[92 PHT 
 鎖定的翻轉器組件是一項安全功能、可防止您一次開啟多個磁碟機抽屜。
 
 +
-image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif[92 PHT de6600可鎖定翻轉器詳細資料維護e2800]
+image::../media/92_pht_de6600_lock_out_tumbler_detail_maint-e2800.gif[鎖定玻璃杯和抽屜導板]
 
 +
 *（1）*_鎖定移轉器_
@@ -419,7 +419,7 @@ CAUTION: *設備故障風險*-請務必將連接器滑入導軌。如果連接�
 圖中顯示了機箱中第二個磁碟機抽屜的橫式和垂直導軌。
 
 +
-image::../media/2860_dwg_both_guide_rails_maint-e2800.gif[2860 dwx兩個導軌維護e2800]
+image::../media/2860_dwg_both_guide_rails_maint-e2800.gif[水平和垂直導軌]
 
 +
 *（1）*_橫式導軌_
@@ -491,7 +491,7 @@ CAUTION: *可能會遺失資料存取*：您必須將每個磁碟機安裝在磁
 .. 使用延伸槓桿、小心地將磁碟機抽屜拉出、直到它停止為止。請勿將磁碟機匣從磁碟機櫃中完全移除。
 .. 使用您在卸下磁碟機時所做的備註、判斷每個插槽中要安裝的磁碟機。
 +
-image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[具備HDD標註的Dwgt Trap抽屜維護e2800]
+image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[磁碟機插槽編號]
 
 .. 將磁碟機上的握把垂直提起。
 .. 將磁碟機兩側的兩個凸起按鈕對齊抽屜的槽口。
@@ -499,14 +499,14 @@ image::../media/dwg_trafford_drawer_with_hdds_callouts_maint-e2800.gif[具備HDD
 圖中顯示了磁碟機的右側視圖、顯示了凸起按鈕的位置。
 
 +
-image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[28圖e2860 de460c磁碟機的CRU維護e2800]
+image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[磁碟機承載器上的凸起按鈕必須與磁碟機抽屜上的磁碟機通道相符]
 
 +
 磁碟機右側的*（1）*_凸起按鈕_
 
 .. 將磁碟機垂直向下壓、確定磁碟機一直向下壓入磁碟機槽、然後向下旋轉磁碟機控制器、直到磁碟機卡入到位。
 +
-image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[92 dwg de6600安裝或移除磁碟機維護e2800]
+image::../media/92_dwg_de6600_install_or_remove_drive_maint-e2800.gif[使用把手將磁碟機放入抽屜]
 
 .. 重複這些步驟以安裝所有磁碟機。
 

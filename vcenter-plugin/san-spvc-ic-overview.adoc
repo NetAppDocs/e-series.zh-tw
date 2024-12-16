@@ -37,7 +37,7 @@ NOTE: 外掛程式並非直接取代系統管理員介面、而系統管理員�
 
 如需vCenter環境中通訊的詳細資訊、請參閱下圖。
 
-image:../media/vcenter_communication2.png[""]
+image:../media/vcenter_communication2.png["vCenter 通訊環境"]
 
 
 

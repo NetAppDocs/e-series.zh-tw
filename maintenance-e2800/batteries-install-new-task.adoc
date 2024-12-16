@@ -36,7 +36,7 @@ NOTE: 為符合IATA安全法規、更換電池的充電狀態（SoC）為30%以�
 當栓鎖卡入定位時、栓鎖底部會掛入機箱的金屬插槽。
 
 +
-image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[28圖e2800插入電池維護e2800]
+image::../media/28_dwg_e2800_insert_battery_maint-e2800.gif[E2800 插入電池]
 
 +
 *（1）*_電池釋放栓鎖_
@@ -54,10 +54,10 @@ CAUTION: *可能的硬體損壞*-電池正面的金屬法蘭必須完全插入�
 
 
 +
-image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif[""]
+image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正確的電池凸緣插件"]
 
 +
-** *不正確*-電池的金屬法蘭未插入控制器的插槽：+image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif[""]
+** *incorrect* -- 電池的金屬法蘭未插入控制器上的插槽： +image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["電池法蘭插件不正確"]
 
 
 . 前往 link:batteries-reinstall-controller-canister-task.html["重新安裝E2800控制器機箱"]。

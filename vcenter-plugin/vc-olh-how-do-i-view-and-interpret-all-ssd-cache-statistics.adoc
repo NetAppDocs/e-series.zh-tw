@@ -11,7 +11,7 @@ summary: 您可以檢視SSD快取的名義統計資料和詳細統計資料。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

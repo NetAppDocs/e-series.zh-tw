@@ -11,7 +11,7 @@ summary: 移除不再需要的一或多個儲存陣列群組。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

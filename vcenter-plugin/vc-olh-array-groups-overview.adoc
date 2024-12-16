@@ -10,7 +10,7 @@ summary: 將一組儲存陣列分組、以管理實體與虛擬化的基礎架�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

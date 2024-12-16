@@ -11,7 +11,7 @@ summary: 刪除一或多個磁碟區、以增加資源池或磁碟區群組的�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

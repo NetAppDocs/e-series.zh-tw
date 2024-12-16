@@ -10,7 +10,7 @@ summary: 從vCenter的儲存外掛程式或vSphere Client檢視系統狀態
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

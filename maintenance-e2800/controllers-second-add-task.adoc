@@ -39,7 +39,7 @@ summary: 將第二個控制器新增至只有一個控制器容器的控制器�
 . 打開新控制器容器的包裝、將其放置在無靜電的平面上。
 . 找出控制器容器背面的MAC位址和FRU零件編號標籤。
 +
-image::../media/28_dwg_e2800_labels_maint-e2800.gif[28個dwge2800標籤維護e2800]
+image::../media/28_dwg_e2800_labels_maint-e2800.gif[E2800 控制器上的 Mac 位址和 FRU 零件編號]
 
 +
 *（1）*_MAC位址：_管理連接埠1（「P1」）的MAC位址。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。
@@ -50,7 +50,7 @@ image::../media/28_dwg_e2800_labels_maint-e2800.gif[28個dwge2800標籤維護e28
 . 從「系統管理程式」找到安裝的控制器容器的更換零件編號。SANtricity
 +
 .. 選取*硬體*。
-.. 找到標有控制器圖示的控制器機櫃 image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif[""]。
+.. 找到標有控制器圖示image:../media/sam1130_ss_hardware_controller_icon_maint-e2800.gif["控制器圖示"]的控制器機櫃。
 .. 按一下控制器圖示。
 .. 選取控制器、然後按一下*「下一步*」。
 .. 在「*基礎*」索引標籤上、記下控制器的*更換零件編號*。
@@ -88,7 +88,7 @@ CAUTION: *可能會遺失資料存取*-安裝在兩個控制器容器中的HIC�
 CAUTION: *可能的設備損壞*：請非常小心、不要夾住HIC和指旋螺絲之間控制器LED的金帶狀連接器。
 
 +
-image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwge2800 hic指旋螺絲維護e2800]
+image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[將 HIC 安裝到控制器上]
 
 +
 *（1）*主機介面卡_
@@ -102,7 +102,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[28 dwge2800 hic指�
 
 . 使用1號十字螺絲起子、將新的HIC面板裝到控制器容器上、並使用您先前卸下的四顆螺絲。
 +
-image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[28圖e2800 hic faceplace螺絲mainstt e2800]
+image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[安裝面板]
 
 . 將控制器機箱蓋從後端滑到前端、直到按鈕發出卡響為止、以重新安裝控制器機箱上的機箱蓋。
 . 將控制器箱放在一邊、直到準備好安裝為止。
@@ -286,7 +286,7 @@ reset controller [a];
 . 翻轉控制器外殼、使可拆式護蓋面朝下。
 . 將CAM握把放在開啟位置時、將控制器外殼完全滑入控制器機櫃。
 +
-image::../media/28_dwg_e2824_add_controller_canister.gif[28圖e2824新增控制器容器]
+image::../media/28_dwg_e2824_add_controller_canister.gif[安裝第二個控制器箱]
 
 +
 *（1）*_控制器容器_
@@ -312,7 +312,7 @@ image::../media/28_dwg_e2824_add_controller_canister.gif[28圖e2824新增控制�
 +
 ** 七區段顯示會顯示重複順序* OS*、* OL*、*空白_*、表示控制器離線。
 ** 黃色警示LED會持續亮起。
-** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif[""]
+** 主機連結 LED 可能會亮起，閃爍或熄滅，視主機介面而定。image:../media/28_dwg_attn_led_7s_display_maint-e2800.gif["E2800 控制器 LED"]
 +
 *（1）*_注意LED（黃色）_
 
@@ -380,7 +380,7 @@ NOTE: 當您使用「支援系統管理程式」安裝新的NVSRAM/R檔案時、
 
 .. 對於您要重新分配的每個磁碟區、請從*偏好的擁有者*清單中選取*控制器B*。
 +
-image::../media/sam1130_ss_change_volume_ownership.gif[Sam11330 s變更Volume擁有權]
+image::../media/sam1130_ss_change_volume_ownership.gif[變更 Volume 所有權的 System Manager 畫面]
 
 .. 按一下*變更所有權*。
 +

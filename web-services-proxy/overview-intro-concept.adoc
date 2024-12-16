@@ -28,13 +28,13 @@ Web服務是一種應用程式設計介面（API）、可讓您設定、管理�
 
 Web服務有兩種實作：
 
-* *內嵌*：RESTful API伺服器內嵌於每個執行NetApp SANtricity 更新版本的E2800/EF280儲存系統控制器、執行SANtricity E11.40或更新版本的E5700/EF570、以及執行EF11.60 SANtricity 或更新版本的EF300或EF600上。無需安裝。
+* * 嵌入式 * ： RESTful API 伺服器內嵌於執行 NetApp SANtricity 11.30 或更新版本之 E2800/EF280 儲存系統的每個控制器，執行 SANtricity 11.40 或更新版本的 E5700/EF570 ，執行 SANtricity 11.60 或更新版本的 EF300 或 EF600 ，以及執行 SANtricity 11.90 或更新版本的 E4000 。無需安裝。
 * * Proxy*- SANtricity 《Sesome Web Services Proxy》（英文）是Windows或Linux伺服器上獨立安裝的RESTful API伺服器。此主機型應用程式可管理數百個全新和舊版NetApp E系列儲存系統。一般而言、您應該將Proxy用於具有10個以上儲存系統的網路。Proxy比內嵌API更有效率地處理多個要求。
 
 
 API的核心可在兩種實作中使用。
 
-image::../media/web_services_proxy_overview.gif[Web服務Proxy總覽]
+image::../media/web_services_proxy_overview.gif[Web 服務 Proxy 總覽]
 
 下表提供Proxy與內嵌版本的比較。
 

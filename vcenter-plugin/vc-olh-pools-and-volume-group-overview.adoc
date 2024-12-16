@@ -10,7 +10,7 @@ summary: 若要配置儲存設備、您可以建立一個集區或磁碟區群�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

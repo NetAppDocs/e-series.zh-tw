@@ -1,7 +1,7 @@
 ---
 permalink: upgrade-controllers/remove-controllers-task.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, remove controller, removing controller, remove battery, removing battery 
 summary: 升級控制器的第一步是移除舊的控制器、以及選用的電池。 
 ---
 = 移除控制器
@@ -51,7 +51,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 下圖為控制器機型上的發行控點一般位置範例。控制器磁碟櫃和控制器磁碟機磁碟機磁碟匣的組態與發行控點類似。
 
 +
-image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
+image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif["拆下控制器容器"]
 
 +
 *（1）*_控制器容器_
@@ -75,12 +75,7 @@ image:../media/28_dwg_e2824_remove_controller_canister_upg-hw.gif[""]
 
 .步驟
 . 向下按舊控制器箱上的兩個頂蓋栓鎖按鈕、然後將頂蓋滑到容器的背面。
-. 根據您的控制器磁碟機匣機型、執行下列其中一個選項、以釋放舊電池：
-+
-** 對於E2600或E2700控制器磁碟機匣、請轉開將電池固定至控制器機箱的指旋螺絲。
-** 適用於E5400、EF540、E5500、EF550、E5600、 或EF600控制器磁碟機匣、請釋放將電池固定至控制器機箱的彈片。
-
-
+. 在您的控制器磁碟機承載器機型上，鬆開將電池固定至控制器電池箱的彈片，以釋放舊電池。
 . 將電池滑向舊控制器容器的背面、以取出電池。
 
 

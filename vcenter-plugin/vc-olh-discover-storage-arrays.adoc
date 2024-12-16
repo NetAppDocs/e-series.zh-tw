@@ -10,7 +10,7 @@ summary: 若要在vCenter的儲存外掛程式中顯示及管理儲存資源、�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

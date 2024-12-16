@@ -10,7 +10,7 @@ summary: 變更「管理」頁面上顯示的儲存陣列名稱。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

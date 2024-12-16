@@ -22,7 +22,7 @@ NOTE: 只有E2800控制器上的16GB FC/10Gb iSCSI HIC和光纖基礎連接埠�
 
 下圖顯示E2800控制器的背面、該控制器具有兩個SFP+（光纖）基板主機連接埠*（1）*和四個SFP+（光纖）HIC連接埠*（2）*。
 
-image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[28圖e2800光學基礎四SFP硬體]
+image::../media/28_dwg_e2800_optical_base_quad_sfp_hic.gif[E2800 控制器上的主機和 HIC 連接埠 "]
 
 
 NOTE: 也提供雙埠HIC。
@@ -275,7 +275,7 @@ CAUTION: *可能的資料遺失*-如果您在將連接埠轉換為FC之前、未
 套用功能套件時、鏡射支援將從編號最高的基板主機連接埠（圖中標示* 1*）移至編號最高的HIC連接埠（圖中標示* 2 *）。
 
 +
-image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[28圖e2800光纖通道iSCSI至光纖通道]
+image::../media/28_dwg_e2800_fc_iscsi_to_fc.gif[E2800 控制器上的連接埠 "]
 
 +
 |===

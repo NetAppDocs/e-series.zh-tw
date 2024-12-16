@@ -21,7 +21,7 @@ summary: 新增磁碟機櫃、但其他元件仍有電力。
 
 
 .關於這項工作
-此程序適用於熱新增DE212C、DE224C或DE460C磁碟機櫃至E2800、E2800B、EF280、E5700、E5700B、EF570、EF300或EF600控制器機櫃。
+本程序適用於將 DE212C ， DE224C 或 DE460C 磁碟機櫃熱新增至 E2800 ， E2800B ， EF280 ， E5700 ， E5700B ， EF570 ， EF300 ， EF600 或 E4000 控制器機櫃。
 
 此程序適用於IOM12和IOM12B磁碟機櫃。
 
@@ -67,21 +67,25 @@ NOTE: 若要維護系統完整性、您必須依照所顯示的順序執行程�
 
 NOTE: 如果在前兩到三週內發生未解決的重大事件、請停止此程序、並聯絡技術支援部門。只有在問題解決時、才繼續執行此程序。
 
-. 選取*硬體*。
-. 選取* IOM（ESM*）*圖示。
+. 如果您的硬體已連接 IOM ，請完成下列步驟。否則，請前往<<step2_install_drive_shelf,步驟 2 ：安裝磁碟機櫃並加電。>>
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[Sam11330 ss硬體IOM圖示]
+.. 選取*硬體*。
+.. 選取* IOM（ESM*）*圖示。
++
+image::../media/sam1130_ss_hardware_iom_icon.gif[IOM （ ESMS ）圖示]
 
 +
 「Shelf元件設定」對話方塊隨即出現、並選取「* IOM（ESM*）*」索引標籤。
 
-. 確保每個IOM /ESm顯示的狀態是_optal__。
-. 按一下*顯示更多設定*。
-. 確認存在下列情況：
+.. 確保每個IOM /ESm顯示的狀態是_optal__。
+.. 按一下*顯示更多設定*。
+.. 確認存在下列情況：
 +
-** 偵測到的ESM/IOM數量、與系統中安裝的ESM/IOM數量、以及每個磁碟機櫃的相同。
-** 這兩個ESM/IOM都顯示通訊正常。
-** DE212C、DE224C和DE460C磁碟機櫃的資料傳輸率為12Gb/s、其他磁碟機匣的資料傳輸率為6 Gb/s。
+*** 偵測到的ESM/IOM數量、與系統中安裝的ESM/IOM數量、以及每個磁碟機櫃的相同。
+*** 這兩個ESM/IOM都顯示通訊正常。
+*** DE212C、DE224C和DE460C磁碟機櫃的資料傳輸率為12Gb/s、其他磁碟機匣的資料傳輸率為6 Gb/s。
+
+
 
 
 
@@ -109,18 +113,12 @@ NOTE: 如需實體安裝與電源線的完整程序、請參閱機型的安裝�
 
 == 步驟3：連接系統纜線
 
-選取下列其中一個選項：
-
-* <<選項1：連接E2800或E5700的磁碟機櫃>>
-* <<選項2：連接EF300或EF600的磁碟機櫃>>
-
-
 如果您要將較舊的控制器機櫃佈線至DE212C、DE224C或DE460、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃"^]。
 
-
-
-=== 選項1：連接E2800或E5700的磁碟機櫃
-
+[role="tabbed-block"]
+====
+.連接 E2800 或 E5700 的磁碟機櫃
+--
 您將磁碟機櫃連接至控制器A、確認IOM狀態、然後將磁碟機櫃連接至控制器B
 
 .步驟
@@ -129,10 +127,10 @@ NOTE: 如需實體安裝與電源線的完整程序、請參閱機型的安裝�
 下圖顯示其他磁碟機櫃與控制器A之間的連線範例若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_e5700_0.png[Hot e5700 0]
+image::../media/hot_e5700_0.png[將磁碟機櫃連接至控制器]
 
 +
-image::../media/hot_e5700_1.png[Hot e5700 1.]
+image::../media/hot_e5700_1.png[將磁碟機櫃連接至控制器]
 
 . 在「系統管理程式」中、按一下「*硬體*」SANtricity 。
 +
@@ -142,7 +140,7 @@ NOTE: 在此程序中、您只有一個作用中路徑可通往控制器機櫃�
 . 視需要向下捲動以查看新儲存系統中的所有磁碟機櫃。如果未顯示新磁碟機櫃、請解決連線問題。
 . 選取新磁碟機櫃的* ESM/IOM*圖示。
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[Sam11330 ss硬體IOM圖示]
+image::../media/sam1130_ss_hardware_iom_icon.gif[ESM/IOM 圖示]
 
 +
 「*機櫃元件設定*」對話方塊隨即出現。
@@ -161,7 +159,7 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[Sam11330 ss硬體IOM圖示]
 下圖顯示其他磁碟機櫃與控制器B之間的連線範例若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_e5700_2.png[Hot e5700 2.]
+image::../media/hot_e5700_2.png[磁碟機櫃連線範例]
 
 . 如果尚未選取、請選取「*機架元件設定*」對話方塊中的「* ESM/IOM*」索引標籤、然後選取「*顯示更多選項*」。驗證卡通訊是否為*是*。
 +
@@ -170,10 +168,9 @@ NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤�
 
 
 
-
-
-=== 選項2：連接EF300或EF600的磁碟機櫃
-
+--
+.連接 EF300 或 EF600 的磁碟機櫃
+--
 您將磁碟機櫃連接至控制器A、確認IOM狀態、然後將磁碟機櫃連接至控制器B
 
 .開始之前
@@ -183,17 +180,17 @@ NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤�
 .步驟
 . 從IOM12連接埠1和2拔下堆疊中前一個機櫃的兩條A側控制器纜線、然後將它們連接至新的IOM12連接埠1和2。
 +
-image::../media/de224c_sides.png[去除224c側邊]
+image::../media/de224c_sides.png[從控制器 A 拔下纜線，並連接至新機櫃]
 
 . 將纜線連接至A側IOM12連接埠、從新機櫃連接至上一個機櫃IOM12連接埠1和2。
 +
 下圖顯示額外磁碟機櫃與上一個最後一個磁碟櫃之間的側邊連線範例。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_ef_0.png[Hot ef 0]
+image::../media/hot_ef_0.png[磁碟機櫃纜線範例]
 
 +
-image::../media/hot_ef_1.png[熱備份1.]
+image::../media/hot_ef_1.png[磁碟機櫃纜線範例]
 
 . 在「系統管理程式」中、按一下「*硬體*」SANtricity 。
 +
@@ -203,7 +200,7 @@ NOTE: 在此程序中、您只有一個作用中路徑可通往控制器機櫃�
 . 視需要向下捲動以查看新儲存系統中的所有磁碟機櫃。如果未顯示新磁碟機櫃、請解決連線問題。
 . 選取新磁碟機櫃的* ESM/IOM*圖示。
 +
-image::../media/sam1130_ss_hardware_iom_icon.gif[Sam11330 ss硬體IOM圖示]
+image::../media/sam1130_ss_hardware_iom_icon.gif[ESM/IOM 圖示]
 
 +
 「*機櫃元件設定*」對話方塊隨即出現。
@@ -222,7 +219,7 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[Sam11330 ss硬體IOM圖示]
 下圖顯示額外磁碟機櫃與上一個最後一個磁碟櫃之間的B側連線範例。若要在您的機型上找到連接埠、請參閱 https://hwu.netapp.com/Controller/Index?platformTypeId=2357027["Hardware Universe"^]。
 
 +
-image::../media/hot_ef_2.png[熱備份2.]
+image::../media/hot_ef_2.png[磁碟機櫃纜線範例]
 
 . 如果尚未選取、請選取「*機架元件設定*」對話方塊中的「* ESM/IOM*」索引標籤、然後選取「*顯示更多選項*」。驗證卡通訊是否為*是*。
 +
@@ -231,6 +228,51 @@ NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤�
 
 
 
+--
+.連接 E4000 的磁碟機櫃
+--
+您將磁碟機櫃連接至控制器A、確認IOM狀態、然後將磁碟機櫃連接至控制器B
+
+.步驟
+. 將磁碟機櫃連接至控制器A
++
+image::../media/hot_e4000_cabling_1.png[磁碟機櫃纜線]
+
+. 在「系統管理程式」中、按一下「*硬體*」SANtricity 。
++
+
+NOTE: 在此程序中、您只有一個作用中路徑可通往控制器機櫃。
+
+. 視需要向下捲動以查看新儲存系統中的所有磁碟機櫃。如果未顯示新磁碟機櫃、請解決連線問題。
+. 選取新磁碟機櫃的* ESM/IOM*圖示。
++
+image::../media/sam1130_ss_hardware_iom_icon.gif[IOM 硬體圖示]
+
++
+「*機櫃元件設定*」對話方塊隨即出現。
+
+. 在「*機架元件設定*」對話方塊中選取「* ESM/IOM*」索引標籤。
+. 選擇*顯示更多選項*、然後確認下列事項：
++
+** 列出了IOM / esm A。
+** SAS-3磁碟機櫃的目前資料傳輸率為12 Gbps。
+** 卡片通訊正常。
+
+
+. 從控制器B拔下所有擴充纜線
+. 將磁碟機櫃連接至控制器B
++
+image::../media/hot_e4000_cabling_2.png[磁碟機櫃纜線]
+
+. 如果尚未選取、請選取「*機架元件設定*」對話方塊中的「* ESM/IOM*」索引標籤、然後選取「*顯示更多選項*」。驗證卡通訊是否為*是*。
++
+
+NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤已解決、且儲存系統已穩定。
+
+
+
+--
+====
 
 
 == 步驟4：完成熱新增

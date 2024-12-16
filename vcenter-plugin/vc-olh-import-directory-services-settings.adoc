@@ -11,7 +11,7 @@ summary: 將目錄服務組態從一個儲存陣列匯入其他儲存陣列。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 應用程式專屬工作負載的Volume特性決定了工作負載與�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

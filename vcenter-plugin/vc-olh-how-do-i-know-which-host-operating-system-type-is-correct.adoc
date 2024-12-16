@@ -10,7 +10,7 @@ summary: 主機作業系統類型欄位包含主機的作業系統。您可以�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 如果您想加速建立磁碟區的程序、可以跳過主機指派�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

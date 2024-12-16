@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E系列系統包含SANtricity 用於儲存資源配置和其他工作的支援功能。 
 ---
 = 軟體概述SANtricity
@@ -36,56 +36,56 @@ System Manager提供多種管理功能、包括：
 
 
  a| 
-image:../media/sam1130_icon_performance.gif[""] *效能*
+image:../media/sam1130_icon_performance.gif["效能"]* 效能 *
  a| 
 檢視長達30天的效能資料、包括I/O延遲、IOPS、CPU使用率和處理量。
 
 
 
  a| 
-image:../media/sam1130_icon_volumes.gif[""] *儲存設備*
+image:../media/sam1130_icon_volumes.gif["儲存設備"]* 儲存 *
  a| 
 使用資源池或磁碟區群組來配置儲存設備、並建立應用程式工作負載。
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] *資料保護*
+image:../media/sam1130_icon_async_mirroring.gif["資料保護"]* 資料保護 *
  a| 
 使用快照、磁碟區複製和遠端鏡像來執行備份和災難恢復。
 
 
 
  a| 
-image:../media/sam1130_icon_controllers.gif[""] *硬體*
+image:../media/sam1130_icon_controllers.gif["硬體"]* 硬體 *
  a| 
 檢查元件狀態、並執行與這些元件相關的部分功能、例如指派熱備援磁碟機。
 
 
 
  a| 
-image:../media/sam1130_icon_alerts.gif[""] *警示*
+image:../media/sam1130_icon_alerts.gif["警示"]* 警示 *
  a| 
 通知系統管理員儲存陣列上發生的重要事件。警示可透過電子郵件、SNMP設陷和系統記錄傳送。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] *存取管理*
+image:../media/sam1140_icon_active_directory.gif["「存取管理」"]* 存取管理 *
  a| 
 設定使用者驗證、要求使用者以指派的認證登入系統。
 
 
 
  a| 
-image:../media/sam1130_icon_settings.gif[""] *系統設定*
+image:../media/sam1130_icon_settings.gif["系統設定"]* 系統設定 *
  a| 
 設定其他系統效能功能、例如SSD快取和自動負載平衡。
 
 
 
  a| 
-image:../media/sam1130_icon_support.gif[""] *支援*
+image:../media/sam1130_icon_support.gif["支援"]* 支援 *
  a| 
 檢視診斷資料、管理升級及設定AutoSupport 功能、以監控儲存陣列的健全狀況、並將自動派單傳送給技術支援部門。
 
@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif[""] *支援*
 
 == 統一化管理程式SANtricity
 
-Unified Manager是網路型軟體、用於管理整個網域。從中央檢視中、您可以看到所有較新E系列和EF系列陣列的狀態、例如E2800、EF280、EF300、E5700、EF570、 和EF600。您也可以在選定的儲存陣列上執行批次作業。
+Unified Manager是網路型軟體、用於管理整個網域。從中央檢視，您可以看到所有較新 E 系列和 EF 系列陣列的狀態，例如 E4000 ， E2800 ， EF280 ， EF300 ， E5700 ， EF570 和 EF600 。您也可以在選定的儲存陣列上執行批次作業。
 
 Unified Manager與Web Services Proxy一起安裝在管理伺服器上。若要存取Unified Manager、請開啟瀏覽器並輸入指向安裝Web服務Proxy之伺服器的URL。
 
@@ -104,56 +104,56 @@ Unified Manager提供多種管理功能、包括：
 
 
  a| 
-image:../media/artboard_9.png[""] *探索儲存陣列*
+image:../media/artboard_9.png["探索儲存陣列"]* 探索儲存陣列 *
  a| 
 在組織網路中尋找並新增您要管理的儲存陣列。然後、您可以從單一頁面檢視所有儲存陣列的狀態。
 
 
 
  a| 
-image:../media/artboard_11.png[""] *發表*
+image:../media/artboard_11.png["上市"]* 發表 *
  a| 
 開啟System Manager執行個體、在特定儲存陣列上執行個別管理作業。
 
 
 
  a| 
-image:../media/sam1130_icon_system.gif[""] *匯入設定*
+image:../media/sam1130_icon_system.gif["匯入設定"]* 匯入設定 *
  a| 
 從一個儲存陣列執行批次匯入至多個陣列、包括警示、AutoSupport 還原和目錄服務的設定。
 
 
 
  a| 
-image:../media/sam1130_icon_async_mirroring.gif[""] *鏡射*
+image:../media/sam1130_icon_async_mirroring.gif["鏡射"]* 鏡像 *
  a| 
 在兩個儲存陣列之間設定非同步或同步鏡射配對。
 
 
 
  a| 
-image:../media/artboard_10.png[""] *管理群組*
+image:../media/artboard_10.png["管理群組"]* 管理群組 *
  a| 
 將儲存陣列組織成多個群組、以利管理。
 
 
 
  a| 
-image:../media/sam1130_icon_upgrade_center.gif[""] *升級中心*
+image:../media/sam1130_icon_upgrade_center.gif["升級中心"]* 升級中心 *
  a| 
 升級SANtricity 多個儲存陣列上的支援功能。
 
 
 
  a| 
-image:../media/sam1140_icon_certs.gif[""] *證書*
+image:../media/sam1140_icon_certs.gif["憑證"]* 證書 *
  a| 
 建立憑證簽署要求（CSR）、匯入憑證、以及管理多個儲存陣列的現有憑證。
 
 
 
  a| 
-image:../media/sam1140_icon_active_directory.gif[""] *存取管理*
+image:../media/sam1140_icon_active_directory.gif["存取管理"]* 存取管理 *
  a| 
 設定使用者驗證、要求使用者以指派的認證登入Unified Manager。
 

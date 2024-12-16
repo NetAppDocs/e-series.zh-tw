@@ -11,7 +11,7 @@ summary: 手動初始化磁碟區、以從特定故障狀況中恢復。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

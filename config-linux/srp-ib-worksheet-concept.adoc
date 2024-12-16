@@ -13,7 +13,7 @@ summary: 使用此工作表記錄SRP over Infiniband儲存組態資訊。
 [role="lead"]
 您可以產生並列印本頁的PDF、然後使用下列工作表記錄InfiniBand儲存組態資訊上的SRP。您需要這些資訊來執行資源配置工作。
 
-image::../media/port_identifiers_ib_srp.gif[連接埠識別碼IB SRP]
+image::../media/port_identifiers_ib_srp.gif[透過 IB 連接埠識別碼的 SRB]
 
 
 

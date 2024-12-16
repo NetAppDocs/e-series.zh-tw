@@ -11,7 +11,7 @@ summary: 如果不再需要磁碟區的I/O存取、您可以從主機或主機�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 重新分配磁碟區、將磁碟區移回其偏好的控制器擁有�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

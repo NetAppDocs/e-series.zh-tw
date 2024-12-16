@@ -1,0 +1,44 @@
+---
+section: maintenance-e4000
+title: E4000
+entries:
+- title: 電池
+  url: "/maintenance-e4000/replace-battery-e4000.html"
+- title: 控制器
+  entries:
+  - title: 考量與要求
+    url: "/maintenance-e4000/replace-controller-requirements-e4000.html"
+  - title: 新增第二個控制器容器
+    url: "/maintenance-e4000/replace-controller-second-e4000.html"
+  - title: 更換控制器
+    url: "/maintenance-e4000/replace-controller-e4000.html"
+- title: 迴廊
+  entries:
+  - title: 更換電源供應器（ E4012 ）
+    url: "/maintenance-e4000/replace-power-supply.html"
+  - title: 更換動力箱（ E4060 ）
+    url: "/maintenance-e4000/replace-power-canister.html"
+  - title: 更換風扇箱（ E4060 ）
+    url: "/maintenance-e4000/replace-fan-canister.html"
+- title: DIMM
+  url: "/maintenance-e4000/replace-dimms-e4000.html"
+- title: 磁碟機
+  entries:
+  - title: 考量與要求
+    url: "/maintenance-e4000/replace-drive-e4000.html"
+  - title: 更換磁碟機
+    entries:
+    - title: 12 或 24 磁碟機
+      url: "/maintenance-e4000/replace-drives-12-24.html"
+    - title: 60 個磁碟機
+      url: "/maintenance-e4000/replace-drives-60.html"
+  - title: 更換磁碟機抽屜（ 4060 ）
+    url: "/maintenance-e4000/drive-drawer-60.html"
+  - title: 熱新增磁碟機櫃
+    url: "/maintenance-e4000/replace-drives-hotadd-drive-shelf.html"
+- title: 主機介面卡
+  entries:
+  - title: 升級 HIC
+    url: "/maintenance-e4000/replace-hic-upgrade-e4000.html"
+  - title: 更換故障的 HIC
+    url: "/maintenance-e4000/replace-hic-e4000.html"

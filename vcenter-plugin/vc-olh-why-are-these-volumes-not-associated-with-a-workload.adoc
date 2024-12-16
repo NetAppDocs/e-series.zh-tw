@@ -10,7 +10,7 @@ summary: 如果磁碟區是使用命令列介面（CLI）建立、或是已從�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

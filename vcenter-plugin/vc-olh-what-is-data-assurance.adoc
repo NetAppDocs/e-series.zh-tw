@@ -10,7 +10,7 @@ summary: 資料保證（DA）實作T10保護資訊（PI）標準、藉由檢查�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

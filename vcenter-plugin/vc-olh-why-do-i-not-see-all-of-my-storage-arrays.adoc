@@ -10,7 +10,7 @@ summary: 在匯入設定作業期間、目標選擇對話方塊中可能無法�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

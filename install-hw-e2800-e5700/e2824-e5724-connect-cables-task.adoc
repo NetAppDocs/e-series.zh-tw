@@ -39,14 +39,14 @@ NOTE: 此程序適用於類似的機櫃IOM熱交換或更換。這表示您只�
 
 
  a| 
-image:../media/sas_cable.png[""]
+image:../media/sas_cable.png["SAS 傳輸線"]
  a| 
 * SAS纜線*
 
 |===
 +
 .範例A：E5700控制器機櫃採用標準SAS組態、具有三個DE212C/DE224磁碟櫃。
-image:../media/example_a_28_57.png[""]
+image:../media/example_a_28_57.png["採用 SAS 組態的 E5700 控制器"]
 
 +
 .. 將控制器A纜線連接至第一個磁碟機櫃的IOM A。
@@ -59,7 +59,7 @@ image:../media/example_a_28_57.png[""]
 
 +
 .範例B：E5700控制器機櫃、標準SAS組態中有一個DE212C/DE224磁碟櫃。
-image:../media/example_b_57_28.png[""]
+image:../media/example_b_57_28.png["採用 SAS 組態的 E5700 控制器"]
 
 +
 .. 纜線控制器A至IOM A
@@ -75,7 +75,7 @@ image:../media/example_b_57_28.png[""]
 
 
  a| 
-image:../media/power_cable_inst-hw-e2800-e5700.png[""]
+image:../media/power_cable_inst-hw-e2800-e5700.png["電源線"]
  a| 
 *電源線*
 
@@ -99,7 +99,7 @@ CAUTION: 確認磁碟機櫃電源開關已關閉。
 
 
  a| 
-*範例：電源連線位於機櫃後方。*image:../media/trafford_power.png[""]
+* 範例：電源連線位於機櫃後方。 *image:../media/trafford_power.png["電源架連接"]
 
 |===
 

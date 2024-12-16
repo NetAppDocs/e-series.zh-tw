@@ -10,7 +10,7 @@ summary: 當您實作磁碟機安全功能時、可以使用內部安全金鑰�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

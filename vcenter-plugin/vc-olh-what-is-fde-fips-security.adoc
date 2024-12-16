@@ -10,7 +10,7 @@ summary: FDE/FIPS安全性是指可在讀取期間使用獨特加密金鑰加密
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

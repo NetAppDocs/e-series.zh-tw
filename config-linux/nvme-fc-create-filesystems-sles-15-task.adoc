@@ -7,7 +7,7 @@ summary: 對於RHEL 8和SLES 15、您可以在原生NVMe裝置上建立檔案系
 = 建立檔案系統（RHEL 8、RHEL 9、SLES 15）
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 您可以建立稱為Volume的資料容器、以便主機存取陣列�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

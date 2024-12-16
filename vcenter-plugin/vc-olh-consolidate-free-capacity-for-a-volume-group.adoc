@@ -11,7 +11,7 @@ summary: 使用「整合可用容量」選項、將現有的可用範圍整合�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

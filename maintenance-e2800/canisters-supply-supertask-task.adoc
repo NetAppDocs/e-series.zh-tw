@@ -61,7 +61,7 @@ summary: 更換E2800 12個磁碟機或24個磁碟機控制器機櫃或磁碟機�
 
 +
 .. 選取*硬體*。
-.. 請看效能 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif[""] 和FAN image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif[""] *機櫃*下拉式清單右側的圖示、用於判斷哪個機櫃的電源供應器故障。
+.. 查看 * 機櫃 * 下拉式清單右側的電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"]和風扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["' 風扇圖示 \""]圖示、以判斷哪個機櫃的電源供應器故障。
 +
 如果某個元件發生故障、這些圖示中有一個或兩個都是紅色的。
 
@@ -82,7 +82,7 @@ CAUTION: 如果磁碟櫃中的第二個電源供應器磁碟櫃沒有*最佳*狀
 您必須更換注意LED亮起的電源供應器。
 
 +
-image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[28圖913w電源供應器後視圖維護e2800]
+image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[電源供應器LED]
 
 +
 ** 電源LED：如果是*穩定綠色*、表示電源供應器運作正常。如果是*關*、電源供應器故障、AC開關關閉、AC電源線未正確安裝、或AC電源線輸入電壓不在保證範圍內（AC電源線的來源端有問題）。
@@ -111,7 +111,7 @@ image::../media/28_dwg_913w_power_supply_back_view_maint-e2800.gif[28圖913w電�
 
 . 擠壓電源供應器CAM握把上的栓鎖、然後打開CAM握把、從中間面完全釋放電源供應器。
 +
-image::../media/drw_2600_psu_maint-e2800.gif[DRW 2600 PSU維護e2800]
+image::../media/drw_2600_psu_maint-e2800.gif[拉動 CAM 把手，將電源供應器從中間面鬆開]
 
 . 使用CAM握把將電源供應器滑出系統。
 +

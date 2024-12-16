@@ -10,7 +10,7 @@ summary: 密碼用於加密及解密儲存在本機管理用戶端上的安全�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

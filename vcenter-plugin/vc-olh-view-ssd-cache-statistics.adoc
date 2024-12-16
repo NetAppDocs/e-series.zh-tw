@@ -11,7 +11,7 @@ summary: 檢視SSD快取的統計資料、例如讀取、寫入、快取命中�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

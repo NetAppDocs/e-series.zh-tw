@@ -10,7 +10,7 @@ summary: 如果您已在所有可用容量上建立磁碟區、則可能無法�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

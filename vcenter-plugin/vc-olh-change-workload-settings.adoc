@@ -11,7 +11,7 @@ summary: 變更工作負載的名稱、並檢視其相關的應用程式類型�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

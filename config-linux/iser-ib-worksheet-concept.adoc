@@ -67,7 +67,7 @@ NOTE: 軟體啟動器IQN是在工作期間決定的、 xref:iser-ib-configure-ne
 
 建議的組態包括兩個主機（啟動器）連接埠和四個目標連接埠。
 
-image::../media/port_identifiers_ib_iser.gif[連接埠識別碼IB控制器]
+image::../media/port_identifiers_ib_iser.gif[透過 IB 網路組態的 iser]
 
 
 

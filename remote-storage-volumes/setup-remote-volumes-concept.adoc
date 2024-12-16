@@ -44,7 +44,7 @@ NOTE: 建議：在開始匯入程序之前、請先備份遠端來源Volume。
 
 下圖提供如何連接系統的範例、以便它們透過iSCSI連線執行遠端儲存Volume作業。
 
-image:../media/remote_target_volumes_iscsi_use_case_1.png[""] image:../media/remote_target_volumes_iscsi_use_case_2.png[""]
+image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSI 儲存設備纜線"] image:../media/remote_target_volumes_iscsi_use_case_2.png["iSCSI 儲存設備纜線"]
 
 
 

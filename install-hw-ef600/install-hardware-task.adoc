@@ -43,7 +43,7 @@ NOTE: 若要避免設備翻轉、請從機架或機櫃底部安裝硬體、直�
 
 
  a| 
-image:../media/install_rails_inst-hw-ef600.png[""]
+image:../media/install_rails_inst-hw-ef600.png["安裝軌道"]
 
 |===
 . 安裝機櫃。
@@ -63,7 +63,7 @@ CAUTION: 安裝機櫃時、請與兩個人一起使用團隊合作。
 
 
  a| 
-image:../media/install_ef600.png[""]
+image:../media/install_ef600.png["兩個人將機櫃安裝到機櫃中"]
 
 |===
 . 固定機櫃。
@@ -77,7 +77,7 @@ image:../media/install_ef600.png[""]
 
 
  a| 
-image:../media/secure_shelf_inst-hw-ef600.png[""]
+image:../media/secure_shelf_inst-hw-ef600.png["保護機櫃"]
 
 |===
 . 安裝面板。
@@ -92,7 +92,7 @@ image:../media/secure_shelf_inst-hw-ef600.png[""]
 
 
  a| 
-image:../media/install_faceplate_2_0_inst-hw-ef600.png[""]
+image:../media/install_faceplate_2_0_inst-hw-ef600.png["安裝面板"]
 
 |===
 

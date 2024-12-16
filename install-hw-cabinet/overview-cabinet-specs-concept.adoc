@@ -23,7 +23,7 @@ summary: 檢閱機櫃安裝的總覽與規格。
 
 下圖顯示機櫃的正面（左）和背面（右）視圖。
 
-image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[83000 07圖3040機櫃含標註]
+image::../media/83000_07_dwg_3040_cabinet_with_callouts.gif[3040 機櫃總覽]
 
 |===
 

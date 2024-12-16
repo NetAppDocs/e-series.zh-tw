@@ -10,7 +10,7 @@ summary: 將管理憑證還原為原廠自我簽署狀態。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

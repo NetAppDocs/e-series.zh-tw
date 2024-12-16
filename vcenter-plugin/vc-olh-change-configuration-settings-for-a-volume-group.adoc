@@ -11,7 +11,7 @@ summary: 編輯Volume群組的設定、包括其名稱和RAID層級。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

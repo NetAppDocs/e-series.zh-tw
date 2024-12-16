@@ -10,7 +10,7 @@ summary: 維護資源池或磁碟區群組的機櫃和藥櫃遺失保護
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

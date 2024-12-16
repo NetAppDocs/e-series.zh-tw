@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/getup-run-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E2800, E5700, EF300, EF600, 
+keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E4000 
 summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件、設定主機系統及設定儲存設備。 
 ---
 = E系列的快速入門
@@ -21,6 +21,7 @@ summary: 若要使用E系列系統啟動及執行、您需要安裝硬體元件�
 * link:../install-hw-ef600/index.html["EF600或EF300系列、含24個磁碟機櫃"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842063["E2800/EF280或E5700/EF570系列、含12或24個磁碟機櫃"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2842061["E2800或E5700系列搭載60個磁碟機機櫃"^]
+* link:../install-hw-e4000/index.html["E4000 系列，含 12 或 60 個磁碟機櫃"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 設定機櫃

@@ -11,7 +11,7 @@ summary: 編輯SSD快取的名稱、並檢視其狀態、最大和目前容量�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -125,7 +125,7 @@ NOTE: 時間戳記項目是多餘的。
 
 === 設定AutoSupport 供應功能
 
-您可以設定AutoSupport 使用HTTPS、HTTP或SMTP傳輸方法的功能。HTTPS是預設的傳送方法。
+您可以將 AutoSupport 功能設定為使用 HTTPS 或 SMTP 傳送方法。HTTPS是預設的傳送方法。
 
 . 存取工作目錄中的ASUPConfig.xml檔案。
 . 在字串中、按下表所述輸入1、2或3、「<交付 類型="n">」：
@@ -146,15 +146,6 @@ NOTE: 時間戳記項目是多餘的。
 
  a| 
 2.
- a| 
-* HTTP *
-
-<交付 類型="2">
-
-
-
- a| 
-3.
  a| 
 * SMTP*-若要正確設定AutoSupport 將「不確定」傳送類型設定為SMTP,您必須加入以下範例所示的SMTP郵件伺服器位址以及寄件者和收件者使用者電子郵件：
 

@@ -11,7 +11,7 @@ summary: 使用最新的軟體和NVSRAM,升級一或多個儲存陣列以確保�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 設定vCenter的儲存外掛程式存取權限。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -11,7 +11,7 @@ summary: 使用外掛程式for vCenter建立磁碟區、將磁碟區指派給主
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

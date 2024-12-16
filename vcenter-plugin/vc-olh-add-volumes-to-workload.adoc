@@ -11,7 +11,7 @@ summary: 將未指派的磁碟區新增至現有或新的工作負載。
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

@@ -10,7 +10,7 @@ summary: 磁碟機安全功能可防止在從儲存陣列移除時、未獲授�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

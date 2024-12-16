@@ -37,7 +37,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 下圖為E2812控制器機櫃、E2824控制器機櫃或EF280快閃陣列的範例：
 
 +
-image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28圖e2824移除控制器機箱維護e2800]
+image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[24 磁碟機控制器重新安裝]
 
 +
 *（1）*_控制器容器_
@@ -49,7 +49,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_maint-e2800.gif[28圖e28
 下圖是E2860控制器機櫃的範例：
 
 +
-image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[28圖e2860新增控制器機箱維護e2800]
+image::../media/28_dwg_e2860_add_controller_canister_maint-e2800.gif[60 磁碟機控制器重新安裝]
 
 +
 *（1）*_控制器容器_

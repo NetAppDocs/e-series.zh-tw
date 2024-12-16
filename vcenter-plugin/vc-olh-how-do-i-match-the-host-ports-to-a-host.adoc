@@ -10,7 +10,7 @@ summary: 如果您是手動建立主機、則必須先使用主機上可用的�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

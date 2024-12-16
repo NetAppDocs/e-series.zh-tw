@@ -11,7 +11,7 @@ summary: 安全金鑰由儲存陣列內的控制器和啟用安全功能的磁�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

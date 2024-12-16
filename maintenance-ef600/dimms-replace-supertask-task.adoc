@@ -111,7 +111,7 @@ CAUTION: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線�
 . 確認控制器背面的快取作用中LED已關閉。
 . 擠壓控制器兩側的握把、然後向後拉、直到它從機櫃中釋放為止。
 +
-image::../media/remove_controller_5.png[移除控制器5]
+image::../media/remove_controller_5.png[擠壓把手以移除控制器]
 
 . 使用兩隻手和握把、將控制器外殼滑出機櫃。當控制器正面脫離機箱時、請用兩隻手將其完全拉出。
 +
@@ -119,7 +119,7 @@ image::../media/remove_controller_5.png[移除控制器5]
 CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 +
-image::../media/remove_controller_6.png[移除控制器6]
+image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐控制器的重量]
 
 . 將控制器容器放在無靜電的平面上。
 
@@ -144,10 +144,10 @@ NOTE: DIMM底部有一個缺口、可協助您在安裝期間對齊DIMM。
 
 . 緩慢地將DIMM兩側的兩個DIMM彈出彈片分開、將DIMM從插槽中退出、然後將其從插槽中滑出。
 +
-image::../media/dimm_2.png[DIMM 2]
+image::../media/dimm_2.png[按下 DIMM 插槽上的彈出卡舌]
 
 +
-image::../media/dimim_3.png[小點心3.]
+image::../media/dimim_3.png[移除 DIMM]
 
 +
 
@@ -183,7 +183,7 @@ NOTE: 目視檢查DIMM、確認其對齊並完全插入插槽。
 NOTE: DIMM可緊密安裝。您可能需要一次輕按一側、並分別固定每個彈片。
 
 +
-image::../media/dimm_5.png[DIMM 5.]
+image::../media/dimm_5.png[將 DIMM 插入插槽，並使用彈片固定]
 
 
 
@@ -201,7 +201,7 @@ image::../media/dimm_5.png[DIMM 5.]
 NOTE: 正確安裝到機櫃時、控制器會發出喀聲。
 
 +
-image::../media/remove_controller_7.png[移除控制器7]
+image::../media/remove_controller_7.png[將 DIMM 安裝到控制器的插槽中]
 
 . 重新連接所有纜線。
 

@@ -10,7 +10,7 @@ summary: 備援檢查可決定集區或磁碟區群組中磁碟區上的資料�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]

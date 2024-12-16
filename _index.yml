@@ -18,9 +18,9 @@ indexpage:
       url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
   - title: 軟件SANtricity
     links:
-    - title: SANtricity 系統管理員 11.8
+    - title: SANtricity 系統管理員 11.9
       url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
-    - title: SANtricity Unified Manager 6.
+    - title: SANtricity Unified Manager 7.
       url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: 命令列介面（CLI）參考
       url: https://docs.netapp.com/us-en/e-series-cli/index.html

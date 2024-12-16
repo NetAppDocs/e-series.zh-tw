@@ -10,7 +10,7 @@ summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址�
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 [role="lead"]
