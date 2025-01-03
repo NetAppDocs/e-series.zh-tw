@@ -306,17 +306,14 @@ CAUTION: *可能的硬體損壞*-電池正面的金屬法蘭必須完全插入�
 
 +
 ** *正確*：電池的金屬法蘭已完全插入控制器的插槽中：
-
-
 +
 image:../media/28_dwg_e2800_battery_flange_ok_maint-e2800.gif["正確的金屬凸緣"]
 
-+
 ** *不正確*-電池的金屬法蘭未插入控制器的插槽：
-
-
 +
 image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金屬凸緣不正確"]
+
+
 
 
 

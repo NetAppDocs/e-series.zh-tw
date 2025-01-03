@@ -10,6 +10,8 @@ indexpage:
     links:
     - title: 快速入門
       url: "/getting-started/getup-run-concept.html"
+    - title: E4000產品型錄
+      url: https://www.netapp.com/pdf.html?item=/media/116571-ds-4309-hybrid-flash-arrays-e4060-e4012.pdf
     - title: EF系列產品型錄
       url: https://www.netapp.com/pdf.html?item=/media/19339-DS-4082.pdf
     - title: E5700產品型錄

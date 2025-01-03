@@ -76,14 +76,14 @@ serviceAllowedIndicator=on;"
 ** 「array_password」是儲存陣列的密碼。您必須以雙引號（""）括住array_password的值。
 ** 「TrayID]」是磁碟機櫃的識別碼、其中包含您要更換的磁碟機匣。磁碟機櫃ID值為0至99。您必須將「TrayID」的值括在方括弧中。
 ** 「drawerID」是您要更換的磁碟機匣的識別碼。藥櫃ID值為1（頂端藥櫃）至5（底部藥櫃）。必須將"drawerid"的值括在方括弧中。此命令可確保您可以移除磁碟機櫃中最頂端的抽取盒10：
-
-
 +
 [listing]
 ----
 SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
+
+
 . 判斷您是否需要停止主機I/O活動、如下所示：
 +
 ** 如果命令成功、您就不需要停止主機I/O活動。藥櫃中的所有磁碟機均位於「資源池」或「磁碟區群組」中、且具有藥櫃遺失保護功能。前往 <<步驟2：移除纜線鏈>>。

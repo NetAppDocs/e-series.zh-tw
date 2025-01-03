@@ -4297,10 +4297,6 @@
   <block id="0455913d7e2d97e64b147b28086c1883" category="paragraph">Linux套裝作業系統的特定設定可能有所不同。請檢查<block ref="ae69c67e09c854d61b64be1ef166878d" category="inline-link-rx"></block> 以取得解決方案的特定指示和其他建議設定。</block>
   <block id="f54101aa6702c025c4f74ec5ada7bae3" category="summary">管理儲存設備</block>
   <block id="14ad3096f7edeb7d23e22e3ab3539e0f" category="paragraph">請使用下列連結來存取說明如何設定、管理及監控儲存物件和E系列儲存系統的文件。這些連結會帶您前往不同的文件網站。</block>
-  <block id="55b9698df8d5ce238fd672cacb45db33" category="section-title">System Manager 11.7的線上說明</block>
-  <block id="bb0f94cdcadb9a7fe9605a5b5978bc9f" category="inline-link">《系統管理程式》11.7線上說明SANtricity</block>
-  <block id="08bdf5ba02a44ea1089a7356e56323d3" category="section-title">Unified Manager 5的線上說明</block>
-  <block id="d9b69b9cb75561d821d13badf467853f" category="inline-link">統一化管理程式5線上說明SANtricity</block>
   <block id="6e8602d76e9fef34df4842cd3e73e25b" category="section-title">命令參考資料</block>
   <block id="7bf44c1a455e947396fedd5ddf411974" category="summary">更新功能。SANtricity</block>
   <block id="b71e2b4d6a1e1e3ddb1014777fc5a53c" category="doc">更新功能SANtricity</block>
@@ -5148,16 +5144,12 @@
   <block id="4fca16c33bb8244a7b60dd7da4eec715" category="doc">瀏覽平台技術報告</block>
   <block id="775ecf6ed5e3db61059ce09b5b398110" category="section-title">平台TR</block>
   <block id="a28b8b732f1d7a87c511f615fe886bc4" category="inline-link">* TR-4725：E2800陣列功能總覽*</block>
-  <block id="fac7424958d70cf4f8d849fb90db1f68" category="cell"><block ref="fac7424958d70cf4f8d849fb90db1f68" category="inline-link-rx"></block></block>
   <block id="16ee0112605f5c7f44d31ab4fb0f7c73" category="inline-link">*+++TR-4724：E5700陣列提供Overview（概覽）+++*</block>
-  <block id="cdbe326a711e037f4bddbe4b226edfa6" category="cell"><block ref="cdbe326a711e037f4bddbe4b226edfa6" category="inline-link-rx"></block></block>
   <block id="346bfe6c5f1a40af18c578c446b216aa" category="inline-link">*+++TR-4877：EF300陣列具備Overview +++*功能</block>
-  <block id="ca74b797e6d3bd7c698dff9a991616e6" category="cell"><block ref="ca74b797e6d3bd7c698dff9a991616e6" category="inline-link-rx"></block></block>
   <block id="c3bad4531ac09819ae11c8f1eef46379" category="cell">說明E2800混合式陣列的硬體與軟體功能、以及SANtricity 最新的作業系統功能。</block>
   <block id="170c5373a5aea2b6d6daa41c328182fc" category="cell">說明E5700產品資訊、包括SANtricity 最新版的更新版的硬體與軟體功能。</block>
   <block id="6bf4f338106e6cad43fd2f2fecfcaafa" category="cell">說明EF300 All Flash Array的硬體與軟體功能、以及SANtricity 全新的EOSOS功能。</block>
   <block id="f3a3500a11e0c13b98d7092f5af6a6c7" category="inline-link">* TR-4800: EF600陣列功能概述*</block>
-  <block id="567d596a04a1bf27275d8aa991230778" category="cell"><block ref="567d596a04a1bf27275d8aa991230778" category="inline-link-rx"></block></block>
   <block id="6b4552e99c78bda589322e0594a1d89b" category="cell">說明EF600 All Flash Array的硬體與軟體功能、以及SANtricity 全新的EOSOS功能。</block>
   <block id="58632d19e3df21b4ebbcade9a5b2eb9b" category="summary">安裝並設定EF300和EF600陣列。</block>
   <block id="df3fdc32edb0c88c7a128fe92da2d409" category="paragraph">瞭解如何安裝及設定EF300或EF600儲存系統。</block>
@@ -6474,8 +6466,6 @@
   <block id="228099d750c1289b9bfa62e7687ee971" category="cell"><block ref="228099d750c1289b9bfa62e7687ee971" category="inline-link-rx"></block></block>
   <block id="279a877b44d5476b61408bc38e5178f7" category="cell">說明在NetApp E2800與E5700混合式儲存陣列上執行的認證測試結果。</block>
   <block id="bf37ab4daa569311ecb03e0f71cfe44e" category="cell">說明Genetec Security Center Video Management Software（VMS）在NetApp E2800和E5700混合式儲存陣列上的認證結果。</block>
-  <block id="ff584d910a943e131a1a33c07ee376cf" category="paragraph">存取<block ref="4f3037dfe9e12b0599983cd81724b08c" category="inline-link-rx"></block>，您可以在其中找到有關如何規劃、設定、管理及疑難排解儲存陣列的資訊。</block>
-  <block id="a9a112f936967fe8b7a02587778320ab" category="paragraph">存取<block ref="777f091bde7329e4b8f42b44c5184089" category="inline-link-rx"></block>，您可在此學習如何在多個網路儲存陣列上執行儲存管理命令。</block>
   <block id="173fec560797244d437c91da004ea89c" category="paragraph">存取<block ref="60cc209e7041626253d52f9b6ac8557b" category="inline-link-rx"></block>，您可在此學習如何使用命令列介面（CLI）命令來設定及監控儲存陣列。</block>
   <block id="7e90e7aafc41dd2ae860ea7d075f0a24" category="list-text">Unified Manager：Proxy安裝包含SANtricity 以Web為基礎的支援功能、可讓您存取較新的E系列和EF系列儲存系統。如需詳細資訊、請參閱Unified Manager線上說明、您可從其使用者介面或取得<block ref="173d089ddf996dbd066dc04ffeb10dca" category="inline-link-rx"></block>。</block>
   <block id="9de7e29035705b89b9b2cc49130cd5d4" category="summary">您可以變更主機或主機叢集的名稱、主機作業系統類型及相關的主機叢集。</block>
@@ -9462,4 +9452,15 @@
   <block id="7dca1699f8152d82864de292753389fc" category="sidebar">更換磁碟機抽屜（ 4060 ）</block>
   <block id="676d3cbad89c6a95fe470771db65cfaa" category="sidebar">升級 HIC</block>
   <block id="f1de52c9b2e0108b121235152081f684" category="sidebar">更換故障的 HIC</block>
+  <block id="54941a8cb8785fb145b01e1bb947b67f" category="section-title">System Manager 線上說明</block>
+  <block id="a4cf386ebe9065ef38c507aa0138fca1" category="inline-link">SANtricity 系統管理員線上說明</block>
+  <block id="022c96b1591a4fe3fe2e854b113c6c33" category="paragraph">存取<block ref="4060ff1e62df840ae8eeaa66b7bc4ef3" category="inline-link-rx"></block>，您可以在其中找到有關如何規劃，設定，管理及疑難排解儲存陣列的資訊。</block>
+  <block id="68b5d7bbc938636a6430a66ddd3590d0" category="section-title">Unified Manager 線上說明</block>
+  <block id="703be4c8c3307cd5e44163a39538eb58" category="inline-link">SANtricity Unified Manager 線上說明</block>
+  <block id="4c0bdc96ec6314c064f33faae57a0c02" category="paragraph">存取<block ref="d6978b00f819ec3b99c59933f313d81f" category="inline-link-rx"></block>，瞭解如何在多個網路儲存陣列上執行儲存管理命令。</block>
+  <block id="5b4f9cf27402df2737b167e7393669c2" category="cell"><block ref="5b4f9cf27402df2737b167e7393669c2" category="inline-link-rx"></block></block>
+  <block id="034410ce2cd58a6a56e6772fadec879b" category="cell"><block ref="034410ce2cd58a6a56e6772fadec879b" category="inline-link-rx"></block></block>
+  <block id="6c33c8a01a7b3f83682789dc2c3e0a6e" category="cell"><block ref="6c33c8a01a7b3f83682789dc2c3e0a6e" category="inline-link-rx"></block></block>
+  <block id="ec476342469d41cbc06b7065ffea021e" category="cell"><block ref="ec476342469d41cbc06b7065ffea021e" category="inline-link-rx"></block></block>
+  <block id="ba463c26bea3a95ca7381fd32b63eb98" category="sidebar">E4000產品型錄</block>
 </blocks>
