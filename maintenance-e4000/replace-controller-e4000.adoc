@@ -160,6 +160,19 @@ save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filen
 ----
 
 
+. 使用SANtricity NetApp System Manager收集儲存陣列的支援資料。
++
+如果移除控制器時發生問題、您可以使用儲存的檔案來疑難排解問題。系統會將儲存陣列的庫存、狀態和效能資料儲存在單一檔案中。
+
++
+.. * 選擇支援›支援中心›診斷 * 。
+.. 選擇*收集支援資料*。
+.. 按一下「* Collect*」。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
 . 如果控制器尚未離線、請使用SANtricity 「系統管理程式」將其離線。
 +
 ** 從《系統管理程式》：SANtricity

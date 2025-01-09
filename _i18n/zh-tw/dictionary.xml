@@ -9463,4 +9463,6 @@
   <block id="6c33c8a01a7b3f83682789dc2c3e0a6e" category="cell"><block ref="6c33c8a01a7b3f83682789dc2c3e0a6e" category="inline-link-rx"></block></block>
   <block id="ec476342469d41cbc06b7065ffea021e" category="cell"><block ref="ec476342469d41cbc06b7065ffea021e" category="inline-link-rx"></block></block>
   <block id="ba463c26bea3a95ca7381fd32b63eb98" category="sidebar">E4000產品型錄</block>
+  <block id="b30b3ed54d36ae2fd1e5c231ba1b18c0" category="list-text">確認控制器背面的 Cache Active LED 指示燈和控制器面板均熄滅。</block>
+  <block id="53ec2a2a971455f492adc2f07e6c780d" category="paragraph">如果任一 LED 亮起，表示控制器仍在使用電池電力。在您繼續執行此程序之前，所有 LED 都必須關閉。</block>
 </blocks>
