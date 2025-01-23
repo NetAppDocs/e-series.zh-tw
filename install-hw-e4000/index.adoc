@@ -39,7 +39,7 @@ summary: 請依照下列步驟安裝和設定 E4000 儲存系統。
 * link:../install-hw-e4000/connect-cables-60.html["纜線 E4060 硬體"^]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["四"]完成儲存系統設定
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]完成儲存系統設定
 [role="quick-margin-para"]
 瞭解如何將控制器連接至網路、並完成儲存系統的設定與組態設定。
 
