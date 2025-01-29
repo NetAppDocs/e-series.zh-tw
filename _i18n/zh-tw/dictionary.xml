@@ -9466,4 +9466,7 @@
   <block id="53ec2a2a971455f492adc2f07e6c780d" category="paragraph">如果任一 LED 亮起，表示控制器仍在使用電池電力。在您繼續執行此程序之前，所有 LED 都必須關閉。</block>
   <block id="5509a7e2ae2dbdec2ed18ae433b4cec6" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>完成儲存系統設定</block>
   <block id="492fcae0b90e6f4d11439a1f70e422cf" category="admonition">如果您使用手指鬆開指旋螺絲，則可能需要按下電池釋放彈片並向上旋轉電池，以便更容易使用。</block>
+  <block id="fdaf387b2cf2a5e0708730deae924c52" category="section-title">11.80.1R3 版的新功能</block>
+  <block id="a372f5d0e522484d2807c2713feb9e59" category="paragraph">此版本僅包含輕微變更，且不含新功能或限制。如需此版本變更的詳細資訊，請參閱 README 檔案。</block>
+  <block id="cb495aee74d8e4c14850fb4a3882a508" category="section-title">11.80.1R2 版的新功能</block>
 </blocks>
