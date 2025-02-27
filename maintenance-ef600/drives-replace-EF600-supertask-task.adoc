@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF600-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 DIMM, replace EF600 DIMM, drive failure 
+keywords: EF600, EF600C replace DIMM, drive failure 
 summary: 更換EF600陣列中的磁碟機。 
 ---
 = 更換EF600陣列中的磁碟機
@@ -11,7 +11,7 @@ summary: 更換EF600陣列中的磁碟機。
 
 
 [role="lead"]
-您可以更換EF600陣列中的磁碟機。
+您可以更換 EF600 或 EF600C 陣列中的磁碟機。
 
 .關於這項工作
 《恢復大師》（Recovery Guru in SANtricity the in the SytrSystem Manager）會監控儲存陣列中的磁碟機、並通知您即將發生磁碟機故障或實際發生磁碟機故障。磁碟機故障時、其黃色警示LED會亮起。您可以在儲存陣列接收I/O時熱交換故障磁碟機

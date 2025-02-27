@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif["支援"]* 支援 *
 
 == 統一化管理程式SANtricity
 
-Unified Manager是網路型軟體、用於管理整個網域。從中央檢視，您可以看到所有較新 E 系列和 EF 系列陣列的狀態，例如 E4000 ， E2800 ， EF280 ， EF300 ， E5700 ， EF570 和 EF600 。您也可以在選定的儲存陣列上執行批次作業。
+Unified Manager是網路型軟體、用於管理整個網域。從中央檢視，您可以看到所有較新 E 系列和 EF 系列陣列的狀態，例如 E4000 ， E2800 ， EF280 ， EF300 ， E5700 ， EF570 ， EF600 ， EF300C 和 EF600C 。您也可以在選定的儲存陣列上執行批次作業。
 
 Unified Manager與Web Services Proxy一起安裝在管理伺服器上。若要存取Unified Manager、請開啟瀏覽器並輸入指向安裝Web服務Proxy之伺服器的URL。
 

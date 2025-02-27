@@ -24,6 +24,8 @@ E系列陣列提供下列機型：
 * E5700系列-中階混合式
 * EF570系列-中階All Flash
 * EF600系列-中階All Flash、All NVMe
+* EF600C系列-中階All Flash、All NVMe
+* EF300C系列-中階All Flash、All NVMe
 
 
 
@@ -113,7 +115,7 @@ image:../media/ef570_front.gif["EF280 2U"]
 image:../media/ef570_front.gif["EF300 2U"]
 
 --
-磁碟機與 HIC::
+磁碟機::
 +
 --
 每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：
@@ -125,6 +127,48 @@ image:../media/ef570_front.gif["EF300 2U"]
 
 
 NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。
+
+--
+介面::
++
+--
+可搭配下列介面使用：
+
+* 25GB iSCSI
+* 32GB NVMe /光纖通道
+* 32GB SCSI /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+
+
+--
+
+
+--
+.EF300C機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
+
+image:../media/ef570_front.gif["EF300 2U"]
+
+--
+磁碟機::
++
+--
+* 支援 30TB 和 60TB 容量的 NVMe SSD 磁碟機
+* NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。
+* 含擴充磁碟櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過240個NL-SAS磁碟機插槽與4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、4個DE460C磁碟櫃或8個DE212C磁碟櫃、或2個DE460C磁碟櫃加上2個DE212磁碟櫃。
+* 含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、不得超過96個SAS SSD磁碟機插槽和4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。
++
+
+NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。*
+
+
 
 --
 介面::
@@ -236,11 +280,57 @@ image:../media/ef570_front.gif["EF570 2U"]
 image:../media/ef570_front.gif["EF600 2U"]
 
 --
-磁碟機與 HIC::
+磁碟機::
 +
 --
 每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：
 
+* NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。
+* 含擴充櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過420個NL-SAS磁碟機插槽與7個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、7個DE460C磁碟櫃或8個DE212C磁碟櫃、或5個DE460C磁碟櫃加上2個DE212磁碟櫃。
+* 含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、 1 個 DE460C 機櫃加上 1 個 DE224C 機櫃加上 1 個 DE212C 機櫃、 4 個 DE224C 機櫃或 8 個 DE212C 機櫃
+
+
+
+NOTE: 對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。
+
+--
+介面::
++
+--
+可搭配下列介面使用：
+
+* 25GB iSCSI
+* 32GB NVMe /光纖通道
+* 32GB SCSI /光纖通道
+* 100GB iSER / IB
+* 100GB SRP / IB
+* 100GB NVMe / IB
+* 100GB NVMe / RoCE
+* 200GB iSER / IB
+* 200GB NVMe / IB
+* 200GB NVMe / RoCE
+
+
+--
+
+
+--
+.EF600C機型
+--
+機架尺寸::
++
+--
+2U24（2個機架單元；24個磁碟機）
+
+image:../media/ef570_front.gif["EF600 2U"]
+
+--
+磁碟機::
++
+--
+每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：
+
+* 支援 30TB 和 60TB 容量的 NVMe SSD 磁碟機
 * NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。
 * 含擴充櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過420個NL-SAS磁碟機插槽與7個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、7個DE460C磁碟櫃或8個DE212C磁碟櫃、或5個DE460C磁碟櫃加上2個DE212磁碟櫃。
 * 含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、 1 個 DE460C 機櫃加上 1 個 DE224C 機櫃加上 1 個 DE212C 機櫃、 4 個 DE224C 機櫃或 8 個 DE212C 機櫃
@@ -306,6 +396,7 @@ image::../media/e4000_4u_front.png[E4000 4U]
 * 1 GB 或 10GBASE-T iSCSI
 * 1GB ， 10Gb 或 25GB iSCSI
 * 8GB ， 16GB 或 32GB FC
+* 12gb SAS
 
 
 --

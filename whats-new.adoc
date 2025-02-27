@@ -16,6 +16,28 @@ summary: 更新功能。SANtricity
 
 
 
+== 11.90.1 版的新功能
+
+[cols="35h,~"]
+|===
+| 新功能 | 說明 
+
+
+ a| 
+全新儲存系統機型– EF300C 和 EF600C
+ a| 
+此版本推出 EF300C 和 EF600C 所有 Flash NVMe 儲存系統。EF300C 和 EF600C 都是現有 EF300 和 EF600 儲存系統的高容量 Flash 版本。EF300C 和 EF600C 支援 30TB 和 60TB 大小的高容量 NVMe SSD 磁碟機。
+
+
+
+ a| 
+EF4000 支援 12Gb SAS 介面
+ a| 
+E4000 控制器現在支援 12Gb SAS 主機介面卡。
+
+|===
+
+
 == 11.90 版的新功能
 
 [cols="35h,~"]

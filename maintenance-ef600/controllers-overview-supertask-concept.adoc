@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/controllers-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 controller, replace EF600 controller, 
+keywords: replace controller, EF300, EF600, EF300C, EF600C 
 summary: EF300或EF600控制器更換的要求與考量 
 ---
 = EF300或EF600控制器更換需求
@@ -11,7 +11,7 @@ summary: EF300或EF600控制器更換的要求與考量
 
 
 [role="lead"]
-更換EF300或EF600控制器之前、請先檢閱相關要求與考量事項。
+更換 EF300 之前，請先選擇 EF600 。EF300C 或 EF600C 控制器，請檢閱需求與考量事項。
 
 控制器由主機板、韌體和軟體組成。它控制磁碟機並執行SANtricity 「支援系統管理程式」功能。
 

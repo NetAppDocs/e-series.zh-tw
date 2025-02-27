@@ -28,7 +28,7 @@ summary: 將主機直接連接至控制器或使用交換器。
 
 
  a| 
-EF300、EF600
+EF300 、 EF600 、 EF300C 、 EF600C
  a| 
 DE212C、DE224C、DE460
 

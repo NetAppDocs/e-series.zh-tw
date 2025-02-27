@@ -39,7 +39,7 @@ Express方法包括下列步驟、如中所述 link:understand-vmware-workflow-c
 * https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。
 * http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] -可讓您搜尋符合NetApp所指定標準與要求的NetApp產品與元件組態。
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789pdf.pdf["《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.X整合》"^] -- 提供 iSCSI 與 VMware 整合的技術詳細資料。
-* https://configmax.vmware.com/home["VMware組態上限"^] --說明如何設定虛擬與實體儲存設備、使其保持在ESX/ESXi所支援的最大容量範圍內。
+* https://configmax.broadcom.com/home["VMware組態上限"^]-- 說明如何設定虛擬與實體儲存設備，使其保持在 ESX/ESXi 支援的最大容量範圍內。
 * https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe儲存設備的需求與限制"^]。
 * https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere文件"^] 提供ESXi vCenter Server文件。
 

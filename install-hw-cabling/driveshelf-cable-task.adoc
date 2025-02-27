@@ -54,7 +54,7 @@ image::../media/60_cabling.png[控制器機櫃和60個磁碟機機機櫃]
 
 == EF300和EF600的纜線連接
 
-以下資訊適用於將EF300或EF600控制器機櫃纜線連接至DE212C、DE224C或DE460磁碟機櫃。
+以下資訊適用於將 EF300 ， EF600 ， EF300C 或 EF600C 控制器機櫃連接至 DE212C ， DE224C 或 DE460 磁碟機機機櫃。
 
 .開始之前
 在連接EF300或EF600纜線之前、請確定韌體已更新至最新版本。若要更新韌體、請依照中的指示進行 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"^]。

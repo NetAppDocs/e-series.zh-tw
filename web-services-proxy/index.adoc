@@ -30,7 +30,6 @@ summary: 概述《Resch®Web Services Proxy》、《Web Services API》、《RES
 == 如需詳細資訊、請參閱
 
 * Unified Manager：Proxy安裝包含SANtricity 以Web為基礎的支援功能、可讓您存取較新的E系列和EF系列儲存系統。如需詳細資訊、請參閱Unified Manager線上說明、您可從其使用者介面或取得 https://docs.netapp.com/us-en/e-series-santricity/index.html["軟體文件網站SANtricity"^]。
-* GitHub儲存庫- GitHub包含一個儲存庫、可用來收集和組織範例指令碼、說明如何使用NetApp SANtricity 的《Web服務API》。若要存取儲存庫、請參閱 https://github.com/NetApp/webservices-samples["NetApp Webservices範例"^]。
 * 代表狀態傳輸（REST）：Web服務是一種RESTful API、可讓您存取幾乎所有SANtricity 的功能、因此您應該熟悉REST概念。如需詳細資訊、請參閱 http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm["架構樣式與網路型軟體架構設計"^]。
 * JavaScript物件標記法（Json）：由於Web服務中的資料是透過Json編碼、因此您應該熟悉Json程式設計概念。如需詳細資訊、請參閱 http://www.json.org["JSON.簡介"^]。
 

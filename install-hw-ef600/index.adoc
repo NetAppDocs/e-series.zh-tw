@@ -1,10 +1,10 @@
 ---
 permalink: install-hw-ef600/index.html 
 sidebar: sidebar 
-keywords: EF300, EF600, installation 
+keywords: EF300, EF600, EF300C, EF600C installation 
 summary: 安裝並設定EF300和EF600陣列。 
 ---
-= 安裝並設定EF300和EF600儲存系統
+= 安裝及設定 EF300 ， EF600 ， EF300C 及 EF600C 儲存系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

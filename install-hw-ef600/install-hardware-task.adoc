@@ -1,7 +1,7 @@
 ---
 permalink: install-hw-ef600/install-hardware-task.html 
 sidebar: sidebar 
-keywords: EF300, EF600, installation, 
+keywords: EF300, EF600, EF300C, EF600C installation, 
 summary: 在雙柱機架或NetApp系統機櫃中安裝EF300或EF600。 
 ---
 = 安裝硬體
@@ -11,7 +11,7 @@ summary: 在雙柱機架或NetApp系統機櫃中安裝EF300或EF600。
 
 
 [role="lead"]
-您可以在雙柱機架或NetApp系統機櫃中安裝EF300或EF600儲存系統。
+您可以在雙柱機架或 NetApp 系統機櫃中安裝 EF300 ， EF600 ， EF300C 或 EF600C 儲存系統。
 
 .開始之前
 請務必執行下列動作：

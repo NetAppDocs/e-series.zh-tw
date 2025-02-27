@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/batteries-overview-requirements-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail 
+keywords: replace battery,battery fail, EF300C, EF600C, EF300, EF600 
 summary: EF300或EF600電池更換的要求與考量。 
 ---
 = EF300或EF600電池更換需求
@@ -12,7 +12,7 @@ summary: EF300或EF600電池更換的要求與考量。
 
 
 [role="lead"]
-更換EF300或EF600電池之前、請先檢閱相關要求與考量事項。
+在您更換 EF300 ， EF600 ， EF300C 或 EF600C 電池之前，請先檢閱需求與考量事項。
 
 控制器隨附電池、當AC電源故障時、會保留快取的資料。
 

@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hics-upgrade-intro.html 
 sidebar: sidebar 
-keywords: upgrade EF300 HIC, upgrade EF600 HIC, increase host ports, change host protocol 
+keywords: EF600, EF300, EF300C, EF600C, upgrade HIC, upgrade HIC, increase host ports, change host protocol 
 summary: 您可以升級主機介面卡（HIC）來增加主機連接埠數量或變更主機傳輸協定。 
 ---
 = 升級EF300或EF600主機介面卡（HIC）
@@ -16,7 +16,7 @@ summary: 您可以升級主機介面卡（HIC）來增加主機連接埠數量�
 
 .關於這項工作
 * 升級HIC時、您必須關閉儲存陣列電源、升級HIC並重新接上電源。
-* 在EF300或EF600控制器中升級HIC時、請重複所有步驟以移除第二個控制器、升級第二個控制器的HIC、然後重新安裝第二個控制器、再將電源重新套用至控制器機櫃。
+* 在 EF300 ， EF600 ， EF300C 或 EF600C 控制器中升級 HIC 時，請重複所有步驟，移除第二個控制器，升級第二個控制器的 HIC ，然後重新安裝第二個控制器，再將電源重新套用至控制器機櫃。
 
 
 .開始之前

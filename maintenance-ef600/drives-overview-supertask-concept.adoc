@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 drive, replace EF600 drive, 
+keywords: EF300, EF600, EF600C, EF300C, replace drive, 
 summary: 在更換EF300或EF600中的磁碟機之前、請先檢閱相關要求和考量事項。 
 ---
 = EF300或EF600磁碟機更換需求
@@ -11,7 +11,7 @@ summary: 在更換EF300或EF600中的磁碟機之前、請先檢閱相關要求�
 
 
 [role="lead"]
-在更換EF300或EF600陣列中的磁碟機之前、請先檢閱相關要求和考量事項。
+在 EF300 ， EF600 ， EF300C 或 EF600C 陣列中更換磁碟機之前，請先檢閱需求與考量事項。
 
 
 CAUTION: 請注意、儲存陣列中的磁碟機很脆弱；不當的磁碟機處理是導致磁碟機故障的主要原因。

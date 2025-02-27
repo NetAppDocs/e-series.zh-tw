@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/sas-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 SAS expansion card, replacing SAS card, drive tray expansion, expansion card 
+keywords: replace SAS expansion card, replacing SAS card, drive tray expansion, expansion card, EF300, EF300C, EF600, EF600C 
 summary: 在更換EF300 SAS擴充卡之前、請先檢閱相關要求和考量事項。 
 ---
 = 更換EF300和EF600 SAS擴充卡的需求
@@ -11,7 +11,7 @@ summary: 在更換EF300 SAS擴充卡之前、請先檢閱相關要求和考量�
 
 
 [role="lead"]
-如果您打算將SAS擴充卡新增至EF300或EF600、請檢閱下列需求。
+如果您打算將 SAS 擴充卡新增至 EF300 ， EF600 ， EF300C 或 EF600C ，請檢閱下列需求。
 
 * 您必須遵循 link:../install-hw-ef600/index.html["安裝並設定EF300和EF600儲存系統"] 以設定控制器。
 * 您必須將韌體更新至最新版本。若要更新韌體、請遵循中的指示 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"]。

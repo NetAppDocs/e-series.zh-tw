@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/drives-replace-EF300-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 drive, replace EF600 drive, drive failure 
+keywords: EF300, EF300C, replace drive, drive failure 
 summary: 更換EF300陣列中的磁碟機。 
 ---
 = 更換EF300陣列中的磁碟機
@@ -11,9 +11,9 @@ summary: 更換EF300陣列中的磁碟機。
 
 
 [role="lead"]
-您可以更換EF300陣列中的磁碟機。
+您可以更換 EF300 或 EF300C 陣列中的磁碟機。
 
-EF300支援SAS擴充、提供24個磁碟機和60個磁碟機磁碟櫃。您所遵循的程序取決於您是否擁有24個磁碟機櫃或60個磁碟機櫃：
+EF300 和 EF300C 支援 SAS 擴充，提供 24 個磁碟機和 60 個磁碟機櫃。您所遵循的程序取決於您是否擁有24個磁碟機櫃或60個磁碟機櫃：
 
 * <<更換EF300（24個磁碟機櫃）中的磁碟機>>
 * <<更換EF300（60個磁碟機櫃）中的磁碟機>>

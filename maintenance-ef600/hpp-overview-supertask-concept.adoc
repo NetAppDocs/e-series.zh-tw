@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-overview-supertask-concept.html 
 sidebar: sidebar 
-keywords: convert EF300 host protocol, convert EF600 host protocol, 
+keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: 在轉換EF300或EF600主機傳輸協定之前、請先檢閱相關要求和考量事項。 
 ---
 = EF300或EF600主機傳輸協定轉換需求
@@ -11,7 +11,7 @@ summary: 在轉換EF300或EF600主機傳輸協定之前、請先檢閱相關要�
 
 
 [role="lead"]
-在轉換EF300或EF600陣列的主機傳輸協定之前、請先檢閱下列需求。
+在轉換 EF300 ， EF600 ， EF300C 或 EF600C 陣列的主機傳輸協定之前，請先檢閱下列需求。
 
 * 您已排定此程序的停機維護時間。
 * 執行轉換時、您必須停止主機I/O作業。在成功完成轉換之前、您無法存取儲存陣列上的資料。

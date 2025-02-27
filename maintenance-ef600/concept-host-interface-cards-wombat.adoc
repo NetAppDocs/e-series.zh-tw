@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/concept-host-interface-cards-wombat.html 
 sidebar: sidebar 
-keywords: host, interface, card, hic, install, controller, canister, ef600, port 
+keywords: host, interface, card, hic, install, controller, canister, ef600, EF300, EF300C, EF600C, port 
 summary: 主機介面卡（HIC）必須安裝在控制器容器內。EF600控制器包含選用HIC上的主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。 
 ---
 = 主機介面卡

@@ -213,8 +213,3 @@ NOTE: 目前、Web Services API不支援PUT或修補程式。您可以改用POST
 否
 
 |===
-
-
-== 範例指令碼
-
-GitHub包含一個儲存庫、可用來收集和組織範例指令碼、說明如何使用NetApp SANtricity Web Services API。若要存取儲存庫、請參閱 https://github.com/NetApp/webservices-samples["NetApp Webservices範例"^]。

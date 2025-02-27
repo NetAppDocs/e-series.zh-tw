@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/batteries-replace-supertask-task.html 
 sidebar: sidebar 
-keywords: replace EF300 battery, replace EF600 battery, EF300 battery fail, EF600 battery fail 
+keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600 
 summary: 更換EF300或EF600陣列中的電池。 
 ---
 = 更換EF300或EF600電池
@@ -12,7 +12,7 @@ summary: 更換EF300或EF600陣列中的電池。
 
 
 [role="lead"]
-您可以更換EF300或EF600儲存系統中的電池。
+您可以在 EF300 ， EF600 ， EF300C 或 EF600C 儲存系統中更換電池。
 
 .關於這項工作
 每個控制器機箱都有一個電池、可在AC電源故障時保留快取的資料。如果「恢復大師」SANtricity 報告「電池故障」狀態或「需要更換電池」狀態、您必須更換受影響的電池。

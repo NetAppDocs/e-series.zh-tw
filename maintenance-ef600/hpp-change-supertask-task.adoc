@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/hpp-change-supertask-task.html 
 sidebar: sidebar 
-keywords: host protocol change, EF300 host protocol, EF600 host protocol 
+keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: 變更EF300或EF600陣列的主機連接埠傳輸協定。 
 ---
 = 變更EF300或EF600的主機傳輸協定
@@ -12,7 +12,7 @@ summary: 變更EF300或EF600陣列的主機連接埠傳輸協定。
 
 
 [role="lead"]
-請遵循此程序、變更EF300或EF600陣列中的主機連接埠傳輸協定。此程序僅適用於使用Infiniband（IB）或Fibre Channel（FC）的主機介面卡（HIC）。
+請依照此程序變更 EF300 ， EF600 ， EF300C 或 EF600C 陣列中的主機連接埠通訊協定。此程序僅適用於使用Infiniband（IB）或Fibre Channel（FC）的主機介面卡（HIC）。
 
 
 

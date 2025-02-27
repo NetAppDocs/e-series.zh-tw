@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/fans-overview-requirements-replacing2-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 fan, replace EF600 fan, 
+keywords: EF300, EF600, EF300C, EF600C replace fan, 
 summary: 在更換EF300或EF600風扇之前、請先檢閱相關要求和考量事項。 
 ---
 = EF300或EF600風扇更換需求
@@ -11,7 +11,7 @@ summary: 在更換EF300或EF600風扇之前、請先檢閱相關要求和考量�
 
 
 [role="lead"]
-在更換EF300或EF600陣列中故障的風扇之前、請先檢閱下列需求。
+在 EF300 ， EF600 ， EF300C 或 EF600C 陣列中更換故障風扇之前，請先檢閱下列需求。
 
 * 您的控制器機櫃或磁碟機櫃機型支援更換風扇。
 * 您有一個ESD腕帶、或是已採取其他防靜電預防措施。

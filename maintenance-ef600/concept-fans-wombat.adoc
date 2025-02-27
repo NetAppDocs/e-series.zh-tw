@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/concept-fans-wombat.html 
 sidebar: sidebar 
-keywords: ef300, ef600, controller, shelf, drive, fan, cooling 
+keywords: ef300, ef600, EF300C, EF600C, controller, shelf, drive, fan, cooling 
 summary: 每個EF300或EF600控制器機櫃或磁碟機櫃均包含五個風扇、可用來冷卻控制器。 
 ---
 = 風扇

@@ -58,7 +58,7 @@ image:../media/de460c.gif["DE460C"]
 
 * 2u24（2個機架單元；24個磁碟機）
 * 2.5吋NVMe SSD磁碟機
-* EF300和EF600控制器
+* EF300、EF600。EF300C 和 EF600C 控制器
 
  a| 
 image:../media/ne224.gif["NE224"]

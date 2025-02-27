@@ -1,7 +1,7 @@
 ---
 permalink: maintenance-ef600/power-overview-requirements2-concept.html 
 sidebar: sidebar 
-keywords: replace EF300 power supply, replace EF600 power supply, 
+keywords: EF300, EF600, EF300C, EF600C, replace EF600 power supply, 
 summary: 在更換EF300或EF600電源供應器之前、請先檢閱相關要求和考量事項。 
 ---
 = EF300或EF600電源供應器更換需求
@@ -11,7 +11,7 @@ summary: 在更換EF300或EF600電源供應器之前、請先檢閱相關要求�
 
 
 [role="lead"]
-在更換EF300或EF600陣列中的電源供應器之前、請先檢閱下列需求。
+在 EF300 ， EF600 ， EF300C 或 EF600C 陣列中更換電源供應器之前，請先檢閱下列需求。
 
 * 您必須擁有控制器櫃或磁碟機櫃模型所支援的替換電源供應器。
 
