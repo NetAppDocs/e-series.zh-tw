@@ -1727,7 +1727,6 @@
   <block id="704d55ba12a7005aa6ef993868a8f431" category="inline-link">NetApp授權啟動：儲存陣列優質功能啟動</block>
   <block id="c9783ba2a6386748b17bcde068aceac8" category="list-text">前往<block ref="b319eaa9e8d4a46d5e744f98248ee14e" category="inline-link-rx"></block>，然後輸入取得功能套件所需的資訊。</block>
   <block id="8fc48164adaa0cce79cc215fef244e00" category="list-text">機箱序號</block>
-  <block id="8de24a1721d0c0fb0c39756c86d1e5da" category="list-text">功能啟用識別碼附註：Premium功能啟動網站包含「Premium功能啟動說明」的連結。 請勿嘗試將這些指示用於此程序。</block>
   <block id="52cf912da34e2d24fbe7abf9f72ed7a1" category="list-text">選擇是在電子郵件中接收功能套件的金鑰檔、還是直接從網站下載。</block>
   <block id="31a599b44c93cb34f76edd48160898be" category="section-title">步驟2：停止主機I/O</block>
   <block id="c09719b9c164ac95eda10fbee1bb4658" category="paragraph">在轉換主機連接埠的傳輸協定之前、請先停止主機的所有I/O作業。</block>
@@ -2036,7 +2035,6 @@
   <block id="8c4bd0c1a96bcaf797782a18b54daf7a" category="list-text"><block ref="8640eb68a955f6f5591f0dd1a3bd30e7" category="inline-xref-macro-rx"></block></block>
   <block id="df8c85065effb5093bcc1889495b92f7" category="section-title">內部金鑰管理</block>
   <block id="8f0439a6f042ce457ec5d5faf91c28ea" category="paragraph">當所有磁碟機都鎖定時、請遵循下列步驟進行內部金鑰管理。</block>
-  <block id="e55e81df495444ffb2639e3a7f9ef86e" category="admonition">如果您不使用管理連接埠1、請嘗試使用其他預設IP位址：+ Ctrl a連接埠1：192．168．128．101 + Ctrl a連接埠2：192．168．128．102 + Ctrl B連接埠1：192．192．168．129．101 + Ctrl B連接埠2：192．168．129．102</block>
   <block id="a5d4d11eb9b0d2db382d91e1ab585594" category="inline-link-macro">準備升級控制器</block>
   <block id="02626834a548b28e809c79cc3246fbf9" category="paragraph">控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。</block>
   <block id="370c6dde461cc5827c330619a80ca24b" category="section-title">外部金鑰管理</block>
@@ -3362,7 +3360,6 @@
   <block id="fdf816b9ac642abd689fd8ace0784e27" category="list-text">*磁碟機韌體*-請參閱 <block ref="44cf75faaf9d0b93b6ab0672c27e324d" category="inline-link-macro-rx"></block> 以取得個別指示。</block>
   <block id="3165318c5aca56aaa4c1430b7938435e" category="list-text">*多重路徑/容錯移轉驅動程式*-在升級程序中、主機的多重路徑/容錯移轉驅動程式可能也需要升級、以便主機能夠正確地與控制器互動。如果執行Microsoft Windows以外作業系統的主機與您的儲存系統有I/O連線、請升級這些主機的多重路徑驅動程式。如需相容性資訊、請參閱<block ref="a3e2ed1651134ba8d782e5dc8287cbc1" category="inline-link-rx"></block>。如需升級指示、請參閱 <block ref="584ba4e1f9de8bb64deb26d3ff20be27" category="inline-link-macro-rx"></block>、 <block ref="2cd2251585c7977d833c133e2d86f6ab" category="inline-link-macro-rx"></block>或 <block ref="52cf6d66e3232b062c766727a3dc70bb" category="inline-link-macro-rx"></block>。</block>
   <block id="b401d179f2d862f657dc768b9b0da629" category="inline-link-macro">Web服務代理概述SANtricity</block>
-  <block id="a573c59164533ab1f5f929a3f6fc773a" category="list-text">*《統一化管理程式》*—Unified Manager軟體可管理多個儲存系統、包括E2800、E5700、EF300和EF600機型。SANtricityUnified Manager是SANtricity 《支援Web服務的Proxy》的一部分、這是一部獨立安裝在主機系統上的RESTful API伺服器、可管理數百個全新和舊版NetApp E系列儲存系統。如需詳細資訊、請參閱 <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
   <block id="4ee891d0ff1650fa6825828fa1b6c6d3" category="list-text">* Utilities *（公用程式）-其他管理公用程式需要個別的升級、例如SANtricity ：Windows主機公用程式、SANtricity Linux主機公用程式、SANtricity 以及Windows DSM。如需這些公用程式的詳細資訊、請參閱 <block ref="584ba4e1f9de8bb64deb26d3ff20be27" category="inline-link-macro-rx"></block>、 <block ref="2cd2251585c7977d833c133e2d86f6ab" category="inline-link-macro-rx"></block>或 <block ref="52cf6d66e3232b062c766727a3dc70bb" category="inline-link-macro-rx"></block>。</block>
   <block id="076ca2f85d1676972e577d65bc826cc1" category="list-text">*舊版系統*-如果您的儲存系統屬於包含舊版儲存系統的儲存網路、您可能需要使用舊SANtricity 版的《不支援儲存管理程式企業管理》（EMW）、才能提供所有儲存系統的企業檢視。在此案例中、請查看SANtricity 是否有更新版本的《支援》更新版本的《支援》。</block>
   <block id="06746f611c63e10213aac3b7dcbd69bd" category="section-title">雙控制器與I/O處理</block>
@@ -4346,9 +4343,6 @@
   <block id="ba00ed6645f6f61df5121b8522a892a6" category="paragraph">您可以將主機直接連接至控制器（直接附加拓撲）、或使用交換器（交換器拓撲）將主機連接至控制器。</block>
   <block id="adfce61987579370b99617a05cdb796d" category="section-title">直接附加拓撲的佈線</block>
   <block id="5b4c9deaadbde82584c00c9a4b53caa3" category="paragraph">直接附加的拓撲會將主機介面卡直接連接至儲存系統中的控制器。</block>
-  <block id="c06fc8a512ed8b80d194c0da0a6684c3" category="paragraph">下圖顯示連線範例。若要確保最高效能、請使用所有可用的主機介面卡連接埠。</block>
-  <block id="860c8d8991038a1aa365aeb7a602e700" category="image-title">兩個主機和兩個控制器</block>
-  <block id="5657524a813a7a96374170f5c9d4e577" category="paragraph">*（1）*_將每個主機介面卡連接埠直接連接至控制器上的主機連接埠。_</block>
   <block id="0b26276cf7e580bcffb9356cffc5beb3" category="section-title">交換器拓撲的佈線</block>
   <block id="ff3742d36338fb61499d562cd3e0228f" category="paragraph">交換器拓撲使用交換器將主機連接至儲存系統中的控制器。交換器必須支援主機與控制器之間使用的連線類型。</block>
   <block id="2d057e5ead6a8fb0ff410d15d34dcdb3" category="paragraph">下圖顯示連線範例。對於提供資源配置功能的交換器、您應該隔離每個啟動器和目標配對。</block>
@@ -8141,15 +8135,7 @@
   <block id="cfbb469ee896c6d8312eac3cd3f10e34" category="paragraph">新換用的控制器將鎖定七段顯示代碼* L5*。當沒有磁碟機可以執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。</block>
   <block id="3ed7bb77bb34146d7096e92088802232" category="list-text">在儲存陣列與SANtricity 該用戶端的筆記型電腦或PC之間建立直接的私有乙太網路連線。若要這麼做：</block>
   <block id="c305cf92456cd4decb6725b96d759b94" category="list-text">使用RJ45乙太網路纜線將筆記型電腦連接至控制器A的管理連接埠1</block>
-  <block id="e770dd108a378a501b36f5bbae01f82a" category="list-text">若要完成連線、您可能需要將筆記型電腦指派給與控制器A相同子網路的IP位址控制器鎖定期間、控制器A預設為管理位址192．168．128.101。因此您可以將筆記型電腦指派至子網路、例如「192．168．128．201」。</block>
-  <block id="9d74567b7f3c3f33bbc54f827296074f" category="list-text">使用IP位址192.168.1.128.101加上使用者名稱* admin*和密碼空白、使用匯入內部金鑰<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block> CLI命令、並儲存安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
   <block id="fb86a1495e405ddd56a3a1c076f876aa" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入內部金鑰：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
-  <block id="7b9f327d01db82c07c36d41b777ae840" category="admonition">您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立新的憑證簽署要求（CSR）、然後從外部金鑰管理伺服器匯入伺服器憑證。</block>
-  <block id="4bbb422ffd22264952cbb6eeeda41faa" category="list-text">使用預設IP位址192．168．128．101、使用者名稱* admin *和密碼空白、使用設定外部金鑰管理伺服器<block ref="15b894b6e4c06871df1e10de89d60168" prefix=" " category="inline-code"></block> CLI命令並提供<block ref="836c673259e51101a01e755a34f97359" prefix=" " category="inline-code"></block> 和<block ref="83fdf6a03b86c7990e1460cdc7d81dd1" prefix=" " category="inline-code"></block> 儲存自 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊、請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
-  <block id="781b6e9f0e82576c9634ecfe8a61f455" category="paragraph">或者、您也可以透過REST API透過下列呼叫來設定外部金鑰管理伺服器：<block ref="03e0d1fcf5a43cf1714fcbfa1f856800" prefix=" " category="inline-code"></block></block>
-  <block id="157bc9956975fd17471f6bdcb9f966ee" category="list-text">使用預設IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白、然後使用匯入憑證<block ref="872d2d44d951f842ae2823eb6febd102" prefix=" " category="inline-code"></block> CLI命令：一次用於用戶端憑證、第二次用於伺服器憑證。</block>
-  <block id="ebf132debe07a5cd0bc888dd5078033d" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入Keyserver憑證：<block ref="640677ffae20a0401b505d0de933e391" prefix=" " category="inline-code"></block></block>
-  <block id="bc2848514b39d7125ea7f1e0192ff80f" category="list-text">使用儲存自的安全金鑰 <block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。</block>
   <block id="4097f6992eb560447325a703f31e2270" category="paragraph">或者、您也可以透過REST API透過下列呼叫匯入外部金鑰：<block ref="758036d11568492285b8504fb55d4d9f" prefix=" " category="inline-code"></block></block>
   <block id="dfcfc178d6edc54d8706c59b747948d5" category="list-text">安裝<block ref="3b13fc847651d5be5c89aeab4722c099" prefix=" " category="inline-code"></block> 使用作業系統的套件管理命令來封裝。</block>
   <block id="79c617afe97932f20f52d1217736d403" category="list-text">建立名為的systemd服務單元檔案<block ref="6bddfc9da80e7ef0195a324214877004" prefix=" " category="inline-code"></block>。</block>
@@ -8202,7 +8188,6 @@
   <block id="da4eb5c5c70275ba4c87430e9eb2caa1" category="paragraph">RO（舊陣列的舊版）</block>
   <block id="520ae3e14dc7dcddbce514f73ae5f9c9" category="doc">安裝或升級Web Services Proxy檔案</block>
   <block id="f036aa96cb85f83dc2dad71a70ca9ab9" category="paragraph">安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。您也可以依照下列指示升級Proxy。</block>
-  <block id="9ab5a43912057c3f252ae0aa5ffafa08" category="paragraph">每個控制器只需一個主機介面卡（HIC）、即可支援下列磁碟機：</block>
   <block id="d7873c5a31e9fb583fb911435316e255" category="list-text">NVMe SSD磁碟機：控制器機櫃最多24個NVMe SSD磁碟機。</block>
   <block id="99017918290ad98fceaa8544139404ea" category="list-text">含擴充磁碟櫃的NL-SAS磁碟機：DE212C與DE460C磁碟櫃的任何混合、不得超過240個NL-SAS磁碟機插槽與4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、4個DE460C磁碟櫃或8個DE212C磁碟櫃、或2個DE460C磁碟櫃加上2個DE212磁碟櫃。</block>
   <block id="f7bdca5a10b1a8a32a0410aa51cc3658" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、不得超過96個SAS SSD磁碟機插槽和4個擴充磁碟櫃、除非僅使用DE212C磁碟櫃、否則允許8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
@@ -8317,7 +8302,6 @@
   <block id="a5ff5d8396bab4e857d616fc9fa06b26" category="list-title">您需要的一切</block>
   <block id="75014b540a900a20abf83a06a6f23acc" category="paragraph">請務必執行下列動作：</block>
   <block id="d51a879a95a1f1b04438a7e672254378" category="list-text">Microsoft Edge （ 90 及更新版本）</block>
-  <block id="dae6baa86f1f6e4135f2552862c8b191" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、 1 個 DE460C 機櫃加上 1 個 DE224C 機櫃加上 1 個 DE212C 機櫃、 4 個 DE224C 機櫃或 8 個 DE212C 機櫃</block>
   <block id="70a5ac954926edc08c5f6fc4c248a4a6" category="section-title">SANtricity 11.7 版</block>
   <block id="f7b52729af7c7aa177e09390f0afd194" category="list-text"><block ref="f7b52729af7c7aa177e09390f0afd194" category="inline-link-rx"></block></block>
   <block id="797222f106ff986b71e9f972dd342bc3" category="list-text"><block ref="797222f106ff986b71e9f972dd342bc3" category="inline-link-rx"></block></block>
@@ -8328,7 +8312,6 @@
   <block id="2000cb1e7de82e823717ad308e491d64" category="list-text"><block ref="2000cb1e7de82e823717ad308e491d64" category="inline-link-macro-rx"></block></block>
   <block id="872316f2e40e5f7164acd94c4ac49c16" category="list-text"><block ref="872316f2e40e5f7164acd94c4ac49c16" category="inline-link-macro-rx"></block></block>
   <block id="7cac9f30e199e7ecb1c7454e8193ea25" category="inline-link">SANtricity System Manager 11.8x 線上說明</block>
-  <block id="f96ffc1296cfb22e1010ea2a5c153c7d" category="list-text"><block ref="f96ffc1296cfb22e1010ea2a5c153c7d" category="inline-link-rx"></block></block>
   <block id="e310bf04394efde500bf9f4c81acb37c" category="inline-link">適用於11.7x的系統管理程式線上說明SANtricity</block>
   <block id="57ceabd1bd2acd18e97acd2a27a09688" category="list-text"><block ref="57ceabd1bd2acd18e97acd2a27a09688" category="inline-link-rx"></block></block>
   <block id="cf7b3313bd605518202463f0e3fe1b45" category="inline-link">SANtricity 系統管理員 11.6x 線上說明</block>
@@ -8389,7 +8372,6 @@
   <block id="d7ffc2406b2b1f56267e389dcea17d16" category="paragraph">現在已停用「案例建立」旗標、以處理不需採取行動的名義和最高溫度超出事件。</block>
   <block id="746cf185d12f5492055c99b5dda9119d" category="paragraph">已啟用 0x1209 MEL 事件的優先案例建立旗標</block>
   <block id="09c222edb73c49afd2e9ec9f75a2cd53" category="paragraph">現已為建立案例建立旗標<block ref="768a075a6d4dc734e5397ee50957d8d8" prefix=" " category="inline-code"></block> MEL 事件。</block>
-  <block id="11f16f90266e9e59b05bab98913c351d" category="admonition">對於 SANtricity OS 11.80GA 及更新版本、 E2800 、 EF280 、 E5700 、 EF570 、 EF600 、 和 EF300 陣列。</block>
   <block id="fad6f3761e69d291ccde3b2351a1c961" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
@@ -8424,10 +8406,6 @@
   <block id="e536634a787591dd23dbc618cd207ba6" category="paragraph">Web服務Proxy</block>
   <block id="b2fe36d045fcd0262e37faca678d17c8" category="paragraph">Web 服務 Proxy 已更新至 6.1 版、以與 E 系列 11.80.1 版相容。</block>
   <block id="c89b00da7202a9a153f3761208e9c04b" category="inline-link">TR-4789 ：適用於 E 系列 SANtricity iSCSI 的 VMware 組態指南、可與 ESXi 6.x 和 7.x 整合</block>
-  <block id="d94b2476c52b9269fb71e09f2c273b3f" category="paragraph">*範例：*<block ref="55629997c44d8d81fce2f6296c8a341d" prefix=" " category="inline-code"></block></block>
-  <block id="ecac0776d163be45b9926de55b835ec4" category="paragraph">*範例：*<block ref="2c35a6e97cb5b6b552dd737031188e4c" prefix=" " category="inline-code"></block></block>
-  <block id="8afb7a80484f4a0c97a4ca2b1dd4f7a9" category="paragraph">* 範例 A ： *<block ref="5f6fe0e54ad0da0581f1c921b9d0d2ce" prefix=" " category="inline-code"></block></block>
-  <block id="1f30cbc7228c9c1478541fac65592fdd" category="paragraph">* 範例 B ： *<block ref="ce9fafaa9a800b6d0168143573308013" prefix=" " category="inline-code"></block></block>
   <block id="a3cd72e3a5590e7769cb2590ecd015eb" category="section-title">手動建立主機</block>
   <block id="9a3eb00d2d24e24125d1dfecb99a47e1" category="paragraph">建立主機是讓儲存陣列瞭解其連接的主機、以及允許I/O存取磁碟區所需的步驟之一。可以手動建立主機。</block>
   <block id="8cb031b774a78de2f6be4db3058da109" category="list-text">執行作業系統專屬公用程式（可從協力廠商取得）、然後執行 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 將磁碟區名稱與主機儲存陣列名稱建立關聯。</block>
@@ -8581,8 +8559,6 @@
   <block id="e63d49fe11023df550eb4a2b6be77e84" category="paragraph">您可以將控制器機櫃纜線連接至一個或多個12個磁碟機機機櫃。</block>
   <block id="37684c22af451e0c6390d46e13acdfbf" category="image-alt">控制器機櫃和 12 個磁碟機機機櫃</block>
   <block id="632ca86f36c69ae91aee0bebdff85617" category="admonition">EF300 ， EF600 和 E4000 只有一個頻外乙太網路管理連接埠。</block>
-  <block id="f32b2376c6d50ab1fbf88f2ea80d04ed" category="image-alt">兩個主機和兩個控制器的纜線</block>
-  <block id="a9b737d914f22bddefbbd571f66e428a" category="admonition">若為 E4000 ，請連線至主機連接埠 e0a 和 e0b 。</block>
   <block id="d2204ecb6283608047831fca303cc5c1" category="image-alt">兩台主機和兩台交換器纜線</block>
   <block id="23d2013304f308363439909fd006bd4e" category="paragraph">E5724、EF570、E4012、E2812、E2824、 EF280</block>
   <block id="6048408dac10f3e88fd732617c9d0ef5" category="paragraph">E4060 、 E2860 、 E5760</block>
@@ -8655,10 +8631,8 @@
   <block id="7b875024c467f9ec81be78fd845e34d3" category="doc">完整儲存系統設定（ E4012 ）</block>
   <block id="9388df48e85777aba8981c9e79739824" category="inline-image-macro">E4012 直接拓撲，寬度 =1000px</block>
   <block id="9dcbe6d474a3385e1258eeebe1d96cfa" category="paragraph"><block ref="9dcbe6d474a3385e1258eeebe1d96cfa" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="605b7ce026d54baac2f33c8eee6e4572" category="list-text">如果您沒有安裝擴充架，請將每個主機介面卡直接連接到控制器上的主機連接埠 e0a 和 e0b 。</block>
   <block id="e5115f367ddc4b23f2a5a9dce410d220" category="inline-image-macro">E4012 Fabric Topology ， width=1000px</block>
   <block id="fe5422a7f743c4750aa826cb030729eb" category="paragraph"><block ref="fe5422a7f743c4750aa826cb030729eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="643f201ee98aff8102118f79400d167d" category="list-text">將每台交換器直接連接到控制器上的主機連接埠 e0a 和 e0b 。</block>
   <block id="2f998d3759a46f941c16045d05799b20" category="inline-image-macro">E4000 控制器管理連接埠</block>
   <block id="419c5b2edef00ba85d62682d5ff0138c" category="paragraph"><block ref="419c5b2edef00ba85d62682d5ff0138c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f530fae0a98563bf22e6ee7a23163588" category="list-text">請依照瀏覽器的指示繼續進行、然後啟動SANtricity 《系統管理程式》。如果無法建立連線、請確認您沒有從DHCP伺服器接收網路組態。</block>
@@ -8668,7 +8642,6 @@
   <block id="33013c1fc439b91737e74be863a12160" category="doc">完整儲存系統設定（ E4060 ）</block>
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060 Direct Topology ， width=1000px</block>
   <block id="98e6536dfa926f6bd4a1900657c27282" category="paragraph"><block ref="98e6536dfa926f6bd4a1900657c27282" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="895ec80e8ba95818a8a89dfffdc5f62b" category="list-text">將每個主機介面卡直接連接到控制器上的主機連接埠 e0a 和 e0b 。</block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060 Fabric Topology ， width=1000px</block>
   <block id="72c6889744a45c86c32b640c76b2138a" category="paragraph"><block ref="72c6889744a45c86c32b640c76b2138a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="872d1df52706490eb75a1a60b57c747c" category="doc">連接纜線（ E4012 ）</block>
@@ -9387,7 +9360,6 @@
   <block id="eac74c5d17668cb0c341a5f18a69d72f" category="image-alt">Web 服務 API 呼叫圖表</block>
   <block id="95985e1a0f17b754899abdad9230ee3f" category="list-text">* 嵌入式 * ： RESTful API 伺服器內嵌於執行 NetApp SANtricity 11.30 或更新版本之 E2800/EF280 儲存系統的每個控制器，執行 SANtricity 11.40 或更新版本的 E5700/EF570 ，執行 SANtricity 11.60 或更新版本的 EF300 或 EF600 ，以及執行 SANtricity 11.90 或更新版本的 E4000 。無需安裝。</block>
   <block id="72c3d75b0f0ad96704b8c5fc1e8252e5" category="image-alt">Web 服務 Proxy 總覽</block>
-  <block id="d680389e96802ed400beaec0b7cba3a6" category="paragraph">下表說明 E4000 ， EF300 ， EF600 ， E2800/EF280 和 E5700/EF570 控制器的最新 SANtricity OS 版本中的新功能。</block>
   <block id="a9ce161f80e5e22b8b95f7f9ca5f67ed" category="section-title">11.90 版的新功能</block>
   <block id="0d49c2d5fa6db45e427d9c6ca6839ac7" category="paragraph">全新儲存系統機型–E4000</block>
   <block id="f79f2d98fb02cd051399681f3101fbb8" category="paragraph">此版本推出 E4000 低成本儲存系統。E4000 支援每個控制器 12 個和 60 個磁碟機，以及單一主機介面卡（ HIC ）。在初始版本中，支援的主機介面卡包括 iSCSI 和 Fibre Channel 。E4000 儲存系統和其他 E 系列儲存系統可在 Unified Manager 中檢視和管理。</block>
@@ -9435,10 +9407,7 @@
   <block id="8a7e170acd5f2688800925b2b4a8d261" category="list-text"><block ref="537606410175a12a150f722cd71e55fb" category="inline-link-rx"></block>-- 說明如何設定虛擬與實體儲存設備，使其保持在 ESX/ESXi 支援的最大容量範圍內。</block>
   <block id="d088dea69b1345c1729f1c0d46d8053d" category="list-text">* 控制器類型 * - 所有 E4000 ， E2800 ， EF280 ， EF300 ， E5700 ， EF570 ， EF600 ， EF300 ， EF600C 和 EF300C 機型。</block>
   <block id="4720d0b863e013bea6899b10e0989bda" category="list-text">EF600C系列-中階All Flash、All NVMe</block>
-  <block id="b9f7cef2dc8f05405c94daa2cb4fa6ae" category="list-text">EF300C系列-中階All Flash、All NVMe</block>
   <block id="5ca6952c7c9ae5d4b8be61e6386f0222" category="open-title">EF300C機型</block>
-  <block id="595f8cc3ac0c1f12a0f83c3b1dad7c19" category="list-text">支援 30TB 和 60TB 容量的 NVMe SSD 磁碟機</block>
-  <block id="f8a3ff8be0bd051ecc8c3ec31daa0195" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF300 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。*</block>
   <block id="14a2fa7582e1084e3800dde50d8cde03" category="open-title">EF600C機型</block>
   <block id="0db8edfb04068c99ae28246efebb6d4d" category="list-text">12gb SAS</block>
   <block id="689052b8726f00a4623e9ada4d36af90" category="list-text">EF300、EF600。EF300C 和 EF600C 控制器</block>
@@ -9478,4 +9447,52 @@
   <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">此版本推出 EF300C 和 EF600C 所有 Flash NVMe 儲存系統。EF300C 和 EF600C 都是現有 EF300 和 EF600 儲存系統的高容量 Flash 版本。EF300C 和 EF600C 支援 30TB 和 60TB 大小的高容量 NVMe SSD 磁碟機。</block>
   <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">EF4000 支援 12Gb SAS 介面</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000 控制器現在支援 12Gb SAS 主機介面卡。</block>
+  <block id="892b365a22314b2852ca18025911d1be" category="list-text">如有需要，請執行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令以驗證 DSM 套件的安裝。</block>
+  <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">Windows 伺服器上必須安裝 MPIO 功能，才能執行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令。</block>
+  <block id="5f3ab4e439fcf2e4683f430d57044b3a" category="inline-link">SANtricity System Manager 11.9x 線上說明</block>
+  <block id="e51c0393968b3aeac9a8857a4efc2e03" category="list-text"><block ref="e51c0393968b3aeac9a8857a4efc2e03" category="inline-link-rx"></block></block>
+  <block id="25d302c40995ad55c0ad7701261d1310" category="list-text"><block ref="25d302c40995ad55c0ad7701261d1310" category="inline-link-rx"></block></block>
+  <block id="718416bdd384ea0f59ab3278846e588d" category="list-text">EF300C系列：入門級All Flash、All NVMe</block>
+  <block id="2d782dd4047faa435e8a21598b64a8f9" category="admonition">對於 SANtricity OS 11.80GA 及更新版本， E2800 ， EF280 ， E5700 ， EF570 ， EF600/EF600C 和 EF300/EF300C 陣列上的所有 USB 連接埠都會停用。</block>
+  <block id="145e67dd5fe93c51c814f0945a64eadf" category="list-text">支援選購的 SAS 擴充卡，可進行 SAS 擴充機櫃連線。</block>
+  <block id="d0becf074be26c6d978c288daba24ca4" category="list-text">每個控制器支援一個主機介面卡。</block>
+  <block id="346a8501979327018cc0ee11a3d0f1cf" category="list-text">支援 30TB 或 60TB 容量的 NVMe SSD 磁碟機。</block>
+  <block id="af501aae034a5ca029c9b2b363c0f07b" category="list-text">僅相容於動態磁碟集區，不支援舊版 RAID 。</block>
+  <block id="1525ad0ecd8f2d9b577c446044aa629c" category="list-text">不支援擴充機櫃組態。</block>
+  <block id="b571ba80794df2a8fca4803fbae00b53" category="list-text">如果在系統開機期間沒有足夠的未指派磁碟機，則會自動建立單一磁碟池。</block>
+  <block id="538ff1eff5fd361d6f0b2adf6bbf0ed4" category="list-text">含擴充櫃的SAS SSD磁碟機：DE212C、DE224C和DE460C磁碟櫃的任何混合、除非僅使用DE212C磁碟櫃、否則不得超過96個SAS SSD磁碟機插槽和7個擴充磁碟櫃、否則允許使用8個DE212C磁碟櫃。例如、1個DE460C機櫃加上1個DE224C機櫃加上1個DE212C機櫃、或4個DE224C機櫃、或8個DE212C機櫃。</block>
+  <block id="c80c70457709e71cfb1acdcad7d813f2" category="list-text">每個控制器支援兩個主機介面卡。</block>
+  <block id="f68ca88c11d5a4dbeed850ba81248db6" category="list-text">或者，每個控制器支援一個 200GB IB 主機介面卡。</block>
+  <block id="7a26624f7fb7a22e34a299b1cb6df6c1" category="list-text">SAS 擴充僅支援每個控制器具有一個主機介面卡的組態。</block>
+  <block id="f72413fb6640f9198331e4ddac42a1b4" category="paragraph">若要確保最高效能、請使用所有可用的主機介面卡連接埠。</block>
+  <block id="599b309fb45a54aef0306d417582a4ad" category="paragraph-title">一個主機具有兩個 HBA</block>
+  <block id="547b769f7de7cea07ea8e1809f6b68e1" category="paragraph">下圖顯示安裝了兩個 HBA 的一部主機範例。</block>
+  <block id="c2daf72836844565f5f371269f79e909" category="image-alt">一台主機 / 兩個 HBA 和兩個控制器纜線</block>
+  <block id="15c64c1bde30a480800d35c9ca63702a" category="paragraph-title">一台主機含兩個 HBA （替代纜線）</block>
+  <block id="0a189e49a12a656d00d97d420aceb46f" category="image-alt">一個主機 / 兩個 HBA 和兩個控制器纜線（替代纜線）</block>
+  <block id="d31563f45b72dae0e523c10c401bb20d" category="paragraph-title">每個主機有兩個 HBA 的主機</block>
+  <block id="a71c7f479c0caedb0629383f7ac5efeb" category="paragraph">下圖顯示兩部主機的範例，每部主機安裝兩個 HBA 。</block>
+  <block id="de1ab736ca66f10e42336f12175adfbb" category="image-alt">兩個主機 / 四個 HBA 和兩個控制器纜線</block>
+  <block id="9ccebbb91ae504287ed8c313aab6d4fa" category="admonition">控制器左下側（ e1a ， e1b ， e1c 和 e1d ）和右上側（ e0a 和 e0b ）的主機連接埠可用於資料主機纜線。</block>
+  <block id="e6f073e83b4d2d59e85f27a8f76329ce" category="list-text">將每個主機 HBA 連接埠連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。</block>
+  <block id="b445e22177e0e8f24243dcf4b44a6b65" category="inline-link">主機佈線</block>
+  <block id="ef3aa833ef985acdcdf1a9815ed086e2" category="admonition">有關其他佈線圖範例，請參閱<block ref="ac6f2dcd3a5364bce3c8b8b61a1abdb1" category="inline-link-rx"></block>。</block>
+  <block id="b60f0a96b3917b423c024c47968b1e95" category="list-text">將每台交換器直接連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。</block>
+  <block id="26f63d2be4d7f427507e07522f2bc27e" category="list-text">用手旋緊 HIC 上的三個指旋螺絲。</block>
+  <block id="b561bc9ed41a67af832ede09e0c66855" category="list-text">* 使用存取 Volume * 進行頻內管理</block>
+  <block id="d95bb44a7a9bb7de3384211db9209371" category="list-text">E4000 不支援使用 Access Volume 進行頻內管理。</block>
+  <block id="3051db29d3e01aace9b71736b6906cb5" category="paragraph">在升級至 E4000 控制器之前，請先取消對應所有已定義主機和主機叢集的存取磁碟區。</block>
+  <block id="d771f234da984ad1422ec8ffc796cf49" category="paragraph">聯絡客戶支援。</block>
+  <block id="b8166fddcc8a9bc53fb34ba8b6b40c74" category="admonition">如果您不使用管理連接埠 1 ，請嘗試使用其他預設 IP 位址： + Ctrl A 連接埠 1 ： 169.254.128.101 + Ctrl A 連接埠 2 ： 169.254.128.102 + Ctrl B 連接埠 1 ： 169.254.128.101 + Ctrl B 連接埠 2 ： 169.254.128.102</block>
+  <block id="072d06a0d6f5c5e1085353a74332c241" category="list-text">若要完成連線，您可能需要將筆記型電腦指派給控制器 A 所在的同一子網路中的 IP 位址。在控制器鎖定期間，控制器 A 預設為管理位址 169.254.128.101 。因此您可以將筆記型電腦指派給子網路，例如「 169.254.128.201 」。</block>
+  <block id="71bde2f5f345db499289a50db32f08f7" category="list-text">使用 IP 位址 169.254.128.101 （使用者名稱 * admin* 且密碼為空白），使用 CLI 命令匯入內部金鑰，並將安全金鑰<block ref="a6f8118712fc2bcbe8cc4a0df3d41e92" prefix=" " category="inline-code"></block>儲存在中<block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>。如需使用此命令的相關資訊，請參閱<block ref="26a74644087a8cc4596955787ae55f1d" category="inline-link-rx"></block>。</block>
+  <block id="49896b1b2fdda00188714463295ad34c" category="paragraph">* 範例： *<block ref="9dfe80936c8f3826fa0f1b99e4a88b06" prefix=" " category="inline-code"></block></block>
+  <block id="31e27b7c3a23da037324302ef6196af9" category="list-text">使用從儲存的安全金鑰<block ref="370683b601e29cfe5ec51edd9d49be09" category="inline-link-macro-rx"></block>，將外部金鑰匯入 IP 位址 169.254.128.101 ，使用者名稱 * admin* ，密碼保持空白。</block>
+  <block id="c591c8c3a8e8fbcf4843d55451e5745e" category="list-text">（可選）如果需要，可通過執行以下步驟重新鍵入驅動器：</block>
+  <block id="0b9601abb9585618affd66f5798a16b2" category="paragraph">* 範例： *<block ref="b77e774fa880afa2bd8c8ca91507d0ce" prefix=" " category="inline-code"></block></block>
+  <block id="73c97dd158942ee4b15d19f135952d89" category="list-text">* SANtricity Unified Manager* - Unified Manager 是管理多個儲存系統的軟體，包括 E4000 ， E2800 ， E5700 ， EF300 和 EF600 機型。Unified Manager是SANtricity 《支援Web服務的Proxy》的一部分、這是一部獨立安裝在主機系統上的RESTful API伺服器、可管理數百個全新和舊版NetApp E系列儲存系統。如需更多資訊、請參閱 <block ref="c92032fad30345308610610a1d1083db" category="inline-link-macro-rx"></block>。</block>
+  <block id="e5a4c2aea29b525342429c88518c7f73" category="paragraph">下表說明 E4000 ， EF300/EF300C ， EF600/EF600C ， E2800/EF280 及 E5700/EF570 控制器的最新 SANtricity OS 版本新功能。</block>
+  <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">11.90R1 版的新功能</block>
+  <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">此版本推出 EF300C 和 EF600C 所有 Flash NVMe 儲存系統。EF300C 和 EF600C 是現有 EF300 和 EF600 儲存系統的高容量 Flash 版本。EF300C 和 EF600C 支援 30TB 或 60TB 大小的高容量 NVMe SSD 磁碟機。EF300C/EF600C 僅相容於動態磁碟集區使用，不支援傳統 RAID 。</block>
+  <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">支援 E4000 控制器上的 12Gb SAS 介面</block>
 </blocks>

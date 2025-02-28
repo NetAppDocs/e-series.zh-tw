@@ -19,6 +19,9 @@ summary: 瞭解如何將控制器連接至網路、並完成儲存系統的設�
 
 根據您的網路拓撲佈線系統。
 
+
+NOTE: 控制器左下側（ e1a ， e1b ， e1c 和 e1d ）和右上側（ e0a 和 e0b ）的主機連接埠可用於資料主機纜線。
+
 [role="tabbed-block"]
 ====
 .選項1：直接附加拓撲
@@ -27,8 +30,11 @@ summary: 瞭解如何將控制器連接至網路、並完成儲存系統的設�
 
 image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012 直接拓撲，寬度 =1000px"]
 
-. 如果您沒有安裝擴充架，請將每個主機介面卡直接連接到控制器上的主機連接埠 e0a 和 e0b 。
+. 將每個主機 HBA 連接埠連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。
 
+
+
+NOTE: 有關其他佈線圖範例，請參閱 https://docs.netapp.com/us-en/e-series/install-hw-cabling/host-cable-task.html#cabling-for-a-direct-attached-topology["主機佈線"^]。
 
 --
 .選項2：網路拓撲
@@ -38,7 +44,7 @@ image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012 直接拓撲，�
 image:../media/drw_e4012_fabric_topology_ieops-2046.svg["E4012 Fabric Topology ， width=1000px"]
 
 . 將每個主機介面卡直接連接到交換器。
-. 將每台交換器直接連接到控制器上的主機連接埠 e0a 和 e0b 。
+. 將每台交換器直接連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。
 
 
 --

@@ -51,7 +51,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 * *控制器NVSRAM*-控制器NVSRAM-是控制器檔案、可指定控制器的預設設定。有關升級NVSRAM的 說明、請參閱升級控制器的說明。
 * *磁碟機韌體*-請參閱 link:upgrade-drive-firmware-task.html["升級磁碟機韌體"] 以取得個別指示。
 * *多重路徑/容錯移轉驅動程式*-在升級程序中、主機的多重路徑/容錯移轉驅動程式可能也需要升級、以便主機能夠正確地與控制器互動。如果執行Microsoft Windows以外作業系統的主機與您的儲存系統有I/O連線、請升級這些主機的多重路徑驅動程式。如需相容性資訊、請參閱 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^]。如需升級指示、請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
-* *《統一化管理程式》*—Unified Manager軟體可管理多個儲存系統、包括E2800、E5700、EF300和EF600機型。SANtricityUnified Manager是SANtricity 《支援Web服務的Proxy》的一部分、這是一部獨立安裝在主機系統上的RESTful API伺服器、可管理數百個全新和舊版NetApp E系列儲存系統。如需詳細資訊、請參閱 link:../web-services-proxy/index.html["Web服務代理概述SANtricity"]。
+* * SANtricity Unified Manager* - Unified Manager 是管理多個儲存系統的軟體，包括 E4000 ， E2800 ， E5700 ， EF300 和 EF600 機型。Unified Manager是SANtricity 《支援Web服務的Proxy》的一部分、這是一部獨立安裝在主機系統上的RESTful API伺服器、可管理數百個全新和舊版NetApp E系列儲存系統。如需更多資訊、請參閱 link:../web-services-proxy/index.html["Web服務代理概述SANtricity"]。
 * * Utilities *（公用程式）-其他管理公用程式需要個別的升級、例如SANtricity ：Windows主機公用程式、SANtricity Linux主機公用程式、SANtricity 以及Windows DSM。如需這些公用程式的詳細資訊、請參閱 link:../config-linux/index.html["Linux Express組態"]、 link:../config-windows/index.html["Windows Express組態"]或 link:../config-vmware/index.html["VMware Express組態"]。
 * *舊版系統*-如果您的儲存系統屬於包含舊版儲存系統的儲存網路、您可能需要使用舊SANtricity 版的《不支援儲存管理程式企業管理》（EMW）、才能提供所有儲存系統的企業檢視。在此案例中、請查看SANtricity 是否有更新版本的《支援》更新版本的《支援》。
 

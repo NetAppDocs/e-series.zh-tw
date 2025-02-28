@@ -29,18 +29,18 @@ summary: 如果您要升級E2800和E5700控制器、而且已啟用「磁碟機�
 新換用的控制器將鎖定七段顯示代碼* L5*。當沒有磁碟機可以執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。
 
 
-NOTE: 如果您不使用管理連接埠1、請嘗試使用其他預設IP位址：+ Ctrl a連接埠1：192．168．128．101 + Ctrl a連接埠2：192．168．128．102 + Ctrl B連接埠1：192．192．168．129．101 + Ctrl B連接埠2：192．168．129．102
+NOTE: 如果您不使用管理連接埠 1 ，請嘗試使用其他預設 IP 位址： + Ctrl A 連接埠 1 ： 169.254.128.101 + Ctrl A 連接埠 2 ： 169.254.128.102 + Ctrl B 連接埠 1 ： 169.254.128.101 + Ctrl B 連接埠 2 ： 169.254.128.102
 
 .步驟
 . 在儲存陣列與SANtricity 該用戶端的筆記型電腦或PC之間建立直接的私有乙太網路連線。若要這麼做：
 +
 .. 使用RJ45乙太網路纜線將筆記型電腦連接至控制器A的管理連接埠1
-.. 若要完成連線、您可能需要將筆記型電腦指派給與控制器A相同子網路的IP位址控制器鎖定期間、控制器A預設為管理位址192．168．128.101。因此您可以將筆記型電腦指派至子網路、例如「192．168．128．201」。
+.. 若要完成連線，您可能需要將筆記型電腦指派給控制器 A 所在的同一子網路中的 IP 位址。在控制器鎖定期間，控制器 A 預設為管理位址 169.254.128.101 。因此您可以將筆記型電腦指派給子網路，例如「 169.254.128.201 」。
 
 
-. 使用IP位址192.168.1.128.101加上使用者名稱* admin*和密碼空白、使用匯入內部金鑰 `import storageArray securityKey file` CLI命令、並儲存安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/index.html["命令列介面參考"]。
+. 使用 IP 位址 169.254.128.101 （使用者名稱 * admin* 且密碼為空白），使用 CLI 命令匯入內部金鑰，並將安全金鑰 `import storageArray securityKey file`儲存在中link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊，請參閱 https://docs.netapp.com/us-en/e-series-cli/index.html["命令列介面參考"]。
 +
-*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+* 範例： * `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以透過REST API透過下列呼叫匯入內部金鑰： `/storage-systems/{system-id}/security-key/import`
@@ -58,40 +58,25 @@ NOTE: 如果您不使用管理連接埠1、請嘗試使用其他預設IP位址�
 .關於這項工作
 新換用的控制器將鎖定七段顯示代碼* L5*。當沒有磁碟機可以執行自動程式碼同步（ACS）時、就會發生此鎖定。匯入安全金鑰後、ACS會繼續並更新新的控制器。
 
-
-NOTE: 您的儲存陣列必須處於最佳狀態、才能擷取用戶端和伺服器憑證。如果無法擷取憑證、則必須建立新的憑證簽署要求（CSR）、然後從外部金鑰管理伺服器匯入伺服器憑證。
-
 .步驟
 . 在儲存陣列與SANtricity 該用戶端的筆記型電腦或PC之間建立直接的私有乙太網路連線。若要這麼做：
 +
 .. 使用RJ45乙太網路纜線將筆記型電腦連接至控制器A的管理連接埠1
-.. 若要完成連線、您可能需要將筆記型電腦指派給與控制器A相同子網路的IP位址控制器鎖定期間、控制器A預設為管理位址192．168．128.101。因此您可以將筆記型電腦指派至子網路、例如「192．168．128．201」。
+.. 若要完成連線，您可能需要將筆記型電腦指派給控制器 A 所在的同一子網路中的 IP 位址。在控制器鎖定期間，控制器 A 預設為管理位址 169.254.128.101 。因此您可以將筆記型電腦指派給子網路，例如「 169.254.128.201 」。
 
 
-. 使用預設IP位址192．168．128．101、使用者名稱* admin *和密碼空白、使用設定外部金鑰管理伺服器 `set storageArray externalKeyManagement` CLI命令並提供 `serverAddress` 和 `serverPort` 儲存自 link:prepare-upgrade-controllers-task.html["準備升級控制器"]。如需使用此命令的相關資訊、請參閱 https://docs.netapp.com/us-en/e-series-cli/index.html["命令列介面參考"]。
+. 使用從儲存的安全金鑰link:prepare-upgrade-controllers-task.html["準備升級控制器"]，將外部金鑰匯入 IP 位址 169.254.128.101 ，使用者名稱 * admin* ，密碼保持空白。
 +
-*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "set storageArray externalKeyManagement serverAddress=<ServerIPAddress> serverPort=<serverPort>;"`
-
-+
-或者、您也可以透過REST API透過下列呼叫來設定外部金鑰管理伺服器： `/storage-systems/{system-id}/external-key-server`
-
-. 使用預設IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白、然後使用匯入憑證 `storageArray keyManagementCertificate` CLI命令：一次用於用戶端憑證、第二次用於伺服器憑證。
-+
-* 範例 A ： * `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=client file=\"Directory&FileName\";"`
-
-+
-* 範例 B ： * `SMcli 192.168.128.101 -u admin -p "" -c "download storageArray keyManagementCertificate certificateType=server file=\"Directory&FileName\";"`
-
-+
-或者、您也可以透過REST API透過下列呼叫匯入Keyserver憑證： `/storage-systems/{system-id}/external-key-server/certificate`
-
-. 使用儲存自的安全金鑰 link:prepare-upgrade-controllers-task.html["準備升級控制器"]下，將外部金鑰匯入IP位址192．168．128.101、使用者名稱* admin *、密碼保留空白。
-+
-*範例：* `SMcli 192.168.128.101 -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
+* 範例： * `SMcli 169.254.128.101 -k -u admin -p "" -c "import storageArray securityKey file=\"Directory&FileName\" passPhrase=\"passPhraseString\";"`
 
 +
 或者、您也可以透過REST API透過下列呼叫匯入外部金鑰： `/storage-systems/{system-id}/security-key/import`
 
-
-
++
 控制器將繼續執行磁碟機的自動程式碼同步程序、然後重新開機。重新開機後、控制器將可透過原始IP組態存取。
+
+. （可選）如果需要，可通過執行以下步驟重新鍵入驅動器：
++
+* 範例： * `SMcli <original_controller _ip> -u admin -p "<original_array_password>" -c "create storageArray securityKey" passPhrase=\"passPhraseString\" file=\"filename\";”`
+
+

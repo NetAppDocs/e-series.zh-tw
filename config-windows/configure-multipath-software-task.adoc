@@ -28,4 +28,14 @@ Windows安裝使用原生的MPIO裝置特定模組（DSM）驅動程式進行容
 . 從下載* SANtricity 《Windows DSM*》套件 https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["作業系統軟體頁面SANtricity"^]。選取您的軟體版本、接受授權合約、然後在SANtricity 「其他下載」下選取*《Windows DSM *》。
 . 執行* SANtricity 《Windows DSM*安裝程式》。按兩下要執行的安裝套件。
 . 使用安裝精靈在Management Station上安裝套件。
+. 如有需要，請執行 `mpclaim`命令以驗證 DSM 套件的安裝。
++
+[source, cli]
+----
+C:\Users\Administrator>mpclaim -s -d
+----
++
+
+NOTE: Windows 伺服器上必須安裝 MPIO 功能，才能執行 `mpclaim`命令。
+
 
