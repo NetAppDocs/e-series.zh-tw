@@ -739,9 +739,6 @@
   <block id="32e3cf2b76364e5780ea7c673b668437" category="list-text">安裝公用程式。</block>
   <block id="87e85b9ea37f21226023282c05abc3b0" category="list-text">使用HBA BIOS為您的組態選取適當的設定。</block>
   <block id="3e59e5ab1adea8ed176d6a2c2a73cadf" category="paragraph">請參閱的「附註」欄<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得建議。</block>
-  <block id="7e9eed90ab06645af09e14e4688144a5" category="summary">您可以使用NVMe搭配RDMA over Converged Ethernet（roce\）網路傳輸協定。</block>
-  <block id="e5acd4f564771f3dbba3bdeb6b6bcfe5" category="doc">NVMe over RoCE Express設定</block>
-  <block id="d94efd3fa425e38d7761fba32eb7bc67" category="paragraph">您可以使用NVMe搭配RDMA over Converged Ethernet（RoCE）網路傳輸協定。</block>
   <block id="be5555e7e670df8f8d0c725b9043fb16" category="summary">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
   <block id="f4959eb49cd0d468fb22d0fde13f93d1" category="doc">設定交換器</block>
   <block id="1016395fecd4787707233fc026c56bb5" category="paragraph">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
@@ -857,11 +854,9 @@
   <block id="070373c9b8bfb5900abe9ee69cfae4e4" category="list-text">驗證在主機開機備份後、原生NVMe多路徑功能已啟用。</block>
   <block id="c694b074c8a7887bcd4ebbfc99adf268" category="list-text">如果命令輸出為「N」、則原生NVMe多路徑仍會停用。</block>
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。</block>
-  <block id="fe4b136586896fd70617258689052356" category="summary">SRP over InfiniBand Express設定</block>
   <block id="147c2a561fc8233057480b38f1176725" category="doc">存取適用於實體NVMe裝置目標的NVMe磁碟區</block>
   <block id="d307d6c12e3fd81b58d2d458107c75d8" category="admonition">若要檢視路徑資訊、必須在/etc/multipath.conf中設定下列項目：</block>
   <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">使用FC時、請安裝Linux Unified Host Utilities。</block>
-  <block id="c96c96aa9e9942faabac2551c9847a4a" category="doc">透過InfiniBand Express設定</block>
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">對於SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="afdd2ec17dd3d3ada5dd7c591efb8373" category="doc">驗證Linux支援並審查限制</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">首先、您應該確認Linux組態是否受到支援、並檢閱控制器、主機和還原限制。</block>
@@ -886,8 +881,6 @@
   <block id="f372901d7f009b4444ba62b9a2ab5d58" category="list-text">在下拉式清單中、選取您要設定的HIC連接埠、然後輸入連接埠的IP位址。</block>
   <block id="3b5c5ae54533da138be94559c533a510" category="list-text">按一下「*設定*」。</block>
   <block id="d9c20a4f4eb3b39c23e7abe09762149f" category="list-text">針對要使用的其他HIC連接埠、重複步驟5和6。</block>
-  <block id="eade6022b2fef6a4e03ff35469374cb0" category="summary">您可以將NVMe搭配Fibre Channel傳輸協定使用。</block>
-  <block id="62896be8239b3396f0ed277cf184b062" category="doc">NVMe over Fibre Channel Express設定</block>
   <block id="aab194c09e7745fddfbca02a98865c47" category="summary">使用此工作表記錄iSCSI儲存組態資訊。</block>
   <block id="05a14b12560e5d163f1007ad33873950" category="doc">記錄iSCSI組態</block>
   <block id="a1aad20592b6f41cedcdb21b5301d624" category="paragraph">您可以產生及列印本頁的PDF、然後使用下列工作表記錄iSCSI儲存組態資訊。您需要這些資訊來執行資源配置工作。</block>
@@ -1013,7 +1006,6 @@
   <block id="2428a281171a181ce060c98d6e1838a8" category="list-text">重複步驟3、將探索到的子系統連接到第二個路徑。</block>
   <block id="f61f74351af7f480b4eb830a2f4c4ada" category="list-text">請至下載SANtricity 更新版本的《》<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。從* Downloads *（下載*）索引標籤、前往功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。</block>
   <block id="3e5b5608d2078b742475daf5f62b5f0c" category="paragraph">當Linux主機第一次發現新LUN時、新LUN沒有分割區或檔案系統。您必須先格式化LUN、才能使用。您也可以在LUN上建立檔案系統。</block>
-  <block id="1914877215ade75b06ba34ce70bb51dd" category="summary">SAS Express設定</block>
   <block id="9aec52801a7d078795bd9bb9092d9682" category="summary">使用InfiniBand交換器執行子網路管理程式、可能會在高負載期間造成非預期的路徑遺失。若要避免路徑遺失、請使用opensm在一或多部主機上設定子網路管理程式。</block>
   <block id="aab434f1cf3c0d3bd7d1f0a346a5e031" category="doc">設定子網路管理程式</block>
   <block id="53ff0f9470cfba9144606f2d37d0e938" category="paragraph">子網路管理程式必須在交換器或主機上的環境中執行。如果您執行的是主機端、請使用下列程序進行設定。</block>
@@ -1038,11 +1030,8 @@
   <block id="1088b852c25195807c415eebd5e3c772" category="list-text">為交換器中的每個FC主機啟動器連接埠建立其他區域。</block>
   <block id="38b2faff78c86d10664d04002c0e6d64" category="list-text">儲存區域、然後啟動新的分區組態。</block>
   <block id="13fd378eeb7a101fc09f1cbecaf60c62" category="summary">當您在SANtricity Management Station上安裝時、預設會安裝圖形化使用者介面（GUI）和命令列介面（CLI）。這些指示假設SANtricity 您將在Management Station上安裝不需在I/O主機上安裝的不實儲存管理程式GUI。</block>
-  <block id="041b8a1391f923a8043830be4a716cdd" category="summary">您可以將NVMe搭配InfiniBand網路傳輸協定使用。</block>
-  <block id="97cdaaff2a74763683828420ccda083e" category="doc">NVMe over InfiniBand Express設定</block>
   <block id="adb2c486b4315072f95250add60ff3eb" category="paragraph">在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。</block>
   <block id="0e7c59630bebf993c5d568dae4203bf0" category="paragraph">您將移除複製的檔案和資料夾。</block>
-  <block id="f849cbf8f2231f3f35d369655c870a3e" category="doc">iSCSI Express設定</block>
   <block id="b03d32ba1901ea3dd22914caff790143" category="doc">安裝及設定Linux主機公用程式</block>
   <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities套件包含管理NetApp儲存設備的工具、包括容錯移轉原則和實體路徑。</block>
   <block id="3d46c28785301ae3ad29aa411d7f0358" category="section-title">檢閱NVMe over InfiniBand限制</block>
@@ -1123,7 +1112,6 @@
   <block id="4bdc443de64be4d8885f8728e36e3b1e" category="admonition">這些快速方法指示包括SUSE Linux Enterprise Server（SLES）和Red Hat Enterprise Linux（RHEL）的範例。</block>
   <block id="04a3d4071a9450f7356dbc04b8b8747c" category="summary">SAS擴充卡可安裝在控制器容器內。EF300控制器支援SAS擴充。</block>
   <block id="e00394e86e0897378bd874e271fcd82c" category="doc">SAS擴充卡</block>
-  <block id="f35307ec092e89906d40c7e7580fd73e" category="summary">控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何更換EF300或EF600控制器櫃中的單一控制器或兩個控制器。</block>
   <block id="cbfb14f470701bf93424d757c624369a" category="doc">控制器</block>
   <block id="2e2090d7bf10ea829ed979fce6127fca" category="summary">在更換EF300或EF600電源供應器之前、請先檢閱相關要求和考量事項。</block>
   <block id="b4bdfc68a2be9043c46c8629fec0e8fe" category="doc">EF300或EF600電源供應器更換需求</block>
@@ -1423,7 +1411,6 @@
   <block id="7c0227c6fb5206af3eba6ba6a4349b86" category="paragraph">如果狀態不是最佳、或是有任何警示LED亮起、請確認所有纜線都已正確安裝、且控制器機箱已正確安裝。如有必要、請移除並重新安裝控制器容器。</block>
   <block id="3aea2395eb1945801b3ad83556c9d15a" category="list-text">按一下功能表：Support[升級中心]以確保SANtricity 安裝最新版本的作業系統。</block>
   <block id="efd279df83f7980b63864ad37d922c7b" category="paragraph">電池更換完成。您可以恢復正常作業。</block>
-  <block id="51255c5d39d4b9a43a7f800db3b8a431" category="doc">電源供應器</block>
   <block id="fd293cf77acfdd97249a46e8f0f881ef" category="summary">更換EF600陣列中的磁碟機。</block>
   <block id="c2d869aaa5bfd00a5deb58e0c2033910" category="doc">更換EF600陣列中的磁碟機</block>
   <block id="090c16503867f8c38598a1963600e1f8" category="list-text">檢閱 <block ref="a3053473be5cf3d84a95cd722c986422" category="inline-link-macro-rx"></block>。</block>
@@ -1497,7 +1484,6 @@
   <block id="bf6487095e5ecccd756382367b6c5383" category="list-text">您已取得轉換所需的硬體、其中可能包括一組新的HIC和/或SFP。您的NetApp銷售代表可協助您判斷所需的硬體、並協助您訂購正確的零件。</block>
   <block id="b3f772795168df63454dec0c3e4c3e3b" category="list-text">雙傳輸協定SFP收發器支援16GB和8Gb FC、以及10Gb iSCSI。因此、如果您使用雙傳輸協定、而且只是在FC和iSCSI之間切換、或是在iSCSI之間切換、則不需要變更SFP。</block>
   <block id="5e7a01eefac15f1a88cbf08e764f5398" category="list-text">某些主機連接埠傳輸協定轉換可能需要新增或升級主機介面卡。</block>
-  <block id="8efc2bb6da7e629c408a29a1c453f118" category="summary">您可以將主機的傳輸協定轉換成不同的傳輸協定、以便相容、並將主機連線的傳輸協定轉換成不同的傳輸協定、以符合基礎架構需求。</block>
   <block id="48e2b045fa39b95719036a981e221f27" category="doc">主機連接埠傳輸協定轉換</block>
   <block id="8af1af6830937a72d5cd88e0d6c25265" category="summary">將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。</block>
   <block id="76b6d67ba2d43b0e0d5354712cf5475c" category="paragraph">新增SAS擴充卡時、您必須關閉儲存陣列電源、安裝新的SAS擴充卡、然後重新接上電源。</block>
@@ -1520,8 +1506,6 @@
   <block id="ccccec3135cfde6cfdbeb41f2c09065e" category="doc">EF300或EF600風扇更換需求</block>
   <block id="1f0e561212d6f8a00a46e7e96276d4cc" category="list-text">您的控制器機櫃或磁碟機櫃機型支援更換風扇。</block>
   <block id="f0df890160164bf2b2f1dc2577fa1273" category="admonition">如果Recovery Guru指出無法移除風扇、請聯絡技術支援部門。</block>
-  <block id="9e82bbc678cd60ca1e23c9306295675e" category="summary">如果存在記憶體不相符的情況、或是有故障的DIMM、則必須更換DIMM。</block>
-  <block id="9ec28cb381dd9edd5e1a4ad5641fba96" category="summary">主機介面卡（HIC）必須安裝在控制器容器內。EF600控制器包含選用HIC上的主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。</block>
   <block id="bb8c12c938368d891c8a41b75b8dbff5" category="doc">主機介面卡</block>
   <block id="b1a61a0b6874805bc03293f8b7b15c87" category="summary">在更換EF300或EF600 DIMM之前、請先檢閱相關要求和考量事項。</block>
   <block id="4732b406385a15d1aed763a9717a6553" category="doc">更換EF300或EF600 DIMM的需求</block>
@@ -3420,7 +3404,6 @@
   <block id="08ee2b422ae47dae9b80953fb8c85e8f" category="paragraph">您可以更換24個磁碟機櫃中的磁碟機。</block>
   <block id="f606b288add440526eb541bfdfeaba20" category="inline-link-macro">E5700磁碟機更換需求</block>
   <block id="73488b3d5887e9bf8af3f3a0f6ce8cb9" category="list-text">檢閱中的磁碟機處理需求 <block ref="3e007b28e6694052b5931f3903e6e0a8" category="inline-link-macro-rx"></block>。</block>
-  <block id="e977f6bbcbae61c33920c421cdc41ec2" category="summary">控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何在雙工組態中更換控制器。</block>
   <block id="6fcb8b9672441ca691f4d85d1836833b" category="summary">維護E5700硬體</block>
   <block id="626581bbf3b2966c3caac8e807f438ec" category="doc">維護E5700硬體</block>
   <block id="04ae3e6aa90bb1a6ee80651a77de1468" category="paragraph">對於E5700儲存系統、您可以對下列元件執行維護程序。</block>
@@ -3966,7 +3949,6 @@
   <block id="1488f51078c041ffb8c7b08ece30a58a" category="doc">更換E5700（60個磁碟機櫃）中的磁碟機</block>
   <block id="ff4525471962c2f80f88cc7bda612cda" category="paragraph">您可以更換60個磁碟機櫃中的磁碟機。</block>
   <block id="76b188eaa0ef9d72b9512f3fe3343776" category="paragraph">請檢查SANtricity 「恢復大師」（Recovery Guru）並完成所有必要步驟、準備更換60個磁碟機櫃中的磁碟機。然後、您可以找到故障元件。</block>
-  <block id="d3852022ece859a54c514fe09a6eef63" category="summary">主機介面卡（HIC\）可選擇性安裝在控制器容器內。E5700控制器內建控制器卡本身的主機連接埠、以及選購的HIC上的主機連接埠。控制器內建的主機連接埠稱為基板主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。</block>
   <block id="dbddb7e0847dba00832017008a05dc7b" category="summary">更換E5700中的磁碟機抽屜。</block>
   <block id="e2db6fd08fc605f2783c57a2647a9537" category="doc">更換E5700磁碟機抽屜（60個磁碟機）</block>
   <block id="fc7e60ea5afb1f55531624b4156b6e39" category="paragraph">您可以更換E5700陣列中的磁碟機匣。</block>
@@ -4485,7 +4467,6 @@
   <block id="929bd8e18609e57e3760be72f9bc2941" category="paragraph">準備更換60個磁碟機控制器櫃或磁碟機櫃中的風扇容器、方法是收集儲存陣列的支援資料、並找出故障元件。</block>
   <block id="f781ad0eab626eb65706476b32fcf268" category="paragraph">您按下*（1）*_tab鍵以釋放風扇容器的握把_</block>
   <block id="c0b5933940a9871089b52a1faf4cf654" category="paragraph">*（1）*_把風扇箱拉出_</block>
-  <block id="98c3987fb58d5d61350074733f52ec4f" category="summary">控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何透過新增第二個控制器來轉換為雙工組態、以及如何在單工組態和雙工組態中更換控制器。</block>
   <block id="fb4cf09c196596d5c6d69783aa59f055" category="summary">請依照雙工或單工的適當步驟、準備更換E2800電池。</block>
   <block id="f51438f6c07d86b8b1be3ab7591ffd96" category="doc">準備更換E2800電池</block>
   <block id="5d7b64427533316f72376413b14cba00" category="paragraph">準備更換電池的步驟取決於您使用的是雙工組態（兩個控制器）或單工組態（一個控制器）。</block>
@@ -4936,7 +4917,6 @@
   <block id="4f113b2dc0a590b47eaebbf00c57ec4f" category="list-text">請檢閱Recovery Guru中的詳細資料、確認電力容器有問題、並從Recovery Guru選取* Recheck*、以確保不需要先處理其他項目。</block>
   <block id="c3ee6c688aae3762e3f189a6a9f85591" category="paragraph">*（1）*_電源LED _。如果是*恆亮綠色*、則表示電力容器運作正常。如果是*關*、則表示電源箱故障、AC開關已關閉、AC電源線未正確安裝、或AC電源線輸入電壓不在保證範圍內（AC電源線的來源端有問題）。</block>
   <block id="fa89f08543b6ca518071711a3bd8ae93" category="list-text">如果仍有報告電力容器故障、請重複中的步驟 <block ref="c5e4ac8ffd3690740ad7837d610d213f" category="inline-xref-macro-rx"></block> 和 <block ref="0d240e4a1e9b2ac9c0cbe94c4248016d" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
-  <block id="a3c03452327012e5141c33e5726e73c7" category="summary">迴路由三種不同類型組成：電源風扇迴路（電源供應器）、可在12個磁碟機或24個磁碟機的控制器機櫃或磁碟機櫃中提供備援電源、以及適當的冷卻；電源迴路機櫃可用於60個磁碟機控制器機櫃或磁碟機櫃中的電源備援； 以及用於冷卻60個磁碟機控制器機櫃或磁碟機櫃的風扇容器。</block>
   <block id="c92ae1b66e0ea48f905922b70c51fcc0" category="summary">將E2800中的磁碟機更換為60個磁碟機櫃。</block>
   <block id="d8787584476b17c4778f71ea966787ee" category="doc">更換E2800（60個磁碟機櫃）中的磁碟機</block>
   <block id="609be9ba4308b107932857f7cf158595" category="paragraph">您可以將E2800中的磁碟機更換為60個磁碟機櫃。</block>
@@ -4945,7 +4925,6 @@
   <block id="c2cadf2805330023bff52136745a00d3" category="list-text">檢閱中的磁碟機處理需求 <block ref="c42d760f1dbbf48c20b32f86aba80fb8" category="inline-link-macro-rx"></block>。</block>
   <block id="afc538814e7e75b26d932dfaec6f611f" category="section-title">步驟2：移除故障磁碟機</block>
   <block id="015f72387622e8d8e9832059673d7bfc" category="admonition">卸下故障磁碟機後、請儘快安裝替換磁碟機。否則、設備可能會過熱。</block>
-  <block id="00f9ce66241621004c58b2e973a895fd" category="summary">主機介面卡（HIC\）可選擇性安裝在控制器容器內。E2800控制器本身包含控制器卡上的內建主機連接埠、以及選用HIC上的主機連接埠。控制器內建的主機連接埠稱為基板主機連接埠。HIC內建的主機連接埠稱為HIC連接埠。</block>
   <block id="54b944ce196db7be3d6555de03724a3a" category="summary">將E2800中的磁碟機更換為12個磁碟機或24個磁碟機櫃。</block>
   <block id="a5867e97079fa7486dd1af99fb638186" category="doc">更換E2800（12個磁碟機或24個磁碟機櫃）中的磁碟機</block>
   <block id="5f5f169dbc229dcc3e7baf7f5080f611" category="paragraph">您可以將E2800中的磁碟機更換為12個磁碟機或24個磁碟機櫃。</block>
@@ -5381,8 +5360,6 @@
   <block id="ebfef8a6ede4f8f5584a3aa54e1585fa" category="list-text"><block ref="ebfef8a6ede4f8f5584a3aa54e1585fa" category="inline-xref-macro-rx"></block></block>
   <block id="d02d47b71c05a4296a9ecada2597674b" category="inline-xref-macro">準備安裝E5724、EF570、EF280、E2812、E2824、 DE212C和DE224C</block>
   <block id="ae53d45431562d34db4b6fcfc5cee98d" category="list-text"><block ref="ae53d45431562d34db4b6fcfc5cee98d" category="inline-xref-macro-rx"></block></block>
-  <block id="efe6d51a14336eb7344b08061d81c223" category="summary">這些指示說明如何安裝及設定新的儲存系統、並提供其他內容的連結。</block>
-  <block id="01a6b4e59365da6ed554e20bb2ab5362" category="doc">E2860、E5760和DE460C的安裝與設定說明</block>
   <block id="bd2cfcab24475001dd81207ac244c8a1" category="summary">在雙柱機架或NetApp系統機櫃中安裝E2800或E5700。</block>
   <block id="50d72a9168ff12be707b9a6df88aff51" category="paragraph">瞭解如何在雙柱機架或NetApp系統機櫃中安裝E2860、E5760或DE460儲存系統。</block>
   <block id="18d75254ebc527a2c996bf35fc9ae101" category="list-text">取得一個防靜電腕帶、並採取防靜態預防措施。</block>
@@ -5454,7 +5431,6 @@
   <block id="37d313349fe563ae8b848d2dedc9b49d" category="paragraph">SAS纜線</block>
   <block id="56aa775b7b016485421d08de547d716b" category="summary">檢閱E2800與E5700的安裝與設定程序。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="doc">總覽</block>
-  <block id="098f41693365f8de503868e97f04f4c4" category="doc">E5724、EF570、EF280、E2812、E2824、 DE212C和DE224C</block>
   <block id="2703edfa4919c58a8b79beb4a3174be5" category="summary">本網站包含特定E系列版本、機型和元件的相關資訊。</block>
   <block id="2f68c2c4e738fd96a0fe692eefed7ab9" category="doc">本網站內容</block>
   <block id="ad32e4a428834c3f0dd6d07dbd6fe60a" category="cell">隨附內容</block>
@@ -8336,8 +8312,6 @@
   <block id="32e0b12538b4abe36e648446dbb8723b" category="paragraph">磁碟集區改善</block>
   <block id="82faf4161a36aa8a69bd4c363e6b57cc" category="paragraph">使用執行 11.80 或更高版本的控制器所建立的磁碟集區會是 _Version 1_ 集區、而不是 _Version 0_ 集區。當存在 _Version 1_ 磁碟集區時、降級作業會受到限制。</block>
   <block id="45e56b98136f4292dd8c522edf38b3b2" category="paragraph">磁碟集區的版本可在儲存陣列設定檔中識別。</block>
-  <block id="82bf7451a207cfbac427edc3bb60fced" category="paragraph">這是可列印的PDF逐步說明、並提供其他內容的即時連結。</block>
-  <block id="a2f0a23d015da77ff81697442b8f6aad" category="paragraph">這些是本網站所述的設定指示。</block>
   <block id="746ff5a72ad1791e39c47dc0abcdffe3" category="paragraph">系統管理員或 Unified Manager 啟動前、必須先提供瀏覽器的最低版本。</block>
   <block id="488c35a42ee48966247c5cc643d96708" category="paragraph">以下是支援的最低版本：</block>
   <block id="5f7273b60d2186e7b7a65eb2cee83294" category="paragraph">增加 SSD 讀取快取上限</block>
@@ -8440,19 +8414,14 @@
   <block id="6a177f60e2c78aeead82deed1b7f79bd" category="image-alt">磁碟機櫃纜線範例</block>
   <block id="97d8dba52fc751664d17d634de384761" category="open-title">連接 E4000 的磁碟機櫃</block>
   <block id="5d48bd8c60ef301164497e794ae727ca" category="image-alt">IOM 硬體圖示</block>
-  <block id="c5f2c8e37ae34577d9aa27dc0a6d9d6a" category="summary">您可以在 E 系列系統上的 Linux 主機上使用 Fibre Channel 傳輸協定。</block>
   <block id="a51352079fbf62de5b216fbcf5f8547f" category="image-alt">網路組態FC</block>
-  <block id="2c14a3be6c3b57db7707ac6ae99aeb97" category="summary">您可以在 E 系列系統上的 Linux 主機上使用 iSCSI 傳輸協定。</block>
   <block id="035b18714bc5d7aa7c3b19a557b2784d" category="image-alt">iSCSI 網路組態</block>
-  <block id="279607469d0ed6f0d6a8dfabbc5b63e2" category="summary">您可以將 iSER over Infiniband 通訊協定用於 E 系列系統上的 Linux 主機。</block>
   <block id="f6d2572a98e17f547b50d07bd60a4357" category="image-alt">透過 IB 網路組態的 iser</block>
   <block id="e25b62b71db71b440f775e632a958e5e" category="image-alt">直接連線拓撲範例</block>
   <block id="3d673c4735715944ce52ebdb6281a20d" category="image-alt">交換器連線拓撲範例</block>
   <block id="5a60c0d89257784a23a8dd439204f7f1" category="image-alt">NVMe over Infiniband 直接連線範例</block>
   <block id="37370b7d172047a016f376cc6b5258c9" category="image-alt">NVMe over roce 直接連線範例</block>
   <block id="65311bced825a83f85718b09cc4ab673" category="image-alt">NVMe over roce 交換器連線範例</block>
-  <block id="846fb8d171e9dfcce4fd56289d380608" category="summary">您可以在 E 系列系統上的 Linux 主機上使用 SAS 傳輸協定。</block>
-  <block id="ecf0c5c7f835375b8d9275312b470c82" category="summary">您可以將 SRP over InfiniBand 傳輸協定搭配 E 系列系統上的 Linux 主機使用。</block>
   <block id="025f0fcb18e01db2892910a53d657f57" category="image-alt">透過 IB 連接埠識別碼的 SRB</block>
   <block id="a9a8836056eb3cc8d01f51eb5c6e7eec" category="list-text">如需建立 VMFS 資料存放區或將磁碟區作為 RDM 搭配 vSphere Client 或 vSphere Web Client 的說明，請參閱<block ref="b15a5268225569436f01a761f08cccf7" category="inline-link-rx"></block>。</block>
   <block id="ebaab7c3245c99578b7dd1e67138cccf" category="list-text">如需如何在 ESXi 主機上執行儲存設備重新掃描的指示，請搜尋<block ref="151d2130fd8b5e8e7d0d3b596c1bdeb5" category="inline-link-rx"></block>本主題的文章。</block>
@@ -8889,7 +8858,6 @@
   <block id="2f2564b7bd12fa4c137f3761c14d73a3" category="paragraph">您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣。</block>
   <block id="3748f377726945770a9a282453272357" category="paragraph">更換E4060控制器機櫃或DE460C磁碟機櫃中故障磁碟櫃的步驟、取決於藥櫃中的磁碟區是否受到藥櫃損失保護。如果磁碟機藥櫃中的所有磁碟區都位於具有藥櫃遺失保護的磁碟集區或磁碟區群組中、您可以線上執行此程序。否則、您必須停止所有主機I/O活動、並在更換磁碟機匣之前關閉磁碟櫃電源。</block>
   <block id="1103b7e629028daaccac02c0a8fc98d2" category="doc">更換 E4000 中的電池</block>
-  <block id="543025215967bae569d97988a7e97cbc" category="paragraph">如果 SANtricity 系統管理員中的 Recovery Guru 顯示「電池故障」或「電池需要更換」狀態，您必須在 E4000 設備中更換受影響的電池。為了保護您的資料、必須盡快更換電池。</block>
   <block id="9af92606abb4b31a8818023a6515b3ec" category="list-text">管理站、具備瀏覽器、可存取SANtricity 控制器的《系統管理程式》。（若要開啟 System Manager 介面，請將瀏覽器指向控制器的網域名稱或 IP 位址。）</block>
   <block id="ec6e5e75653734bb428b87afb93f7f41" category="section-title">步驟 1 ：準備更換電池</block>
   <block id="3df752ee7e92a3dba58c1061c5d0a4a6" category="list-text">使用 SANtricity System Manager 備份儲存陣列的組態資料庫。</block>
@@ -8929,15 +8897,7 @@
   <block id="7eed6664ecacefe81e2b660f47a5cfaf" category="list-text">重新安裝控制器圓筒蓋並將其鎖定到位。</block>
   <block id="aa4ecd2631b0a57f27425bbdf9cc91b7" category="paragraph">更換控制器箱中的元件後、請將其重新安裝到機箱中。</block>
   <block id="954c99d35fff8ed108602add34a47b93" category="list-text">如果您尚未更換、請更換控制器圓筒上的蓋子。</block>
-  <block id="9c17c595e56b6b01c7d703a94b943e71" category="list-text">將控制器圓筒翻轉過來、並將末端對齊機箱的開口。</block>
-  <block id="44df050c94969c9c5f783babbd55fb7e" category="list-text">將控制器圓筒的末端對準機箱的開口、然後將控制器圓筒輕輕推入系統的一半。</block>
-  <block id="40d0d24050f8aac90dc03655f2738fb3" category="admonition">在接到指示之前、請勿將控制器圓筒完全插入機箱。</block>
-  <block id="4e4cd7bd59f82bab02590366f27be3e5" category="list-text">視需要重新安裝系統。</block>
   <block id="7bfce735a4505a06fb1c4b7a2d076c1e" category="list-text">如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖纜線時重新安裝。</block>
-  <block id="5d971d684708429fbfc1d12fc0823b1c" category="list-text">完成控制器箱的重新安裝：</block>
-  <block id="b34c1b37f135bc5b382d7862f82e025c" category="list-text">當凸輪把手處於開啟位置時、用力推入控制器圓筒、直到它與中間背板接觸並完全就位、然後將凸輪把手關閉至鎖定位置。</block>
-  <block id="69008785977983cf8a33f9f78ff2b7c9" category="admonition">將控制器圓筒滑入機箱時、請勿過度施力、以免損壞連接器。</block>
-  <block id="0332f86520cc7552e1fb152e32977600" category="paragraph">控制器一旦安裝在機箱中、就會開始開機。</block>
   <block id="1245c13fabc810ad6fbb6f05277ad356" category="list-text">如果您尚未重新安裝纜線管理裝置、請重新安裝。</block>
   <block id="82cd534d691845f1af190a9df38d753d" category="list-text">使用掛勾和迴圈固定帶將纜線綁定至纜線管理裝置。</block>
   <block id="91418c565341bd8a889226a195dd2fa2" category="section-title">步驟 5 ：完成電池更換</block>
@@ -9010,10 +8970,7 @@
   <block id="f4d6345a40a4387a35c3eb6ef8f51b15" category="section-title">步驟8：完成控制器更換</block>
   <block id="a7c932e7525739cefdfd19d17123207c" category="paragraph">重新連線至控制器機櫃，收集支援資料並恢復作業。</block>
   <block id="62241759bfd404c01951d43ae57f4bbe" category="open-title">開啟控制器機櫃電源（單工）</block>
-  <block id="04803538074d9bd9b55f9adc380717f2" category="list-text">將替換控制器安裝到設備中。</block>
   <block id="fe69546640a5330ecd9f461f1cdbd1ee" category="list-text">翻轉控制器、使可拆式護蓋面朝下。</block>
-  <block id="f5b18529473e7fbcbdcf4601ffe30597" category="list-text">將CAM握把放在開啟位置、將控制器完全滑入產品。</block>
-  <block id="0dc7aaae2ab89a4fa299f4f2e42c1646" category="list-text">將CAM握把往左移動、將控制器鎖定到位。</block>
   <block id="85caa39a88f7091fb2db841ad6b83ffd" category="list-text">更換纜線。</block>
   <block id="2afc7927e5f45cc2a3ef83b60ea186cd" category="list-text">開啟控制器機櫃電源。</block>
   <block id="4b55c79852e2203088ca03f4c8fb4b3c" category="list-text">等待 E4000 控制器重新開機。</block>
@@ -9103,7 +9060,6 @@
   <block id="1ea4267c90825f4bf9c52932b0bd8e1a" category="list-text">重新安裝控制器圓筒蓋。</block>
   <block id="48a57bdd7334ad13cd1585ba2a663c46" category="section-title">步驟 5 ：重新安裝控制器容器</block>
   <block id="af32241ae4a2afd71e33a8646b775b1f" category="paragraph">將控制器圓筒重新安裝到機箱中。</block>
-  <block id="0a5704c96cc972ac4c49e76417f83282" category="list-text">將控制器圓筒輕輕推入系統的一半。將控制器圓筒的末端對準機箱的開口、然後將控制器圓筒輕輕推入系統的一半。</block>
   <block id="660a0f2c7dddd5ead3b175899a5d429c" category="section-title">步驟 6 ：完全更換 DIMM</block>
   <block id="315927c4ed1f1d8b1d0b704a5a67026e" category="list-text">控制器重新連線時、請確認其狀態為最佳狀態、並檢查控制器機櫃的注意 LED 。</block>
   <block id="805863d0c877d6358a86a2607e79ed0d" category="paragraph">如果狀態不是最佳、或是有任何警示LED亮起、請確認所有纜線都已正確安裝、且控制器機箱已正確安裝。如有必要、請移除並重新安裝控制器容器。附註：如果您無法解決問題、請聯絡技術支援部門。</block>
@@ -9146,7 +9102,6 @@
   <block id="fe831c9a1ec5f0798f7d995bb682d1af" category="list-text">鬆開 HIC 上的指旋螺絲，然後將其垂直提起。</block>
   <block id="cb588a37aac0cb396a69cd9c6fa260a7" category="list-text">重新安裝 HIC ：</block>
   <block id="eef513f5198b93971d313eb80e4da6fb" category="list-text">重新安裝控制器模組護蓋、並將其鎖定到位。</block>
-  <block id="528b8ab8a2997d60c930f6610d03301f" category="paragraph">如果您有雙工組態，控制器將在機箱內就位後立即開始開機。</block>
   <block id="613ffef3aed34fbf482f6ca198dbe765" category="section-title">步驟5：完成HIC更換</block>
   <block id="fd3355f16365c925e530b446f01146af" category="paragraph">開啟控制器電源（單工）或將控制器置於線上（雙工），收集支援資料，然後恢復作業。</block>
   <block id="3e741422cd2bc3082e4d5328242d9d60" category="doc">在 E4000 中升級 HIC</block>
@@ -9419,7 +9374,6 @@
   <block id="04ec4caf2b80e886c69cd8966d5f5c92" category="paragraph">瞭解如何準備安裝 EF300 ， EF600 ， EF300C 或 EF600C 系列儲存系統。</block>
   <block id="a466a396cacf21d3516a87d8639c5255" category="paragraph">在您更換 EF300 ， EF600 ， EF300C 或 EF600C 電池之前，請先檢閱需求與考量事項。</block>
   <block id="0b5565f493a40cc2e5ace8909a568f68" category="paragraph">您可以在 EF300 ， EF600 ， EF300C 或 EF600C 儲存系統中更換電池。</block>
-  <block id="a3ec65b7c9b468046fdbe7dc19f94299" category="paragraph">控制器由主機板、韌體和軟體組成。它控制磁碟機並實作System Manager功能。本節說明如何更換 EF300 ， EF600 ， EF300C 或 EF600C 控制器機櫃中的單一控制器或兩個控制器。</block>
   <block id="89e4ff051c9e9c60c1d21fddb84ec42a" category="paragraph">更換 EF300 之前，請先選擇 EF600 。EF300C 或 EF600C 控制器，請檢閱需求與考量事項。</block>
   <block id="e0b68b674b62dc6569b4275513ebdb8f" category="paragraph">您可以在 EF300 ， EF600 ， EF300C 或 EF600C 控制器機櫃中更換單一控制器。</block>
   <block id="136b14c506b51c3fdb848576b81df5a9" category="paragraph">在您更換 EF300 ， EF600 ， EF600C 或 EF300C 儲存陣列中的 DIMM 之前，請先檢閱需求與考量事項。</block>
@@ -9495,4 +9449,7 @@
   <block id="baee5b8c18b240b4edfcc1ae3fe154f0" category="section-title">11.90R1 版的新功能</block>
   <block id="0b2fb9383075b5994701c94b27e4b6ee" category="paragraph">此版本推出 EF300C 和 EF600C 所有 Flash NVMe 儲存系統。EF300C 和 EF600C 是現有 EF300 和 EF600 儲存系統的高容量 Flash 版本。EF300C 和 EF600C 支援 30TB 或 60TB 大小的高容量 NVMe SSD 磁碟機。EF300C/EF600C 僅相容於動態磁碟集區使用，不支援傳統 RAID 。</block>
   <block id="8af7f744c39ae6285a380b6eb402fcb2" category="paragraph">支援 E4000 控制器上的 12Gb SAS 介面</block>
+  <block id="7a3a71e57296fe130d591f2dd4a7a06c" category="paragraph">如果 SANtricity 系統管理員中的 Recovery Guru 顯示「電池故障」或「電池需要更換」狀態，您必須在 E4000 中更換受影響的電池。為了保護您的資料、必須盡快更換電池。</block>
+  <block id="8c34b0fdf9a967369992b78c08820091" category="list-text">將 CAM 把手置於開啟位置，將控制器完全滑入機櫃。</block>
+  <block id="1b6c46128dc1faef9365a16d700d5e74" category="list-text">將替換控制器安裝到機櫃中。</block>
 </blocks>
