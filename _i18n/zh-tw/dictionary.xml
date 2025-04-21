@@ -9452,4 +9452,7 @@
   <block id="7a3a71e57296fe130d591f2dd4a7a06c" category="paragraph">如果 SANtricity 系統管理員中的 Recovery Guru 顯示「電池故障」或「電池需要更換」狀態，您必須在 E4000 中更換受影響的電池。為了保護您的資料、必須盡快更換電池。</block>
   <block id="8c34b0fdf9a967369992b78c08820091" category="list-text">將 CAM 把手置於開啟位置，將控制器完全滑入機櫃。</block>
   <block id="1b6c46128dc1faef9365a16d700d5e74" category="list-text">將替換控制器安裝到機櫃中。</block>
+  <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">11.90R2 版的新功能</block>
+  <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">E 系列 11.90 版本資訊</block>
+  <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">此版本僅包含輕微變更，且沒有新功能。有關此版本變更的詳細資訊，請參閱<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
 </blocks>

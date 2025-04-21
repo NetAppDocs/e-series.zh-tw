@@ -16,6 +16,12 @@ summary: 更新功能。SANtricity
 
 
 
+== 11.90R2 版的新功能
+
+此版本僅包含輕微變更，且沒有新功能。有關此版本變更的詳細資訊，請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["E 系列 11.90 版本資訊"^]。
+
+
+
 == 11.90R1 版的新功能
 
 [cols="35h,~"]
