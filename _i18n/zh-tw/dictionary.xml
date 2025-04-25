@@ -9396,10 +9396,7 @@
   <block id="5f8f97ec195542ed337bbddedab32598" category="paragraph">您可以在 EF300 ， EF600 ， EF300C 或 EF600C 控制器中更換電源供應器。</block>
   <block id="64c37d5d57b631b9fb2968c7586932f3" category="paragraph">您可以將 SAS 擴充卡新增至 EF300 ， EF600 ， EF300C ， EF600C 控制器，以便擴充磁碟機匣。</block>
   <block id="0e7081ec1cfc70b91c941e13e9fa52c5" category="paragraph">如果您打算將 SAS 擴充卡新增至 EF300 ， EF600 ， EF300C 或 EF600C ，請檢閱下列需求。</block>
-  <block id="0b2035b979e0933fbb24230f41a4faa9" category="section-title">11.90.1 版的新功能</block>
   <block id="efe2c9d7be92af10ac48d790dd8ccfed" category="paragraph">全新儲存系統機型– EF300C 和 EF600C</block>
-  <block id="7c4ed7bb875e7af6303e23e1e7df86c3" category="paragraph">此版本推出 EF300C 和 EF600C 所有 Flash NVMe 儲存系統。EF300C 和 EF600C 都是現有 EF300 和 EF600 儲存系統的高容量 Flash 版本。EF300C 和 EF600C 支援 30TB 和 60TB 大小的高容量 NVMe SSD 磁碟機。</block>
-  <block id="c4c050a1cbe127eb24c705844a070872" category="paragraph">EF4000 支援 12Gb SAS 介面</block>
   <block id="e8b3561f4b15fa164cdd5717ae511188" category="paragraph">E4000 控制器現在支援 12Gb SAS 主機介面卡。</block>
   <block id="892b365a22314b2852ca18025911d1be" category="list-text">如有需要，請執行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令以驗證 DSM 套件的安裝。</block>
   <block id="fb00ee175135cc78e49e873e41c6e6ad" category="admonition">Windows 伺服器上必須安裝 MPIO 功能，才能執行<block ref="3e0e995eb29f6805a04d4b3ac859bc4b" prefix=" " category="inline-code"></block>命令。</block>
@@ -9455,4 +9452,5 @@
   <block id="bd720a6ead0034815d9206b7292e06e5" category="section-title">11.90R2 版的新功能</block>
   <block id="15829e6cc8b585193d8f6910a672107c" category="inline-link">E 系列 11.90 版本資訊</block>
   <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">此版本僅包含輕微變更，且沒有新功能。有關此版本變更的詳細資訊，請參閱<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
+  <block id="c3d9022959f5cf3a3d385e7a2bd0bf3a" category="section-title">11.80.1R4 版的新功能</block>
 </blocks>

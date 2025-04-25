@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: whats new, new features, SANtricity 11.90 
+keywords: whats new, new features, SANtricity 11.90, SANtricity 11.80 
 summary: 更新功能。SANtricity 
 ---
 = 更新功能SANtricity
@@ -85,6 +85,12 @@ Web 服務現在可使用登入鎖定功能
 只能透過 REST API 進行設定，內嵌式和 Proxy Web Services 現在可以使用新的登入鎖定設定。
 
 |===
+
+
+== 11.80.1R4 版的新功能
+
+此版本僅包含輕微變更，且不含新功能或限制。如需此版本變更的詳細資訊，請參閱 README 檔案。
+
 
 
 == 11.80.1R3 版的新功能
