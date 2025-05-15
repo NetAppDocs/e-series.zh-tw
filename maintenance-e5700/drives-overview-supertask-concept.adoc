@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 drive, replace E5700 drive, failed E5700 drive 
 summary: 檢閱E5700磁碟機需求。 
 ---
-= E5700磁碟機更換需求
+= 更換磁碟機的需求 - E5700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

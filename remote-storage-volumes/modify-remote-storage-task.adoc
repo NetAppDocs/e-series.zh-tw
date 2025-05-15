@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: modify Remote Storage Volumes settings, RTV settings, remote volume settings, remote storage E-Series 
 summary: 您可以透過SANtricity 「View System Manager」的「Remote Storage」（遠端儲存）畫面下方的「View/Edit Settings」（檢視/編輯設定）選項、修改任何已設定的遠端儲存匯入連線設定。 
 ---
-= 修改遠端儲存連線設定
+= 修改 SANtricity 遠端儲存磁碟區的遠端儲存連線設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

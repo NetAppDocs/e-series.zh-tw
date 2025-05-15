@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-settings-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 匯入設定功能是批次作業、可讓您將單一儲存陣列（來源）中的設定複寫到多個陣列（目標）。 
 ---
-= 匯入設定總覽
+= 瞭解 SANtricity Storage Plugin for vCenter 的匯入設定功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

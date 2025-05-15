@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cabling requirements, drive shelf cabling, controller cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: E系列磁碟櫃佈線需要多個元件。 
 ---
-= 需求
+= 儲存系統纜線的需求（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

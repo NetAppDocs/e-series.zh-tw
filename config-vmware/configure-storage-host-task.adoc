@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以使用指派給ESXi主機的儲存設備做為虛擬機器檔案系統（VMFS）資料存放區或原始裝置對應（RDM）。NVMe over Fibre Channel傳輸協定不支援RDM。 
 ---
-= 設定主機上的儲存設備
+= 在 E 系列 - VMware 中的主機上設定儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-unassign-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 如果不再需要磁碟區的I/O存取、您可以從主機或主機叢集取消指派磁碟區。 
 ---
-= 取消指派磁碟區
+= 在 SANtricity Storage Plugin for vCenter 中取消指派磁碟區
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

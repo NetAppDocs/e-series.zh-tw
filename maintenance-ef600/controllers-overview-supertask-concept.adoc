@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace controller, EF300, EF600, EF300C, EF600C 
 summary: EF300或EF600控制器更換的要求與考量 
 ---
-= EF300或EF600控制器更換需求
+= 更換控制器的要求 - EF300 或 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

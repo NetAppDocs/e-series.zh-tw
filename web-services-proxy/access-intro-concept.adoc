@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, roles WSP, user access WSP 
 summary: 為了安全起見、您可以管理使用者對Web服務API和Unified Manager的存取。 
 ---
-= 在Web服務Proxy中管理使用者存取權
+= 在 SANtricity Web 服務 Proxy 中管理使用者存取
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

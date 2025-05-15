@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 drive drawer, DE460C drive shelf, replace E5700 drive drawer, failed E5700 drive drawer 
 summary: 更換E5700中的磁碟機抽屜。 
 ---
-= 更換E5700磁碟機抽屜（60個磁碟機）
+= 更換磁碟機抽屜 - E5700 （ 60 個磁碟機）
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-storage.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 先建立特定應用程式類型的工作負載、以建立儲存設備。接下來、您可以建立具有類似基礎Volume特性的磁碟區、以新增儲存容量至工作負載。 
 ---
-= 建立儲存設備
+= 在 SANtricity Storage Plugin for vCenter 中建立儲存設備
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

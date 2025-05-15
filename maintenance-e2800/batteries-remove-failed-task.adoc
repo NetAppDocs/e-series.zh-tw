@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: 從控制器機櫃中取出控制器機箱之後、您可以取出電池。 
 ---
-= 取出故障的E2800電池
+= 取出故障電池 - E2800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

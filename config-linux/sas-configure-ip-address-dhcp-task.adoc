@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: IP address, DHCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用動態主機組態傳輸協定（DHCP）來提供IP位址。 
 ---
-= 使用DHCP設定IP位址
+= 在 E 系列 - Linux （ SAS ）中使用 DHCP 設定 IP 位址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

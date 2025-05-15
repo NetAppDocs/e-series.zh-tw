@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrading E2800 HIC, upgrade E2800 HIC, upgrade host interface card, E2800, E-Series, eseries 
 summary: 升級E2800陣列中的主機介面卡（HIC）。 
 ---
-= 升級E2800主機介面卡（HIC）
+= 升級主機介面卡（ HIC ） - E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

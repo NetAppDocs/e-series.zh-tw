@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace controller, replace canister, EF300, EF600, EF300C, EF600C 
 summary: 更換EF300或EF600控制器機櫃中的單一控制器。 
 ---
-= 更換EF300或EF600控制器
+= 更換控制器： EF300 和 EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

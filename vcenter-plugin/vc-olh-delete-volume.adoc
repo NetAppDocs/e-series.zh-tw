@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 刪除一或多個磁碟區、以增加資源池或磁碟區群組的可用容量。 
 ---
-= 刪除Volume
+= 刪除 SANtricity Storage Plugin for vCenter 中的 Volume
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-pool-automatically.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 當系統偵測到至少11個未指派的磁碟機、或偵測到一個符合現有集區資格的未指派磁碟機時、您可以自動建立集區。 
 ---
-= 自動建立集區
+= 在 SANtricity Storage Plugin for vCenter 中自動建立集區
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

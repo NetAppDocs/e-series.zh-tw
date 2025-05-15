@@ -4,7 +4,7 @@ permalink: early-versions.html
 keywords: early versions, e-series, hardware, santricity, os 
 summary: 較早版本的文件 
 ---
-= 舊版
+= E 系列硬體與 SANtricity 軟體 - 舊版
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

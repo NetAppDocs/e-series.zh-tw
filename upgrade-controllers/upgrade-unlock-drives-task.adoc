@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, unlock drives, key management, Drive Security, 
 summary: 如果您要升級E2800和E5700控制器、而且已啟用「磁碟機安全性」功能、則必須手動解除鎖定磁碟機。 
 ---
-= 解除磁碟機鎖定
+= 解除鎖定 E 系列磁碟機
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

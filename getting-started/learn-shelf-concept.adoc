@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224, 
 summary: E系列系統提供多種機櫃尺寸。 
 ---
-= E系列機櫃類型
+= 瞭解 E 系列機櫃類型
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

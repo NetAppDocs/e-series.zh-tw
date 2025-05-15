@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2860, E5760, DE460, installation 
 summary: 若要安裝E2860、E5760或DE460、請建立帳戶並註冊硬體。 
 ---
-= 準備安裝
+= 準備安裝 - E2860 ， E5760 和 DE460
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

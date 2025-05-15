@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over Fibre Channel, host side, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。 
 ---
-= 在主機端設定NVMe over Fibre Channel
+= 在 E 系列 - Linux 的主機上設定 NVMe over FC 啟動器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-discover-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 若要在vCenter的儲存外掛程式中顯示及管理儲存資源、您必須探索網路中陣列的IP位址。 
 ---
-= 探索儲存陣列
+= 探索 SANtricity Storage Plugin for vCenter 中的儲存陣列
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

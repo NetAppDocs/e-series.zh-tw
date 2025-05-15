@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 maintenance, E2800 repair, replace E2800 components, replacing E2800 components, 
 summary: 對E2800元件進行維護。 
 ---
-= 維護E2800硬體
+= 維護硬體 - E2800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

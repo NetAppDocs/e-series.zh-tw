@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 battery fail, E2800 battery, E2800 battery replacement, replace E2800 battery, replacing E2800 battery, E2800, E-Series, eseries 
 summary: 安裝新電池。 
 ---
-= 安裝新的E2800電池
+= 安裝新電池 - E2800
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

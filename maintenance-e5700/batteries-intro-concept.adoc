@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E5700 battery 
 summary: 檢閱E5700電池更換要求與考量。 
 ---
-= E5700電池更換需求
+= 更換電池的要求 - E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

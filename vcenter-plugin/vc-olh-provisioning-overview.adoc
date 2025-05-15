@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-provisioning-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以建立稱為Volume的資料容器、以便主機存取陣列上的儲存設備。 
 ---
-= 資源配置總覽
+= 瞭解如何在 SANtricity Storage Plugin for vCenter 中配置儲存設備
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

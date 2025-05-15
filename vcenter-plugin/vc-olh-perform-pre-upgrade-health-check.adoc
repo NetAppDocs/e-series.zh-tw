@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-perform-pre-upgrade-health-check.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 健全狀況檢查會在升級程序中執行、但您也可以在開始之前分別執行健全狀況檢查。 
 ---
-= 執行升級前健全狀況檢查
+= 在 SANtricity Storage Plugin for vCenter 中執行升級前健全狀況檢查
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

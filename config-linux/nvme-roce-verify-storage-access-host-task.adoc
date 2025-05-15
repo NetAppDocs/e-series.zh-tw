@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。 
 ---
-= 驗證主機上的儲存設備存取
+= 驗證 E 系列 - Linux （ NVMe over roce ）主機上的儲存存取
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

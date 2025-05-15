@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: 安裝並設定E2800或E5700陣列。 
 ---
-= 安裝及設定E2800與E5700儲存系統
+= 安裝與設定： E2800 與 E5700 儲存系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

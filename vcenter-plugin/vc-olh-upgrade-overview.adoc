@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-upgrade-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以管理SANtricity 同類型多個儲存陣列的支援功能、以利執行更新。 
 ---
-= 升級總覽
+= 瞭解如何使用適用於 vCenter 的儲存外掛程式來管理 SANtricity 軟體升級
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

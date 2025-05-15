@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-installation.html
 keywords: install vCenter plugin, installing vCenter plugin, vCenter plugin, 
 summary: 安裝或升級SANtricity 適用於vCenter的《The VMware vCenter儲存外掛程式》。 
 ---
-= 安裝或升級vCenter的儲存外掛程式
+= 安裝或升級 SANtricity Storage Plugin for vCenter
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

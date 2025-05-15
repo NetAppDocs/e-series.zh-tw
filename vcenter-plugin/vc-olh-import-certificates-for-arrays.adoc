@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-certificates-for-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 匯入儲存陣列的憑證、以便與裝載Storage Plugin for vCenter的系統進行驗證。 
 ---
-= 匯入陣列的憑證
+= 在 SANtricity Storage Plugin for vCenter 中匯入陣列的憑證
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

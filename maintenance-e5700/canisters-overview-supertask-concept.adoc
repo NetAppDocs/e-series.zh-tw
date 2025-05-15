@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 canister, E5700 power supply, repair E5700 power supply, replace E5700 power supply, failed E5700 power supply 
 summary: 請參閱E5700碳罐類型與要求。 
 ---
-= E5700機箱更換要求
+= 更換圓筒的要求 - E5700
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

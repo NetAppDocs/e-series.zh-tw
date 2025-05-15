@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 設定主機執行容錯移轉。 
 ---
-= 在主機上設定容錯移轉
+= 在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over FC ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-certificates-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 「憑證管理」可讓您建立憑證簽署要求（CSR）、匯入憑證、以及管理現有的憑證。 
 ---
-= 憑證總覽
+= 瞭解如何在 SANtricity Storage Plugin for vCenter 中管理憑證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

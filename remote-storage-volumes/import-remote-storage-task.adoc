@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import Remote Storage Volumes, RTV import, import remote volumes, remote storage E-Series 
 summary: 遠端儲存設備的匯入作業是透過SANtricity 「物件系統管理程式」下的「匯入遠端儲存」精靈執行。遠端儲存匯入功能可將遠端儲存設備的資料移至本機E系列陣列。 
 ---
-= 匯入遠端儲存設備
+= 匯入 SANtricity 遠端儲存磁碟區的遠端儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

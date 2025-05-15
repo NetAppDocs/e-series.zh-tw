@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 檢視憑證的摘要資訊、包括使用憑證的組織、發行憑證的授權單位、有效期間及指紋（唯一識別碼） 
 ---
-= 檢視憑證
+= 在 SANtricity Storage Plugin for vCenter 中檢視憑證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

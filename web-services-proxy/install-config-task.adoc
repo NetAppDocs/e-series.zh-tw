@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure Web Services Proxy, WSP configuration, start stop Webserver, start stop WSP service 
 summary: 您可以修改Web服務Proxy設定、以符合環境的獨特作業和效能需求。 
 ---
-= 設定Web服務Proxy
+= 設定 SANtricity Web 服務 Proxy
 :allow-uri-read: 
 :experimental: 
 :icons: font

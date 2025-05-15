@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF300C, replace drive, drive failure 
 summary: 更換EF300陣列中的磁碟機。 
 ---
-= 更換EF300陣列中的磁碟機
+= 更換磁碟機 - EF300
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

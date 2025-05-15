@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector requirements 
 summary: 系統需求、設定、安裝、組態、以及SANtricity 與NetApp Cloud Connector應用程式相關的工作。 
 ---
-= Cloud Connector的系統需求
+= SANtricity Cloud Connector 的系統需求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

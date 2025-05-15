@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300, EF600, EF600C, EF300C 
 summary: 變更EF300或EF600陣列的主機連接埠傳輸協定。 
 ---
-= 變更EF300或EF600的主機傳輸協定
+= 變更主機傳輸協定 - EF300 和 EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

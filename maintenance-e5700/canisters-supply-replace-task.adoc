@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 power supply, repair E5700 power supply, replace E5700 power supply, failed E5700 power supply 
 summary: 更換E5700 24磁碟機的電源供應器。 
 ---
-= 更換E5700電源供應器（24個磁碟機）
+= 更換電源供應器 - E5700 （ 24 個磁碟機）
 :allow-uri-read: 
 :experimental: 
 :icons: font

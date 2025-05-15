@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-launch-system-manager.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 若要管理單一陣列、請使用「Launch（啟動）」選項、在新的瀏覽器視窗中開啟「System Manager（系統管理程式）」。 
 ---
-= 啟動System Manager
+= 從 SANtricity Storage Plugin for vCenter 啟動 System Manager
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 變更磁碟區的設定、例如名稱、主機指派、區段大小、修改優先順序、快取、 等等。 
 ---
-= 變更Volume的設定
+= 在 SANtricity Storage Plugin for vCenter 中變更 Volume 的設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

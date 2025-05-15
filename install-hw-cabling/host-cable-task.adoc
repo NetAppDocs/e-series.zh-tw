@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, host cabling, direct-attached topology, switch topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C, 
 summary: 您可以將主機直接連接至控制器或使用交換器。 
 ---
-= 主機纜線
+= 將主機連接至控制器或交換器的纜線（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

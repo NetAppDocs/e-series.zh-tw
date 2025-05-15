@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath.conf file, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用多重路徑.conf檔案、這是多重路徑精靈的組態檔、即多重路徑d。 
 ---
-= 設定多重路徑.conf檔案
+= 在 E 系列 - Linux （ iSCSI ）中設定 multipath.conf 檔案
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

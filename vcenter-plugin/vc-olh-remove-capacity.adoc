@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-remove-capacity.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以移除磁碟機、以降低現有資源池或SSD快取的容量。 
 ---
-= 移除容量
+= 降低 SANtricity Storage Plugin for vCenter 中現有集區或 SSD 快取的容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

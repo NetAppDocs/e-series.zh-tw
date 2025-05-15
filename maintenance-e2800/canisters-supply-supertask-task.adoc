@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries 
 summary: 更換E2800 12個磁碟機或24個磁碟機控制器機櫃或磁碟機櫃、其中包含兩個配備整合式風扇的電源供應器。 
 ---
-= 更換E2800電源供應器（12個磁碟機或24個磁碟機）
+= 更換電源供應器 - E2800 （ 12 個磁碟機或 24 個磁碟機）
 :allow-uri-read: 
 :experimental: 
 :icons: font

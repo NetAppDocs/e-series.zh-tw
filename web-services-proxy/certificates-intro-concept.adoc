@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Certificates Web Services Proxy, WSP certificates, 
 summary: 使用Web服務Proxy組態檔、API命令或Unified Manager介面來管理憑證。 
 ---
-= 管理Web Services Proxy中的安全性和憑證
+= 管理 SANtricity Web 服務 Proxy 中的安全性和憑證
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

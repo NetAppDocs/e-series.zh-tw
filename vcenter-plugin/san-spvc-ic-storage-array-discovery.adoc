@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-storage-array-discovery.html
 keywords: discover arrays vCenter plugin, discover storage resources Plugin for vCenter, resolve certificates vCenter plugin 
 summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址。 
 ---
-= 探索外掛程式中的儲存陣列
+= 探索 SANtricity Storage Plugin for vCenter 中的儲存陣列
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

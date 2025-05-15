@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries 
 summary: 更換E2860控制器櫃或DE460C磁碟機櫃中的磁碟機抽屜。 
 ---
-= 更換E4000（60個磁碟機櫃）中的磁碟機抽屜
+= 更換磁碟機抽屜 - E4000 （ 60 個磁碟機櫃）
 :allow-uri-read: 
 :experimental: 
 :icons: font

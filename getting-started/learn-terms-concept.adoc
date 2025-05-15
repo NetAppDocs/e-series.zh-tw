@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, terms 
 summary: 深入瞭解E系列中使用的術語。 
 ---
-= E系列術語
+= 瞭解 E 系列術語
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

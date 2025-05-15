@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更換 E4000 中的 DIMM
+= 更換 DIMM - E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

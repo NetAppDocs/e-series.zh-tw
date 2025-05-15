@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 host interface card, E5700 HIC, replace E5700 HIC, failed E5700 HIC 
 summary: 在E5700中新增HIC。 
 ---
-= 新增E5700主機介面卡（HIC）
+= 新增主機介面卡（ HIC ） - E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

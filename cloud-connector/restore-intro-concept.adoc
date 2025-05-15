@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector restore, 
 summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的還原選項、以取得有關的資訊。「還原」選項會顯示「還原」頁面、可讓您建立新的映像型或檔案型還原工作。 
 ---
-= 還原
+= 在 SANtricity Cloud Connector 中建立新的映像型或檔案型還原
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

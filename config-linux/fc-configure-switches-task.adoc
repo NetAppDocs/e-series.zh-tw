@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FC switches, zoning, express linux configuration, software configuration, linux host, 
 summary: 設定Fibre Channel交換器、讓主機連線至儲存陣列、並限制路徑數量。 
 ---
-= 設定FC交換器
+= 在 E 系列 - Linux （ FC ）中設定 FC 交換器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

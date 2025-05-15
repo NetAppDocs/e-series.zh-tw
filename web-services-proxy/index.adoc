@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services Proxy, WSP, 
 summary: 概述《Resch®Web Services Proxy》、《Web Services API》、《REST API》、SANtricity 
 ---
-= Web服務代理概述SANtricity
+= 瞭解 SANtricity Web 服務 Proxy
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

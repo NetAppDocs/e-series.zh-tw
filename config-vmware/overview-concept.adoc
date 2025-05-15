@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 檢閱使用Express方法來設定E系列陣列和VMware主機的需求。 
 ---
-= 假設
+= 假設（ E 系列和 VMware ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

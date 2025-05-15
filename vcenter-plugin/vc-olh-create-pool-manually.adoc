@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-pool-manually.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 如果您的設定不符合自動集區組態的需求、則可以手動建立集區。資源池是一組邏輯分組的磁碟機。 
 ---
-= 手動建立資源池
+= 在 SANtricity Storage Plugin for vCenter 中手動建立集區
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

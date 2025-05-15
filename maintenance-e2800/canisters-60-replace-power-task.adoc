@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 60-drive power canister, replacing E2800 power canister, E2800, E-Series, eseries 
 summary: 更換60個磁碟機控制器磁碟櫃或磁碟機磁碟櫃、其中包含兩個電源插座以提供電源備援。 
 ---
-= 更換E2800動力箱（60個磁碟機）
+= 更換電源箱 - E2800 （ 60 個磁碟機）
 :allow-uri-read: 
 :experimental: 
 :icons: font

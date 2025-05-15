@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: Web Services Proxy的安裝與升級需求與考量。 
 ---
-= 檢閱安裝與升級需求
+= 檢閱 SANtricity Web 服務 Proxy 的安裝與升級需求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

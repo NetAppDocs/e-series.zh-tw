@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 準備安裝
+= 準備安裝： E4012 和 E4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

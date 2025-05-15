@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes requirements, RTV requirements, RTV restrictions, remote volumes, remote storage E-Series 
 summary: 您的系統必須符合遠端儲存磁碟區的相容要求。 
 ---
-= 遠端儲存設備的需求與限制
+= 使用 SANtricity 遠端儲存磁碟區的要求與限制
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

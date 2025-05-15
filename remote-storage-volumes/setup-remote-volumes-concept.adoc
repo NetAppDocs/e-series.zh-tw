@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure Remote Storage Volumes, set up RTV, configure remote volumes, set up remote storage E-Series 
 summary: 需要進行初始設定、才能讓E系列系統透過支援的iSCSI傳輸協定連線至遠端儲存設備。 
 ---
-= 設定遠端儲存磁碟區的硬體
+= 設定 SANtricity 遠端儲存磁碟區的硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

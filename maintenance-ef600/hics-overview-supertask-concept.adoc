@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, replace HIC, replace HIC, host interface card failed, HIC failure 
 summary: 在更換EF300或EF600 HIC之前、請先檢閱相關要求和考量事項。 
 ---
-= EF300或EF600 HIC升級需求
+= 主機介面卡（ HIC ）升級需求 - EF300 或 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

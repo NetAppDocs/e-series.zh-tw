@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, 
 summary: 當Linux主機第一次發現新LUN時、新LUN沒有分割區或檔案系統。您必須先格式化LUN、才能使用。 
 ---
-= 建立分割區和檔案系統
+= 在 E 系列 - Linux （ FC ）中建立分割區和檔案系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

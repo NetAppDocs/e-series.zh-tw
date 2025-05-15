@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: workflow, guide, express, method, configuring, configure, storage, array, system, manager, host, understand 
 summary: 使用WVMware Express組態工作流程。 
 ---
-= 瞭解VMware工作流程
+= 瞭解 E 系列中的 VMware 工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

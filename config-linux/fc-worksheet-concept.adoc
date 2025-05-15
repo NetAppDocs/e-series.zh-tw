@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: FC worksheet Linux, express linux configuration, software configuration, linux host, 
 summary: 使用這份工作表單記錄FC儲存組態資訊。 
 ---
-= 記錄FC組態
+= 在 E 系列 - Linux 中記錄您的 FC 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

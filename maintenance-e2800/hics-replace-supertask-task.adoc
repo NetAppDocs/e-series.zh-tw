@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replacing E2800 HIC, replace E2800 HIC, replace host interface card, E2800, E-Series, eseries 
 summary: 更換發生故障的主機介面卡（HIC）。 
 ---
-= 更換E2800主機介面卡（HIC）
+= 更換主機介面卡（ HIC ） - E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

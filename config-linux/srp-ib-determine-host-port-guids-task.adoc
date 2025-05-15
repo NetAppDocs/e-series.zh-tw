@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host port GUIDs, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 確定主機連接埠的GUI。 
 ---
-= 確定主機連接埠的GUI並進行建議的設定
+= 在 E 系列 - Linux （ SRP over InfiniBand ）中判斷主機連接埠的全域唯一 ID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

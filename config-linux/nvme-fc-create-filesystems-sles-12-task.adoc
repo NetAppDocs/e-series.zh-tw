@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: partitions, file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以在多重路徑裝置上建立分割區、選擇性地在命名空間上建立檔案系統、然後掛載分割區。 
 ---
-= 建立檔案系統（RHEL 7和SLES 12）
+= 在 E 系列中建立檔案系統 - Linux RHEL 7 和 SLES 12 （ NVMe over FC ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。 
 ---
-= 驗證IP網路連線
+= 驗證 E 系列 - Linux （ iSCSI ）中的 IP 網路連線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

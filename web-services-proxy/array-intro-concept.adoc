@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, discover storage WSP, 
 summary: 若要管理網路中的儲存系統、您必須先探索儲存系統、然後將其新增至管理清單。 
 ---
-= 使用Web服務Proxy管理儲存系統
+= 使用 SANtricity Web 服務 Proxy 管理儲存系統
 :allow-uri-read: 
 :experimental: 
 :icons: font

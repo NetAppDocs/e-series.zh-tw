@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LUNs, configure LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 設定主機上的儲存設備以使用Windows Express方法。 
 ---
-= 設定主機上的儲存設備
+= 在 E 系列 Windows 的主機上設定儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

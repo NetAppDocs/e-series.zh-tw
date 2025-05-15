@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, assign volume, assign namespace, 
 summary: 您必須將磁碟區（命名空間）指派給主機或主機叢集、以便用於I/O作業。此指派可讓主機或主機叢集存取儲存陣列中的一或多個命名空間。 
 ---
-= 指派磁碟區
+= 使用 SANtricity System Manager 指派磁碟區 - Linux （ NVMe over InfiniBand ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

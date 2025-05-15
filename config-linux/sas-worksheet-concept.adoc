@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: SAS worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 請使用這份工作表單來記錄SAS儲存組態資訊。 
 ---
-= 記錄您的SAS組態
+= 在 E 系列 - Linux 中記錄您的 SAS 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure iSCSI networking, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 在陣列端設定iSCSI網路。 
 ---
-= 設定陣列端的網路
+= 在 E 系列 - Linux （ iSCSI ）中設定陣列端網路
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace SAS expansion card, replacing SAS card, drive tray expansion, expansion card, EF300C, EF600C, EF300, EF600 
 summary: 將SAS擴充卡新增至EF300控制器、以便擴充磁碟機匣。 
 ---
-= 將SAS擴充卡新增至EF300和EF600
+= 新增 SAS 擴充卡 - EF300 和 EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

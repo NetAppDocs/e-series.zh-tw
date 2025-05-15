@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-increase-capacity-of-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 調整磁碟區大小以增加其報告容量。 
 ---
-= 增加磁碟區的容量
+= 在 SANtricity Storage Plugin for vCenter 中增加 Volume 的容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: polling Web Services Proxy, WSP statistics, poll WSP, 
 summary: 您可以針對探索到的儲存系統上的所有磁碟和磁碟區統計資料、設定自動輪詢。 
 ---
-= 管理Web服務Proxy統計資料的自動輪詢
+= 管理 SANtricity Web 服務 Proxy 統計資料的自動輪詢
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-workload-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 變更工作負載的名稱、並檢視其相關的應用程式類型。 
 ---
-= 變更工作負載設定
+= 在 SANtricity Storage Plugin for vCenter 中變更工作負載設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

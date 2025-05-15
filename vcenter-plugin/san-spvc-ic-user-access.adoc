@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-user-access.html
 keywords: user access vCenter plugin, user roles vCenter plugin, privileges vCenter plugin, access permissions vCenter plugin 
 summary: 設定vCenter的儲存外掛程式存取權限。 
 ---
-= 設定外掛程式存取權限
+= 設定 SANtricity 儲存外掛程式以取得 vCenter 存取權限
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

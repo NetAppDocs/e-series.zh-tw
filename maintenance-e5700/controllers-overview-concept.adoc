@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 controller, repair E5700 controller, replace E5700 controller, failed E5700 controller 
 summary: 檢閱E5700控制器類型與需求。 
 ---
-= E5700控制器更換要求
+= 更換控制器的要求 - E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

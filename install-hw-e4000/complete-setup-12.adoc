@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 瞭解如何將控制器連接至網路、並完成儲存系統的設定與組態設定。 
 ---
-= 完整儲存系統設定（ E4012 ）
+= 完整儲存系統設定 - E4012
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

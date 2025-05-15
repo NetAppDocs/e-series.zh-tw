@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace power supply, EF300, EF600, EF300C, EF600C 
 summary: 當EF300或EF600控制器故障時、請更換電源供應器。 
 ---
-= 更換EF300或EF600電源供應器
+= 更換電源供應器 - EF300 和 EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

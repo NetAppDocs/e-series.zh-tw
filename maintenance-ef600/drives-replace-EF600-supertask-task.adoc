@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF600, EF600C replace DIMM, drive failure 
 summary: 更換EF600陣列中的磁碟機。 
 ---
-= 更換EF600陣列中的磁碟機
+= 更換磁碟機 - EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

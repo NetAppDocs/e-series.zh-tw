@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Remote Storage Volumes, RTV, remote volumes, remote storage E-Series 
 summary: 您可以從SANtricity 「系統管理程式」的「遠端儲存」畫面的「結果清單」區段、檢視每個遠端儲存設備匯入的狀態。 
 ---
-= 管理匯入進度
+= 管理 SANtricity 遠端儲存磁碟區的匯入進度
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

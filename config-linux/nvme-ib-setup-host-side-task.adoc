@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure Linux host, express linux configuration, linux host, 
 summary: 在InfiniBand環境中設定NVMe啟動器、包括安裝及設定InfiniBand、NVMe-CLI和RDMA套件、設定啟動器IP位址、以及在主機上設定NVMe層。 
 ---
-= 在主機端設定NVMe over InfiniBand
+= 在 E 系列 - Linux 的主機上，透過 InfiniBand 設定 NVMe 啟動器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

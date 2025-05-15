@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: 深入瞭解Web服務API 
 ---
-= Web服務與Unified Manager總覽
+= 瞭解 SANtricity Web 服務和 Unified Manager
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

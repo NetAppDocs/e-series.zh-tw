@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF300 host protocol, EF600 host protocol 
 summary: 轉換主機連接埠的傳輸協定之後、請執行其他步驟以使用新的傳輸協定。 
 ---
-= 完成EF300或EF600的主機傳輸協定轉換
+= 完整主機傳輸協定轉換： EF300 和 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用磁碟區之前、請先確認主機可以將資料寫入磁碟區並讀取回磁碟區。 
 ---
-= 驗證主機上的儲存設備存取
+= 驗證 E 系列 - Linux 主機上的儲存存取（ InfiniBand 上的 iSER ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

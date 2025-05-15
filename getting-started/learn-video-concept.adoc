@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, E-Series videos 
 summary: 觀看影片示範、深入瞭解E系列系統。 
 ---
-= E系列影片
+= 存取 E 系列示範影片
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

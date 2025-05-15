@@ -4,7 +4,7 @@ permalink: rackmount-hardware.html
 keywords: rackmount, rack-mount, install in rack, rails 
 summary: 機架安裝硬體。 
 ---
-= 機架安裝硬體
+= 機架安裝硬體（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

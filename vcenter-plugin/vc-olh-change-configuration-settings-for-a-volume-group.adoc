@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-configuration-settings-for-a-volume-grou
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 編輯Volume群組的設定、包括其名稱和RAID層級。 
 ---
-= 變更Volume群組的組態設定
+= 在 SANtricity Storage Plugin for vCenter 中變更 Volume 群組的組態設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

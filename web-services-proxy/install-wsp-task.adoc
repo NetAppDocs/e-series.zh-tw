@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: installation, download, install proxy, 
 summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上安裝Proxy套件。 
 ---
-= 安裝或升級Web Services Proxy檔案
+= 安裝或升級 SANtricity Web 服務 Proxy 檔案
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-use-ca-signed-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 取得並匯入CA簽署的憑證、以安全存取裝載Storage Plugin for vCenter的管理系統。 
 ---
-= 使用CA簽署的憑證
+= 在 SANtricity Storage Plugin for vCenter 中使用 CA 簽署的憑證
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

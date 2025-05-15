@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。 
 ---
-= 執行SAS專屬的工作
+= 在 E 系列 - VMware 中執行 SAS 專屬工作
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

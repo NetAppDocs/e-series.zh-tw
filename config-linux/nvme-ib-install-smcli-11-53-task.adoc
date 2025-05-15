@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 在Linux Express方法中安裝適用於CLI和HCA的Storage Manager。 
 ---
-= 安裝SANtricity 適用於SMcli的Syn-Storage Manager SANtricity （適用於11.53版或更早版本的軟體）
+= 安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ NVMe over InfiniBand ）
 :allow-uri-read: 
 :experimental: 
 :icons: font

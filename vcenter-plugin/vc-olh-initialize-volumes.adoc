@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-initialize-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 手動初始化磁碟區、以從特定故障狀況中恢復。 
 ---
-= 初始化磁碟區
+= 在 SANtricity Storage Plugin for vCenter 中初始化 Volume
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

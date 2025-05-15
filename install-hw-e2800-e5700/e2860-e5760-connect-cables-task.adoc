@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, connect power cables 
 summary: 連接電源線並開啟磁碟機櫃的電源。 
 ---
-= 連接磁碟櫃
+= 連接電源線 - E2860 ， E5760 和 DE460
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

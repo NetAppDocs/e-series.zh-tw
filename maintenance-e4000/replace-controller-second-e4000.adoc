@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 在 E4000 中新增第二個圓筒
+= 新增第二個圓筒 - E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

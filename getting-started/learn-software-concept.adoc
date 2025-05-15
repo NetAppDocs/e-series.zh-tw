@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E系列系統包含SANtricity 用於儲存資源配置和其他工作的支援功能。 
 ---
-= 軟體概述SANtricity
+= 瞭解 SANtricity 軟體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

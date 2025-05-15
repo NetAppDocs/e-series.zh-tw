@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-consolidate-free-capacity-for-a-volume-group.ht
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 使用「整合可用容量」選項、將現有的可用範圍整合到選取的Volume群組中。執行此動作、即可從Volume群組中的可用容量上限建立額外的Volume。 
 ---
-= 整合Volume群組的可用容量
+= 在 SANtricity Storage Plugin for vCenter 中整合 Volume 群組的可用容量
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

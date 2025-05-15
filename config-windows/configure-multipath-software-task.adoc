@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: multipath software for Windows, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 安裝DSM套件、其中包含適用於Windows的多重路徑軟體。 
 ---
-= 設定多重路徑軟體
+= 在 E 系列 - Windows 中設定多重路徑軟體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

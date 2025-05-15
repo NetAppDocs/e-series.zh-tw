@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure network SRP over IB, configure Linux network, OFED, RDMA, express linux configuration, linux host, 
 summary: 如果您的組態使用SRP over Infiniband傳輸協定、請遵循本節中的步驟。 
 ---
-= 設定網路連線—透過Infiniband的SRSRP
+= 使用 SANtricity System Manaer - Linux （ SRP over InfiniBand ）設定網路連線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

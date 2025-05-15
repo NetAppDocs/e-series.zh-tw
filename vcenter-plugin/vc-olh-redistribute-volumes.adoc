@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-redistribute-volumes.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 重新分配磁碟區、將磁碟區移回其偏好的控制器擁有者 
 ---
-= 重新分配磁碟區
+= 在 SANtricity Storage Plugin for vCenter 中重新分配 Volume
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

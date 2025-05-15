@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-turn-on-locator-lights.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以找到磁碟機、以實體方式識別組成所選集區、磁碟區群組或SSD快取的所有磁碟機。所選集區、Volume群組或SSD快取中的每個磁碟機上都會亮起LED指示燈。 
 ---
-= 開啟定位燈
+= 開啟 SANtricity Storage Plugin for vCenter 磁碟機上的 LED 指示燈
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

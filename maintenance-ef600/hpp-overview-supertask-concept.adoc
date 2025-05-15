@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: convert host protocol, EF600, EF300, EF600C, EF300C 
 summary: 在轉換EF300或EF600主機傳輸協定之前、請先檢閱相關要求和考量事項。 
 ---
-= EF300或EF600主機傳輸協定轉換需求
+= 轉換主機傳輸協定的需求 - EF300 或 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

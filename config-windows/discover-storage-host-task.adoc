@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: LUNs, discover LUNs, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 探索適用於Windows Express方法的儲存設備。 
 ---
-= 探索主機上的儲存設備
+= 探索 E 系列 Windows 主機上的儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

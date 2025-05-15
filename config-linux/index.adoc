@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 針對採用E系列系統的Linux主機使用快速組態。 
 ---
-= Linux Express組態總覽
+= 瞭解適用於 E 系列的 Linux Express 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

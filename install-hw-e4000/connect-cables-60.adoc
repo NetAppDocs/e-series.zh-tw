@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 connect power cables 
 summary: 連接電源線並開啟磁碟機櫃的電源。 
 ---
-= 纜線架（ E4060 ）
+= 連接電源線 - E4060
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

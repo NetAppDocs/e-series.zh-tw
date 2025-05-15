@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: WSP的相容性與限制。 
 ---
-= 相容性與限制
+= SANtricity Web 服務代理程式相容性與限制
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

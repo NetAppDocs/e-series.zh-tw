@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, 
 summary: 驗證是否支援Linux組態。 
 ---
-= 驗證是否支援Linux組態
+= 驗證 E 系列（ FC ）的 Linux 組態支援
 :allow-uri-read: 
 :experimental: 
 :icons: font

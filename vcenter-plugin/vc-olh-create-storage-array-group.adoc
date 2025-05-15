@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 儲存設備群組會定義哪些磁碟機提供組成磁碟區的儲存設備。 
 ---
-= 建立儲存陣列群組
+= 在 SANtricity Storage Plugin for vCenter 中建立儲存陣列群組
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

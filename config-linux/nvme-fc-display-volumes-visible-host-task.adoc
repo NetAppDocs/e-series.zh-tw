@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: SMdevices工具是NVMe CLI套件的一部分、可讓您檢視主機上目前可見的磁碟區。此工具是NVMe清單命令的替代工具。 
 ---
-= 顯示主機可見的磁碟區
+= 顯示 E 系列 - Linux （ NVMe over FC ）中主機可見的磁碟區
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

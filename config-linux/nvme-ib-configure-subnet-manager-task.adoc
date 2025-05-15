@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure subnet manager Linux, path loss, subnet manager, opensm, express linux configuration, linux host, 
 summary: 使用InfiniBand交換器執行子網路管理程式、可能會在高負載期間造成非預期的路徑遺失。若要避免路徑遺失、請使用opensm在一或多部主機上設定子網路管理程式。 
 ---
-= 設定子網路管理程式
+= 在 E 系列 - Linux （ NVMe over InfiniBand ）中設定子網路管理程式
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

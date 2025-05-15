@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, hardware, all flash array, E-Series protocols, E-Series rack 
 summary: E系列儲存陣列有多種組態和機型可供選擇。 
 ---
-= E系列硬體總覽
+= 瞭解 E 系列硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

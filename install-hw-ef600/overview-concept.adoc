@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation process overview 
 summary: 檢閱EF300或EF600的安裝與設定程序。 
 ---
-= 安裝程序
+= 瞭解儲存系統資訊： EF300 ， EF600 ， EF300C 和 EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

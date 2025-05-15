@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, vendor ID, upgrade status, upgrade validate 
 summary: 開啟控制器機櫃電源並驗證控制器軟體版本、以完成控制器升級。然後、您可以收集支援資料並恢復作業。 
 ---
-= 完成控制器升級
+= 完成 E 系列控制器升級
 :allow-uri-read: 
 :experimental: 
 :icons: font

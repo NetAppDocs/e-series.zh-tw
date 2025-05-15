@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure network Linux, configure hosts linux, express linux configuration, linux host, 
 summary: InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SRP、因此不需要額外的硬體。 
 ---
-= 設定儲存附加主機的網路
+= 設定主機與 E 系列儲存設備之間的網路連線 - Linux （ InfiniBand 上的 iSER ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

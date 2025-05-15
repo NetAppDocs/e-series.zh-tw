@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: iSER worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用本工作表記錄有關Infiniband儲存組態的iSER資訊。 
 ---
-= 記錄您的iSER over IB組態
+= 在 E 系列 - Linux 中，透過 InfiniBand 組態記錄您的 iSER
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 battery, repair E5700 battery, replace E5700 battery, failed E5700 battery 
 summary: 更換E5700儲存系統中故障的電池。 
 ---
-= 更換E5700電池
+= 更換電池 - E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

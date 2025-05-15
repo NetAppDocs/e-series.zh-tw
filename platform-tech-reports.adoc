@@ -4,7 +4,7 @@ permalink: platform-tech-reports.html
 keywords: platform technical reports, e-series, hardware, santricity, os 
 summary: E系列技術報告 
 ---
-= 瀏覽平台技術報告
+= 瀏覽平台技術報告（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: uninstall Web Services Proxy, remove WSP, 
 summary: 若要移除Web服務Proxy和Unified Manager、您可以使用任何模式（圖形化、主控台、無聲或RPM檔案）、無論您使用何種方法來安裝Proxy。 
 ---
-= 解除安裝Web服務Proxy
+= 解除安裝 SANtricity Web 服務 Proxy
 :allow-uri-read: 
 :experimental: 
 :icons: font

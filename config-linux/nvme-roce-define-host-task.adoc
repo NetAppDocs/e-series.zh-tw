@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: define Linux host, configure linux host, express linux configuration, linux host, 
 summary: 使用「系統管理程式」、您可以定義將資料傳送至儲存陣列的主機。SANtricity定義主機是讓儲存陣列知道其連接的主機、以及允許I/O存取磁碟區所需的步驟之一。 
 ---
-= 定義主機
+= 使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）建立主機
 :allow-uri-read: 
 :experimental: 
 :icons: font

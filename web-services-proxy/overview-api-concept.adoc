@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services, WSP, SANtricity API, 
 summary: 深入瞭解Web服務API 
 ---
-= API基礎知識
+= 瞭解 SANtricity Web 服務 Proxy API 基礎知識
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

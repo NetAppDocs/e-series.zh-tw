@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: upgrade vCenter 
 summary: vCenter外掛程式的安裝與升級需求與考量。 
 ---
-= 檢閱安裝與升級需求
+= SANtricity Storage Plugin for vCenter 的安裝與升級需求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

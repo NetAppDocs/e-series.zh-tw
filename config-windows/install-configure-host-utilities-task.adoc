@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Windows Unified Host Utilities, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries, SMcli, SMdevices 
 summary: 安裝Windows Unified Host Utilities for Windows Express方法。 
 ---
-= 安裝及設定Windows Unified Host Utilities
+= 在 E 系列 Windows 中安裝及設定 Linux Unified Host Utilities
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

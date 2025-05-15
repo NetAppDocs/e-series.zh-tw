@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, installation, host cabling, direct-attach topology, fabric topology, System Manager connection, management host connection, port configuration, configuring ports, DHCP, static IP 
 summary: 您可以將控制器連接至網路、以完成儲存系統的設定與組態。 
 ---
-= 完整的儲存系統設定與組態
+= 完整的儲存系統設定與組態： EF300 ， EF600 ， EF300C 和 EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

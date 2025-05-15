@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace drive drawer, replacing E2800 drive drawer, E2800 replace drive drawer, replacing E2800 drive drawer, E2800, E-Series, eseries 
 summary: 更換E2860控制器櫃或DE460C磁碟機櫃中的磁碟機抽屜。 
 ---
-= 更換E2800（60個磁碟機櫃）中的磁碟機抽屜
+= 更換磁碟機抽屜 - E2800 （ 60 個磁碟機櫃）
 :allow-uri-read: 
 :experimental: 
 :icons: font

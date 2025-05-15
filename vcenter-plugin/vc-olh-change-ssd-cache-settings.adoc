@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-ssd-cache-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 編輯SSD快取的名稱、並檢視其狀態、最大和目前容量、磁碟機安全性和資料保證狀態、以及其相關的磁碟區和磁碟機。 
 ---
-= 變更SSD快取設定
+= 在 SANtricity Storage Plugin for vCenter 中變更 SSD 快取設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

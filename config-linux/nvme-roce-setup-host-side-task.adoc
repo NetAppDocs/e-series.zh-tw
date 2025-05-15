@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套件、設定啟動器IP位址、以及在主機上設定NVMe層。 
 ---
-= 在主機端設定NVMe over RoCE
+= 在 E 系列 - Linux 中的主機上透過 ROCE 設定 NVMe 啟動器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

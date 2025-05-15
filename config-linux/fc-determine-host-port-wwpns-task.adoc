@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host wwpn, HBA utility, express linux configuration, software configuration, linux host, 
 summary: 您可以安裝FC HBA公用程式、以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外、您也可以使用HBA公用程式、針對所支援的組態、變更NetApp互通性對照表工具附註欄中建議的任何設定。 
 ---
-= 確定主機WWPN並進行建議的設定
+= 決定 E 系列中的主機全球連接埠名稱（ WWPN ） - Linux （ FC ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

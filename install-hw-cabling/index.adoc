@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 將主機直接連接至控制器或使用交換器。 
 ---
-= 纜線配置總覽
+= 儲存系統纜線（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

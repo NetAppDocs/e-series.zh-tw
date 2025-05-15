@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 確認主機可以將資料寫入LUN並讀取回。 
 ---
-= 驗證主機上的儲存設備存取
+= 在 E 系列 Windows 中驗證主機上的儲存存取
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

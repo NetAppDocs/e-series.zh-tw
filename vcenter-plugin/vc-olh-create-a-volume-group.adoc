@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-a-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以為一或多個可供主機存取的磁碟區建立磁碟區群組。 
 ---
-= 建立Volume群組
+= 在 SANtricity Storage Plugin for vCenter 中建立 Volume 群組
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

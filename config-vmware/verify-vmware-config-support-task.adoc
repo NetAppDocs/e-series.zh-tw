@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 驗證是否支援VMware組態。 
 ---
-= 驗證是否支援VMware組態
+= 驗證 E 系列中的 VMware 組態支援
 :allow-uri-read: 
 :experimental: 
 :icons: font

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, E4000, DE212C, DE224C, DE460C 
 summary: 將控制器櫃中的每個控制器連接至磁碟機櫃中的I/O模組（IOM）。 
 ---
-= 磁碟機櫃纜線
+= 纜線控制器機櫃至磁碟機機機櫃（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-enable-security-for-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以為集區或磁碟區群組啟用「磁碟機安全性」、以防止未獲授權存取集區或磁碟區群組中磁碟機上的資料。 
 ---
-= 啟用集區或Volume群組的安全性
+= 在 SANtricity Storage Plugin for vCenter 中啟用集區或磁碟區群組的安全性
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

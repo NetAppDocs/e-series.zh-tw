@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-resolve-untrusted-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 從儲存陣列匯入自我簽署的憑證、或匯入由信任的第三方所核發的憑證授權單位（CA）憑證、以解決不受信任的憑證。 
 ---
-= 解決不受信任的憑證
+= 在 SANtricity Storage Plugin for vCenter 中解決不受信任的憑證
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

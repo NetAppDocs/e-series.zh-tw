@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-view-ssd-cache-statistics.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 檢視SSD快取的統計資料、例如讀取、寫入、快取命中率、快取分配百分比、 和快取使用率百分比。 
 ---
-= 檢視SSD快取統計資料
+= 在 SANtricity Storage Plugin for vCenter 中檢視 SSD 快取統計資料
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

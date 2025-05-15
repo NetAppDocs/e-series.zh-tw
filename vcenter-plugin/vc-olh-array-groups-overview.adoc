@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-array-groups-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 將一組儲存陣列分組、以管理實體與虛擬化的基礎架構。 
 ---
-= 陣列群組總覽
+= 瞭解如何在 SANtricity Storage Plugin for vCenter 中管理陣列群組
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

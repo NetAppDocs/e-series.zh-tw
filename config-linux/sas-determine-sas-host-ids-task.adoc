@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 對於SAS傳輸協定、您可以使用HBA公用程式找到SAS位址、然後使用HBA BIOS進行適當的組態設定。 
 ---
-= 判斷SAS主機識別碼- Linux
+= 判斷 E 系列中的 SAS 主機識別碼 - Linux （ SAS ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

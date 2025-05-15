@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove storage object, disconnect remote storage 
 summary: 您可以透過SANtricity 「更新系統管理程式」移除任何已設定的遠端儲存物件。 
 ---
-= 移除遠端儲存物件
+= 移除 SANtricity 遠端儲存磁碟區的遠端儲存物件
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

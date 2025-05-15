@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-check-volume-redundancy.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以檢查集區或磁碟區群組中某個磁碟區的備援、以判斷該磁碟區上的資料是否一致。如果資源池或磁碟區群組中的某個磁碟機故障、備援資料可用於快速重建替換磁碟機上的資訊。 
 ---
-= 檢查磁碟區備援
+= 在 SANtricity Storage Plugin for vCenter 中檢查 Volume 備援
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

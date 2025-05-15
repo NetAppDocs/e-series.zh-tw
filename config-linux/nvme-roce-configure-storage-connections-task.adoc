@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 如果您的控制器包含NVMe over RoCE（RDMA over Converged乙太網路）連線、您可以從「Hardware（硬體）」頁面或SANtricity 「System（系統）」頁面、設定NVMe連接埠設定。 
 ---
-= 設定儲存陣列NVMe over RoCE連線
+= 在 E 系列 - Linux 中設定儲存陣列 NVMe over roce 連線
 :allow-uri-read: 
 :experimental: 
 :icons: font

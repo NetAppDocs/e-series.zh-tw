@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF600C, EF300C, replace drive, 
 summary: 在更換EF300或EF600中的磁碟機之前、請先檢閱相關要求和考量事項。 
 ---
-= EF300或EF600磁碟機更換需求
+= 更換磁碟機的需求 - EF300 或 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

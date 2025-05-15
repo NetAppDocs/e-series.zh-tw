@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-remove-storage-arrays.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 如果您不想再從vCenter的儲存外掛程式管理儲存陣列、請移除一或多個儲存陣列。 
 ---
-= 移除儲存陣列
+= 移除 SANtricity Storage Plugin for vCenter 中的儲存陣列
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

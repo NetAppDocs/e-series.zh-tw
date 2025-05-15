@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600 
 summary: 將機櫃移至永久位置。 
 ---
-= 將機櫃移至永久位置
+= 將 3040 40U 機櫃移至其永久位置（ E 系列）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

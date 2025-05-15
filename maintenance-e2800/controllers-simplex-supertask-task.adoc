@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace E2800 controller, replacing E2800 controller, simplex controller replacement, E2800, E-Series, eseries 
 summary: 您可以在單工組態中更換故障的控制器機箱。 
 ---
-= 更換E2800單工組態的控制器
+= 更換單工組態的控制器 - E2800
 :allow-uri-read: 
 :experimental: 
 :icons: font

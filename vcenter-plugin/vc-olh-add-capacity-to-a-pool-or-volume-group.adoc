@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-add-capacity-to-a-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 新增磁碟機以擴充現有資源池或磁碟區群組中的可用容量。 
 ---
-= 新增容量至資源池或磁碟區群組
+= 在 SANtricity Storage Plugin for vCenter 中將容量新增至集區或磁碟區群組
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF600, EF300, EF300C, EF600C, upgrade HIC, upgrade HIC, increase host ports, change host protocol 
 summary: 您可以升級主機介面卡（HIC）來增加主機連接埠數量或變更主機傳輸協定。 
 ---
-= 升級EF300或EF600主機介面卡（HIC）
+= 升級主機介面卡（ HIC ） - EF300 和 EF600
 :allow-uri-read: 
 :experimental: 
 :icons: font

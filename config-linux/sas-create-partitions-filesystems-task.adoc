@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 當Linux主機第一次發現新LUN時、新LUN沒有分割區或檔案系統。您必須先格式化LUN、才能使用。 
 ---
-= 建立分割區和檔案系統
+= 在 E 系列中建立分割區和檔案系統 - Linux （ SAS ）
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

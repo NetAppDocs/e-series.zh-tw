@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C replace fan, 
 summary: 在更換EF300或EF600風扇之前、請先檢閱相關要求和考量事項。 
 ---
-= EF300或EF600風扇更換需求
+= 更換風扇的需求 - EF300 和 EF600
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

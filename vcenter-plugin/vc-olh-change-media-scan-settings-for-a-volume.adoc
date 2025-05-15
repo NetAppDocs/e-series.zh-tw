@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-change-media-scan-settings-for-a-volume.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 媒體掃描是一種背景作業、可掃描磁碟區中的所有資料和備援資訊。使用此選項可啟用或停用一或多個Volume的媒體掃描設定、或變更掃描持續時間。 
 ---
-= 變更Volume的媒體掃描設定
+= 在 SANtricity Storage Plugin for vCenter 中變更 Volume 的媒體掃描設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

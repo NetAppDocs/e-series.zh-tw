@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換器和網路。然後驗證IP網路連線。 
 ---
-= 執行iSCSI專屬工作
+= 在 E 系列 - VMware 中執行 iSCSI 專屬工作
 :allow-uri-read: 
 :experimental: 
 :icons: font

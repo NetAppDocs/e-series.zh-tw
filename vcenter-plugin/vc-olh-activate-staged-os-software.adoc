@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-activate-staged-os-software.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 您可以選擇在更方便的時間啟動軟體檔案。 
 ---
-= 啟動分段作業系統軟體
+= 在 SANtricity Storage Plugin for vCenter 中啟動階段式作業系統軟體
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

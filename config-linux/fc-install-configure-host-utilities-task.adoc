@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Linux Unified Host Utilities, express linux configuration, software configuration, linux host, SMcli, SMdevices 
 summary: 使用FC時、請安裝Linux Unified Host Utilities。 
 ---
-= 安裝及設定Linux Unified Host Utilities
+= 在 E 系列（ FC ）中安裝及設定 Linux Unified Host Utilities
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

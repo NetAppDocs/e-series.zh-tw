@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, installation, create account, register hardware 
 summary: 若要安裝EF300或EF600、請建立帳戶並註冊硬體。 
 ---
-= 準備安裝
+= 準備安裝 - EF300 ， EF600 ， EF300C 和 EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

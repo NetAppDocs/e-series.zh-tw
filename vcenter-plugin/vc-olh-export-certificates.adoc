@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-export-certificates.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 匯出憑證以檢視其完整詳細資料。 
 ---
-= 匯出憑證
+= 匯出 SANtricity Storage Plugin for vCenter 中的憑證
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E2800, E5700, EF300, EF600, SANtricity, drive firmware, upgrade SANtricity, upgrade OS, upgrade E-Series, upgrade firmware, upgrading, upgrade IOM firmware, upgrade NVSRAM, upgrade controller 
 summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用作業系統的更新軟體和韌體、以及其磁碟機韌體。 
 ---
-= 升級考量
+= 升級 SANtricity 軟體的考量事項
 :allow-uri-read: 
 :experimental: 
 :icons: font

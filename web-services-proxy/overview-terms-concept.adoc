@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Web Services terms, WSP concepts 
 summary: 深入瞭解Web服務API 
 ---
-= 詞彙與概念
+= 瞭解 SANtricity Web 服務 Proxy 術語
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

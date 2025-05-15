@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, upgrade controller, upgrading controller, installing new controller, install new controller, install battery, installing battery, install controller canister 
 summary: 移除舊控制器之後、您可以在控制器磁碟機匣中安裝新的控制器 
 ---
-= 安裝新的控制器
+= 安裝新的 E 系列控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

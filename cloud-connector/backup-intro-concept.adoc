@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector backup 
 summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的備份選項、以取得有關的資訊。備份選項會顯示「備份」頁面、可讓您建立新的映像型或檔案型備份工作。 
 ---
-= 備份
+= 使用 SANtricity Cloud Connector 來建立和管理 E 系列 Volume 備份
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

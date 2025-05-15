@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: 在雙柱機架或NetApp系統機櫃中安裝E2800或E5700。 
 ---
-= 安裝硬體
+= 安裝硬體 - E5724 ， EF570 ， EF280 ， E2812 ， E2824 ， DE212C 和 DE224C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

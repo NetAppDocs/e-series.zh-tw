@@ -4,7 +4,7 @@ permalink: vcenter-plugin/san-spvc-ic-storage-provisioning.html
 keywords: create volumes vCenter plugin, provision Plugin for vCenter, vCenter plugin storage provisioning, vCenter plugin host 
 summary: 使用外掛程式for vCenter建立磁碟區、將磁碟區指派給主機、然後將磁碟區指派給資料存放區。 
 ---
-= 在外掛程式中配置儲存設備
+= 在 SANtricity Storage Plugin for vCenter 中配置儲存設備
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

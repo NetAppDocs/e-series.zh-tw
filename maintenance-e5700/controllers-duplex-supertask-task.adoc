@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 controller, repair E5700 controller, replace E5700 controller, failed E5700 controller 
 summary: 在雙工組態中更換控制器機箱。 
 ---
-= 更換雙工組態中的控制器
+= 更換雙工組態的控制器 - E5700
 :allow-uri-read: 
 :experimental: 
 :icons: font

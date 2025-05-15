@@ -4,7 +4,7 @@ summary: 您可以變更讀取快取和寫入快取設定、以影響磁碟區�
 permalink: vcenter-plugin/vc-olh-change-cache-settings-for-a-volume.html 
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 ---
-= 變更磁碟區的快取設定
+= 在 SANtricity Storage Plugin for vCenter 中變更磁碟區的快取設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

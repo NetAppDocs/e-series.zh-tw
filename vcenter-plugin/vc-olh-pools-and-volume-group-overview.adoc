@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-pools-and-volume-group-overview.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 若要配置儲存設備、您可以建立一個集區或磁碟區群組、其中包含您要在儲存陣列中使用的硬碟機（HDD）或固態磁碟（SSD）磁碟機。 
 ---
-= 資源池與磁碟區群組總覽
+= 在 SANtricity Storage Plugin for vCenter 中深入瞭解儲存資源池和 Volume 群組
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

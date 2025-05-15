@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-storage-array-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 移除不再需要的一或多個儲存陣列群組。 
 ---
-= 刪除儲存陣列群組
+= 在 SANtricity Storage Plugin for vCenter 中刪除儲存陣列群組
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

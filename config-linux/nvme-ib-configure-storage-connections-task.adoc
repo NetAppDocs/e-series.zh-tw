@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 如果您的控制器包含NVMe over InfiniBand連接埠、您可以使用SANtricity 「系統管理程式」來設定每個連接埠的IP位址。 
 ---
-= 設定儲存陣列NVMe over InfiniBand連線
+= 在 E 系列 - Linux 中，透過 InfiniBand 連線設定儲存陣列 NVMe
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

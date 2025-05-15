@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 60-drive fan canister, replacing E2800 fan canister, E2800 replace fan, E2800, E-Series, eseries 
 summary: 更換60個磁碟機控制器機櫃或磁碟機櫃中的風扇容器。 
 ---
-= 更換E2800風扇容器（60個磁碟機）
+= 更換風扇箱 - E2800 （ 60 個磁碟機）
 :allow-uri-read: 
 :experimental: 
 :icons: font

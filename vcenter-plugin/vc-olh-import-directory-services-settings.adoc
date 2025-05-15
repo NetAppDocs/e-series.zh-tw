@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-import-directory-services-settings.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 將目錄服務組態從一個儲存陣列匯入其他儲存陣列。 
 ---
-= 匯入目錄服務設定
+= 在 SANtricity Storage Plugin for vCenter 中匯入目錄服務設定
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

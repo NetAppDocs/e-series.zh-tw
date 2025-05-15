@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「可靠性」）來驗證是否支援整個組態。 
 ---
-= 驗證Linux支援並審查限制
+= 驗證 E 系列（ NVMe over roce ）的 Linux 組態支援與審查限制
 :allow-uri-read: 
 :experimental: 
 :icons: font

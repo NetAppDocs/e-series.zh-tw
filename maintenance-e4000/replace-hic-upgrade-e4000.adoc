@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 在 E4000 中升級 HIC
+= 升級主機介面卡（ HIC ） - E4000
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用E系列系統的VMware主機快速組態。 
 ---
-= VMware Express組態總覽
+= E 系列中的 VMware Express 組態
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

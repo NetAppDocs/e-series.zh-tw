@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C, installation, power on, power cables 
 summary: 連接電源線並開啟磁碟機櫃的電源。 
 ---
-= 為控制器磁碟櫃供電
+= 開啟控制器機櫃的電源 - EF300 ， EF600 ， EF300C 和 EF600C
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

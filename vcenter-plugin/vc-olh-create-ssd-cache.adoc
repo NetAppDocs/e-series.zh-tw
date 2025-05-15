@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-ssd-cache.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 若要動態加速系統效能、您可以使用SSD快取功能、將最常存取的資料（「熱」資料）快取到較低延遲的固態硬碟（SSD）。 
 ---
-= 建立SSD快取
+= 在 SANtricity Storage Plugin for vCenter 中建立 SSD 快取
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 將磁碟區指派給主機之後、您可以執行重新掃描、以便主機偵測並設定磁碟區的多重路徑。 
 ---
-= 探索主機上的儲存設備
+= 探索 E 系列 - VMware 主機上的儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

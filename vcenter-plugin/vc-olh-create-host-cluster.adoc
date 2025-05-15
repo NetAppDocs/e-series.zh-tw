@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-create-host-cluster.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 當兩個或多個主機需要I/O存取相同的磁碟區時、您可以建立一個主機叢集。 
 ---
-= 建立主機叢集
+= 在 SANtricity Storage Plugin for vCenter 中建立主機叢集
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

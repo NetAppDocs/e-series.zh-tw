@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: IP address, DHCP, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用動態主機組態傳輸協定（DHCP）以Windows Express方法提供IP位址。 
 ---
-= 使用DHCP設定IP位址
+= 在 E 系列 - Windows 中使用 DHCP 設定 IP 位址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

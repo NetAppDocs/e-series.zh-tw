@@ -4,7 +4,7 @@ permalink: vcenter-plugin/vc-olh-delete-pool-or-volume-group.html
 keywords: vCenter plugin, Plugin for vCenter, SANtricity plugin for vCenter 
 summary: 刪除資源池或磁碟區群組以建立更多未指派的容量、您可以重新設定以滿足應用程式儲存需求 
 ---
-= 刪除資源池或磁碟區群組
+= 在 SANtricity Storage Plugin for vCenter 中刪除集區或磁碟區群組
 :hardbreaks:
 :allow-uri-read: 
 :experimental: 

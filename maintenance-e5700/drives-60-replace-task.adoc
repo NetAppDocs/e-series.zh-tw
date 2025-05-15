@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 60-drive, replace E5700 60-drive, failed E5700 60-drive 
 summary: 更換E5700 60磁碟機櫃中的磁碟機。 
 ---
-= 更換E5700（60個磁碟機櫃）中的磁碟機
+= 更換磁碟機 - E5700 （ 60 個磁碟機櫃）
 :allow-uri-read: 
 :experimental: 
 :icons: font
