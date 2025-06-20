@@ -134,7 +134,7 @@ NOTE: 在升級期間、系統不會提示您輸入組態參數。
 . 開啟終端機視窗。
 . 輸入下列命令：
 +
-"rpm -u SANtricity網路服務-n.n.nn.nminn.nminn.e.fs_64.rpm"
+`rpm -U santricity_webservices-nn.nn.nn.nnnn-n.x86_64.rpm`
 
 +
 

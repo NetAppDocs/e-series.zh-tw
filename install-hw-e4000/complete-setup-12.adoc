@@ -28,7 +28,7 @@ NOTE: 控制器左下側（ e1a ， e1b ， e1c 和 e1d ）和右上側（ e0a �
 --
 下列範例顯示使用直接附加拓撲連接至資料主機的纜線。
 
-image:../media/drw_e4012_direct_topology_ieops-2047.svg["E4012 直接拓撲，寬度 =1000px"]
+image:../media/drw_e4012_direct_topology_ieops-2156.svg["E4012 直接拓撲，寬度 =1000px"]
 
 . 將每個主機 HBA 連接埠連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。
 
@@ -41,7 +41,7 @@ NOTE: 有關其他佈線圖範例，請參閱 https://docs.netapp.com/us-en/e-se
 --
 下列範例顯示使用光纖拓撲連接至資料主機的纜線。
 
-image:../media/drw_e4012_fabric_topology_ieops-2046.svg["E4012 Fabric Topology ， width=1000px"]
+image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012 Fabric Topology ， width=1000px"]
 
 . 將每個主機介面卡直接連接到交換器。
 . 將每台交換器直接連接到控制器上的主機連接埠（ e1a ， e1b ， e1c ， e1d 或 e0a 和 e0b ）。

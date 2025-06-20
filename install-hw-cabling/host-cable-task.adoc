@@ -45,7 +45,7 @@ image::../media/2hosts_4hbas_ieops-2146.svg[兩個主機 / 四個 HBA 和兩個�
 下圖顯示連線範例。對於提供資源配置功能的交換器、您應該隔離每個啟動器和目標配對。
 
 .兩台主機和兩台交換器
-image::../media/topology_host_fabric_generic.png[兩台主機和兩台交換器纜線]
+image::../media/topology_host_fabric_generic_ieops-2152.svg[兩台主機和兩台交換器纜線]
 
 *（1）*_將每個主機介面卡直接連接到交換器。_
 

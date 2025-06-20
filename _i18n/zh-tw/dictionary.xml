@@ -2081,8 +2081,6 @@
   <block id="1edcd636f6e143c5ca4c65dc685c4491" category="list-text">重新連接控制器磁碟機匣與磁碟機匣之間的所有纜線。</block>
   <block id="52a47feec6f3126fa570a18983173b99" category="paragraph">如果磁碟機纜線組態與舊控制器相同、請使用連接至纜線的標籤來正確重新連接纜線。</block>
   <block id="cdbdae53c0edf951ca777b40ed6cb316" category="inline-link-macro">完成控制器升級</block>
-  <block id="e9983c2bf51c9aa8f38dce44157b9a2a" category="paragraph">此程序適用於IOM12和IOM12B磁碟機櫃。</block>
-  <block id="2af3ffb0914986412fbce97033362ada" category="admonition">此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）</block>
   <block id="d223aabe6d0751ac7fb17d3493f3c6c7" category="inline-link-macro">纜線</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp 支援網站</block>
   <block id="88ace500273b7d203ef62a3d2eef9567" category="summary">開啟控制器機櫃電源並驗證控制器軟體版本、以完成控制器升級。然後、您可以收集支援資料並恢復作業。</block>
@@ -4829,7 +4827,6 @@
   <block id="fa89f08543b6ca518071711a3bd8ae93" category="list-text">如果仍有報告電力容器故障、請重複中的步驟 <block ref="c5e4ac8ffd3690740ad7837d610d213f" category="inline-xref-macro-rx"></block> 和 <block ref="0d240e4a1e9b2ac9c0cbe94c4248016d" category="inline-xref-macro-rx"></block>。如果問題持續發生、請聯絡技術支援部門。</block>
   <block id="c92ae1b66e0ea48f905922b70c51fcc0" category="summary">將E2800中的磁碟機更換為60個磁碟機櫃。</block>
   <block id="609be9ba4308b107932857f7cf158595" category="paragraph">您可以將E2800中的磁碟機更換為60個磁碟機櫃。</block>
-  <block id="ebc31fad1cf84954196a7706294df684" category="paragraph">本程序適用於資料中心管理員和DCM2磁碟機櫃。</block>
   <block id="028c5d15221ae8f601ed0df498a6bd6d" category="inline-link-macro">E2800磁碟機更換需求</block>
   <block id="c2cadf2805330023bff52136745a00d3" category="list-text">檢閱中的磁碟機處理需求 <block ref="c42d760f1dbbf48c20b32f86aba80fb8" category="inline-link-macro-rx"></block>。</block>
   <block id="afc538814e7e75b26d932dfaec6f611f" category="section-title">步驟2：移除故障磁碟機</block>
@@ -6082,7 +6079,6 @@
   <block id="69388a3aa77fde6c6db723db24c07886" category="paragraph">對於與RPM套件管理系統相容的Linux系統、您可以使用選用的RPM檔案來安裝Web Services Proxy。</block>
   <block id="44fdd30cd930ac3164eb732ccfc71839" category="list-text">將RPM檔案下載至您要安裝Proxy和Unified Manager的伺服器。</block>
   <block id="6dcd1ebf4390170868ab9bcdfd967581" category="list-text">輸入下列命令：</block>
-  <block id="832e1d3c786f0b6f9f452d072f2d4b27" category="paragraph">"rpm -u SANtricity網路服務-n.n.nn.nminn.nminn.e.fs_64.rpm"</block>
   <block id="e90cc19871614d9efbaffbaffd7e2d47" category="admonition">在上述命令中、「n.n.n.nn.nnn.nfn」代表版本編號。</block>
   <block id="c0d25939d469bb628bef1593149aba5c" category="paragraph">在安裝及設定Web服務Proxy之前、請先閱讀Web服務與SANtricity 《Overview of Web Services》（英文）《Overview of Web Services》（英文）和《Overview Unified Manager》（英文）。</block>
   <block id="33ee05f3767ae57fc2ec83494dba4e83" category="paragraph">Web服務是一種應用程式設計介面（API）、可讓您設定、管理及監控NetApp E系列和EF系列儲存系統。透過發出API要求、您可以完成E系列儲存系統的組態、資源配置及效能監控等工作流程。</block>
@@ -6362,7 +6358,6 @@
   <block id="c0e8c7e46cae3f0c9b9c738bc76c9ea8" category="paragraph">「增加報告容量」對話方塊隨即出現。此對話方塊會顯示磁碟區目前報告的容量、以及磁碟區相關聯之資源池或Volume群組中可用的可用容量。</block>
   <block id="5c82f6a54733344cb7eec2765ac13712" category="paragraph">磁碟區容量會根據您的選擇而增加。請注意、這項作業可能會冗長、並可能影響系統效能。</block>
   <block id="4068dcbd83689810385f5bd61994998b" category="paragraph">擴充磁碟區容量之後、您必須手動增加檔案系統大小以符合需求。您的做法取決於所使用的檔案系統。如需詳細資料、請參閱主機作業系統文件。</block>
-  <block id="27ff4e5987307be95b847357578a7d2c" category="summary">備援檢查可決定集區或磁碟區群組中磁碟區上的資料是否一致。</block>
   <block id="dbdb64210af00cba98b2ae65e68fc433" category="doc">什麼是備援檢查？</block>
   <block id="527686381caf5b91f8b2570f0b90f7e1" category="paragraph">備援檢查可決定集區或磁碟區群組中磁碟區上的資料是否一致。如果資源池或磁碟區群組中的某個磁碟機故障、備援資料可用於快速重建替換磁碟機上的資訊。</block>
   <block id="ceb78409571f58fc00f9f8b5b24b8937" category="paragraph">您一次只能在一個集區或磁碟區群組上執行此檢查。磁碟區備援檢查會執行下列動作：</block>
@@ -6648,7 +6643,6 @@
   <block id="6f77c9c07c72d4718892ec422f4427bc" category="doc">如何將主機連接埠與主機配對？</block>
   <block id="e3603ec100f890e2ef8684fc0f32d90c" category="paragraph">取得此資訊後、請從「Create Host（建立主機）」對話方塊中提供的清單中、選取已登入儲存陣列的主機連接埠識別碼。</block>
   <block id="2bba3e0602cd7a130a9a940ee66aefad" category="admonition">請務必為您要建立的主機選取適當的主機連接埠識別碼。如果您將錯誤的主機連接埠識別碼關聯起來、可能會導致無法預期地從其他主機存取此資料。</block>
-  <block id="490911223ced9bd35d325330312a99b5" category="summary">密碼用於加密及解密儲存在本機管理用戶端上的安全金鑰檔案。</block>
   <block id="7e2fd80391cbb19f61be6028669d1143" category="doc">為什麼我需要定義密碼？</block>
   <block id="2f42cd01026066a070aa52e53e4d963f" category="paragraph">密碼用於加密及解密儲存在本機管理用戶端上的安全金鑰檔案。如果安全金鑰重新安裝在另一個儲存陣列中、則沒有密碼、就無法解密安全金鑰、也無法用來解除鎖定已啟用安全功能的磁碟機中的資料。</block>
   <block id="2da87ae0f783e9cc7ac8f36a7af697e4" category="summary">預設叢集是系統定義的實體、可讓登入儲存陣列的任何未關聯主機連接埠識別碼、存取指派給預設叢集的磁碟區。</block>
@@ -6844,8 +6838,6 @@
   <block id="961886d373243f3f3f779b008441b5d2" category="cell">支援使用Atto Technology、Inc.、多重路徑驅動程式的Mac OS版本。</block>
   <block id="d93a7355c7e5ae529cbbd1c7386ef236" category="cell">Windows（Atto）</block>
   <block id="1cef5a0ae504a39c3c685c81bb227bcc" category="cell">支援使用Atto Technology、Inc.、多重路徑驅動程式的Windows作業系統。</block>
-  <block id="fae9863ad38cf7cb4abba55837a6958e" category="cell">僅限部分（ALUA）FlexArray</block>
-  <block id="80a4b6a6aea0733712df8ece7feeb565" category="cell">支援使用FlexArray ALUA進行多重路徑的NetApp支援系統。</block>
   <block id="448462a9364fed0f780b5871c1332348" category="cell">IBM服務</block>
   <block id="ba5b374a9253be7b2e7ff414763a91ee" category="cell">支援IBM SAN Volume Controller組態。</block>
   <block id="fb83a625e5852c1ba47fe358f2d50ffc" category="cell">原廠預設值</block>
@@ -6854,7 +6846,6 @@
   <block id="02677c9d7a9295a0b7ff23da80ed17c2" category="cell">支援使用具備3.9或更早核心的Device Mapper多重路徑容錯移轉解決方案的Linux作業系統。</block>
   <block id="e9745a54dc083bc4c6e7adb0ba4a88bf" category="cell">叢集式視窗（已過時）</block>
   <block id="ee99f98925e229fb230a1fca830d5dd4" category="cell">如果您的主機作業系統類型設定為此值、請改用Windows（叢集式或非叢集式）設定。</block>
-  <block id="e28ca758b5b6384ff2daa36accced63c" category="summary">在磁碟區建立期間、系統會提示您提供工作負載使用的相關資訊。</block>
   <block id="b5a3b95a88ff3f89275ca18c4736d4b8" category="doc">我所選的工作負載如何影響磁碟區建立？</block>
   <block id="0c6710fd70e8f6dfb7dc7c5ef665fd39" category="paragraph">在磁碟區建立期間、系統會提示您提供工作負載使用的相關資訊。系統會使用此資訊為您建立最佳Volume組態、並可視需要加以編輯。您也可以在磁碟區建立順序中跳過此步驟。</block>
   <block id="a9b6571e3fb4b307db1e9aeb13903f33" category="list-text">視訊監控應用程式</block>
@@ -7010,7 +7001,6 @@
   <block id="25d294940d1800f4d27d4ba80d924e94" category="section-title">啟用和停用功能</block>
   <block id="e8ce4dc5c23425001ae843ebfc09d20d" category="paragraph">預設會在磁碟機支援DULBE的系統上啟用資源配置。您可以從資源池和Volume群組停用該預設設定。停用資源資源配置是現有磁碟區的永久性動作、無法回復（亦即、您無法重新啟用這些磁碟區群組和資源池的資源配置）。</block>
   <block id="4435efc77a278305c3367a9af9389977" category="paragraph">不過、如果您想要為所建立的任何新磁碟區重新啟用資源資源配置、可以從功能表：設定[系統]執行此作業。請注意、當您重新啟用資源資源配置時、只有新建立的Volume群組和集區會受到影響。任何現有的Volume群組和集區都將維持不變。如有需要、您也可以從功能表：設定[系統]再次停用資源資源配置。</block>
-  <block id="e995e7f7f68380b2da6f062d6f736236" category="summary">對於EF300和EF600系統、可以設定一個磁碟區來支援512位元組或4KiB區塊大小（也稱為「磁碟區大小」）。您必須在建立磁碟區期間設定正確的值。</block>
   <block id="fb5754cb7d8aec1ca725e7242d365730" category="doc">我需要知道哪些關於主機區塊大小需求的資訊？</block>
   <block id="e5e425d8ab1cbef0e34a067f0d88d470" category="paragraph">對於EF300和EF600系統、可以設定一個磁碟區來支援512位元組或4KiB區塊大小（也稱為「磁碟區大小」）。您必須在建立磁碟區期間設定正確的值。如果可能、系統會建議適當的預設值。</block>
   <block id="f4aa667b118a0a334c4fa467de995fc8" category="paragraph">設定Volume區塊大小之前、請先閱讀下列限制與準則。</block>
@@ -7020,7 +7010,6 @@
   <block id="bfa50d7e23cedec28f3a7c786ec7a651" category="list-text">如果您使用寫入4KiB區塊的磁碟機來建立磁碟區群組、則可以使用512位元組或4KiB區塊來建立磁碟區。</block>
   <block id="e131265d769e1bc2ac0e9288abe59c73" category="list-text">如果陣列有iSCSI主機介面卡、則所有磁碟區都限制為512位元組區塊（無論磁碟區群組區塊大小）。這是因為特定的硬體實作。</block>
   <block id="714ec5306252a0c2268088a5e79bd8d2" category="list-text">一旦設定區塊大小、您就無法變更區塊大小。如果您需要變更區塊大小、則必須刪除磁碟區並重新建立。</block>
-  <block id="968c500c45a669526a5ae69ef252eb12" category="summary">如果您想要讓兩個以上的主機共用同一組磁碟區的存取權、則需要建立主機叢集。</block>
   <block id="36ba1dd2062be041e65d76f318fc9563" category="doc">為什麼我需要建立主機叢集？</block>
   <block id="605c94544e16797cd75e903049c8c75f" category="paragraph">如果您想要讓兩個以上的主機共用同一組磁碟區的存取權、則需要建立主機叢集。一般而言、個別主機上安裝了叢集軟體、以協調磁碟區存取。</block>
   <block id="25158e36dca2975554827639d80d3724" category="summary">您可以檢視及管理軟體儲存庫、其中會列出與Storage Plugin for vCenter相關的所有軟體檔案。</block>
@@ -7071,7 +7060,6 @@
   <block id="6ddafd51962fda13ede773e9d6350dd2" category="list-text">從*管理*頁面、選取儲存陣列名稱左側的核取方塊。</block>
   <block id="374fea5b262769323b08b3962c808a45" category="list-text">選取列最右側的省略符號、然後從快顯功能表中選取*重新命名儲存陣列*。</block>
   <block id="96f8be2a5d55d9a167ed06cc1a5f9694" category="list-text">輸入新名稱、然後按一下「*儲存*」。</block>
-  <block id="c7f22d49f002f26198a719f2496c2e98" category="summary">匯入設定功能是批次作業、可將組態從一個儲存陣列載入至多個儲存陣列。在此作業期間匯入的設定取決於來源儲存陣列在System Manager中的設定方式。</block>
   <block id="6aa467b445a7d222ea7a821c8df54a08" category="doc">匯入哪些設定？</block>
   <block id="5a336d7c8bb4d9fb626af7c0fffe68af" category="paragraph">匯入設定功能是批次作業、可將組態從一個儲存陣列載入至多個儲存陣列。</block>
   <block id="5f54df5b09ce6e5e7ccff3fed9aea673" category="paragraph">在此作業期間匯入的設定取決於來源儲存陣列在System Manager中的設定方式。下列設定可匯入多個儲存陣列：</block>
@@ -7084,7 +7072,6 @@
   <block id="1aa660524e4f7281ec5e49498a4718df" category="list-text">*系統設定*-組態包括磁碟區的媒體掃描設定、控制器的SSD快取、以及自動負載平衡（不包括主機連線報告）。</block>
   <block id="95ddff89f7e76cf544c140d3f049b138" category="summary">如果磁碟區是使用命令列介面（CLI）建立、或是已從不同的儲存陣列移轉（匯入/匯出）、則不會與工作負載建立關聯。</block>
   <block id="184ee7795269728284ddf4700779c94b" category="doc">為什麼這些磁碟區與工作負載無關？</block>
-  <block id="a755886af9ddc52625c98ff0c2403d42" category="summary">安全金鑰由儲存陣列內的控制器和啟用安全功能的磁碟機共用。</block>
   <block id="2a0d49e5c65d1c328eea1427c45f821e" category="doc">在建立安全金鑰之前、我需要知道什麼？</block>
   <block id="eb8e4643855758b3255653b9508bfb4a" category="paragraph">安全金鑰由儲存陣列內的控制器和啟用安全功能的磁碟機共用。如果從儲存陣列中移除啟用安全功能的磁碟機、安全金鑰會保護資料免於未經授權的存取。</block>
   <block id="41f869dddf7c6279ec6063ce284c3e8e" category="paragraph">您可以使用下列其中一種方法來建立及管理安全性金鑰：</block>
@@ -7189,7 +7176,6 @@
   <block id="5177a22291a0479f014a4c628e8c39bf" category="list-text">清除已初始化磁碟區的所有資料。</block>
   <block id="fc9997eb02932a98d6282e5da3bf886e" category="list-text">清除區塊索引、這會使未寫入的區塊讀取、如同零填色（磁碟區看起來是完全空白的）。</block>
   <block id="0b74908e48cc1d1d0b3056cb2126fb0a" category="paragraph">這項作業可能會耗費大量時間、並可能影響系統效能。</block>
-  <block id="4599f147525488978c059ab5443c5a94" category="summary">此工作負載中的磁碟區不會與應用程式專屬的工作負載相關聯、因此無法刪除工作負載。</block>
   <block id="cc41a400b6ddab31b3cc4c347ea5b96a" category="doc">為什麼我無法刪除選取的工作負載？</block>
   <block id="3bfd2179043341e09a4fc1cfd720d6ff" category="paragraph">此工作負載由一組使用命令列介面（CLI）建立的磁碟區、或是從不同儲存陣列移轉（匯入/匯出）的磁碟區組成。因此、此工作負載中的磁碟區不會與應用程式專屬的工作負載相關聯、因此無法刪除工作負載。</block>
   <block id="bff2ada202630bbc11f607cc5ffa0e29" category="summary">當系統偵測到至少11個未指派的磁碟機、或偵測到一個符合現有集區資格的未指派磁碟機時、您可以自動建立集區。</block>
@@ -7223,7 +7209,6 @@
   <block id="b19ae07679153c8839dce79280a9b977" category="paragraph">匯入的設定包括LDAP（輕量型目錄存取傳輸協定）伺服器的網域名稱和URL、以及LDAP伺服器使用者群組與儲存陣列預先定義角色的對應。</block>
   <block id="e79c0c6f8d005d753d2037c9281755c5" category="list-text">在Select Settings（選擇設置）對話框中，選擇* Directory services（*目錄服務）*，然後單擊* Next*（*下一步*）。</block>
   <block id="178bcda3e7560e5a5b5e8fa2c4f3b069" category="paragraph">現在、目標儲存陣列已設定與來源陣列相同的目錄服務。</block>
-  <block id="4618a10c402a86f34f74700b56034c0f" category="summary">維護資源池或磁碟區群組的機櫃和藥櫃遺失保護</block>
   <block id="8a3f4e59944403d76cf4ffb618284325" category="doc">如何維護機櫃和藥櫃遺失保護？</block>
   <block id="5f18e254e37bfef58483cda02161565b" category="paragraph">若要維護資源池或磁碟區群組的機櫃和藥櫃遺失保護、請使用下表中指定的條件。</block>
   <block id="a0db49ba470c1c9ae2128c3470339153" category="cell">層級</block>
@@ -7341,7 +7326,6 @@
   <block id="5e9ab766ec08679ade0079d0bb739b2e" category="list-text">按一下*整合*。</block>
   <block id="310125557218a86df977fea54f7f1144" category="paragraph">系統會開始將磁碟區群組的可用容量區域整合（重組）為一個鄰近的容量、以供後續的儲存組態工作使用。</block>
   <block id="8b923050d3190a365119cba36abd83c1" category="paragraph">從導覽側欄中、選取* Operations *以檢視整合可用容量作業的進度。這項作業可能會耗費大量時間、並可能影響系統效能。</block>
-  <block id="8289ad2daf4149715a39ad8d6af619b8" category="summary">具有啟用DA基礎磁碟區的Snapshot Volume不符合指派給不具備Data Assurance（DA）功能的主機的資格。</block>
   <block id="a75d3526ba8cd40a248e9da80d0ba8d2" category="doc">為什麼我看不到所有的磁碟區、主機或主機叢集？</block>
   <block id="f956e41235aa6de0ef7cf1901fa9a994" category="paragraph">具有啟用DA基礎磁碟區的Snapshot Volume不符合指派給不具備Data Assurance（DA）功能的主機的資格。您必須先停用基礎磁碟區上的DA、才能將快照磁碟區指派給不具備DA功能的主機。</block>
   <block id="92fc66f9534d94b4859793638454d6ee" category="paragraph">請針對您要指派快照磁碟區的主機、考慮下列準則：</block>
@@ -7906,7 +7890,6 @@
   <block id="77019701522f222bf26ade1b8082a1ee" category="sidebar">升級作業系統軟體</block>
   <block id="ce3948f2b44ee14a18d362f994260727" category="sidebar">設定主機</block>
   <block id="f0ba1c2df528f80a7b9482044ac9d46b" category="sidebar">設定集區和Volume群組</block>
-  <block id="483a5da192f46e3cfe8391d3ef234fc4" category="sidebar">常見問題集</block>
   <block id="3ffd36cf4afe86c690f4b57be234a2ff" category="sidebar">EF系列產品型錄</block>
   <block id="ecc348240fe0031a456c147f13126f0c" category="sidebar">E5700產品型錄</block>
   <block id="239a8d1ddfc1ceae19ee25fea039a278" category="sidebar">E2800產品型錄</block>
@@ -7974,10 +7957,7 @@
   <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8及RHEL 9*</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">執行multipath-ll命令以取得NVMe裝置清單。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上記錄啟動器的GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="6dc10b003bcb8e0cbbcf076e7dbcdf2f" category="paragraph">此工作適用於資料中心管理員和DCM2磁碟機櫃。</block>
   <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">支援iSCSI的Data Assurance功能、適用於SANtricity 11.40版及更新版本。</block>
-  <block id="d8877bd06791feeb2257a189554b10c0" category="paragraph">這些程序適用於IOM12和IOM12B磁碟機櫃。</block>
-  <block id="9d5445db77f905ba92077d0b48806948" category="admonition">這些程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12B模組更換為另一個IOM12B模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12B模組。）</block>
   <block id="63651a0b8ef66d63649c69f52dd02292" category="list-text">Google Chrome 89或更新版本</block>
   <block id="695a09770fa3da1385898775bfef82b9" category="list-text">Mozilla Firefox 80或更新版本</block>
   <block id="de651d67770cb856f4d13c0980010807" category="list-text">Microsoft Edge 90或更新版本</block>
@@ -8059,7 +8039,6 @@
   <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">範例A：E5700控制器機櫃採用標準SAS組態、具有三個DE212C/DE224磁碟櫃。</block>
   <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">範例B：E5700控制器機櫃、標準SAS組態中有一個DE212C/DE224磁碟櫃。</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">步驟1：驗證新控制器的零件編號</block>
-  <block id="f2ad0f8f286ab81e3d2722fa3c383e9b" category="admonition">IOM12B模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12B之前、請先確認您的控制器韌體已更新。</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">熱新增磁碟機櫃</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="889869e1d3bab19951bb91f386d721de" category="list-text">對於RHEL 8和RHEL 9、請安裝網路指令碼：</block>
@@ -8481,9 +8460,7 @@
   <block id="5835021a0e70e0a13bc60ddff4162aca" category="paragraph"><block ref="5835021a0e70e0a13bc60ddff4162aca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17360156c8ceaa57309077e605e88697" category="image-alt">E2800 和 E5700 安裝程序工作流程</block>
   <block id="9388df48e85777aba8981c9e79739824" category="inline-image-macro">E4012 直接拓撲，寬度 =1000px</block>
-  <block id="9dcbe6d474a3385e1258eeebe1d96cfa" category="paragraph"><block ref="9dcbe6d474a3385e1258eeebe1d96cfa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e5115f367ddc4b23f2a5a9dce410d220" category="inline-image-macro">E4012 Fabric Topology ， width=1000px</block>
-  <block id="fe5422a7f743c4750aa826cb030729eb" category="paragraph"><block ref="fe5422a7f743c4750aa826cb030729eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2f998d3759a46f941c16045d05799b20" category="inline-image-macro">E4000 控制器管理連接埠</block>
   <block id="419c5b2edef00ba85d62682d5ff0138c" category="paragraph"><block ref="419c5b2edef00ba85d62682d5ff0138c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f530fae0a98563bf22e6ee7a23163588" category="list-text">請依照瀏覽器的指示繼續進行、然後啟動SANtricity 《系統管理程式》。如果無法建立連線、請確認您沒有從DHCP伺服器接收網路組態。</block>
@@ -8491,9 +8468,7 @@
   <block id="05f07938d9743df4b9673ac6e16d5eaf" category="list-text">使用您先前設定的密碼登入。此時將顯示Configure Network Settings（配置網路設定）精靈。</block>
   <block id="61c8d556c74bbd20f07d7c1565d11a11" category="list-text">在最簡單的網路組態中，將控制器連接至網頁瀏覽器，並使用 SANtricity 系統管理員來管理單一 E4000 系列儲存陣列。若要存取System Manager、請使用您用來設定管理連接埠的相同IP位址。</block>
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060 Direct Topology ， width=1000px</block>
-  <block id="98e6536dfa926f6bd4a1900657c27282" category="paragraph"><block ref="98e6536dfa926f6bd4a1900657c27282" category="inline-image-macro-rx" type="image"></block></block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060 Fabric Topology ， width=1000px</block>
-  <block id="72c6889744a45c86c32b640c76b2138a" category="paragraph"><block ref="72c6889744a45c86c32b640c76b2138a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">範例 A ：標準 SAS 組態中的 E4000 控制器機櫃，具有三個 DE212C/DE224C 磁碟機櫃。</block>
   <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">範例B：E4000控制器機櫃、標準SAS組態中有一個DE212C/DE224C磁碟櫃。</block>
@@ -9711,4 +9686,22 @@
   <block id="ed389a9acb72de33be78325f147d7d8c" category="doc">瞭解 SANtricity Web 服務和 Unified Manager</block>
   <block id="f14a1a04aab620524ee87bd0fd002ab1" category="doc">瞭解 SANtricity Web 服務 Proxy 術語</block>
   <block id="abf831fd1f3fab9981530f2ea36177b2" category="doc">管理 SANtricity Web 服務 Proxy 統計資料的自動輪詢</block>
+  <block id="dce708315880727f8ba7e84bab86b168" category="paragraph">此程序適用於 IOM12、IOM12B 和 IOM12C 驅動器架。</block>
+  <block id="3f457ff9c17714d64ba75fd9d6d618f2" category="admonition">IOM12C 模組僅在 SANtricity OS 11.90R3 及更高版本上支援。在安裝或升級至IOM12C之前、請先確認您的控制器韌體已更新。</block>
+  <block id="8d93e2013316d1241b304432f0103be5" category="admonition">此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12C模組更換為另一個IOM12C模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12C模組。）</block>
+  <block id="e0f75caa67759a6c5e34cbad6ae84d57" category="admonition">IOM12C模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12C之前、請先確認您的控制器韌體已更新。</block>
+  <block id="bbfd15448c83d50ee0a4a62cc152d856" category="paragraph"><block ref="bbfd15448c83d50ee0a4a62cc152d856" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f7178ecd56d859f9f7e4878779a236ea" category="paragraph"><block ref="f7178ecd56d859f9f7e4878779a236ea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="949ca69f081f10e2fc1938e0e24759c8" category="paragraph"><block ref="949ca69f081f10e2fc1938e0e24759c8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="142dc71d06d08da442f6fe84d80e526d" category="paragraph"><block ref="142dc71d06d08da442f6fe84d80e526d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dea137ce87e98617e1e7f9c6f97eeeff" category="admonition">這些程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12C模組更換為另一個IOM12C模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12C模組。）</block>
+  <block id="88db80c02306ca8e9bac2283b0d2f6bf" category="paragraph">此程序適用於 DCM、DCM2 和 DCM3 驅動器架。</block>
+  <block id="b2d2940e83701ff478975b36d255b487" category="paragraph">此任務適用於 DCM、DCM2 和 DCM3 驅動器架。</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
+  <block id="a318c851f3d3c0a7eeb1313f1422c3b3" category="doc">SANtricity Storage Plugin for vCenter 的常見問題解答</block>
+  <block id="33f3664698fdab78efe7579f9849af32" category="paragraph"><block ref="b6ee0733cf8f7004d998d8fc49cc2022" prefix="" category="inline-code"></block></block>
+  <block id="a10a0fef1a8b50d16443976fedae1e16" category="section-title">11.90R3 版的新功能</block>
+  <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">SANtricity 作業系統對 IOM12C 和 DCM3 的支持</block>
+  <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">控制器韌體版本 11.90R3 或更高版本現已支援 IOM12C 和 DCM3 SAS-3 磁碟架。 IOM12C和 DCM3 磁碟架將取代 IOM12B 和 DCM2 磁碟架。</block>
+  <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 儲存插件常見問題解答</block>
 </blocks>

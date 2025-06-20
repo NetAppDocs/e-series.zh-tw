@@ -1,0 +1,8 @@
+---
+permalink: vcenter-plugin/vc-olh-what-is-optimization-capacity-for-volume-groups.html 
+redirect: e-series/vcenter-plugin/faq-storage-plugin-vcenter.html 
+---
+= 
+:allow-uri-read: 
+
+
