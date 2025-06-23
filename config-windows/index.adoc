@@ -37,5 +37,4 @@ Express方法包括下列步驟、如中所述 link:understand-windows-concept.h
 * 線上說明-說明如何使用SANtricity 「支援系統管理程式」來完成組態和儲存管理工作。產品內有此功能。
 * https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。
 * http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] -可讓您搜尋符合NetApp所指定標準與要求的NetApp產品與元件組態。
-* http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61343["NetApp文件：主機公用程式"^] --提供目前Windows Unified Host Utilities版本的文件。
 

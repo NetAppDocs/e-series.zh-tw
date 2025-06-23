@@ -41,7 +41,6 @@ CAUTION: *可能會遺失資料存取*-如果磁碟區已處於降級狀態、�
 ** 存取儲存陣列的命令列介面（CLI）。如果您無法存取CLI、可以執行下列其中一項：
 +
 *** * for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統>附加元件>命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。
-*** *《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。
 
 
 

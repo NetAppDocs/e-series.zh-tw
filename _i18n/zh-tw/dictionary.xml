@@ -463,12 +463,7 @@
   <block id="aaff32263a368283058bd594add43c3a" category="doc">設定多重路徑.conf檔案</block>
   <block id="c97b364c883793adf3d2520124580bcf" category="paragraph">多重路徑.conf檔案是多重路徑精靈的組態檔、即多重路徑d。</block>
   <block id="775309dc7f91ef62dc8e507c61e9ea84" category="admonition">對於更新的作業系統8.30、NetApp建議使用提供的預設設定。SANtricity</block>
-  <block id="3a12d0edc81531758f12c83024fbc77e" category="summary">LInstall Linux Unified Host Utilities當使用iSER時。</block>
-  <block id="6cfa91f7028db85237c0770258925d8e" category="paragraph">Linux Unified Host Utilities工具可協助您管理NetApp儲存設備、包括容錯移轉原則和實體路徑。</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp 互通性對照表工具</block>
-  <block id="8a761de12813fd81d6a6c12a762a07f1" category="list-text">使用<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 判斷要安裝的Unified Host Utilities版本。</block>
-  <block id="d7b565023737aad44d6724a49bd2b673" category="paragraph">這些版本會列在每個支援組態的欄位中。</block>
-  <block id="f4011c90372ee12814aefc97e4debb36" category="list-text">請從下載Unified Host Utilities<block ref="4ce7a3cde07b85b80ee4fe046584534d" category="inline-link-rx"></block>。</block>
   <block id="600c6d3fd1229d63ffae79514c2f27e3" category="summary">您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytration System Manager）來設定儲存陣列。</block>
   <block id="94b4ad86e06aef47700795d7b02c35e0" category="doc">存取SANtricity 「系統管理程式」並使用「設定精靈」</block>
   <block id="123720bd3f372d5f3ff303c79fd143d9" category="paragraph">若要設定儲存陣列、您可以使用SANtricity 「系統管理程式」中的「設定精靈」。</block>
@@ -532,7 +527,6 @@
   <block id="108af92eae03d083f92285143921fa37" category="paragraph">此範例顯示控制器A正在重新開機時、不同時間點的「多重路徑-ll」輸出。命名空間10的路徑顯示為「失敗的執行失敗」、其「優先」值為0、「狀態」值為「已啟用」。</block>
   <block id="d6824df6c78161020f612be2cf0dd5ea" category="paragraph">「policy='server-time 0' prio=10 STATUS=activity'</block>
   <block id="a602b51c709c08f2a0056a93c3f7347c" category="paragraph">請注意、「使用中」路徑是指「nvme2」、因此I/O會導向此路徑至控制器B</block>
-  <block id="6e66b862960ebd7ec3afa00536df9e2b" category="summary">使用iSCSI時、請安裝Linux Unified Host Utilities。</block>
   <block id="783fe778d8ae500fe85a1c06f4fb91f1" category="summary">針對採用E系列系統的Linux主機使用快速組態。</block>
   <block id="39b3575dd056b1a61bfcdc132ab2a5da" category="paragraph">安裝儲存陣列及存取SANtricity 《支援系統管理程式》的Linux Express方法、適用於將獨立的Linux主機設定至E系列儲存系統。其設計旨在以最少的決策點、讓儲存系統儘快啟動及執行。</block>
   <block id="051ed0a7beee3a5a645acedb1e21210a" category="section-title">程序總覽</block>
@@ -835,7 +829,6 @@
   <block id="c694b074c8a7887bcd4ebbfc99adf268" category="list-text">如果命令輸出為「N」、則原生NVMe多路徑仍會停用。</block>
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。</block>
   <block id="d307d6c12e3fd81b58d2d458107c75d8" category="admonition">若要檢視路徑資訊、必須在/etc/multipath.conf中設定下列項目：</block>
-  <block id="e7f0bd2c7ce5a2859d99775fd89bb0a2" category="summary">使用FC時、請安裝Linux Unified Host Utilities。</block>
   <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">對於SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">首先、您應該確認Linux組態是否受到支援、並檢閱控制器、主機和還原限制。</block>
   <block id="866ff13f8fd6c13e35bc42557fe3a185" category="paragraph">「精簡搜尋條件」區段隨即顯示。在本節中、您可以選擇適用的傳輸協定、以及其他組態條件、例如作業系統、NetApp作業系統和主機多重路徑驅動程式。</block>
@@ -991,7 +984,6 @@
   <block id="47496a5d6d97e4ed1f8066d8f8baf9df" category="section-title">使用原生NVMe多路徑設定RHEL 8</block>
   <block id="de03e018f8bc6e06a0b11a6a211dd67e" category="list-text">使用新的"modProp"參數重新建立"initramfs"。</block>
   <block id="518df87a5011ff1168a7c6c9a264b38f" category="list-text">重新開機伺服器以啟用原生NVMe多路徑來啟動伺服器。</block>
-  <block id="bd97f9e0585f1ab3a70a824e4f5ffe79" category="summary">Linux Unified Host Utilities 7.1包含管理NetApp儲存設備的工具、包括容錯移轉原則和實體路徑。</block>
   <block id="cfacf32d5f730b5bb16ae4c5d345f88e" category="summary">設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。</block>
   <block id="2996f0172f73e90304548255cfe1f7b8" category="paragraph">設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。</block>
   <block id="60c225eab3183c2ad00e5edef5387b70" category="list-text">交換器的系統管理員認證。</block>
@@ -1005,7 +997,6 @@
   <block id="13fd378eeb7a101fc09f1cbecaf60c62" category="summary">當您在SANtricity Management Station上安裝時、預設會安裝圖形化使用者介面（GUI）和命令列介面（CLI）。這些指示假設SANtricity 您將在Management Station上安裝不需在I/O主機上安裝的不實儲存管理程式GUI。</block>
   <block id="adb2c486b4315072f95250add60ff3eb" category="paragraph">在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。</block>
   <block id="0e7c59630bebf993c5d568dae4203bf0" category="paragraph">您將移除複製的檔案和資料夾。</block>
-  <block id="c4a120813372f7f07d6de687ff0fc6a6" category="paragraph">Linux Unified Host Utilities套件包含管理NetApp儲存設備的工具、包括容錯移轉原則和實體路徑。</block>
   <block id="3d46c28785301ae3ad29aa411d7f0358" category="section-title">檢閱NVMe over InfiniBand限制</block>
   <block id="2e71e539473524a77fed5be033e08099" category="list-text">使用「ibstat -p」命令尋找HBA連接埠的「GUID0」和「GUID1」。例如：</block>
   <block id="b8428f61ce61bd64b7ac15710b5f5150" category="list-text">執行diff命令、將複製的檔案與原始檔案進行比較。</block>
@@ -1429,7 +1420,6 @@
   <block id="0e39ff318b12678e1f22e5f337b7aa18" category="list-text">替換電池。</block>
   <block id="3a35aeaf167e71373e4f42c63fa412a6" category="paragraph">您也可以選擇使用命令列介面（CLI）來執行部分程序。如果您無法存取CLI、可以執行下列其中一項：</block>
   <block id="31380923165d24c4bc7be3835c03f97d" category="list-text">* for SANtricity the 32 System Manager（11.60及更新版本）*-從System Manager下載CLI套件（壓縮檔）。移至功能表：設定[系統&gt;附加元件&gt;命令列介面]。然後您可以從作業系統提示字元發出CLI命令、例如DOS C：提示字元。</block>
-  <block id="d4e243a780f83aeb7aba4ed3ddb02aab" category="list-text">*《SANtricity for the S廳Storage Manager/Enterprise Management Window（EMW）*》（《for the S廳 儲存管理程式/企業管理視窗（EMW）*）》）-請依照快速指南中的指示下載及安裝軟體。您可以從EMW中執行CLI命令、方法是選取功能表：「Tools（工具）」[「執行指令碼」]。</block>
   <block id="3445e7362b27e4ba74cabda5b497847f" category="summary">在更換EF300或EF600 HIC之前、請先檢閱相關要求和考量事項。</block>
   <block id="7ff977d3382830f3eff92120544b15ab" category="list-text">您已排定此程序的停機維護時間。在成功完成此程序之前、您無法存取儲存陣列上的資料。由於兩個控制器在開機時必須具有相同的HIC組態、因此當您變更HIC組態時、必須關閉電源。如果出現不相符的HIC、則當您將更換的HIC上線時、控制器會鎖定。</block>
   <block id="cc3ec06987332d6dbb0413ed7e4c657b" category="list-text">連接新主機連接埠所需的所有纜線、收發器、交換器和主機匯流排介面卡（HBA）。</block>
@@ -1781,8 +1771,6 @@
   <block id="5c87e4c03cc20df698e7886b47f6f8ff" category="list-text"><block ref="5c87e4c03cc20df698e7886b47f6f8ff" category="inline-link-macro-rx"></block></block>
   <block id="2899cc08c13a8183ac48e7da9b12cf2f" category="list-text"><block ref="2899cc08c13a8183ac48e7da9b12cf2f" category="inline-link-macro-rx"></block></block>
   <block id="aebb270a0f1270c10fb5b2e56830535a" category="list-text"><block ref="18f041f08534fbeb53ae160ad78cfbc4" category="inline-link-rx"></block> （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。</block>
-  <block id="45010da5958c7fc3d60c5414c380bb70" category="inline-link">NetApp文件：主機公用程式</block>
-  <block id="99958fd8a8267b3560ce1c363b5be7e7" category="list-text"><block ref="f8c7ff95c6f2730c965212cb5ee95d98" category="inline-link-rx"></block> --提供目前Windows Unified Host Utilities版本的文件。</block>
   <block id="dc9a3adad931bcc95bb908edc1ca137c" category="summary">對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。</block>
   <block id="500f35e1a49050d329695333eb443f53" category="doc">執行FC特定工作</block>
   <block id="5192c4044ff1350931950a13c0344c96" category="paragraph">您必須依WWPN進行區域、而非依實體連接埠。每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。</block>
@@ -1895,12 +1883,6 @@
   <block id="5a8ba98f6912dbeec9c6f235e96d8caa" category="list-text">以系統管理員身分登入。</block>
   <block id="9ebb7a663972464aea16aa74a7bda429" category="list-text">若要探索儲存設備、請從Windows命令提示字元執行下列命令。</block>
   <block id="1e743b84897e50413102ba333a0cd647" category="list-text">若要驗證新增的儲存設備、請執行下列命令。</block>
-  <block id="cade4234340dbc4fee36a7571946fd32" category="summary">安裝Windows Unified Host Utilities for Windows Express方法。</block>
-  <block id="b98d11fdfd34118f790a089b09e3367d" category="paragraph">Windows Unified Host Utilities工具可協助您將主機電腦連線至NetApp儲存系統、並在主機電腦上設定必要的參數。您也可以設定適當的磁碟逾時、以獲得NetApp儲存設備的最佳讀寫效能。</block>
-  <block id="6726b8f82b27b4eca9bba6dc03228ab6" category="admonition">如需更多資訊、請參閱「Windows主機公用程式安裝指南」（英文）、位於<block ref="5a703dc316d0405f2b69548f35177839" category="inline-link-rx"></block>。</block>
-  <block id="e711e1dd664e14a77c4bff5ab909a662" category="list-text">使用<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block> 判斷要安裝的Unified Host Utilities版本。</block>
-  <block id="f64d5867fd911e2b14d8680010121759" category="list-text">請從下載Unified Host Utilities<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。</block>
-  <block id="59fbc26a1831942cb6ebf2d627aa2db8" category="admonition">此公用程式套件無法使用SANtricity 無法安裝的現象儲存管理程式安裝程式來安裝。</block>
   <block id="135d30ad6d2da4597cfa1d9690fba47a" category="summary">對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。</block>
   <block id="782074a892923ea9433c10e2d684625e" category="doc">執行SAS專屬的工作</block>
   <block id="d723a375133225f8e40ad6de1d56e805" category="paragraph">對於SAS傳輸協定、您可以決定主機連接埠位址並進行適當的設定。</block>
@@ -4448,7 +4430,6 @@
   <block id="61f02e2c84e5b52874127600576222a5" category="list-text">移至「Hardware（硬體）」頁面、確認所有元件都已顯示。</block>
   <block id="4c1edfa8a9683e5a7cf6c1058c397f26" category="list-text">移至「軟體與韌體庫存」對話方塊（前往功能表：Support[升級中心]、然後按一下「*軟體與韌體庫存*」連結）。驗證新的軟體和韌體版本。</block>
   <block id="9923033ddd1d0d8a8cf07d6215998241" category="list-text">當您升級控制器的NVSRAM時、任何已套用至現有的NVSRAM的自訂設定都會在啟動程序期間遺失。啟動程序完成後、您必須再次將自訂設定套用至NVSRAM.</block>
-  <block id="788d3c503714b3eb6632371a82cc20b5" category="list-text">使用CLI命令將儲存陣列設定變更為雙工。若要使用CLI、您可以在下載CLI套件時開啟命令提示字元、如果已安裝Storage Manager、也可以開啟企業管理視窗（EMW）。</block>
   <block id="a05448d81309432cf8e25da48e5e1c90" category="list-text">從命令提示字元：</block>
   <block id="b837c5d8d4c1034fca14d84eff94c0d9" category="list-text">使用下列命令將陣列從單工切換為雙工：</block>
   <block id="6a66f87eeb104bf47e94bbe8480ce241" category="list-text">使用下列命令重設控制器。</block>
@@ -5293,8 +5274,6 @@
   <block id="5ea807608dc9f3a87a5f9c1bf309054a" category="list-text">從網路管理員處取得控制器的IP位址、子網路遮罩、閘道位址、以及DNS和NTP伺服器資訊。</block>
   <block id="53cb4306120d4cbe16ec0327bcc3d5f0" category="section-title">步驟3：設定及管理儲存系統</block>
   <block id="005889eb2bd1ad96c577fc46302784e4" category="list-text">連接磁碟櫃。</block>
-  <block id="c0775f0da6502a62c364501a8afa66ed" category="paragraph">根據您的組態來連接系統纜線。如果您需要的纜線選項比所示範例更多、請參閱 <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="1984650e2174e4cd6e72f937ef372c57" category="paragraph">如需所示範例、您需要下列纜線：</block>
   <block id="6bb39a0f441f51677398fb4553a6f0c1" category="paragraph">* SAS纜線*</block>
   <block id="597bde72a3d1602b00297a27da8f77e0" category="list-text">將控制器A纜線連接至第一個磁碟機櫃的IOM A。</block>
   <block id="7f1c18457c9760a1f48d05d01c28a563" category="list-text">將第一個磁碟機櫃的IOM A纜線連接至第二個磁碟機櫃的IOM A。</block>
@@ -5311,8 +5290,6 @@
   <block id="2ed37796479784519c89bf94751a8ba8" category="list-text">開啟控制器機櫃上的兩個電源開關。</block>
   <block id="b4c7d5ccac1f7161686e3c005db18319" category="list-text">檢查每個控制器上的LED和七段顯示。</block>
   <block id="133c9acd815abcf46a846257530b89bb" category="paragraph">在開機期間、七段顯示器會顯示重複的OS順序（SD）空白、表示控制器正在執行一天開始的處理。控制器開機後、會顯示機櫃ID。</block>
-  <block id="ba51d8b064560c05234bcb7cf908140c" category="paragraph">根據您的組態來連接系統纜線。如果您需要比本節所示範例更多的纜線選項、請參閱 <block ref="d28b440e6afa4df86a4a85820e62c38b" category="inline-link-macro-rx"></block>。</block>
-  <block id="825f1bce0ca9afca4f9d03067ac55692" category="paragraph">如需本節所示範例、您需要下列纜線：</block>
   <block id="8595fe2de42408ab312cb1a2d109d144" category="list-text">將控制器B纜線連接至第二個磁碟機櫃的IOM B。</block>
   <block id="e786e438e29d8dc368d2945b22614052" category="summary">若要安裝E5724、EF570、EF280、E2812、E2824、 DE212C（或DE224C）建立帳戶並註冊硬體。</block>
   <block id="f0c8dd26a4545387eecf2a5210874ccc" category="paragraph">瞭解如何準備安裝E5724、EF570、EF280、E2812、E2824、 DE212C或DE224C系列儲存系統。</block>
@@ -6131,7 +6108,6 @@
   <block id="cbcf19ef40f1b61a63478c8e22c42099" category="sidebar">乙太網路纜線</block>
   <block id="c5d1e465274381bca5df236c2a5a7d57" category="sidebar">部署軟體</block>
   <block id="18471c1ff811bd0bcb293d2453b59771" category="sidebar">驗證Linux組態</block>
-  <block id="a44a6c0b1372610fbe5ce8ba27e0e377" category="sidebar">安裝及設定主機公用程式</block>
   <block id="b7d6b71801787e9bb9cabee39a18d4be" category="sidebar">安裝SANtricity NetApp儲存管理程式</block>
   <block id="511bc26995332ccd1bc373f2533ac9e7" category="sidebar">存取SANtricity 《系統管理程式》</block>
   <block id="4fa43a5f70872c9934e31e9e40e565f9" category="sidebar">設定多重路徑軟體</block>
@@ -6172,7 +6148,6 @@
   <block id="f937177c870063d921c3b04fc46d70e9" category="sidebar">針對FC特定工作執行NMVe</block>
   <block id="b847c90a690d3ed6ab537da4170e75ce" category="sidebar">設定主機上的儲存設備</block>
   <block id="51db7ba6619e3142a5523bc5debfd5ad" category="sidebar">驗證Windows組態</block>
-  <block id="4c3d64befec3af3f83707e126e8b1880" category="sidebar">安裝及設定統一化主機公用程式</block>
   <block id="cfd5a063d93f48df8b64774d28254314" category="sidebar">探索主機上的儲存設備</block>
   <block id="55c745a83eb000156fff568d7b93fa8c" category="sidebar">升級系統</block>
   <block id="cf14c2021274780551c926622b5fa48e" category="sidebar">控制器硬體升級</block>
@@ -8034,10 +8009,6 @@
   <block id="731e4c243221cff11b35e735d54a097c" category="section-title">雙柱機架- 2U</block>
   <block id="08e15a26eb1bed02ff476c90993bb81d" category="section-title">四柱機架或機櫃- 2U</block>
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱式機架：超級軌道</block>
-  <block id="88587640720455d00dd679a1ce9fe099" category="paragraph-title">範例A：E2860控制器機櫃、標準SAS組態中有兩個DE460C磁碟櫃。</block>
-  <block id="5e2cc996382bb24824986ff473c63abc" category="paragraph-title">範例B：E2860控制器機櫃、標準SAS組態中有一個DE460C磁碟櫃。</block>
-  <block id="7bb583eaeb72cab404957a32bf32e9fb" category="paragraph-title">範例A：E5700控制器機櫃採用標準SAS組態、具有三個DE212C/DE224磁碟櫃。</block>
-  <block id="ab945691a98936597c2ea25ebe10559a" category="paragraph-title">範例B：E5700控制器機櫃、標準SAS組態中有一個DE212C/DE224磁碟櫃。</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">步驟1：驗證新控制器的零件編號</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">熱新增磁碟機櫃</block>
   <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
@@ -8212,7 +8183,6 @@
   <block id="cc1b53336ed5c926305dd7ad876ab1d2" category="admonition">對於 SANtricity OS 11.80GA 及更高版本、 EF600 支援擴充機櫃組態、且基本托盤中沒有磁碟機使用此組態時、請先確定磁碟機已安裝在擴充機櫃內、並已正確連接至基礎機匣、然後再開啟系統電源。</block>
   <block id="f9c81137922296691747f3cff9a92105" category="list-text"><block ref="f9c81137922296691747f3cff9a92105" category="inline-link-rx"></block></block>
   <block id="c68dfa9143daa0b2c3c80d2545e2410c" category="inline-link">下載 SANtricity 系統管理員線上說明下的命令列介面（ CLI ）主題</block>
-  <block id="0c229260a68aeca566d73a23ad233dcd" category="admonition">或者、您也可以使用 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 執行與 Unified Host Utility 工具相同的功能。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
   <block id="ffc3de562db3aaacf94180bc367bf157" category="admonition">如果您使用SANtricity 的是版本11.60及更新版本的更新版本、則不需要執行下列步驟。《支援不安全的CLI》（SMcli）包含在《支援服務》的作業系統中、可透過《支援服務》（英文）的《支援服務》（英文）下載。SANtricity SANtricity SANtricity如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱 <block ref="07ba191255ffe5607ddf4202e3c76da7" category="inline-link-macro-rx"></block></block>
   <block id="fc4f413bbdc13c9d07bb87f1f0e4b5bc" category="admonition">從 SANtricity 軟體 11.80.1 版開始、不再支援主機內容代理程式。</block>
   <block id="5f0e6cffb0f871fd63ee412b0867faa5" category="admonition">對於執行 SANtricity 11.60 以上版本的平台、預設子網路遮罩為 255.255.0.0 。</block>
@@ -8252,8 +8222,6 @@
   <block id="e5a4a8069ad5713adce4d473829f3108" category="admonition">只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會熄滅：</block>
   <block id="a425ad1782379ad30aed42d2cca2a9de" category="list-text">替代電源供應器故障</block>
   <block id="197afe3e4b0fdccae7f0384e342bb289" category="list-text">您可以使用 SMCLI 命令<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block> 顯示磁碟區的適用裝置名稱。SMCLI 包含在 SANtricity OS 中、可透過 SANtricity 系統管理員下載。如需如何透過 SANtricity 系統管理員下載 SMCLI 的詳細資訊、請參閱<block ref="a9fe8fbe4d692fa7e3dc0b66710307cd" category="inline-link-rx"></block>。</block>
-  <block id="d699daec8de3b69e6a41a8c5e1e7f44e" category="inline-link">安裝 Linux Unified Host Utilities 7.1</block>
-  <block id="7c4ed11037f1ffa580c5462fde3a9a9c" category="list-text"><block ref="5a6c0185dc13c38c5945f8fa47c41898" category="inline-link-rx"></block> -- 介紹如何安裝 Linux Unified Host Utilities 7.1 。</block>
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">11.80.1R1 版的新功能</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">增加新自我簽署和 CA 簽署管理憑證的金鑰大小長度。</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity 系統管理員和 Unified Manager 應用程式自我簽署憑證的管理憑證金鑰大小長度已從 2048 位元修改為 3072 位元。此變更適用於新產生的 SANtricity 應用程式自我簽署和 CA 簽署的憑證。金鑰長度是固定的、不受 NVSRAM 中預設金鑰大小定義的影響。</block>
@@ -8411,9 +8379,6 @@
   <block id="8ad5f5a67faf8ddadaa0107a57f04b61" category="paragraph"><block ref="8ad5f5a67faf8ddadaa0107a57f04b61" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bee25ddf22954764638be8db059a3505" category="inline-image-macro">SAS 傳輸線</block>
   <block id="39d650b4b632da15b05f78d8c80db6c3" category="paragraph"><block ref="39d650b4b632da15b05f78d8c80db6c3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="004c0caf3af4f9614a7e07b8bafd8e07" category="inline-image-macro">採用 SAS 組態的 E5700 控制器</block>
-  <block id="9ffb511c6f5b44a46bde2c5f9739aa5b" category="paragraph"><block ref="9ffb511c6f5b44a46bde2c5f9739aa5b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="18cecd602006ce40ce09cf4e4c2d38b3" category="paragraph"><block ref="18cecd602006ce40ce09cf4e4c2d38b3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="40f3696ce1975405b3dd3b4c88fee920" category="paragraph"><block ref="40f3696ce1975405b3dd3b4c88fee920" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f043e2cf14bf90f5f6fdde2eedd27d54" category="inline-image-macro">電源架連接</block>
   <block id="11fd48921050b14f467f651de93de4a8" category="paragraph">* 範例：電源連線位於機櫃後方。 *<block ref="a532dab930fd15f0637a30e402d8f9a2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8447,9 +8412,6 @@
   <block id="a6afe792341ed6e15acdc5ac572683c9" category="paragraph"><block ref="a6afe792341ed6e15acdc5ac572683c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ac609c12de89a4fb426124bce2b8fe9" category="inline-image-macro">E5700 管理連接埠</block>
   <block id="7638544025c69718a924e0f8e14fffd6" category="paragraph"><block ref="7638544025c69718a924e0f8e14fffd6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0c939f4611f00ba920181cdd25b91423" category="inline-image-macro">SAS 組態中的 E2860 控制器</block>
-  <block id="50c46e741de9ff81436b6f99809dde68" category="paragraph"><block ref="50c46e741de9ff81436b6f99809dde68" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b9e37640fcc1990a420e73cbc71cf5d9" category="paragraph"><block ref="b9e37640fcc1990a420e73cbc71cf5d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa0053c9f3ecff9854d2d18cb3d45034" category="inline-image-macro">機櫃後方的電源連接</block>
   <block id="bf8c27ee38f4551cf3103f8ddc048822" category="paragraph">* 範例：電源連線位於機櫃後方。 *<block ref="27f4b7324949481a832e2798f546c18f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d3f162fe328844acb0313cd8d2c4c0fd" category="paragraph"><block ref="d3f162fe328844acb0313cd8d2c4c0fd" category="inline-image-macro-rx" type="image"></block></block>
@@ -8470,12 +8432,8 @@
   <block id="ed82e034d7d377cc12aa1d89cea33d43" category="inline-image-macro">E4060 Direct Topology ， width=1000px</block>
   <block id="427b3e2ab20960e704a22e39fbcda634" category="inline-image-macro">E4060 Fabric Topology ， width=1000px</block>
   <block id="ab2bd875f2f303555807a3b13a6b64bb" category="paragraph"><block ref="ab2bd875f2f303555807a3b13a6b64bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ff2e827a53ef25671ffc7469bb5208a2" category="list-title">範例 A ：標準 SAS 組態中的 E4000 控制器機櫃，具有三個 DE212C/DE224C 磁碟機櫃。</block>
-  <block id="ecf826f3b05c4b630ca5e118d6536932" category="list-title">範例B：E4000控制器機櫃、標準SAS組態中有一個DE212C/DE224C磁碟櫃。</block>
   <block id="bd6f2f179e92d79b65397b0d15328141" category="inline-image-macro">電源線</block>
   <block id="a18053fd03f0e0f1657ef8a7799c39b1" category="paragraph"><block ref="a18053fd03f0e0f1657ef8a7799c39b1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0931fcfaf82a62b23c3cbb633e4d3754" category="list-title">範例A：E4060控制器機櫃、標準SAS組態中有兩個DE460C磁碟櫃。</block>
-  <block id="cb6592701a1a2879a7d91e2aa3483978" category="list-title">範例B：E4060控制器機櫃、標準SAS組態中有一個DE460C磁碟櫃。</block>
   <block id="a43d4c0d877b46a949d2194ce9a5dc43" category="list-text">檢查每個控制器上的 LED 。</block>
   <block id="4b478fea6990a79d7f3b2aed9f0dfaac" category="summary">請依照下列步驟安裝和設定 E4000 儲存系統。</block>
   <block id="61d7360b301a1cb885e62542da3bb7d4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>準備安裝</block>
@@ -9299,7 +9257,6 @@
   <block id="7156af939da33d4706b3dc430b74da68" category="doc">在 E 系列 - Linux （ FC ）中設定 FC 交換器</block>
   <block id="ec2fdd1f2e6ee695231cc1b65ac9e203" category="doc">在 E 系列 - Linux （ FC ）中建立分割區和檔案系統</block>
   <block id="1f5f0de28e7314d825efd9a881bfdc65" category="doc">決定 E 系列中的主機全球連接埠名稱（ WWPN ） - Linux （ FC ）</block>
-  <block id="5399debd6e55a777747669bf25cb7d73" category="doc">在 E 系列（ FC ）中安裝及設定 Linux Unified Host Utilities</block>
   <block id="a8052a427bf8a81e1230fb7ac881a3a5" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ FC ）</block>
   <block id="12da4c23be3ec49c3a0ebb3551baa6f7" category="doc">在 E 系列 - Linux （ FC ）中設定 multipath.conf 檔案</block>
   <block id="6b4af5eebbfa3ec509df83baaeba767a" category="doc">驗證 E 系列（ FC ）的 Linux 組態支援</block>
@@ -9315,7 +9272,6 @@
   <block id="2983522bb7971192a7b19239c78489c4" category="doc">在 E 系列 - Linux （ iSCSI ）中設定網路</block>
   <block id="a55d76a868400bdc13ddafa3c0b123fd" category="doc">在 E 系列中設定交換器 - Linux （ iSCSI ）</block>
   <block id="56a7cfd4a09dd9cc915effc3b709e56b" category="doc">在 E 系列 - Linux （ iSCSI ）中建立分割區和檔案系統</block>
-  <block id="626515899065c3dfff76938d6bbbb573" category="doc">在 E 系列（ iSCSI ）中安裝及設定 Linux Unified Host Utilities</block>
   <block id="8ae63fb65e18e5737838f3f0f3616363" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ iSCSI ）</block>
   <block id="2cf4743e22ee36076d5e788acb85d307" category="doc">在 E 系列 - Linux （ iSCSI ）中設定 multipath.conf 檔案</block>
   <block id="83273ba9acef588f65385d940a4ea831" category="doc">驗證 E 系列 - Linux （ iSCSI ）中的 IP 網路連線</block>
@@ -9330,7 +9286,6 @@
   <block id="51b23502fc01639de89ab204ca319f19" category="doc">在 E 系列 - Linux 中設定子網路管理員（ InfiniBand 上的 iSER ）</block>
   <block id="c294953cfef25396092e6433e2aba579" category="doc">在 E 系列 - Linux （ InfiniBand 上的 iSER ）中建立分割區和檔案系統</block>
   <block id="31a15fd8e15a2f1fd50fd6998a8cf036" category="doc">決定 E 系列 - Linux （ InfiniBand 上的 iSER ）中的主機連接埠全域唯一 ID</block>
-  <block id="53e9f7b6ed3130efe08a1831a1d64a86" category="doc">在 E 系列中安裝及設定 Linux Unified Host Utilities （ InfiniBand 上的 iSER ）</block>
   <block id="066c8070ea2f5a6a1b0acad2fd1364ac" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ iSER over InfiniBand ）</block>
   <block id="bda8bb645a075548b4adde8ea4b33efe" category="doc">在 E 系列 - Linux （ iSER over InfiniBand ）中設定 multipath.conf 檔案</block>
   <block id="efe973952cf408c3cafd38a2c85cbddd" category="doc">驗證 E 系列的 Linux 組態支援（ iSER over InfiniBand ）</block>
@@ -9393,7 +9348,6 @@
   <block id="174bbe0956088982601d07bf4750fcf0" category="doc">在 E 系列 - Linux （ SAS ）中設定多重路徑軟體</block>
   <block id="221409e67aacfe941a04460977bee7ba" category="doc">在 E 系列中建立分割區和檔案系統 - Linux （ SAS ）</block>
   <block id="e9ca753ba2dbe90aa92161ccb16e38bc" category="doc">判斷 E 系列中的 SAS 主機識別碼 - Linux （ SAS ）</block>
-  <block id="7807c717a2b072f3a3dbcbc7fbc83c93" category="doc">在 E 系列（ SAS ）中安裝及設定 Linux Unified Host Utilities</block>
   <block id="68001805f74454d41c5344994334105d" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ SAS ）</block>
   <block id="35d216f5b1ca143eb3beeaa5d30dc52d" category="doc">在 E 系列 - Linux （ SAS ）中設定 multipath.conf 檔案</block>
   <block id="13c68af1e6a4e01e97dcf0b8bf97636a" category="doc">驗證 E 系列（ SAS ）的 Linux 組態支援</block>
@@ -9406,7 +9360,6 @@
   <block id="176cfa346487abc57acc41973cb76102" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中設定子網路管理員</block>
   <block id="4d1495672528ba1edb974e7a3ec68925" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中建立分割區和檔案系統</block>
   <block id="722418d400a6f71b750c9b59435c9e9c" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中判斷主機連接埠的全域唯一 ID</block>
-  <block id="1d454844786440b6542b0a49da213146" category="doc">在 E 系列中安裝及設定 Linux Unified Host Utilities （ SRP over InfiniBand ）</block>
   <block id="fd9fdffac380d0e2ac60f7758fdaa33c" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ SRP over InfiniBand ）</block>
   <block id="8035356b3e36fae458c1388504938a10" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中設定 multipath.conf 檔案</block>
   <block id="42396f2886c0bfaf606e08b85587f5d5" category="doc">驗證 E 系列的 Linux 組態支援（ SRP over InfiniBand ）</block>
@@ -9433,7 +9386,6 @@
   <block id="2da78d32565fd341c24051991af853a3" category="doc">探索 E 系列 Windows 主機上的儲存設備</block>
   <block id="23f932933101a11fe184222add659e37" category="doc">在 E 系列 - Windows 中執行 FC 特定工作</block>
   <block id="789eb7d135829ee567fe346777d49e67" category="doc">E 系列中的 Windows Express 組態 - Windows</block>
-  <block id="7bb420e284a64dd789cacc0c2a388526" category="doc">在 E 系列 Windows 中安裝及設定 Linux Unified Host Utilities</block>
   <block id="b00b49ab9c451c373425a273154e607e" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Windows</block>
   <block id="15f21f59c18fb17f9281572969cc6092" category="doc">在 E 系列 - Windows 中執行 iSCSI 專屬工作</block>
   <block id="b67f6d03f59f9609e0db3c46a02da64f" category="doc">假設（ E 系列和 Windows ）</block>
@@ -9704,4 +9656,16 @@
   <block id="c78544d43a065eb825edb9e16bf0e9ad" category="paragraph">SANtricity 作業系統對 IOM12C 和 DCM3 的支持</block>
   <block id="94d90ce4793f949687897ec062d97b9c" category="paragraph">控制器韌體版本 11.90R3 或更高版本現已支援 IOM12C 和 DCM3 SAS-3 磁碟架。 IOM12C和 DCM3 磁碟架將取代 IOM12B 和 DCM2 磁碟架。</block>
   <block id="3a2a69a35a4560167d4c0478029a3f70" category="sidebar">vCenter 儲存插件常見問題解答</block>
+  <block id="289a353684efed006a33d9a21e3af645" category="paragraph">根據您的組態來連接系統纜線。</block>
+  <block id="c156a7b267c4ea3bb09eb8d0a8694c1f" category="admonition">如果您需要比下面提供的範例更多的佈線選項，請參閱<block ref="b04bca945c340a8933813e378ce89f33" category="inline-link-macro-rx"></block> 。</block>
+  <block id="62faeb5b26adfd078e5b6da1844d0928" category="list-text">*範例 A：標準 SAS 配置中帶有三個 DE212C/DE224 磁碟架的控制器架*</block>
+  <block id="fc6e6113eb588c4adfd7c54ea9a4a484" category="list-text">*範例 B：標準 SAS 配置中帶有一個 DE212C/DE224 磁碟架的控制器架*</block>
+  <block id="e0c51a35ed8248d1431ad993a2b53bbe" category="list-text">*範例 A：標準 SAS 配置中帶有兩個 DE460C 磁碟架的控制器架*</block>
+  <block id="d2700be2b791b06d1a0e0eaf56e916d3" category="list-text">*範例 B：標準 SAS 配置中帶有一個 DE460C 磁碟架的控制器架*</block>
+  <block id="1bdf45714bb5554912e7596197bc58a3" category="admonition">如果您需要比下面提供的範例更多的佈線選項，請參閱<block ref="9f10449945bf1a610348d9968bbe3b7e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c3ac8675fb15b987b57d9203f7eabae" category="list-text">*範例 A：標準 SAS 配置中帶有三個 DE212C/DE224C 磁碟架的 E4000 控制器架*</block>
+  <block id="eb3ac26ded8469cc0becb4bcba43a263" category="list-text">*範例 B：標準 SAS 配置中的 E4000 控制器架，附有一個 DE212C/DE224C 磁碟架*</block>
+  <block id="749e3259655b14ad4cd1d92b27ae554b" category="list-text">*範例 A：標準 SAS 配置中的 E4060 控制器架，配有兩個 DE460C 磁碟架*</block>
+  <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*範例 B：標準 SAS 配置中的 E4060 控制器架和一個 DE460C 磁碟架*</block>
+  <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用CLI命令將儲存陣列設定變更為雙工。若要使用 CLI，如果您下載了 CLI 包，請開啟命令提示符，或者如果您安裝了儲存管理器，則可以開啟企業管理視窗 (EMW)。</block>
 </blocks>
