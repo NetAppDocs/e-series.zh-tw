@@ -63,8 +63,7 @@ dracut --force --add multipath
 例如、grub是指「/boot/grub / menu.lst」、而grub2則是「/boot/grub2/menu.cfg'」。
 
 . 使用 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["手動建立主機"] 線上說明中的程序、檢查主機是否已定義。確認每個主機類型設定都是根據所收集的核心資訊 <<step4,步驟4.>>。
-
-
++
 
 NOTE: 對於任何對應至執行核心3.9或更早版本之主機的磁碟區、都會停用自動負載平衡。
 
