@@ -901,7 +901,6 @@
   <block id="3596937c0cf910176242bc6491f8129d" category="paragraph">啟用IPV4和/或啟用IPv6</block>
   <block id="f9b35dd8fd2fe0391d5420adc10249be" category="paragraph">選取一個或兩個選項、以啟用對IPv4和IPv6網路的支援。</block>
   <block id="4d2c0c855f4f6f487ccba21fd59311f5" category="paragraph">MTU大小（按一下*顯示更多連接埠設定*即可取得）。</block>
-  <block id="a28f1dea7eb219b33f56e3eb3cac6f30" category="paragraph">如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到4200之間的值。</block>
   <block id="063f92900b3f66bcf2e45d09b883ee17" category="paragraph">如果您選取*啟用IPV4、則會在您按一下*下一步*之後、開啟一個對話方塊、供您選取IPV4設定。如果您選取*啟用IPv6 *、則會在您按一下*下一步*之後、開啟一個對話方塊來選取IPv6設定。如果您同時選取這兩個選項、則會先開啟[IPV4設定]對話方塊、然後按一下[* Next*（*下一步*）]之後、隨即開啟[IPv6設定]對話方塊。</block>
   <block id="9e95983d81e04c874d558559ee0ed254" category="list-text">自動或手動設定IPv6和/或IPv6設定。若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多設定*連結。</block>
   <block id="de1a59446028987842ebf9070bb9265f" category="cell">連接埠設定</block>
@@ -9668,4 +9667,5 @@
   <block id="749e3259655b14ad4cd1d92b27ae554b" category="list-text">*範例 A：標準 SAS 配置中的 E4060 控制器架，配有兩個 DE460C 磁碟架*</block>
   <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*範例 B：標準 SAS 配置中的 E4060 控制器架和一個 DE460C 磁碟架*</block>
   <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用CLI命令將儲存陣列設定變更為雙工。若要使用 CLI，如果您下載了 CLI 包，請開啟命令提示符，或者如果您安裝了儲存管理器，則可以開啟企業管理視窗 (EMW)。</block>
+  <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到9000之間的值。</block>
 </blocks>
