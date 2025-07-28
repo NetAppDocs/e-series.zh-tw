@@ -9433,7 +9433,6 @@
   <block id="c2d05de1ae701bdce72c2faac49ce98c" category="doc">完整的儲存系統設定與組態： EF300 ， EF600 ， EF300C 和 EF600C</block>
   <block id="650137d2f2842f6b60e056b9c55a250f" category="doc">安裝與設定： EF300 ， EF600 ， EF300C 和 EF600C</block>
   <block id="85c56bf21f1f6bc6a3b828568c9beb6b" category="doc">安裝硬體： EF300 ， EF600 ， EF300C 和 EF600C</block>
-  <block id="6169a90642f45b855b0d1918df24f1db" category="doc">瞭解儲存系統資訊： EF300 ， EF600 ， EF300C 和 EF600C</block>
   <block id="8b8cb36a048e7bee1a4b2b80d86a5118" category="doc">開啟控制器機櫃的電源 - EF300 ， EF600 ， EF300C 和 EF600C</block>
   <block id="56ce28c073fbbac13d9108d1544bd58e" category="doc">準備安裝 - EF300 ， EF600 ， EF300C 和 EF600C</block>
   <block id="87d6ab4989c0d8d9248aa48458ea993a" category="doc">E 系列版本資訊</block>
@@ -9668,4 +9667,5 @@
   <block id="cab141641940a0cb3eca1b1695f92d4b" category="list-text">*範例 B：標準 SAS 配置中的 E4060 控制器架和一個 DE460C 磁碟架*</block>
   <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用CLI命令將儲存陣列設定變更為雙工。若要使用 CLI，如果您下載了 CLI 包，請開啟命令提示符，或者如果您安裝了儲存管理器，則可以開啟企業管理視窗 (EMW)。</block>
   <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到9000之間的值。</block>
+  <block id="6d169c67d74922fc178491e0bef73793" category="doc">了解儲存系統安裝 - EF300、EF600、EF300C 和 EF600C</block>
 </blocks>
