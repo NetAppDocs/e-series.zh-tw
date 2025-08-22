@@ -24,13 +24,13 @@ summary: 設定主機執行容錯移轉。
 NOTE: 請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 為了確保已安裝任何必要的更新、因為多重路徑可能無法與GA版的SLES或RHEL正常運作。
 
 .關於這項工作
-RHEL 7和SLES 12使用Device對應器多重路徑（DMP）來進行NVMe over RoCE的多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。
+SLES 12 使用裝置映射器多路徑 (DMMP) 為 RoCE 上的 NVMe 提供多路徑支援。 RHEL 8、RHEL 9 和 SLES 15 使用內建的本機 NVMe 故障轉移。根據您所執行的作業系統，需要對多路徑進行一些額外的配置才能使其正常運作。
 
 
 
-== 啟用適用於RHEL 7或SLES 12的Device Mapper多重路徑（DMP）
+== 為 SLES 12 啟用裝置映射器多路徑 (DMMP)
 
-根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。
+預設情況下，SLES 中會停用 DM-MP。完成以下步驟以在主機上啟用 DM-MP 元件。
 
 .步驟
 . 將NVMe E系列裝置項目新增至「/etc/multipath.conf」檔案的「裝置」區段、如下列範例所示：

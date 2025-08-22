@@ -62,7 +62,7 @@ RDMA組態檔位於下列位置：
 ----
 . 啟用並啟動OFED/RDMA服務。
 +
-* RHEL 7.x與SLES 12.x或更新版本*
+*SLES 12.x 或更高版本*
 
 +
 ** 若要在開機時載入InfiniBand模組：
@@ -81,7 +81,7 @@ systemctl start rdma
 
 . 啟用SRP精靈。
 +
-* RHEL 7.x與SLES 12或更新版本*
+*SLES 12 或更高版本*
 
 +
 ** 若要讓SRP精靈在開機時啟動：

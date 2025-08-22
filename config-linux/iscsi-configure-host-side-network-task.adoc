@@ -56,7 +56,7 @@ NOTE: 除了公有網路連接埠、iSCSI啟動器還應在個別的私有區段
 .. 使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。
 .. 設定iSCSI啟動器連接埠的IP位址。啟動器連接埠應與iSCSI目標連接埠位於同一子網路上。
 +
-* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*
+紅帽企業 Linux 8（RHEL 8）
 
 +
 建立範例檔案 `/etc/sysconfig/network-scripts/ifcfg-<NIC port>` 內容如下：

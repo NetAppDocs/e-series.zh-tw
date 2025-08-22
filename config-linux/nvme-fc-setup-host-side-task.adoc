@@ -14,7 +14,7 @@ summary: Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe C
 Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。
 
 .關於這項工作
-下列程序適用於使用Broadcom Emulex或支援QLogic NVMe/FC的FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。如需這些作業系統或HBA支援哪些版本的詳細資訊、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+以下步驟適用於使用 Broadcom Emulex 或 QLogic NVMe/FC 支援的 FC HBA 的 RHEL 8、RHEL 9、SLES 12 和 SLES 15。有關支援哪些作業系統或 HBA 版本的更多信息，請查閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
 
 .步驟
 . 安裝「NVMe-CLI（NVMe - CLI）套件：
@@ -28,7 +28,7 @@ Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件�
 # zypper install nvme-cli
 ----
 +
-* RHEL 7、RHEL 8或RHEL 9*
+*RHEL 8 或 RHEL 9*
 
 +
 [listing]
@@ -37,7 +37,6 @@ Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件�
 # yum install nvme-cli
 ----
 +
-.. 僅適用於RHEL 7、請透過下載並安裝適用於NVMe / FC連線的外部Broadcom AutoConnect指令碼 https://www.broadcom.com/support/download-search["Broadcom網站"^]。輸入關鍵字* AutoConnect指令碼檔案以供採用FC驅動程式*的收件匣NVMe使用、並選擇您作業系統專屬的最新版本。
 .. 若為Qlogic,請在安裝Broadcom NVMe/FC自動連線指令碼之後修改「/lib/systemd/system/nvmefc-boot-connections.service`」以包含下列項目：
 +
 [listing]

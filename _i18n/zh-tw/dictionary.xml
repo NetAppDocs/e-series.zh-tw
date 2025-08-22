@@ -501,7 +501,6 @@
   <block id="f83d8dbcd02328e3d5b9105033a3d23f" category="summary">您可以根據Linux版本設定導向裝置目標的I/O。</block>
   <block id="2760a5173fe84d55b4dfd0df17083b60" category="doc">存取適用於虛擬裝置目標的NVMe磁碟區</block>
   <block id="d08ede07772b1f8bc67cfab8cc986bec" category="paragraph">您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。</block>
-  <block id="591c00758088276e03267ffcba122b79" category="paragraph">對於RHEL 7和SLES 12、I/O會由Linux主機導向至虛擬裝置目標。DM-MP會管理這些虛擬目標的基礎實體路徑。</block>
   <block id="d47b596bd703372e505b66a0d7086453" category="section-title">虛擬裝置是I/O目標</block>
   <block id="77c376f67e98384bf9e50220cc9566e0" category="paragraph">請確定您只對DM-MP所建立的虛擬裝置執行I/O、而不是對實體裝置路徑執行I/O。如果您執行的是實體路徑的I/O、DM-MP就無法管理容錯移轉事件、而且I/O也會失敗。</block>
   <block id="60085e457c461011b1f7a0dc9d2287c9" category="paragraph">您可以透過「dm」裝置或是在/dev/mapper中的「shymlink」來存取這些區塊裝置。例如：</block>
@@ -567,8 +566,6 @@
   <block id="05c6c8fb5e6bfdd350e3712f3c6fb7d6" category="paragraph">將陣列iSCSI位址放在與用來建立iSCSI工作階段的主機連接埠相同的子網路上。如需地址、請參閱 <block ref="0a1a4238c86ce603a2c352fabafb1abf" category="inline-xref-macro-rx"></block>。</block>
   <block id="b4c0052af465e60e515dd89ce3a30501" category="list-text">記錄IQN。</block>
   <block id="2a9360c5f25e96ff91adcbc48896848d" category="paragraph">當您從不支援「傳送目標探索」的作業系統建立iSER工作階段時、可能需要這些資訊。在中輸入此資訊 <block ref="0a1a4238c86ce603a2c352fabafb1abf" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e889c393ff8c52f357be63d353ebf65a" category="summary">對於RHEL 7和SLES 12、您可以在命名空間上建立檔案系統、然後掛載檔案系統。</block>
-  <block id="da6e8accbd9a7e86c32239135f1ffed2" category="doc">建立檔案系統（RHEL 7和SLES 12）</block>
   <block id="facbcb2fa38d6402945c5fd2c6fcf386" category="list-text">執行「multiPath-ll」命令、取得「dev/mapper/dm」裝置清單。</block>
   <block id="4c45d0d12df786bfe97882594b02cae1" category="paragraph">此命令的結果顯示兩個設備："dm-19"和"dm-16"：</block>
   <block id="07c24368c59a3d6a71b9305c416c7d08" category="list-text">在分割區上為每個「/開發/對應器/ EUI-」裝置建立檔案系統。</block>
@@ -607,11 +604,9 @@
   <block id="8c4487a25ea9466f02e7c9276479f372" category="list-text">在OFED/RDMA組態檔中、設定「RP負載= yes」和「RP常駐程式啟用= yes」。</block>
   <block id="e9c7cbe50b485973bea871f161c62eae" category="paragraph">RDMA組態檔位於下列位置：</block>
   <block id="199ab23853e7dbd4480051a2ba7f94c1" category="list-text">啟用並啟動OFED/RDMA服務。</block>
-  <block id="d2452f6f41a0fb1c9adc48a224fa39c1" category="paragraph">* RHEL 7.x與SLES 12.x或更新版本*</block>
   <block id="62a80434680a3501e732e0b0f17f43b5" category="list-text">若要在開機時載入InfiniBand模組：</block>
   <block id="0e0f48a5b5a9c28eeecd7c27ed199bab" category="list-text">若要立即載入InfiniBand模組：</block>
   <block id="d3f496df79399c10dc9661ba6b344e4b" category="list-text">啟用SRP精靈。</block>
-  <block id="e04f1e451cf291bf4dea0e5ac75365d9" category="paragraph">* RHEL 7.x與SLES 12或更新版本*</block>
   <block id="ec6db7aa1ba44acdf7ea7755f1bf3606" category="list-text">若要讓SRP精靈在開機時啟動：</block>
   <block id="c0e80cdff7e17bef2e455fab906a94bf" category="list-text">若要立即啟動SRP精靈：</block>
   <block id="f954d52b7d356b7898493ef1309b32ba" category="list-text">如果您需要修改SRP組態、請輸入下列命令以建立「/etc/modprobe.d/IB_SRP.conf'」。</block>
@@ -783,7 +778,6 @@
   <block id="c662d30c7d8344ca5094b8d63dc5eef2" category="paragraph">您可以使用SMdevices工具來檢視主機上目前可見的磁碟區。此工具是NVMe CLI套件的一部分、可用來取代「NVMe清單」命令。</block>
   <block id="9ba0e91b9dc1e138e7c9c64d8795890a" category="paragraph">若要檢視E系列磁碟區的每個NVMe路徑相關資訊、請使用「NVMe NetApp SMdevices（NVMe NetApp SMdevices）」（英文）[-o &lt;format（格式）&gt;]）命令。輸出「&lt;format（格式）&gt;」可以是正常的（如果不使用-o則是預設值）、欄或json。</block>
   <block id="b3e50929a30cfc00afbc55d231a50cdc" category="summary">您可以在多重路徑裝置上建立分割區、選擇性地在命名空間上建立檔案系統、然後掛載分割區。</block>
-  <block id="59c71eb9f304131ed908d87a5f9303f9" category="paragraph">對於RHEL 7和SLES 12、您可以在所需的dm裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="a50e35ff2f76c0ac349de732916c537b" category="paragraph">對於RHEL 8和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="446e80fe7b2b546a067aa727557f83e0" category="paragraph">建立檔案系統的方法會因所選的檔案系統而異。此範例顯示如何建立ext4檔案系統。</block>
   <block id="3710c6fd95e8087b7e4f2fd5c68bd9b1" category="summary">SMdevices工具是NVMe CLI套件的一部分、可讓您檢視主機上目前可見的磁碟區。此工具是NVMe清單命令的替代工具。</block>
@@ -814,8 +808,6 @@
   <block id="9e780c0c06dd0edf0f09bcc9516acc1c" category="list-text">對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝</block>
   <block id="2176d0eb1d2a0a5ab5201af565e0b30b" category="list-text">對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝</block>
   <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 為了確保已安裝任何必要的更新、因為多重路徑可能無法與GA版的SLES或RHEL正常運作。</block>
-  <block id="7cab16eb74754bbe232b8775c104e66a" category="section-title">啟用適用於RHEL 7或SLES 12的Device Mapper多重路徑（DMP）</block>
-  <block id="2c2e807f6a8822a2d088dfdcc394203e" category="paragraph">根據預設、在RHEL和SLES中會停用DM-MP。完成下列步驟、即可在主機上啟用DM-MP元件。</block>
   <block id="adfe61fc58186ce1f905fe93a482817f" category="list-text">將NVMe E系列裝置項目新增至「/etc/multipath.conf」檔案的「裝置」區段、如下列範例所示：</block>
   <block id="159eb527caba422e175178bb8e7eb6a3" category="list-text">將「multiPathd」設定為在系統開機時啟動。</block>
   <block id="4a9f39582bee881ac128db3567909572" category="list-text">如果當前未運行"multiPathd"，請將其啓動。</block>
@@ -956,8 +948,6 @@
   <block id="eee710143ae29bf272d75ad40d2ede5a" category="doc">在主機端設定NVMe over Fibre Channel</block>
   <block id="a273add3419b2d63bd738c3a4f1e5e3a" category="paragraph">Fibre Channel環境中的NVMe啟動器組態包括安裝及設定NVMe CLI套件、以及在主機上啟用NVMe / FC啟動器。</block>
   <block id="6ba6a18088999d632ca174b9873a3b12" category="list-text">安裝「NVMe-CLI（NVMe - CLI）套件：</block>
-  <block id="969b64ee6a8c67d01b4cd1635a747bd2" category="inline-link">Broadcom網站</block>
-  <block id="d55f94d596bbb6493b1bdec1808b9783" category="list-text">僅適用於RHEL 7、請透過下載並安裝適用於NVMe / FC連線的外部Broadcom AutoConnect指令碼<block ref="54ac045dab92bf3efc1a15209419902d" category="inline-link-rx"></block>。輸入關鍵字* AutoConnect指令碼檔案以供採用FC驅動程式*的收件匣NVMe使用、並選擇您作業系統專屬的最新版本。</block>
   <block id="bd24eb8365cbbc52e79a70875ec8229b" category="list-text">若為Qlogic,請在安裝Broadcom NVMe/FC自動連線指令碼之後修改「/lib/systemd/system/nvmefc-boot-connections.service`」以包含下列項目：</block>
   <block id="fb85e712c850b00626dd602822712dff" category="list-text">啟用並啟動「nvmefc-boot-connections」服務。</block>
   <block id="8d16de46536e749f63af504f807749de" category="paragraph">* Emulex HBA的主機端設定：*</block>
@@ -7903,7 +7893,6 @@
   <block id="df45b26c6e6aa12c9a2da2dc8610745d" category="list-text">新增下列行：將您在步驟2中找到的值替換為<block ref="7804c104033334dfd1f4483b356e7e80" prefix=" " category="inline-code"></block> 和<block ref="a343d59b38a9422b5e453e8b5ab007c0" prefix=" " category="inline-code"></block>。適用於<block ref="16a2e561c536a77cbfd10490ea398be6" prefix=" " category="inline-code"></block> 和<block ref="5f2b9323c39ee3c861a7b382d205c3d3" prefix=" " category="inline-code"></block>的優先順序為：使用子網路管理程式的優先順序、1是最低優先順序、15是最高優先順序。</block>
   <block id="a377bc45676f5d1c2a8f8219a09c9b83" category="list-text">新增下列行：</block>
   <block id="4eb5da929a8b5274983c883ec977d36a" category="list-text">將新服務通知系統。</block>
-  <block id="1f34187b1a209107eee63f82ab42cc05" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
   <block id="709e243fec7f9a41a7ff766bf8716ce5" category="paragraph">對於RHEL 8、RHEL 9、SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="8c986ed4d501b7f34013f1474891eb88" category="list-text">執行<block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令以取得NVMe裝置清單。</block>
   <block id="c2254fad4178ca4085391a6ac3fc163a" category="paragraph">此命令的結果可用於尋找與相關聯的裝置<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下範例將會是<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
@@ -7911,14 +7900,9 @@
   <block id="95aeb1de4d389845f041ab3587500dc3" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。</block>
   <block id="3762f5d6da93d64fb2c80f51749495f7" category="paragraph">最佳實務做法是將I/O執行至中的連結<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 而非直接連接至實體NVMe裝置路徑<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>。您可以使用下列命令來找到這兩個位置之間的連結：</block>
   <block id="cdd98f8f112f01967c6cf544d1185a31" category="paragraph">I/O執行至<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 將直接通過<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block> 使用原生NVMe多重路徑解決方案、將所有路徑都虛擬化至其下。</block>
-  <block id="489b1f76dfc3d23f283bb56e173cfce5" category="paragraph">下列程序適用於使用Broadcom Emulex或支援QLogic NVMe/FC的FC HBA的RHEL 7、RHEL 8、RHEL 9、SLES 12和SLES 15。如需這些作業系統或HBA支援哪些版本的詳細資訊、請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
-  <block id="efdd564b9ec4f2056fa78b410b589c82" category="paragraph">* RHEL 7、RHEL 8或RHEL 9*</block>
-  <block id="08fb030e8ad0e09b4e56de467f54c0b0" category="paragraph">RHEL 7和SLES 12使用Device對應器多重路徑（DMP）來進行NVMe over RoCE的多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">對於RHEL 9和SLES 15、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
   <block id="b850731c1bffd8d6372e832c36232f3e" category="admonition">*資料遺失風險。*您必須啟用流量控制、才能與交換器上的「全域暫停控制」搭配使用、以避免NVMe over RoCE環境中的資料遺失風險。</block>
-  <block id="52b757f8b32ea9abd11ade22593e1b87" category="paragraph">RHEL 7和SLES 12在使用NVMe over Infiniband時、會使用裝置對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">對於SLES 15和RHEL 9、原生NVMe多路徑預設為啟用、不需要額外的組態。</block>
-  <block id="1424a7cf2a070f7dd12d78a849490f2c" category="paragraph">RHEL 7和SLES 12在使用NVMe over Fibre Channel時、會使用Device對應器多重路徑（DMP）來執行多重路徑。RHEL 8、RHEL 9和SLES 15使用內建的原生NVMe容錯移轉。視您執行的作業系統而定、需要額外設定多重路徑、才能使其正常運作。</block>
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">啟用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 開機時的精靈。</block>
@@ -7927,8 +7911,6 @@
   <block id="278d29980d384d87e03c8f99681b0980" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="8e11cf4b8ef8251a1517afd1c236dd0f" category="paragraph">此命令的結果可用於尋找相關的裝置<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 位置。以下範例為<block ref="5873769649ae49105d6cefc7971b78c1" prefix=" " category="inline-code"></block>。</block>
   <block id="1d17dd3572733d46cea446a1f0d4ef11" category="list-text">在上記錄啟動器的GUID <block ref="c3a1c379b3d644ae20d101147cd0dfd9" category="inline-xref-macro-rx"></block>。</block>
-  <block id="cdbf7b73734bd4442fcc96a6195b7a15" category="paragraph">* Red Hat Enterprise Linux 7、8及9（RHEL 7、RHEL 8及RHEL 9）*</block>
-  <block id="04595c79a616b5c392556737aaa7347d" category="paragraph">* RHEL 7、RHEL 8及RHEL 9*</block>
   <block id="2a5b109c10fe6e93caf3666c9854f292" category="list-text">執行multipath-ll命令以取得NVMe裝置清單。</block>
   <block id="210c9515d4a1e9c78e2608d073aeef56" category="list-text">在上記錄啟動器的GUID <block ref="00a1f89a34dac59e8a714860454ae51a" category="inline-xref-macro-rx"></block>。</block>
   <block id="6616a8dcc33e3e23ed86909a9a46376e" category="admonition">支援iSCSI的Data Assurance功能、適用於SANtricity 11.40版及更新版本。</block>
@@ -8010,21 +7992,17 @@
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱式機架：超級軌道</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">步驟1：驗證新控制器的零件編號</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">熱新增磁碟機櫃</block>
-  <block id="83af49c7a44a4352fd5c07a021524fea" category="paragraph">您必須執行最新的相容RHEL 7、RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12或15 Service Pack作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得最新需求的完整清單。</block>
   <block id="889869e1d3bab19951bb91f386d721de" category="list-text">對於RHEL 8和RHEL 9、請安裝網路指令碼：</block>
   <block id="8b8d5d75fe765c0900e1083326e233eb" category="paragraph">* RHEL 8*</block>
   <block id="40ae81b37293ba1a886134269b1c76e5" category="paragraph">* RHEL 9*</block>
-  <block id="3babbb5880d0a0a22e662b27203c0dbe" category="paragraph">* RHEL 7或RHEL 8*</block>
   <block id="8ce810d5ab2863c317f14fafb62a5090" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="a8490166956a7c69a385a3a3169f183e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="e5e4c27b43623332619bb7b742c025ee" category="paragraph">以下是範例檔案<block ref="4a417e605245176a0337befebb3390ec" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="775835480314574c6cd9244c8c9b879b" category="list-text">對於RHEL 8或RHEL 9、請安裝網路指令碼：</block>
-  <block id="6836b58aebbdd815358ecf435e05e390" category="list-text">若為RHEL 7、請啟用<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>。編輯/etc/Rdma/Rdma.conf檔案、然後修改要載入的項目<block ref="0247feeacea55a1e5efb40b0947dbbbe" prefix=" " category="inline-code"></block>：</block>
   <block id="0cd1f8d86f769c38f1483db60702ae30" category="list-text">檢查IB連接埠連結是否正常、狀態=作用中：</block>
   <block id="b19174b79ffa987ea20abbce564e973e" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="9c2912b95ccba22459cf5353437988de" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="2662a31940eac2df0a6809d02c631cbb" category="paragraph">以下是範例檔案<block ref="c9f0a91feab8e55b8d9d166acc79562e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
   <block id="b7577216b0e50cc5bbbbf4483bbc37cd" category="list-text">您也可以選擇設定<block ref="68e21a6780edcb6acab77e2a42f4f506" prefix=" " category="inline-code"></block> 在/etc/iscsi/iscsid.conf中、執行任何<block ref="f88921f58beaaae5bcb9dffac54bf5ad" prefix=" " category="inline-code"></block> 重新開機後、用於讓工作階段持續執行的命令。</block>
   <block id="d0c7f819a9c352ec47123255b7bea069" category="list-text">設定iSCSI連接埠的網路。以下是RHEL和SLES的範例指示：</block>
-  <block id="4578709b544309c3c129ddd77e647202" category="paragraph">* Red Hat Enterprise Linux 7與8（RHEL 7與RHEL 8）*</block>
   <block id="9dabae4a06d30c9c7f51e5f507819763" category="paragraph">建立範例檔案<block ref="0d7d3fc433b1b9e503de96fc98959275" prefix=" " category="inline-code"></block> 內容如下：</block>
   <block id="d495950a6cee8eefb9fec72eb4759f52" category="paragraph">IPv6的選擇性新增項目：</block>
   <block id="8a242e9b511ac07bc46f6d5758b40101" category="paragraph">* Red Hat Enterprise Linux 9（RHEL 9）*</block>
@@ -9295,7 +9273,6 @@
   <block id="fb17130ec244634a0532f36a8cfa9912" category="doc">存取 E 系列中虛擬裝置目標的 NVMe 磁碟區 - Linux （ NVMe over FC ）</block>
   <block id="43c850105df5604a2122f91584d74c9a" category="doc">在 E 系列 - Linux （ NVMe over FC ）中設定 FC 交換器</block>
   <block id="f6034c055b35ceacc4497df2f77dfac2" category="doc">在 E 系列 - Linux （ NVMe over FC ）中使用 DHCP 設定 IP 位址</block>
-  <block id="5a5a7d0233646e67c0a873bc58fd676e" category="doc">在 E 系列中建立檔案系統 - Linux RHEL 7 和 SLES 12 （ NVMe over FC ）</block>
   <block id="1e7e57c41f6250cf0dd2323e0ebba14a" category="doc">在 E 系列中建立檔案系統： Linux RHEL 8 ， RHEL 9 和 SLES 15 （ NVMe over FC ）</block>
   <block id="dcb4a5fa07cd4ed36bb0fb3ad18e00b0" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over FC ）建立主機</block>
   <block id="d592eb2cd6c39918cf5b03b226488789" category="doc">顯示 E 系列 - Linux （ NVMe over FC ）中主機可見的磁碟區</block>
@@ -9311,7 +9288,6 @@
   <block id="639cd8f6ff7a3c560f2d878f2b7127b1" category="doc">在 E 系列 - Linux （ NVMe over InfiniBand ）中使用 DHCP 設定 IP 位址</block>
   <block id="117959d1244ec1b0e9e0c3aeaace2244" category="doc">在 E 系列 - Linux 中，透過 InfiniBand 連線設定儲存陣列 NVMe</block>
   <block id="afd02878fb071c80a878b8f7ab1dc1e3" category="doc">在 E 系列 - Linux （ NVMe over InfiniBand ）中設定子網路管理程式</block>
-  <block id="04e502fa46e2ee2c981093653742a47d" category="doc">在 E 系列中建立檔案系統 - Linux RHEL 7 和 SLES 12 （ NVMe over InfiniBand ）</block>
   <block id="2512b2a473d4ffd3d685aefe3f5ce29f" category="doc">在 E 系列中建立檔案系統： Linux RHEL 8 ， RHEL 9 和 SLES 15 （ NVMe over InfiniBand ）</block>
   <block id="90a60ec18000092aa65e65fc3e62e2dc" category="doc">使用 SANtricity System Manager - Linux （ NVMe over InfiniBand ）建立主機</block>
   <block id="51aada41b528b8fcd1f725914e663229" category="doc">決定 E 系列 - Linux （ NVMe over InfiniBand ）中的主機連接埠全域唯一 ID</block>
@@ -9330,7 +9306,6 @@
   <block id="f4406895abc0e7fb7bba147a1b4018fc" category="doc">在 E 系列 - Linux （ NVMe over roce ）中使用 DHCP 設定 IP 位址</block>
   <block id="2e7f926937a19390a696edcd1611efd8" category="doc">在 E 系列 - Linux 中設定儲存陣列 NVMe over roce 連線</block>
   <block id="133ee7ce9eb1e935758f63664a8fc118" category="doc">在 E 系列 - Linux （ NVMe over roce ）中設定交換器</block>
-  <block id="97cedd5ffd91c6d5809e8756bcd9d969" category="doc">在 E 系列中建立檔案系統 - Linux RHEL 7 和 SLES 12 （ NVMe over roce ）</block>
   <block id="3a0391db7b3c5ce929688d1fd3808797" category="doc">在 E 系列中建立檔案系統： Linux RHEL 8 ， RHEL 9 和 SLES 15 （ NVMe over roce ）</block>
   <block id="1d775b87419a4b4faa9188d96fc9f1ef" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）建立主機</block>
   <block id="c06ab1417d3d38a6274ca96f4817729b" category="doc">從 E 系列 - Linux （ NVMe over roce ）的主機探索並連線至儲存設備</block>
@@ -9668,4 +9643,24 @@
   <block id="47e9a132733409a780b8b25a91969da6" category="list-text">使用CLI命令將儲存陣列設定變更為雙工。若要使用 CLI，如果您下載了 CLI 包，請開啟命令提示符，或者如果您安裝了儲存管理器，則可以開啟企業管理視窗 (EMW)。</block>
   <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到9000之間的值。</block>
   <block id="6d169c67d74922fc178491e0bef73793" category="doc">了解儲存系統安裝 - EF300、EF600、EF300C 和 EF600C</block>
+  <block id="77c49ca57dc8cc81b5609b5c3b6b0120" category="paragraph">紅帽企業 Linux 8（RHEL 8）</block>
+  <block id="c2b5f394c3fe5ec74e8f006f7a1c41f2" category="paragraph">Red Hat Enterprise Linux 8 和 9（RHEL 8 和 RHEL 9）</block>
+  <block id="f6915e22a07b317f6f9f3f4164551c8d" category="paragraph">對於 SLES 12，I/O 由 Linux 主機定向到虛擬設備目標。  DM-MP 管理這些虛擬目標背後的實體路徑。</block>
+  <block id="f9a6f2ee656556e80e38f8a39629d913" category="doc">在 E 系列中建立檔案系統 - SLES 12（NVMe over FC）</block>
+  <block id="e6e90f0138a14d2c6523ea13f186d5ef" category="paragraph">對於 SLES 12，您可以在所需的 dm 裝置上建立檔案系統並掛載該檔案系統。</block>
+  <block id="717270487102a24fa22876dec32c95f1" category="section-title">為 SLES 12 啟用裝置映射器多路徑 (DMMP)</block>
+  <block id="cdfdf9bf8f4a464cd4abef555786cdbb" category="paragraph">預設情況下，SLES 中會停用 DM-MP。完成以下步驟以在主機上啟用 DM-MP 元件。</block>
+  <block id="0a4a01fb64611536a7fb2c5e1e325d98" category="paragraph">以下步驟適用於使用 Broadcom Emulex 或 QLogic NVMe/FC 支援的 FC HBA 的 RHEL 8、RHEL 9、SLES 12 和 SLES 15。有關支援哪些作業系統或 HBA 版本的更多信息，請查閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
+  <block id="75dbe17d5307d64a197f24e012b0fe4e" category="paragraph">*RHEL 8 或 RHEL 9*</block>
+  <block id="6ef765942b756be59a09bba2c1bea181" category="summary">對於 SLES 12，您可以在命名空間上建立一個檔案系統並掛載該檔案系統。</block>
+  <block id="5f72169c48d94cfdf13fa8e7156de8ee" category="doc">在 E 系列中建立檔案系統 - Linux SLES 12（NVMe over InfiniBand）</block>
+  <block id="f3b72a76b6437fffe54c5f6a0e82669c" category="section-title">啟用裝置對映器多路徑 (DMMP) SLES 12</block>
+  <block id="6b6ebf19e3cedd310169b72fa687b40a" category="paragraph">您必須執行最新相容的 RHEL 8、RHEL 9、SUSE Linux Enterprise Server 12 或 15 服務套件作業系統。查看<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>以獲取最新要求的完整清單。</block>
+  <block id="8cccdb1fea835b32fb7acd0ac498244d" category="paragraph">*RHEL 8 或 RHEL 9*</block>
+  <block id="d3f59362d91c4f4d01ccdd309b5bb9fb" category="doc">在 E 系列中建立檔案系統 - Linux SLES 12（NVMe over RoCE）</block>
+  <block id="e0b6fa7380c04b056266419d253d2d07" category="paragraph">SLES 12 使用裝置映射器多路徑 (DMMP) 為 RoCE 上的 NVMe 提供多路徑支援。 RHEL 8、RHEL 9 和 SLES 15 使用內建的本機 NVMe 故障轉移。根據您所執行的作業系統，需要對多路徑進行一些額外的配置才能使其正常運作。</block>
+  <block id="31966977d62560abced8790961dab861" category="paragraph">*RHEL 8 和 RHEL 9*</block>
+  <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x 或更高版本*</block>
+  <block id="eb9f15fa21e7ecb26458bd00f198d235" category="paragraph">*SLES 12 或更高版本*</block>
+  <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">建立檔案系統（SLES 12）</block>
 </blocks>
