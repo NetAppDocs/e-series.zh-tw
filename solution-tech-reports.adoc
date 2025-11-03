@@ -47,7 +47,7 @@ summary: E系列技術報告
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17042-tr4320pdf.pdf["* TR-4320：CommVault Data Platform V11*的最佳實務做法"^] | https://www.netapp.com/pdf.html?item=/media/17159-tr4471pdf.pdf["* TR-4471：Veeam備份與複寫的最佳實務做法*"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704：部署採用NetApp E系列儲存設備的Veritas NetBackup *"^] 
+| https://www.netapp.com/media/79676-tr-4950.pdf["* TR-4320：CommVault Data Platform V11*的最佳實務做法"^] | https://www.netapp.com/media/79436-tr-4948.pdf["* TR-4471：Veeam備份與複寫的最佳實務做法*"^] | https://www.netapp.com/pdf.html?item=/media/16433-tr-4704pdf.pdf["* TR-4704：部署採用NetApp E系列儲存設備的Veritas NetBackup *"^] 
 
 
 | 說明在CommVault Data Platform V11環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。 | 說明在Veeam Backup & Replication 9.5環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。 | 說明在NetApp E系列儲存設備上部署Veritas NetBackup。 

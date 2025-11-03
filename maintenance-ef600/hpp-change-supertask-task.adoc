@@ -61,7 +61,7 @@ NVMe / FC 、 NVMe / Roce 或 iSCSI
  a| 
 NVMe / FC 或 NVMe / IB
  a| 
-DH5-HB4-ZK9QH
+LHS-RB4-ZDV29
 
 
 
@@ -101,7 +101,7 @@ NVMe / FC或NVMe / IB
  a| 
 NVMe / FC 、 NVMe / Roce 或 iSCSI
  a| 
-YH3-XB4-ZJRIZ
+2HU-BB4-ZFCG5
 
 
 
@@ -110,7 +110,7 @@ YH3-XB4-ZJRIZ
  a| 
 FC
  a| 
-2HU-BB4-ZFCG5
+YH3-XB4-ZJRIZ
 
 
 
@@ -150,7 +150,7 @@ NVMe / FC 、 NVMe / Roce 或 iSCSI
  a| 
 NVMe / FC或NVMe / IB
  a| 
-LHS-RB4-ZDV29
+DH5-HB4-ZK9QH
 
 
 

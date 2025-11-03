@@ -33,7 +33,7 @@ summary: E系列技術報告
 |  |  |  
 
 
-| https://www.netapp.com/ko/media/12421-tr4652.pdf["* TR-4652：SANtricity 《Dynamic Disk Pools*》（動態磁碟資源池*）"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737：SANtricity 《自動負載平衡*》"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736：SANtricity 《The Sesome Web Services API*》（英文）"^] 
+| https://www.netapp.com/media/12421-tr-4652-santricity-os-ddp.pdf["* TR-4652：SANtricity 《Dynamic Disk Pools*》（動態磁碟資源池*）"^] | https://www.netapp.com/pdf.html?item=/media/17144-tr4737pdf.pdf["* TR-4737：SANtricity 《自動負載平衡*》"^] | https://www.netapp.com/pdf.html?item=/media/17142-tr4736pdf.pdf["* TR-4736：SANtricity 《The Sesome Web Services API*》（英文）"^] 
 
 
 | 說明儲存管理員如何將一組類似的磁碟分組到集區拓撲中、讓集區中的所有磁碟都參與I/O工作流程。 | 說明了「alb」功能的行為、其主要組態參數及其主機互通性增強功能。 | 說明SANtricity 《支援Web服務》的總覽、這是用於設定和管理E系列儲存系統的API。 

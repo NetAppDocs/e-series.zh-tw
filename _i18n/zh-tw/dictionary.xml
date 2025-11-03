@@ -1903,9 +1903,7 @@
   <block id="ea2848b98724bc7c864ab419f1efd076" category="cell">協助儲存管理員和資料庫管理員在NetApp EF系列儲存設備上成功部署Oracle。</block>
   <block id="8a7d992e887a76abe4703518ec317a4c" category="section-title">備份與恢復</block>
   <block id="569680cec832ec2d53d80483c8dbc439" category="inline-link">* TR-4320：CommVault Data Platform V11*的最佳實務做法</block>
-  <block id="484210f783b83f032755dfc404923829" category="cell"><block ref="484210f783b83f032755dfc404923829" category="inline-link-rx"></block></block>
   <block id="0cd4f7215cb7ec8c6f73c51d9dc39a48" category="inline-link">* TR-4471：Veeam備份與複寫的最佳實務做法*</block>
-  <block id="08fcfb094209aa6fd6eccf8aa5b05de1" category="cell"><block ref="08fcfb094209aa6fd6eccf8aa5b05de1" category="inline-link-rx"></block></block>
   <block id="5941ff1b3a4ffc80a4b2f0ae157b8b6d" category="inline-link">* TR-4704：部署採用NetApp E系列儲存設備的Veritas NetBackup *</block>
   <block id="d5da5f4acb6ce9cd96c756f74b96e9a0" category="cell"><block ref="d5da5f4acb6ce9cd96c756f74b96e9a0" category="inline-link-rx"></block></block>
   <block id="12d1a4b387bfcab1922f0a411bb84852" category="cell">說明在CommVault Data Platform V11環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。</block>
@@ -4190,7 +4188,6 @@
   <block id="1e63a15616a71c16975a6ce6873851d7" category="cell">說明SANtricity 「不同步鏡射」和「非同步鏡射」功能。</block>
   <block id="0d31bf4155130c7e1b044f877c983556" category="cell">說明SANtricity 使用SANtricity 《SyfizSystem Manager》的《不完整快照》功能、包括GUI導覽說明。</block>
   <block id="20b51996662da655011d140b6ce13e08" category="inline-link">* TR-4652：SANtricity 《Dynamic Disk Pools*》（動態磁碟資源池*）</block>
-  <block id="94b9edbcfa8896e9837abb98f7178d0b" category="cell"><block ref="94b9edbcfa8896e9837abb98f7178d0b" category="inline-link-rx"></block></block>
   <block id="c84200fc0d3d1c17f835b93cac2a4073" category="inline-link">* TR-4737：SANtricity 《自動負載平衡*》</block>
   <block id="9e438ddc696936eea7043d42a5d772c2" category="cell"><block ref="9e438ddc696936eea7043d42a5d772c2" category="inline-link-rx"></block></block>
   <block id="b855ed13871c8956bc535c1dcafa14d2" category="inline-link">* TR-4736：SANtricity 《The Sesome Web Services API*》（英文）</block>
@@ -9605,7 +9602,6 @@
   <block id="309255274290ac8d1dd6b54d267ce8cf" category="doc">登入 SANtricity Web 服務 Proxy API 和 Unified Manager</block>
   <block id="f43368fba89f2c1294d458d0d3b87979" category="doc">檢閱 SANtricity Web 服務 Proxy 的安裝與升級需求</block>
   <block id="689b1eb54a456e34eae7715d09f7480a" category="doc">解除安裝 SANtricity Web 服務 Proxy</block>
-  <block id="7c3ba7ad8402a38e099e9ca7b44c927c" category="doc">安裝或升級 SANtricity Web 服務 Proxy 檔案</block>
   <block id="31800de1cb68e15c0426a578c7dd75fd" category="doc">瞭解 SANtricity Web 服務 Proxy API 基礎知識</block>
   <block id="be80139591e8588662d79bbef45ee848" category="doc">SANtricity Web 服務代理程式相容性與限制</block>
   <block id="ed389a9acb72de33be78325f147d7d8c" category="doc">瞭解 SANtricity Web 服務和 Unified Manager</block>
@@ -9663,4 +9659,9 @@
   <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x 或更高版本*</block>
   <block id="eb9f15fa21e7ecb26458bd00f198d235" category="paragraph">*SLES 12 或更高版本*</block>
   <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">建立檔案系統（SLES 12）</block>
+  <block id="4090c38c724effbcef59a93b035aed46" category="cell"><block ref="4090c38c724effbcef59a93b035aed46" category="inline-link-rx"></block></block>
+  <block id="43cf2b25070c6d7d19cb9548ac18c968" category="cell"><block ref="43cf2b25070c6d7d19cb9548ac18c968" category="inline-link-rx"></block></block>
+  <block id="fc81ed45554cc52f6bb42f4d7c774e51" category="cell"><block ref="fc81ed45554cc52f6bb42f4d7c774e51" category="inline-link-rx"></block></block>
+  <block id="23574e6efb4951cab243d0bca21f6801" category="doc">安裝或升級SANtricity Web Services Proxy 和SANtricity Unified Manager 文件</block>
+  <block id="2ba81316cd80bb512d2d7c99312de69e" category="section-title">11.90R4 版本新增功能</block>
 </blocks>
