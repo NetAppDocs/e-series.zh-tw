@@ -81,9 +81,6 @@ systemctl start rdma
 
 . 啟用SRP精靈。
 +
-*SLES 12 或更高版本*
-
-+
 ** 若要讓SRP精靈在開機時啟動：
 +
 [listing]

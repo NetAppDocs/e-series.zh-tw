@@ -24,7 +24,7 @@ InfiniBand OED驅動程式堆疊可同時在相同的連接埠上執行iSER和SR
 .步驟
 . 在主機上啟用和啟動iSCSI服務：
 +
-Red Hat Enterprise Linux 8 和 9（RHEL 8 和 RHEL 9）
+*紅帽企業版 Linux 8、9 和 10（RHEL 8、RHEL 9 和 RHEL 10）*
 
 +
 [listing]
@@ -36,7 +36,7 @@ Red Hat Enterprise Linux 8 和 9（RHEL 8 和 RHEL 9）
 # systemctl enable iscsid
 ----
 +
-* SUSE Linux Enterprise Server 12與15（SLES 12與SLES 15）*
+*SUSE Linux Enterprise Server 12、15 與 16（SLES 12、SLES 15 與 SLES 16）*
 
 +
 [listing]

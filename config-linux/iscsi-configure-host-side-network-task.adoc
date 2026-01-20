@@ -94,7 +94,7 @@ IPV6_FAILURE_FATAL=no
 IPV6_ADDR_GEN_MODE=eui64
 ----
 +
-* Red Hat Enterprise Linux 9（RHEL 9）*
+*Red Hat Enterprise Linux 9 和 10 (RHEL 9 和 RHEL 10) 以及 SUSE Linux Enterprise Server 16 (SLES 16)*
 
 +
 使用 `nmtui` 用於啟動和編輯連線的工具。此工具將產生 `<NIC port>.nmconnection` 檔案位於 `/etc/NetworkManager/system-connections/`。
