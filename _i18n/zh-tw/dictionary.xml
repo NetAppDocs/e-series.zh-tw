@@ -9664,4 +9664,7 @@
   <block id="90f919900318df07a49ea42c3e35a350" category="paragraph">*RHEL 9、RHEL 10 或 SLES 16*</block>
   <block id="9034687d4359fa9bd74cc1439c435374" category="doc">在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 中建立檔案系統（NVMe over RoCE）</block>
   <block id="39ec44e7fd4c2966d363390d0affe00e" category="paragraph">SLES 12 使用裝置映射器多路徑 (DMMP) 為 NVMe over RoCE 實作多路徑。RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 使用內建的 Native NVMe 故障轉移。根據您執行的作業系統，需要對多路徑進行一些額外的配置才能使其正常運作。</block>
+  <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">Version 11.90R5 版本新增功能</block>
+  <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">此版本僅包含缺陷修復，不包含任何新功能。有關此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R5 README。</block>
+  <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R4 README。</block>
 </blocks>
