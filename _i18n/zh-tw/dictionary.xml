@@ -8465,7 +8465,6 @@
   <block id="3ab5df294fcede9a13e1df001c392281" category="paragraph"><block ref="3ab5df294fcede9a13e1df001c392281" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a2b27b2d95b2db288029dec9f945c50" category="inline-link">11.90 版本資訊</block>
   <block id="a780d55204be966b795f04cc4bf22137" category="list-text"><block ref="a780d55204be966b795f04cc4bf22137" category="inline-link-rx"></block></block>
-  <block id="5e40a8e83b3a3f822534bef7faa8799b" category="paragraph"><block ref="5e40a8e83b3a3f822534bef7faa8799b" category="inline-link-rx"></block></block>
   <block id="fe52bb817507c40336c19cb0a171e765" category="inline-image-macro">E2800 LED 顯示器</block>
   <block id="e4cd966e5475f60c49220402627c0091" category="list-text">主機連結 LED 可能會亮起，閃爍或熄滅，視主機介面而定。<block ref="dfa6f90141a0a680db298f8900008782" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6014478ed7f2623da8bc269a34d7464" category="image-alt">E2800 插入電池</block>
@@ -10372,8 +10371,6 @@
   <block id="b669c7541b481751dcc71a055cce958b" category="inline-link-macro">完成儲存系統設定</block>
   <block id="78842b8d721f67915adcf3eb011b7c36" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block><block ref="5ef3aa7bd3b14cfb714e4d5b256fce22" category="inline-link-macro-rx"></block></block>
   <block id="38c38e882e02e5c78c715e5e344923bf" category="paragraph">若要完成儲存系統設定，請連接並設定控制器上的管理連接埠、設定及管理儲存系統，然後驗證主機 I/O 模組傳輸協定是否正確。</block>
-  <block id="3b4608a173577ff11cb5a970a95a9116" category="inline-link">12.0 版本說明</block>
-  <block id="3140eb9f268fa80dd4b189e0d7e0986b" category="list-text"><block ref="3140eb9f268fa80dd4b189e0d7e0986b" category="inline-link-rx"></block></block>
   <block id="a75befa2f42df622990e46f9c7d49e08" category="list-text">選擇左側面板下的選單： Hardware [ Controllers and components ]。</block>
   <block id="a2b019c9963ef773b0ead6446cef828d" category="image-alt">風扇罐釋放拉片</block>
   <block id="b00fd47d5fb356f57fefb70bd8db1fab" category="list-text">如果圖形顯示的是磁碟機，請選擇 *Show back of shelf* 以顯示控制器</block>
@@ -10652,8 +10649,6 @@
   <block id="57e6a2c38c0c83841001bc8084252a54" category="list-text">選擇行最右側的省略號，然後從彈出式選單中選擇 *Rename storage array*。</block>
   <block id="2bcb50ee17148fb9fd0603f1ac802486" category="list-text">若要查看有關憑證的更多資訊，請選擇該行，選擇行尾的省略號，然後按一下 *View* 或 *Export*。</block>
   <block id="b65e70a586056d9f45f1ba1eca4b2d5e" category="paragraph">下表描述了最新 SANtricity OS 版本中針對 EF80、EF50、E4000、EF300、EF600、E2800/EF280 和 E5700/EF570 控制器的嵌入式管理的新功能。</block>
-  <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">12.0 版的新功能</block>
-  <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新型儲存系統型號 – EF80 和 EF50 全快閃儲存系統</block>
   <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager 的新使用者介面</block>
   <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">針對新款 EF80 和 EF50 控制器，SANtricity System Manager 使用者介面經過重新設計，外觀更加現代化。新介面採用左側面板導覽，並增強了易用性，從而簡化了管理任務。</block>
@@ -10668,7 +10663,6 @@
   <block id="c7b277569ea9232e1708c189c4c38af7" category="paragraph">SMcli 中現在提供了一個新的<block ref="14993f95e0d6fc04f9966b0c368a7ed6" prefix=" " category="inline-code"></block>參數。此新參數可讓您尋找與儲存陣列相關聯的所有 SCSI 原生區塊裝置。如需詳細資訊，請參閱<block ref="391452592dd6d4101b3a240969ca8672" category="inline-link-macro-rx"></block>。</block>
   <block id="a5302be9e5d09f8d45fab47dcbe1907c" category="inline-link-macro">檢視 iSCSI 統計資料套件</block>
   <block id="809701d680e9fe62bb27c816be37d1ce" category="paragraph">System Manager 中的「檢視 iSCSI 統計資料套件」頁面現在新增了「乙太網路核心統計資料」選項。此新選項可讓您檢視 iSCSI 裝置平台核心驅動程式的統計資料。如需詳細資訊，請參閱 <block ref="e06656598852b432960957ceca80ecb8" category="inline-link-macro-rx"></block>。</block>
-  <block id="38833d44319a29abce252a75db2a1f8b" category="sidebar">SANtricity System Manager 12.0</block>
   <block id="12552cabe7cc02a88100da5f5c4c0b2d" category="sidebar">SANtricity Unified Manager 8</block>
   <block id="c91faa8fa5379f94c18777a9515b9168" category="sidebar">執行 NVMe over RoCE 特定任務</block>
   <block id="477a44c679560f083fcea73a8a50959d" category="sidebar">EF50 和 EF80</block>
@@ -10691,4 +10685,10 @@
   <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/O 模組主機協定</block>
   <block id="7270f12c0a303f4c7f8c806c946d0faf" category="paragraph">此版本推出了 EF80 和 EF50 全 NVMe 快閃儲存系統。EF80 和 EF50 每個控制器均支援 24 個 NVME SSD 驅動器和一個控制器間鏡像卡。支援的 NVMe over Fabrics 主機介面包括 NVMe over RoCE、NVMe over IB、EF80 的 NVMe over FC 和 EF50 的 NVMe over FC。兩個系統支援的 SCSI 介面均為 Fibre Channel。EF50 每個控制器最多支援兩個主機介面卡，而 EF80 每個控制器最多支援三個主機介面卡。</block>
   <block id="685ec10705743526f323aaeb2e8abdb9" category="paragraph">EF80 和 EF50 也支援 30TB 或 60TB 大小的高容量 NVMe SSD 硬碟。EF80 和 EF50 只有在陣列中配備 30TB 或 60TB 硬碟時才能使用 Dynamic Disk Pool。</block>
+  <block id="e866b10ba89d5ee2fe179d93f938430c" category="inline-link">12.00 版本說明</block>
+  <block id="15df5baea5d41e42b8be265c67488ea8" category="list-text"><block ref="15df5baea5d41e42b8be265c67488ea8" category="inline-link-rx"></block></block>
+  <block id="c9f4c41100461402ef108c1e6ccc6adf" category="paragraph"><block ref="c9f4c41100461402ef108c1e6ccc6adf" category="inline-link-rx"></block></block>
+  <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">12.00 版的新功能</block>
+  <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
+  <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
 </blocks>
