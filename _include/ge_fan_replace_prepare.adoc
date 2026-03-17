@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 檢查 Recovery Guru 是否指出不可移除故障風扇。如果是，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]聯絡。
+. 請確定您擁有下列項目：
++
+** 更換風扇。
+** ESD 腕帶或您已採取其他防靜電措施。
+** 平整無靜電的工作檯面。
+** 用於識別連接至故障控制器的每條纜線的標籤。
+** 具有瀏覽器的管理站，可存取受損控制器的 SANtricity System Manager。
++
+若要開啟 System Manager 介面，請將瀏覽器指向故障控制器的網域名稱或 IP 位址。
+
+
+
+. 使用 SANtricity System Manager 備份儲存系統的組態資料庫：
++
+如果移除控制器時發生問題，您可以使用已儲存的檔案來還原組態。系統會儲存 RAID 組態資料庫的目前狀態，其中包括受損控制器上所有磁碟區群組和磁碟集區的資料。
+
++
+.. 選擇*支援*>*支援中心*>*診斷*。
+.. 選擇*收集組態資料*。
+.. 選擇 *Collect* 。
++
+檔案會以*組態Data-<arrayName>-<DateTimer>.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+

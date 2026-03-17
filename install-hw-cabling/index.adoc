@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 將主機直接連接至控制器或使用交換器。 
 ---
-= 儲存系統纜線（ E 系列）
+= 為儲存系統佈線 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -22,6 +22,9 @@ summary: 將主機直接連接至控制器或使用交換器。
 == 適用的硬體模式
 
 佈線資訊適用於下列硬體機型。
+
+
+NOTE: 如果您在下面的清單中沒有看到您的控制器機架（儲存系統），請查看 link:../getting-started/getup-run-concept.html["E系列的快速入門"^] 並點擊您特定儲存系統的連結以存取佈線資訊。
 
 |===
 | *控制器機櫃* | *磁碟機櫃* 
@@ -51,7 +54,7 @@ DE460C
 
 == 其他纜線資訊
 
-如果您要進行下列組態的佈線、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃。"^]
+如果您要為以下任何配置進行佈線，請參閱  https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃。"^]
 
 |===
 | *控制器機櫃* | *磁碟機櫃* 

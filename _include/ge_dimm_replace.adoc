@@ -1,0 +1,69 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 找到故障的 DIMM。
++
+
+NOTE: 請參考 https://hwu.netapp.com["Hardware Universe"]或控制器蓋上的 FRU 圖，以取得 DIMM 的確切位置。
+
+. 移除故障的 DIMM：
++
+image::../media/drw_g_dimm_ieops-1873.svg[DIMM 更換]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[圖說編號 1]
+ a| 
+DIMM 插槽編號和位置。
+
+
+NOTE: 根據您的儲存系統型號，您將擁有兩個或四個 DIMM。
+
+
+
+ a| 
+image::../media/icon_round_2.png[圖說編號 2]
+ a| 
+** 請注意 DIMM 在插槽中的方向，以便您可以使用相同的方向插入替換 DIMM 。
+** 慢慢地將 DIMM 插槽兩端的兩個 DIMM 彈出卡榫向外推，以彈出故障的 DIMM。
+
+
+
+IMPORTANT: 小心地握住 DIMM 的邊角，以免對 DIMM 電路板元件施加壓力。
+
+
+
+ a| 
+image::../media/icon_round_3.png[圖說編號 3]
+ a| 
+將 DIMM 從插槽中向上提起並取出。
+
+彈出卡榫保持在打開位置。
+
+|===
+. 將替換的 DIMM 從包裝中取出，放在儲存系統附近的平坦、無靜電的表面上。
++
+請保留包裝材料，以便在退回故障 DIMM 時使用。
+
+. 安裝替換的 DIMM：
++
+.. 確保連接器上的 DIMM 彈出卡榫處於開啟位置。
+.. 握住 DIMM 的四個角，將其筆直地插入插槽中。
++
+DIMM 底部的凹槽（位於針腳之間）應該與插槽中的凸耳對齊。
+
++
+正確插入時， DIMM 很容易就能插進去，但會緊貼插槽。如果您感覺 DIMM 沒有正確插入，請重新插入。切勿強行將 DIMM 插入插槽。
+
+.. 目視檢查 DIMM，確保其對齊並完全插入插槽。
+.. 小心但用力地向下按壓 DIMM 的頂部邊緣，直到彈出卡榫卡入 DIMM 兩端的凹槽中。
+
+
+

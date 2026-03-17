@@ -20,9 +20,9 @@ indexpage:
       url: https://www.netapp.com/pdf.html?item=/media/7573-ds-3805.pdf
   - title: 軟件SANtricity
     links:
-    - title: SANtricity 系統管理員 11.9
+    - title: SANtricity System Manager 12.0
       url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
-    - title: SANtricity Unified Manager 7.
+    - title: SANtricity Unified Manager 8
       url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: 命令列介面（CLI）參考
       url: https://docs.netapp.com/us-en/e-series-cli/index.html
@@ -47,9 +47,9 @@ indexpage:
   - title: 適用於SE
     links:
     - title: E系列/EF系列技術訓練（需登入）
-      url: https://fieldportal.netapp.com/content/199944
+      url: https://fieldportal.netapp.com/s/article/E-Series-and-EF-Series-SE-Technical-Training
     - title: EF300總覽與技術詳細資料（需登入）
-      url: https://fieldportal.netapp.com/content/1417672
+      url: https://fieldportal.netapp.com/s/article/eseries-ef300-se-presentation-1704449366156
     - title: NetApp Fusion 產品（需登入）
       url: https://fusion.netapp.com/
   - title: 工具支援

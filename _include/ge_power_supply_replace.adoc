@@ -1,0 +1,82 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 打開電源線固定器，從 PSU 拔下電源線，然後從 PSU 拔下電源線。
++
+
+NOTE: 此電源單元沒有電源開關。
+
+. 拆下 PSU：
++
+image::../media/ef50-ef80_psu_ac_orange_tab_replace_ieops-2611.svg[更換 AC PSU]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[圖說編號 1]
+ a| 
+將 PSU 手柄向上旋轉至水平位置，然後握住它。
+
+
+
+ a| 
+image::../media/icon_round_2.png[圖說編號 2]
+ a| 
+用拇指按下橘色鎖定片，將 PSU 從控制器上取下。
+
+
+
+ a| 
+image::../media/icon_round_3.png[圖說編號 3]
+ a| 
+用一隻手托住 PSU，另一隻手將 PSU 從控制器中拔出。
+
+
+CAUTION: PSU 很短。從控制器上取下時，請務必雙手托住，以免它突然從控制器上甩出傷到您。
+
+|===
+. 打開替換電源的包裝，將其放在儲存系統附近的水平面上。
++
+請保留所有包裝材料、以便在退回故障電源供應器時使用。
+
+. 安裝替換 PSU：
++
+.. 使用雙手托住 PSU 的邊緣，使其與控制器上的開口對齊。
+.. 輕輕地將 PSU 推入控制器，直到橙色鎖定卡扣咔嗒一聲卡入到位。
++
+PSU 只有以一種方式才能與內部連接器正確連接並鎖定到位。
+
++
+
+NOTE: 為避免損壞內部連接器，將 PSU 滑入控制器時請勿用力過度。
+
+.. 將手柄向下旋轉，使其不妨礙正常操作。
+
+
+. 將電源線重新連接至 PSU，並使用電源線固定器固定電源線。
++
+電源恢復至 PSU 後，狀態 LED 應為綠色。
+
+. 確認 PSU 的狀態為 Optimal，且儲存系統的 Attention LED 已關閉。
++
+如果狀態不是 Optimal 或任何 Attention LED 亮起，請確認電源線已正確連接，且 PSU 已正確安裝。如有必要，請拆下並重新安裝 PSU。
+
++
+
+NOTE: 如果無法解決問題，請在繼續執行此步驟之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]聯絡我們。
+
+. 從 SANtricity System Manager 中，按一下 *Support > Upgrade Center*，以確保已安裝最新版本的 SANtricity OS。
++
+視需要安裝最新版本。
+
+. 如套件隨附的RMA指示所述、將故障零件退回NetApp。
++
+如果您需要 RMA 編號或在更換流程方面需要其他協助，請聯絡技術支援 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]，電話：888-463-8277（北美）、00-800-44-638277（歐洲）或 +800-800-80-800（亞太地區）。//2025-11-17 ontap-systems-internal/issues/1391
+
+

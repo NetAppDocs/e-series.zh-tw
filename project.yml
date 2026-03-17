@@ -38,6 +38,7 @@ sidebar:
       url: "/getting-started/getup-run-concept.html"
   - title: 安裝硬體
     entries:
+    - section: install-hw-ef50-ef80
     - title: EF300和EF600
       entries:
       - title: 總覽
@@ -385,6 +386,8 @@ sidebar:
         url: "/config-vmware/iscsi-perform-specific-task.html"
       - title: 執行SAS專屬的工作
         url: "/config-vmware/sas-perform-specific-task.html"
+      - title: 執行 NVMe over RoCE 特定任務
+        url: "/config-vmware/nvme-roce-perform-specific-task.html"
       - title: 探索主機上的儲存設備
         url: "/config-vmware/discover-storage-host-task.html"
       - title: 設定主機上的儲存設備
@@ -455,6 +458,7 @@ sidebar:
         url: "/upgrade-santricity/upgrade-drive-firmware-task.html"
   - title: 維護系統
     entries:
+    - section: maintenance-ef50-ef80
     - title: EF300和EF600
       pdf-filename: EF300-EF600維護系統
       entries:

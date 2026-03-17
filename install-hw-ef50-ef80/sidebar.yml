@@ -1,0 +1,16 @@
+---
+section: install-hw-ef50-ef80
+title: EF50 和 EF80
+entries:
+- title: 安裝工作流程
+  url: "/install-hw-ef50-ef80/install-workflow.html"
+- title: 準備安裝
+  url: "/install-hw-ef50-ef80/install-prepare.html"
+- title: 安裝硬體
+  url: "/install-hw-ef50-ef80/install-hardware.html"
+- title: 纜線硬體
+  url: "/install-hw-ef50-ef80/install-cable.html"
+- title: 系統開機
+  url: "/install-hw-ef50-ef80/install-power-hardware.html"
+- title: 完成系統設定
+  url: "/install-hw-ef50-ef80/install-complete-setup.html"

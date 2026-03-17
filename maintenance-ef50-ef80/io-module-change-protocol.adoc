@@ -1,0 +1,210 @@
+---
+permalink: maintenance-ef50-ef80/io-module-change-protocol.html 
+sidebar: sidebar 
+keywords: host protocol change, EF50, EF80 
+summary: 當您需要在現有 I/O 模組上使用不同的協定時，或在 I/O 模組升級時，或在新儲存系統安裝或控制器升級中新控制器上的預設協定不是您想要的協定時，您可以變更 EF50 或 EF80 儲存系統中主機 I/O 模組上的協定。 
+---
+= 變更主機 I/O 模組傳輸協定 - EF50 和 EF80
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您需要在現有 I/O 模組上使用不同的協定時，或在 I/O 模組升級時，或在新儲存系統安裝或控制器升級中新控制器上的預設協定不是您想要的協定時，您可以變更 EF50 或 EF80 儲存系統中主機 I/O 模組上的協定。
+
+.開始之前
+如果您要變更主機協定作為硬體流程（ I/O 模組升級、新系統安裝或控制器升級）的一部分，則需要完成對應的硬體流程。
+
+
+NOTE: 必須已經安裝新硬體，因為預設傳輸協定和可用傳輸協定清單（您在此程序中檢視）是根據目前安裝的主機 I/O 模組而定。
+
+[cols="1,2"]
+|===
+| 如果您要變更主機通訊協定… | 然後 ... 
+
+
+ a| 
+在您現有的主機 I/O 模組上（無需安裝新硬體）
+ a| 
+繼續執行此程序。
+
+
+
+ a| 
+作為 I/O 模組升級的一部分
+ a| 
+請先升級主機 I/O 模組，然後再繼續執行此程序。
+
+使用 link:../maintenance-ef50-ef80/io-module-upgrade.html["升級 EF50 或 EF80 的 I/O 模組"] 程序。
+
+
+
+ a| 
+作為新儲存系統安裝的一部分
+ a| 
+請先完成系統安裝和設定，然後再繼續執行此程序。
+
+使用 link:../install-hw-ef50-ef80/install-workflow.html["安裝與設定 EF50 或 EF80"] 程序。
+
+
+
+ a| 
+作為控制器升級的一部分
+ a| 
+請先完成控制器升級，然後再繼續執行此程序。
+
+從 link:../upgrade-controllers/index.html["瞭解如何升級 E 系列控制器"] 程序開始。
+
+|===
+.關於這項工作
+* 若要變更主機 I/O 模組上的傳輸協定，請先做好準備、停止主機 I/O 作業、變更傳輸協定，然後設定主機以使用新的傳輸協定。
+* 儲存系統中所有主機 I/O 模組上的傳輸協定都已變更。
+* 當您變更主機 I/O 模組上的傳輸協定時，會暫時中斷主機對所有磁碟區的存取，並使儲存系統在重新開機期間無法使用，這需要幾分鐘的時間。
+
+
+
+
+== 步驟 1：為協議變更做好準備
+
+準備變更主機 I/O 模組上的傳輸協定，方法是驗證目前使用的傳輸協定、判斷是否需要變更傳輸協定，如果需要，請排定停機維護時段。
+
+.步驟
+. 如果您不了解儲存系統中主機 I/O 模組的傳輸協定，請使用 SANtricity System Manager 進行驗證。
++
+.. 選擇 *Settings* > *System* 。
+.. 在 *Additional Settings* 部分中，選取 *Change host I/O protocol* 以開啟該頁面。
+.. 請參閱 *Host I/O Protocol* 欄位中顯示的預設協定。
++
+
+NOTE: 如果要查看主機 I/O 模組的可用傳輸協定清單，請在 *Host I/O Protocol* 欄位中選取下拉式功能表。協定清單是根據目前安裝的主機 I/O 模組而定。
+
+
+
+. 下一步取決於預設傳輸協定是否為您想要的傳輸協定：
++
+[cols="1,2"]
+|===
+| 如果... | 然後 ... 
+
+
+ a| 
+預設協定就是您想要的協定
+ a| 
+無需任何操作。您可以退出此程序。
+
+
+
+ a| 
+預設協定並非您想要的協定
+ a| 
+繼續執行此程序以變更傳輸協定。
+
+|===
+. 為此程序安排停機維護時段。
+
+
+
+
+== 步驟 2：停止主機 I/O 作業
+
+在變更協定之前，必須停止主機上的所有 I/O 作業，然後從儲存系統中刪除所有已定義的主機。
+
+
+NOTE: 在成功完成協定變更之前，您無法存取儲存系統上的資料。
+
+.步驟
+. 確保儲存系統與所有連接的主機之間沒有發生任何 I/O 操作。例如、您可以執行下列步驟：
++
+** 停止所有涉及從儲存設備對應至主機之LUN的程序。
+** 確保沒有任何應用程式將資料寫入從儲存設備對應至主機的任何LUN。
+** 卸載儲存系統上與 LUN 相關聯的所有檔案系統。
++
+
+NOTE: 停止主機 I/O 作業的確切步驟取決於主機作業系統和組態，這超出了這些說明的範圍。如果您不確定如何在您的環境中停止主機 I/O 作業，請考慮關閉主機或聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]。
+
++
+
+CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此程序、您可能會遺失資料。
+
+
+
+. 在每個控制器上，確保 NV Caching Active（綠色）LED 指示燈熄滅。
++
+當 NV 快取活動（綠色）LED 熄滅時，快取記憶體中的所有資料都已寫入磁碟機，可以安全地繼續執行此程序。
+
++
+
+NOTE: 如果 NV Caching Active （綠色） LED 亮起，則表示正在將快取資料寫入磁碟機。您必須等待程序完成，並且 NV Caching Active （綠色） LED 熄滅。但是，如果 LED 持續亮起超過五分鐘，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+
++
+NV 快取啟動（綠色）LED 指示燈位於控制器上的 NV 圖示旁邊。
+
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV 狀態指示燈位置]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[圖說編號 1]
+ a| 
+控制器上的 NV 圖示和 NV Caching Active LED
+
+|===
+. 使用 SANtricity System Manager 確認控制器上的操作已完成：
++
+.. 選擇 *Storage* > *Operations in progress* 以查看 Overview 畫面。
+.. 請等待所有操作完成，並且「概覽」畫面顯示 *目前沒有正在進行的動作* 後，再繼續執行下一步。
+
+
+. 從儲存系統中刪除所有已定義的主機。
++
+如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-host-or-host-cluster.html["在 SANtricity System Manager 中刪除主機或主機叢集"^]程序。
+
+
+
+
+
+== 步驟 3：變更傳輸協定
+
+使用 SANtricity System Manager，變更主機 I/O 模組上的傳輸協定，等待控制器完成重新開機週期，確認其狀態為 Optimal，然後重新建立主機定義。
+
+.步驟
+. 選擇 *Settings* > *System* 。
+. 在 *Additional Settings* 部分中，選取 *Change host I/O protocol* 以開啟該頁面。
+. 在 *Host I/O Protocol* 欄位中，選擇下拉式選單並選擇要使用的協定。
++
+協定清單是根據目前安裝的主機 I/O 模組而定。
+
+. 在開啟的欄位中輸入 *CHANGE* 以確認變更。
+. 選擇 *Change* 按鈕。
+. 等待控制器完成重新開機週期。
++
+這大約需要五分鐘。
+
+. 當控制器恢復上線後，使用 SANtricity System Manager 確認其狀態為「最佳」。
+. 重新建立主機定義。
++
+如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html["在 SANtricity System Manager 中手動建立主機"^]程序。
+
+
+
+
+
+== 步驟 4：設定主機以使用新傳輸協定
+
+變更主機傳輸協定後，您必須設定主機以使用新的傳輸協定。
+
+如需逐步指示，請參閱適用於您儲存系統的指南：
+
+* link:../config-linux/index.html["Linux Express組態"]
+* link:../config-vmware/index.html["VMware Express組態"]
+* link:../config-windows/index.html["Windows Express組態"]
++
+特定設定可能有所不同。請檢查 http://mysupport.netapp.com/matrix["NetApp 互通性對照表"^] 以取得解決方案的特定指示和其他建議設定。
+
+

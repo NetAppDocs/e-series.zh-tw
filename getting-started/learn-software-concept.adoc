@@ -94,7 +94,7 @@ image:../media/sam1130_icon_support.gif["支援"]* 支援 *
 
 == 統一化管理程式SANtricity
 
-Unified Manager是網路型軟體、用於管理整個網域。從中央檢視，您可以看到所有較新 E 系列和 EF 系列陣列的狀態，例如 E4000 ， E2800 ， EF280 ， EF300 ， E5700 ， EF570 ， EF600 ， EF300C 和 EF600C 。您也可以在選定的儲存陣列上執行批次作業。
+Unified Manager 是一款以 Web 為基礎的軟體，用於管理您的整個網域。透過集中式檢視，您可以查看所有新型 E 系列和 EF 系列陣列的狀態，例如 EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C 和 EF600C。您也可以對選定的儲存陣列執行批次作業。
 
 Unified Manager與Web Services Proxy一起安裝在管理伺服器上。若要存取Unified Manager、請開啟瀏覽器並輸入指向安裝Web服務Proxy之伺服器的URL。
 
@@ -170,4 +170,4 @@ Web Services包含API文件、可讓您直接與REST API互動。若要存取Web
 
 == 命令列介面（CLI）
 
-命令列介面（CLI）是一種軟體應用程式、可用來設定及監控儲存陣列。使用CLI、您可以從作業系統提示字元執行命令、例如DOS C：提示字元、Linux作業系統路徑或Solaris作業系統路徑。
+命令列介面 (CLI) 是一種軟體應用程式，可用於設定和監控儲存陣列。使用 CLI，您可以從作業系統提示字元執行命令，例如  `DOS C:` 提示字元、Linux 作業系統路徑或 Solaris 作業系統路徑。

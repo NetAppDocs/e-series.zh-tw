@@ -1,0 +1,56 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 確保儲存系統與所有連接的主機之間沒有發生任何 I/O 操作。例如、您可以執行下列步驟：
++
+** 停止所有涉及從儲存設備對應至主機之LUN的程序。
+** 確保沒有任何應用程式將資料寫入從儲存設備對應至主機的任何LUN。
+** 卸載儲存系統上與 LUN 相關聯的所有檔案系統。
++
+
+NOTE: 停止主機 I/O 作業的確切步驟取決於主機作業系統和組態，這超出了這些說明的範圍。如果您不確定如何在您的環境中停止主機 I/O 作業，請考慮關閉主機或聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]。
+
++
+
+CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此程序、您可能會遺失資料。
+
+
+
+. 在每個控制器上，確保 NV Caching Active（綠色）LED 指示燈熄滅。
++
+當 NV 快取活動（綠色）LED 熄滅時，快取記憶體中的所有資料都已寫入磁碟機，可以安全地繼續執行此程序。
+
++
+
+NOTE: 如果 NV Caching Active （綠色） LED 亮起，則表示正在將快取資料寫入磁碟機。您必須等待程序完成，並且 NV Caching Active （綠色） LED 熄滅。但是，如果 LED 持續亮起超過五分鐘，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+
++
+NV 快取啟動（綠色）LED 指示燈位於控制器上的 NV 圖示旁邊。
+
++
+image::../media/drw_g_nvmem_led_ieops-1839.svg[NV 狀態指示燈位置]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[圖說編號 1]
+ a| 
+控制器上的 NV 圖示和 NV Caching Active LED
+
+|===
+. 使用 SANtricity System Manager 確認控制器上的操作已完成：
++
+.. 選擇 *Storage* > *Operations in progress* 以查看 Overview 畫面。
+.. 請等待所有操作完成，並且「概覽」畫面顯示 *目前沒有正在進行的動作* 後，再繼續執行下一步。
+
+
+. 從儲存系統中刪除所有已定義的主機。
++
+如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-host-or-host-cluster.html["在 SANtricity System Manager 中刪除主機或主機叢集"^]程序。
+
+

@@ -163,7 +163,7 @@ iscsiadm -m node --target <Target IQN> -I iface-ib1 -p <Target Port IP\> -l
 ----
 iscsiadm -m session
 ----
-.. 從陣列檢查iSCSI工作階段狀態。在「系統管理程式」中、瀏覽至*儲存陣列*>* iSER *>*檢視/結束工作階段*。SANtricity
+.. 從儲存陣列檢查 iscsi 連線狀態。在 SANtricity System Manager 中，前往 *設定* > *系統* > *檢視/結束 iSCSI 連線*。
 
 
 

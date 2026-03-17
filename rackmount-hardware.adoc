@@ -2,16 +2,18 @@
 sidebar: sidebar 
 permalink: rackmount-hardware.html 
 keywords: rackmount, rack-mount, install in rack, rails 
-summary: 機架安裝硬體。 
+summary: 機架安裝硬體用於將硬體安裝到機架或機櫃中。機架安裝硬體包裝盒內應包含安裝說明。但是，如果您需要存取安裝說明，請使用下方適用的連結。 
 ---
-= 機架安裝硬體（ E 系列）
+= 機架式硬體 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-請使用下列連結來存取說明如何安裝機架安裝硬體的文件。
+機架安裝硬體用於將儲存系統安裝到機架或機櫃中。機架安裝硬體包裝盒內應包含安裝說明。但是，如果您需要存取安裝說明，請使用下方適用的連結。
+
+對於較新的儲存系統，您可以透過查看 NetApp Hardware Universe 來驗證支援的機架式硬體 https://hwu.netapp.com["NetApp Hardware Universe"^]。
 
 
 
@@ -40,4 +42,4 @@ summary: 機架安裝硬體。
 
 == 四柱式機架：超級軌道
 
-存取 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["將超級滑軌安裝至四柱機架（DE224C/DE460C機櫃）"^]。
+存取 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["將 SuperRail 安裝到四柱機架中"^]。

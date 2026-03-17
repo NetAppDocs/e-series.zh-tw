@@ -163,7 +163,7 @@ image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 
 . 將控制器置於線上。
 +
-.. 在System Manager中、瀏覽至硬體頁面。
+.. 在 System Manager 中，瀏覽至 * 硬體 * 頁面。
 .. 選擇*顯示控制器背面*。
 .. 選取裝有更換風扇的控制器。
 .. 從下拉式清單中選取*線上放置*。

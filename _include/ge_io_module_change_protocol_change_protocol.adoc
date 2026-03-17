@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 選擇 *Settings* > *System* 。
+. 在 *Additional Settings* 部分中，選取 *Change host I/O protocol* 以開啟該頁面。
+. 在 *Host I/O Protocol* 欄位中，選擇下拉式選單並選擇要使用的協定。
++
+協定清單是根據目前安裝的主機 I/O 模組而定。
+
+. 在開啟的欄位中輸入 *CHANGE* 以確認變更。
+. 選擇 *Change* 按鈕。
+. 等待控制器完成重新開機週期。
++
+這大約需要五分鐘。
+
+. 當控制器恢復上線後，使用 SANtricity System Manager 確認其狀態為「最佳」。
+. 重新建立主機定義。
++
+如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html["在 SANtricity System Manager 中手動建立主機"^]程序。
+
+

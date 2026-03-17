@@ -14,7 +14,7 @@ summary: 如果您的控制器包含NVMe over InfiniBand連接埠、您可以使
 如果您的控制器包含NVMe over InfiniBand連接埠、您可以使用SANtricity 「系統管理程式」來設定每個連接埠的IP位址。
 
 .步驟
-. 從System Manager介面選取* Hardware *。
+. 在系統管理器介面的左側面板中，選擇 *Hardware* 。
 . 如果圖形顯示磁碟機、請按一下*顯示磁碟櫃背面*。
 +
 圖形會變更、以顯示控制器而非磁碟機。

@@ -1,0 +1,59 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 請確保已安裝最新版本的 SANtricity OS：
++
+.. 選擇 *Support* > *Upgrade Center* 。
+.. 視需要安裝最新版本。
+
+
+. 確認所有磁碟區都已返回其所屬控制器：
++
+.. 選擇 *Storage* > *Volumes* 。
+.. 從 *All Volumes* 頁面，驗證磁碟區是否已分發到其所屬控制器。
+.. 選擇 *More* > *Change volume ownership* 以檢視磁碟區擁有者。
+
+
+. 下一步取決於磁碟區是否傳回其所屬控制器：
++
+[cols="1,2"]
+|===
+| 如果... | 然後 ... 
+
+
+ a| 
+所有磁碟區的所有權均歸其所屬控制器所有
+ a| 
+前往下一步。
+
+
+
+ a| 
+所有磁碟區均未歸還給其所屬控制器。
+ a| 
+選擇 *Storage* > *Volumes* > *More* ，然後從下拉式選單中選擇 *Redistribute volumes* ，將磁碟區傳回其所屬控制器。
+
+
+
+ a| 
+自動分發或手動分發後，只有部分磁碟區會回到其所屬控制器
+ a| 
+請檢查 Recovery Guru 是否有主機連線問題。
+
+如果沒有 Recovery Guru 或在遵循 Recovery Guru 步驟後磁碟區仍未返回其擁有的控制器，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+
+|===
+. 收集儲存系統的支援資料：
++
+.. 選擇*支援*>*支援中心*>*診斷*。
+.. 選擇*收集支援資料*。
+.. 選擇 *Collect* 。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+. 如果需要驗證和變更主機 I/O 模組協定，請使用程序xref:io-module-change-protocol.html[變更 EF50 或 EF80 的主機 I/O 模組傳輸協定]。
+

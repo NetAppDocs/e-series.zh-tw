@@ -1,0 +1,40 @@
+= 
+:allow-uri-read: 
+
+
+將故障控制器重新上線。
+
+.步驟
+. 使用 SANtricity System Manager 將控制器上線：
++
+.. 選擇 *Hardware* > *Controllers and components* 以顯示控制器。
+.. 選擇要置於線上的控制器以顯示其內容功能表。
+.. 選擇 *Place online* ，然後確認您要執行此操作。
++
+系統會將控制器置於線上。
+
+
+
+. 控制器開機時、請檢查控制器LED。
++
+重新建立與其他控制器的通訊時：
+
++
+** 黃色警示LED會持續亮起。
+** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。
+
+
+. 當控制器恢復上線時：
++
+.. 確認其狀態為 Optimal 。
+.. 確認控制器上的 Attention LED 熄滅。
++
+如果狀態不是 Optimal 或任何 Attention LED 亮起，請確認所有纜線均已正確連接，且控制器已正確安裝。如有必要，請拆卸並重新安裝控制器。
+
++
+
+NOTE: 如果無法解決問題，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]。如有需要，請使用 SANtricity System Manager 收集儲存系統的支援資料。
+
+
+
+

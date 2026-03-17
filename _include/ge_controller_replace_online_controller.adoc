@@ -1,0 +1,62 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 下一步取決於受損的控制器是否使用 DHCP 作為 IP 位址：
++
+[cols="1,2"]
+|===
+| 如果... | 然後 ... 
+
+
+ a| 
+受損的控制器未使用 DHCP 取得 IP 位址
+ a| 
+替換控制器會採用您移除之受損控制器的 IP 位址。
+
+前往下一步。
+
+
+
+ a| 
+故障控制器使用 DHCP 作為 IP 位址
+ a| 
+請網路管理員將故障控制器的 DNS/ 網路和 IP 位址與替換控制器的 MAC 位址建立關聯。
+
+|===
+. 使用 SANtricity System Manager 將控制器上線。
++
+.. 選擇 *Hardware* > *Controllers and components* 以顯示控制器。
+.. 選擇您更換的控制器以顯示其內容選單。
+.. 選擇 *Place online* 。
+
+
+. 控制器開機時，請檢查控制器 LED，以確保與其他控制器的通訊已重新建立：
++
+** 黃色警示LED會持續亮起。
+** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。
+
+
+. 當控制器重新連線時、請檢查 Recovery Guru 中是否報告了 NVSRAM 不相符。
++
+如果報告 NVSRAM 不匹配，請使用下列 SMcli 指令升級 NVSRAM。如果陣列不是 https 安全的，則需要  `-k` 參數。
+
++
+[listing]
+----
+SMcli <controller A IP> <controller B IP> -u admin -p <password> -k -c "download storageArray NVSRAM file=\"C:\Users\testuser\Downloads\NVSRAM .dlp file>\" forceDownload=TRUE;"
+----
++
+
+NOTE: 如果 SMcli 指令無法完成，請聯絡 https://www.netapp.com/company/contact-us/support/["NetApp支援"^]或登入 https://mysupport.netapp.com["NetApp 支援網站"^]以建立案例。
+
+. 確認儲存系統狀態為 Optimal，並且控制器的 Attention LED 已關閉。
++
+如果狀態不是 Optimal 或任何 Attention LED 亮起，請確認所有纜線均已正確連接，且控制器已正確安裝。如有必要，請拆卸並重新安裝控制器。
+
++
+
+NOTE: 如果無法解決問題，請聯絡 https://www.netapp.com/company/contact-us/support/["NetApp支援"^]。
+
+

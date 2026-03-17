@@ -1,0 +1,23 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 從 SANtricity System Manager 中，存取故障控制器的儲存控制器設定檔：
++
+.. 前往 *Support* > *Support Center*。
+.. 從支援資源頁面中，選取 *Storage Array Profile* 。
+.. 向下捲動或使用搜尋欄位來尋找*資料快取模組*資訊。
+
+
+. 如果 DIMM 出現以下任何情況，請記下 DIMM 的位置，然後繼續執行此程序以更換 DIMM 。
++
+如果以上條件均不存在、則無需更換 DIMM 。退出此程序。
+
++
+** DIMM 故障
+** DIMM 報告 *Data Cache Module* 狀態不佳
+** DIMM 的 *Data Cache Module* 容量不匹配
+
+
+

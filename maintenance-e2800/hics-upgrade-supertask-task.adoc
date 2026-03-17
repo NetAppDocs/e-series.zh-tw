@@ -107,7 +107,10 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[快取作用中 
 +
 *（1）*_快取作用中LED _
 
-. 從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。請等待所有作業完成、然後再繼續下一步。
+. 從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。
++
+請等待所有作業完成、然後再繼續下一步。
+
 . 關閉控制器磁碟櫃的電源。
 +
 .. 關閉控制器機櫃上的兩個電源開關。

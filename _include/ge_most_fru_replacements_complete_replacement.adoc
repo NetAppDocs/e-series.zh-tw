@@ -1,0 +1,49 @@
+= 
+:allow-uri-read: 
+
+
+使用 SANtricity System Manager，確保已安裝最新版本的 SANtricity OS，驗證所有磁碟區是否已返回其所屬控制器，並收集支援資料以便恢復作業。
+
+.步驟
+. 請確保在儲存系統上已安裝最新版本的 SANtricity OS：
++
+.. 選取 *Support* > *Upgrade Center*
+.. 視需要安裝最新版本。
+
+
+. 確認所有磁碟區都已返回其所屬控制器：
++
+[cols="1,2"]
+|===
+| 如果... | 然後 ... 
+
+
+ a| 
+Recovery Guru 已啟動，並指出磁碟區未按首選路徑返回（未返回其所屬控制器）
+ a| 
+.. 將磁碟區重新指派到其所屬控制器，方法是選擇 *Storage* > *Volumes* > *More*，然後從下拉式選單中選擇 *Redistribute volumes*。
+.. 透過檢查 Recovery Guru 是否存在並且仍然指示磁碟區不在首選路徑上，來驗證所有磁碟區是否已重新分配到其所屬控制器。
+
+
+
+NOTE: 如果磁碟區仍未返回其所屬控制器，請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+
+
+
+ a| 
+Recovery Guru 未出現（所有磁碟區似乎都已返回其所屬控制器）
+ a| 
+驗證所有磁碟區是否已返回其所屬控制器，方法是選擇 *Storage* > *Volumes* > *More*，然後從下拉式選單中選擇 *Change volume ownership* 以查看磁碟區擁有者。
+
+|===
+. 收集儲存系統的支援資料：
++
+.. 選擇*支援*>*支援中心*>*診斷*。
+.. 選擇*收集支援資料*。
+.. 選擇 *Collect* 。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+

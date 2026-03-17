@@ -1,0 +1,38 @@
+---
+permalink: maintenance-ef50-ef80/controller-replace-workflow.html 
+sidebar: sidebar 
+keywords: ef50, ef80, replace the controller workflow 
+summary: 您可以透過滿足儲存系統需求、準備系統、將故障控制器離線、更換控制器、將新控制器上線並完成更換程序，來更換 EF50 或 EF80 儲存系統中的故障控制器。 
+---
+= 控制器更換工作流程 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以透過滿足儲存系統需求、準備系統、將故障控制器離線、更換控制器、將新控制器上線並完成更換程序，來更換 EF50 或 EF80 儲存系統中的故障控制器。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]link:controller-replace-requirements.html["審查控制器更換要求"]
+[role="quick-margin-para"]
+確認您的儲存系統是否有故障控制器、確認您的儲存系統的狀態、取得執行該程序所需的工具，並擁有一個管理工作站和瀏覽器來存取 SANtricity System Manager。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]link:controller-replace-prepare.html["準備更換控制器"]
+[role="quick-margin-para"]
+打開替換控制器的包裝、記下其 MAC 位址、確認其零件號碼是否正確，並備份儲存系統的組態資料庫。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:controller-replace-offline-controller.html["使受損的控制器離線"]
+[role="quick-margin-para"]
+更換故障控制器時，先將故障控制器離線，以防止資料遺失並確保系統穩定性。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:controller-replace-move-hardware.html["更換受損的控制器"]
+[role="quick-margin-para"]
+確認快取記憶體中的所有資料都已寫入磁碟機、拔下故障控制器的所有纜線、移除控制器、將元件移至替換控制器、安裝替換控制器、然後重新連接所有纜線。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:controller-replace-online-controller.html["將替換控制器上線"]
+[role="quick-margin-para"]
+確認替換控制器的 IP 位址、將控制器上線，並確認儲存系統狀態為最佳。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"]link:controller-replace-complete-replacement.html["完成控制器更換"]
+[role="quick-margin-para"]
+確保已安裝最新版本的 SANtricity OS，驗證磁碟區已返回其所屬控制器，收集系統支援數據，並將故障元件返回 NetApp。

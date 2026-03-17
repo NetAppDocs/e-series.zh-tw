@@ -1,0 +1,256 @@
+---
+permalink: maintenance-ef50-ef80/io-module-replace.html 
+sidebar: sidebar 
+keywords: ef50, ef80 replace io module, replace hic, replace host interface card 
+summary: 將 EF50 或 EF80 儲存系統中發生故障的 I/O 模組更換為相同類型的 I/O 模組，以使儲存系統恢復到最佳運作狀態。 
+---
+= 更換 I/O 模組 - EF50 和 EF80
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+將 EF50 或 EF80 儲存系統中發生故障的 I/O 模組更換為相同類型的 I/O 模組，以使儲存系統恢復到最佳運作狀態。
+
+.關於這項工作
+* 更換 I/O 模組的步驟如下：準備、將故障控制器離線、更換故障 I/O 模組、將控制器重新上線，然後將故障零件退回 NetApp。
+* 本程序中使用術語 _I/O 模組_ 來取代主機介面卡（HIC）。
+* I/O 模組故障 LED（所有四個插槽）無法正常運作。它們始終保持熄滅狀態；因此，無法使用它們來驗證故障情況。
++
+故障 LED 位於控制器上：插槽 1 和 2 的故障 LED 位於插槽 2 的右側。插槽 3 和 4 的故障 LED 位於插槽 4 的左側。
+
+* 故障控制器無需從機箱中取出、因為即使控制器仍在機箱內、也可以存取 I/O 模組。
+* 在拔下任何 I/O 模組纜線之前，必須先將故障控制器離線。
+* 您可以開啟儲存系統位置（藍色）LED 指示燈（位於儲存系統正面和兩個控制器上），以協助實際找到受影響的儲存系統。使用 SANtricity System Manager，選擇 *Hardware* > *Controllers and components*，選擇 *Controller shelf* 標籤，然後從內容功能表中選擇 *Turn on locator light*。
+
+
+
+
+== 步驟 1：準備更換 I/O 模組
+
+準備更換 I/O 模組，方法是收集必要的工具和設備，並備份儲存系統的組態資料庫。
+
+.步驟
+. 請確定您擁有下列項目：
++
+** 替換 I/O 模組。
++
+請務必使用相同類型的 I/O 模組替換故障的 I/O 模組。您不能安裝不同類型的 I/O 模組。
+
++
+儲存系統中每個控制器必須配備相同類型和數量的 I/O 模組。
+
++
+
+CAUTION: *可能遺失資料存取* -- 存在不相容或不匹配的 I/O 模組會導致控制器在通電時鎖定。
+
+** ESD 腕帶或您已採取其他防靜電措施。
+** 平整無靜電的工作檯面。
+** 用於識別連接至故障 I/O 模組之每條纜線的標籤。
+** 具有瀏覽器的管理站，可存取受損控制器的 SANtricity System Manager。
++
+若要開啟 System Manager 介面，請將瀏覽器指向故障控制器的網域名稱或 IP 位址。
+
+
+
+. 使用 SANtricity System Manager 備份儲存系統的組態資料庫：
++
+如果移除控制器時發生問題，您可以使用已儲存的檔案來還原組態。系統會儲存 RAID 組態資料庫的目前狀態，其中包括受損控制器上所有磁碟區群組和磁碟集區的資料。
+
++
+.. 選擇*支援*>*支援中心*>*診斷*。
+.. 選擇*收集組態資料*。
+.. 選擇 *Collect* 。
++
+檔案會以*組態Data-<arrayName>-<DateTimer>.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+
+
+
+
+== 步驟 2：將控制器離線
+
+將故障控制器離線，以便安全地執行此程序的其餘部分。
+
+.關於這項工作
+將控制器離線後，至少需要等待一分鐘才能將控制器重新上線。這段等待時間可讓儲存系統更新控制器的狀態，並確保所有快取資料都已寫入磁碟機。
+
+.步驟
+. 如果故障控制器尚未離線，請使用 SANtricity System Manager 將其離線：
++
+.. 選擇 *Hardware* > *Controllers and components* 以顯示控制器。
+.. 選擇要離線的控制器以顯示其內容選單。
+.. 選擇 *Place offline* ，然後確認要執行此操作。
++
+
+NOTE: 如果您正在使用嘗試將其離線的控制器存取 SANtricity System Manager，則會顯示「SANtricity System Manager 不可用」訊息。選擇 *Connect to an alternate network connection* 可自動使用其他控制器存取 SANtricity System Manager。
+
+
+
+. 等候SANtricity 「更新」功能將控制器狀態更新為「離線」。
++
+
+CAUTION: 在更新狀態之前、請勿開始任何其他作業。
+
+. 使用 Recovery Guru 確認移除故障元件是否安全：
++
+.. 選擇 *Recheck* 。
+.. 確認「詳細資料」區域中的 *OK to remove* 欄位顯示為 *Yes* 。
++
+
+CAUTION: 如果 *OK to remove* 欄位未顯示 *Yes*，請勿移除故障組件。而應使用 Recovery Guru 進行故障排除。
+
+
+
+
+
+
+
+== 步驟 3：更換 I/O 模組
+
+從故障的 I/O 模組拔下纜線、以替換的 I/O 模組加以更換、然後將替換的 I/O 模組接上纜線。
+
+.步驟
+. 如果您尚未接地、請正確接地。
+. 從故障的 I/O 模組拔下纜線。
++
+務必為纜線貼上標籤，以便知道其來源。
+
+. 從控制器中移除故障的 I/O 模組：
++
+image::../media/drw_g_io_module_replace_ieops-1900.svg[移除 I/O 模組]
+
++
+[cols="1,4"]
+|===
+
+
+ a| 
+image::../media/icon_round_1.png[圖說編號 1]
+ a| 
+逆時針旋轉 I/O 模組蝶形螺絲以鬆開。
+
+
+
+ a| 
+image::../media/icon_round_2.png[圖說編號 2]
+ a| 
+使用左側的連接埠標籤標籤和指旋螺絲將 I/O 模組從控制器中拔出。
+
+|===
+. 打開替換 I/O 模組的包裝，將其放置在儲存系統附近的平坦、無靜電的表面上。
++
+請保留包裝材料，以便在退回故障 I/O 模組時使用。
+
+. 將替換的 I/O 模組安裝到目標插槽中：
++
+.. 將 I/O 模組與插槽邊緣對齊。
+.. 輕輕地將 I/O 模組完全推入插槽，確保模組正確插入連接器。
++
+您可以使用左側的卡榫和指旋螺絲將 I/O 模組推入。
+
+.. 順時針旋轉指旋螺絲以擰緊。
+
+
+. 連接 I/O 模組的纜線。
+
+
+
+
+== 步驟 4：將控制器上線
+
+將故障控制器重新上線。
+
+.步驟
+. 使用 SANtricity System Manager 將控制器上線：
++
+.. 選擇 *Hardware* > *Controllers and components* 以顯示控制器。
+.. 選擇要置於線上的控制器以顯示其內容功能表。
+.. 選擇 *Place online* ，然後確認您要執行此操作。
++
+系統會將控制器置於線上。
+
+
+
+. 控制器開機時、請檢查控制器LED。
++
+重新建立與其他控制器的通訊時：
+
++
+** 黃色警示LED會持續亮起。
+** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。
+
+
+. 當控制器恢復上線時：
++
+.. 確認其狀態為 Optimal 。
+.. 確認控制器上的 Attention LED 熄滅。
++
+如果狀態不是 Optimal 或任何 Attention LED 亮起，請確認所有纜線均已正確連接，且控制器已正確安裝。如有必要，請拆卸並重新安裝控制器。
+
++
+
+NOTE: 如果無法解決問題，請在繼續執行此程序之前 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]。如有需要，請使用 SANtricity System Manager 收集儲存系統的支援資料。
+
+
+
+
+
+
+
+== 步驟 5：完成 I/O 模組更換
+
+使用 SANtricity System Manager，確保已安裝最新版本的 SANtricity OS，驗證所有磁碟區是否已返回其所屬控制器，並收集支援資料以便恢復作業。
+
+.步驟
+. 請確保在儲存系統上已安裝最新版本的 SANtricity OS：
++
+.. 選取 *Support* > *Upgrade Center*
+.. 視需要安裝最新版本。
+
+
+. 確認所有磁碟區都已返回其所屬控制器：
++
+[cols="1,2"]
+|===
+| 如果... | 然後 ... 
+
+
+ a| 
+Recovery Guru 已啟動，並指出磁碟區未按首選路徑返回（未返回其所屬控制器）
+ a| 
+.. 將磁碟區重新指派到其所屬控制器，方法是選擇 *Storage* > *Volumes* > *More*，然後從下拉式選單中選擇 *Redistribute volumes*。
+.. 透過檢查 Recovery Guru 是否存在並且仍然指示磁碟區不在首選路徑上，來驗證所有磁碟區是否已重新分配到其所屬控制器。
+
+
+
+NOTE: 如果磁碟區仍未返回其所屬控制器，請聯絡 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"]。
+
+
+
+ a| 
+Recovery Guru 未出現（所有磁碟區似乎都已返回其所屬控制器）
+ a| 
+驗證所有磁碟區是否已返回其所屬控制器，方法是選擇 *Storage* > *Volumes* > *More*，然後從下拉式選單中選擇 *Change volume ownership* 以查看磁碟區擁有者。
+
+|===
+. 收集儲存系統的支援資料：
++
+.. 選擇*支援*>*支援中心*>*診斷*。
+.. 選擇*收集支援資料*。
+.. 選擇 *Collect* 。
++
+檔案會以* support-data.7z*的名稱儲存在瀏覽器的「下載」資料夾中。
+
+
+
+
+
+
+
+== 步驟 6：將故障零件退回 NetApp
+
+請依照套件隨附的 RMA 說明書中的步驟，將故障零件退回至 NetApp。如需更多資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨和更換"]頁面。

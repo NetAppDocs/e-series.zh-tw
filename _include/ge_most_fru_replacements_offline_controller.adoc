@@ -1,0 +1,35 @@
+= 
+:allow-uri-read: 
+
+
+.關於這項工作
+將控制器離線後，至少需要等待一分鐘才能將控制器重新上線。這段等待時間可讓儲存系統更新控制器的狀態，並確保所有快取資料都已寫入磁碟機。
+
+.步驟
+. 如果故障控制器尚未離線，請使用 SANtricity System Manager 將其離線：
++
+.. 選擇 *Hardware* > *Controllers and components* 以顯示控制器。
+.. 選擇要離線的控制器以顯示其內容選單。
+.. 選擇 *Place offline* ，然後確認要執行此操作。
++
+
+NOTE: 如果您正在使用嘗試將其離線的控制器存取 SANtricity System Manager，則會顯示「SANtricity System Manager 不可用」訊息。選擇 *Connect to an alternate network connection* 可自動使用其他控制器存取 SANtricity System Manager。
+
+
+
+. 等候SANtricity 「更新」功能將控制器狀態更新為「離線」。
++
+
+CAUTION: 在更新狀態之前、請勿開始任何其他作業。
+
+. 使用 Recovery Guru 確認移除故障元件是否安全：
++
+.. 選擇 *Recheck* 。
+.. 確認「詳細資料」區域中的 *OK to remove* 欄位顯示為 *Yes* 。
++
+
+CAUTION: 如果 *OK to remove* 欄位未顯示 *Yes*，請勿移除故障組件。而應使用 Recovery Guru 進行故障排除。
+
+
+
+

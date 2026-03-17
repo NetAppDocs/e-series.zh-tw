@@ -22,7 +22,7 @@ summary: 在陣列端設定iSCSI網路。
 
 
 .關於這項工作
-本工作說明如何從System Manager的「Hardware（硬體）」頁面存取iSCSI連接埠組態。您也可以從功能表：系統[設定>設定iSCSI連接埠]存取組態。
+本任務介紹如何從 System Manager 的硬體頁面存取 iSCSI 連接埠組態。您也可以從功能表存取組態：System[Settings > System > Configure iSCSI ports]。
 
 .步驟
 . 在瀏覽器中輸入下列URL：「+https://<DomainNameOrIPAddress>+`」
@@ -40,11 +40,7 @@ summary: 在陣列端設定iSCSI網路。
 +
 稍後您將使用精靈來完成其他設定工作。
 
-. 選取*硬體*。
-. 如果圖形顯示磁碟機、請按一下*顯示磁碟櫃背面*。
-+
-圖形會變更、以顯示控制器而非磁碟機。
-
+. 從左側面板中，選擇功能表：Hardware[Controllers and components]。
 . 按一下要設定iSCSI連接埠的控制器。
 +
 此時會出現控制器的內容功能表。

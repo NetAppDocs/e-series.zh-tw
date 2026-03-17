@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, ethernet cabling, ethernet cable, out of band, direct topology, fabric topology, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 將儲存系統連接至乙太網路、以進行頻外管理。 
 ---
-= 管理站（ E 系列）的乙太網路纜線
+= 管理站的乙太網路纜線 - E 系列
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,9 +13,13 @@ summary: 將儲存系統連接至乙太網路、以進行頻外管理。
 [role="lead"]
 您可以將儲存系統連接至乙太網路、以進行頻外儲存陣列管理。您必須使用乙太網路纜線進行所有儲存陣列管理連線。
 
+[NOTE]
+====
+有些儲存系統的每個控制器上只有一個頻外 Ethernet 管理連接埠。
 
-NOTE: EF300 ， EF600 和 E4000 只有一個頻外乙太網路管理連接埠。
+有關您儲存系統的具體佈線說明，請參閱 link:../getting-started/getup-run-concept.html["E系列的快速入門"^] 並按一下您特定儲存系統的連結。
 
+====
 
 
 == 直接拓撲

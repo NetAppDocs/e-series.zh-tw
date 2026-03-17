@@ -1,0 +1,29 @@
+= 
+:allow-uri-read: 
+
+
+.步驟
+. 將電源線插入兩個控制器。
++
+控制器開始開機。
+
+. 檢查控制器上的 LED，確保控制器之間的通訊已重新建立：
++
+** 注意指示燈保持亮起。
+** 主機連結LED可能會亮起、閃爍或關閉、視主機介面而定。
+
+
+. 當控制器恢復上線時：
++
+.. 確認其狀態為 Optimal。
+.. 確認每個控制器上的 Attention LED 都熄滅。
++
+如果狀態不是 Optimal 或任何 Attention LED 亮起，請確認所有纜線均已正確連接。
+
++
+
+NOTE: 如果您無法解決問題，請聯絡 https://www.netapp.com/company/contact-us/support/["NetApp支援"^]。如有需要，請使用 SANtricity System Manager 收集儲存系統的支援資料。
+
+
+
+

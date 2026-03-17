@@ -55,6 +55,10 @@ RoCE環境中的NVMe啟動器組態包括安裝及設定RDMA核心和NVMe CLI套
 ----
 # yum install NetworkManager-initscripts-updown
 ----
++
+
+NOTE: RHEL 10 不提供網路腳本。
+
 . 取得用於將主機設定為陣列的主機NQN。
 +
 [listing]

@@ -205,7 +205,7 @@ NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 磁碟機匣的警示LED（黃色）會開始閃爍、以便您開啟正確的磁碟機抽屜、以識別要更換的磁碟機。
 
 +
-image::../media/2860_dwg_attn_led_on_drawer_maint-e5700.gif[「注意 LED]
+image::../media/2860_dwg_attn_led_on_drawer_maint-e5700.gif[注意LED]
 
 +
 *（1）*_注意LED _

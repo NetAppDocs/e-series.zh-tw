@@ -103,7 +103,7 @@ CAUTION: 如果您未關閉儲存陣列的電源、請務必在30分鐘內取出
 
 . 按下橘色彈片以釋放風扇容器握把。
 +
-image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[]
+image::../media/28_dwg_e2860_de460c_single_fan_canister_with_orange_tab_callout_maint-e2800.gif[風扇罐釋放拉片]
 
 +
 您按下*（1）*_tab鍵以釋放風扇容器的握把_

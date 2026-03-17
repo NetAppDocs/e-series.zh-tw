@@ -31,7 +31,7 @@ summary: 確認主機可以將資料寫入LUN並讀取回。
 ----
 . 若要驗證多重路徑是否正常運作、請變更磁碟區擁有權。
 +
-.. 從「系統管理員GUI」中、移至「*儲存設備*>*磁碟區*」SANtricity 、然後選取「*更多*」>「*變更擁有權*」。
+.. 從 SANtricity System Manager 中，前往 *Storage* > *Volumes*，然後選擇 *ellipsis icon* > *Change volume ownership*。
 .. 在「變更磁碟區所有權」對話方塊中、使用*偏好的擁有者*下拉式清單、為清單中的其中一個磁碟區選取其他控制器、然後確認作業。
 .. 確認您仍可存取LUN上的檔案。
 +

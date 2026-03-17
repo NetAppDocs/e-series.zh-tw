@@ -66,6 +66,25 @@ NOTE: 對於 E4000 控制器，鏡射僅支援光纖通道連線。
 
 
 
+* *EF50 和 EF80 鏡像纜線*
++
+EF80 和 EF50 系統採用高速 200GbE/100GbE 外部連接，以實現兩個控制器之間的控制器間通訊。每個控制器都配備一張專用介面卡，安裝在插槽 4 中。該卡提供兩個連接埠，並隨系統附贈兩條 0.5 公尺長的 200GbE 纜線。
+
++
+請使用這些線纜依下列方式連接控制器連接埠：
+
++
+** 控制器 A 上的連接埠 e4a 連接到控制器 B 上的連接埠 e4a
+** 控制器 A 上的連接埠 e4b 連接到控制器 B 上的連接埠 e4b
++
+
+NOTE: 務必按照說明連接纜線。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series/install-hw-ef50-ef80/install-cable.html#step-1-cable-the-inter-controller-mirroring-connections["連接控制器間鏡像連接線 - EF50 和 EF80"]。
+
+
+
++
+請勿使用其他主機連接埠（Slot 1、Slot 2 或 Slot 3）進行控制器間通訊，因為不支援此功能。正確的控制器間佈線對於 EF50 和 EF80 陣列的正常運作至關重要。
+
 
 
 
@@ -76,6 +95,60 @@ NOTE: 對於 E4000 控制器，鏡射僅支援光纖通道連線。
 
 [role="tabbed-block"]
 ====
+.EF50 和 EF80 控制器升級相容性
+--
+[cols="h,d,d,d"]
+|===
+| 升級途徑 | 電池 | 功能支援 | SAS-3磁碟櫃 
+
+
+| 從 EF300 到 EF50 或 EF80  a| 
+訂購新電池。
+ a| 
+* EF50 和 EF80 僅支援雙工組態
+* EF50 和 EF80 支援 64Gb Fibre Channel 主機介面卡
+* EF80 支援雙 200GbE NVMe over RoCE 和 NVMe over Infiniband 主機介面卡
+* EF50 和 EF80 每個控制器最多支援 24 個 NVMe 磁碟機
+* EF50 和 EF80 支援 TLC 和 QLC NVMe 磁碟機組態
+* EF50 和 EF80 不支援基板主機連接埠
+* EF50 和 EF80 不支援同步或非同步鏡像
+* EF50 和 EF80 不支援遠端儲存磁碟區
+* EF50 和 EF80 不支援精簡配置磁碟區
+* EF50 支援最多 2 個主機介面卡，EF80 支援最多 3 個主機介面卡。
+
+
+
+NOTE: 從 EF300 升級到 EF50 或 EF80 時、您可以透過 SANtricity System Manager 使用者介面設定主機傳輸協定。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/e-series/maintenance-ef50-ef80/io-module-change-protocol.html["變更主機 I/O 模組傳輸協定 - EF50 和 EF80"]。
+ a| 
+* EF50 和 EF80 不支援 SAS 擴充。
+
+
+
+
+| 從 EF600 到 EF80  a| 
+訂購新電池。
+ a| 
+* EF80 僅支援雙工組態
+* EF80 支援 64Gb Fibre Channel 主機介面卡
+* EF80 支援雙 200GbE NVMe over RoCE 和 NVMe over Infiniband 主機介面卡
+* EF80 每個控制器最多支援 24 個 NVMe 磁碟機
+* EF50 和 EF80 支援 TLC 和 QLC NVMe 磁碟機組態
+* EF80 不支援底板主機連接埠
+* EF80 不支援同步或非同步鏡像
+* EF80 不支援 Remote Storage Volumes
+* EF80 不支援精簡配置磁碟區
+* EF80 支援最多 3 張主機介面卡。
++
+
+NOTE: 從 EF600 升級到 EF80 時，您可以透過 SANtricity System Manager 使用者介面配置主機協定。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/e-series//maintenance-ef50-ef80/io-module-change-protocol.html["變更主機 I/O 模組傳輸協定 - EF50 和 EF80"]。
+
+
+ a| 
+* EF80 不支援 SAS 擴充。
+
+
+|===
+--
 .E4000 控制器升級相容性
 --
 [cols="h,d,d,d"]
@@ -191,7 +264,7 @@ E5400 ， E5500 和 E5600 控制器不得放入 SAS-3 機櫃。
  a| 
 E2700 不支援舊版快照。
  a| 
-5400 ， E5500 和 E5600 控制器不得放入 SAS-3 機櫃。
+E5400 ， E5500 和 E5600 控制器不得放入 SAS-3 機櫃。
 
 
 

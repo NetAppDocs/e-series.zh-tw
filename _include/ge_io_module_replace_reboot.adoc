@@ -1,0 +1,28 @@
+= 
+:allow-uri-read: 
+
+
+更換 I/O 模組後、您必須重新啟動控制器。
+
+.步驟
+. 從 LOADER 提示重新啟動控制器：
++
+`bye`
+
++
+
+NOTE: 重新啟動受損的控制器也會重新初始化 I/O 模組和其他元件。
+
+. 透過恢復儲存設備，使受損的控制器恢復正常運作：
++
+`storage failover giveback -ofnode _impaired_node_name_`
+
+. 從正常的控制器主控台還原自動恢復：
++
+`storage failover modify -node local -auto-giveback true`
+
+. 如果啟用 AutoSupport，請還原自動建立案例：
++
+`system node autosupport invoke -node * -type all -message MAINT=END`
+
+

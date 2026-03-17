@@ -1,0 +1,328 @@
+---
+permalink: config-vmware/nvme-roce-perform-specific-task.html 
+sidebar: sidebar 
+keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80 E-Series, eseries 
+summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。 
+---
+= 在 E 系列中執行 NVMe over RoCE 特定任務 - VMware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於 NVMe over RoCE 協定，您需要設定交換器並確定主機連接埠識別碼。
+
+
+
+== 步驟 1：記錄您的組態
+
+您可以產生及列印本頁的PDF、然後使用下列工作表記錄您的傳輸協定專屬儲存組態資訊。您需要這些資訊來執行資源配置工作。
+
+
+
+=== 建議的組態
+
+建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
+
+image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"]
+
+
+
+=== 主機識別碼
+
+|===
+| 標註編號 | 主機連接埠連線 | 軟體啟動器NQN 
+
+
+ a| 
+1.
+ a| 
+主機（啟動器）1.
+ a| 
+
+
+
+ a| 
+1.
+ a| 
+主機（啟動器）2.
+ a| 
+
+|===
+
+
+=== 目標識別碼
+
+|===
+| 標註編號 | 陣列連接埠連線 | 目標NQN 
+
+
+ a| 
+2.
+ a| 
+陣列控制器（目標）連接埠 1
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+陣列控制器（目標）連接埠 2
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+陣列控制器（目標）連接埠 3
+ a| 
+
+
+
+ a| 
+2.
+ a| 
+陣列控制器（目標）連接埠 4
+ a| 
+
+|===
+
+
+=== 對應主機
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===
+
+
+=== 建議的組態
+
+具體情況可能因陣列而異。EF300、EF600 和 EF50 將配備 2 個發起端口和最多 4 個目標端口，支援 1 個或多個 VLAN。EF80 將配備 2 個發起端口和最多 6 個目標端口，支援 1 個或多個 VLAN。
+
+
+
+== 步驟 2：設定 NVMe/RoCE 交換器
+
+您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
+
+.關於此
+本任務描述了配置交換器以透過 RoCE 實現 NVMe 的一般步驟。有關具體說明，請參閱交換器供應商的文件。
+
+開始之前、請確定您擁有下列項目：
+
+* 兩個獨立的網路以實現高可用性。請確保將 NVMe over RoCE 流量隔離到不同的網段。
+
+
+.步驟
+請參閱交換器廠商的文件。
+
+
+
+== 步驟 3：設定網路 - NVMe/RoCE、VMware
+
+您可以根據資料儲存需求，透過多種方式設定 NVMe over RoCE 網路。請諮詢您的網路管理員，以取得選擇最適合您環境的組態的建議。
+
+.關於這項工作
+本任務描述了配置基於 RoCE 的 NVMe 網路的一般步驟。有關具體說明，請參閱交換器供應商的文件。
+
+開始之前、請確定您擁有下列項目：
+
+* 交換器已設定為透過 RDMA 的 NVMe 無損乙太網路。
+
+
+.關於這項工作
+在規劃 NVMe over RoCE 網路時，請記住 VMware Configuration Maximums 指南中指出，每台伺服器支援的最大 RDMA NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免配置過多路徑。
+
+為確保良好的多路徑配置，請為 NVMe over RoCE 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠組合放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。
+
+.步驟
+請參閱交換器廠商的文件。
+
+
+
+== 步驟 4：設定陣列端網路 - NVMe/RoCE、VMware
+
+您可以使用 SANtricity System Manager 介面在陣列側配置基於 RoCE 的 NVMe 網路。
+
+.關於這項工作
+本任務介紹如何從 SANtricity System Manager 的 *Controllers & components* 頁面存取 NVMe over RoCE 連接埠配置。您也可以從 SANtricity System Manager 的 *Configure NVMe over RoCE ports* 頁面存取該配置。
+
+開始之前、請確定您擁有下列項目：
+
+* 其中一個儲存陣列控制器的IP位址或網域名稱。
+* 已為 System Manager GUI 設定密碼，或設定了基於角色的存取控制（RBAC）或 LDAP 以及目錄服務，以便對儲存陣列進行適當的安全存取。如需 link:https://docs.netapp.com/us-en/e-series-santricity/um-certificates/overview-access-management-um.html["存取管理"^] 的詳細資訊，請參閱 SANtricity System Manager 線上說明。
+
+
+.步驟
+. 在瀏覽器中輸入以下 URL： https://<DomainNameOrIPAddress>[]
++
+「IPAddress」是其中一個儲存陣列控制器的位址。
+
++
+第一次SANtricity 在尚未設定的陣列上開啟時、會出現「Set Administrator Password（設定管理員密碼）」提示字元。角色型存取管理可設定四種本機角色：管理、支援、安全性及監控。後三個角色的隨機密碼是無法猜測的。設定管理員角色的密碼之後、您可以使用管理員認證來變更所有密碼。如SANtricity 需四種本機使用者角色的詳細資訊、請參閱《支援系統》線上說明。
+
+. 在Set Administrator Password（設定管理員密碼）和Confirm Password（確認密碼）欄位中輸入管理員角色的System Manager密碼、然後按一下* Set Password（設定密碼）*。
++
+如果未設定集區、磁碟區群組、工作負載或通知、則會啟動設定精靈。
+
+. 關閉設定精靈。
++
+稍後您將使用精靈來完成其他設定工作。
+
+. 選擇 *Hardware* > *Controllers and components* 。
+. 按一下要設定的具有 NVMe over RoCE 連接埠的控制器。
++
+此時會出現控制器的內容功能表。
+
+. 選取*透過RoCE連接埠設定NVMe *。
++
+Configure NVMe over RoCE Ports 對話方塊開啟。
+
+. 在下拉式清單中、選取您要設定的連接埠、然後按一下「*下一步*」。
+. 選取組態連接埠設定、然後按一下「*下一步*」。
++
+若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多連接埠設定*連結。
+
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+已設定乙太網路連接埠速度
+ a| 
+選擇所需速度。下拉清單中顯示的選項取決於您的網路可支援的最大速度（例如 200 Gb/s）。
+
+
+
+ a| 
+啟用IPV4 /啟用IPv6
+ a| 
+選取一個或兩個選項、以啟用對IPv4和IPv6網路的支援。
+
+
+
+ a| 
+MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
+ a| 
+如有必要、請為最大傳輸單元（MTU）輸入新的位元組大小。
+
+預設的最大傳輸單元 (MTU) 大小為每幀 4200 位元組。您必須輸入介於 1500 到 9000 之間的值。
+
+|===
++
+如果您選取*啟用IPV4、則會在您按一下*下一步*之後、開啟一個對話方塊、供您選取IPV4設定。如果您選取*啟用IPv6 *、則會在您按一下*下一步*之後、開啟一個對話方塊來選取IPv6設定。如果您同時選取這兩個選項、則會先開啟[IPV4設定]對話方塊、然後按一下[* Next*（*下一步*）]之後、隨即開啟[IPv6設定]對話方塊。
+
++
+自動或手動設定IPv6和/或IPv6設定。若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多設定*連結。
+
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+自動取得組態
+ a| 
+選取此選項可自動取得組態。
+
+
+
+ a| 
+手動指定靜態組態
+ a| 
+選取此選項、然後在欄位中輸入靜態位址。對於IPV4、請加入網路子網路遮罩和閘道。對於IPv6、請包含可路由的IP位址和路由器IP位址。
+
+|===
+. 單擊*完成*。
+. 關閉System Manager。
+
+
+
+
+== 步驟 5：設定主機端網路 - NVMe over RoCE、VMware
+
+在主機端設定 NVMe over RoCE 網路，即可讓 VMware NVMe over RDMA 儲存適配器啟動器與陣列建立工作階段。
+
+.關於這項工作
+此組態可使用基於差異化服務代碼點（DSCP）的優先流量控制（PFC）來實現無損網路。
+
+.步驟
+. 識別 RDMA 網路介面卡並記錄 vmnic 配對的上行鏈路。
++
+如需更多資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/view-rdma-network-adapters.html["檢視 RDMA 網路介面卡"^]。
+
+. 使用 vSphere 標準交換器為 RDMA 適配器配置 VMkernel 連接埠綁定。
++
+如需更多資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/configure-vmkernel-binding-for-the-rdma-adapter.html["設定 RDMA 介面卡的 VMkernel 繫結"^]。
+
+. 新增軟體 NVMe over RDMA 適配器。
++
+如需更多資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-software-nvme-over-rdma-or-nvme-over-tcp-adapters.html["新增軟體 NVMe over RDMA 或 NVMe over TCP 適配器"^]。
+
+. 新增用於透過 RDMA 實現 NVMe 的 NVMe 控制器。
++
+如需更多資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-rdma-roce-v2-on-esxi/add-controller-for-nvme-over-fabrics.html["新增 NVMe over Fabrics 控制器"^]。
+
+. 為透過 RDMA 的 NVMe 配置無損乙太網路。
++
+您可以使用基於差異化服務代碼點（DSCP）的優先流量控制（PFC）來設定無損網路。
+
++
+若要使用此選項，請參閱下列內容：
+
++
+** link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-0/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en["為透過 RDMA 的 NVMe 配置無損乙太網路"^].
+
+
+
+
+
+
+== 步驟 6：驗證 IP 網路連線 - NVMe over RoCE、VMware
+
+您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。
+
+.步驟
+. 在主機上執行以下命令：
++
+[listing]
+----
+vmkping <NVMe over RoCE_target_IP_address\>
+----
++
+在本例中、NVMe over RoCE 目標 IP 位址為 192.6.21.231。
+
++
+[listing]
+----
+vmkping -d 192.6.21.231
+PING 192.6.21.231 (192.6.21.231): 56 data bytes
+64 bytes from 192.6.21.231: icmp_seq=0 ttl=64 time=0.902 ms
+64 bytes from 192.6.21.231: icmp_seq=1 ttl=64 time=0.406 ms
+64 bytes from 192.6.21.231: icmp_seq=2 ttl=64 time=0.855 ms
+--- 192.6.21.231 ping statistics ---
+3 packets transmitted, 3 packets received, 0% packet loss
+round-trip min/avg/max = 0.406/0.721/0.902 ms
+----
+. 從每台主機的發起方位址（用於 NVMe over RoCE 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over RoCE 連接埠發出 `vmkping`指令。在配置中的每個主機伺服器上執行此操作，並根據需要變更 IP 位址。
++
+
+NOTE: 如果命令執行失敗並顯示訊息 `sendto() failed (Message too long)`，請驗證主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的 MTU 大小。
+
+. 返回 NVMe over RoCE 組態程序以完成目標探索。
+

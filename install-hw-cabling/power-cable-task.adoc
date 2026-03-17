@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, power cable, power cabling, power supply cabling, E-Series, eseries, E2800, E5700, EF300, EF600, DE212C, DE224C, DE460C 
 summary: 將每個元件的電源供應器連接至獨立的電源電路。 
 ---
-= 儲存系統（ E 系列）的電源佈線
+= 儲存系統的電源線 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -24,9 +24,9 @@ summary: 將每個元件的電源供應器連接至獨立的電源電路。
 .步驟
 . 將電源線連接至儲存系統上的每個電源供應器單元。
 . 將每個機櫃的兩條電源線連接至機櫃或機架中的不同電力分配單元（PDU）。
-. 開啟兩個電源開關。
+. 打開兩個電源供應器。
 +
 
-NOTE: EF300 和 EF600 儲存系統沒有電源開關。一旦連接纜線，就會立即啟動。
+NOTE: 根據您的儲存系統，電源供應器可能有電源開關，也可能沒有電源開關，您必須連接電源線才能開機。
 
 

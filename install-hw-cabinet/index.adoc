@@ -4,14 +4,16 @@ sidebar: sidebar
 keywords: 3040 40U cabinet, cabinet installation, drive tray installation, controller installation, shelf installation, E2800, E5700, EF300, EF600, 
 summary: E系列3040 40U機櫃中安裝磁碟機匣的總覽 
 ---
-= 在 3040 40U 機櫃（ E 系列）中安裝托盤
+= 在 3040 40U 機櫃中安裝托盤 - E-Series
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以在E系列3040 40U機櫃中安裝下列控制器磁碟機支架和擴充磁碟機支架：
+您可以在 E-Series 3040 40U 機櫃中安裝下列控制器磁碟機匣和擴充磁碟機匣。
+
+如果您的控制器磁碟機匣或擴充磁碟機匣未列於下方，請參閱 https://hwu.netapp.com["NetApp Hardware Universe"^]以確認您的控制器磁碟機匣或擴充磁碟機匣是否受支援。
 
 * E2612、E2624和E2660控制器磁碟機匣
 * E2712、E2724和E2760控制器磁碟機匣
