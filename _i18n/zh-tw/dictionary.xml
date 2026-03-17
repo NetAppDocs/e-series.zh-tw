@@ -10655,8 +10655,6 @@
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">12.0 版的新功能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="bf183e9df2b499bf43a8c68e4fec9235" category="paragraph">新型儲存系統型號 – EF80 和 EF50 全快閃儲存系統</block>
-  <block id="5c6dee44700e6c5c47a1e1f079ae7fce" category="paragraph">此版本推出了 EF80 和 EF50 全 NVMe 快閃儲存系統。EF80 和 EF50 每個控制器支援 24 個 NVMe SSD 驅動器和一個主機介面卡（HIC）。支援的 NVMe over Fabrics 主機介面包括 NVMe over RoCE、NVMe over IB（適用於 EF80）和 NVMe over FC（適用於 EF50）。支援的 SCSI 介面包括 Fibre Channel。</block>
-  <block id="6f8772ffc1694efdc2041680c31dc990" category="paragraph">EF80 和 EF30 也支援 30TB 或 60TB 大容量的 NVMe SSD 磁碟機。EF80 和 EF30 僅相容於 Dynamic Disk Pool 使用，不支援傳統 RAID。</block>
   <block id="786003cdc863f3aad3e6d8b6bfb3da10" category="paragraph">SANtricity System Manager 的新使用者介面</block>
   <block id="22b06c9a9c11b263cfc8b70ea106720b" category="paragraph">針對新款 EF80 和 EF50 控制器，SANtricity System Manager 使用者介面經過重新設計，外觀更加現代化。新介面採用左側面板導覽，並增強了易用性，從而簡化了管理任務。</block>
   <block id="33c4e4a69bd4b16424ffdb3de34b0af4" category="paragraph">伺服器憑證的主體別名 (SAN) 現在僅允許使用字母、數字和連字號字元</block>
@@ -10691,4 +10689,6 @@
   <block id="db77cc51d1e45daf8e890b492be12264" category="sidebar">更換 I/O 模組</block>
   <block id="f026d0a834b5192638b18ee631266375" category="sidebar">升級 I/O 模組</block>
   <block id="fe377799fa9a443d32452d6d45334541" category="sidebar">I/O 模組主機協定</block>
+  <block id="7270f12c0a303f4c7f8c806c946d0faf" category="paragraph">此版本推出了 EF80 和 EF50 全 NVMe 快閃儲存系統。EF80 和 EF50 每個控制器均支援 24 個 NVME SSD 驅動器和一個控制器間鏡像卡。支援的 NVMe over Fabrics 主機介面包括 NVMe over RoCE、NVMe over IB、EF80 的 NVMe over FC 和 EF50 的 NVMe over FC。兩個系統支援的 SCSI 介面均為 Fibre Channel。EF50 每個控制器最多支援兩個主機介面卡，而 EF80 每個控制器最多支援三個主機介面卡。</block>
+  <block id="685ec10705743526f323aaeb2e8abdb9" category="paragraph">EF80 和 EF50 也支援 30TB 或 60TB 大小的高容量 NVMe SSD 硬碟。EF80 和 EF50 只有在陣列中配備 30TB 或 60TB 硬碟時才能使用 Dynamic Disk Pool。</block>
 </blocks>
