@@ -5201,7 +5201,6 @@
   <block id="58483c487a48bff0ff470ac64f6bb18c" category="list-text">打開硬體內容物的包裝、然後將內含的硬體與裝箱單進行庫存。</block>
   <block id="1759ad5628dc48bcbb4047581abc3ad3" category="paragraph">如果機架安裝硬體隨附說明、請參閱以瞭解如何安裝軌道。如需其他機架安裝指示、請參閱 <block ref="d52e431030e2f3e076bf966941775b1c" category="inline-link-macro-rx"></block>。</block>
   <block id="2222f7f1fb65f3c37db013addee24d45" category="admonition">對於方孔機櫃、您必須先安裝隨附的鎖緊螺帽、以螺絲固定機櫃的正面和背面。</block>
-  <block id="46e9881ea158268bc1b45e5e23f0d6d8" category="admonition">空置的機櫃重量約為132磅（60公斤）。需要機械式起重或四人使用起重把、才能安全地搬移空的機櫃。</block>
   <block id="7f91b3bbd1281f9b80cef4d909c6db05" category="list-text">如果用手抬起機架、請裝上四個舉升把手。將每個握把往上推、直到卡入定位。</block>
   <block id="f8a163eecaf819af57298c9a255ffb1c" category="list-text">從底部支撐機櫃、將其滑入機櫃。如果使用起重把手、請一次移除一組、因為磁碟櫃會滑入機櫃。若要移除握把、請向後拉釋放栓鎖、向下推、然後將其從機櫃中拉出。</block>
   <block id="4e5960d20d3c258a8d3ed2cd303b1807" category="list-text">將螺絲插入兩側機櫃頂端的第一孔和第三孔、將螺絲固定在機箱正面。</block>
@@ -8390,7 +8389,6 @@
   <block id="761cf09b3611d19694e4252d15e1966c" category="paragraph"><block ref="761cf09b3611d19694e4252d15e1966c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c3dcb573d56a5a30ff50b77529d877d" category="paragraph"><block ref="6c3dcb573d56a5a30ff50b77529d877d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a001b169c43b4d43c428e192c798f2d8" category="summary">瞭解如何在雙柱機架或 NetApp 系統機櫃中安裝 E4060 或 DE460C 儲存系統。</block>
-  <block id="0fad8e68b65c361bdee769f9dbd44528" category="admonition">空置的機櫃重量為 253.33 磅（ 114.91 公斤）。需要機械式起重或四人使用起重把、才能安全地搬移空的機櫃。</block>
   <block id="003208e55218399fa55767bab82a621b" category="paragraph"><block ref="003208e55218399fa55767bab82a621b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b256a5fe8f6f56f5347aa122890f5806" category="inline-image-macro">安全的機櫃</block>
   <block id="9f0aa011ca589af7af02bb2e87f91985" category="paragraph"><block ref="9f0aa011ca589af7af02bb2e87f91985" category="inline-image-macro-rx" type="image"></block></block>
@@ -10691,4 +10689,5 @@
   <block id="d37b8d3a8d7d50a2d15245479531c53d" category="section-title">12.00 版的新功能</block>
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
+  <block id="24fe914c4c521099e3e5332138db4935" category="admonition">一個空貨架重約 134 lb（61 kg）。安全移動一個空貨架需要使用機械升降機或四個人使用升降把手。</block>
 </blocks>
