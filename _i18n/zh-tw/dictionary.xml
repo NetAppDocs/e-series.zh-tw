@@ -10640,7 +10640,6 @@
   <block id="0265b5dbf554054dde3a98afc886c622" category="admonition">從 EF600 升級到 EF80 時，您可以透過 SANtricity System Manager 使用者介面配置主機協定。如需詳細資訊，請參閱<block ref="b4bee00978fbe62a1f735b787be3116c" category="inline-link-rx"></block>。</block>
   <block id="353b820726dde980fadda7f3d579a641" category="list-text">EF80 不支援 SAS 擴充。</block>
   <block id="dafff188f3a06d1fdaa68a607c17f832" category="inline-link-macro">EF50 和 EF80 - 步驟 1：移除控制器</block>
-  <block id="a5e57f188bcd8ee5650622c76daaf7ef" category="paragraph">有關從 EF280 和 EF50 儲存系統移除控制器的資訊，請參閱 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
   <block id="d789ee5d8d5244777090beeda7a82875" category="list-text">健康檢查完成後，您可以點擊每行右側的省略號 (...) 查看更多資訊並執行其他任務。</block>
   <block id="ac5947d69f7ee9f8d3f2e9ee0483a85b" category="list-text">如果開啟「解析自簽章憑證」對話框，請查看其中顯示的不受信任憑證的資訊。如需了解更多資訊，您還可以按一下表格末尾的省略號，然後從彈出式選單中選擇 *View*。</block>
   <block id="f95817b2bc0b41d0e6a92b658b3204e4" category="list-text">從頁面上選擇一份憑證，然後按一下該列末尾的省略符號。</block>
@@ -10690,4 +10689,6 @@
   <block id="631e6d7ea44751bbf0471574f75f550e" category="admonition">SANtricity OS 12.00 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="dcf1521fe2188852a3d1ae5493b83c24" category="sidebar">SANtricity System Manager 12.00</block>
   <block id="24fe914c4c521099e3e5332138db4935" category="admonition">一個空貨架重約 134 lb（61 kg）。安全移動一個空貨架需要使用機械升降機或四個人使用升降把手。</block>
+  <block id="9e70d8ecbcfbe7711ec544e1649bcd7e" category="open-title">EF80 和 EF50 控制器型號</block>
+  <block id="982b4a8532b7c0f3dfe46d6bac4642d5" category="paragraph">有關從 EF80 和 EF50 儲存系統移除控制器的資訊，請參閱 <block ref="29089e25df4bea78aa196aee147175c2" category="inline-link-macro-rx"></block>。</block>
 </blocks>
