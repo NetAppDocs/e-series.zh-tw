@@ -16,10 +16,16 @@ summary: 更新功能。SANtricity
 
 
 
-== 12.00 版的新功能
+== Version 12.0R1 版本新增功能
+
+此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 12.0R1 README。
 
 
-NOTE: SANtricity OS 12.00 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。
+
+== 12.0 版的新功能
+
+
+NOTE: SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。
 
 [cols="35h,~"]
 |===
