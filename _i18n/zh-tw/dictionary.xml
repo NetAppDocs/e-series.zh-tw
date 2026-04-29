@@ -9832,7 +9832,6 @@
   <block id="f0e003d8e910aac92eb678b35d88e454" category="list-text">當控制器恢復上線後，使用 SANtricity System Manager 確認其狀態為「最佳」。</block>
   <block id="c86f60fc7fcc7f12bacc87413a01f8ea" category="list-text">重新建立主機定義。</block>
   <block id="d5a35385e3c41cf9fd9e2f0a4a94c813" category="inline-link">在 SANtricity System Manager 中手動建立主機</block>
-  <block id="db8c72a9c6539d1e7ec1c1fb26b87ed0" category="paragraph">如需相關操作說明，請參閱<block ref="a53958d29b83920c5f55ec43c9dba875" category="inline-link-rx"></block>程序。</block>
   <block id="1fc86e94ed7b025b1b598bb2f43d1407" category="paragraph">如需逐步指示，請參閱適用於您儲存系統的指南：</block>
   <block id="83e4a7b7f356dd5b4fc5814e9fd775dd" category="list-text">如果您不了解儲存系統中主機 I/O 模組的傳輸協定，請使用 SANtricity System Manager 進行驗證。</block>
   <block id="b285314b6b465f044f782ffdd9cc362d" category="list-text">請參閱 *Host I/O Protocol* 欄位中顯示的預設協定。</block>
@@ -10693,4 +10692,5 @@
   <block id="5daddfd6f05e5067c7a89f1710325e32" category="paragraph">此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 12.0R1 README。</block>
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">12.0 版的新功能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
+  <block id="c34bc836af57fee3bb2df387de995660" category="paragraph">如需相關操作說明，請參閱<block ref="b1f1a9dce5288488396d4b3c3e74b2f3" category="inline-link-rx"></block>程序。</block>
 </blocks>

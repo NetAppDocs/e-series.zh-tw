@@ -18,6 +18,6 @@
 . 當控制器恢復上線後，使用 SANtricity System Manager 確認其狀態為「最佳」。
 . 重新建立主機定義。
 +
-如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host.html["在 SANtricity System Manager 中手動建立主機"^]程序。
+如需相關操作說明，請參閱 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["在 SANtricity System Manager 中手動建立主機"^]程序。
 
 
