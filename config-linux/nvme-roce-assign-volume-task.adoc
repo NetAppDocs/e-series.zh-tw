@@ -56,3 +56,6 @@ summary: 您必須將磁碟區（命名空間）指派給主機或主機叢集�
 * 指派的Volume會接收下一個可用的NSID。主機使用NSID存取磁碟區。
 * 使用者提供的Volume名稱會出現在與主機相關聯的Volume清單中。
 
+
+.接下來呢？
+指派磁碟區後，link:nvme-roce-display-volumes-visible-host-task.html["向主機顯示可見的磁碟區"]。

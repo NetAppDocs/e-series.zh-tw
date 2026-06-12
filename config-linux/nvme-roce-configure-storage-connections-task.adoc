@@ -125,3 +125,6 @@ NOTE: 此選項僅適用於iSCSI環境。在NVMe over RoCE環境中無法使用�
 |===
 . 單擊*完成*。
 
+
+.接下來呢？
+設定 NVMe over RoCE 連接埠設定後，link:nvme-roce-discover-connect-storage-host-task.html["探索並連接主機上的儲存設備"]。

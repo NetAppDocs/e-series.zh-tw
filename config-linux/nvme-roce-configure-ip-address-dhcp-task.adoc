@@ -51,3 +51,6 @@ NOTE: 如果您拔下並重新連接乙太網路纜線、或儲存陣列重新�
 您的網路管理員需要MAC位址來判斷每個控制器的IP位址。您將需要IP位址、才能透過瀏覽器連線至儲存系統。
 
 
+
+.接下來呢？
+使用 DHCP 設定 IP 位址後，link:nvme-roce-access-sam-setup-wizard-task.html["使用 SANtricity System Manager 設定您的儲存設備"]。

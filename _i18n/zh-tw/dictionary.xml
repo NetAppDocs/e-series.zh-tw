@@ -496,7 +496,6 @@
   <block id="0c3f79a0168a623515b2c693becc646f" category="paragraph">如需更多資訊、請參閱SANtricity 《關於功能不全系統管理程式的線上說明》。</block>
   <block id="f83d8dbcd02328e3d5b9105033a3d23f" category="summary">您可以根據Linux版本設定導向裝置目標的I/O。</block>
   <block id="2760a5173fe84d55b4dfd0df17083b60" category="doc">存取適用於虛擬裝置目標的NVMe磁碟區</block>
-  <block id="d08ede07772b1f8bc67cfab8cc986bec" category="paragraph">您可以根據所使用的作業系統（以及擴充多重路徑方法）、設定導向至裝置目標的I/O。</block>
   <block id="d47b596bd703372e505b66a0d7086453" category="section-title">虛擬裝置是I/O目標</block>
   <block id="77c376f67e98384bf9e50220cc9566e0" category="paragraph">請確定您只對DM-MP所建立的虛擬裝置執行I/O、而不是對實體裝置路徑執行I/O。如果您執行的是實體路徑的I/O、DM-MP就無法管理容錯移轉事件、而且I/O也會失敗。</block>
   <block id="60085e457c461011b1f7a0dc9d2287c9" category="paragraph">您可以透過「dm」裝置或是在/dev/mapper中的「shymlink」來存取這些區塊裝置。例如：</block>
@@ -711,7 +710,6 @@
   <block id="3e59e5ab1adea8ed176d6a2c2a73cadf" category="paragraph">請參閱的「附註」欄<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 以取得建議。</block>
   <block id="be5555e7e670df8f8d0c725b9043fb16" category="summary">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
   <block id="1016395fecd4787707233fc026c56bb5" category="paragraph">您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。</block>
-  <block id="2947e68550fb96566fb0a799660394a2" category="list-text">啟用乙太網路暫停影格流程控制*端點對端點*作為最佳實務設定。</block>
   <block id="b672e0a91ab26c755c6523b52301f265" category="summary">請使用這份工作表單來記錄NVMe over Fibre Channel儲存組態資訊。</block>
   <block id="9f1789c54e44f0e58e44e5ba10a65f03" category="paragraph">您可以產生並列印本頁的PDF、然後使用下列工作表記錄NVMe over Fibre Channel儲存組態資訊。您需要這些資訊來執行資源配置工作。</block>
   <block id="5f73d116847f62f320bdb4dcf043099d" category="section-title">直接連線拓撲</block>
@@ -792,7 +790,6 @@
   <block id="5efb38dd01fabddcbff948ba98eb16ed" category="list-text">安裝RDMA和NVMe-CLI套件：</block>
   <block id="f402a19f86f854f295aa371b9abbbb90" category="list-text">在乙太網路連接埠上設定用於透過RoCE連接NVMe的IPV4 IP位址。針對每個網路介面、建立包含該介面的不同變數的組態指令碼。</block>
   <block id="a4e34f0c64fbeb3078a510eb36f68d56" category="paragraph">此步驟所使用的變數取決於伺服器硬體和網路環境。這些變數包括「IPADDR」和「閘道」。以下是SLES和RHEL的範例指示：</block>
-  <block id="111d867a53d45d2348ae37042fdb7310" category="paragraph">* SLES 12與SLES 15*</block>
   <block id="28a17096963f5398d9b941a85c3ea321" category="list-text">啟用網路介面：</block>
   <block id="5dd9d62ce4e8e03736012f8834a6e4fd" category="summary">您可以根據Linux版本設定導向裝置目標的I/O。DM-MP會管理這些虛擬目標的基礎實體路徑。</block>
   <block id="23a1a118541ab0d1766faa1805b06432" category="paragraph">您可以透過「dm」裝置或「dev/mapper」中的「mlink」來存取這些區塊裝置、例如：</block>
@@ -802,21 +799,12 @@
   <block id="3ce256baf4fa848e508f4000c29e19a8" category="paragraph">若要提供儲存陣列的備援路徑、您可以設定主機執行容錯移轉。</block>
   <block id="9e780c0c06dd0edf0f09bcc9516acc1c" category="list-text">對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝</block>
   <block id="2176d0eb1d2a0a5ab5201af565e0b30b" category="list-text">對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝</block>
-  <block id="816a290577d3afffcfc7b89e8312db70" category="admonition">請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 為了確保已安裝任何必要的更新、因為多重路徑可能無法與GA版的SLES或RHEL正常運作。</block>
-  <block id="adfe61fc58186ce1f905fe93a482817f" category="list-text">將NVMe E系列裝置項目新增至「/etc/multipath.conf」檔案的「裝置」區段、如下列範例所示：</block>
   <block id="159eb527caba422e175178bb8e7eb6a3" category="list-text">將「multiPathd」設定為在系統開機時啟動。</block>
   <block id="4a9f39582bee881ac128db3567909572" category="list-text">如果當前未運行"multiPathd"，請將其啓動。</block>
   <block id="7ac5dfbd2c3fe701529a54af3deca052" category="list-text">驗證「multiPathd」的狀態、以確保它處於作用中狀態且正在執行：</block>
-  <block id="84fc3529eaf9395639e72cf55757289e" category="section-title">使用原生NVMe多路徑設定RHEL 8</block>
-  <block id="6eb3dae42ad866cc5b55556a35f53013" category="paragraph">原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列程序啟用。</block>
-  <block id="5a6f78279dad9f7beea8ed58c714a952" category="list-text">設定「modProbe」規則以開啟原生NVMe多路徑功能。</block>
-  <block id="a12cca6acb7130ce2c5c45a411ad4854" category="list-text">使用新的「modProbe」參數重新建立「initramfs」。</block>
-  <block id="2c010fb96f9be5bb3df13ff2c5a349a6" category="list-text">重新開機伺服器、啟用原生NVMe多路徑來啟動伺服器。</block>
-  <block id="070373c9b8bfb5900abe9ee69cfae4e4" category="list-text">驗證在主機開機備份後、原生NVMe多路徑功能已啟用。</block>
   <block id="c694b074c8a7887bcd4ebbfc99adf268" category="list-text">如果命令輸出為「N」、則原生NVMe多路徑仍會停用。</block>
   <block id="6a4d0dbc61fd816c20d68cb9db43dd53" category="list-text">如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。</block>
   <block id="d307d6c12e3fd81b58d2d458107c75d8" category="admonition">若要檢視路徑資訊、必須在/etc/multipath.conf中設定下列項目：</block>
-  <block id="dcd56d80ecc0d78aefb3259c4aa4270b" category="summary">對於SLES 15、您可以在原生NVMe裝置上建立檔案系統、然後掛載檔案系統。</block>
   <block id="d3f57efe528790f599c0cc28cb9e9853" category="paragraph">首先、您應該確認Linux組態是否受到支援、並檢閱控制器、主機和還原限制。</block>
   <block id="866ff13f8fd6c13e35bc42557fe3a185" category="paragraph">「精簡搜尋條件」區段隨即顯示。在本節中、您可以選擇適用的傳輸協定、以及其他組態條件、例如作業系統、NetApp作業系統和主機多重路徑驅動程式。</block>
   <block id="0487dd73b732c971ee544991200e93fd" category="list-text">選取您想要的組態條件、然後查看適用的相容組態元素。</block>
@@ -950,9 +938,7 @@
   <block id="ce15ff2cd6b5b2c2723e7ea67ac30448" category="list-text">重新啟動主機、將變更載入「IPFC」驅動程式。</block>
   <block id="87b6e8626ba1cea8bce6c457ee2f40ae" category="paragraph">主機重新開機、並在主機上啟用NVMe / FC啟動器。</block>
   <block id="3b4f85c3b93cfa86234b842a94c7ef02" category="admonition">完成主機端設定之後、NVMe over Fibre Channel連接埠會自動連線。</block>
-  <block id="742a8771ffc60a44709348dec9c101db" category="admonition">以上所列的命令不會在重新開機時持續存在。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。</block>
   <block id="6724b622f910a0db3c03e792b0240c06" category="admonition">建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3、600秒）。使用「-l 3600'命令列選項、以3、600秒取代預設設定、如下例所示。</block>
-  <block id="2428a281171a181ce060c98d6e1838a8" category="list-text">重複步驟3、將探索到的子系統連接到第二個路徑。</block>
   <block id="f61f74351af7f480b4eb830a2f4c4ada" category="list-text">請至下載SANtricity 更新版本的《》<block ref="2ff36e7792a0e0257d19a11dce8cade8" category="inline-link-rx"></block>。從* Downloads *（下載*）索引標籤、前往功能表：Downloads（下載）[E系列SANtricity 支援儲存管理程式]。</block>
   <block id="3e5b5608d2078b742475daf5f62b5f0c" category="paragraph">當Linux主機第一次發現新LUN時、新LUN沒有分割區或檔案系統。您必須先格式化LUN、才能使用。您也可以在LUN上建立檔案系統。</block>
   <block id="9aec52801a7d078795bd9bb9092d9682" category="summary">使用InfiniBand交換器執行子網路管理程式、可能會在高負載期間造成非預期的路徑遺失。若要避免路徑遺失、請使用opensm在一或多部主機上設定子網路管理程式。</block>
@@ -977,8 +963,6 @@
   <block id="1088b852c25195807c415eebd5e3c772" category="list-text">為交換器中的每個FC主機啟動器連接埠建立其他區域。</block>
   <block id="38b2faff78c86d10664d04002c0e6d64" category="list-text">儲存區域、然後啟動新的分區組態。</block>
   <block id="13fd378eeb7a101fc09f1cbecaf60c62" category="summary">當您在SANtricity Management Station上安裝時、預設會安裝圖形化使用者介面（GUI）和命令列介面（CLI）。這些指示假設SANtricity 您將在Management Station上安裝不需在I/O主機上安裝的不實儲存管理程式GUI。</block>
-  <block id="adb2c486b4315072f95250add60ff3eb" category="paragraph">在使用命名空間之前、請先確認主機可以將資料寫入命名空間並將其讀取回。</block>
-  <block id="0e7c59630bebf993c5d568dae4203bf0" category="paragraph">您將移除複製的檔案和資料夾。</block>
   <block id="3d46c28785301ae3ad29aa411d7f0358" category="section-title">檢閱NVMe over InfiniBand限制</block>
   <block id="2e71e539473524a77fed5be033e08099" category="list-text">使用「ibstat -p」命令尋找HBA連接埠的「GUID0」和「GUID1」。例如：</block>
   <block id="b8428f61ce61bd64b7ac15710b5f5150" category="list-text">執行diff命令、將複製的檔案與原始檔案進行比較。</block>
@@ -1211,7 +1195,6 @@
   <block id="d1746d129f580a3cb644a52459ce0ba7" category="list-text">您有1號十字螺絲起子。</block>
   <block id="57d8d7c6e330c6aed6dfaddbfa00b80c" category="list-text">您有標籤可識別連接至控制器容器的每條纜線。</block>
   <block id="49d40681265dcd97ec86a9de8f4f7538" category="list-text">您有一個管理站、其中有一個瀏覽器可以存取SANtricity 控制器的《系統管理程式》。（若要開啟System Manager介面、請將瀏覽器指向控制器的網域名稱或IP位址。）</block>
-  <block id="e4005cc04ad30971023ff0ce6398ae8e" category="list-text">EF300控制器的連接埠1中可能安裝SAS擴充卡、以便擴充磁碟機匣。</block>
   <block id="296eab9aafd9b2f5526c968b1b09061d" category="inline-link-macro">E系列硬體佈線</block>
   <block id="c47ea49cacff0a65bf539a3d88d8a79d" category="list-text">若要纜線連接SAS擴充、請參閱 <block ref="a48890f0b8f43b924432692645604270" category="inline-link-macro-rx"></block> 以取得相關指示。</block>
   <block id="1eca441f881a292b05722ddcd5c7605a" category="summary">更換EF300陣列中的磁碟機。</block>
@@ -1482,7 +1465,6 @@
   <block id="57c68021dbcd118e7d2ccece06f119da" category="list-text">機櫃中的第二個控制器機箱具有最佳狀態。</block>
   <block id="e62f8b89bfbf2c5df30a0d8c61ee521a" category="list-text">「恢復大師」的「詳細資料」區域中的「*確定要移除*」欄SANtricity 位會顯示*「是」*、表示移除此元件是安全的。</block>
   <block id="0473e45a7d7f9557ae9f5ca07ab2315a" category="summary">更換故障的EF300或EF600主機介面卡（HIC）。</block>
-  <block id="862acd5892fdfacc876441454483bc88" category="paragraph">更換故障的HIC時、您必須關閉儲存陣列電源、更換HIC、然後重新接上電源。</block>
   <block id="a3910b9f5e509531bb5260b4c20c05a2" category="list-text">與控制器相容的HIC。</block>
   <block id="641da5252bd37830e3c9e814b73958c5" category="section-title">步驟1：將控制器離線</block>
   <block id="69a489f7afdad6b88724088acf6f8310" category="paragraph">將受影響的控制器離線、以便安全地更換HIC。</block>
@@ -7826,10 +7808,7 @@
   <block id="0360bd7f0d62ff5323000d0f25742cf3" category="list-text">針對識別的InfiniBand介面設定IP位址和網路資訊。</block>
   <block id="4df6b1c48c33c3735ab315bb52db5933" category="section-title">為RHEL 8設定原生NVMe多路徑</block>
   <block id="5536244c6a701b654692a01af6b8b81c" category="list-text">取得用於將主機設定為陣列的主機NQN。</block>
-  <block id="7811a322c7116bb2055841124b0d8911" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network/ifcfg/eth4」。</block>
   <block id="27a81685959fe491960811c61481c35d" category="paragraph">然後、建立範例檔案「etc/sysconfig/network/ifcfg/eth5」：</block>
-  <block id="f1d1c2a7d2a912bc6a5aa04e31b25d26" category="paragraph">使用下列內容建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth4」。</block>
-  <block id="51be39b7e050efbe3d29b5d8c0430aa5" category="paragraph">然後、建立範例檔「etc/sysconfig/network-scripts/ifcfg/eth5」：</block>
   <block id="ba5d5a8fa23f831ccd6827dc3b611469" category="paragraph">然後、建立檔案/etc/sysconfig/network/ifcfg/ib1：</block>
   <block id="ca77b43383ee68c3baec39cef81b151e" category="list-text">使用「ifconfig-A'命令來判斷iSCSI連接埠名稱。</block>
   <block id="d601c251b180e2832efe894c46092431" category="list-text">建立iSCSI啟動器與iSCSI目標之間的連線。</block>
@@ -7862,7 +7841,6 @@
   <block id="95aeb1de4d389845f041ab3587500dc3" category="paragraph">對於RHEL 8、RHEL 9和SLES 15、I/O會由Linux主機導向至實體NVMe裝置目標。原生NVMe多重路徑解決方案可管理主機所顯示單一明顯實體裝置的實體路徑。</block>
   <block id="3762f5d6da93d64fb2c80f51749495f7" category="paragraph">最佳實務做法是將I/O執行至中的連結<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 而非直接連接至實體NVMe裝置路徑<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>。您可以使用下列命令來找到這兩個位置之間的連結：</block>
   <block id="cdd98f8f112f01967c6cf544d1185a31" category="paragraph">I/O執行至<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block> 將直接通過<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block> 使用原生NVMe多重路徑解決方案、將所有路徑都虛擬化至其下。</block>
-  <block id="b850731c1bffd8d6372e832c36232f3e" category="admonition">*資料遺失風險。*您必須啟用流量控制、才能與交換器上的「全域暫停控制」搭配使用、以避免NVMe over RoCE環境中的資料遺失風險。</block>
   <block id="6ee2d18851ba4498d7c9ba43881528c3" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="59608be4b8a68b7f95e7aa6a8924d39f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="44da8255024278223616706dabffdcf2" category="admonition">在設定子網路管理程式之前、您必須先安裝InfiniBand診斷套件、才能透過取得全域唯一ID（GUID）<block ref="db1fff1f41e48ae933f89caa6a9035c4" prefix=" " category="inline-code"></block> 命令。請參閱 <block ref="8968844fa75d7274ef053da34cb4323f" category="inline-xref-macro-rx"></block> 如需有關如何安裝InfiniBand診斷套件的資訊、</block>
   <block id="7bfe6a8c2694c58155bcb8132f65ecd8" category="list-text">啟用<block ref="8732863da72605a20ed96b4eee87a5fb" prefix=" " category="inline-code"></block> 開機時的精靈。</block>
@@ -7951,7 +7929,6 @@
   <block id="f7e582702fa43947010600df41688562" category="section-title">四柱式機架：超級軌道</block>
   <block id="45d7b912755be5cce50a63e39e38af8a" category="section-title">步驟1：驗證新控制器的零件編號</block>
   <block id="fe52478447b1fa9a4c7ec89de67fdf4d" category="sidebar">熱新增磁碟機櫃</block>
-  <block id="889869e1d3bab19951bb91f386d721de" category="list-text">對於RHEL 8和RHEL 9、請安裝網路指令碼：</block>
   <block id="8b8d5d75fe765c0900e1083326e233eb" category="paragraph">* RHEL 8*</block>
   <block id="40ae81b37293ba1a886134269b1c76e5" category="paragraph">* RHEL 9*</block>
   <block id="8ce810d5ab2863c317f14fafb62a5090" category="paragraph">使用<block ref="94f122660e8e80af7b93d6609515bc99" prefix=" " category="inline-code"></block> 用於啟動和編輯連線的工具。以下是範例檔案<block ref="a8490166956a7c69a385a3a3169f183e" prefix=" " category="inline-code"></block> 此工具將產生：</block>
@@ -9225,13 +9202,10 @@
   <block id="d049f096e0cf1d889ec8cc31028f375f" category="doc">驗證 E 系列（ NVMe over InfiniBand ）的 Linux 組態支援與審查限制</block>
   <block id="ad6a9d04ac784c454bda19a77808e7a6" category="doc">驗證 E 系列 - Linux （ NVMe over InfiniBand ）主機上的儲存存取</block>
   <block id="5f89e4391e734f9f4b02e1b568f48d4d" category="doc">在 E 系列 - Linux 中記錄 NVMe over InfiniBand 組態</block>
-  <block id="cebaeb9ed83ac8d33e4baa8c1c2ea3cd" category="doc">存取 E 系列中實體 NVMe 裝置目標的 NVMe 磁碟區 - Linux （ NVMe over roce ）</block>
   <block id="70a0aef5361fa5e17fc107247e1a4c28" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）來設定儲存設備</block>
-  <block id="5e72e88a41c656757d300eb4328a7218" category="doc">存取 E 系列中虛擬裝置目標的 NVMe 磁碟區 - Linux （ NVMe over roce ）</block>
   <block id="1d6c2bec0357042ed9103d8a757e052e" category="doc">使用 SANtricity 系統管理員指派磁碟區 - Linux （ NVMe over roce ）</block>
   <block id="f4406895abc0e7fb7bba147a1b4018fc" category="doc">在 E 系列 - Linux （ NVMe over roce ）中使用 DHCP 設定 IP 位址</block>
   <block id="2e7f926937a19390a696edcd1611efd8" category="doc">在 E 系列 - Linux 中設定儲存陣列 NVMe over roce 連線</block>
-  <block id="133ee7ce9eb1e935758f63664a8fc118" category="doc">在 E 系列 - Linux （ NVMe over roce ）中設定交換器</block>
   <block id="1d775b87419a4b4faa9188d96fc9f1ef" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）建立主機</block>
   <block id="c06ab1417d3d38a6274ca96f4817729b" category="doc">從 E 系列 - Linux （ NVMe over roce ）的主機探索並連線至儲存設備</block>
   <block id="d13fba07fdac58d9571d88a7346d4afc" category="doc">顯示 E 系列 - Linux （ NVMe over roce ）中主機可見的磁碟區</block>
@@ -9239,7 +9213,6 @@
   <block id="572a21343ba550460bb71fa935ac705f" category="doc">在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over roce ）</block>
   <block id="af007fd6297be8fbbd67a572ddf4a294" category="doc">在 E 系列 - Linux 中的主機上透過 ROCE 設定 NVMe 啟動器</block>
   <block id="e822c9e7b8dafd08970088f3f9f02ea6" category="doc">驗證 E 系列（ NVMe over roce ）的 Linux 組態支援與審查限制</block>
-  <block id="50328107f1322bdd15fcb668d29329c0" category="doc">驗證 E 系列 - Linux （ NVMe over roce ）主機上的儲存存取</block>
   <block id="1d8081d0f5262d4fcb0996c8627dd7ac" category="doc">在 E 系列 - Linux 中記錄 NVMe over roce 組態</block>
   <block id="a1f8e9c89527ab6eb3aa28c09b6aeefc" category="doc">假設（ E 系列和 Linux ）</block>
   <block id="73c2afd8840846ab8905a188204d4b19" category="doc">使用 SANtricity System Manager - Linux （ SAS ）設定儲存設備</block>
@@ -9572,7 +9545,6 @@
   <block id="6ef765942b756be59a09bba2c1bea181" category="summary">對於 SLES 12，您可以在命名空間上建立一個檔案系統並掛載該檔案系統。</block>
   <block id="5f72169c48d94cfdf13fa8e7156de8ee" category="doc">在 E 系列中建立檔案系統 - Linux SLES 12（NVMe over InfiniBand）</block>
   <block id="f3b72a76b6437fffe54c5f6a0e82669c" category="section-title">啟用裝置對映器多路徑 (DMMP) SLES 12</block>
-  <block id="d3f59362d91c4f4d01ccdd309b5bb9fb" category="doc">在 E 系列中建立檔案系統 - Linux SLES 12（NVMe over RoCE）</block>
   <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x 或更高版本*</block>
   <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">建立檔案系統（SLES 12）</block>
   <block id="4090c38c724effbcef59a93b035aed46" category="cell"><block ref="4090c38c724effbcef59a93b035aed46" category="inline-link-rx"></block></block>
@@ -9592,8 +9564,6 @@
   <block id="5feeb9bdb446ab922f394a940c9ef4b8" category="paragraph">*SLES 12、SLES 15 或 SLES 16*</block>
   <block id="79b601d0ad8f64996a3f2d1444b5b84d" category="paragraph">*RHEL 8、RHEL 9 或 RHEL 10*</block>
   <block id="90f919900318df07a49ea42c3e35a350" category="paragraph">*RHEL 9、RHEL 10 或 SLES 16*</block>
-  <block id="9034687d4359fa9bd74cc1439c435374" category="doc">在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 中建立檔案系統（NVMe over RoCE）</block>
-  <block id="39ec44e7fd4c2966d363390d0affe00e" category="paragraph">SLES 12 使用裝置映射器多路徑 (DMMP) 為 NVMe over RoCE 實作多路徑。RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 使用內建的 Native NVMe 故障轉移。根據您執行的作業系統，需要對多路徑進行一些額外的配置才能使其正常運作。</block>
   <block id="980295b6698b8b2aea7adc1d9dafed8c" category="section-title">Version 11.90R5 版本新增功能</block>
   <block id="94bf3a177cda972f0b25d90290f4610c" category="paragraph">此版本僅包含缺陷修復，不包含任何新功能。有關此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R5 README。</block>
   <block id="b2676fbb812b8574fa9249e68163593f" category="paragraph">此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R4 README。</block>
@@ -10693,4 +10663,85 @@
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">12.0 版的新功能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="c34bc836af57fee3bb2df387de995660" category="paragraph">如需相關操作說明，請參閱<block ref="b1f1a9dce5288488396d4b3c3e74b2f3" category="inline-link-rx"></block>程序。</block>
+  <block id="a37cf4c23363931117c16cbe3dd30a4b" category="doc">從主機存取 E 系列目標的 NVMe Volume - Linux（NVMe over RoCE）</block>
+  <block id="91c251c2c332b36b4246d0eaed4acae3" category="paragraph">對於 RHEL 9、RHEL 10、SLES 15 和 SLES 16，原生 NVMe 多路徑解決方案管理主機顯示的單一 NVMe 裝置底層的實體路徑。因此，我們將 I/O 直接導向到主機的 NVMe 裝置，而不是像基於 SCSI 的 Device Mapper Multipath（DMMP）這樣的多路徑裝置。NVMe 裝置的位置詳見下文。</block>
+  <block id="4a1ca27394f764b4cd9f8c6e8533ee5e" category="section-title">NVMe 裝置是 I/O 目標</block>
+  <block id="2ea106abcbd25d43bb31cead5d6cc703" category="list-text">輸入以下命令，以找出從 E-Series 陣列對應到此主機的磁碟區。</block>
+  <block id="af25994ac3ea2d881efa9bec5cdc65e0" category="paragraph">以下命令提供主機上的低階 NVMe 裝置位置、該裝置對應的陣列名稱、磁碟區名稱、NSID、唯一磁碟區 ID、目前擁有的控制器以及磁碟區大小。</block>
+  <block id="87f3f3b7576f6e046569db7eee514036" category="list-text">對 <block ref="4e113d7b9673c6f8c3a2b38f3f9aec2f" prefix=" " category="inline-code"></block> 中的鏈路執行 I/O。</block>
+  <block id="b2d0c59be5cea399974b205866922a56" category="paragraph">中的連結<block ref="4e113d7b9673c6f8c3a2b38f3f9aec2f" prefix=" " category="inline-code"></block>是確定性的，不會改變。請避免使用底層 NVMe 裝置位置<block ref="e09c78c90a7982668482f4c02bad49a1" prefix=" " category="inline-code"></block>，因為它可能會改變。可以使用以下命令找到這兩個位置之間的連結：</block>
+  <block id="38a322bb2690e6a3839def89744b6e58" category="list-text">若要查看 NVMe 裝置的路徑，請使用 <block ref="f3d48156832e70ac41335c007fa76798" prefix=" " category="inline-code"></block> 指令。</block>
+  <block id="2b52202747e5d866f7692787ad97416d" category="paragraph">I/O 執行至<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block>將直接通過<block ref="75822cee5451c71c71532e7dea089384" prefix=" " category="inline-code"></block>，其下所有路徑均使用 Native NVMe 多路徑解決方案進行虛擬化。</block>
+  <block id="32c842f3838e64510515c659b107d965" category="list-text">*選用* - 若要透過舊版 Device Mapper Multipath (DMMP) 命令檢視原生容錯移轉的路徑資訊，請使用 <block ref="3d80983fc82ff72fd51e5d1f7e90c56d" prefix=" " category="inline-code"></block> 命令。</block>
+  <block id="87f3eda4ba2b39d6f55a2475bdef8112" category="admonition">若要透過舊版 DMMP 指令查看路徑資訊，必須在 <block ref="dd5ff67ba72768d33f75e645aa2b8e56" prefix=" " category="inline-code"></block> 檔案中設定以下內容：</block>
+  <block id="6ca857f7a44a21cfffda914cf9549710" category="paragraph">*範例輸出*</block>
+  <block id="d925294acf6cb6ef91e5d98ace2d5286" category="admonition">此指令僅適用於 RHEL 9 或更早版本以及 SLES 16 或更早版本。</block>
+  <block id="de6e64b760ba6d4a951a91029d9af1be" category="inline-link-macro">建立檔案系統</block>
+  <block id="85d7f7a216b72b512bd684ee912b615d" category="paragraph">在 I/O 執行至 NVMe 裝置時，<block ref="9cfee2fd581a69f81eddcb97710151e2" category="inline-link-macro-rx"></block>。</block>
+  <block id="101528bb025ec003638eca5db1448f0e" category="inline-link-macro">設定交換器</block>
+  <block id="82c979cf70ade4d4c5b87f279cbd9d98" category="paragraph">在 SANtricity System Manager 中設定儲存設備後，<block ref="61d34af3399690d23b3b2b8ff78675df" category="inline-link-macro-rx"></block>。</block>
+  <block id="de0d53bbf1edbee26d780fa7aeaf2e27" category="inline-link-macro">向主機顯示可見的磁碟區</block>
+  <block id="95768500acbdfe29034666ed6f603d70" category="paragraph">指派磁碟區後，<block ref="57fe0f9d4870c536c92e9d8404a56348" category="inline-link-macro-rx"></block>。</block>
+  <block id="11c339ff6823eac9bead2964d19ab996" category="inline-link-macro">使用 SANtricity System Manager 設定您的儲存設備</block>
+  <block id="83f8c80e4b638ab6478d3f406c93eacf" category="paragraph">使用 DHCP 設定 IP 位址後，<block ref="b8100642f6482c6074045d99e3e82190" category="inline-link-macro-rx"></block>。</block>
+  <block id="602a463bd066a3f8d89c69bb3529b46c" category="inline-link-macro">探索並連接主機上的儲存設備</block>
+  <block id="d2255594b7c9d2d3a436cb625ac23fdb" category="paragraph">設定 NVMe over RoCE 連接埠設定後，<block ref="e588c9f2f098167c40ebed2b8ba01272" category="inline-link-macro-rx"></block>。</block>
+  <block id="de51b9f78104212ea19cafcc1aa1af7f" category="doc">設定 E 系列中的交換器 - Linux（NVMe over RoCE）</block>
+  <block id="78c66e16ff4598c6116cedf599cf6e72" category="admonition">* 資料遺失風險 *您必須在無損環境中執行 NVMe/RoCE。在您的網路上使用全域暫停訊框型流量控制或優先權流量控制（PFC）啟用端對端流量控制，以消除資料遺失的風險。</block>
+  <block id="7c64bbe6789d9c78deb6d523dad71fa5" category="section-title">全域暫停訊框</block>
+  <block id="feb7f0d00fab57efe3a43429ed8663f5" category="paragraph">全域暫停訊框是最基本的流量控制形式，也是最容易實作的。當流量超過網路連接埠的處理能力時，系統會產生暫停訊框，暫停該連接埠上的所有流量，直到先前的流量已處理到足以讓網路連接埠能夠繼續處理而不會捨棄傳入流量。</block>
+  <block id="aa4809645ae2edf02eefcd695d7a00e6" category="list-text">使用交換器廠商提供的文件，啟用以全域暫停訊框為基礎的*端對端*流程控制。</block>
+  <block id="d0b94711326f99d06e367599f8a7ce03" category="list-text">確保在此環境中，連接到主機、陣列和交換器間連結的所有交換器連接埠都啟用基於全域暫停訊框的流量控制。</block>
+  <block id="1b2ecdcdede85794b40178ec60af3584" category="section-title">優先流量控制</block>
+  <block id="8ff4cbc015c6379b46657d889607c395" category="paragraph">優先權流量控制 (PFC) 是一種更複雜的流量控制形式，它為不同類型的流量分配不同的優先權等級。當某個優先權的流量過大時，該優先權的流量會被暫停，而其他優先權等級的流量則可以繼續傳輸，從而防止某些類型的大量流量影響其他類型的流量。</block>
+  <block id="ec570ac6dacd2df8316bc2f708847efc" category="paragraph">目前，您必須使用運行 11.80.1 版本的 EF600 E-Series Array（配備 200Gb/s 乙太網路 HIC，零件號 111-04583）或運行任何支援的 NVMe/RoCE HIC 的 EF80 E-Series Array。PFC 參數已硬編碼在陣列上，並且要求 NVMe/RoCE 流量標記為優先權 3，DSCP 值為<block ref="f0935e4cd5920aa6c7c996a5ee53a70f" prefix=" " category="inline-code"></block>。</block>
+  <block id="559dcf4177cfdf7eb85f326141ca50cd" category="list-text">如需使用 PFC 值設定網路的詳細資訊，請參閱交換器廠商文件。</block>
+  <block id="b85cf23585c90efd9af6fcd73fa75295" category="inline-link-macro">在主機上透過 RoCE 設定 NVMe 啟動器</block>
+  <block id="7bbf28624b17361ccea54892632c858e" category="paragraph">設定交換器之後，<block ref="95b7a1ba3f9889c0b414ce2ba47c4931" category="inline-link-macro-rx"></block>。</block>
+  <block id="83441cd37c158260b27f7f62519460ff" category="summary">對於 RHEL 9、RHEL 10、SLES 15 和 SLES 16，您需要在原生 nvme 裝置上建立檔案系統並掛載該檔案系統。</block>
+  <block id="ef584eac1f2cf237a03edcb6114915c0" category="doc">在 E 系列中建立檔案系統 - Linux (NVMe over RoCE)</block>
+  <block id="9f6bf7ed685a3543bdade472419ab06c" category="inline-link-macro">從主機存取 E 系列目標的 NVMe 磁碟區</block>
+  <block id="abd87e5f00edf2b2787374cf4c27e685" category="paragraph">請確保您已完成 <block ref="06eb211a3ddd2abaa7174ce99ee6cecc" category="inline-link-macro-rx"></block> 任務，以確保 NVMe 裝置已正確配置且可存取。</block>
+  <block id="143a64ab567fb05e3f04c1990fb26e2d" category="inline-link-macro">記錄您的 NVMe over RoCE 組態資訊</block>
+  <block id="45f8638141f7f3362b5761694a8dd890" category="paragraph">建立檔案系統之後，<block ref="3aac06a217018608c5d3787062e117d2" category="inline-link-macro-rx"></block>。</block>
+  <block id="ae296683b084f21dae03165b7c5b3d3c" category="paragraph">從下拉式清單中選取下列選項：</block>
+  <block id="027e3fb95a6f5a358243389e12e6a725" category="inline-link-macro">透過 SANtricity System Manager 指派磁碟區</block>
+  <block id="9ebf6320aef24a2fcd5852a6b6ce9155" category="paragraph">建立主機後，<block ref="526e349e337a81b9e987d9fbe46dee03" category="inline-link-macro-rx"></block>。</block>
+  <block id="4c2527c1f1efb4ee865370b5b8f43d49" category="list-text">使用以下命令驗證您可以使用預期的 MTU 速率從主機 ping 到每個陣列 HIC 連接埠：</block>
+  <block id="c2aadac3fc92ca45c9b6f4b5ff6db019" category="list-text">對任何其他連線重複步驟 2。</block>
+  <block id="634a1a0e9d1d711a949d1cd0da3665d2" category="admonition">上述命令在重新開機後不會保留。每次重新開機後都需要執行 <block ref="9058603c510faa501774cf55475bb088" prefix=" " category="inline-code"></block> 命令以重新建立 NVMe 連線。</block>
+  <block id="e01d8563f5c2302999b20f4ce80e1a47" category="admonition">建議的佇列深度設定為 1024。使用 `-Q 1024` 命令列選項，將預設設定 128 替換為 1024，如下列範例所示。</block>
+  <block id="1302a8c05ad12b5ba7967d87980ee185" category="list-text">重複步驟 4，將探索到的子系統連接到第二條路徑。</block>
+  <block id="c3b56ab2f3dce17086e81b05a252d5ea" category="list-text">**選用** - 設定主機在每次開機時自動探索目標並與其連線。</block>
+  <block id="53d87b975f9abfb4c3b01ba95507cbd2" category="list-text">使用下列程序和格式，將步驟 2 和步驟 3 中的探索參數新增至 <block ref="5649a0d7bf9e7c1fa5839cc07ded7d52" prefix=" " category="inline-code"></block>：</block>
+  <block id="8838d21d0f89c8b4a9251ef4ec424710" category="list-text">使用以下命令填充 <block ref="5649a0d7bf9e7c1fa5839cc07ded7d52" prefix=" " category="inline-code"></block> 檔案後啟用 nvmf-autoconnect 服務：</block>
+  <block id="1dfe3ec5fc291f6376bf8f94e2b256cc" category="inline-link-macro">定義主機</block>
+  <block id="14b61b2287a0d2e64e69529d05643a20" category="paragraph">建立連線之後，<block ref="34ace76cf2ac63d76b3bcce4e204b033" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9342fba6a32664bb9aafae389c32fe9" category="inline-link-macro">在主機上設定容錯移轉</block>
+  <block id="2091e734a83920984189f3ef4f835343" category="paragraph">檢視可見磁碟區後，<block ref="d8b9f99d455f0040fb666314b5365fe8" category="inline-link-macro-rx"></block>。</block>
+  <block id="ef8d227bb009bfb15f0cbcce8a8e8745" category="paragraph">請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>以確保安裝任何必要的更新，因為初始版本中未提供的 SLES 或 RHEL 版本可能需要重要的錯誤修復。</block>
+  <block id="5b9eb26b4b035236abf0a3ea65d7d9b6" category="inline-link-macro">從主機存取 E-Series 目標的 NVMe 磁碟區</block>
+  <block id="76542a9b8e953f18508546161670f6bc" category="paragraph">啟用原生 NVMe 多路徑後，<block ref="642f530d4ad60fe27c47d6e8ef759cde" category="inline-link-macro-rx"></block>。</block>
+  <block id="f6e6e8c29a45760976198e39adf15365" category="paragraph">您必須執行最新的相容 RHEL 9、RHEL 10、SLES 15 或 SLES 16 Service Pack 作業系統。請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>以取得完整的最新需求清單。</block>
+  <block id="954ba35dda35e5557a7bdafc244bd9f5" category="paragraph">*SLES 15 或 SLES 16*</block>
+  <block id="2d868d12f62d608e46bfb64fc85c2eda" category="paragraph">*RHEL 9 和 RHEL 10*</block>
+  <block id="e33d0f4356bfb2aacc32f1d3bc275dc4" category="inline-link-macro">NVIDIA DOCA 說明文件</block>
+  <block id="c39371c3af006ddc69324348f0dcd446" category="admonition">如果您正在使用 NVIDIA HCA 並且希望使用外部 DOCA 驅動程式，請參閱<block ref="3fc20dc98826e6d1feeb2407afd6d4f9" category="inline-link-macro-rx"></block>以取得有關如何在此環境中正確安裝它的資訊。</block>
+  <block id="87469c22c8c9e004a1d89d93af518553" category="list-text">對於 RHEL 9，請安裝網路指令碼：</block>
+  <block id="ff8e4ff2d7f1e133b74bc3ae6b7f881d" category="paragraph">*SLES 15*</block>
+  <block id="7a41d7c09bba5ee85d880614cd71da91" category="paragraph">建立包含以下內容的範例檔案 <block ref="3f3164e95f1a0a33561bc4e251b80643" prefix=" " category="inline-code"></block>，其中 MTU 設定為在不發生封包分片的情況下可以達到的最大值（通常為 9000）。</block>
+  <block id="da045e78afba8cddf53b901c68953ec8" category="paragraph">*RHEL 9、RHEL 10 或 SLES 16*</block>
+  <block id="551da226d12cccc393d4622e3de46942" category="list-text">或者，您也可以在不重新啟動的情況下執行以下命令載入<block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> kernel：</block>
+  <block id="ce8a4a1f94b22076a940274b38fc77df" category="list-text">驗證 <block ref="84210bdbe25e211d594fd7255d9817df" prefix=" " category="inline-code"></block> 核心模組是否已載入，請執行此命令：</block>
+  <block id="c88f40946ec4743c09d44d18d84ca0e6" category="inline-link-macro">設定 NVMe over RoCE 連接埠設定</block>
+  <block id="d91aaa5c628f1c0e6776888411923daf" category="paragraph">在主機上透過 RoCE 設定 NVMe 啟動器後，<block ref="b8d91f2d9373f904708452fd558487b9" category="inline-link-macro-rx"></block>。</block>
+  <block id="56dd88f73dc9e3fe0f4f088112d50bf6" category="admonition">*資料遺失風險*。您必須在無損環境中執行 NVMe over RoCE。請在您的網路上啟用端對端流量控制（使用全域暫停訊框或優先權流量控制 (PFC)），以消除資料遺失的風險。PFC 要求將 NVMe over RoCE 標記為優先權 3 流量,DSCP 值為<block ref="f0935e4cd5920aa6c7c996a5ee53a70f" prefix=" " category="inline-code"></block>。</block>
+  <block id="cfc9a52b36b4bac1175d85feda4737d6" category="inline-link-macro">使用 DHCP 設定 IP 位址</block>
+  <block id="ab76f1b6a91823d84cc28d97a438ee49" category="paragraph">在您驗證 Linux 組態支援並檢閱限制之後，<block ref="26e7ddc4a99218cc55e1c183bc759716" category="inline-link-macro-rx"></block>。</block>
+  <block id="70d9e3c68d42d6ec42ab792e06c44357" category="inline-link-macro">NVMe</block>
+  <block id="1791f8465d11d224647d11ee0eab3955" category="list-text"><block ref="1791f8465d11d224647d11ee0eab3955" category="inline-link-macro-rx"></block></block>
+  <block id="68df22b283edf6918b272ee1e4eef450" category="paragraph">更換故障的 HIC 時，必須將一個控制器離線，使系統處於非備援狀態，更換 HIC，然後使控制器重新上線。</block>
+  <block id="7f3980e2c518e011140305dfa2c7cc40" category="list-text">請為此程序安排停機維護時段。在成功完成此程序之前，您將無法存取儲存陣列上的資料。由於兩個控制器在通電時必須具有相同的 HIC 組態，因此在安裝 HIC 時，您必須將其中一個控制器離線，以使系統處於非備援狀態。</block>
+  <block id="79a7b3d475a1ce35fef4a7398f3e40b8" category="list-text">對於 EF300 控制器，必須將 SAS 擴充卡安裝在連接埠 1 中，以便擴充磁碟機匣。</block>
+  <block id="805eb1d81197f7063faa2748049cf91c" category="sidebar">建立檔案系統</block>
 </blocks>

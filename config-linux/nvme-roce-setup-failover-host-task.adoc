@@ -14,96 +14,10 @@ summary: 設定主機執行容錯移轉。
 若要提供儲存陣列的備援路徑、您可以設定主機執行容錯移轉。
 
 .開始之前
-您必須在系統上安裝所需的套件。
-
-* 對於Red Hat（RHEL）主機、請執行「rpm -q device-mapper-multipath'來驗證套件是否已安裝
-* 對於SLES主機、請執行「rpm -q多重路徑工具」來驗證套件是否已安裝
-
-
-
-NOTE: 請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 為了確保已安裝任何必要的更新、因為多重路徑可能無法與GA版的SLES或RHEL正常運作。
+請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]以確保安裝任何必要的更新，因為初始版本中未提供的 SLES 或 RHEL 版本可能需要重要的錯誤修復。
 
 .關於這項工作
-SLES 12 使用裝置映射器多路徑 (DMMP) 為 NVMe over RoCE 實作多路徑。RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 使用內建的 Native NVMe 故障轉移。根據您執行的作業系統，需要對多路徑進行一些額外的配置才能使其正常運作。
+對於 SLES 15、SLES 16、RHEL 9 和 RHEL 10，預設啟用原生 NVMe 多路徑，無需額外配置。
 
-
-
-== 為 SLES 12 啟用裝置映射器多路徑 (DMMP)
-
-預設情況下，SLES 中會停用 DM-MP。完成以下步驟以在主機上啟用 DM-MP 元件。
-
-.步驟
-. 將NVMe E系列裝置項目新增至「/etc/multipath.conf」檔案的「裝置」區段、如下列範例所示：
-+
-[listing]
-----
-
-devices {
-        device {
-                vendor "NVME"
-                product "NetApp E-Series*"
-                path_grouping_policy group_by_prio
-                failback immediate
-                no_path_retry 30
-        }
-}
-----
-. 將「multiPathd」設定為在系統開機時啟動。
-+
-[listing]
-----
-# systemctl enable multipathd
-----
-. 如果當前未運行"multiPathd"，請將其啓動。
-+
-[listing]
-----
-# systemctl start multipathd
-----
-. 驗證「multiPathd」的狀態、以確保它處於作用中狀態且正在執行：
-+
-[listing]
-----
-# systemctl status multipathd
-----
-
-
-
-
-== 使用原生NVMe多路徑設定RHEL 8
-
-原生NVMe多重路徑在RHEL 8中預設為停用、必須使用下列程序啟用。
-
-. 設定「modProbe」規則以開啟原生NVMe多路徑功能。
-+
-[listing]
-----
-# echo "options nvme_core multipath=y" >> /etc/modprobe.d/50-nvme_core.conf
-----
-. 使用新的「modProbe」參數重新建立「initramfs」。
-+
-[listing]
-----
-# dracut -f
-----
-. 重新開機伺服器、啟用原生NVMe多路徑來啟動伺服器。
-+
-[listing]
-----
-# reboot
-----
-. 驗證在主機開機備份後、原生NVMe多路徑功能已啟用。
-+
-[listing]
-----
-# cat /sys/module/nvme_core/parameters/multipath
-----
-+
-.. 如果命令輸出為「N」、則原生NVMe多路徑仍會停用。
-.. 如果命令輸出為「Y」、則會啟用原生NVMe多路徑、您發現的任何NVMe裝置都會使用它。
-
-
-
-
-
-NOTE: 對於 SLES 15、SLES 16、RHEL 9 和 RHEL 10，預設啟用原生 NVMe 多路徑，無需額外配置。
+.接下來呢？
+啟用原生 NVMe 多路徑後，link:nvme-roce-access-physical-targets-concept.html["從主機存取 E-Series 目標的 NVMe 磁碟區"]。

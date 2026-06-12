@@ -14,6 +14,12 @@ summary: 在SANtricity 定義完「支援系統管理程式」中的每個主機
 在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。
 
 .步驟
+. 使用以下命令驗證您可以使用預期的 MTU 速率從主機 ping 到每個陣列 HIC 連接埠：
++
+[listing]
+----
+ping -M do -s <size> <IP of array HIC port>
+----
 . 使用下列命令探索所有路徑的NVMe目標子系統：
 +
 [listing]
@@ -59,11 +65,11 @@ rdma_qptype: connected
 rdma_cms:    rdma-cm
 rdma_pkey: 0x0000
 ----
-. 對任何其他連線重複步驟1。
+. 對任何其他連線重複步驟 2。
 . 使用命令「NVMe CONNECT -t RDMA -n Disclided_sub nqn -A target ip_address-Q queue_depth_setting -l控制器損失超時期間」連線至第一條路徑上探索到的子系統
 +
 
-NOTE: 以上所列的命令不會在重新開機時持續存在。每次重新開機後、都需要執行「NVMe Connect」命令、才能重新建立NVMe連線。
+NOTE: 上述命令在重新開機後不會保留。每次重新開機後都需要執行  `nvme connect` 命令以重新建立 NVMe 連線。
 
 +
 
@@ -75,7 +81,7 @@ NOTE: 如果您使用此命令指定連接埠號碼、連線將會失敗。預�
 
 +
 
-NOTE: 建議的佇列深度設定為1024。使用'-Q 101010"'命令列選項、將預設設定128設為1024、如下例所示。
+NOTE: 建議的佇列深度設定為 1024。使用 `-Q 1024` 命令列選項，將預設設定 128 替換為 1024，如下列範例所示。
 
 +
 
@@ -84,8 +90,27 @@ NOTE: 建議的控制器遺失逾時時間（以秒為單位）為60分鐘（3�
 +
 [listing]
 ----
-# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
-# nvme connect -t rdma -a 192.168.2.77 -n nqn.1992-08.com.netapp:5700.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
+# nvme connect -t rdma -a 192.168.1.77 -n nqn.1992-
+08.com.netapp:EF80.600a098000a527a7000000005ab3af94 -Q 1024 -l 3600
 ----
-. 重複步驟3、將探索到的子系統連接到第二個路徑。
+. 重複步驟 4，將探索到的子系統連接到第二條路徑。
+. **選用** - 設定主機在每次開機時自動探索目標並與其連線。
++
+.. 使用下列程序和格式，將步驟 2 和步驟 3 中的探索參數新增至  `/etc/nvme/discovery.conf`：
++
+[listing]
+----
+# echo "--transport=rdma --traddr= target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
+.. 使用以下命令填充  `/etc/nvme/discovery.conf` 檔案後啟用 nvmf-autoconnect 服務：
++
+[listing]
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
 
+
+
+
+.接下來呢？
+建立連線之後，link:nvme-roce-define-host-task.html["定義主機"]。

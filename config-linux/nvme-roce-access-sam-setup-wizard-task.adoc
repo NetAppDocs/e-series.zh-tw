@@ -89,3 +89,6 @@ Safari
 如需更多資訊、請參閱SANtricity 《關於功能不全系統管理程式的線上說明》。
 
 
+
+.接下來呢？
+在 SANtricity System Manager 中設定儲存設備後，link:nvme-roce-configure-switch-task.html["設定交換器"]。

@@ -45,10 +45,9 @@ summary: 使用「系統管理程式」、您可以定義將資料傳送至儲�
  a| 
 主機作業系統類型
  a| 
-從下拉式清單中選取下列其中一個選項：
+從下拉式清單中選取下列選項：
 
 ** * SANtricity 《Linux * for》（適用於更新版本的*《Linux *》）
-** *適用於SANtricity 11.60之前版本的Linux DM-MP（Kernel 3.10或更新版本）*
 
 
 
@@ -89,3 +88,6 @@ summary: 使用「系統管理程式」、您可以定義將資料傳送至儲�
 成功建立主機之後SANtricity 、即可為為主機設定的每個主機連接埠建立預設名稱。
 
 預設別名為「<主機名稱連接埠號碼>」。例如、為「主機IPT」建立的第一個連接埠的預設別名為IPT_1。
+
+.接下來呢？
+建立主機後，link:nvme-roce-assign-volume-task.html["透過 SANtricity System Manager 指派磁碟區"]。

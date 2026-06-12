@@ -25,6 +25,7 @@ Express方法包括下列步驟、如中所述 link:understand-vmware-workflow-c
 ** link:fc-perform-specific-task.html["Fibre Channel"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["SAS"]
+** link:nvme-perform-specific-task.html["NVMe"]
 
 
 . 在儲存陣列上建立邏輯磁碟區。
