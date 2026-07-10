@@ -15,6 +15,7 @@ summary: 檢閱E5700 HIC更換要求。
 
 
 
+[[procedure-overview]]
 == 程序總覽
 
 您可以在E5724控制器機櫃和E5760控制器機櫃中新增、升級或更換HIC。
@@ -30,6 +31,7 @@ summary: 檢閱E5700 HIC更換要求。
 
 
 
+[[requirements-for-adding-upgrading-or-replacing-a-hic]]
 == 新增、升級或更換HIC的需求
 
 如果您打算新增、升級或更換主機介面卡（HIC）、請謹記下列需求。

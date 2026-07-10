@@ -20,6 +20,7 @@ NOTE: 所有備份與還原工作的時間戳記、都會SANtricity 使用本地
 
 
 
+[[create-a-new-image-based-restore]]
 == 建立新的映像型還原
 
 您可以透過SANtricity 「還原」頁面上的「Create」（建立）功能、建立以映像為基礎的新還原。
@@ -54,6 +55,7 @@ NOTE: 所有備份與還原工作的時間戳記、都會SANtricity 使用本地
 
 
 
+[[create-a-new-file-based-restore]]
 == 建立新的檔案型還原
 
 您可以透過SANtricity 「還原」頁面中的「Create」（建立）功能、建立以檔案為基礎的新還原。
@@ -92,6 +94,7 @@ NOTE: 所有備份與還原工作的時間戳記、都會SANtricity 使用本地
 
 
 
+[[delete-a-restore]]
 == 刪除還原
 
 您可以使用「刪除」功能、從「還原」頁面的「結果清單」區段中刪除選取的還原項目。

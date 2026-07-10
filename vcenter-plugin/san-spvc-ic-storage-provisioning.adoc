@@ -19,6 +19,7 @@ summary: 使用外掛程式for vCenter建立磁碟區、將磁碟區指派給主
 
 
 
+[[step-1-create-volumes]]
 == 步驟1：建立磁碟區
 
 Volume是資料容器、可管理及組織儲存陣列上的儲存空間。您可以從儲存陣列上可用的儲存容量建立磁碟區、以協助組織系統資源。「Volume」的概念類似於使用電腦上的資料夾/目錄來組織檔案以供快速存取。
@@ -180,6 +181,7 @@ Volume區塊大小（僅限EF300和EF600）
 
 
 
+[[step-2-create-host-access-and-assign-volumes]]
 == 步驟2：建立主機存取並指派磁碟區
 
 可手動建立主機：
@@ -189,6 +191,7 @@ Volume區塊大小（僅限EF300和EF600）
 
 
 
+[[manually-creating-the-host]]
 === 手動建立主機
 
 .開始之前
@@ -293,12 +296,14 @@ Volume區塊大小（僅限EF300和EF600）
 
 
 
+[[step-3-create-a-datastore-in-vsphere-client]]
 == 步驟3：在vSphere Client中建立資料存放區
 
 若要在 vSphere Client 中建立資料存放區、請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5AC611E0-7CEB-4604-A03C-F600B1BA2D23.html["在vSphere Client中建立VMFS資料存放區"^] VMware 文件中心主題。
 
 
 
+[[increase-capacity-of-existing-datastore-by-increasing-volume-capacity]]
 === 增加磁碟區容量、以增加現有資料存放區的容量
 
 您可以使用資源池或磁碟區群組中可用的可用容量、來增加磁碟區的報告容量（報告給主機的容量）。
@@ -337,6 +342,7 @@ NOTE: 增加磁碟區容量僅在某些作業系統上受支援。如果您在�
 
 
 
+[[increase-capacity-of-existing-datastore-by-adding-volumes]]
 === 新增磁碟區以增加現有資料存放區的容量
 
 . 您可以新增磁碟區來增加資料存放區的容量。請依照中的步驟進行 <<步驟1：建立磁碟區>>。

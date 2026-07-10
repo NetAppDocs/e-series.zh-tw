@@ -38,6 +38,7 @@ summary: 將主機介面卡（HIC）新增至E2800陣列。
 
 
 
+[[step-1-prepare-to-add-hic]]
 == 步驟1：準備新增HIC
 
 準備新增HIC、方法是備份儲存陣列的組態資料庫、收集支援資料、以及停止主機I/O作業。然後、您可以關閉控制器機櫃的電源。
@@ -118,6 +119,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[E2800 控制器�
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 移除控制器容器、以便新增主機介面卡。
@@ -178,6 +180,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-3-install-the-hic]]
 == 步驟3：安裝HIC
 
 安裝HIC以增加儲存陣列中的主機連接埠數量。
@@ -232,6 +235,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[將面板安�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 步驟4：重新安裝控制器容器
 
 安裝新的HIC之後、將控制器外殼重新安裝到控制器機櫃中。
@@ -271,6 +275,7 @@ NOTE: 此時請勿將資料纜線連接至新的HIC連接埠。
 
 
 
+[[step-5-complete-hic-addition]]
 == 步驟5：完成HIC新增
 
 檢查控制器LED和七段顯示器、然後確認控制器的狀態為最佳。

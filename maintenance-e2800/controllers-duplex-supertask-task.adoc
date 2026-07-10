@@ -35,6 +35,7 @@ summary: 在雙工組態中更換控制器機箱。
 
 
 
+[[step-1-prepare-to-replace-controller-duplex]]
 == 步驟1：準備更換控制器（雙工）
 
 準備更換控制器、方法是確認更換的控制器容器具有正確的FRU零件編號、備份組態、以及收集支援資料。如果控制器仍在線上、您必須將其離線。
@@ -138,12 +139,14 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2-remove-failed-controller-duplex]]
 == 步驟2：移除故障控制器（雙工）
 
 請以新的容器來更換故障的容器。
 
 
 
+[[step-2a-remove-controller-canister-duplex]]
 === 步驟2a：移除控制器容器（雙工）
 
 移除故障的控制器容器、以便更換新的控制器容器。
@@ -200,6 +203,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-2b-remove-battery-duplex]]
 === 步驟2b：取出電池（雙工）
 
 取出電池、以便安裝新的控制器。
@@ -235,6 +239,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[從控制器箱中�
 
 
 
+[[step-2c-remove-host-interface-card-duplex]]
 === 步驟2c：移除主機介面卡（雙工）
 
 如果控制器容器包含主機介面卡（HIC）、您必須從原始控制器容器中移除HIC、以便在新的控制器容器中重複使用。
@@ -268,12 +273,14 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[從控制器卡上�
 
 
 
+[[step-3-install-new-controller-duplex]]
 == 步驟3：安裝新的控制器（雙工）
 
 安裝新的控制器容器以更換故障的控制器容器。僅當您的儲存陣列有兩個控制器（雙工組態）時、才執行此工作。
 
 
 
+[[step-3a-install-battery-duplex]]
 === 步驟3a：安裝電池（雙工）
 
 您必須將電池裝入更換的控制器容器中。您可以安裝從原始控制器容器中取出的電池、或安裝您訂購的新電池。
@@ -319,6 +326,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金屬凸緣�
 
 
 
+[[step-3b-install-host-interface-card-duplex]]
 === 步驟3b：安裝主機介面卡（雙工）
 
 如果您從原始控制器容器中移除HIC、則必須將該HIC安裝在新的控制器容器中。
@@ -355,6 +363,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[重新安裝�
 
 
 
+[[step-3c-install-new-controller-canister-duplex]]
 === 步驟3c：安裝新的控制器容器（雙工）
 
 安裝電池和主機介面卡（HIC）之後、如果一開始安裝、您可以將新的控制器容器安裝到控制器機櫃中。
@@ -395,6 +404,7 @@ NOTE: 如果原始控制器未將DHCP用於IP位址、則新控制器會採用�
 
 
 
+[[step-4-complete-controller-replacement-duplex]]
 == 步驟4：完整更換控制器（雙工）
 
 將控制器置於線上、收集支援資料並恢復作業。

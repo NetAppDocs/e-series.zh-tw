@@ -33,6 +33,7 @@ summary: 更換EF300或EF600陣列中的電池。
 
 
 
+[[step-1-place-controller-offline]]
 == 步驟1：使控制器離線
 
 備份資料並將受影響的控制器置於離線狀態。
@@ -79,6 +80,7 @@ NOTE: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 以新的電池更換故障電池。
@@ -109,6 +111,7 @@ image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐�
 
 
 
+[[step-3-remove-failed-battery]]
 == 步驟3：取出故障電池
 
 將故障電池從控制器中取出。
@@ -141,6 +144,7 @@ CAUTION: 為符合國際空運協會（IATA）規定、除非已安裝在控制�
 
 
 
+[[step-4-install-new-battery]]
 == 步驟4：安裝新電池
 
 從控制器容器中取出故障電池後、請依照此步驟安裝新電池。
@@ -163,6 +167,7 @@ image::../media/batt_5.png[插入電池]
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 步驟5：重新安裝控制器容器
 
 將控制器重新安裝到控制器機櫃中。
@@ -181,6 +186,7 @@ image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 
 
 
+[[step-6-complete-battery-replacement]]
 == 步驟6：完成電池更換
 
 將控制器置於線上、收集支援資料並恢復作業。

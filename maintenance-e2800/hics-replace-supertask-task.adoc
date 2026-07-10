@@ -34,6 +34,7 @@ summary: 更換發生故障的主機介面卡（HIC）。
 
 
 
+[[step-1-place-controller-offline]]
 == 步驟1：使控制器離線
 
 控制器離線的步驟取決於您使用的是單一控制器（單工）或兩個控制器（雙工）。請參閱適當的指示：
@@ -44,6 +45,7 @@ summary: 更換發生故障的主機介面卡（HIC）。
 
 
 
+[[duplex-place-controller-offline]]
 === 雙工：使控制器離線
 
 如果您有雙工組態、請依照此步驟將控制器設為離線、以便安全地移除故障的HIC。
@@ -118,6 +120,7 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[simplex-power-down-the-controller-shelf]]
 === 單工：關閉控制器機櫃的電源
 
 如果您使用單工組態、請關閉控制器機櫃的電源、以便安全地移除故障的HIC。
@@ -188,6 +191,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 移除控制器容器、以便新增主機介面卡（HIC）。
@@ -248,6 +252,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-3-install-a-hic]]
 == 步驟3：安裝HIC
 
 安裝HIC、以新的HIC取代故障的HIC。
@@ -302,6 +307,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[將面板重�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 步驟4：重新安裝控制器容器
 
 安裝HIC之後、將控制器外殼重新安裝到控制器機櫃中。
@@ -344,12 +350,14 @@ NOTE: 此時請勿將資料纜線連接至新的HIC連接埠。
 
 
 
+[[step-5-place-controller-online]]
 == 步驟5：將控制器置於線上
 
 控制器上線的步驟取決於您使用的是單一控制器（單工）或兩個控制器（雙工）。
 
 
 
+[[duplex-place-controller-online]]
 === 雙工：將控制器置於線上
 
 對於雙工組態、請將控制器上線、收集支援資料、然後繼續作業。
@@ -439,6 +447,7 @@ NOTE: 如果您無法解決問題、請聯絡技術支援部門。
 
 
 
+[[simplex-power-up-the-controller-shelf]]
 === 單工：開啟控制器機櫃的電源
 
 若為單工組態、請將電力套用至控制器機櫃、收集支援資料並恢復作業。

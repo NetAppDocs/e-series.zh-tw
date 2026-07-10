@@ -21,6 +21,7 @@ EF300 和 EF300C 支援 SAS 擴充，提供 24 個磁碟機和 60 個磁碟機�
 
 
 
+[[replace-drive-in-an-ef300-24-drive-shelf]]
 == 更換EF300（24個磁碟機櫃）中的磁碟機
 
 請依照此程序更換24個磁碟機櫃中的磁碟機。
@@ -42,6 +43,7 @@ EF300 和 EF300C 支援 SAS 擴充，提供 24 個磁碟機和 60 個磁碟機�
 
 
 
+[[step-1-prepare-to-replace-drive-24-drive]]
 === 步驟1：準備更換磁碟機（24個磁碟機）
 
 請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。
@@ -71,6 +73,7 @@ NOTE: 如果您要更換機櫃中有擋板的磁碟機、則必須卸下擋板�
 
 
 
+[[step-2-remove-failed-drive-24-drive]]
 === 步驟2：移除故障磁碟機（24個磁碟機）
 
 移除故障磁碟機、以新磁碟機取代。
@@ -101,6 +104,7 @@ NOTE: 如果您不小心移除作用中的磁碟機、請等待至少60秒、然
 
 
 
+[[step-3-install-new-drive-24-drive]]
 === 步驟3：安裝新磁碟機（24個磁碟機）
 
 您安裝新磁碟機來更換故障磁碟機。卸下故障磁碟機後、請儘快安裝替換磁碟機。否則、設備可能會過熱。
@@ -120,6 +124,7 @@ NOTE: 根據您的組態、控制器可能會自動將資料重新建構至新�
 
 
 
+[[step-4-complete-drive-replacement-24-drive]]
 === 步驟4：完整更換磁碟機（24個磁碟機）
 
 確認新磁碟機運作正常。
@@ -160,6 +165,7 @@ NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 
 
 
+[[replace-drive-in-an-ef300-60-drive-shelf]]
 == 更換EF300（60個磁碟機櫃）中的磁碟機
 
 請依照此程序更換60個磁碟機櫃中的磁碟機。
@@ -180,6 +186,7 @@ NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 
 
 
+[[step-1-prepare-to-replace-drive-60-drive]]
 === 步驟1：準備更換磁碟機（60個磁碟機）
 
 請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。
@@ -237,6 +244,7 @@ image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e5700.gif[磁碟�
 
 
 
+[[step-2-remove-failed-drive-60-drive]]
 === 步驟2：移除故障磁碟機（60個磁碟機）
 
 移除故障磁碟機、以新磁碟機取代。
@@ -274,6 +282,7 @@ NOTE: 如果您不小心移除作用中的磁碟機、請等待至少60秒、然
 
 
 
+[[step-3-install-new-drive-60-drive]]
 === 步驟3：安裝新磁碟機（60個磁碟機）
 
 安裝新磁碟機以更換故障磁碟機。
@@ -303,6 +312,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru_maint-e5700.gif[磁碟機承載器
 
 
 
+[[step-4-complete-drive-replacement-60-drive]]
 === 步驟4：完整更換磁碟機（60個磁碟機）
 
 確認新磁碟機運作正常。

@@ -30,6 +30,7 @@ summary: 當EF300或EF600控制器故障時、請更換電源供應器。
 
 
 
+[[step-1-remove-failed-power-supply]]
 == 步驟1：移除故障的電源供應器
 
 移除故障的電源供應器、以便更換為新的電源供應器。
@@ -62,6 +63,7 @@ image::../media/psup_3.png[將電源供應器滑出]
 
 
 
+[[step-2-install-new-power-supply-and-complete-the-replacement]]
 == 步驟2：安裝新的電源供應器並完成更換
 
 移除故障的電源供應器之後、請安裝新的電源供應器。

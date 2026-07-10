@@ -31,6 +31,7 @@ summary: 將第二個控制器新增至只有一個控制器容器的控制器�
 
 
 
+[[step-1-verify-the-new-controllers-part-number]]
 == 步驟1：驗證新控制器的零件編號
 
 確認新控制器的零件編號與目前安裝的控制器相同。
@@ -65,6 +66,7 @@ CAUTION: *可能會遺失資料存取*-如果兩個零件編號不同、請勿�
 
 
 
+[[step-2-install-host-interface-card]]
 == 步驟2：安裝主機介面卡
 
 如果目前安裝的控制器包含HIC、您必須在第二個控制器容器中安裝相同型號的主機介面卡（HIC）。
@@ -110,6 +112,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[安裝面板]
 
 
 
+[[step-3-collect-support-data]]
 == 步驟3：收集支援資料
 
 在更換元件之前和之後收集支援資料、以確保您可以傳送一組完整的記錄給技術支援部門、以免更換無法解決問題。
@@ -148,6 +151,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-4-change-configuration-to-duplex]]
 == 步驟4：將組態變更為雙工
 
 在將第二個控制器新增至控制器機櫃之前、您必須先安裝新的NVSRAM/檔案、然後使用命令列介面將儲存陣列設定為雙工、以將組態變更為雙工。NVSRAM/檔案的雙工版本隨附SANtricity 於適用於EOSR軟體（控制器韌體）的下載檔案中。
@@ -264,6 +268,7 @@ reset controller [a];
 
 
 
+[[step-5-remove-the-controller-blank]]
 == 步驟5：移除控制器擋片
 
 安裝第二個控制器之前、請先移除控制器擋片。控制器擋片安裝在只有一個控制器的控制器機櫃中。
@@ -278,6 +283,7 @@ reset controller [a];
 
 
 
+[[step-6-install-second-controller-canister]]
 == 步驟6：安裝第二個控制器容器
 
 安裝第二個控制器機箱、將單工組態變更為雙工組態。
@@ -300,6 +306,7 @@ image::../media/28_dwg_e2824_add_controller_canister.gif[安裝第二個控制�
 
 
 
+[[step-7-complete-adding-a-second-controller]]
 == 步驟7：完成新增第二個控制器
 
 完成新增第二個控制器的程序、方法是確認該控制器運作正常、重新安裝雙工NVSRAM檔、在控制器之間分散磁碟區、以及收集支援資料。

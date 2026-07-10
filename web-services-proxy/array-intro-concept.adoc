@@ -16,12 +16,14 @@ summary: 若要管理網路中的儲存系統、您必須先探索儲存系統�
 
 
 
+[[discover-storage-systems]]
 == 探索儲存系統
 
 您可以設定自動探索或手動探索儲存系統。
 
 
 
+[[automatically-discover-storage-systems]]
 === 自動探索儲存系統
 
 您可以修改wsconfig.xml檔案中的設定、指定在網路中自動探索儲存系統。根據預設、IPv6自動探索會停用、並啟用IPv4。
@@ -56,6 +58,7 @@ NOTE: 當路徑設定完成、但未設定為伺服器可以路由傳送到位�
 
 
 
+[[discover-and-add-storage-systems-using-api-endpoints]]
 === 使用API端點探索及新增儲存系統
 
 您可以使用API端點來探索儲存系統、並將其新增至受管理清單。此程序會在儲存系統與API之間建立管理連線。
@@ -248,6 +251,7 @@ WWN
 
 
 
+[[scale-up-the-number-of-managed-storage-systems]]
 == 擴充託管儲存系統的數量
 
 根據預設、API最多可管理100個儲存系統。如果您需要管理更多資源、則必須滿足伺服器的記憶體需求。

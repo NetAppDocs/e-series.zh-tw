@@ -17,6 +17,7 @@ summary: 根據您的SLES版本（SUSE Linux版本）、設定導向至裝置目
 
 
 
+[[virtual-devices-are-io-targets]]
 == 虛擬裝置是I/O目標
 
 請確定您只對DM-MP所建立的虛擬裝置執行I/O、而不是對實體裝置路徑執行I/O。如果您執行的是實體路徑的I/O、DM-MP就無法管理容錯移轉事件、而且I/O也會失敗。
@@ -30,6 +31,7 @@ summary: 根據您的SLES版本（SUSE Linux版本）、設定導向至裝置目
 ----
 
 
+[[example-output]]
 == 輸出範例
 
 下列「NVMe清單」命令輸出範例顯示主機節點名稱及其與命名空間ID的關聯。

@@ -15,6 +15,7 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 
 
 
+[[step-1-configure-the-fc-switches-windows]]
 == 步驟1：設定FC交換器- Windows
 
 設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
@@ -38,6 +39,7 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 
 
 
+[[step-2-determine-host-wwpns-and-make-recommended-settings-fc-windows]]
 == 步驟2：判斷主機WWPN並進行建議設定- FC、Windows
 
 您可以安裝FC HBA公用程式、以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外、您也可以使用HBA公用程式來變更的「附註」欄中建議的任何設定 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 支援的組態。
@@ -64,6 +66,7 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 
 
 
+[[step-3-record-your-configuration]]
 == 步驟3：記錄您的組態
 
 您可以產生及列印本頁的PDF、然後使用下列工作表記錄FC儲存組態資訊。您需要這些資訊來執行資源配置工作。
@@ -74,6 +77,7 @@ image::../media/port_identifiers_host_and_target_conf-win.gif[光纖通道連接
 
 
 
+[[host-identifiers]]
 === 主機識別碼
 
 |===
@@ -106,6 +110,7 @@ _不適用_
 |===
 
 
+[[target-identifiers]]
 === 目標識別碼
 
 |===
@@ -163,6 +168,7 @@ _不適用_
 |===
 
 
+[[mapping-host-name]]
 === 對應主機名稱
 
 |===

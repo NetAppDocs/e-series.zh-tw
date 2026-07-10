@@ -38,6 +38,7 @@ CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下執行此�
 
 
 
+[[step-1-prepare-to-replace-fan-canister]]
 == 步驟1：準備更換風扇容器
 
 準備更換60個磁碟機控制器櫃或磁碟機櫃中的風扇容器、方法是收集儲存陣列的支援資料、並找出故障元件。
@@ -89,6 +90,7 @@ image::../media/28_dwg_e2860_de460c_single_fan_canister_with_led_callout_maint-e
 
 
 
+[[step-2-remove-failed-fan-canister-and-install-new-one]]
 == 步驟2：移除故障的風扇容器、然後安裝新的
 
 移除故障的風扇容器、以便更換新的風扇容器。
@@ -120,6 +122,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 
 
 
+[[step-3-complete-fan-canister-replacement]]
 == 步驟3：完整更換風扇容器
 
 確認新的風扇容器運作正常、收集支援資料、並恢復正常作業。

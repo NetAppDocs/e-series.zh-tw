@@ -15,6 +15,7 @@ summary: 將控制器連接至網路、以完成儲存系統的設定與組態�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 步驟1：連接資料主機
 
 根據您的網路拓撲佈線系統。
@@ -24,6 +25,7 @@ NOTE: 如果您使用的是AIX®、則必須先在主機上安裝E系列多重�
 
 
 
+[[option-1-direct-attach-topology]]
 === 選項1：直接附加拓撲
 
 下列範例顯示使用直接附加拓撲連接至資料主機的纜線。
@@ -40,6 +42,7 @@ image:../media/2U_DirectTopology.png["直接附加拓撲纜線"]
 |===
 
 
+[[option-2-fabric-topology]]
 === 選項2：網路拓撲
 
 下列範例顯示使用光纖拓撲連接至資料主機的纜線。
@@ -57,12 +60,14 @@ image:../media/2U_FabricTopology.png["架構拓撲纜線"]
 |===
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 步驟2：連線並設定管理連線
 
 您可以使用下列兩種選項之一來設定控制器管理連接埠：使用DHCP伺服器或使用靜態IP位址。
 
 
 
+[[option-1-dhcp-server]]
 === 選項1：DHCP伺服器
 
 瞭解如何使用DHCP伺服器設定管理連接埠。
@@ -106,6 +111,7 @@ E5700控制器P1管理連接埠
 
 
 
+[[option-2-static-ip-address]]
 === 選項2：靜態IP位址
 
 瞭解如何輸入IP位址和子網路遮罩、手動設定管理連接埠。
@@ -181,6 +187,7 @@ NOTE: 如果失去控制器B的連線、您可以使用先前驗證的控制器A
 
 
 
+[[step-3-configure-storage-system]]
 == 步驟3：設定儲存系統
 
 安裝硬體後、請使用SANtricity 「介紹」軟體來設定及管理儲存系統。

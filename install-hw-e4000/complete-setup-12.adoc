@@ -15,6 +15,7 @@ summary: 瞭解如何將控制器連接至網路、並完成儲存系統的設�
 
 
 
+[[step-1-cable-the-data-hosts]]
 == 步驟1：連接資料主機
 
 根據您的網路拓撲佈線系統。
@@ -51,6 +52,7 @@ image:../media/drw_e4012_fabric_topology_ieops-2157.svg["E4012 Fabric Topology �
 ====
 
 
+[[step-2-connect-and-configure-the-management-connection]]
 == 步驟2：連線並設定管理連線
 
 您可以使用DHCP伺服器或靜態IP位址來設定控制器管理連接埠。
@@ -123,6 +125,7 @@ NOTE: 如果失去控制器B的連線、您可以使用先前驗證的控制器A
 ====
 
 
+[[step-3-configure-and-manage-your-storage-system]]
 == 步驟3：設定及管理儲存系統
 
 安裝硬體後、請使用SANtricity 「介紹」軟體來設定及管理儲存系統。

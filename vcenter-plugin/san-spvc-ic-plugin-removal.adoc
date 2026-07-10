@@ -20,6 +20,7 @@ summary: 移除vCenter的外掛程式。
 
 
 
+[[unregister-the-plugin-from-a-vcenter-server-appliance]]
 == 從vCenter Server Appliance取消登錄外掛程式
 
 若要從vCenter Server Appliance取消登錄外掛程式、請選取下列其中一種方法：
@@ -30,6 +31,7 @@ summary: 移除vCenter的外掛程式。
 
 
 
+[[method-1-execute-the-registration-script]]
 === 方法1：執行登錄指令碼
 
 . 透過命令列開啟提示字元、然後瀏覽至下列目錄：
@@ -57,6 +59,7 @@ vcenter-register.bat
 
 
 
+[[method-2-use-the-vcenter-server-mob-pages]]
 === 方法2：使用vCenter Server Mob頁面
 
 . 開啟網頁瀏覽器並輸入下列URL：
@@ -78,6 +81,7 @@ NOTE: 此程序會從vCenter Server Appliance解除登錄外掛程式、但不�
 
 
 
+[[remove-the-plugin-webserver-from-the-application-host]]
 == 從應用程式主機移除外掛程式Web伺服器
 
 若要從應用程式主機移除外掛程式軟體、請遵循下列步驟：

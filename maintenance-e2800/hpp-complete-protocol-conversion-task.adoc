@@ -18,6 +18,7 @@ summary: 完成E2800陣列的主機連接埠傳輸協定轉換。
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == 完成FC到iSCSI的轉換
 
 如果您將所有主機連接埠從FC轉換為iSCSI、則必須設定iSCSI網路。
@@ -62,6 +63,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == 完成iSCSI到FC的轉換
 
 如果您將所有主機連接埠從iSCSI轉換成FC、則必須設定FC網路。
@@ -97,6 +99,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-fc-to-fciscsi-conversion]]
 == 完成FC到FC/iSCSI的轉換
 
 如果您先前擁有所有FC主機連接埠、而將其中一些連接埠轉換成iSCSI、則可能需要修改現有的組態以支援iSCSI。
@@ -105,6 +108,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-1-move-fc-hosts-and-add-new-iscsi-hosts]]
 === 選項1：移動FC主機並新增iSCSI主機
 
 . 將任何FC主機從新的iSCSI連接埠移至仍為FC的連接埠。
@@ -115,6 +119,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === 選項2：將FC主機轉換為iSCSI
 
 . 關閉連接至轉換連接埠的FC主機。
@@ -134,6 +139,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-iscsi-to-fciscsi-conversion]]
 == 完成iSCSI到FC/iSCSI的轉換
 
 如果您先前擁有所有iSCSI主機連接埠、並將其中一些連接埠轉換成FC、則可能需要修改現有的組態以支援FC。
@@ -142,6 +148,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-1-move-iscsi-hosts-and-add-new-fc-hosts]]
 === 選項1：移動iSCSI主機並新增FC主機
 
 . 將任何iSCSI主機從新的FC連接埠移至仍為iSCSI的連接埠。
@@ -152,6 +159,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === 選項2：將iSCSI主機轉換為FC
 
 . 關閉連接至轉換連接埠的iSCSI主機。
@@ -171,6 +179,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-fciscsi-to-fc-conversion]]
 == 完成FC/iSCSI到FC的轉換
 
 如果您先前有FC主機連接埠和iSCSI主機連接埠的組合、並且將所有連接埠轉換成FC、則可能需要修改現有的組態、才能使用新的FC連接埠。
@@ -179,6 +188,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-1-remove-iscsi-hosts-and-add-fc-hosts]]
 === 選項1：移除iSCSI主機並新增FC主機
 
 . 如果您尚未使用雙傳輸協定SFP、請移除任何iSCSI SFP、並以FC SFP或雙傳輸協定SFP取代。
@@ -189,6 +199,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-2-convert-iscsi-hosts-to-fc]]
 === 選項2：將iSCSI主機轉換為FC
 
 . 關閉連接至轉換連接埠的iSCSI主機。
@@ -208,6 +219,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-fciscsi-to-iscsi-conversion]]
 == 完成FC/iSCSI到iSCSI的轉換
 
 如果您先前有FC主機連接埠和iSCSI主機連接埠的組合、並且將所有連接埠轉換成iSCSI、則可能需要修改現有的組態、才能使用新的iSCSI連接埠。
@@ -216,6 +228,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-1-remove-fc-hosts-and-add-iscsi-hosts]]
 === 選項1：移除FC主機並新增iSCSI主機
 
 . 如果您尚未使用雙傳輸協定SFP、請移除任何FC SFP、並以iSCSI SFP或雙傳輸協定SFP取代。
@@ -225,6 +238,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[option-2-convert-fc-hosts-to-iscsi]]
 === 選項2：將FC主機轉換為iSCSI
 
 . 關閉連接至轉換連接埠的FC主機。

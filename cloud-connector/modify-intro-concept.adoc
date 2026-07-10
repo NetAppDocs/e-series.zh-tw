@@ -16,6 +16,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 
 
+[[modify-s3-account-settings]]
 == 修改S3帳戶設定
 
 您可以在SANtricity 「S3帳戶設定」視窗中修改現有的S3設定、以供使用。
@@ -46,6 +47,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 
 
+[[manage-storage-arrays]]
 == 管理儲存陣列
 
 您可以在SANtricity 「管理儲存陣列」頁面中、從註冊到「支援解決方案」主機的Web服務Proxy新增或移除儲存陣列。
@@ -88,6 +90,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 
 
+[[modify-web-services-proxy-settings]]
 == 修改Web服務Proxy設定
 
 您可以在SANtricity 「Web服務Proxy設定」視窗中修改現有的「Web服務Proxy」應用程式的「Web服務Proxy」設定。
@@ -113,6 +116,7 @@ summary: 您可以存取SANtricity 位於畫面左側瀏覽面板中的「設定
 
 
 
+[[change-santricity-cloud-connector-password]]
 == 變更SANtricity 解決方案：Cloud Connector密碼
 
 您可以在SANtricity 「變更密碼」畫面中變更「SunCloud Connector」應用程式的密碼。

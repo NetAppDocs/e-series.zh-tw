@@ -20,6 +20,7 @@ NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
 
 
 
+[[considerations]]
 == 考量
 
 使用這些程序時、請注意：
@@ -30,6 +31,7 @@ NOTE: 不再使用此解決方案SANtricity 、也不再提供下載。
 
 
 
+[[types-of-backups]]
 == 備份類型
 
 此解決方案SANtricity 提供兩種備份類型：映像型備份和檔案型備份。

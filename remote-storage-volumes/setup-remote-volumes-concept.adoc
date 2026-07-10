@@ -15,6 +15,7 @@ E系列儲存系統必須設定為透過支援的iSCSI傳輸協定與遠端儲�
 
 
 
+[[configure-remote-storage-device-and-e-series-array]]
 == 設定遠端儲存設備和E系列陣列
 
 在繼續SANtricity 執行「靜態系統管理程式」以設定「遠端儲存磁碟區」功能之前、請執行下列步驟：
@@ -38,6 +39,7 @@ NOTE: 建議：在開始匯入程序之前、請先備份遠端來源Volume。
 
 
 
+[[cable-the-storage-arrays]]
 == 連接儲存陣列
 
 在設定程序中、儲存陣列和I/O主機必須連接至iSCSI相容介面。
@@ -48,6 +50,7 @@ image:../media/remote_target_volumes_iscsi_use_case_1.png["iSCSI 儲存設備纜
 
 
 
+[[configure-the-iscsi-ports]]
 == 設定iSCSI連接埠
 
 您必須設定iSCSI連接埠、以確保目標（本機E系列儲存陣列）與來源（遠端儲存陣列）之間的通訊。

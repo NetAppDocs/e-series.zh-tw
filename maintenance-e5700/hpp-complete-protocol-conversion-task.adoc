@@ -18,6 +18,7 @@ summary: 完成E5700主機傳輸協定轉換。
 
 
 
+[[complete-fc-to-iscsi-conversion]]
 == 完成FC到iSCSI的轉換
 
 如果您先前有FC主機連接埠、但轉換成iSCSI、則可能需要修改現有的組態以支援iSCSI。下列程序僅適用於不存在iSCSI HIC的情況。
@@ -71,6 +72,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-iscsi-to-fc-conversion]]
 == 完成iSCSI到FC的轉換
 
 如果您先前有iSCSI主機連接埠、但轉換成FC、則可能需要修改現有的組態以支援FC。下列程序僅適用於不存在FC HIC的情況。
@@ -114,6 +116,7 @@ NOTE: 如果您需要新增主機或主機叢集的指示、請參閱SANtricity 
 
 
 
+[[complete-conversion-for-ib-iser-tofrom-ib-srp-nvme-over-ib-nvme-over-roce-or-nvme-over-fc]]
 == 從IB-iSER到/從IB-SRP、NVMe over IB、NVMe over RoCE或NVMe over FC的完整轉換
 
 套用功能套件金鑰、將InfiniBand iSER HIC連接埠所使用的傳輸協定轉換成/從SRP、InfiniBand上的NVMe、RoCE上的NVMe或Fibre Channel上的NVMe、之後、您需要設定主機使用適當的傳輸協定。

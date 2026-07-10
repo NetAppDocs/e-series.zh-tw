@@ -53,6 +53,7 @@ NOTE: 只要發生下列更換情況、控制器的琥珀色警示 LED 燈就會
 
 
 
+[[step-1-prepare-to-replace-controller]]
 == 步驟1：準備更換控制器
 
 準備更換故障的控制器容器、方法是驗證更換的控制器容器是否有正確的FRU零件編號、備份組態、以及收集支援資料。
@@ -119,6 +120,7 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2-remove-failed-controller]]
 == 步驟2：移除故障的控制器
 
 移除控制器容器、以新的容器取代故障的容器。
@@ -127,6 +129,7 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2a-remove-controller-canister]]
 === 步驟2a：移除控制器容器
 
 移除故障的控制器容器、以便更換新的控制器容器。
@@ -160,6 +163,7 @@ image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐�
 
 
 
+[[step-2b-remove-battery]]
 === 步驟2b：取出電池
 
 從故障控制器容器中取出電池、以便將其安裝在新的控制器容器中。
@@ -183,6 +187,7 @@ image:../media/batt_4.png["將電池從控制器中取出"]
 
 
 
+[[step-2c-remove-the-hic]]
 === 步驟2c：移除HIC
 
 如果控制器容器包含HIC、您必須從原始控制器容器中移除HIC。否則、您可以跳過此步驟。
@@ -218,6 +223,7 @@ image::../media/hic_4.png[從控制器卡上卸下 HIC]
 
 
 
+[[step-2d-remove-power-supply]]
 === 步驟2D：移除電源供應器
 
 移除電源供應器、以便將其安裝在新的控制器中。
@@ -246,6 +252,7 @@ CAUTION: 移除電源供應器時、請務必用兩隻手支撐其重量。
 
 
 
+[[step-2e-remove-dimms]]
 === 步驟2e：移除DIMM
 
 移除DIMM、以便將其安裝在新的控制器中。
@@ -272,6 +279,7 @@ image::../media/dimim_3.png[移除 DIMM]
 
 
 
+[[step-2f-remove-fans]]
 === 步驟2f：移除風扇
 
 移除風扇、以便將其安裝在新的控制器中。
@@ -286,6 +294,7 @@ image::../media/fan_2.png[卸下風扇]
 
 
 
+[[step-3-install-new-controller]]
 == 步驟3：安裝新的控制器
 
 安裝新的控制器容器以更換故障的控制器容器。
@@ -294,6 +303,7 @@ image::../media/fan_2.png[卸下風扇]
 
 
 
+[[step-3a-install-battery]]
 === 步驟3a：安裝電池
 
 將電池裝入更換的控制器容器中。
@@ -317,6 +327,7 @@ image::../media/batt_5.png[安裝電池]
 
 
 
+[[step-3b-install-the-hic]]
 === 步驟3b：安裝HIC
 
 如果您從原始控制器容器中移除HIC、則必須將該HIC安裝在新的控制器容器中。否則、您可以跳過此步驟。
@@ -355,6 +366,7 @@ NOTE: 上圖為範例、您的HIC外觀可能有所不同。
 
 
 
+[[step-3c-install-power-supply]]
 === 步驟3c：安裝電源供應器
 
 將電源供應器安裝到更換的控制器容器中。
@@ -375,6 +387,7 @@ image::../media/psup_4.png[將電源供應器安裝至控制器]
 
 
 
+[[step-3d-install-dimms]]
 === 步驟3D：安裝DIMM
 
 將DIMM安裝到新的控制器容器中。
@@ -407,6 +420,7 @@ image::../media/dimm_5.png[將 DIMM 插槽上的閂鎖往上壓以固定]
 
 
 
+[[step-3e-install-fans]]
 === 步驟3e：安裝風扇
 
 將風扇安裝到更換的控制器容器中。
@@ -424,6 +438,7 @@ image::../media/fan_3_a.png[將風扇安裝到控制器中]
 
 
 
+[[step-3f-install-new-controller-canister]]
 === 步驟3f：安裝新的控制器容器
 
 最後、將新的控制器外殼安裝到控制器機櫃中。
@@ -451,6 +466,7 @@ NOTE: 如果原始控制器未將DHCP用於IP位址、則新的控制器會採�
 
 
 
+[[step-4-complete-controller-replacement]]
 == 步驟4：完成控制器更換
 
 將控制器置於線上、收集支援資料並恢復作業。

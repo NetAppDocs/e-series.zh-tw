@@ -15,6 +15,7 @@ summary: 對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並
 
 
 
+[[step-1-configure-the-nvmefc-switches]]
 == 步驟1：設定NVMe / FC交換器
 
 設定（分區）NVMe over Fibre Channel（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
@@ -41,6 +42,7 @@ NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如�
 
 
 
+[[step-2-determine-the-host-ports-wwpns-nvmefc-vmware]]
 == 步驟2：判斷主機連接埠WWPNS-NVMe / FC VMware
 
 若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。
@@ -66,6 +68,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-enable-hba-drivers]]
 == 步驟3：啟用HBA驅動程式
 
 您必須在Broadcom / Emulex和Marvell / QLogic HBA驅動程式中啟用NVMe支援。
@@ -92,6 +95,7 @@ esxcfg-module -s "ql2xnvmesupport=1" qlnativefc
 
 
 
+[[step-4-record-your-configuration]]
 == 步驟4：記錄您的組態
 
 您可以產生並列印本頁的PDF、然後使用下列工作表記錄NVMe over Fibre Channel儲存組態資訊。您需要這些資訊來執行資源配置工作。
@@ -102,6 +106,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Ch
 
 
 
+[[host-identifiers]]
 === 主機識別碼
 
 |===
@@ -134,6 +139,7 @@ _不適用_
 |===
 
 
+[[target-identifiers]]
 === 目標識別碼
 
 |===
@@ -191,6 +197,7 @@ _不適用_
 |===
 
 
+[[mapping-host]]
 === 對應主機
 
 |===

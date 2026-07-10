@@ -18,6 +18,7 @@ NOTE: 以下資訊不適用於所有儲存系統，有關您儲存系統的主�
 
 
 
+[[cabling-for-a-direct-attached-topology]]
 == 直接附加拓撲的佈線
 
 直接附加的拓撲會將主機介面卡直接連接至儲存系統中的控制器。
@@ -41,6 +42,7 @@ image::../media/2hosts_4hbas_ieops-2146.svg[兩個主機 / 四個 HBA 和兩個�
 
 
 
+[[cabling-for-a-switch-topology]]
 == 交換器拓撲的佈線
 
 交換器拓撲使用交換器將主機連接至儲存系統中的控制器。交換器必須支援主機與控制器之間使用的連線類型。

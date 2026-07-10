@@ -15,13 +15,14 @@ summary: E系列技術報告
 
 
 
+[[security-trs]]
 == 安全TRs
 
 [cols="9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17162-tr4474pdf.pdf["* TR-4474：SANtricity 《S42Drive安全功能指南》*"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712pdf.pdf["* TR-4712：SANtricity 《The SesfManagement Security Features *》"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813pdf.pdf["* TR-4813：管理E系列系統的憑證*"] 
+| https://www.netapp.com/pdf.html?item=/media/17162-tr4474.pdf["* TR-4474：SANtricity 《S42Drive安全功能指南》*"] | https://www.netapp.com/pdf.html?item=/media/17079-tr4712.pdf["* TR-4712：SANtricity 《The SesfManagement Security Features *》"] | https://www.netapp.com/pdf.html?item=/media/17218-tr4813.pdf["* TR-4813：管理E系列系統的憑證*"] 
 
 
 | 說明E系列系統的完整磁碟加密功能、包括支援FIPS 140-2驗證磁碟機、以及內部和外部金鑰管理支援。 | 說明SANtricity NetApp E系列E2800、E5700、EF280、EF570、EF300、 和EF600儲存系統。 | 說明如何使用最新的E系列控制器和應用程式來管理安全性憑證。 

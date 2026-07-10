@@ -15,6 +15,7 @@ summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上�
 
 
 
+[[download-web-services-proxy-files]]
 == 下載Web服務Proxy檔案
 
 您可以從NetApp支援網站的軟體下載頁面下載安裝檔案和讀我檔案。
@@ -30,6 +31,7 @@ summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上�
 
 
 
+[[install-on-windows-or-linux-server]]
 == 安裝在Windows或Linux伺服器上
 
 您可以使用三種模式（圖形、主控台或無聲）之一、或使用RPM檔案（僅限Linux）來安裝Web服務Proxy和Unified Manager。
@@ -41,6 +43,7 @@ summary: 安裝作業包括下載檔案、然後在Linux或Windows伺服器上�
 
 
 
+[[graphical-mode-install]]
 === 圖形模式安裝
 
 您可以在Windows或Linux的圖形模式下執行安裝。在圖形模式中、提示會出現在Windows型介面中。
@@ -79,6 +82,7 @@ NOTE: 在升級期間、系統不會提示您輸入組態參數。
 
 
 
+[[console-mode-install]]
 === 主控台模式安裝
 
 您可以在Windows或Linux的主控台模式下執行安裝。在主控台模式中、提示會出現在終端機視窗中。
@@ -108,6 +112,7 @@ NOTE: 在升級期間、系統不會提示您輸入組態參數。
 
 
 
+[[silent-mode-install]]
 === 無聲模式安裝
 
 您可以在Windows或Linux的Silent模式下執行安裝。在無訊息模式中、終端機視窗不會顯示任何傳回訊息或指令碼。
@@ -125,6 +130,7 @@ NOTE: 在升級期間、系統不會提示您輸入組態參數。
 
 
 
+[[rpm-command-install-linux-only]]
 === RPM命令安裝（僅限Linux）
 
 對於與RPM套件管理系統相容的Linux系統、您可以使用選用的RPM檔案來安裝Web Services Proxy。

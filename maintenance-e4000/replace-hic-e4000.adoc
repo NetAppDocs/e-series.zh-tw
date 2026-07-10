@@ -36,6 +36,7 @@ CAUTION: *可能遺失資料存取*-如果HIC是針對另一個E系列控制器�
 
 
 
+[[step-1-prepare-to-replace-hic]]
 == 步驟 1 ：準備更換 HIC
 
 關閉控制器機櫃的電源（單工）或將受影響的控制器離線（雙工），以便安全地更換 HIC 。
@@ -206,6 +207,7 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 ====
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 從系統中取下控制器圓筒、然後取下控制器圓筒蓋。
@@ -227,6 +229,7 @@ image::../media/drw_E4000_open_controller_module_cover_IEOPS-870.png[打開控�
 
 
 
+[[step-3-replace-the-hic]]
 == 步驟3：更換HIC
 
 更換 HIC 。
@@ -261,6 +264,7 @@ NOTE: 如果您使用手指鬆開指旋螺絲，則可能需要按下電池釋�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 步驟4：重新安裝控制器容器
 
 將控制器圓筒重新安裝到機箱中。
@@ -280,6 +284,7 @@ NOTE: 如果您移除媒體轉換器（QSFP或SFP）、請記得在使用光纖�
 
 
 
+[[step-5-complete-hic-replacement]]
 == 步驟5：完成HIC更換
 
 開啟控制器電源（單工）或將控制器置於線上（雙工），收集支援資料，然後恢復作業。

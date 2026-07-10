@@ -32,6 +32,7 @@ summary: 更換E5700儲存系統中故障的電池。
 
 
 
+[[step-1-place-controller-offline-duplex]]
 == 步驟1：使控制器離線（雙工）
 
 如果您有雙工組態、請將受影響的控制器離線、以便安全地取出故障電池。您未離線的控制器必須處於線上狀態（處於最佳狀態）。
@@ -108,6 +109,7 @@ CAUTION: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 在取出故障電池之前、您必須先移除控制器容器。
@@ -161,6 +163,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-3-remove-failed-battery]]
 == 步驟3：取出故障電池
 
 從控制器機櫃中取出控制器機箱之後、請取出電池。
@@ -201,6 +204,7 @@ CAUTION: 為符合國際空運協會（IATA）規定、除非已安裝在控制�
 
 
 
+[[step-4-install-new-battery]]
 == 步驟4：安裝新電池
 
 取出故障電池後、請安裝新的電池。
@@ -249,6 +253,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e5700.gif["電池法蘭�
 
 
 
+[[step-5-re-install-controller-canister]]
 == 步驟5：重新安裝控制器容器
 
 安裝新電池後、將控制器外殼重新裝入控制器機櫃。
@@ -281,6 +286,7 @@ image::../media/28_dwg_e2860_add_controller_canister_maint-e5700.gif[重新安�
 
 
 
+[[step-6-place-controller-online-duplex]]
 == 步驟6：將控制器置於線上（雙工）
 
 若為雙工組態、請將控制器置於線上、收集支援資料並恢復作業。

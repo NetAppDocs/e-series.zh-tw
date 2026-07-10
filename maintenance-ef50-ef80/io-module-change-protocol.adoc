@@ -66,6 +66,7 @@ NOTE: 必須已經安裝新硬體，因為預設傳輸協定和可用傳輸協�
 
 
 
+[[step-1-prepare-for-the-protocol-change]]
 == 步驟 1：為協議變更做好準備
 
 準備變更主機 I/O 模組上的傳輸協定，方法是驗證目前使用的傳輸協定、判斷是否需要變更傳輸協定，如果需要，請排定停機維護時段。
@@ -107,6 +108,7 @@ NOTE: 如果要查看主機 I/O 模組的可用傳輸協定清單，請在 *Host
 
 
 
+[[step-2-stop-host-io-operations]]
 == 步驟 2：停止主機 I/O 作業
 
 在變更協定之前，必須停止主機上的所有 I/O 作業，然後從儲存系統中刪除所有已定義的主機。
@@ -169,6 +171,7 @@ image::../media/icon_round_1.png[圖說編號 1]
 
 
 
+[[step-3-change-the-protocol]]
 == 步驟 3：變更傳輸協定
 
 使用 SANtricity System Manager，變更主機 I/O 模組上的傳輸協定，等待控制器完成重新開機週期，確認其狀態為 Optimal，然後重新建立主機定義。
@@ -195,6 +198,7 @@ image::../media/icon_round_1.png[圖說編號 1]
 
 
 
+[[step-4-configure-the-host-to-use-the-new-protocol]]
 == 步驟 4：設定主機以使用新傳輸協定
 
 變更主機傳輸協定後，您必須設定主機以使用新的傳輸協定。

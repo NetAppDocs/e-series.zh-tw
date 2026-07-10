@@ -38,6 +38,7 @@ NOTE: 若要維護系統完整性、您必須依照所顯示的順序執行程�
 
 
 
+[[step-1-prepare-to-add-the-drive-shelf]]
 == 步驟1：準備新增磁碟機櫃
 
 若要準備熱新增磁碟機櫃、您必須檢查重要事件並檢查IOM的狀態。
@@ -92,6 +93,8 @@ image::../media/sam1130_ss_hardware_iom_icon.gif[IOM （ ESMS ）圖示]
 
 
 
+[[step-2-install-the-drive-shelf-and-apply-power]]
+[[step2_install_drive_shelf]]
 == 步驟2：安裝磁碟機櫃並接上電源
 
 您可以安裝新的磁碟機櫃或先前安裝的磁碟機櫃、開啟電源、並檢查是否有任何需要注意的LED。
@@ -111,6 +114,7 @@ NOTE: 如需實體安裝與電源線的完整程序、請參閱機型的安裝�
 
 
 
+[[step-3-cable-your-system]]
 == 步驟3：連接系統纜線
 
 如果您要將較舊的控制器機櫃佈線至DE212C、DE224C或DE460、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃"^]。
@@ -275,6 +279,7 @@ NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤�
 ====
 
 
+[[step-4-complete-hot-add]]
 == 步驟4：完成熱新增
 
 您可以檢查是否有任何錯誤、並確認新新增的磁碟機櫃使用最新的韌體來完成熱新增功能。

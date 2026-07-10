@@ -15,6 +15,7 @@ Web Services包含API文件、可讓您直接與REST API互動。它也包含Uni
 
 
 
+[[log-in-to-web-services-api]]
 == 登入Web Services API
 
 安裝Web Services Proxy之後、您可以在瀏覽器中存取互動式API文件。
@@ -99,6 +100,7 @@ API文件是依高層級類別（例如：管理、組態）來組織。按一�
 
 
 
+[[log-in-to-unified-manager]]
 == 登入Unified Manager
 
 安裝Web服務Proxy之後、您可以存取Unified Manager、在網路型介面中管理多個儲存系統。

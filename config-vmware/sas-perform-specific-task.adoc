@@ -15,6 +15,7 @@ summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行�
 
 
 
+[[step-1-determine-sas-host-identifiers-vmware]]
 == 步驟1：判斷SAS主機識別碼- VMware
 
 使用HBA公用程式尋找SAS位址、然後使用HBA BIOS進行適當的組態設定。
@@ -36,6 +37,7 @@ summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行�
 
 
 
+[[step-2-record-your-configuration]]
 == 步驟2：記錄您的組態
 
 您可以產生及列印本頁的PDF、然後使用下列工作表記錄您的傳輸協定專屬儲存組態資訊。您需要這些資訊來執行資源配置工作。
@@ -44,6 +46,7 @@ image::../media/sas_topology_diagram_conf-vmw.gif[圖：SAS拓撲]
 
 
 
+[[host-identifiers]]
 === 主機識別碼
 
 |===
@@ -92,12 +95,14 @@ _不適用_
 |===
 
 
+[[target-identifiers]]
 === 目標識別碼
 
 建議的組態包含兩個目標連接埠。
 
 
 
+[[mapping-host-name]]
 === 對應主機名稱
 
 |===

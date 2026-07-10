@@ -17,6 +17,7 @@ summary: EF300或EF600控制器更換的要求與考量
 
 
 
+[[controller-replacement-requirements]]
 == 控制器更換要求
 
 更換控制器之前、您必須具備：
@@ -30,6 +31,7 @@ summary: EF300或EF600控制器更換的要求與考量
 
 
 
+[[replacement-while-powered-on]]
 == 電源開啟時更換
 
 如果符合下列條件、您可以在儲存陣列開機並執行主機I/O作業時更換控制器容器：

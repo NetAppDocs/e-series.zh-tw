@@ -50,6 +50,7 @@ NOTE: 如果您需要有關如何更換 E 系列 DE460c 擴充機櫃的資訊，
 
 
 
+[[step-1-prepare-to-replace-drive-drawer]]
 == 步驟1：準備更換磁碟機抽屜
 
 確定您是否可以在磁碟機櫃上線時執行更換程序、或是需要停止主機I/O活動、並關閉任何已開啟電源的磁碟櫃。
@@ -144,6 +145,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-2-remove-cable-chains]]
 == 步驟2：移除纜線鏈
 
 移除兩個纜線鏈、以便拆下並更換故障的磁碟機抽屜。
@@ -285,6 +287,7 @@ CAUTION: *可能的硬體損壞*-如果磁碟機匣已開啟電源、纜線鏈�
 
 
 
+[[step-3-remove-failed-drive-drawer]]
 == 步驟3：移除故障的磁碟機匣
 
 移除故障的磁碟機匣、以新的磁碟機匣進行更換。
@@ -339,6 +342,7 @@ image::../media/92_pht_de6600_drive_drawer_release_lever_maint-e2800.gif[釋放�
 
 
 
+[[step-4-install-new-drive-drawer]]
 == 步驟4：安裝新的磁碟機抽屜
 
 安裝新的磁碟機匣以更換故障的磁碟機匣。
@@ -378,6 +382,7 @@ CAUTION: *設備受損風險*：如果您覺得卡住、請停止推動磁碟機
 
 
 
+[[step-5-attach-cable-chains]]
 == 步驟5：連接纜線鏈
 
 連接纜線鏈、以便安全地將磁碟機重新安裝到磁碟機匣中。
@@ -462,6 +467,7 @@ CAUTION: *設備故障風險*-如果連接器未鎖定、則纜線鏈可能會�
 
 
 
+[[step-6-complete-drive-drawer-replacement]]
 == 步驟6：完整更換磁碟機匣
 
 重新插入磁碟機、並以正確順序裝回前擋板。

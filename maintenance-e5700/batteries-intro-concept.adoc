@@ -18,6 +18,7 @@ summary: 檢閱E5700電池更換要求與考量。
 
 
 
+[[recovery-guru-alerts]]
 == Recovery Guru警示
 
 如果「恢復大師」SANtricity 報告下列其中一種狀態、您必須更換受影響的電池：
@@ -30,6 +31,7 @@ summary: 檢閱E5700電池更換要求與考量。
 
 
 
+[[procedure-overview]]
 == 程序總覽
 
 若要保護資料、您必須盡快更換故障電池。
@@ -45,6 +47,7 @@ summary: 檢閱E5700電池更換要求與考量。
 
 
 
+[[requirements]]
 == 需求
 
 如果您打算更換故障電池、則必須具備：

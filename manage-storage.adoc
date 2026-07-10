@@ -15,18 +15,21 @@ summary: 管理儲存設備
 
 
 
+[[online-help-for-system-manager]]
 == System Manager 線上說明
 
 存取 https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html["SANtricity 系統管理員線上說明"^]，您可以在其中找到有關如何規劃，設定，管理及疑難排解儲存陣列的資訊。
 
 
 
+[[online-help-for-unified-manager]]
 == Unified Manager 線上說明
 
 存取 https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html["SANtricity Unified Manager 線上說明"^]，瞭解如何在多個網路儲存陣列上執行儲存管理命令。
 
 
 
+[[command-reference]]
 == 命令參考資料
 
 存取 https://docs.netapp.com/us-en/e-series-cli/index.html["命令參考資料"^]，您可在此學習如何使用命令列介面（CLI）命令來設定及監控儲存陣列。

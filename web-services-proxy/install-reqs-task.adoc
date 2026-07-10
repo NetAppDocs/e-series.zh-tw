@@ -15,6 +15,7 @@ summary: Web Services Proxy的安裝與升級需求與考量。
 
 
 
+[[installation-requirements]]
 == 安裝需求
 
 您可以在Windows或Linux主機系統上安裝及設定Web服務Proxy。
@@ -82,6 +83,7 @@ Web服務Proxy是免費的獨立產品、不需要授權金鑰。然而、適用
 |===
 
 
+[[upgrade-considerations]]
 == 升級考量
 
 如果您要從舊版升級、請注意某些項目會保留或移除。

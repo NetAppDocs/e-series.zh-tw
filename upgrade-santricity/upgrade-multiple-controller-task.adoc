@@ -33,6 +33,7 @@ CAUTION: 如果您要在SANtricity 某個不支援的應用裝置上升級支援
 
 
 
+[[step-1-perform-pre-upgrade-health-check]]
 == 步驟1：執行升級前狀態檢查
 
 健全狀況檢查會在升級程序中執行、但您也可以在開始之前分別執行健全狀況檢查。健全狀況檢查會評估儲存陣列的元件、以確保升級能夠繼續進行。
@@ -58,6 +59,7 @@ NOTE: 如果有任何陣列未通過健全狀況檢查、您可以跳過該特�
 
 
 
+[[step-2-download-software-files-from-support-site]]
 == 步驟2：從支援網站下載軟體檔案
 
 在此步驟中、您可前往NetApp支援網站、將新的可下載套件（DLP）軟體檔案儲存至管理主機系統。
@@ -85,6 +87,7 @@ NOTE: 8.42版及更新版本需要數位簽署的韌體。如果您嘗試下載�
 
 
 
+[[step-3-transfer-software-files-to-the-controllers]]
 == 步驟3：將軟體檔案傳輸至控制器
 
 您可以將SANtricity SKETOS軟體檔案和NVSRAM/檔案載入儲存庫、以便Unified Manager Upgrade Center存取。
@@ -163,6 +166,7 @@ NOTE: 軟體儲存庫會列出與Web服務Proxy相關的所有軟體檔案。如
 
 
 
+[[step-4-activate-staged-software-files-optional]]
 == 步驟4：啟動階段式軟體檔案（選用）
 
 您可以選擇立即啟動軟體檔案、或等到更方便的時間再啟動。此程序假設您選擇稍後啟動軟體檔案。

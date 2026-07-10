@@ -15,6 +15,7 @@ summary: E系列技術報告
 
 
 
+[[ef50-ef80-and-e4000-platform-trs]]
 == EF50、EF80 和 E4000 平台 TR
 
 [cols="9,9,9"]
@@ -28,13 +29,14 @@ summary: E系列技術報告
 |===
 
 
+[[legacy-platform-trs]]
 == 傳統平台 TR
 
 [cols="9,9,9,9"]
 |===
 
 
-| https://www.netapp.com/pdf.html?item=/media/17009-tr4800pdf.pdf["* TR-4800: EF600陣列功能概述*"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*+++TR-4877：EF300陣列具備Overview +++*功能"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725pdf.pdf["* TR-4725：E2800陣列功能總覽*"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724pdf.pdf["*+++TR-4724：E5700陣列提供Overview（概覽）+++*"^] 
+| https://www.netapp.com/pdf.html?item=/media/17009-tr4800.pdf["* TR-4800: EF600陣列功能概述*"^] | https://www.netapp.com/pdf.html?item=/media/21363-tr-4877.pdf["*+++TR-4877：EF300陣列具備Overview +++*功能"^] | https://www.netapp.com/pdf.html?item=/media/17026-tr4725.pdf["* TR-4725：E2800陣列功能總覽*"^] | https://www.netapp.com/pdf.html?item=/media/17120-tr4724.pdf["*+++TR-4724：E5700陣列提供Overview（概覽）+++*"^] 
 
 
 | 介紹 EF600 全快閃陣列的硬體和軟體功能以及新的 SANtricity OS 功能。 | 介紹 EF300 全快閃陣列的硬體和軟體功能，以及新的 SANtricity OS 功能。 | 介紹 E2800 混合式陣列的硬體和軟體功能，以及最新的 SANtricity OS 功能。 | 說明 E5700 產品資訊，包括最新版 SANtricity 推出的新硬體和軟體功能。 

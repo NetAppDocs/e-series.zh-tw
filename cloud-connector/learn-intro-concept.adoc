@@ -15,6 +15,7 @@ summary: 系統需求、設定、安裝、組態、以及SANtricity 與NetApp Cl
 
 
 
+[[host-hardware-requirements]]
 == 主機硬體需求
 
 您的硬體必須符合下列最低需求：
@@ -27,6 +28,7 @@ summary: 系統需求、設定、安裝、組態、以及SANtricity 與NetApp Cl
 
 
 
+[[supported-browsers]]
 == 支援的瀏覽器
 
 下列瀏覽器可搭配SANtricity 支援下列的《支援使用》（請注意最低版本）：
@@ -43,6 +45,7 @@ NOTE: 使用Microsoft Internet Explorer v11瀏覽器中的「相容性檢視」�
 
 
 
+[[compatible-storage-arrays-and-controller-firmware]]
 == 相容的儲存陣列與控制器韌體
 
 在使用SANtricity NetApp Cloud Connector應用程式之前、您應該先確認儲存陣列和韌體的相容性。
@@ -51,6 +54,7 @@ NOTE: 使用Microsoft Internet Explorer v11瀏覽器中的「相容性檢視」�
 
 
 
+[[compatible-operating-systems]]
 == 相容的作業系統
 
 下列作業系統可與此應用程式相容、並可支援此應用程式：SANtricity
@@ -78,6 +82,7 @@ SUSE Linux Enterprise Server（SLES）
 |===
 
 
+[[supported-file-systems]]
 == 支援的檔案系統
 
 您必須使用支援的檔案系統、才能透過SANtricity 支援的Cloud Connector應用程式執行備份與還原。

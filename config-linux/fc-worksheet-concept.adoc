@@ -19,6 +19,7 @@ image::../media/port_identifiers_host_and_target_conf-lin.gif[網路組態FC]
 
 
 
+[[host-identifiers]]
 == 主機識別碼
 
 |===
@@ -51,6 +52,7 @@ _不適用_
 |===
 
 
+[[target-identifiers]]
 == 目標識別碼
 
 |===
@@ -108,6 +110,7 @@ _不適用_
 |===
 
 
+[[mapping-host]]
 == 對應主機
 
 |===

@@ -18,6 +18,7 @@ NOTE: 對於EF300和EF600、您必須將區塊大小設為512位元組、以確�
 
 
 
+[[step-1-configure-the-fc-switches-vmware]]
 == 步驟1：設定FC交換器- VMware
 
 設定（分區）光纖通道（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
@@ -44,6 +45,7 @@ NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如�
 
 
 
+[[step-2-determine-the-host-port-wwpns-fc]]
 == 步驟2：確定主機連接埠WWPNS-FC
 
 若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。
@@ -69,6 +71,7 @@ Emulex Corporation Emulex LPe16000 16Gb PCIe Fibre Channel Adapter
 
 
 
+[[step-3-record-your-configuration]]
 == 步驟3：記錄您的組態
 
 您可以產生及列印本頁的PDF、然後使用下列工作表記錄FC儲存組態資訊。您需要這些資訊來執行資源配置工作。
@@ -79,6 +82,7 @@ image::../media/port_identifiers_host_and_target_conf-vmw.gif[光纖通道連接
 
 
 
+[[host-identifiers]]
 === 主機識別碼
 
 |===
@@ -111,6 +115,7 @@ _不適用_
 |===
 
 
+[[target-identifiers]]
 === 目標識別碼
 
 |===
@@ -168,6 +173,7 @@ _不適用_
 |===
 
 
+[[mapping-host]]
 === 對應主機
 
 |===

@@ -26,6 +26,7 @@ image:../media/drw_cable_pull_tab_direction_ieops-1699.svg["電纜拉片方向"]
 
 
 
+[[step-1-cable-the-inter-controller-mirroring-connections]]
 == 步驟 1：連接控制器間鏡像連接線
 
 將控制器彼此連接，以實現控制器間鏡像。控制器間鏡像連接可確保系統完全冗餘，並用於快取鏡像和 I/O 傳輸。EF50 和 EF80 儲存系統的佈線方式相同。
@@ -53,6 +54,7 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg["ef50 和 ef80 �
 
 
 
+[[step-2-cable-the-host-connections]]
 == 步驟 2：連接主機線纜
 
 根據您的網路拓撲結構（直連或光纖連接）為儲存系統連接主機。

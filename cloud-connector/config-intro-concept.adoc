@@ -15,6 +15,7 @@ summary: 成功安裝後、您可以SANtricity 透過組態精靈設定支援功
 
 
 
+[[log-in-to-the-santricity-cloud-connector-for-the-first-time]]
 == 第一次登入SANtricity 到Cloud Connector
 
 第一次初始化SANtricity 時、您必須輸入預設密碼才能存取應用程式。
@@ -37,6 +38,7 @@ summary: 成功安裝後、您可以SANtricity 透過組態精靈設定支援功
 
 
 
+[[using-the-configuration-wizard]]
 == 使用組態精靈
 
 組態精靈會在初次成功登入SANtricity 到NetApp時顯示。
@@ -45,6 +47,7 @@ summary: 成功安裝後、您可以SANtricity 透過組態精靈設定支援功
 
 
 
+[[step-1-set-administrator-password]]
 === 步驟1：設定管理員密碼
 
 您可以透過SANtricity 「設定管理員密碼」頁面、自訂後續登入至此版本的密碼。
@@ -66,6 +69,7 @@ NOTE: 在完成組態精靈之前、不會設定使用者定義的管理員密�
 
 
 
+[[step-2-set-pass-phrase]]
 === 步驟2：設定密碼
 
 在「Enter the Encryption Pass Phrase（輸入加密密碼）」頁面下、您可以指定介於8到32個字元之間的英數字元密碼。
@@ -83,6 +87,7 @@ NOTE: 在完成組態精靈之前、不會設定使用者定義的管理員密�
 
 
 
+[[step-3-select-target-type]]
 === 步驟3：選取目標類型
 
 Amazon S3、AltaVault 版本介紹及StorageGRID 支援還原功能、可透過SANtricity 《支援還原的解決方案：您可以在SANtricity 「Select the Target Type」（選取目標類型）頁面下、為「精選Cloud Connector」應用程式指定所需的儲存目標類型。
@@ -211,6 +216,7 @@ NOTE: 某些S3相容的帳戶可能需要安全的HTTP連線。如需在StorageG
 
 
 
+[[step-4-connect-to-web-services-proxy]]
 === 步驟4：連線至Web服務Proxy
 
 搭配SANtricity 使用的Web服務Proxy登入與連線資訊可透過「輸入Web服務Proxy URL與認證」頁面輸入。
@@ -232,6 +238,7 @@ NOTE: 某些S3相容的帳戶可能需要安全的HTTP連線。如需在StorageG
 
 
 
+[[step-5-select-storage-arrays]]
 === 步驟5：選擇儲存陣列
 
 根據SANtricity 透過組態精靈輸入的「驗證Web服務Proxy」認證、「選取儲存陣列」頁面下方會顯示可用的儲存陣列清單。透過本頁面、您可以選擇SANtricity 使用哪些儲存陣列來執行備份與還原工作。
@@ -256,6 +263,7 @@ NOTE: 您必須為在「Select Storage Arrays（選取儲存陣列）」頁面�
 
 
 
+[[step-6-select-hosts]]
 === 步驟6：選取主機
 
 根據透過「組態精靈」選取的Web服務Proxy託管儲存陣列、您可以透過SANtricity 「Select hosts（選取主機）」頁面、選取可用的主機、將備份和還原候選磁碟區對應到「支援對象」應用程式。
@@ -274,6 +282,7 @@ NOTE: 您必須為在「Select Storage Arrays（選取儲存陣列）」頁面�
 
 
 
+[[step-7-review-the-initial-configuration]]
 === 步驟7：檢閱初始組態
 
 《支援不支援雲端的連接器組態精靈》的最後一頁SANtricity 提供輸入結果的摘要、供您檢閱。

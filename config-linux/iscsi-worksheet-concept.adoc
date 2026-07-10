@@ -15,6 +15,7 @@ summary: 使用此工作表記錄iSCSI儲存組態資訊。
 
 
 
+[[recommended-configuration]]
 == 建議的組態
 
 建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
@@ -23,6 +24,7 @@ image::../media/50001_01_conf-lin.gif[iSCSI 網路組態]
 
 
 
+[[target-iqn]]
 == 目標IQN
 
 |===
@@ -38,6 +40,7 @@ image::../media/50001_01_conf-lin.gif[iSCSI 網路組態]
 |===
 
 
+[[mapping-host-name]]
 == 對應主機名稱
 
 |===

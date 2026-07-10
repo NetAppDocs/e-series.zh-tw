@@ -17,6 +17,7 @@ summary: 請參閱E2800碳罐類型與要求。
 
 
 
+[[power-supply]]
 == 電源供應器
 
 
@@ -26,6 +27,7 @@ NOTE: 電源供應器更換程序適用於IOM更換。若要更換IOM、請執�
 
 
 
+[[shelf-types-for-a-power-supply]]
 === 電源供應器的機櫃類型
 
 您可以更換下列磁碟櫃中的電源供應器：
@@ -47,6 +49,7 @@ image::../media/28_dwg_e2812_power_fan_canisters.gif[E2800 配備電源風扇迴
 
 
 
+[[requirements-for-replacing-a-power-supply]]
 === 更換電源供應器的需求
 
 如果您打算更換電源供應器、請謹記下列需求。
@@ -67,12 +70,14 @@ NOTE: 如果機櫃中的第二個電源供應器（電源風扇外殼）沒有�
 
 
 
+[[power-canister]]
 == 電力箱
 
 每個60個磁碟機控制器機櫃或磁碟機機櫃都包含兩個電源迴路、以提供電源備援。
 
 
 
+[[shelf-types-for-a-power-canister]]
 === 電力箱的機櫃類型
 
 您可以更換下列機櫃中的電力箱：
@@ -93,6 +98,7 @@ image::../media/28_dwg_e2860_de460c_psu_maint-e2800.gif[動力迴廊]
 
 
 
+[[requirements-for-replacing-a-power-canister]]
 === 更換電力箱的要求
 
 如果您打算更換電力箱、請謹記下列要求。
@@ -118,12 +124,14 @@ NOTE: 如果機櫃中的第二個電源箱沒有最佳狀態、或是Recovery Gu
 
 
 
+[[fan-canister]]
 == 風扇容器
 
 每個60個磁碟機控制器機櫃或磁碟機機櫃都包含兩個風扇容器。
 
 
 
+[[shelf-types-for-a-fan-canister]]
 === 風扇容器的機櫃類型
 
 您可以更換下列磁碟櫃中的風扇容器：
@@ -147,6 +155,7 @@ CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下更換風�
 
 
 
+[[requirements-for-replacing-a-fan-canister]]
 === 更換風扇容器的要求
 
 如果您打算更換風扇容器、請謹記下列要求。

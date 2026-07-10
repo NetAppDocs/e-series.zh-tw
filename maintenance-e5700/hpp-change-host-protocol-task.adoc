@@ -24,6 +24,7 @@ summary: 變更E5700的主機連接埠傳輸協定。
 
 
 
+[[step-1-determine-whether-you-have-dual-protocol-sfps]]
 == 步驟1：判斷您是否有雙傳輸協定SFP
 
 使用「支援系統管理程式」來判斷您的SFP收發器類型。SANtricity由於這些SFP可搭配FC和iSCSI傳輸協定使用、因此稱為「雙傳輸協定」或「統一化」SFP。
@@ -91,6 +92,7 @@ NOTE: E28xx或E57xx控制器不支援8Gbps FC SFP。僅支援16Gbps和32 Gbps FC
 
 
 
+[[step-2-obtain-the-feature-pack]]
 == 步驟2：取得功能套件
 
 若要取得功能套件、您需要控制器機櫃的序號、功能啟動代碼、以及儲存陣列的功能啟用識別碼。
@@ -1108,6 +1110,7 @@ NOTE: 優質功能啟動網站包含「優質功能啟動說明」的連結。 �
 
 
 
+[[step-3-stop-host-io]]
 == 步驟3：停止主機I/O
 
 在轉換主機連接埠的傳輸協定之前、請先停止主機的所有I/O作業。在成功完成轉換之前、您無法存取儲存陣列上的資料。
@@ -1141,6 +1144,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-4-change-the-feature-pack]]
 == 步驟4：變更功能套件
 
 變更功能套件以轉換基板主機連接埠、IB HIC連接埠或兩種連接埠的主機傳輸協定。

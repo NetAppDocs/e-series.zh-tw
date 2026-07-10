@@ -14,6 +14,7 @@ CAUTION: 為防止過熱、請勿讓控制器機櫃空置超過 60 分鐘。
 
 
 
+[[step-1-remove-the-controller]]
 == 步驟 1：移除控制器
 
 確認快取記憶體中的所有資料都已寫入磁碟機、拔下故障控制器的所有纜線、然後將故障控制器從機箱中取出。
@@ -96,6 +97,7 @@ image::../media/icon_round_3.png[圖說編號 3]
 
 
 
+[[step-2-move-the-power-supply]]
 == 步驟 2：移動電源供應器
 
 將電源供應器（PSU）移至替換控制器。
@@ -154,6 +156,7 @@ NOTE: 為避免損壞內部連接器，將 PSU 滑入控制器時請勿用力過
 
 
 
+[[step-3-move-the-fans]]
 == 步驟 3：移動風扇
 
 將風扇移至替換控制器。
@@ -183,6 +186,7 @@ image::../media/icon_round_2.png[圖說編號 2]
 
 
 
+[[step-4-move-the-nv-battery]]
 == 步驟 4：移動 NV 電池
 
 將 NV 電池移至替換控制器中。
@@ -236,6 +240,7 @@ NV 電池應與電池倉完全貼合。
 
 
 
+[[step-5-move-system-dimms]]
 == 步驟 5：移動系統 DIMM
 
 將 DIMM 移至替換控制器。
@@ -301,6 +306,7 @@ DIMM 底部的凹槽（位於針腳之間）應該與插槽中的凸耳對齊。
 
 
 
+[[step-6-move-the-io-modules]]
 == 步驟 6：移動 I/O 模組
 
 將 I/O 模組和任何 I/O 消隱模組移至替換控制器。
@@ -349,6 +355,7 @@ image::../media/icon_round_2.png[圖說編號 2]
 
 
 
+[[step-7-install-the-controller]]
 == 步驟 7：安裝控制器
 
 將替換控制器安裝到機箱中、重新連接其電源線及所有纜線。

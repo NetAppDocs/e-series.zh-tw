@@ -18,6 +18,7 @@ summary: 您可以管理SANtricity 同類型多個儲存陣列的支援功能、
 
 
 
+[[upgrade-workflow]]
 == 升級工作流程
 
 下列步驟提供執行軟體升級的高層級工作流程：
@@ -39,24 +40,28 @@ NOTE: 您也可以指定日後啟動軟體。
 
 
 
+[[upgrade-considerations]]
 == 升級考量
 
 在升級多個儲存陣列之前、請先檢閱規劃中的重要考量事項。
 
 
 
+[[current-versions]]
 === 目前版本
 
 您可以SANtricity 從vCenter的「Storage Plugin for vCenter」（儲存外掛程式for vCenter）頁面、針對每個探索到的儲存陣列、檢視目前的VMware作業系統軟體版本。版本會顯示在SANtricity 「更新OS軟體」欄位中。當您按一下每列的OS版本時、控制器韌體和NVSRAM資訊 會出現在快顯對話方塊中。
 
 
 
+[[other-components-requiring-upgrade]]
 === 其他需要升級的元件
 
 在升級過程中、您可能還需要升級主機的多重路徑/容錯移轉驅動程式或HBA驅動程式、以便主機能夠正確與控制器互動。如需相容性資訊、請參閱 link:https://imt.netapp.com/matrix/["互通性對照表工具"^]。
 
 
 
+[[dual-controllers]]
 === 雙控制器
 
 如果儲存陣列包含兩個控制器、而且您已安裝多重路徑驅動程式、則儲存陣列可在升級時繼續處理I/O。在升級期間、會發生下列程序：

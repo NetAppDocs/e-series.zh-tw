@@ -21,6 +21,7 @@ summary: 當您的 EF50 或 EF80 儲存系統中的 DIMM 發生故障、報告�
 
 
 
+[[step-1-determine-if-you-need-to-replace-a-dimm]]
 == 步驟1：判斷您是否需要更換DIMM
 
 當 DIMM 發生故障、顯示狀態不佳或容量不符時，請更換 DIMM。
@@ -47,6 +48,7 @@ summary: 當您的 EF50 或 EF80 儲存系統中的 DIMM 發生故障、報告�
 
 
 
+[[step-2-prepare-to-replace-a-dimm]]
 == 步驟 2 ：準備更換 DIMM
 
 準備更換 DIMM 時，請確保沒有其他儲存系統問題需要解決、確保磁碟區處於正確狀態、收集必要的工具和設備、採取預防措施防止靜電放電，並備份儲存系統的組態資料庫。
@@ -95,6 +97,7 @@ summary: 當您的 EF50 或 EF80 儲存系統中的 DIMM 發生故障、報告�
 
 
 
+[[step-3-place-the-controller-offline]]
 == 步驟 3：將控制器離線
 
 將故障控制器離線，以便安全地執行此程序的其餘部分。
@@ -133,6 +136,7 @@ CAUTION: 如果 *OK to remove* 欄位未顯示 *Yes*，請勿移除故障組件�
 
 
 
+[[step-4-remove-the-controller]]
 == 步驟 4：移除控制器
 
 確認快取記憶體中的所有資料都已寫入磁碟機、拔下故障控制器的所有纜線、然後將故障控制器從機箱中取出。
@@ -215,6 +219,7 @@ image::../media/icon_round_3.png[圖說編號 3]
 
 
 
+[[step-5-replace-a-dimm]]
 == 步驟 5：更換 DIMM
 
 找到故障控制器內部的故障 DIMM 並將其更換。
@@ -287,6 +292,7 @@ DIMM 底部的凹槽（位於針腳之間）應該與插槽中的凸耳對齊。
 
 
 
+[[step-6-reinstall-the-controller]]
 == 步驟 6：重新安裝控制器
 
 將控制器重新安裝到機箱中、重新連接其電源線及所有纜線。
@@ -345,6 +351,7 @@ NOTE: 必須在將控制器上線之前重新連接纜線。這對於鏡像纜�
 
 
 
+[[step-7-place-the-controller-online]]
 == 步驟 7：將控制器置於線上狀態
 
 將故障控制器重新上線。
@@ -386,6 +393,7 @@ NOTE: 如果無法解決問題，請在繼續執行此程序之前 https://mysup
 
 
 
+[[step-8-complete-the-dimm-replacement]]
 == 步驟 8：完成 DIMM 更換
 
 使用 SANtricity System Manager，確保已安裝最新版本的 SANtricity OS，驗證所有磁碟區是否已返回其所屬控制器，並收集支援資料以便恢復作業。
@@ -436,6 +444,7 @@ Recovery Guru 未出現（所有磁碟區似乎都已返回其所屬控制器）
 
 
 
+[[step-9-return-the-failed-part-to-netapp]]
 == 步驟 9：將故障部件退回 NetApp
 
 請依照套件隨附的 RMA 說明書中的步驟，將故障零件退回至 NetApp。如需更多資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨和更換"]頁面。

@@ -16,6 +16,7 @@ summary: 您可以升級磁碟機的韌體、以確保擁有所有最新的功�
 
 
 
+[[step-1-download-drive-firmware-files]]
 == 步驟1：下載磁碟機韌體檔案
 
 在此步驟中、您可以前往NetApp支援網站、將磁碟機韌體檔案下載至管理用戶端。
@@ -30,6 +31,7 @@ summary: 您可以升級磁碟機的韌體、以確保擁有所有最新的功�
 
 
 
+[[step-2-begin-drive-firmware-upgrade]]
 == 步驟2：開始升級磁碟機韌體
 
 在此步驟中、您將升級磁碟機的韌體。

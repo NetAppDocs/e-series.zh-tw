@@ -15,6 +15,7 @@ summary: 使用Web服務Proxy組態檔、API命令或Unified Manager介面來管
 
 
 
+[[enable-ssl]]
 == 啟用SSL
 
 Web服務Proxy使用安全通訊端層（SSL）來確保安全性、此功能可在安裝期間啟用。您可以在wsconfig.xml檔案中變更SSL連接埠名稱。
@@ -43,6 +44,7 @@ Web服務Proxy使用安全通訊端層（SSL）來確保安全性、此功能可
 
 
 
+[[bypass-certificate-validation]]
 == 略過憑證驗證
 
 為了支援安全連線、Web Services Proxy會根據自己的信任憑證來驗證儲存系統的憑證。如果需要、您可以指定Proxy在連線至儲存系統之前略過該驗證。
@@ -69,6 +71,7 @@ Web服務Proxy使用安全通訊端層（SSL）來確保安全性、此功能可
 
 
 
+[[generate-and-import-a-host-management-certificate]]
 == 產生並匯入主機管理憑證
 
 憑證可識別網站擁有者、以確保用戶端與伺服器之間的安全連線。若要為安裝Web服務Proxy的主機系統產生及匯入憑證授權單位（CA）憑證、您可以使用API端點。
@@ -132,6 +135,7 @@ NOTE: 請勿再次呼叫* POST：/certificates *或* POST：/certificates /RESET
 
 
 
+[[login-lockout-feature]]
 == 登入鎖定功能
 
 只能透過 REST API 設定，您可以限制內嵌式和 Proxy Web Services 的登入嘗試次數。根據您的設定，一旦超過 Web 服務的登入嘗試次數，就會啟用鎖定功能。

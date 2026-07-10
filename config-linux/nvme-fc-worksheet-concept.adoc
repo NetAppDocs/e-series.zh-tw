@@ -15,6 +15,7 @@ summary: 請使用這份工作表單來記錄NVMe over Fibre Channel儲存組態
 
 
 
+[[direct-connect-topology]]
 == 直接連線拓撲
 
 在直接連線拓撲中、一或多部主機會直接連線至控制器。
@@ -33,6 +34,7 @@ image::../media/nvme_fc_direct_topology.png[直接連線拓撲範例]
 
 
 
+[[switch-connect-topology]]
 == 交換器連線拓撲
 
 在網路拓撲中、會使用一或多個交換器。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得支援的交換器清單。
@@ -41,6 +43,7 @@ image::../media/nvme_fc_fabric_topology.png[交換器連線拓撲範例]
 
 
 
+[[host-identifiers]]
 == 主機識別碼
 
 從每個主機找出並記錄啟動器NQN。
@@ -62,6 +65,7 @@ image::../media/nvme_fc_fabric_topology.png[交換器連線拓撲範例]
 |===
 
 
+[[target-nqn]]
 == 目標NQN
 
 記錄儲存陣列的目標NQN。
@@ -77,6 +81,7 @@ image::../media/nvme_fc_fabric_topology.png[交換器連線拓撲範例]
 |===
 
 
+[[target-nqns]]
 == 目標NQN
 
 記錄陣列連接埠要使用的NQN。
@@ -110,6 +115,7 @@ image::../media/nvme_fc_fabric_topology.png[交換器連線拓撲範例]
 |===
 
 
+[[mapping-host-name]]
 == 對應主機名稱
 
 

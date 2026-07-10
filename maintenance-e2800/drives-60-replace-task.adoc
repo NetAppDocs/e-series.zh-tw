@@ -31,6 +31,7 @@ summary: 將E2800中的磁碟機更換為60個磁碟機櫃。
 
 
 
+[[step-1-prepare-to-replace-drive]]
 == 步驟1：準備更換磁碟機
 
 請檢查SANtricity 「恢復大師」（Recovery Guru）以準備更換磁碟機、並完成所有必要步驟。然後、您可以找到故障元件。
@@ -83,6 +84,7 @@ image::../media/28_dwg_e2860_de460c_attention_led_drive_maint-e2800.gif[磁碟�
 
 
 
+[[step-2-remove-failed-drive]]
 == 步驟2：移除故障磁碟機
 
 移除故障磁碟機、以新磁碟機取代。
@@ -120,6 +122,7 @@ NOTE: 如果您不小心移除作用中的磁碟機、請等待至少60秒、然
 
 
 
+[[step-3-install-new-drive]]
 == 步驟3：安裝新磁碟機
 
 安裝新磁碟機以更換故障磁碟機。
@@ -152,6 +155,7 @@ image::../media/28_dwg_e2860_de460c_drive_cru_maint-e2800.gif[磁碟機承載器
 
 
 
+[[step-4-complete-drive-replacement]]
 == 步驟4：完成磁碟機更換
 
 確認新磁碟機運作正常。

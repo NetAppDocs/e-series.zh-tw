@@ -33,6 +33,7 @@ summary: 更換EF300或EF600陣列中的DIMM。
 
 
 
+[[step-1-determine-if-you-need-to-replace-a-dimm]]
 == 步驟1：判斷您是否需要更換DIMM
 
 更換DIMM之前、請先確認控制器的快取大小。
@@ -50,6 +51,7 @@ summary: 更換EF300或EF600陣列中的DIMM。
 
 
 
+[[step-2-place-controller-offline]]
 == 步驟2：將控制器離線
 
 將控制器離線、以便安全地移除和更換DIMM。
@@ -96,6 +98,7 @@ NOTE: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-3-remove-controller-canister]]
 == 步驟3：移除控制器容器
 
 您可以移除故障的控制器容器、以便將DIMM更換為新的。
@@ -126,6 +129,7 @@ image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐�
 
 
 
+[[step-4-remove-dimms]]
 == 步驟4：移除DIMM
 
 如果存在記憶體不相符的情況、請更換控制器中的DIMM。
@@ -160,6 +164,7 @@ CAUTION: 小心拿住DIMM的邊緣、避免對DIMM電路板上的元件施加壓
 
 
 
+[[step-5-install-new-dimms]]
 == 步驟5：安裝新的DIMM
 
 安裝新的DIMM以取代舊的DIMM。
@@ -189,6 +194,7 @@ image::../media/dimm_5.png[將 DIMM 插入插槽，並使用彈片固定]
 
 
 
+[[step-6-reinstall-controller-canister]]
 == 步驟6：重新安裝控制器容器
 
 安裝新的DIMM之後、請將控制器容器重新安裝到控制器機櫃中。
@@ -208,6 +214,7 @@ image::../media/remove_controller_7.png[將 DIMM 安裝到控制器的插槽中]
 
 
 
+[[step-7-complete-dimms-replacement]]
 == 步驟7：完整更換DIMM
 
 將控制器置於線上、收集支援資料並恢復作業。

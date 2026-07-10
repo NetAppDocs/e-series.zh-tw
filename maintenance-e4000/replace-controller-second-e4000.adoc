@@ -29,6 +29,7 @@ summary:
 
 
 
+[[step-1-verify-the-new-controllers-part-number]]
 == 步驟1：驗證新控制器的零件編號
 
 確認新控制器的零件編號與目前安裝的控制器相同。
@@ -67,6 +68,7 @@ CAUTION: * 資料存取可能遺失 * —如果兩個零件編號不同，請勿
 
 
 
+[[step-2-install-host-interface-card]]
 == 步驟2：安裝主機介面卡
 
 如果目前安裝的控制器包含主機介面卡（ HIC ），您必須在第二個控制器圓筒中安裝相同型號的 HIC 。
@@ -90,6 +92,7 @@ CAUTION: 請小心不要過度鎖緊螺絲，以免損壞 HIC 卡。
 
 
 
+[[step-3-collect-support-data]]
 == 步驟3：收集支援資料
 
 在更換元件之前和之後收集支援資料、以確保您可以傳送一組完整的記錄給技術支援部門、以免更換無法解決問題。
@@ -128,6 +131,7 @@ CAUTION: * 可能的資料遺失 * —如果您在 I/O 作業期間繼續執行�
 
 
 
+[[step-4-change-configuration-to-duplex]]
 == 步驟4：將組態變更為雙工
 
 在將第二個控制器新增至控制器機櫃之前、您必須先安裝新的NVSRAM/檔案、然後使用命令列介面將儲存陣列設定為雙工、以將組態變更為雙工。NVSRAM/檔案的雙工版本隨附SANtricity 於適用於EOSR軟體（控制器韌體）的下載檔案中。
@@ -224,6 +228,7 @@ reset controller [a];
 
 
 
+[[step-5-remove-the-controller-blank]]
 == 步驟5：移除控制器擋片
 
 安裝第二個控制器之前、請先移除控制器擋片。控制器擋片安裝在只有一個控制器的控制器機櫃中。
@@ -238,6 +243,7 @@ reset controller [a];
 
 
 
+[[step-6-install-the-second-controller-canister]]
 == 步驟 6 ：安裝第二個控制器容器
 
 安裝第二個控制器機箱、將單工組態變更為雙工組態。
@@ -256,6 +262,7 @@ NOTE: 將控制器模組滑入機箱時、請勿過度施力、以免損壞連�
 
 
 
+[[step-7-complete-adding-a-second-controller]]
 == 步驟7：完成新增第二個控制器
 
 完成新增第二個控制器的程序、方法是確認該控制器運作正常、重新安裝雙工NVSRAM檔、在控制器之間分散磁碟區、以及收集支援資料。

@@ -15,6 +15,7 @@ summary: 您可以針對探索到的儲存系統上的所有磁碟和磁碟區�
 
 
 
+[[overview-of-statistics]]
 == 統計資料總覽
 
 統計資料提供有關資料收集率和儲存系統效能的資訊。
@@ -31,12 +32,14 @@ Web服務Proxy可存取下列類型的統計資料：
 
 
 
+[[statistics-functionality]]
 == 統計功能
 
 Web服務Proxy提供API端點、可從支援的硬體模型和軟體版本擷取原始和分析的控制器及介面統計資料。
 
 
 
+[[raw-statistics-apis]]
 === 原始統計資料API
 
 * 「+」/「儲存系統」/「｛system-id｝/控制器統計資料+」
@@ -47,6 +50,7 @@ Web服務Proxy提供API端點、可從支援的硬體模型和軟體版本擷取
 
 
 
+[[analyzed-statistics-apis]]
 === 分析統計資料API
 
 * 「+/儲存系統/｛id｝/分析控制器統計資料/+」
@@ -69,6 +73,7 @@ NOTE: 系統啟動時、先前沒有統計資料集合可用來計算各種度�
 
 
 
+[[configure-polling-intervals]]
 == 設定輪詢時間間隔
 
 若要設定輪詢時間間隔、請修改wsconfig.xml檔案、以指定輪詢時間間隔（秒）。

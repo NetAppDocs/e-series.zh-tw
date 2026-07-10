@@ -15,6 +15,7 @@ summary: 您可以SANtricity 透過圖形化的解除安裝程式或主控台來
 
 
 
+[[uninstall-using-graphical-mode]]
 == 使用圖形模式解除安裝
 
 您可以使用圖形模式、在SANtricity Linux作業系統上解除安裝支援不支援的Cloud Connector。
@@ -46,6 +47,7 @@ summary: 您可以SANtricity 透過圖形化的解除安裝程式或主控台來
 
 
 
+[[uninstall-using-console-mode]]
 == 使用主控台模式解除安裝
 
 您可以使用主控台模式、在SANtricity Linux作業系統上解除安裝支援不支援的Cloud Connector。

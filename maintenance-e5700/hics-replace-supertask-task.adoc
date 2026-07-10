@@ -33,6 +33,7 @@ summary: 更換E5700中的HIC。
 
 
 
+[[step-1-place-controller-offline-duplex]]
 == 步驟1：使控制器離線（雙工）
 
 如果您有雙工組態、則必須將受影響的控制器離線、以便安全地移除故障的HIC。
@@ -105,6 +106,7 @@ NOTE: 在更新狀態之前、請勿開始任何其他作業。
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 移除控制器容器、以便新增HIC。
@@ -165,6 +167,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-3-install-a-hic]]
 == 步驟3：安裝HIC
 
 安裝新的HIC以更換故障的HIC。
@@ -219,6 +222,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e5700.gif[將面板安�
 
 
 
+[[step-4-reinstall-controller-canister]]
 == 步驟4：重新安裝控制器容器
 
 安裝HIC之後、將控制器外殼重新安裝到控制器機櫃中。
@@ -261,6 +265,7 @@ NOTE: 此時請勿將資料纜線連接至新的HIC連接埠。
 
 
 
+[[step-5-place-controller-online-duplex]]
 == 步驟5：將控制器置於線上（雙工）
 
 如果您使用雙工組態、請將控制器上線、以確認儲存陣列運作正常、收集支援資料並恢復作業。

@@ -20,6 +20,7 @@ NOTE: 所有備份與還原工作的時間戳記、都會SANtricity 使用本地
 
 
 
+[[create-a-new-image-based-backup]]
 == 建立新的映像型備份
 
 您可以透過SANtricity 「ImageCloud Connector」應用程式備份頁面上的「Create」（建立）功能、建立新的映像型備份。
@@ -73,6 +74,7 @@ NOTE: 您可以稍後透過備份頁面上的執行功能、執行所選映像�
 
 
 
+[[create-a-new-folderfile-based-backup]]
 == 建立新的資料夾/檔案型備份
 
 您可以透過SANtricity 位於「還原Cloud Connector」應用程式備份頁面的「Create」（建立）功能、建立新的資料夾/檔案型備份。
@@ -136,6 +138,7 @@ NOTE: 您也可以稍後透過備份頁面上的執行功能、執行所選檔�
 
 
 
+[[run-full-and-incremental-backups]]
 == 執行完整和遞增備份
 
 您可以透過備份頁面上的執行功能執行完整和遞增備份。遞增備份僅適用於檔案型備份。
@@ -170,6 +173,7 @@ NOTE: 根據上次透過SANtricity NetApp Cloud Connector應用程式執行的�
 
 
 
+[[delete-a-backup-job]]
 == 刪除備份工作
 
 刪除功能會刪除所選備份與備份集所在之指定目標位置的備份資料。

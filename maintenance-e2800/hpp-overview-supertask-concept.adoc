@@ -15,6 +15,7 @@ summary: 檢閱E2800上的主機連接埠傳輸協定轉換需求。
 
 
 
+[[host-ports-you-can-change]]
 == 您可以變更的主機連接埠
 
 
@@ -99,6 +100,7 @@ NOTE: 也提供雙埠HIC。
 
 
 
+[[requirements-for-changing-the-host-protocol]]
 == 變更主機傳輸協定的需求
 
 * 您必須為此程序排程停機維護時間。
@@ -111,6 +113,7 @@ NOTE: 也提供雙埠HIC。
 
 
 
+[[considerations-for-changing-the-host-protocol]]
 == 變更主機傳輸協定的考量事項
 
 變更主機傳輸協定的考量取決於基板主機連接埠和HIC連接埠的啟動和結束傳輸協定。
@@ -122,6 +125,7 @@ NOTE: 下列考量僅適用於轉換已在使用中的儲存陣列時。如果�
 
 
 
+[[converting-from-fc-to-iscsi]]
 === 從FC轉換為iSCSI
 
 * 如果您的組態包含連接至FC基板連接埠的SAN開機主機、請檢查 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互通性對照表"^] 確保iSCSI支援組態的工具。如果不是、您就無法將主機傳輸協定轉換成iSCSI。
@@ -151,6 +155,7 @@ CAUTION: 如果您在轉換至iSCSI之前未停用同步鏡射關係、系統將
 
 
 
+[[converting-from-iscsi-to-fc]]
 === 從iSCSI轉換為FC
 
 * 非同步鏡射需要本機儲存陣列和遠端儲存陣列使用相同的傳輸協定。如果您目前使用的是採用底板連接埠的非同步鏡射、則必須先停用非同步鏡射、才能變更傳輸協定。
@@ -159,6 +164,7 @@ CAUTION: 如果您在轉換至iSCSI之前未停用同步鏡射關係、系統將
 
 
 
+[[converting-from-fc-to-fciscsi]]
 === 從FC轉換為FC/iSCSI
 
 鏡射考量：
@@ -244,6 +250,7 @@ NOTE: 在這種情況下、無法共享DA磁碟區。
 
 
 
+[[converting-from-iscsi-to-fciscsi]]
 === 從iSCSI轉換為FC/iSCSI
 
 * 如果您打算轉換用於鏡射的連接埠、則必須將鏡射關係移至轉換後仍保留iSCSI的連接埠。
@@ -258,6 +265,7 @@ NOTE: 在這種情況下、無法共享DA磁碟區。
 
 
 
+[[converting-from-fciscsi-to-fc]]
 === 從FC/iSCSI轉換為FC
 
 * 將所有主機連接埠轉換為FC時、請記住、非同步鏡射必須發生在編號最高的FC連接埠上。
@@ -322,6 +330,7 @@ FC
 
 
 
+[[converting-from-fciscsi-to-iscsi]]
 === 從FC/iSCSI轉換為iSCSI
 
 * iSCSI不支援同步鏡像。
@@ -337,6 +346,7 @@ CAUTION: *可能的資料遺失*-如果您在將連接埠轉換為iSCSI之前、
 
 
 
+[[same-host-protocol-and-mirroring-operations]]
 === 相同的主機傳輸協定和鏡射作業
 
 如果用於鏡射的主機連接埠在套用功能套件後仍維持相同的傳輸協定、鏡射作業將不受影響。即使如此、在套用功能套件之前、您仍應確認所有鏡射一致性群組均已同步。

@@ -15,6 +15,7 @@ summary: 深入瞭解Web服務API
 
 
 
+[[url-elements-in-requests]]
 == 要求中的URL元素
 
 無論使用何種程式設計語言或工具、對Web服務API的每個呼叫都有類似的結構、包含URL、HTTP動詞和Accept標頭。
@@ -72,6 +73,7 @@ API路徑包含三個部分：
 |===
 
 
+[[supported-http-verbs]]
 == 支援的HTTP verb
 
 支援的HTTP verb包括GET、POST及DELETE：
@@ -86,12 +88,14 @@ NOTE: 目前、Web Services API不支援PUT或修補程式。您可以改用POST
 
 
 
+[[accept-headers]]
 == 接受標頭
 
 傳回要求本文時、Web Services會以Json格式傳回資料（除非另有指定）。某些用戶端預設要求「'text/html」或類似的內容。在這些情況下、API會以HTTP代碼406回應、表示無法以這種格式提供資料。最佳實務做法是針對您預期Json為回應類型的任何情況、將Accept標頭定義為「application/json」。在未傳回回應本文的其他情況下（例如刪除）、提供Accept標頭不會造成任何非預期的影響。
 
 
 
+[[responses]]
 == 回應
 
 向API提出要求時、回應會傳回兩項重要資訊：

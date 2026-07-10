@@ -26,6 +26,7 @@ summary: 移除舊控制器之後、您可以在控制器磁碟機匣中安裝�
 
 
 
+[[step-1-install-battery]]
 == 步驟1：安裝電池
 
 安裝從原控制器容器或您訂購的新電池中取出的電池。
@@ -56,6 +57,7 @@ TIP: 若要確定控制器電池已正確安裝在E5XX控制器磁碟機匣中�
 
 
 
+[[step-2-install-new-controller-canister]]
 == 步驟2：安裝新的控制器容器
 
 [role="tabbed-block"]

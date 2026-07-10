@@ -16,6 +16,7 @@ summary: 若要移除Web服務Proxy和Unified Manager、您可以使用任何模
 
 
 
+[[graphical-mode-uninstall]]
 == 圖形模式解除安裝
 
 您可以在Windows或Linux的圖形模式下執行解除安裝。在圖形模式中、提示會出現在Windows型介面中。
@@ -47,6 +48,7 @@ NOTE: 或者、您也可以前往功能表：「控制台」「程式集」>「�
 
 
 
+[[console-mode-uninstall]]
 == 主控台模式解除安裝
 
 您可以在Windows或Linux的主控台模式下執行解除安裝。在主控台模式中、提示會出現在終端機視窗中。
@@ -65,6 +67,7 @@ NOTE: 或者、您也可以前往功能表：「控制台」「程式集」>「�
 
 
 
+[[silent-mode-uninstall]]
 == 無聲模式解除安裝
 
 您可以在Windows或Linux的Silent模式下執行解除安裝。在無訊息模式中、終端機視窗不會顯示任何傳回訊息或指令碼。
@@ -82,6 +85,7 @@ NOTE: 或者、您也可以前往功能表：「控制台」「程式集」>「�
 
 
 
+[[rpm-command-uninstall-linux-only]]
 == RPM命令解除安裝（僅限Linux）
 
 您可以使用RPM命令、從Linux系統解除安裝Web Services Proxy。

@@ -18,6 +18,7 @@ summary: 適用於vCenter的《VMware vSphere儲存外掛程式》SANtricity 可
 
 
 
+[[available-tasks]]
 == 可用的工作
 
 您可以使用外掛程式來執行下列工作：
@@ -41,12 +42,14 @@ image:../media/vcenter_communication2.png["vCenter 通訊環境"]
 
 
 
+[[interface-overview]]
 == 介面總覽
 
 當您登入外掛程式時、主頁會開啟*管理-全部*。在此頁面中、您可以檢視及管理網路中所有探索到的儲存陣列。
 
 
 
+[[navigation-sidebar]]
 === 導覽側邊列
 
 導覽側邊列會顯示下列項目：
@@ -64,6 +67,7 @@ NOTE: 當儲存陣列處於非最佳狀態時、部分作業無法使用。
 
 
 
+[[supported-browsers]]
 === 支援的瀏覽器
 
 vCenter的儲存外掛程式可從多種瀏覽器存取。支援下列瀏覽器和版本。
@@ -75,12 +79,14 @@ vCenter的儲存外掛程式可從多種瀏覽器存取。支援下列瀏覽器�
 
 
 
+[[user-roles-and-permissions]]
 === 使用者角色與權限
 
 若要存取vCenter儲存外掛程式中的工作、使用者必須擁有讀寫權限。根據預設、所有已定義的VMware vCenter使用者ID都沒有權限可在外掛程式中執行工作。
 
 
 
+[[configuration-overview]]
 == 組態總覽
 
 組態包括下列步驟：
@@ -94,6 +100,7 @@ vCenter的儲存外掛程式可從多種瀏覽器存取。支援下列瀏覽器�
 
 
 
+[[find-more-information]]
 == 如需詳細資訊、請參閱
 
 如需管理vSphere Client中資料存放區的詳細資訊、請參閱 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere文件"^]。

@@ -38,6 +38,7 @@ summary: 升級E2800陣列中的主機介面卡（HIC）。
 
 
 
+[[step-1-prepare-to-upgrade-host-interface-cards]]
 == 步驟1：準備升級主機介面卡
 
 準備升級主機介面卡（HIC）、方法是備份儲存陣列的組態資料庫、收集支援資料、以及停止主機I/O作業。然後、您可以關閉控制器機櫃的電源。
@@ -121,6 +122,7 @@ image::../media/28_dwg_2800_controller_attn_led_maint-e2800.gif[快取作用中 
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 您可以移除控制器容器、以便升級新的主機介面卡（HIC）。當您移除控制器容器時、必須拔下所有纜線。然後、您可以將控制器外殼滑出控制器機櫃。
@@ -185,6 +187,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-3-remove-a-host-interface-card]]
 == 步驟3：移除主機介面卡
 
 移除原始主機介面卡（HIC）、以便更換為升級的主機介面卡。
@@ -232,6 +235,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[從控制器中卸�
 
 
 
+[[step-4-install-host-interface-card]]
 == 步驟4：安裝主機介面卡
 
 安裝新的主機介面卡（HIC）、以增加儲存陣列中的主機連接埠數量。
@@ -272,6 +276,7 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[將 HIC 安裝到�
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 步驟5：重新安裝控制器容器
 
 安裝新的主機介面卡（HIC）之後、將控制器容器重新安裝到控制器機櫃中。
@@ -315,6 +320,7 @@ NOTE: 此時請勿將資料纜線連接至新的HIC連接埠。
 
 
 
+[[step-6-complete-host-interface-card-upgrade]]
 == 步驟6：完整的主機介面卡升級
 
 檢查控制器LED和七段顯示、確認控制器狀態為最佳、以完成主機介面卡升級程序。

@@ -15,10 +15,12 @@ summary: 您的系統必須符合遠端儲存磁碟區的相容要求。
 
 
 
+[[hardware-requirements]]
 == 硬體需求
 
 
 
+[[supported-protocols]]
 === 支援的傳輸協定
 
 對於遠端儲存磁碟區功能的初始版本、只有iSCSI和IPV4傳輸協定才提供支援。
@@ -27,6 +29,7 @@ summary: 您的系統必須符合遠端儲存磁碟區的相容要求。
 
 
 
+[[storage-system-requirements]]
 === 儲存系統需求
 
 E系列儲存系統必須包括：
@@ -41,12 +44,14 @@ E系列儲存系統必須包括：
 
 
 
+[[volume-requirements]]
 == Volume需求
 
 用於匯入的磁碟區必須符合大小、狀態及其他條件的要求。
 
 
 
+[[remote-storage-volume]]
 === 遠端儲存Volume
 
 匯入的來源Volume稱為「遠端儲存Volume」。 此Volume必須符合下列條件：
@@ -73,6 +78,7 @@ E系列儲存系統必須包括：
 
 
 
+[[target-volume-candidates]]
 === 目標Volume候選對象
 
 目標Volume是本機E系列系統上的目的地Volume。
@@ -93,6 +99,7 @@ System Manager會在匯入遠端儲存精靈中自動檢查這些需求。只有
 
 
 
+[[restrictions]]
 == 限制
 
 遠端儲存功能有下列限制：
@@ -111,6 +118,7 @@ System Manager會在匯入遠端儲存精靈中自動檢查這些需求。只有
 
 
 
+[[preparation-for-production-imports]]
 == 準備正式作業匯入
 
 您應該在正式作業匯入之前執行測試或「演習」匯入、以驗證適當的儲存和網路組態。

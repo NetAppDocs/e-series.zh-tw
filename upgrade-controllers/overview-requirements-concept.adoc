@@ -18,6 +18,7 @@ NOTE: 如需每個 E 系列控制器支援組態的特定資訊，請參閱 http
 
 
 
+[[hardware-and-firmware-requirements]]
 == 硬體與韌體需求
 
 * *雙工和單工控制器升級*
@@ -89,6 +90,7 @@ NOTE: 務必按照說明連接纜線。如需詳細資訊、請參閱 https://do
 
 
 
+[[upgrade-compatibility]]
 == 升級相容性
 
 檢閱各儲存陣列機型支援的升級途徑。
@@ -300,6 +302,7 @@ EF540 ， EF550 和 EF560 控制器不得放入 SAS-3 機櫃。
 ====
 
 
+[[sas-enclosures]]
 == SAS機箱
 
 E5700可透過機頭升級、支援DE5600和DE6600 SAS-2機箱。在SAS-2機箱中安裝E5700控制器時、會停用對基礎主機連接埠的支援。
@@ -335,6 +338,7 @@ SAS-3磁碟櫃包括下列機型：
 
 
 
+[[sas-2-to-sas-3-investment-protection]]
 == SAS-2至SAS-3投資保護
 
 您可以將SAS-2系統重新設定為在新的SAS-3控制器機櫃（E57XX/EF570/E28XX）後方使用。

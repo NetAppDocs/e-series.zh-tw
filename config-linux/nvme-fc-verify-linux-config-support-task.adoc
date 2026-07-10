@@ -16,6 +16,7 @@ summary: 為了確保可靠的營運、您需要建立實作計畫、然後使�
 
 
 
+[[verify-the-linux-configuration-is-supported]]
 == 驗證是否支援Linux組態
 
 為了確保可靠的營運、您需要建立實作計畫、然後使用NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「可靠性」）來驗證是否支援整個組態。
@@ -37,12 +38,14 @@ summary: 為了確保可靠的營運、您需要建立實作計畫、然後使�
 
 
 
+[[review-restrictions-for-nvme-over-fc]]
 == 檢閱NVMe over FC的限制
 
 在使用NVMe over Fibre Channel之前、請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 檢閱最新的控制器、主機和還原限制。
 
 
 
+[[storage-and-disaster-recovery-restrictions]]
 === 儲存與災難恢復限制
 
 * 不支援非同步與同步鏡射。

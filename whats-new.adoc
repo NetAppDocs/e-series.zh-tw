@@ -16,12 +16,14 @@ summary: 更新功能。SANtricity
 
 
 
+[[new-features-in-version-12-0r1]]
 == Version 12.0R1 版本新增功能
 
 此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 12.0R1 README。
 
 
 
+[[new-features-in-version-12-0]]
 == 12.0 版的新功能
 
 
@@ -70,18 +72,21 @@ SANtricity System Manager 中現已提供全新的腳本編輯器。腳本編輯
 |===
 
 
+[[new-features-in-version-11-90r5]]
 == Version 11.90R5 版本新增功能
 
 此版本僅包含缺陷修復，不包含任何新功能。有關此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R5 README。
 
 
 
+[[new-features-in-version-11-90r4]]
 == 11.90R4 版本新增功能
 
 此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 11.90R4 README。
 
 
 
+[[new-features-in-version-11-90r3]]
 == 11.90R3 版的新功能
 
 [cols="35h,~"]
@@ -97,12 +102,14 @@ SANtricity 作業系統對 IOM12C 和 DCM3 的支持
 |===
 
 
+[[new-features-in-version-11-90r2]]
 == 11.90R2 版的新功能
 
 此版本僅包含輕微變更，且沒有新功能。有關此版本變更的詳細資訊，請參閱 https://library.netapp.com/ecm/ecm_download_file/ECMLP3334464["E 系列 11.90 版本資訊"^]。
 
 
 
+[[new-features-in-version-11-90r1]]
 == 11.90R1 版的新功能
 
 [cols="35h,~"]
@@ -125,6 +132,7 @@ E4000 控制器現在支援 12Gb SAS 主機介面卡。
 |===
 
 
+[[new-features-in-version-11-90]]
 == 11.90 版的新功能
 
 [cols="35h,~"]
@@ -168,24 +176,28 @@ Web 服務現在可使用登入鎖定功能
 |===
 
 
+[[new-features-in-version-11-80-1r4]]
 == 11.80.1R4 版的新功能
 
 此版本僅包含輕微變更，且不含新功能或限制。如需此版本變更的詳細資訊，請參閱 README 檔案。
 
 
 
+[[new-features-in-version-11-80-1r3]]
 == 11.80.1R3 版的新功能
 
 此版本僅包含輕微變更，且不含新功能或限制。如需此版本變更的詳細資訊，請參閱 README 檔案。
 
 
 
+[[new-features-in-version-11-80-1r2]]
 == 11.80.1R2 版的新功能
 
 此版本僅包含輕微變更，且不含新功能或限制。如需此版本變更的詳細資訊，請參閱 README 檔案。
 
 
 
+[[new-features-in-version-11-80-1r1]]
 == 11.80.1R1 版的新功能
 
 [cols="35h,~"]
@@ -201,6 +213,7 @@ SANtricity 系統管理員和 Unified Manager 應用程式自我簽署憑證的�
 |===
 
 
+[[new-features-in-version-11-80-1]]
 == 11.80.1 版的新功能
 
 [cols="35h,~"]
@@ -244,6 +257,7 @@ Web 服務 Proxy 已更新至 6.1 版、以與 E 系列 11.80.1 版相容。
 |===
 
 
+[[new-features-in-version-11-80]]
 == 11.80 版的新功能
 
 [cols="35h,~"]

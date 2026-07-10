@@ -16,12 +16,14 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[controller-upgrades-single-or-multiple]]
 == 控制器升級（單一或多個）
 
 在升級控制器之前、請先檢閱這些重要考量事項。
 
 
 
+[[current-versions]]
 === 目前版本
 
 您可以檢視軟體和韌體的目前版本、如下所示：
@@ -32,6 +34,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[components-included-in-the-upgrade]]
 === 升級所含的元件
 
 下列元件包含在SANtricity 整個作業系統升級程序中：
@@ -44,6 +47,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[components-to-upgrade-separately]]
 === 元件需個別升級
 
 下列元件必須個別升級：
@@ -58,6 +62,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[dual-controllers-and-io-processing]]
 === 雙控制器與I/O處理
 
 如果儲存陣列包含兩個控制器、而且您已安裝多重路徑驅動程式、則儲存陣列可在升級時繼續處理I/O。在升級期間、會發生下列程序：
@@ -72,6 +77,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[health-check]]
 === 健全狀況檢查
 
 健全狀況檢查會在升級程序中執行。這項健全狀況檢查會評估所有儲存陣列元件、以確保升級能夠繼續進行。下列情況可能會導致升級無法進行：
@@ -91,6 +97,7 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[immediate-or-staged-upgrade]]
 === 立即或分段升級
 
 您可以立即啟動升級、或稍後再進行登入。您可以選擇稍後啟動、原因如下：
@@ -101,18 +108,21 @@ summary: 檢閱儲存陣列SANtricity 的更新考量事項、瞭解如何使用
 
 
 
+[[drive-firmware-upgrade]]
 == 磁碟機韌體升級
 
 在升級磁碟機韌體之前、請先檢閱這些重要考量事項。
 
 
 
+[[drive-compatibility]]
 === 磁碟機相容性
 
 每個磁碟機韌體檔案都包含執行韌體的磁碟機類型相關資訊。您只能將指定的韌體檔案下載至相容的磁碟機。系統管理員會在升級過程中自動檢查相容性。
 
 
 
+[[drive-upgrade-methods]]
 === 磁碟機升級方法
 
 磁碟機韌體升級方法有兩種：線上和離線。

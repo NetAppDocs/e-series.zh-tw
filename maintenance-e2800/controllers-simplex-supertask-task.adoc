@@ -33,6 +33,7 @@ summary: 您可以在單工組態中更換故障的控制器機箱。
 
 
 
+[[step-1-prepare-to-replace-controller-simplex]]
 == 步驟1：準備更換控制器（單工）
 
 儲存磁碟機安全金鑰、備份組態及收集支援資料、以準備更換控制器機箱。然後、您可以停止主機I/O作業、並關閉控制器機櫃的電源。
@@ -120,12 +121,14 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-2-remove-failed-controller-simplex]]
 == 步驟2：移除故障的控制器（單工）
 
 請以新的容器來更換故障的容器。
 
 
 
+[[step-2a-remove-controller-canister-simplex]]
 === 步驟2a：移除控制器容器（單工）
 
 移除控制器容器。
@@ -180,6 +183,7 @@ CAUTION: 請務必用兩隻手支撐控制器容器的重量。
 
 
 
+[[step-2b-remove-battery-simplex]]
 === 步驟2b：取出電池（單工）
 
 從控制器機櫃中取出控制器機箱之後、請取出電池。
@@ -215,6 +219,7 @@ image::../media/28_dwg_e2800_remove_battery_maint-e2800.gif[從控制器箱中�
 
 
 
+[[step-2c-remove-host-interface-card-simplex]]
 === 步驟2c：移除主機介面卡（單工）
 
 如果控制器容器包含主機介面卡（HIC）、請從原始控制器容器中取出HIC、以便在新的控制器容器中重複使用。
@@ -248,12 +253,14 @@ image::../media/28_dwg_e2800_hic_thumbscrews_maint-e2800.gif[從控制器卡上�
 
 
 
+[[step-3-install-new-controller-simplex]]
 == 步驟3：安裝新的控制器（單工）
 
 安裝新的控制器容器以更換故障的控制器容器。
 
 
 
+[[step-3a-install-battery-simplex]]
 === 步驟3a：安裝電池（單工）
 
 將電池裝入更換的控制器容器中。您可以安裝從原始控制器容器中取出的電池、或安裝您訂購的新電池。
@@ -302,6 +309,7 @@ image:../media/28_dwg_e2800_battery_flange_not_ok_maint-e2800.gif["金屬凸緣�
 
 
 
+[[step-3b-install-host-interface-card-simplex]]
 === 步驟3b：安裝主機介面卡（單工）
 
 如果您從原始控制器容器中移除主機介面卡（HIC）、請將該HIC安裝在新的控制器容器中。
@@ -338,6 +346,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.gif[將面板重�
 
 
 
+[[step-3c-install-new-controller-canister-simplex]]
 === 步驟3c：安裝新的控制器容器（單工）
 
 安裝電池和HIC之後、如果最初安裝了HIC、您可以將新的控制器外殼安裝到控制器櫃中。
@@ -405,6 +414,7 @@ image::../media/28_dwg_e2824_remove_controller_canister_simplex_maint-e2800.gif[
 
 
 
+[[step-4-complete-controller-replacement-simplex]]
 == 步驟4：完成控制器更換（單工）
 
 開啟控制器機櫃的電源、收集支援資料並恢復作業。

@@ -4,6 +4,7 @@
 
 
 
+[[step-1-prepare-to-replace-the-drive]]
 == 步驟 1：準備更換磁碟機
 
 準備更換磁碟機時，請確認磁碟機已發生故障、確認您有支援的替換磁碟機、確保您可以存取 SANtricity System Manager、採取靜電放電預防措施，並實際找到故障的磁碟機。
@@ -65,6 +66,7 @@ NOTE: 您必須從儲存系統前面拆下擋板才能看到磁碟機 LED 指示
 
 
 
+[[step-2-replace-the-drive]]
 == 步驟 2：更換磁碟機
 
 用新硬碟替換故障硬碟。
@@ -133,6 +135,7 @@ image::../media/icon_round_3.png[圖說編號 3]
 
 
 
+[[step-3-complete-the-drive-replacement]]
 == 步驟 3：完成磁碟機更換
 
 確認更換的磁碟機運作正常，並確保磁碟機重建已開始。
@@ -198,6 +201,7 @@ NOTE: 根據您的組態、控制器可能會自動將資料重建到新磁碟�
 
 
 
+[[step-4-return-the-failed-part-to-netapp]]
 == 步驟 4：將故障部件退回 NetApp
 
 請依照套件隨附的 RMA 說明書中的步驟，將故障零件退回至 NetApp。如需更多資訊，請參閱 https://mysupport.netapp.com/site/info/rma["零件退貨和更換"]頁面。

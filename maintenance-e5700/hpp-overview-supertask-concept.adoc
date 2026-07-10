@@ -15,6 +15,7 @@ summary: 轉換E5700的主機傳輸協定。
 
 
 
+[[host-ports-you-can-change]]
 == 您可以變更的主機連接埠
 
 
@@ -26,6 +27,7 @@ image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[E5700 �
 
 
 
+[[requirements]]
 == 需求
 
 * 您必須為此程序排程停機維護時間。
@@ -38,6 +40,7 @@ image::../media/e5700_with_2_port_100g_edr_infiniband_hic_w_callouts.gif[E5700 �
 
 
 
+[[considerations-for-changing-the-host-protocol]]
 == 變更主機傳輸協定的考量事項
 
 變更主機傳輸協定的考量取決於基板主機連接埠和HIC連接埠的啟動和結束傳輸協定。
@@ -49,6 +52,7 @@ NOTE: 下列考量僅適用於轉換已在使用中的儲存陣列時。如果�
 
 
 
+[[converting-from-fc-to-iscsi]]
 === 從FC轉換為iSCSI
 
 * 非同步鏡射需要本機儲存陣列和遠端儲存陣列使用相同的傳輸協定。
@@ -75,6 +79,7 @@ CAUTION: 如果您在轉換至iSCSI之前未停用同步鏡射關係、系統將
 
 
 
+[[converting-from-iscsi-to-fc]]
 === 從iSCSI轉換為FC
 
 * 非同步鏡射需要本機儲存陣列和遠端儲存陣列使用相同的傳輸協定。如果您目前使用的是採用底板連接埠的非同步鏡射、則必須先停用非同步鏡射、才能變更傳輸協定。
@@ -83,6 +88,7 @@ CAUTION: 如果您在轉換至iSCSI之前未停用同步鏡射關係、系統將
 
 
 
+[[converting-ib-iser-tofrom-ib-srp]]
 === 將IB-iSER轉換為/從IB-SRP
 
 * 從iSER轉換為SRP時、您不需要對硬體進行任何變更。
@@ -102,6 +108,7 @@ NOTE: 停用磁碟區之後、就無法重新啟用磁碟區上的DA。
 
 
 
+[[mirroring-operations-need-same-host-protocol]]
 === 鏡射作業需要相同的主機傳輸協定
 
 如果用於鏡射的主機連接埠在套用功能套件後仍維持相同的傳輸協定、鏡射作業將不受影響。即使如此、在套用功能套件之前、您仍應確認所有鏡射一致性群組均已同步。套用功能套件之後、您應該測試本機儲存陣列與遠端儲存陣列之間的通訊。如果您對如何執行此操作有任何疑問、請參閱SANtricity 《支援系統》的線上說明。

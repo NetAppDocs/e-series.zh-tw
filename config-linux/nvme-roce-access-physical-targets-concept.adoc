@@ -17,6 +17,7 @@ summary: 您可以根據Linux版本設定導向裝置目標的I/O。
 
 
 
+[[nvme-devices-are-io-targets]]
 == NVMe 裝置是 I/O 目標
 
 . 輸入以下命令，以找出從 E-Series 陣列對應到此主機的磁碟區。

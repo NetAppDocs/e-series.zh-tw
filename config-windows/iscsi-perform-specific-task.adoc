@@ -16,6 +16,7 @@ summary: 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換
 
 
 
+[[step-1-configure-the-switches-iscsi-windows]]
 == 步驟1：設定交換器- iSCSI、Windows
 
 您可以根據廠商的iSCSI建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
@@ -37,6 +38,7 @@ NOTE: 控制器的交換器連接埠不支援連接埠通道/LACP。不建議使
 
 
 
+[[step-2-configure-networking-iscsi-windows]]
 == 步驟2：設定網路功能- iSCSI Windows
 
 您可以根據資料儲存需求、以多種方式設定iSCSI網路。如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。
@@ -62,6 +64,7 @@ NOTE: 許多網路交換器必須設定在超過9、000位元組的IP負荷上�
 
 
 
+[[step-3-configure-array-side-networking-iscsi-windows]]
 == 步驟3：設定陣列端的網路功能、例如iSCSI、Windows
 
 您可以使用SANtricity 支援支援系統的圖形使用者介面、在陣列端設定iSCSI網路。
@@ -194,6 +197,7 @@ NOTE: 此選項僅適用於iSCSI環境。在NVMe over RoCE環境中無法使用�
 
 
 
+[[step-4-configure-host-side-networking-iscsi]]
 == 步驟4：設定主機端網路功能- iSCSI
 
 您必須在主機端設定iSCSI網路、才能讓Microsoft iSCSI啟動器與陣列建立工作階段。
@@ -230,6 +234,7 @@ NOTE: 此選項僅適用於iSCSI環境。在NVMe over RoCE環境中無法使用�
 
 
 
+[[step-5-verify-ip-network-connections-iscsi-windows]]
 == 步驟5：驗證IP網路連線- iSCSI、Windows
 
 您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。
@@ -276,12 +281,14 @@ NOTE: 如果命令失敗（例如、傳回「Packet to be f破碎、但DF set」
 
 
 
+[[step-6-record-your-configuration]]
 == 步驟6：記錄您的組態
 
 您可以產生及列印本頁的PDF、然後使用下列工作表記錄iSCSI儲存組態資訊。您需要這些資訊來執行資源配置工作。
 
 
 
+[[recommended-configuration]]
 === 建議的組態
 
 建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
@@ -290,6 +297,7 @@ image::../media/50001_01_conf-win.gif[iSCSI 連接埠識別碼]
 
 
 
+[[target-iqn]]
 === 目標IQN
 
 |===
@@ -305,6 +313,7 @@ image::../media/50001_01_conf-win.gif[iSCSI 連接埠識別碼]
 |===
 
 
+[[mapping-host-name]]
 === 對應主機名稱
 
 |===

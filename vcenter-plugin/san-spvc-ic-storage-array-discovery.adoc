@@ -23,6 +23,7 @@ summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址�
 
 
 
+[[step-1-enter-network-addresses-for-discovery]]
 == 步驟1：輸入網路位址進行探索
 
 .步驟
@@ -61,6 +62,7 @@ summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址�
 
 
 
+[[step-2-resolve-untrusted-certificates-during-discovery]]
 == 步驟2：在探索期間解析不受信任的憑證
 
 您必須先解決任何憑證問題、才能繼續探索程序。
@@ -77,6 +79,7 @@ summary: 使用外掛程式for vCenter介面來探索網路中陣列的IP位址�
 
 
 
+[[step-3-provide-passwords]]
 == 步驟3：提供密碼
 
 探索的最後一步、您必須輸入要新增至管理網域之儲存陣列的密碼。

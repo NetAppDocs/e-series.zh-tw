@@ -16,6 +16,7 @@ summary: 您可以修改Web服務Proxy設定、以符合環境的獨特作業和
 
 
 
+[[stop-or-restart-the-webserver]]
 == 停止或重新啟動Webserver
 
 Webserver服務會在安裝期間啟動、並在背景執行。在某些組態工作期間、您可能需要停止或重新啟動Webserver服務。
@@ -37,6 +38,7 @@ Webserver服務會在安裝期間啟動、並在背景執行。在某些組態�
 
 
 
+[[resolve-port-conflicts]]
 == 解決連接埠衝突
 
 如果Web服務Proxy正在執行、而另一個應用程式位於定義的位址或連接埠、您可以解決wsconfig.xml檔案中的連接埠衝突。
@@ -107,6 +109,7 @@ Clientauth
 
 
 
+[[configure-load-balancing-andor-high-availability]]
 == 設定負載平衡和/或高可用度
 
 若要在高可用度（HA）組態中使用Web服務Proxy、您可以設定負載平衡。在HA組態中、通常是單一節點接收所有要求、而其他節點則處於待命狀態、或是所有節點之間的要求負載平衡。
@@ -134,6 +137,7 @@ Web服務Proxy可存在於高可用度（HA）環境中、無論要求的接收�
 
 
 
+[[disable-symbol-https]]
 == 停用SYMBOL HTTPS
 
 您可以停用符號命令（預設設定）、並透過遠端程序呼叫（RPC）傳送命令。此設定可在wsconfig.xml檔案中變更。
@@ -162,6 +166,7 @@ NOTE: 使用RPC上的符號時、Web服務Proxy無法連線至停用符號管理
 
 
 
+[[configure-cross-origin-resource-sharing]]
 == 設定跨來源資源共用
 
 您可以設定跨來源資源共用（CORS）、這是一種機制、使用額外的HTTP標頭來提供在一個來源執行的Web應用程式、以便從不同來源的伺服器存取所選資源。

@@ -15,6 +15,7 @@ summary: 深入瞭解Web服務API
 
 
 
+[[web-services]]
 == Web服務
 
 Web服務是一種應用程式設計介面（API）、可讓您設定、管理及監控NetApp E系列和EF系列儲存系統。透過發出API要求、您可以完成E系列儲存系統的組態、資源配置及效能監控等工作流程。
@@ -74,6 +75,7 @@ image::../media/web_services_proxy_overview.gif[Web 服務 Proxy 總覽]
 |===
 
 
+[[unified-manager]]
 == Unified Manager
 
 Proxy安裝套件包含Unified Manager、這是一個網路型介面、可讓您存取較新的E系列和EF系列儲存系統、例如E2800、E5700、EF300和EF600。

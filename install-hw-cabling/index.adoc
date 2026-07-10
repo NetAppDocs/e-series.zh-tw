@@ -19,6 +19,7 @@ summary: 將主機直接連接至控制器或使用交換器。
 
 
 
+[[applicable-hardware-model]]
 == 適用的硬體模式
 
 佈線資訊適用於下列硬體機型。
@@ -52,6 +53,7 @@ DE460C
 |===
 
 
+[[additional-cabling-information]]
 == 其他纜線資訊
 
 如果您要為以下任何配置進行佈線，請參閱  https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃。"^]
@@ -73,4 +75,4 @@ E2760、E5660
 DE460C
 
 |===
-如需纜線以支援鏡射功能的相關資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/17133-tr4656pdf.pdf["同步與非同步鏡射功能說明與部署指南"^]。
+有關支援鏡像功能的佈線資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/17133-tr4656.pdf["同步與非同步鏡射功能說明與部署指南"^]。

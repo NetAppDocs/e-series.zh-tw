@@ -15,12 +15,14 @@ summary: 對於Fibre Channel傳輸協定、您可以設定交換器並判斷主�
 
 
 
+[[step-1-record-your-configuration]]
 == 步驟 1：記錄您的組態
 
 您可以產生及列印本頁的PDF、然後使用下列工作表記錄您的傳輸協定專屬儲存組態資訊。您需要這些資訊來執行資源配置工作。
 
 
 
+[[recommended-configuration]]
 === 建議的組態
 
 建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
@@ -29,6 +31,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 
 
 
+[[host-identifiers]]
 === 主機識別碼
 
 |===
@@ -52,6 +55,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 |===
 
 
+[[target-identifiers]]
 === 目標識別碼
 
 |===
@@ -91,6 +95,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 |===
 
 
+[[mapping-host]]
 === 對應主機
 
 |===
@@ -109,12 +114,14 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 |===
 
 
+[[recommended-configuration]]
 === 建議的組態
 
 具體情況可能因陣列而異。EF300、EF600 和 EF50 將配備 2 個發起端口和最多 4 個目標端口，支援 1 個或多個 VLAN。EF80 將配備 2 個發起端口和最多 6 個目標端口，支援 1 個或多個 VLAN。
 
 
 
+[[step-2-configure-the-nvmeroce-switches]]
 == 步驟 2：設定 NVMe/RoCE 交換器
 
 您可以根據廠商針對NVMe over RoCE的建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
@@ -132,6 +139,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 
 
 
+[[step-3-configure-networking-nvmeroce-vmware]]
 == 步驟 3：設定網路 - NVMe/RoCE、VMware
 
 您可以根據資料儲存需求，透過多種方式設定 NVMe over RoCE 網路。請諮詢您的網路管理員，以取得選擇最適合您環境的組態的建議。
@@ -154,6 +162,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼"
 
 
 
+[[step-4-configure-array-side-networking-nvmeroce-vmware]]
 == 步驟 4：設定陣列端網路 - NVMe/RoCE、VMware
 
 您可以使用 SANtricity System Manager 介面在陣列側配置基於 RoCE 的 NVMe 網路。
@@ -254,6 +263,7 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 
 
 
+[[step-5-configure-host-side-networkingnvme-over-roce-vmware]]
 == 步驟 5：設定主機端網路 - NVMe over RoCE、VMware
 
 在主機端設定 NVMe over RoCE 網路，即可讓 VMware NVMe over RDMA 儲存適配器啟動器與陣列建立工作階段。
@@ -293,6 +303,7 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 
 
 
+[[step-6-verify-ip-network-connections-nvme-over-roce-vmware]]
 == 步驟 6：驗證 IP 網路連線 - NVMe over RoCE、VMware
 
 您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。

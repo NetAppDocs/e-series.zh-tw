@@ -1861,31 +1861,25 @@
   <block id="ba9cfc353a18613ef436f853ea8d8177" category="summary">E系列技術報告</block>
   <block id="2f9304fe9b427489507405bef9a0bb9f" category="section-title">Splunk</block>
   <block id="158f8674c1793cce2d98e8cbcb20b6bf" category="inline-link">*《TR-4623：E5700 with Splunk Enterprise*》</block>
-  <block id="2cf8e7dfbbc127c7fc8a9b5579f49087" category="cell"><block ref="2cf8e7dfbbc127c7fc8a9b5579f49087" category="inline-link-rx"></block></block>
   <block id="d6bc9f7e61ad87366a99e2b38a35d217" category="inline-link">*《TR-4903：EF300 with Splunk Enterprise*》</block>
   <block id="48611860e08a7021a7a32db63f370c03" category="cell"><block ref="48611860e08a7021a7a32db63f370c03" category="inline-link-rx"></block></block>
   <block id="acc1921e66c3e2d692f3a9d26ff19962" category="cell">說明E5700系統與Splunk設計的整合式架構。本文也摘要說明從Splunk機器記錄事件模擬工具取得的效能測試結果。</block>
   <block id="ef0a7b34f1fe40e5b839eca3326eb739" category="cell">說明EF300 All Flash Array與Splunk設計的整合式架構。本文也摘要說明從Splunk機器記錄事件模擬工具取得的效能測試結果。</block>
   <block id="bf8e2974cd692b57a29e42874b662b52" category="section-title">企業資料庫</block>
   <block id="4b23b3afe3be27a8aef7f52e987e9e75" category="inline-link">*《TR-4764：採用NetApp EF系列的Microsoft SQL Server最佳實務指南》*</block>
-  <block id="c6aff4e6a6907e8ad632932a56bba161" category="cell"><block ref="c6aff4e6a6907e8ad632932a56bba161" category="inline-link-rx"></block></block>
   <block id="44249e3e6f499b6ef16f3c604a4060f0" category="inline-link">* TR-4794：NetApp EF系列*上的Oracle資料庫</block>
-  <block id="116671a22501aac3b12ba87e23615719" category="cell"><block ref="116671a22501aac3b12ba87e23615719" category="inline-link-rx"></block></block>
   <block id="1be89425e0cebd7d4e13e5744baebbbd" category="cell">協助儲存管理員和資料庫管理員在NetApp EF系列儲存設備上成功部署Microsoft SQL Server。</block>
   <block id="ea2848b98724bc7c864ab419f1efd076" category="cell">協助儲存管理員和資料庫管理員在NetApp EF系列儲存設備上成功部署Oracle。</block>
   <block id="8a7d992e887a76abe4703518ec317a4c" category="section-title">備份與恢復</block>
   <block id="569680cec832ec2d53d80483c8dbc439" category="inline-link">* TR-4320：CommVault Data Platform V11*的最佳實務做法</block>
   <block id="0cd4f7215cb7ec8c6f73c51d9dc39a48" category="inline-link">* TR-4471：Veeam備份與複寫的最佳實務做法*</block>
   <block id="5941ff1b3a4ffc80a4b2f0ae157b8b6d" category="inline-link">* TR-4704：部署採用NetApp E系列儲存設備的Veritas NetBackup *</block>
-  <block id="d5da5f4acb6ce9cd96c756f74b96e9a0" category="cell"><block ref="d5da5f4acb6ce9cd96c756f74b96e9a0" category="inline-link-rx"></block></block>
   <block id="12d1a4b387bfcab1922f0a411bb84852" category="cell">說明在CommVault Data Platform V11環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。</block>
   <block id="a1b3500cdb406a82f102b18ae88f8421" category="cell">說明在Veeam Backup &amp; Replication 9.5環境中使用NetApp E系列儲存設備時的參考架構和最佳實務做法。</block>
   <block id="ac8df2201a6c1727b46dd8779e1c479e" category="cell">說明在NetApp E系列儲存設備上部署Veritas NetBackup。</block>
   <block id="4b1723f1cc6cad1502f558faf333c23d" category="section-title">VSS</block>
   <block id="faacb27f48573fe7471c6c5407114769" category="inline-link">*《TR-4825：適用於視訊監控的NetApp E系列最佳實務做法指南》*</block>
-  <block id="1cb1ebb36d511709a2d47a00b912e28e" category="cell"><block ref="1cb1ebb36d511709a2d47a00b912e28e" category="inline-link-rx"></block></block>
   <block id="133e06e6567e2be753a017c1d83c75be" category="inline-link">* TR-4818：使用NetApp E系列儲存設備來虛擬化視訊管理系統*</block>
-  <block id="9f78f0c3a696ac09970d273359d55850" category="cell"><block ref="9f78f0c3a696ac09970d273359d55850" category="inline-link-rx"></block></block>
   <block id="3a3bcd9a696371d87aa6a1357bd3bca8" category="inline-link">* TR-4848：採用NetApp E系列E2800磁碟儲存陣列*的Bosch Video Recording解決方案</block>
   <block id="38a88b97f187a582e7a91f2bdabb2776" category="cell"><block ref="38a88b97f187a582e7a91f2bdabb2776" category="inline-link-rx"></block></block>
   <block id="642678f34e43644119ca55a845b8eb4b" category="cell">說明將E系列陣列部署到視訊監控環境的最佳實務做法。</block>
@@ -4145,15 +4139,12 @@
   <block id="1a1ac7a0c3f35e22cacb2c550a2df1d9" category="inline-link">* TR-4839：SANtricity 不同步鏡射與非同步鏡射*</block>
   <block id="d509b57060f226bd7e2c44a452f89f7b" category="cell"><block ref="d509b57060f226bd7e2c44a452f89f7b" category="inline-link-rx"></block></block>
   <block id="4ad675687f473ec16e280e823a6f3390" category="inline-link">* TR-4747：SANtricity 《Sof Snapshot功能概述與部署指南》*</block>
-  <block id="876a07b4a179bcb94de902848f25e8a0" category="cell"><block ref="876a07b4a179bcb94de902848f25e8a0" category="inline-link-rx"></block></block>
   <block id="aa798eeebd2e602192497fec8d5a7af0" category="cell">說明解決方案架構、以及如何使用E系列儲存系統從現有的遠端儲存設備匯入資料。</block>
   <block id="1e63a15616a71c16975a6ce6873851d7" category="cell">說明SANtricity 「不同步鏡射」和「非同步鏡射」功能。</block>
   <block id="0d31bf4155130c7e1b044f877c983556" category="cell">說明SANtricity 使用SANtricity 《SyfizSystem Manager》的《不完整快照》功能、包括GUI導覽說明。</block>
   <block id="20b51996662da655011d140b6ce13e08" category="inline-link">* TR-4652：SANtricity 《Dynamic Disk Pools*》（動態磁碟資源池*）</block>
   <block id="c84200fc0d3d1c17f835b93cac2a4073" category="inline-link">* TR-4737：SANtricity 《自動負載平衡*》</block>
-  <block id="9e438ddc696936eea7043d42a5d772c2" category="cell"><block ref="9e438ddc696936eea7043d42a5d772c2" category="inline-link-rx"></block></block>
   <block id="b855ed13871c8956bc535c1dcafa14d2" category="inline-link">* TR-4736：SANtricity 《The Sesome Web Services API*》（英文）</block>
-  <block id="4326d77c3acc0dbfc96e7f9272191ffd" category="cell"><block ref="4326d77c3acc0dbfc96e7f9272191ffd" category="inline-link-rx"></block></block>
   <block id="70f747e2b25caced64506b369bc562c5" category="cell">說明儲存管理員如何將一組類似的磁碟分組到集區拓撲中、讓集區中的所有磁碟都參與I/O工作流程。</block>
   <block id="958efa95bcd23aab2dfe387642f119c1" category="cell">說明了「alb」功能的行為、其主要組態參數及其主機互通性增強功能。</block>
   <block id="43d61efb5c5b9a22659cb0751fa61930" category="cell">說明SANtricity 《支援Web服務》的總覽、這是用於設定和管理E系列儲存系統的API。</block>
@@ -4293,11 +4284,8 @@
   <block id="29083a2d4716ebf66c6144ea3ab08aa2" category="list-text">網路介面卡（NIC）</block>
   <block id="58e0dda41aec654996f2661ca9ee6f7b" category="section-title">安全TRs</block>
   <block id="d46165f424a559168595411d0e129de6" category="inline-link">* TR-4474：SANtricity 《S42Drive安全功能指南》*</block>
-  <block id="7aeb5576c50c1baeaf78d974491ebf2e" category="cell"><block ref="7aeb5576c50c1baeaf78d974491ebf2e" category="inline-link-rx"></block></block>
   <block id="5671444c44b849b5c9fe3625aca83a32" category="inline-link">* TR-4712：SANtricity 《The SesfManagement Security Features *》</block>
-  <block id="3fbbca07210386bb17ab330852008ab0" category="cell"><block ref="3fbbca07210386bb17ab330852008ab0" category="inline-link-rx"></block></block>
   <block id="ab8408b6fd9cba5084539eb227cd6e7a" category="inline-link">* TR-4813：管理E系列系統的憑證*</block>
-  <block id="5121e9a4ab6f5ca2bcf73d97f25849ac" category="cell"><block ref="5121e9a4ab6f5ca2bcf73d97f25849ac" category="inline-link-rx"></block></block>
   <block id="eb61863f24474705952b6b8529693268" category="cell">說明E系列系統的完整磁碟加密功能、包括支援FIPS 140-2驗證磁碟機、以及內部和外部金鑰管理支援。</block>
   <block id="4f9496e09027a6c99404d536d6528ce0" category="cell">說明SANtricity NetApp E系列E2800、E5700、EF280、EF570、EF300、 和EF600儲存系統。</block>
   <block id="72a5b80ae6deeca3b9add8212e4901c5" category="cell">說明如何使用最新的E系列控制器和應用程式來管理安全性憑證。</block>
@@ -5250,7 +5238,6 @@
   <block id="ab37896fbb014d28bb0820e9643aceec" category="list-text">*介面類型*-光纖通道、iSCSI、iSER、SAS及NVMe。</block>
   <block id="3474f87ae20afc5b78f412345a99408d" category="list-text">*安裝在主機*上的作業系統- Linux、VMware及Windows。</block>
   <block id="6e466b5767b863e58337ef3d9b28ac15" category="admonition">可能支援其他介面和作業系統。如需詳細資訊、請聯絡技術支援部門。</block>
-  <block id="2df66eecc8cd9c51e0161166dfb25f4e" category="paragraph">本網站不包含軟體11.50版或韌體8.50版之前版本_的資訊。如需舊版、請前往<block ref="7a0dfab887be5b186aa694d5066574fe" category="inline-link-rx"></block> 頁面。</block>
   <block id="44e714ce1f6e8ee0800c0869d6ef25c7" category="paragraph">如需站台準備需求的相關資訊、請前往<block ref="bb9c67b5a4c15a85b5e6aa6c9afd0285" category="inline-link-rx"></block>。</block>
   <block id="5c4cc7b84f5f2341e2a7255a66b90d60" category="summary">若要使用E系列系統啟動及執行、您需要安裝硬體元件、設定主機系統及設定儲存設備。</block>
   <block id="9543914d3a895a3a83f2774c1ca09f7b" category="inline-link-macro">EF600或EF300系列、含24個磁碟機櫃</block>
@@ -8135,11 +8122,7 @@
   <block id="28af2c239fc893bd1a2013f2e8b4b941" category="section-title">11.80.1R1 版的新功能</block>
   <block id="5769aac2d83733db3bf7507b56dd86e9" category="paragraph">增加新自我簽署和 CA 簽署管理憑證的金鑰大小長度。</block>
   <block id="8545f755b4f7a99afe330df57699f365" category="paragraph">SANtricity 系統管理員和 Unified Manager 應用程式自我簽署憑證的管理憑證金鑰大小長度已從 2048 位元修改為 3072 位元。此變更適用於新產生的 SANtricity 應用程式自我簽署和 CA 簽署的憑證。金鑰長度是固定的、不受 NVSRAM 中預設金鑰大小定義的影響。</block>
-  <block id="eb72855c2604e5d3f7f36945024d001c" category="list-text"><block ref="b742d0734e0a1b1acd85c7093d734f44" category="inline-link-rx"></block> -- 提供 iSCSI 與 VMware 整合的技術詳細資料。</block>
   <block id="721f229c077c5af73351dcbd1a2235d2" category="paragraph">為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。如需詳細資訊、請參閱<block ref="4d4a4533fd2b79dc8951aa3f53f56e3f" category="inline-link-rx"></block> 。</block>
-  <block id="5821a61234ba1fdfba2e6ba9b392cafa" category="admonition">有關如何在 VMware 組態上設定陣列端網路的其他資訊，請參閱下列技術報告：<block ref="4c256e5f3e11bff89d951ec9e05da858" category="inline-link-rx"></block>。</block>
-  <block id="f7a1f25c147fdef63a935b6fc10cf5a0" category="paragraph">如果這些假設不適用於您的安裝、或您想要瞭解更多概念性背景資訊、請參閱下列技術報告：<block ref="691af5827a322478f9c39bcb9ec0d331" category="inline-link-rx"></block></block>
-  <block id="c08a9596d55b45e7eb8325bd878b47d5" category="paragraph">如需纜線以支援鏡射功能的相關資訊，請參閱<block ref="4c6cd7be794e0089961c4cc00b012a2c" category="inline-link-rx"></block>。</block>
   <block id="3885d6d9f5a5030ec46ec3ce038af96c" category="inline-link">NetApp 知識庫</block>
   <block id="780fe86b24958c45b0b8792fad1e9b3c" category="admonition">如果您需要有關如何更換 E 系列 DE460c 擴充機櫃的資訊，請參閱<block ref="b46c4d97d6f1694e2cd029493cdb5475" category="inline-link-rx"></block>。</block>
   <block id="cefb29f3645d6d69acdc85d8770aa08a" category="inline-xref">步驟 2 ：安裝磁碟機櫃並加電。</block>
@@ -9029,10 +9012,7 @@
   <block id="68b5d7bbc938636a6430a66ddd3590d0" category="section-title">Unified Manager 線上說明</block>
   <block id="703be4c8c3307cd5e44163a39538eb58" category="inline-link">SANtricity Unified Manager 線上說明</block>
   <block id="4c0bdc96ec6314c064f33faae57a0c02" category="paragraph">存取<block ref="d6978b00f819ec3b99c59933f313d81f" category="inline-link-rx"></block>，瞭解如何在多個網路儲存陣列上執行儲存管理命令。</block>
-  <block id="5b4f9cf27402df2737b167e7393669c2" category="cell"><block ref="5b4f9cf27402df2737b167e7393669c2" category="inline-link-rx"></block></block>
-  <block id="034410ce2cd58a6a56e6772fadec879b" category="cell"><block ref="034410ce2cd58a6a56e6772fadec879b" category="inline-link-rx"></block></block>
   <block id="6c33c8a01a7b3f83682789dc2c3e0a6e" category="cell"><block ref="6c33c8a01a7b3f83682789dc2c3e0a6e" category="inline-link-rx"></block></block>
-  <block id="ec476342469d41cbc06b7065ffea021e" category="cell"><block ref="ec476342469d41cbc06b7065ffea021e" category="inline-link-rx"></block></block>
   <block id="ba463c26bea3a95ca7381fd32b63eb98" category="sidebar">E4000產品型錄</block>
   <block id="b30b3ed54d36ae2fd1e5c231ba1b18c0" category="list-text">確認控制器背面的 Cache Active LED 指示燈和控制器面板均熄滅。</block>
   <block id="53ec2a2a971455f492adc2f07e6c780d" category="paragraph">如果任一 LED 亮起，表示控制器仍在使用電池電力。在您繼續執行此程序之前，所有 LED 都必須關閉。</block>
@@ -10744,4 +10724,25 @@
   <block id="7f3980e2c518e011140305dfa2c7cc40" category="list-text">請為此程序安排停機維護時段。在成功完成此程序之前，您將無法存取儲存陣列上的資料。由於兩個控制器在通電時必須具有相同的 HIC 組態，因此在安裝 HIC 時，您必須將其中一個控制器離線，以使系統處於非備援狀態。</block>
   <block id="79a7b3d475a1ce35fef4a7398f3e40b8" category="list-text">對於 EF300 控制器，必須將 SAS 擴充卡安裝在連接埠 1 中，以便擴充磁碟機匣。</block>
   <block id="805eb1d81197f7063faa2748049cf91c" category="sidebar">建立檔案系統</block>
+  <block id="2cbe497ead02b07696b7f8ba715273d8" category="list-text"><block ref="14ce0b3b3110401a1b39acf80b50aa21" category="inline-link-rx"></block> -- 提供有關 iSCSI 與 VMware 整合的技術細節。</block>
+  <block id="db8fd25422dfd9e476a6d254489d6885" category="admonition">有關如何在 VMware 組態中設定陣列端網路的詳細資訊，請參閱以下技術報告：<block ref="4ac86815341f0906d3774739def67837" category="inline-link-rx"></block>。</block>
+  <block id="f269f736f01b5a3ba3b44794e8ee27c6" category="paragraph">如果這些假設不適用於您的安裝，或者如果您想了解更多概念背景資訊，請參閱以下技術報告：<block ref="4977c7b19f138570e684730359b29046" category="inline-link-rx"></block></block>
+  <block id="4a75d0ce3a7cec59194f5da10fc68b01" category="cell"><block ref="4a75d0ce3a7cec59194f5da10fc68b01" category="inline-link-rx"></block></block>
+  <block id="3da4716e359d926374c1e38750cb4042" category="cell"><block ref="3da4716e359d926374c1e38750cb4042" category="inline-link-rx"></block></block>
+  <block id="ddfa60f0509e2e068f8ef6bfd7673cc1" category="cell"><block ref="ddfa60f0509e2e068f8ef6bfd7673cc1" category="inline-link-rx"></block></block>
+  <block id="13178170438c003ae2aa2be18f8906c8" category="inline-link">E-Series 和 SANtricity 早期版本的文件</block>
+  <block id="ca706c2fc37c15773a41828815e2598e" category="paragraph">本網站不包含軟體版本 11.50 或韌體版本 8.50 之前的版本資訊。如需了解更早版本的資訊，請前往<block ref="f4862ea0f3425290e53b9b2a7ea1bbb6" category="inline-link-rx"></block>頁面。</block>
+  <block id="38d182558c93c49cb0f7c3e674c84809" category="paragraph">有關支援鏡像功能的佈線資訊，請參閱<block ref="0676c92dfb7980c8f661feef8914b234" category="inline-link-rx"></block>。</block>
+  <block id="59afa1b325e9b68dee4cd5c8f27d0f60" category="cell"><block ref="59afa1b325e9b68dee4cd5c8f27d0f60" category="inline-link-rx"></block></block>
+  <block id="177b521773d98f6fa93c6166c87a492a" category="cell"><block ref="177b521773d98f6fa93c6166c87a492a" category="inline-link-rx"></block></block>
+  <block id="676b0fd9f88ed51de190d1cb66b949be" category="cell"><block ref="676b0fd9f88ed51de190d1cb66b949be" category="inline-link-rx"></block></block>
+  <block id="0997d04e7d8852e63947caa54f2a478a" category="cell"><block ref="0997d04e7d8852e63947caa54f2a478a" category="inline-link-rx"></block></block>
+  <block id="727697529ac79d12e4d3e026354cb756" category="cell"><block ref="727697529ac79d12e4d3e026354cb756" category="inline-link-rx"></block></block>
+  <block id="b6e9fc34b1b5c07d8fadd79fa351f4b0" category="cell"><block ref="b6e9fc34b1b5c07d8fadd79fa351f4b0" category="inline-link-rx"></block></block>
+  <block id="6fbcc04415dc1d7f1a17864715ced47d" category="cell"><block ref="6fbcc04415dc1d7f1a17864715ced47d" category="inline-link-rx"></block></block>
+  <block id="7a025c6da9dacd6ebf8b1115962ed2c2" category="cell"><block ref="7a025c6da9dacd6ebf8b1115962ed2c2" category="inline-link-rx"></block></block>
+  <block id="32528c8831f732a871241bcfd3cf1298" category="cell"><block ref="32528c8831f732a871241bcfd3cf1298" category="inline-link-rx"></block></block>
+  <block id="22839016e944bb39ae944b854e55b7ef" category="cell"><block ref="22839016e944bb39ae944b854e55b7ef" category="inline-link-rx"></block></block>
+  <block id="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="cell"><block ref="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="inline-link-rx"></block></block>
+  <block id="1ed965aef797c8ec8dad05a7ba9680f3" category="cell"><block ref="1ed965aef797c8ec8dad05a7ba9680f3" category="inline-link-rx"></block></block>
 </blocks>

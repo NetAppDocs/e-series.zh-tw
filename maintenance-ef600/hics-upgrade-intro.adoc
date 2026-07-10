@@ -40,6 +40,7 @@ CAUTION: *可能遺失資料存取*-如果HIC是針對另一個E系列控制器�
 
 
 
+[[step-1-place-controller-shelf-offline]]
 == 步驟1：將控制器機櫃離線
 
 將控制器機櫃離線、以便安全地升級HIC。
@@ -96,6 +97,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
+[[step-2-remove-controller-canister]]
 == 步驟2：移除控制器容器
 
 移除控制器容器、以便升級新的HIC。
@@ -129,6 +131,7 @@ image::../media/remove_controller_6.png[取下控制器時，請用雙手支撐�
 
 
 
+[[step-3-remove-the-hic]]
 == 步驟3：移除HIC
 
 移除原始的HIC、以便您以升級後的HIC進行更換。
@@ -177,6 +180,7 @@ NOTE: 上圖為HIC外觀可能有所不同的範例。
 
 
 
+[[step-4-upgrade-the-hic]]
 == 步驟4：升級HIC
 
 移除舊的HIC之後、請安裝新的HIC。
@@ -219,6 +223,7 @@ NOTE: 請勿使用螺絲起子、否則可能會將螺絲鎖得太緊。
 
 
 
+[[step-5-reinstall-controller-canister]]
 == 步驟5：重新安裝控制器容器
 
 升級HIC之後、將控制器外殼重新安裝到控制器機櫃中。
@@ -241,6 +246,7 @@ image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 
 
 
+[[step-6-complete-the-hic-upgrade]]
 == 步驟6：完成HIC升級
 
 將控制器置於線上、收集支援資料並恢復作業。

@@ -15,6 +15,7 @@ summary: 開啟 EF50 或 EF80 儲存系統電源後，您可以透過連接線�
 
 
 
+[[step-1-cable-and-configure-the-management-ports]]
 == 步驟 1：連接纜線並設定管理連接埠
 
 為每個控制器的管理連接埠接上纜線，然後使用 DHCP 伺服器或靜態 IP 位址設定連接埠。
@@ -106,6 +107,7 @@ NOTE: 如果失去控制器B的連線、您可以使用先前驗證的控制器A
 ====
 
 
+[[step-2-configure-your-storage-system]]
 == 步驟 2：設定儲存系統
 
 使用 SANtricity System Manager 配置和管理您的儲存系統。
@@ -125,6 +127,7 @@ NOTE: 如果失去控制器B的連線、您可以使用先前驗證的控制器A
 
 
 
+[[step-3-verify-the-host-io-module-protocol-is-correct]]
 == 步驟 3：驗證主機 I/O 模組傳輸協定是否正確
 
 您的儲存系統在主機 I/O 模組上隨附預設傳輸協定。如果預設傳輸協定不是您想要的傳輸協定，您可以變更它。

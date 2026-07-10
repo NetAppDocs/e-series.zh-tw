@@ -17,6 +17,7 @@ summary: 機架安裝硬體用於將硬體安裝到機架或機櫃中。機架�
 
 
 
+[[adjustable-support-rails]]
 == 可調式支撐軌
 
 存取 https://mysupport.netapp.com/ecm/ecm_download_file/ECMP1652045["安裝可調式支撐軌道"^] 用於安裝控制器磁碟機匣或單獨出貨的磁碟機匣（機櫃中尚未安裝）。此程序適用於下列2U（9公分或3.5吋）磁碟匣：
@@ -28,18 +29,21 @@ summary: 機架安裝硬體用於將硬體安裝到機架或機櫃中。機架�
 
 
 
+[[two-post-rack-2u]]
 == 雙柱機架- 2U
 
 存取 https://mysupport.netapp.com/ecm/ecm_download_file/ECMM1280302["將2U設備安裝到雙柱機架中"^]。
 
 
 
+[[four-post-rack-or-cabinet-2u]]
 == 四柱機架或機櫃- 2U
 
 存取 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2484194["在四柱機架或機櫃中安裝2U 12個磁碟機機箱"^]。
 
 
 
+[[four-post-rack-superrail]]
 == 四柱式機架：超級軌道
 
 存取 https://docs.netapp.com/us-en/ontap-systems/platform-supplemental/superrail-install.html["將 SuperRail 安裝到四柱機架中"^]。

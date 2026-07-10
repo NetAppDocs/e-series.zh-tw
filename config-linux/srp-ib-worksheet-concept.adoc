@@ -17,6 +17,7 @@ image::../media/port_identifiers_ib_srp.gif[透過 IB 連接埠識別碼的 SRB]
 
 
 
+[[host-identifiers]]
 == 主機識別碼
 
 
@@ -70,12 +71,14 @@ _不適用_
 |===
 
 
+[[recommended-configuration]]
 == 建議的組態
 
 建議的組態包括兩個啟動器連接埠和四個目標連接埠。
 
 
 
+[[mapping-host-name]]
 == 對應主機名稱
 
 

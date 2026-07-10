@@ -17,6 +17,7 @@ summary: 維護EF300和EF600硬體
 
 
 
+[[system-components]]
 == 系統元件
 
 對於 EF300 ， EF600 ， EF300C 和 EF600C 儲存系統，您可以對下列元件執行維護程序。

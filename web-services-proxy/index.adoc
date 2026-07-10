@@ -15,6 +15,7 @@ summary: 概述《Resch®Web Services Proxy》、《Web Services API》、《RES
 
 
 
+[[installation-overview]]
 == 安裝總覽
 
 安裝及設定Web服務Proxy的步驟如下：
@@ -27,6 +28,7 @@ summary: 概述《Resch®Web Services Proxy》、《Web Services API》、《RES
 
 
 
+[[find-more-information]]
 == 如需詳細資訊、請參閱
 
 * Unified Manager：Proxy安裝包含SANtricity 以Web為基礎的支援功能、可讓您存取較新的E系列和EF系列儲存系統。如需詳細資訊、請參閱Unified Manager線上說明、您可從其使用者介面或取得 https://docs.netapp.com/us-en/e-series-santricity/index.html["軟體文件網站SANtricity"^]。
