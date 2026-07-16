@@ -10718,8 +10718,6 @@
   <block id="56dd88f73dc9e3fe0f4f088112d50bf6" category="admonition">*資料遺失風險*。您必須在無損環境中執行 NVMe over RoCE。請在您的網路上啟用端對端流量控制（使用全域暫停訊框或優先權流量控制 (PFC)），以消除資料遺失的風險。PFC 要求將 NVMe over RoCE 標記為優先權 3 流量,DSCP 值為<block ref="f0935e4cd5920aa6c7c996a5ee53a70f" prefix=" " category="inline-code"></block>。</block>
   <block id="cfc9a52b36b4bac1175d85feda4737d6" category="inline-link-macro">使用 DHCP 設定 IP 位址</block>
   <block id="ab76f1b6a91823d84cc28d97a438ee49" category="paragraph">在您驗證 Linux 組態支援並檢閱限制之後，<block ref="26e7ddc4a99218cc55e1c183bc759716" category="inline-link-macro-rx"></block>。</block>
-  <block id="70d9e3c68d42d6ec42ab792e06c44357" category="inline-link-macro">NVMe</block>
-  <block id="1791f8465d11d224647d11ee0eab3955" category="list-text"><block ref="1791f8465d11d224647d11ee0eab3955" category="inline-link-macro-rx"></block></block>
   <block id="68df22b283edf6918b272ee1e4eef450" category="paragraph">更換故障的 HIC 時，必須將一個控制器離線，使系統處於非備援狀態，更換 HIC，然後使控制器重新上線。</block>
   <block id="7f3980e2c518e011140305dfa2c7cc40" category="list-text">請為此程序安排停機維護時段。在成功完成此程序之前，您將無法存取儲存陣列上的資料。由於兩個控制器在通電時必須具有相同的 HIC 組態，因此在安裝 HIC 時，您必須將其中一個控制器離線，以使系統處於非備援狀態。</block>
   <block id="79a7b3d475a1ce35fef4a7398f3e40b8" category="list-text">對於 EF300 控制器，必須將 SAS 擴充卡安裝在連接埠 1 中，以便擴充磁碟機匣。</block>
@@ -10745,4 +10743,5 @@
   <block id="22839016e944bb39ae944b854e55b7ef" category="cell"><block ref="22839016e944bb39ae944b854e55b7ef" category="inline-link-rx"></block></block>
   <block id="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="cell"><block ref="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="inline-link-rx"></block></block>
   <block id="1ed965aef797c8ec8dad05a7ba9680f3" category="cell"><block ref="1ed965aef797c8ec8dad05a7ba9680f3" category="inline-link-rx"></block></block>
+  <block id="030083a432b10805a22ebd213eb3faf3" category="list-text"><block ref="030083a432b10805a22ebd213eb3faf3" category="inline-link-macro-rx"></block></block>
 </blocks>
