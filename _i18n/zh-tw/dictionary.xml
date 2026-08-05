@@ -10744,4 +10744,12 @@
   <block id="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="cell"><block ref="6a7c8d63e9ff78bb1b7b5d797d0587e5" category="inline-link-rx"></block></block>
   <block id="1ed965aef797c8ec8dad05a7ba9680f3" category="cell"><block ref="1ed965aef797c8ec8dad05a7ba9680f3" category="inline-link-rx"></block></block>
   <block id="030083a432b10805a22ebd213eb3faf3" category="list-text"><block ref="030083a432b10805a22ebd213eb3faf3" category="inline-link-macro-rx"></block></block>
+  <block id="d45110f5b0683532651fabbc7f37abe3" category="section-title">Version 11.90R6 版本新增功能</block>
+  <block id="28761f84b87aaa50aba4cece137c1c2c" category="paragraph">支援更新的 IOM/DCM 韌體版本</block>
+  <block id="5da5b5a1379f61e80772e7790856b429" category="paragraph">現在以下 IOM/DCM 型號支援新的 IOM/DCM 韌體版本：</block>
+  <block id="774c79e8635ac51d58e93d2e518c432a" category="list-text">IOM12A - v0412</block>
+  <block id="fbc1cde87a87977e12caf006b59004e5" category="list-text">IOM12B - v0212</block>
+  <block id="24c9cd56861c16e2290412c4fe4d5a8f" category="list-text">IOM12C - v0112</block>
+  <block id="818d5ca9647738ea76069fc99cf59499" category="list-text">IOM12G - v0212</block>
+  <block id="9133a8b23ddd677242ee6747a18b0e24" category="list-text">DCM3 - v01.12.09.02</block>
 </blocks>

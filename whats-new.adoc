@@ -72,6 +72,29 @@ SANtricity System Manager 中現已提供全新的腳本編輯器。腳本編輯
 |===
 
 
+[[new-features-in-version-11-90r6]]
+== Version 11.90R6 版本新增功能
+
+[cols="35h,~"]
+|===
+| 新功能 | 說明 
+
+
+ a| 
+支援更新的 IOM/DCM 韌體版本
+ a| 
+現在以下 IOM/DCM 型號支援新的 IOM/DCM 韌體版本：
+
+* IOM12A - v0412
+* IOM12B - v0212
+* IOM12C - v0112
+* IOM12G - v0212
+* DCM3 - v01.12.09.02
+
+
+|===
+
+
 [[new-features-in-version-11-90r5]]
 == Version 11.90R5 版本新增功能
 
