@@ -88,7 +88,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 +
 當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
 
-. 從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。請等待所有作業完成、然後再繼續下一步。
+. 從 SANtricity System Manager 的首頁，選取功能表：Storage（儲存設備）[Operations in Progress（進行中的作業）]。等待所有作業完成後再繼續下一步。
 . 關閉控制器磁碟櫃的電源。
 +
 .. 標示並從控制器機櫃拔下兩條電源線。

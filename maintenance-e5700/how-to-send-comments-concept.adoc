@@ -2,9 +2,9 @@
 permalink: maintenance-e5700/how-to-send-comments-concept.html 
 sidebar: sidebar 
 keywords: improve, quality, documentation, feedback, automatic, notification, production-level, ga, fcs, document 
-summary: 您可以傳送您的意見給我們、協助我們改善文件品質。當正式作業層級（GA/FCS\）文件初次發行、或是對現有正式作業層級文件進行重大變更時、您可以收到自動通知。 
+summary: 您可以傳送您的意見給我們、協助我們改善文件品質。當正式作業層級（GA/FCS）文件初次發行、或是對現有正式作業層級文件進行重大變更時、您可以收到自動通知。 
 ---
-= 如何傳送有關文件的意見並接收更新通知
+= 傳送關於文件的意見並接收更新通知
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

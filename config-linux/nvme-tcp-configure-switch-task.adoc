@@ -1,0 +1,19 @@
+---
+permalink: config-linux/nvme-tcp-configure-switch-task.html 
+sidebar: sidebar 
+keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 根據廠商針對 NVMe over TCP 的建議來設定交換器。這些建議可能包括組態指令和程式碼更新。 
+---
+= 設定 E 系列中的交換器 - Linux（NVMe over TCP）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根據廠商針對 NVMe over TCP 的建議來設定交換器。這些建議可能包括組態指令和程式碼更新。
+
+E 系列沒有針對網路組態的具體指導。請諮詢您的網路管理員，以取得選擇適合您環境的組態的指導。
+
+.接下來呢？
+設定交換器之後，link:nvme-tcp-setup-host-side-task.html["在主機上透過 TCP 設定 NVMe 啟動器"]。

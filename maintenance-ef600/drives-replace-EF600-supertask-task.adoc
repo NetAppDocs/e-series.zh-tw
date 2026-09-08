@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF600, EF600C replace DIMM, drive failure 
 summary: 更換EF600陣列中的磁碟機。 
 ---
-= 更換磁碟機 - EF600
+= 更換 EF600 陣列中的磁碟機
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -39,7 +39,7 @@ summary: 更換EF600陣列中的磁碟機。
 . 如果在還原系統管理程式中的Recovery Guru SANtricity 已通知您_即將發生磁碟機故障_、但磁碟機尚未故障、請遵循Recovery Guru中的指示、將磁碟機故障。
 . 如有需要、請使用SANtricity 「支援系統管理程式」確認您有合適的更換磁碟機。
 +
-.. 選取*硬體*。
+.. 選擇 menu:硬體［磁碟機］。
 .. 選取機櫃圖形上的故障磁碟機。
 .. 按一下磁碟機以顯示其內容功能表、然後選取*檢視設定*。
 .. 確認更換磁碟機的容量等於或大於您要更換的磁碟機、而且具有您所期望的功能。
@@ -130,7 +130,7 @@ NOTE: 根據您的組態、控制器可能會自動將資料重新建構至新�
 NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 
 +
-.. 選取*硬體*。
+.. 選擇 menu:硬體［磁碟機］。
 .. 按一下您更換的磁碟機。
 .. 從磁碟機的內容功能表中、選取* Reconstronstron*。
 .. 確認您要執行此作業。

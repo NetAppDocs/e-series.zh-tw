@@ -53,27 +53,35 @@ image::../media/nvmeof_switch_connect.gif[NVMe over roce 交換器連線範例]
  a| 
 主機（啟動器）1.
  a| 
+{nbsp}
 
 
 
  a| 
+{nbsp}
  a| 
+{nbsp}
 
 
 
  a| 
 主機（啟動器）2.
  a| 
+{nbsp}
 
 
 
  a| 
+{nbsp}
  a| 
+{nbsp}
 
 
 
  a| 
+{nbsp}
  a| 
+{nbsp}
 
 |===
 

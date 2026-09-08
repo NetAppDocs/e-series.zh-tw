@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/index.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 使用E系列系統的VMware主機快速組態。 
 ---
 = E 系列中的 VMware Express 組態
@@ -11,7 +11,7 @@ summary: 使用E系列系統的VMware主機快速組態。
 
 
 [role="lead"]
-VMware Express安裝儲存陣列及存取SANtricity 《支援系統管理程式》的方法、適用於將獨立的VMware主機設定為E系列儲存系統。其設計旨在以最少的決策點、讓儲存系統儘快啟動及執行。
+安裝儲存陣列並存取 SANtricity System Manager 的 VMware express 方法，適用於設定搭配 E 系列儲存系統的獨立式 VMware 主機。其設計旨在以最少的決策點，盡可能快速地讓儲存系統啟動並運作。
 
 
 
@@ -22,11 +22,12 @@ Express方法包括下列步驟、如中所述 link:understand-vmware-workflow-c
 
 . 設定下列其中一種通訊環境：
 +
-** link:nmve-fc-perform-specific-task.html["NVMe over Fibre Channel"]
-** link:fc-perform-specific-task.html["Fibre Channel"]
+** link:nvme-fc-perform-specific-task.html["NVMe over Fibre Channel"]
+** link:fc-perform-specific-task.html["光纖通道 (FCP)"]
 ** link:iscsi-perform-specific-task.html["iSCSI"]
 ** link:sas-perform-specific-task.html["SAS"]
 ** link:nvme-roce-perform-specific-task.html["NVMe over RoCE"]
+** link:nvme-tcp-perform-specific-task.html["NVMe over TCP"]
 
 
 . 在儲存陣列上建立邏輯磁碟區。
@@ -42,7 +43,7 @@ Express方法包括下列步驟、如中所述 link:understand-vmware-workflow-c
 * https://kb.netapp.com/["NetApp知識庫"^] （文章資料庫）：提供各種NetApp產品與技術的疑難排解資訊、常見問題集與說明。
 * http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] -可讓您搜尋符合NetApp所指定標準與要求的NetApp產品與元件組態。
 * https://www.netapp.com/pdf.html?item=/media/17017-tr4789.pdf["《VMware組態指南：E系列SANtricity 的iSCSI與ESXi 6.X整合》"^] -- 提供有關 iSCSI 與 VMware 整合的技術細節。
-* https://configmax.broadcom.com/home["VMware組態上限"^]-- 說明如何設定虛擬與實體儲存設備，使其保持在 ESX/ESXi 支援的最大容量範圍內。
-* https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-9AEE5F4D-0CB8-4355-BF89-BB61C5F30C70.html["VMware NVMe儲存設備的需求與限制"^]。
-* https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere文件"^] 提供ESXi vCenter Server文件。
+* https://configmax.broadcom.com/guest["VMware組態上限"^] -- 描述如何設定虛擬和實體儲存設備，使其保持在 ESX/ESXi 支援的允許最大值範圍內。
+* https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html["VMware NVMe 儲存設備的要求"^] -- NVMe over fabrics 的特定組態要求。
+* https://techdocs.broadcom.com/["Broadcom 技術文件"^] -- VMware 雲端基礎架構軟體和 vSphere 技術文件。
 

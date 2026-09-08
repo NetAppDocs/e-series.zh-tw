@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/verify-vmware-config-support-task.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 驗證是否支援VMware組態。 
 ---
 = 驗證 E 系列中的 VMware 組態支援
@@ -30,10 +30,11 @@ summary: 驗證是否支援VMware組態。
 
  a| 
 ** 您可能需要安裝隨裝即用的驅動程式、以確保正常的功能和支援能力。您可以使用ESXi Shell或ESXi主機的遠端SSH連線來安裝HBA驅動程式。若要使用上述任一方法存取主機、您必須啟用ESXi Shell和SSH存取。如需ESXi Shell的詳細資訊、請參閱VMware知識庫、瞭解如何在ESXi中使用ESXi Shell。如需安裝命令、請參閱HBA驅動程式隨附的說明。
-** 每家HBA廠商都有更新開機程式碼和韌體的特定方法。其中有些方法可能包括使用vCenter外掛程式、或是在ESXi主機上安裝CIM提供者。vCenter外掛程式可用來取得廠商特定HBA的相關資訊。請參閱廠商網站的支援區段、以取得更新HBA開機程式碼或韌體所需的指示與軟體。請參閱《VMware相容性指南》或HBA廠商的網站、以取得正確的開機代碼或韌體。
+** 每個 HBA 廠商都有特定的開機程式碼和韌體更新方法。這些方法可能包括使用 vCenter 外掛程式或在 ESXi 主機上安裝 CIM 供應商。vCenter 外掛程式可用於取得廠商特定 HBA 的資訊。請參閱廠商網站的支援區段，以取得更新 HBA 開機程式碼或韌體所需的指示和軟體。請參閱 https://compatibilityguide.broadcom.com/search?program=io&persona=live&column=brandName&order=asc["_VMware 相容性指南_"]或 HBA 廠商的網站，以取得正確的開機程式碼或韌體。
+** 檢閱與所選組態相關的警示與資訊，以瞭解任何特定作業系統、客體作業系統、HBA 或其他可能需要套用於您組態的相關設定或資訊。
 
  a| 
-FC
+FCP
  a| 
 主機匯流排介面卡（HBA）驅動程式、韌體和開機程式碼
 
@@ -50,6 +51,27 @@ iSCSI
 SAS
  a| 
 主機匯流排介面卡（HBA）驅動程式、韌體和開機程式碼
+
+
+
+ a| 
+NVMe over FC
+ a| 
+主機匯流排介面卡（HBA）驅動程式、韌體和開機程式碼
+
+
+
+ a| 
+NVMe over RoCE
+ a| 
+遠端直接記憶體存取 (RDMA) 驅動程式、韌體和開機程式碼
+
+
+
+ a| 
+NVMe over TCP
+ a| 
+網路介面卡（NIC）驅動程式、韌體和開機程式碼
 
 |===
 

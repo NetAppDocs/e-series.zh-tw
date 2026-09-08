@@ -1,0 +1,107 @@
+---
+permalink: config-linux/nvme-tcp-discover-connect-storage-host-task.html 
+sidebar: sidebar 
+keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。 
+---
+= 在 E 系列 - Linux （NVMe over TCP）中從主機探索並連線至儲存設備
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。
+
+.步驟
+. 請使用下列命令驗證是否可以從主機 ping 通每個陣列 HIC 連接埠：
++
+[listing]
+----
+ping <IP of array HIC port>
+----
+. 使用下列命令探索所有路徑的NVMe目標子系統：
++
+[listing]
+----
+nvme discover -t tcp -a target_ip_address
+----
++
+在此命令中、「target ip_address'」是目標連接埠的IP位址。
+
++
+
+NOTE: 無論主機存取為何、「NVMe探索」命令都會探索子系統中的所有控制器連接埠。
+
++
+[listing]
+----
+# nvme discover -t tcp -a 192.168.134.101
+Discovery Log Number of Records 12, Generation counter 0
+=====Discovery Log Entry 0======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fe80:0:0:0:200:ff:fe00:1
+eflags:  none
+sectype: none
+=====Discovery Log Entry 1======
+trtype:  tcp
+adrfam:  ipv6
+subtype: nvme subsystem
+treq:    not specified
+portid:  0
+trsvcid: 4420
+subnqn:  nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538
+traddr:  fd23:0:0:0:192:168:131:101
+eflags:  none
+sectype: none
+----
+. 對任何其他連線重複步驟 2。
+. 使用命令連接到第一條路徑上發現的子系統： `nvme connect -t tcp -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
++
+
+NOTE: 上述命令在重新開機後不會保留。每次重新開機後都需要執行  `nvme connect` 命令以重新建立 NVMe 連線。
+
++
+
+NOTE: 不會針對主機無法存取的任何探索到的連接埠建立連線。
+
++
+
+NOTE: 如果您使用此命令指定連接埠號碼、連線將會失敗。預設連接埠是唯一設定用於連線的連接埠。
+
++
+
+NOTE: 預設情況下，佇列深度設定為 `128`。請勿變更此預設值，因為 NVMe over TCP 需要的佇列深度為 `128`。
+
++
+[listing]
+----
+# nvme connect -t tcp -a 192.168.134.101 -n nqn.1992-08.com.netapp:EF80.6d039ea0005d29280000000069ddb538 -Q 128 -l 3600
+----
+. 對任何其他連線重複步驟 4。
+. **選用** - 設定主機在每次開機時自動探索目標並與其連線。
++
+.. 使用下列程序和格式，將步驟 2 和步驟 3 中的探索參數新增至  `/etc/nvme/discovery.conf`：
++
+[listing]
+----
+# echo "--transport=tcp --traddr=target_ip_address --trsvcid=4420" | sudo tee -a /etc/nvme/discovery.conf
+----
+.. 使用以下命令填充  `/etc/nvme/discovery.conf` 檔案後啟用 nvmf-autoconnect 服務：
++
+[listing]
+----
+sudo systemctl enable nvmf-autoconnect.service
+----
+
+
+
+
+.接下來呢？
+建立連線之後，link:nvme-tcp-define-host-task.html["定義主機"]。

@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e2800/hpp-change-host-protocol-task.html 
 sidebar: sidebar 
-keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP optical host ports, E2800, E-Series, eseries 
 summary: 將主機連接埠傳輸協定從光纖通道（FC）變更為iSCSI、或從iSCSI變更為FC。 
 ---
-= 變更主機傳輸協定 - E2800
+= 變更 E2800 陣列上的主機協定
 :allow-uri-read: 
 :experimental: 
 :icons: font

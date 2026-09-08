@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/iscsi-perform-specific-task.html 
 sidebar: sidebar 
-keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: iscsi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換器和網路。然後驗證IP網路連線。 
 ---
 = 在 E 系列 - VMware 中執行 iSCSI 專屬工作
@@ -15,9 +15,41 @@ summary: 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換
 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換器和網路。然後驗證IP網路連線。
 
 
+NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 位元組模擬（512e），以確保與 VMware 相容。如需將 Volume 設定為使用 512 位元組模擬（512e）的詳細資訊，請參閱 SANtricity System Manager 線上說明。
 
-[[step-1-configure-the-switches-iscsi-vmware]]
-== 步驟1：設定交換器- iSCSI、VMware
+
+
+[[step-1-record-your-configuration]]
+== 步驟 1：記錄您的組態
+
+您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄特定通訊協定的儲存組態資訊。您在執行配置工作時需要這些資訊。
+
+圖中顯示主機連接到 E 系列儲存陣列，並透過 VLAN 和/或獨立子網路分隔。藍線表示一個 VLAN/子網路；紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量會因網路介面的數量和控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 6 個）。
+
+image::../media/50001_01_conf-vmw.gif[iSCSI 連接埠識別碼]
+
+
+
+[[host-mapping-information]]
+=== 主機對應資訊
+
+[cols="35h,~"]
+|===
+| 對應主機名稱 |  
+
+
+| 主機作業系統類型 |  
+
+
+| 主機 IQN |  
+
+
+| 目標IQN |  
+|===
+
+
+[[step-2-configure-the-switches]]
+== 步驟 2：設定交換器
 
 您可以根據廠商的iSCSI建議來設定交換器。這些建議可能同時包含組態指令和程式碼更新。
 
@@ -25,9 +57,9 @@ summary: 對於iSCSI傳輸協定、您可以在陣列端和主機端設定交換
 請確定您擁有下列項目：
 
 * 兩個獨立的網路提供高可用度。請確定您將iSCSI流量隔離至不同的網路區段。
-* 已啟用「傳送及接收硬體流程控制*端點對端點*」。
+* 啟用 *端對端* 的發送和接收硬體流程控制。
 * 停用優先順序流程控制。
-* 如果適用、請啟用巨型框架。
+* 如果合適，請啟用巨型訊框（建議）。
 
 
 
@@ -38,31 +70,29 @@ NOTE: 控制器的交換器連接埠不支援連接埠通道/LACP。不建議使
 
 
 
-[[step-2-configure-networking-iscsi-vmware]]
-== 步驟2：設定網路功能- iSCSI VMware
+[[step-3-configure-networking]]
+== 步驟 3：設定連網
 
 您可以根據資料儲存需求、以多種方式設定iSCSI網路。如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。
 
 .開始之前
 請確定您擁有下列項目：
 
-* 已啟用「傳送及接收硬體流程控制*端點對端點*」。
+* 啟用 *端對端* 的發送和接收硬體流程控制。
 * 停用優先順序流程控制。
-* 如果適用、請啟用巨型框架。
+* 如果合適，請啟用巨型訊框（建議）。
 +
-如果您基於效能考量而在IP SAN中使用巨型框架、請務必將陣列、交換器和主機設定為使用巨型框架。如需如何在主機和交換器上啟用巨型框架的資訊、請參閱作業系統和交換器文件。若要在陣列上啟用巨型框架、請完成步驟3中的步驟。
+如果出於效能考量而在 IP SAN 中使用巨型訊框，請確定將陣列、交換器和主機設定為使用巨型訊框。如需如何在主機和交換器上啟用巨型訊框的相關資訊，請參閱您的作業系統和交換器文件。若要在陣列上啟用巨型訊框，請完成步驟 4 中的步驟。
 
 
 
 .關於這項工作
-規劃 iSCSI 網路時，請記住本 https://configmax.broadcom.com/home["VMware組態上限"^]指南指出支援的 iSCSI 儲存路徑上限為 8 條。您必須考量此需求、以免設定太多路徑。
+在規劃 iSCSI 連網時，請記住， https://configmax.broadcom.com/guest["VMware 組態最大值指南"^] 指出每個 LUN 最多支援 32 條 iSCSI 路徑，並且每部伺服器最多可以與軟體 iSCSI 堆疊關聯或綁定連接埠的 NICs 數量為 8 個。您必須考慮此要求，以避免設定過多的路徑。
 
 根據預設、當您不使用iSCSI連接埠繫結時、VMware iSCSI軟體啟動器會針對每個iSCSI目標建立單一工作階段。
 
 
-NOTE: VMware iSCSI連接埠繫結是一項功能、可強制所有繫結的VMkernel連接埠登入已設定網路區段上可存取的所有目標連接埠。它用於提供iSCSI目標單一網路位址的陣列。NetApp建議不要使用iSCSI連接埠繫結。如需其他資訊，請參閱文章，瞭 https://support.broadcom.com/["VMware知識庫"]解在 ESX/ESXi 中使用軟體 iSCSI 連接埠繫結的相關考量。如果ESXi主機連接至其他廠商的儲存設備、NetApp建議您使用個別的iSCSI vmkernel連接埠、以避免與連接埠繫結發生衝突。
-
-為達最佳實務做法、您不應在E系列儲存陣列上使用連接埠繫結。如需詳細資訊、請參閱 https://www.netapp.com/media/17017-tr4789.pdf["TR-4789 ：適用於 E 系列 SANtricity iSCSI 的 VMware 組態指南、可與 ESXi 6.x 和 7.x 整合"^] 。
+NOTE: VMware iSCSI 連接埠綁定是一項功能，它強制所有綁定的 VMkernel 連接埠登入設定的網路區段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/best-practices-for-configuring-networking-with-software-iscsi.html["在 ESX/ESXi 中使用軟體 iSCSI 連接埠繫結的最佳實務"^]。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI vmkernel 連接埠，以避免與連接埠綁定發生衝突。
 
 為確保良好的多重路徑組態、iSCSI網路可使用多個網路區段。在一個網路區段上、至少放置一個主機端連接埠和每個陣列控制器的一個連接埠、並在另一個網路區段上放置一組相同的主機端連接埠和陣列端連接埠。如有可能、請使用多個乙太網路交換器來提供額外的備援。
 
@@ -74,8 +104,8 @@ NOTE: 許多網路交換器必須設定在超過9、000位元組的IP負荷上�
 
 
 
-[[step-3-configure-array-side-networking-iscsi-vmware]]
-== 步驟3：設定陣列端的網路功能- iSCSI、VMware
+[[step-4-configure-array-side-networking]]
+== 步驟 4：設定陣列側連網
 
 您可以使用SANtricity 支援支援系統的圖形使用者介面、在陣列端設定iSCSI網路。
 
@@ -102,7 +132,7 @@ NOTE: 有關如何在 VMware 組態中設定陣列端網路的詳細資訊，請
 
 . 在Set Administrator Password（設定管理員密碼）和Confirm Password（確認密碼）欄位中輸入管理員角色的System Manager密碼、然後按一下* Set Password（設定密碼）*。
 +
-如果未設定集區、磁碟區群組、工作負載或通知、則會啟動設定精靈。
+如果沒有設定任何集區、Volume 群組、工作負載或通知，則會啟動設定精靈。
 
 . 關閉設定精靈。
 +
@@ -134,10 +164,10 @@ NOTE: 有關如何在 VMware 組態中設定陣列端網路的詳細資訊，請
  a| 
 已設定乙太網路連接埠速度
  a| 
-選取所需的速度。下拉式清單中顯示的選項取決於網路可支援的最大速度（例如10 Gbps）。
+選擇所需速度。下拉清單中顯示的選項取決於您的網路可支援的最大速度（例如，25 Gbps）。
 
 
-NOTE: 控制器上提供的選購25GB iSCSI主機介面卡不會自動交涉速度。您必須將每個連接埠的速度設定為10 GB或25 GB。所有連接埠都必須設定為相同的速度。
+NOTE: 控制器上可用的 iSCSI 主機介面卡不會自動協商速度。您必須將每個連接埠的速度設定為 1 Gb、10 Gb 或 25 Gb。所有連接埠都必須設定為相同的速度。
 
 
 
@@ -162,7 +192,7 @@ MTU大小（按一下*顯示更多連接埠設定*即可取得）。
  a| 
 如有必要、請為最大傳輸單元（MTU）輸入新的位元組大小。
 
-預設的最大傳輸單元（MTU）大小為每個框架1500位元組。您必須輸入介於1500和9000之間的值。
+預設的最大傳輸單元（MTU）大小為每個訊框 1500 位元組。您必須輸入 1500 到 9000 之間的值。若要啟用巨型訊框，請將此值設為 9000 位元組。
 
 
 
@@ -200,34 +230,57 @@ MTU大小（按一下*顯示更多連接埠設定*即可取得）。
 
 
 
-[[step-4-configure-host-side-networking-iscsi]]
-== 步驟4：設定主機端網路功能- iSCSI
+[[step-5-configure-host-side-networking]]
+== 步驟 5：設定主機端連網
 
 在主機端設定iSCSI網路功能可讓VMware iSCSI啟動器與陣列建立工作階段。
 
 .關於這項工作
-在主機端設定iSCSI網路的這種快速方法中、您可以讓ESXi主機將iSCSI流量傳輸到四個備援路徑上的儲存設備。
+此工作在主機端設定 iSCSI 連網，並與儲存陣列建立 iSCSI 工作階段。
 
 完成此工作之後、主機會設定一個vSwitch、其中包含VMkernel連接埠和兩個vmnics。
 
-如需設定VMware iSCSI網路的其他資訊、請參閱 https://docs.vmware.com/en/VMware-vSphere/index.html["VMware vSphere文件"^] 適用於您的vSphere版本。
+如需設定 VMware 的 iSCSI 連網的其他資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi.html["使用 ESXi 設定 iSCSI 介面卡與儲存設備"^]。
+
+
+NOTE: 在此過程中，請記錄新增軟體 iSCSI 介面卡的 iSCSI 限定名稱（IQN）。稍後設定主機對應時將需要此資訊。
+
+.開始之前
+請確定您擁有下列項目：
+
+* 已設定將用於承載 iSCSI 儲存設備流量的交換器。
+* 交換器上啟用 *端對端* 的傳送與接收硬體流程控制。
+* 交換器上的優先權流程控制已停用。
+* 陣列端 iSCSI 組態完成。
+* 至少需要兩個主機網路卡埠用於 iSCSI 流量。
+
 
 .步驟
-. 設定用於傳輸iSCSI儲存流量的交換器。
-. 啟用「傳送及接收硬體流程控制*端點對端點*」。
-. 停用優先順序流程控制。
-. 完成陣列端iSCSI組態。
-. 使用兩個NIC連接埠進行iSCSI流量。
-. 使用vSphere用戶端或vSphere Web用戶端來執行主機端組態。
+. 使用 vSphere 用戶端或 vSphere Web 用戶端來執行主機端組態。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi.html["使用 ESXi 設定 iSCSI 介面卡與儲存設備"^]。
 +
 介面功能各不相同、實際工作流程也各不相同。
 
+. 設定 iSCSI 網路。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi.html["使用 ESX 設定 iSCSI 網路"^]。
++
+.. 建議不要使用連接埠綁定。VMware iSCSI 連接埠綁定是一項功能，它會強制所有綁定的 VMkernel 連接埠登入已設定網段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/best-practices-for-configuring-networking-with-software-iscsi.html["在 ESX/ESXi 中使用軟體 iSCSI 連接埠繫結的最佳實務"^]。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI vmkernel 連接埠，以避免與連接埠綁定發生任何衝突。
+.. NetApp 建議在 vSphere 標準交換器上設定多個介面卡對應，並利用主動/待命介面卡來提供備援。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/setting-up-network-for-iscsi-and-iser-with-esxi/multiple-network-adapters-in-iscsi-or-iser-configuration.html["iSCSI 組態中的多個網路介面卡"^]。
+.. 如有需要，請透過 iSCSI 啟用巨型訊框。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/using-jumbo-frames-with-iscsi-and-iser.html["在 ESX 上搭配 iSCSI 使用巨型訊框"^]。
+
+
+. 新增軟體 iSCSI 介面卡。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/configure-the-software-iscsi-adapter-with-esxi/add-or-remove-the-software-iscsi-adapter.html["新增或移除軟體 iSCSI 介面卡"^]。
++
+.. 記錄主機 IQN 並新增 iSCSI 別名（選用）。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/modify-general-properties-for-iscsi-and-iser-adapters-on-esxi-hosts.html["修改 ESX 主機上 iSCSI 的一般屬性"^]。
+.. 如果使用 CHAP 金鑰，請設定 CHAP 參數。請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/configuring-iscsi-and-iser-adapters-and-storage-with-esxi/configuring-chap-parameters-for-iscsi-or-iser-storage-adapters-with-esxi.html["在 ESX 主機上設定 iSCSI 介面卡的 CHAP 參數"^]。
 
 
 
 
-[[step-5-verify-ip-network-connections-iscsi-vmware]]
-== 步驟5：驗證IP網路連線- iSCSI、VMware
+成功新增後，可以從 vSphere Client 上的儲存介面卡檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。
+
+
+
+[[step-6-verify-ip-network-connections]]
+== 步驟 6：驗證 IP 網路連線
 
 您可以使用ping測試來驗證網際網路傳輸協定（IP）網路連線、以確保主機和陣列能夠通訊。
 
@@ -260,7 +313,7 @@ Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
 Reply from 192.0.2.8: bytes=8972 time=2ms TTL=64
 Ping statistics for 192.0.2.8:
   Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
-Approximate round trip times in milli-seconds:
+Approximate round trip times in milliseconds:
   Minimum = 2ms, Maximum = 2ms, Average = 2ms
 ----
 
@@ -270,61 +323,5 @@ Approximate round trip times in milli-seconds:
 
 NOTE: 如果命令失敗並顯示訊息「傳送失敗（訊息太長）」、請確認主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的MTU大小（巨型框架支援）。
 
-. 返回iSCSI組態程序以完成目標探索。
+. 如果步驟 5 的探索不成功，請回到 iSCSI 主機端連網組態程序以完成工作階段探索。
 
-
-
-
-[[step-6-record-your-configuration]]
-== 步驟6：記錄您的組態
-
-您可以產生及列印本頁的PDF、然後使用下列工作表記錄您的傳輸協定專屬儲存組態資訊。您需要這些資訊來執行資源配置工作。
-
-
-
-[[recommended-configuration]]
-=== 建議的組態
-
-建議的組態包括兩個啟動器連接埠、以及四個具有一或多個VLAN的目標連接埠。
-
-image::../media/50001_01_conf-vmw.gif[iSCSI 連接埠識別碼]
-
-
-
-[[target-iqn]]
-=== 目標IQN
-
-|===
-| 標註編號 | 目標連接埠連線 | IQN 
-
-
- a| 
-2.
- a| 
-目標連接埠
- a| 
-
-|===
-
-
-[[mapping-host-name]]
-=== 對應主機名稱
-
-|===
-| 標註編號 | 主機資訊 | 名稱與類型 
-
-
- a| 
-1.
- a| 
-對應主機名稱
- a| 
-
-
-
- a| 
- a| 
-主機作業系統類型
- a| 
-
-|===

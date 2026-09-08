@@ -1,10 +1,10 @@
 ---
 permalink: getting-started/learn-software-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
+keywords: E-Series, eseries, E4000, EF80, EF50, EF300, EF600, SANtricity, E-Series software, E-Series user interface 
 summary: E系列系統包含SANtricity 用於儲存資源配置和其他工作的支援功能。 
 ---
-= 瞭解 SANtricity 軟體
+= 了解適用於 E 系列的 SANtricity 軟體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -96,7 +96,7 @@ image:../media/sam1130_icon_support.gif["支援"]* 支援 *
 [[santricity-unified-manager]]
 == 統一化管理程式SANtricity
 
-Unified Manager 是一款以 Web 為基礎的軟體，用於管理您的整個網域。透過集中式檢視，您可以查看所有新型 E 系列和 EF 系列陣列的狀態，例如 EF50、EF80、E4000、E2800、EF280、EF300、E5700、EF570、EF600、EF300C 和 EF600C。您也可以對選定的儲存陣列執行批次作業。
+Unified Manager 是網路型軟體，用於管理您的整個網域。透過集中式檢視，您可以查看所有較新的 E 系列和 EF 系列陣列的狀態，例如 EF50、EF80、E4000、EF300、EF600、EF300C 和 EF600C。您也可以對選定的儲存設備陣列執行批次作業。
 
 Unified Manager與Web Services Proxy一起安裝在管理伺服器上。若要存取Unified Manager、請開啟瀏覽器並輸入指向安裝Web服務Proxy之伺服器的URL。
 

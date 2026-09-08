@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300 maintenance, EF600 maintenance, repairing EF300, repairing EF600, EF600C, EF300C replace EF300 components, replace EF600 components 
 summary: 維護EF300和EF600硬體 
 ---
-= 維護硬體 - EF300 和 EF600
+= EF300 和 EF600 系統的硬體維護
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -51,6 +51,13 @@ https://docs.netapp.com/us-en/e-series/maintenance-ef600/dimms-overview-supertas
 https://docs.netapp.com/us-en/e-series/maintenance-ef600/drives-overview-supertask-concept.html["磁碟機"]
  a| 
 磁碟機是提供資料實體儲存媒體的裝置。
+
+
+
+ a| 
+link:drive-drawer-de460c-replace.html["磁碟機抽屜"]
+ a| 
+磁碟機抽屜是 DE460C 磁碟機機櫃的五個組件之一，最多可容納 12 個磁碟機。
 
 
 

@@ -75,4 +75,4 @@ E2760、E5660
 DE460C
 
 |===
-有關支援鏡像功能的佈線資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/17133-tr4656.pdf["同步與非同步鏡射功能說明與部署指南"^]。
+有關支援鏡像功能的佈線資訊，請參閱 https://www.netapp.com/pdf.html?item=/media/19405-tr-4839.pdf["同步與非同步鏡射功能說明與部署指南"^]。

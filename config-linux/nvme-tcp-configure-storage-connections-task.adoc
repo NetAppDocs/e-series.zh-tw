@@ -1,0 +1,140 @@
+---
+permalink: config-linux/nvme-tcp-configure-storage-connections-task.html 
+sidebar: sidebar 
+keywords: NVMe over TCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。 
+---
+= 在 E 系列中設定儲存陣列 NVMe over TCP 連線 - Linux
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。
+
+.開始之前
+請確定您擁有下列項目：
+
+* 控制器上需要一個 NVMe over TCP 主機連接埠；否則，System Manager 中將無法使用 NVMe over TCP 設定。
+* 主機連線的IP位址。
+
+
+.關於這項工作
+您可以從 *硬體* 頁面或 menu:設定[系統] 存取 NVMe over TCP 組態。本工作說明如何從硬體頁面設定連接埠。
+
+
+NOTE: 只有當儲存陣列的控制器包含 NVMe over TCP 連接埠時，才會顯示 NVMe over TCP 設定和功能。
+
+.步驟
+. 在系統管理器介面的左側面板中，選擇 *Hardware* 。
+. 按一下具有您要設定之 NVMe over TCP 連接埠的控制器。
++
+此時會出現控制器的內容功能表。
+
+. 選擇 *設定 NVMe over TCP 連接埠*。
++
+*設定 NVMe over TCP 連接埠* 對話方塊開啟。
+
+. 在下拉式清單中、選取您要設定的連接埠、然後按一下「*下一步*」。
+. 選取您要使用的連接埠組態設定、然後按一下「*下一步*」。
++
+若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多連接埠設定*連結。
+
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+已設定乙太網路連接埠速度
+ a| 
+選擇所需速度。下拉清單中顯示的選項取決於您的網路支援的最大速度（例如，10 Gbps）。可能的值包括：
+
+** 自動協商
+** 10 Gbps
+** 25 Gbps
+** 40 Gbps
+** 50 Gbps
+** 100 Gbps
+** 200 Gbps
+
+
+
+NOTE: 設定的 NVMe over TCP 連接埠速度應與所選連接埠上 SFP 的速度功能相符。
+
+
+
+ a| 
+已設定的前向錯誤更正（FEC）模式
+ a| 
+選擇所需的 FEC 模式。下拉清單中顯示的選項取決於目前選擇的速度，並且僅列出該速度支援的選項。並非所有速度都支援所有 FEC 模式。可選值包括：
+
+** 無
+** Reed-Solomon
+** 消防規範
+** 自動
+
+
+
+
+ a| 
+啟用IPV4和/或啟用IPv6
+ a| 
+選取一個或兩個選項、以啟用對IPv4和IPv6網路的支援。
+
+
+
+ a| 
+MTU大小（按一下*顯示更多連接埠設定*即可取得）。
+ a| 
+如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到9000之間的值。
+
+|===
++
+如果您選取*啟用IPV4、則會在您按一下*下一步*之後、開啟一個對話方塊、供您選取IPV4設定。如果您選取*啟用IPv6 *、則會在您按一下*下一步*之後、開啟一個對話方塊來選取IPv6設定。如果您同時選取這兩個選項、則會先開啟[IPV4設定]對話方塊、然後按一下[* Next*（*下一步*）]之後、隨即開啟[IPv6設定]對話方塊。
+
+. 自動或手動設定IPv6和/或IPv6設定。若要查看所有連接埠設定、請按一下對話方塊右側的*顯示更多設定*連結。
++
+|===
+| 連接埠設定 | 說明 
+
+
+ a| 
+自動從DHCP伺服器取得組態
+ a| 
+選取此選項可自動取得組態。
+
+
+
+ a| 
+手動指定靜態組態
+ a| 
+選取此選項、然後在欄位中輸入靜態位址。對於IPV4、請加入網路子網路遮罩和閘道。對於IPv6、請包含可路由的IP位址和路由器IP位址。
+
+
+NOTE: 如果只有一個可路由的IP位址、請將其餘位址設為0：0：0：0：0：0：0：0：0：0。
+
+
+
+ a| 
+啟用VLAN支援（按一下*「Show More settings（顯示更多設定）」*即可取得。）
+ a| 
+
+NOTE: 此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可用。
+
+
+
+ a| 
+啟用乙太網路優先順序（按一下*顯示更多設定*即可取得）。
+ a| 
+
+NOTE: 此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可用。
+
+|===
+. 單擊*完成*。
+
+
+.接下來呢？
+設定 NVMe over TCP 連接埠設定後，link:nvme-tcp-discover-connect-storage-host-task.html["探索並連接主機上的儲存設備"]。

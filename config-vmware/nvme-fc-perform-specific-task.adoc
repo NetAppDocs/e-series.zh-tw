@@ -1,0 +1,243 @@
+---
+permalink: config-vmware/nvme-fc-perform-specific-task.html 
+sidebar: sidebar 
+keywords: NVMe over FC, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries 
+summary: 對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。 
+---
+= 在 E 系列 - VMware 中執行 NVMe over FC 專屬工作
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。
+
+
+NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 位元組模擬（512e），以確保與 VMware 相容。如需將 Volume 設定為使用 512 位元組模擬（512e）的詳細資訊，請參閱 SANtricity System Manager 線上說明。
+
+
+NOTE: 在規劃 NVMe over FC 組態時，請記住， https://configmax.broadcom.com/guest["VMware 組態最大值指南"^] 指出每部伺服器最多支援 2 個 NVMe FC 啟動器連接埠。您必須考慮此要求，以避免設定過多路徑。
+
+
+
+[[step-1-record-your-configuration]]
+== 步驟 1：記錄您的組態
+
+您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 NVMe over Fibre Channel 儲存組態資訊。您在執行配置工作時需要這些資訊。
+
+圖中顯示了一台主機連接到 E 系列儲存陣列的兩個區域。一個區域以紅線標示；另一個區域以藍線標示。每個區域包含一個啟動器連接埠和一半的目標連接埠。控制器連接埠的數量取決於控制器型號和主機介面卡（HIC）的數量。您可能擁有更多連接埠（每個控制器最多 12 個）。如有需要，請列印其他 PDF 檔案。
+
+image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Channel 連接埠識別碼]
+
+
+
+[[host-identifiers]]
+=== 主機識別碼
+
+|===
+| 標註編號 | 主機（啟動器）連接埠連線 | WWPN 
+
+
+ a| 
+1.
+ a| 
+主機
+ a| 
+_不適用_
+
+
+
+ a| 
+2.
+ a| 
+主機連接埠0至FC交換器區域0
+ a| 
+
+
+
+ a| 
+7.
+ a| 
+主機連接埠1至FC交換器區域1
+ a| 
+
+|===
+
+
+[[target-identifiers]]
+=== 目標識別碼
+
+|===
+| 標註編號 | 陣列控制器（目標）連接埠連線 | WWPN 
+
+
+ a| 
+3.
+ a| 
+交換器
+ a| 
+_不適用_
+
+
+
+ a| 
+6.
+ a| 
+陣列控制器（目標）
+ a| 
+_不適用_
+
+
+
+ a| 
+5.
+ a| 
+控制器A、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+5.
+ a| 
+控制器 A，連接埠 2 連接至 FC 交換器 1
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器 A，連接埠 3 連接至 FC 交換器 2
+ a| 
+
+
+
+ a| 
+9.
+ a| 
+控制器 A，連接埠 4 連接至 FC 交換器 2
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器B、連接埠1至FC交換器1
+ a| 
+
+
+
+ a| 
+4.
+ a| 
+控制器 B，連接埠 2 連接至 FC 交換器 1
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器 B，連接埠 3 連接至 FC 交換器 2
+ a| 
+
+
+
+ a| 
+8.
+ a| 
+控制器 B，連接埠 4 連接至 FC 交換器 2
+ a| 
+
+|===
+
+
+[[host-mapping-information]]
+=== 主機對應資訊
+
+[cols="35h,~"]
+|===
+| 對應主機名稱 |  
+
+
+| 主機作業系統類型 |  
+
+
+| 主機NQN |  
+
+
+| 目標NQN |  
+|===
+
+
+[[step-2-determine-the-host-ports-wwpns]]
+== 步驟 2：確定主機連接埠 WWPNs
+
+若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。
+
+.步驟
+. 使用 SSH 或 ESXi shell 連線到 ESXi 主機。若要啟用 ESXi shell，請參閱 https://knowledge.broadcom.com/external/article/311213/using-esxi-shell-in-esxi.html["在 ESXi 中使用 ESXi Shell"^]。
+. 執行下列命令：
++
+[listing]
+----
+esxcli storage core adapter list
+----
+. 記錄啟動器 WWPN 識別碼（UID，格式為 fc.WWNN:WWPN）。輸出結果將類似於以下範例：
++
+[listing]
+----
+HBA Name  Driver    Link State  UID                                   Capabilities         Description
+--------  --------  ----------  ------------------------------------  -------------------  -----------
+vmhba4    lpfc      link-up     fc.200070b7e4395530:100070b7e4395530  Second Level Lun ID  (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba5    lpfc      link-up     fc.200070b7e4395531:100070b7e4395531  Second Level Lun ID  (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba64   lpfc      link-up     fc.200070b7e4395530:100070b7e4395530                       (0000:5e:00.0) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+vmhba65   lpfc      link-up     fc.200070b7e4395531:100070b7e4395531                       (0000:5e:00.1) Emulex Corporation Emulex LPe35000/LPe36000 Fibre Channel Adapter
+
+----
+
+
+在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是預期中的情況。請記錄每個唯一的 WWPN。
+
+
+NOTE: 另一個命令選項是 `esxcli storage san fc list`。這將顯示更多詳細資訊以及以冒號分隔的十六進位格式的 WWPN。
+
+. 執行下列命令並記錄主機 NQN（稍後設定主機對應時需要使用）：
++
+[listing]
+----
+esxcli nvme info get
+----
+
+
+
+
+[[step-3-configure-the-nvmefc-switches]]
+== 步驟 3：設定 NVMe/FC 交換器
+
+設定（分區）NVMe over Fibre Channel（FC）交換器可讓主機連線至儲存陣列、並限制路徑數量。您可以使用交換器的管理介面來分區交換器。
+
+.開始之前
+請確定您擁有下列項目：
+
+* 交換器的系統管理員認證。
+* 每個主機啟動器連接埠的WWPN、以及連接至交換器的每個控制器目標連接埠。（使用HBA公用程式進行探索。）
+
+
+
+NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如需如何取得HBA公用程式的指示、請參閱廠商網站的支援區段。
+
+.關於這項工作
+每個啟動器連接埠都必須位於具有所有對應目標連接埠的個別區域中。如需交換器分區的詳細資訊、請參閱交換器廠商的文件。
+
+.步驟
+. 登入FC交換器管理程式、然後選取分區組態選項。
+. 建立新的區域、其中包含第一個主機啟動器連接埠、也包含所有連接到啟動器所在FC交換器的目標連接埠。
+. 為交換器中的每個FC主機啟動器連接埠建立其他區域。
+. 儲存區域、然後啟動新的分區組態。
+
+
+請參閱交換器廠商的文件，以取得有關設定區域的詳細說明。

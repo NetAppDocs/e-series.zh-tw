@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800 replace 12-drive power supply, E2800 replace 24-drive power supply, replacing E2800 power supply, E2800, E-Series, eseries 
 summary: 更換E2800 12個磁碟機或24個磁碟機控制器機櫃或磁碟機櫃、其中包含兩個配備整合式風扇的電源供應器。 
 ---
-= 更換電源供應器 - E2800 （ 12 個磁碟機或 24 個磁碟機）
+= 更換 E2800 12 磁碟機或 24 磁碟機機櫃的電源供應
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -62,7 +62,7 @@ summary: 更換E2800 12個磁碟機或24個磁碟機控制器機櫃或磁碟機�
 
 +
 .. 選取*硬體*。
-.. 查看 * 機櫃 * 下拉式清單右側的電源image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"]和風扇image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["' 風扇圖示 \""]圖示、以判斷哪個機櫃的電源供應器故障。
+.. 查看 *機櫃* 下拉式清單右側的電源 image:../media/sam1130_ss_hardware_power_icon_maint-e2800.gif["電源圖示"] 和風扇 image:../media/sam1130_ss_hardware_fan_icon_maint-e2800.gif["風扇圖示"] 圖示，以判斷哪個機櫃的電源供應故障。
 +
 如果某個元件發生故障、這些圖示中有一個或兩個都是紅色的。
 

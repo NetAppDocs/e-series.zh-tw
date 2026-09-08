@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/overview-concept.html 
 sidebar: sidebar 
-keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 檢閱使用Express方法來設定E系列陣列和VMware主機的需求。 
 ---
 = 假設（ E 系列和 VMware ）
@@ -64,12 +64,13 @@ IP定址
  a| 
 * 您將不會使用共享磁碟區。
 * 您將建立集區、而非磁碟區群組。
+* 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 位元組模擬（512e），以確保與 VMware 相容。如需將 Volume 設定為使用 512 位元組模擬（512e）的詳細資訊，請參閱 SANtricity System Manager 線上說明。
 
 
 
 
  a| 
-傳輸協定：FC
+協定：Fibre Channel（FCP）
  a| 
 * 您已完成所有主機端FC連線和啟動的交換器分區。
 * 您使用的是NetApp支援的FC HBA和交換器。
@@ -102,6 +103,26 @@ IP定址
  a| 
 * 您使用的是NetApp支援的SAS HBA。
 * 您使用的是SAS HBA驅動程式和韌體版本、如所列 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]。
+
+
+
+
+ a| 
+協定：基於 RoCE 的 NVMe（基於融合乙太網路的 RDMA）
+ a| 
+* 您使用的是支援 RDMA 流量的乙太網路交換器
+* 您已將乙太網路交換器設定為使用基於區分服務代碼點（DSCP）的優先權流程控制（PFC）以進行無損連網
+* 您使用的 RDMA 驅動程式和韌體版本如 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]中所列。
+
+
+
+
+ a| 
+協定：NVMe over TCP
+ a| 
+* 您使用的是支援 TCP 流量的乙太網路交換器
+* 您已依照廠商對 TCP 的建議設定了乙太網路交換器。
+* 您使用的是 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]中所列的網路驅動程式與韌體版本。
 
 
 |===

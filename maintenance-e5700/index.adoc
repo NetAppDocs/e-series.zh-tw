@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 maintenance, repair E5700, replace E5700 components, E5724, EF570, E5760 
 summary: 維護E5700硬體 
 ---
-= 維護硬體 - 5700
+= 維護 E5700 硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,9 @@ summary: 維護E5700硬體
 您可能需要在硬體上執行維護程序。本節將說明維護 E5700 系統元件的特定程序。
 
 本節中的程序假設 E5700 系統已部署在 E 系列環境中。
+
+
+NOTE: E5700 儲存系統已停產（EOA），不再銷售，但仍提供支援。本節資訊僅供參考。
 
 
 

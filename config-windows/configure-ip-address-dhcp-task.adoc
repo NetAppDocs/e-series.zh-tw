@@ -2,9 +2,9 @@
 permalink: config-windows/configure-ip-address-dhcp-task.html 
 sidebar: sidebar 
 keywords: IP address, DHCP, express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 使用動態主機組態傳輸協定（DHCP）以Windows Express方法提供IP位址。 
+summary: 使用動態主機設定協定（DHCP）在 Windows 快速方法中提供 IP 位址。 
 ---
-= 在 E 系列 - Windows 中使用 DHCP 設定 IP 位址
+= 在 E 系列中為 Windows 主機使用 DHCP 設定 IP 位址
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

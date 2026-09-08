@@ -23,11 +23,11 @@ summary: 若要安裝及設定 EF50 或 EF80 儲存系統，您必須準備站�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]link:install-cable.html["連接硬體"]
 [role="quick-margin-para"]
-要連接硬體，請將控制器彼此連接，以實現控制器間鏡像，從而確保系統完全備援，並用於快取鏡像和 I/O 傳輸，然後將控制器連接到主機網路。
+若要連接硬體，請將控制器彼此連接以啟用控制器間鏡射，這可確保系統完全備援，並用於快取鏡射和 I/O 傳輸；將控制器連接至您的主機網路；然後連接 SAS 擴充機櫃（如果適用）。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]link:install-power-hardware.html["啟動儲存系統"]
 [role="quick-margin-para"]
-若要啟動儲存系統、請將電源線插入每個控制器電源供應器、然後將其連接至不同電路上的電源。
+要啟動儲存系統，您需要先啟動機櫃並分配機櫃 ID（如果適用），然後再啟動控制器。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]link:install-complete-setup.html["完成儲存系統設定"]
 [role="quick-margin-para"]

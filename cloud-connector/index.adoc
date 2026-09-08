@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Cloud Connector 
 summary: 解決方案：Cloud Connector SANtricity 
 ---
-= 概述《解決方案》（英文）SANtricity
+= 了解 SANtricity Cloud Connector
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

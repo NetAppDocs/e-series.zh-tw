@@ -2,7 +2,7 @@
 permalink: config-linux/srp-ib-install-smcli-11-53-task.html 
 sidebar: sidebar 
 keywords: Storage Manager, cli, command line interface, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 當您在SANtricity Management Station上安裝時、預設會安裝圖形化使用者介面（GUI）和命令列介面（CLI）。這些指示假設SANtricity 您將在Management Station上安裝不需在I/O主機上安裝的不實儲存管理程式GUI。 
+summary: 在管理工作站上安裝 SANtricity Storage Manager 軟體時，預設會安裝圖形化使用者介面（GUI）和命令列介面（CLI）。這些說明假設您將 SANtricity Storage Manager GUI 安裝在管理工作站上，而不是在 I/O 主機上。 
 ---
 = 安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ SRP over InfiniBand ）
 :allow-uri-read: 

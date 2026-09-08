@@ -2,7 +2,7 @@
 permalink: maintenance-e4000/drive-drawer-60.html 
 sidebar: sidebar 
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries 
-summary: 更換E2860控制器櫃或DE460C磁碟機櫃中的磁碟機抽屜。 
+summary: 您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣。 
 ---
 = 更換磁碟機抽屜 - E4000 （ 60 個磁碟機櫃）
 :allow-uri-read: 
@@ -15,7 +15,7 @@ summary: 更換E2860控制器櫃或DE460C磁碟機櫃中的磁碟機抽屜。
 您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣。
 
 .關於這項工作
-更換E4060控制器機櫃或DE460C磁碟機櫃中故障磁碟櫃的步驟、取決於藥櫃中的磁碟區是否受到藥櫃損失保護。如果磁碟機藥櫃中的所有磁碟區都位於具有藥櫃遺失保護的磁碟集區或磁碟區群組中、您可以線上執行此程序。否則、您必須停止所有主機I/O活動、並在更換磁碟機匣之前關閉磁碟櫃電源。
+更換 E4060 控制器機櫃或 DE460C 磁碟機機櫃中故障的磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充機櫃）的電源。
 
 .開始之前
 * 確定磁碟機櫃符合下列所有條件：
@@ -46,14 +46,14 @@ CAUTION: *可能會遺失資料存取*-如果磁碟區已處於降級狀態、�
 
 
 
-NOTE: 如果您需要有關如何更換 E 系列 DE460c 擴充機櫃的資訊，請參閱 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp 知識庫"^]。
+NOTE: 如果您需要有關如何更換 E 系列 DE460C 擴充櫃的資訊，請參閱 https://kb.netapp.com/on-prem/E-Series/Hardware-KBs/How_to_replace_an_E_Series_DE460c_controller_expansion_shelf["NetApp 知識庫"^]。
 
 
 
 [[step-1-prepare-to-replace-drive-drawer]]
 == 步驟1：準備更換磁碟機抽屜
 
-確定您是否可以在磁碟機櫃上線時執行更換程序、或是需要停止主機I/O活動、並關閉任何已開啟電源的磁碟櫃。
+確定是否可以在磁碟機機櫃處於線上時執行更換程序，或者是否需要停止主機 I/O 活動並關閉任何已通電的機櫃電源（離線執行程序）。
 
 如果您要用藥櫃遺失保護功能來更換藥櫃中的藥櫃、則無需停止主機I/O活動、也無需關閉任何磁碟櫃。
 
@@ -64,11 +64,11 @@ NOTE: 如果您需要有關如何更換 E 系列 DE460c 擴充機櫃的資訊，
 ** 如果電源已開啟、請執行下一步。
 
 
-. 存取CLI、然後輸入下列命令：
+. 存取 CLI，然後輸入下列命令將目標抽屜置於服務模式：
 +
 [listing]
 ----
-SMcli <ctlr_IP1\> -p "array_password" -c "set tray [trayID] drawer [drawerID]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [trayID] drawer [drawerID]
 serviceAllowedIndicator=on;"
 ----
 +
@@ -76,6 +76,7 @@ serviceAllowedIndicator=on;"
 
 +
 ** 「<ctlr_ip1>'是控制器的識別碼。
+**  `array_username` 是儲存陣列的使用者名稱。您必須將  `array_username` 的值用雙引號（"）括起來。
 ** 「array_password」是儲存陣列的密碼。您必須將「array_password」的值括在雙引號（""）內。
 ** 「TrayID]」是磁碟機櫃的識別碼、其中包含您要更換的磁碟機匣。磁碟機櫃ID值為0至99。您必須將「TrayID」的值括在方括弧中。
 ** 「drawerID」是您要更換的磁碟機匣的識別碼。藥櫃ID值為1（頂端藥櫃）至5（底部藥櫃）。必須將"drawerid"的值括在方括弧中。
@@ -87,7 +88,7 @@ serviceAllowedIndicator=on;"
 +
 [listing]
 ----
-SMcli <ctlr_IP1\> -p "safety-1" -c "set tray [10] drawer [1]
+SMcli <ctlr_IP1\> -k -u "DC1-PRD-SAN-01" -p "safety-1" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
 . 判斷您是否需要停止主機I/O活動、如下所示：
@@ -120,7 +121,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 +
 當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
 
-. 從「SView System Manager」首頁SANtricity 、選取*「View Operations in progress*」（檢視進行中的作業*）。
+. 從 SANtricity System Manager 的左側面板中，選擇 menu:儲存設備[進行中的作業]。
 . 請等待所有作業完成、然後再繼續下一步。
 . 請使用下列其中一項程序關閉磁碟櫃電源：
 +
@@ -160,7 +161,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 
 
 
-CAUTION: *可能的硬體損壞*-如果磁碟機匣已開啟電源、纜線鏈將會恢復運作、直到兩端都拔下為止。為避免設備發生短路、如果纜線鏈的另一端仍插上、請勿讓拔下的纜線鏈接頭接觸到金屬機箱。
+CAUTION: *可能造成硬體損壞* -- 如果磁碟機機櫃已通電，則電纜鏈將帶電，直到兩端都拔下為止。為避免設備短路，如果電纜鏈的另一端仍然插著，請勿讓拔下的電纜鏈連接器接觸金屬機箱。
 
 .步驟
 . 請確定磁碟機櫃和控制器櫃不再有I/O活動且已關機、或您已發出「設定藥櫃注意指標」CLI命令。
@@ -176,8 +177,8 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 +
 *（1）*風扇容器握把_
 
-.. 使用握把、將風扇箱從磁碟機匣中拉出、然後放在一旁。
-.. 如果系統匣已開啟電源、請確定左風扇已達到最大速度。
+.. 使用把手將風扇箱從磁碟機機櫃中拉出，並將其放在一旁。
+.. 如果磁碟櫃已開啟電源、請確定左風扇達到最大速度。
 +
 
 CAUTION: *設備可能因過熱而受損*-如果系統匣已開機、請勿同時移除兩個風扇。否則、設備可能過熱。
@@ -271,7 +272,7 @@ CAUTION: *設備可能因過熱而受損*-如果磁碟櫃已開啟電源、請�
 .. 若要拔下纜線鏈、請朝自己的方向拉約1英吋（2.5公分）。將纜線鏈連接器留在垂直導軌內。
 +
 
-CAUTION: *可能的硬體損壞*-如果磁碟機匣已開啟電源、纜線鏈將會恢復運作、直到兩端都拔下為止。為避免設備發生短路、如果纜線鏈的另一端仍插上、請勿讓拔下的纜線鏈接頭接觸到金屬機箱。
+CAUTION: *可能造成硬體損壞* -- 如果磁碟機機櫃已通電，則電纜鏈將帶電，直到兩端都拔下為止。為避免設備短路，如果電纜鏈的另一端仍然插著，請勿讓拔下的電纜鏈連接器接觸金屬機箱。
 
 
 
@@ -393,7 +394,7 @@ CAUTION: *設備受損風險*：如果您覺得卡住、請停止推動磁碟機
 .步驟
 . 請確定：
 +
-** 已安裝新的磁碟機抽屜。
+** 新的磁碟機抽屜已安裝完畢。
 ** 您有兩個替換的纜線鏈、分別標示為左和右（位於磁碟機抽屜旁的橫式連接器上）。
 
 
@@ -470,7 +471,7 @@ CAUTION: *設備故障風險*-如果連接器未鎖定、則纜線鏈可能會�
 [[step-6-complete-drive-drawer-replacement]]
 == 步驟6：完整更換磁碟機匣
 
-重新插入磁碟機、並以正確順序裝回前擋板。
+以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新裝上前擋板，重新接通電源（如果需要），然後手動重建磁碟機（如果需要）。
 
 
 CAUTION: *可能會遺失資料存取*：您必須將每個磁碟機安裝在磁碟機抽屜的原始位置。
@@ -533,6 +534,10 @@ CAUTION: *設備故障風險*-請務必同時推動兩個槓桿、以完全關�
 
 
 
+
+. 如果您線上執行了磁碟機抽屜更換程序，並且更換的抽屜中的任何磁碟機發生故障，則必須手動重建磁碟機。
++
+使用 SANtricity System Manager 完成 link:https://docs.netapp.com/us-en/e-series-santricity/sm-hardware/reconstruct-drive-manually.html["手動重建磁碟機"^] 程序。
 
 
 

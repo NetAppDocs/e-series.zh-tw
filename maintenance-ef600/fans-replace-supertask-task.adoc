@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF600, EF300, EF600C, EF300C, replace fan, fan fail 
 summary: 更換EF300或EF600中的風扇。 
 ---
-= 更換風扇 - EF300 或 EF600
+= 更換 EF300 或 EF600 儲存系統中的風扇
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -56,7 +56,7 @@ summary: 更換EF300或EF600中的風扇。
 
 . 如果控制器尚未離線、請使用SANtricity 「系統管理程式」將其離線。
 +
-.. 選取*硬體*。
+.. 選擇 menu:硬體［磁碟機］。
 .. 如果圖形顯示磁碟機、請選取*顯示磁碟櫃背面*以顯示控制器。
 .. 選取您要離線的控制器。
 .. 從內容功能表中選取*離線*、然後確認您要執行此作業。
@@ -169,8 +169,7 @@ image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 
 . 將控制器置於線上。
 +
-.. 在 System Manager 中，瀏覽至 * 硬體 * 頁面。
-.. 選擇*顯示控制器背面*。
+.. 在 SANtricity System Manager 中，選取 menu:硬體[控制器與元件]。
 .. 選取裝有更換風扇的控制器。
 .. 從下拉式清單中選取*線上放置*。
 

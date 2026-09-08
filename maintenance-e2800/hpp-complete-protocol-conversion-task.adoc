@@ -1,10 +1,10 @@
 ---
 permalink: maintenance-e2800/hpp-complete-protocol-conversion-task.html 
 sidebar: sidebar 
-keywords: 'E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP+ (optical) host ports, E2800, E-Series, eseries' 
+keywords: E2800 convert host port protocol, convert E2800 FC iSCSI, Fibre Channel protocol, iSCSI protocol, convert HPP, converting host port protocol, SFP optical host ports, E2800, E-Series, eseries 
 summary: 完成E2800陣列的主機連接埠傳輸協定轉換。 
 ---
-= 完成主機傳輸協定轉換 - E2800
+= 完成 E2800 陣列的主機協定轉換
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -29,6 +29,7 @@ summary: 完成E2800陣列的主機連接埠傳輸協定轉換。
 您應該根據廠商對於iSCSI的建議、設定用於傳輸iSCSI流量的交換器。這些建議可能同時包含組態指令和程式碼更新。
 
 . 從「支援系統管理程式」中選取功能表：硬體[設定iSCSI連接埠] SANtricity 。
+. 點擊交換器並選擇 *設定 iSCSI 連接埠*。
 . 選取連接埠設定。
 +
 您可以透過多種方式設定iSCSI網路。如需為環境選擇最佳組態的秘訣、請洽詢您的網路管理員。

@@ -1,7 +1,7 @@
 ---
 permalink: getting-started/learn-shelf-concept.html 
 sidebar: sidebar 
-keywords: E-Series, eseries, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, NE224, 
+keywords: E-Series, eseries, EF50, EF80, E4000, E2800, E5700, EF300, EF600, E-series hardware, E-Series shelf, DE212C, DE224C, DE460C, 
 summary: E系列系統提供多種機櫃尺寸。 
 ---
 = 瞭解 E 系列機櫃類型
@@ -22,7 +22,7 @@ E系列系統提供多種機櫃尺寸。
 
 * 2u12（2個機架單元；12個磁碟機）
 * 3.5吋HDD和/或2.5吋SSD（含介面卡）
-* 僅限 E4000 和 E2800 控制器
+* EF50、EF80、E4000 和 E2800 控制器
 
  a| 
 image:../media/e2812_front.gif["DE212C"]
@@ -34,7 +34,7 @@ image:../media/e2812_front.gif["DE212C"]
 
 * 2u24（2個機架單元；24個磁碟機）
 * 2.5吋HDD和/或2.5吋SSD磁碟機
-* E2800、EF280、E5700和EF570控制器
+* EF50、EF80、E2800、EF280、E5700 和 EF570 控制器
 
  a| 
 image:../media/e2824_front.gif["DE224C"]
@@ -46,7 +46,7 @@ image:../media/e2824_front.gif["DE224C"]
 
 * 4u60（4個機架單元；60個磁碟機）
 * 3.5吋和2.5吋磁碟機（NL-SAS、SAS和SSD）
-* E4000 ， E2800 和 E5700 控制器
+* EF50、EF80、E4000、E2800 和 E5700 控制器
 
  a| 
 image:../media/de460c.gif["DE460C"]

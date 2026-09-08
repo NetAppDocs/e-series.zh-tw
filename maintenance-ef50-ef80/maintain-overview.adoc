@@ -48,6 +48,13 @@ link:drive-replace.html["磁碟機"]
 
 
  a| 
+link:drive-drawer-de460c-replace.html["磁碟機抽屜"]
+ a| 
+磁碟機抽屜是 DE460C 磁碟機機櫃的五個組件之一，最多可容納 12 個磁碟機。
+
+
+
+ a| 
 link:fan-replace.html["風扇"]
  a| 
 風扇為控制器和磁碟機散熱。

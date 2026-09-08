@@ -1,0 +1,158 @@
+---
+permalink: config-linux/nvme-tcp-worksheet-for-concept.html 
+sidebar: sidebar 
+keywords: NVMe over TCP worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
+summary: 使用此工作表記錄 NVMe over TCP 儲存組態資訊。 
+---
+= 記錄您在 E 系列 - Linux 中的 NVMe over TCP 組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以產生並列印此頁面的 PDF 文件，然後使用以下工作表記錄 NVMe over TCP 儲存組態資訊。您需要這些資訊來執行配置工作。
+
+
+
+[[direct-connect-topology]]
+== 直接連線拓撲
+
+在直接連線拓撲中，一或多部主機直接連接至子系統。在 SANtricity 作業系統 11.50 版本中，我們支援從每部主機到子系統控制器的單一連線，如下所示。在此組態中，每部主機的一個 NIC（網路介面卡）連接埠應與其連接的 E 系列控制器連接埠位於相同的子網路，但與另一個 NIC 連接埠位於不同的子網路。
+
+image::../media/nvmeof_direct_connect.gif[NVMe over TCP 直接連接範例]
+
+滿足需求的範例組態包括四個子網路、如下所示：
+
+* 子網路 1：主機 1 NIC 連接埠 1 和控制器 1 主機連接埠 1
+* 子網路 2：主機 1 NIC 連接埠 2 和控制器 2 主機連接埠 1
+* 子網路 3：主機 2 NIC 連接埠 1 和控制器 1 主機連接埠 2
+* 子網路 4：主機 2 NIC 連接埠 2 和控制器 2 主機連接埠 2
+
+
+
+
+[[switch-connect-topology]]
+== 交換器連線拓撲
+
+在網路拓撲中、會使用一或多個交換器。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以取得支援的交換器清單。
+
+image::../media/nvmeof_switch_connect.gif[NVMe over TCP 交換器連接範例]
+
+
+
+[[host-identifiers]]
+== 主機識別碼
+
+從每個主機找出並記錄啟動器NQN。
+
+|===
+| 主機連接埠連線 | 軟體啟動器NQN 
+
+
+ a| 
+主機（啟動器）1.
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+
+
+ a| 
+主機（啟動器）2.
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+
+
+ a| 
+{nbsp}
+ a| 
+{nbsp}
+
+|===
+
+
+[[target-nqn]]
+== 目標NQN
+
+記錄儲存陣列的目標NQN。
+
+|===
+| 陣列名稱 | 目標NQN 
+
+
+ a| 
+陣列控制器（目標）
+ a| 
+
+|===
+
+
+[[target-nqns]]
+== 目標NQN
+
+記錄陣列連接埠要使用的NQN。
+
+|===
+| 陣列控制器（目標）連接埠連線 | NQN 
+
+
+ a| 
+控制器A、連接埠1
+ a| 
+
+
+
+ a| 
+控制器B、連接埠1
+ a| 
+
+
+
+ a| 
+控制器A、連接埠2
+ a| 
+
+
+
+ a| 
+控制器B、連接埠2
+ a| 
+
+|===
+
+
+[[mapping-host-name]]
+== 對應主機名稱
+
+
+NOTE: 對應主機名稱會在工作流程期間建立。
+
+|===
+
+
+ a| 
+對應主機名稱
+ a| 
+
+
+
+ a| 
+主機作業系統類型
+ a| 
+
+|===

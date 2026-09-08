@@ -1,8 +1,8 @@
 ---
 permalink: config-vmware/configure-multipath-software-concept.html 
 sidebar: sidebar 
-keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 設定m軟體、以便在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。 
+keywords: multipath software for vmware, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries 
+summary: 設定多重路徑軟體、以便在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。 
 ---
 = 在 E 系列 - VMware 中設定多重路徑軟體
 :allow-uri-read: 
@@ -11,12 +11,45 @@ summary: 設定m軟體、以便在其中一條實體路徑中斷時、提供通�
 
 
 [role="lead"]
-若要提供儲存陣列的備援路徑、您可以設定多重路徑軟體。
+若要提供儲存陣列的備援路徑，請設定多重路徑軟體。
 
-多重路徑軟體可在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。多重路徑軟體為作業系統提供單一虛擬裝置、代表儲存設備的作用中實體路徑。多重路徑軟體也會管理更新虛擬裝置的容錯移轉程序。對於VMware、NVMe / FC使用高效能外掛（HPP）。
+多重路徑軟體可在其中一條實體路徑中斷時、提供通往儲存陣列的備援路徑。多重路徑軟體為作業系統提供單一虛擬裝置、代表儲存設備的作用中實體路徑。多重路徑軟體也會管理更新虛擬裝置的容錯移轉程序。
 
-VMware僅適用於FC、iSCSI及SAS傳輸協定、提供外掛程式（稱為儲存陣列類型外掛程式（SATP））、以處理特定廠商儲存陣列的容錯移轉實作。
 
-您應該使用的SATP是* VMW_SATP_ALUA*。
 
-如需詳細資訊、請參閱 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-DB5BC795-E4D9-4350-9C5D-12BB3C0E6D99.html["VMware SATA"^]。
+[[multipathing-policies]]
+== 多重路徑原則
+
+多重路徑原則的詳細資訊如下。對於 FCP、iSCSI 和 SAS 傳輸協定，預設為原生多重路徑外掛（NMP）。對於 NVMe over Fabrics（NVMe over FC、NVMe over RoCE 和 NVMe over TCP），預設為高效能外掛（HPP）。
+
+
+
+[[native-multipathing-plug-ins-nmp]]
+=== 原生多重路徑外掛（NMP）
+
+僅適用於 FCP、iSCSI 和 SAS 傳輸協定， https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-multipathing-module.html["VMware 提供原生多重路徑外掛（NMP）"^]稱為儲存陣列類型外掛（SATP），用於處理特定廠商儲存陣列的容錯移轉實作。
+
+您應該使用的 SATP 是 *VMW_SATP_ALUA*（這是 NetApp E 系列的預設選擇）。如需詳細資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-satps.html["VMware SATA"^]。
+
+
+
+==== 路徑選擇外掛與原則（PSP）
+
+這些外掛程式是 VMware NMP 的子模組。NMP 會根據裝置類型為每個邏輯裝置指派預設的 PSP。您可以置換預設的 PSP。如需詳細資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/viewing-and-managing-storage-paths-on-esxi-hosts/change-the-path-selection-policy.html["變更路徑選擇原則"^]。NMP 會為 NetApp 裝置指派 VMW_PSP_RR（輪詢）的預設路徑選擇原則。這是建議的 PSP。
+
+如需更多資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-psps.html["VMware 路徑選擇外掛與原則"^]。
+
+
+
+[[high-performance-plug-in-hpp]]
+=== 高效能外掛（HPP）
+
+HPP 取代 NMP 用於高速裝置，例如 NVMe。HPP 是宣告 NVMe-oF 目標的預設外掛。ESX 支援端對端 NVMe（無需模擬）以及 SCSI 到 NVMe 的模擬。HPP 僅支援作用中/作用中和隱式 ALUA 目標。
+
+
+
+==== 路徑選擇方案（PSS）
+
+為了支援多重路徑，HPP 在選擇 I/O 請求的實體路徑時會使用路徑選擇方案（PSS）。HPP 所宣告裝置的預設方案是 LB-RR（負載平衡 - 輪詢）。這是建議的 PSS。
+
+如需有關 HPP 或 PSS 的詳細資訊，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/understanding-multipathing-and-failover-in-the-esxi-environment/vmware-hpp.html["VMware 高效能外掛和路徑選擇方案"^]。

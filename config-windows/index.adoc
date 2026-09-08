@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express Windows configuration, software configuration, Windows host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 使用E系列系統的Windows主機快速組態。 
 ---
-= E 系列中的 Windows Express 組態 - Windows
+= E 系列中的 Windows Express 組態工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

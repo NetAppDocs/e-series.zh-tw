@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: EF300, EF600, EF300C, EF600C installation 
 summary: 安裝並設定EF300和EF600陣列。 
 ---
-= 安裝與設定： EF300 ， EF600 ， EF300C 和 EF600C
+= EF300 和 EF600 儲存系統的安裝和設定工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

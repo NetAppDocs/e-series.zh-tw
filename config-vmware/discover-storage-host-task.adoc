@@ -1,7 +1,7 @@
 ---
 permalink: config-vmware/discover-storage-host-task.html 
 sidebar: sidebar 
-keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E-Series, eseries 
+keywords: discover storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 將磁碟區指派給主機之後、您可以執行重新掃描、以便主機偵測並設定磁碟區的多重路徑。 
 ---
 = 探索 E 系列 - VMware 主機上的儲存設備
@@ -11,13 +11,20 @@ summary: 將磁碟區指派給主機之後、您可以執行重新掃描、以�
 
 
 [role="lead"]
-將磁碟區指派給主機之後、您可以執行重新掃描、以便主機偵測並設定磁碟區的多重路徑。
+將 Volume 分配給主機。執行重新掃描，以便主機偵測並設定 Volume 以進行多重路徑。
+
+如需建立主機和指派 Volume 的相關資訊，請參閱：
+
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-manually.html["建立主機定義"^]
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/create-host-cluster.html["建立主機叢集"^]
+* https://docs.netapp.com/us-en/e-series-santricity/sm-storage/assign-volumes.html["將 Volume 分配給主機"^]
+
 
 根據預設、ESXi主機會每五分鐘自動執行一次重新掃描。磁碟區可能會在您建立磁碟區並將其指派給主機之前出現、然後再執行手動重新掃描。無論如何、您都可以執行手動重新掃描、以確保所有磁碟區均已正確設定。
 
 .步驟
-. 建立一個或多個磁碟區、並將其指派給ESXi主機。
+. 請確保按照上述連結中的說明建立 Volume 並將其指派給 ESXi 主機。
 . 如果使用vCenter Server、請將主機新增至伺服器的庫存。
 . 使用vSphere Client或vSphere Web Client直接連線至vCenter Server或ESXi主機。
-. 如需如何在 ESXi 主機上執行儲存設備重新掃描的指示，請搜尋 https://support.broadcom.com/["VMware知識庫"^]本主題的文章。
+. 如需有關如何在 ESXi 主機上執行儲存設備重新掃描的指示，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/managing-esxi-storage-devices/rescan-operations-for-esxi-storage/perform-storage-rescan.html["執行儲存設備重新掃描"^]。
 

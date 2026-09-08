@@ -25,6 +25,8 @@ entries:
   url: "/maintenance-ef50-ef80/dimm-replace.html"
 - title: 磁碟機
   url: "/maintenance-ef50-ef80/drive-replace.html"
+- title: 磁碟機抽屜
+  url: "/maintenance-ef50-ef80/drive-drawer-de460c-replace.html"
 - title: 風扇
   url: "/maintenance-ef50-ef80/fan-replace.html"
 - title: I/O 模組

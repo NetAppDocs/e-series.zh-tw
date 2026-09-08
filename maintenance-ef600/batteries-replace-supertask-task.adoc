@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace battery, battery fail, EF300C, EF600C, EF300, EF600 
 summary: 更換EF300或EF600陣列中的電池。 
 ---
-= 更換電池 - EF300 和 EF600
+= 更換 EF300 或 EF600 陣列中的電池
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -60,8 +60,7 @@ summary: 更換EF300或EF600陣列中的電池。
 
 . 如果控制器尚未離線、請使用SANtricity 「系統管理程式」將其離線。
 +
-.. 選取*硬體*。
-.. 如果圖形顯示磁碟機、請選取*顯示磁碟櫃背面*以顯示控制器。
+.. 選擇選單：硬體［控制器和組件］。
 .. 選取您要離線的控制器。
 .. 從內容功能表中選取*離線*、然後確認您要執行此作業。
 +
@@ -194,8 +193,7 @@ image::../media/remove_controller_7.png[將控制器安裝到機櫃中]
 .步驟
 . 將控制器置於線上。
 +
-.. 在System Manager中、瀏覽至「Hardware（硬體）」頁面。
-.. 選擇*顯示控制器背面*。
+.. 在 SANtricity System Manager 中，選取 menu:硬體[控制器與元件]。
 .. 選取裝有更換電池的控制器。
 .. 從下拉式清單中選取*線上放置*。
 

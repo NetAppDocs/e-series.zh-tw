@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace EF300 HIC, replace EF600 HIC, host interface card failed, HIC failure 
 summary: 更換故障的EF300或EF600主機介面卡（HIC）。 
 ---
-= 更換故障的主機介面卡（ HIC ） - EF300 或 EF600
+= 更換 EF300 或 EF600 儲存系統中發生故障的 HIC
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -16,6 +16,9 @@ summary: 更換故障的EF300或EF600主機介面卡（HIC）。
 
 .關於這項工作
 更換故障的 HIC 時，必須將一個控制器離線，使系統處於非備援狀態，更換 HIC，然後使控制器重新上線。
+
+
+NOTE: 更換相同傳輸協定類型的 HIC 時（例如，將 Fibre Channel HIC 更換為另一個 Fibre Channel HIC），EF300 和 EF600 儲存陣列無需斷電。
 
 .開始之前
 * 檢閱 link:hics-overview-supertask-concept.html["EF300或EF600 HIC升級需求"]。
@@ -262,7 +265,7 @@ NOTE: 如果您無法解決問題、請聯絡技術支援部門。
 
 . 確認所有磁碟區都已歸還給偏好的擁有者。
 +
-.. 選取功能表：Storage[磁碟區]。從「*所有磁碟區*」頁面、確認磁碟區已散佈至偏好的擁有者。選取功能表：More（更多）[變更擁有者]以檢視Volume擁有者。
+.. 選擇選單：儲存設備［Volume］。在 *所有 Volume* 頁面中，確認 Volume 已分配給其首選擁有者。選擇選單：省略號圖示［變更所有權］以檢視 Volume 擁有者。
 .. 如果所有磁碟區均為慣用擁有者、請繼續執行步驟6。
 .. 如果未傳回任何磁碟區、則必須手動傳回磁碟區。移至功能表：更多[重新分配磁碟區]。
 .. 如果在自動發佈或手動發佈之後、只有部分磁碟區傳回給偏好的擁有者、您必須檢查Recovery Guru是否有主機連線問題。

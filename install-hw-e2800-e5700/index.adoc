@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E2800, E5700, installation 
 summary: 安裝並設定E2800或E5700陣列。 
 ---
-= 安裝與設定： E2800 與 E5700 儲存系統
+= E2800 和 E5700 儲存系統的安裝和設定工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -14,6 +14,9 @@ summary: 安裝並設定E2800或E5700陣列。
 瞭解如何安裝及設定E2800或E5700儲存系統。
 
 您可以選擇下列其中一種格式、引導您完成新儲存系統的安裝與設定。
+
+
+NOTE: E2800 和 E5700 儲存系統已停產（EOA），不再銷售，但仍提供支援。本節資訊僅供參考。
 
 * * PDF *
 +
