@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: host protocol change, EF50, EF80 
 summary: 當您需要在現有 I/O 模組上使用不同的協定時，或在 I/O 模組升級時，或在新儲存系統安裝或控制器升級中新控制器上的預設協定不是您想要的協定時，您可以變更 EF50 或 EF80 儲存系統中主機 I/O 模組上的協定。 
 ---
-= 變更主機 I/O 模組傳輸協定 - EF50 和 EF80
+= 變更 EF50 或 EF80 系統中的主機 I/O 模組協定
 :allow-uri-read: 
 :experimental: 
 :icons: font

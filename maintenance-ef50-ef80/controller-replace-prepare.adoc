@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prepare the impaired controller 
 summary: 準備更換 EF50 或 EF80 儲存系統中的故障控制器，方法是打開替換控制器的包裝、確認其零件編號正確，並備份組態資料庫。 
 ---
-= 準備更換控制器 - EF50 和 EF80
+= 準備更換 EF50 和 EF80 儲存系統上的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

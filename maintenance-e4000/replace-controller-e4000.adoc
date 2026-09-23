@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 更換控制器 - E4000
+= 更換 E4000 儲存系統中的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -126,7 +126,7 @@ CAUTION: * 可能的資料遺失 * —如果您在 I/O 作業期間繼續執行�
 當控制器發生故障且需要更換時、替換零件編號會顯示在Recovery Guru的「Details（詳細資料）」區域中。如果您需要手動尋找此號碼、請依照下列步驟操作：
 
 +
-.. 選擇選單：硬體［控制器和組件］。
+.. 選擇選單：Hardware [ Controllers and components ]。
 .. 找到標有控制器圖示的控制器機櫃。
 .. 按一下控制器圖示。
 .. 選取控制器、然後按一下*「下一步*」。
@@ -178,7 +178,7 @@ save storageArray dbmDatabase sourceLocation=onboard contentType=all file="filen
 +
 ** 從《系統管理程式》：SANtricity
 +
-... 選擇選單：硬體［控制器和組件］。
+... 選取 menu:硬體［控制器與元件］。
 ... 選取您要離線的控制器。
 ... 從內容功能表中選取*離線*、然後確認您要執行此作業。
 +
@@ -478,7 +478,7 @@ passPhrase="passPhrase";
 
 . 在「系統管理程式」中、確認新的控制器是最佳的。SANtricity
 +
-.. 選擇選單：硬體［控制器和組件］。
+.. 選取 menu:硬體［控制器與元件］。
 .. 對於控制器機櫃、請選取*顯示機櫃背面*。
 .. 選取您更換的控制器容器。
 .. 選取*檢視設定*。

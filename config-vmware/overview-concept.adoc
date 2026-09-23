@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 檢閱使用Express方法來設定E系列陣列和VMware主機的需求。 
 ---
-= 假設（ E 系列和 VMware ）
+= E 系列的 VMware Express 組態假設
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -111,7 +111,7 @@ IP定址
 協定：基於 RoCE 的 NVMe（基於融合乙太網路的 RDMA）
  a| 
 * 您使用的是支援 RDMA 流量的乙太網路交換器
-* 您已將乙太網路交換器設定為使用基於區分服務代碼點（DSCP）的優先權流程控制（PFC）以進行無損連網
+* 您已將乙太網路交換器設定為使用基於區分服務代碼點（DSCP）的優先權流程控制（PFC）來進行無損連網
 * 您使用的 RDMA 驅動程式和韌體版本如 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]中所列。
 
 
@@ -121,8 +121,8 @@ IP定址
 協定：NVMe over TCP
  a| 
 * 您使用的是支援 TCP 流量的乙太網路交換器
-* 您已依照廠商對 TCP 的建議設定了乙太網路交換器。
-* 您使用的是 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]中所列的網路驅動程式與韌體版本。
+* 您已依照廠商對 TCP 的建議設定乙太網路交換器。
+* 您使用的網路驅動程式和韌體版本如 http://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]中所列。
 
 
 |===

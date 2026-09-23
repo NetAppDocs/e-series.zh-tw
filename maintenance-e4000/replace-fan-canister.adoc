@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace canister, replacing E4000 canister, E4000 replace fan, replacing E4000 fan, E4000, E-Series, eseries 
 summary: 檢閱 E4000 活性碳罐類型和要求。 
 ---
-= 更換風扇箱 - E4000 （ 60 個磁碟機）
+= 更換 E4000 60 磁碟機機櫃中的風扇機箱
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -59,7 +59,7 @@ CAUTION: *可能的設備損壞*-如果您在開啟電源的情況下執行此�
 +
 如果某個元件故障、此圖示為紅色。
 
-.. 找到帶有紅色圖示的機櫃後，選擇風扇罐或紅色風扇圖示。
+.. 找到帶有紅色圖示的機櫃後，選擇風扇機匣或紅色風扇圖示。
 .. 在「*風扇*」索引標籤上、查看風扇容器的狀態、以判斷必須更換哪個風扇容器。
 +
 必須更換狀態為「*失敗*」的元件。

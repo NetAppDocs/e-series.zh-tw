@@ -2,22 +2,22 @@
 permalink: config-linux/nvme-tcp-setup-host-side-task.html 
 sidebar: sidebar 
 keywords: express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 在 TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 軟體包、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。 
+summary: TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 套件、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。 
 ---
-= 在 E 系列 - Linux 主機上設定 NVMe over TCP 啟動器
+= 在 E 系列 Linux 主機上設定 NVMe over TCP 啟動器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-在 TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 軟體包、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。
+TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 套件、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。
 
 .開始之前
 您必須執行最新的相容 RHEL 9、RHEL 10、SLES 15 或 SLES 16 Service Pack 作業系統。請參閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]以取得完整的最新需求清單。
 
 .步驟
-. 如果您使用的是 HCA 內建的乙太網路驅動程式，請依下列方式安裝  `nvme-cli` 套件：
+. 如果您使用的是 HCA 內建的乙太網路驅動程式，請依下列步驟安裝  `nvme-cli` 套件：
 +
 *SLES 15 或 SLES 16*
 
@@ -37,7 +37,7 @@ summary: 在 TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli
 # yum install nvme-cli
 ----
 +
-如果您使用的是 NVIDIA HCA，並希望使用外部 DOCA 驅動程式，請參閱 link:https://developer.nvidia.com/doca-downloads["NVIDIA 文件"] 以取得有關如何在此環境中正確安裝的資訊。
+如果您正在使用 NVIDIA HCA 並希望使用外部 DOCA 驅動程式，請參閱 link:https://developer.nvidia.com/doca-downloads["NVIDIA 文件"] 以取得有關如何在此環境中正確安裝它的資訊。
 
 . 對於 RHEL 9，請安裝網路指令碼：
 +
@@ -58,7 +58,7 @@ NOTE: RHEL 10 不提供網路腳本。
 ----
 # cat /etc/nvme/hostnqn
 ----
-. 在用於透過 TCP 連接 NVMe 的乙太網路連接埠上設定 IPv4 IP 位址。為每個網路介面建立一個組態指令碼，其中包含該介面的不同變數。
+. 在用於連接 NVMe over TCP 的乙太網路連接埠上設定 IPv4 IP 位址。為每個網路介面建立一個組態指令碼，其中包含該介面的不同變數。
 +
 此步驟所使用的變數取決於伺服器硬體和網路環境。這些變數包括「IPADDR」和「閘道」。以下是SLES和RHEL的範例指示：
 
@@ -66,7 +66,7 @@ NOTE: RHEL 10 不提供網路腳本。
 *SLES 15*
 
 +
-建立包含以下內容的範例檔案 `/etc/sysconfig/network/ifcfg-eth4`。
+建立包含下列內容的範例檔案 `/etc/sysconfig/network/ifcfg-eth4`。
 
 +
 [listing]
@@ -172,7 +172,7 @@ method=auto
 ----
 . 重新啟動主機。
 +
-.. 或者，您可以執行此命令來載入 `nvme_tcp`內核模組，而無需重新開機：
+.. 或者，您可以執行此命令來載入 `nvme_tcp`核心模組，而無需重新開機：
 +
 [listing]
 ----

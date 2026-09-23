@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000, E-Series, eseries 
 summary: 將E4000中的磁碟機更換為12個磁碟機或24個磁碟機櫃。 
 ---
-= 熱新增磁碟機櫃 - IOM12 或 IOM12B 模組 - E4000
+= 熱新增配備 IOM12 或 IOM12B 模組的 E4000 磁碟機機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -122,7 +122,7 @@ NOTE: 如需實體安裝與電源線的完整程序、請參閱機型的安裝�
 +
 image::../media/hot_e4000_cabling_1.png[纜線磁碟機櫃]
 
-. 在 SANtricity System Manager 中，選取 menu:硬體[控制器與元件]。
+. 在 SANtricity System Manager 中，選擇選單：硬體［控制器和元件］。
 +
 
 NOTE: 在此程序中、您只有一個作用中路徑可通往控制器機櫃。
@@ -168,7 +168,7 @@ NOTE: Optimal（最佳）狀態表示新磁碟機櫃相關的備援遺失錯誤�
 .步驟
 . 在「系統管理程式」中、按一下「*首頁*」SANtricity 。
 . 如果頁面頂端的中央顯示標有*從問題中恢復*的連結、請按一下連結、並解決Recovery Guru中指出的任何問題。
-. 在 SANtricity System Manager 中，選擇 menu:硬體[控制器和元件]，然後視需要向下捲動，即可看到新增的磁碟機機櫃。
+. 在 SANtricity System Manager 中，選擇選單：硬體［控制器和元件］，然後視需要向下捲動，即可看到新增加的磁碟機機櫃。
 . 對於先前安裝在不同儲存系統中的磁碟機、請在新安裝的磁碟機櫃中一次新增一個磁碟機。在插入下一個磁碟機之前、請等待每個磁碟機都能被辨識。
 +
 當儲存系統辨識磁碟機時、「*硬體*」頁面中的磁碟機插槽呈現為藍色矩形。

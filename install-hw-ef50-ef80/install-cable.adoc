@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: ef50, ef80, cabling, cable, host cabling, direct-attached topology, fabric-attached topology 
 summary: 安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間的鏡像連結和主機網路連線。（管理連接埠的連接將在「完整儲存系統設定」部分進行後續步驟。） 
 ---
-= 連接硬體線 - EF50 和 EF80
+= 為 EF50 和 EF80 儲存系統連接硬體纜線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間鏡射、主機網路連線以及 SAS 機櫃（如果適用的話）。（您稍後會在「完成儲存系統設定」一節中連接管理連接埠。）
+安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間鏡射、主機網路連線以及 SAS 機櫃（如果適用）。（您稍後會在「完成儲存系統設定」一節中連接管理連接埠。）
 
 .關於這項工作
 * 在本程序中，術語 _I/O 模組_ 指的是主機介面卡 (HIC)。
@@ -60,9 +60,9 @@ image:../media/drw_ef50-ef80_mirroring_2p_100gbe_ieops-2659.svg["ef50 和 ef80 �
 根據您的網路拓撲結構（直連或光纖連接）為儲存系統連接主機。
 
 .關於這項工作
-* 根據您的儲存系統型號和運行的 SANtricity 版本，支援的主機 I/O 模組類型有所不同。本程序中的佈線範例展示了乙太網路和 Fibre Channel （FC） 主機 I/O 模組。
+* 根據您的儲存系統型號和運行的 SANtricity 版本，支援的主機 I/O 模組類型有所不同。本程序中的佈線範例顯示了乙太網路和 Fibre Channel （FC） 主機 I/O 模組。
 +
-若要查看儲存系統型號支援的所有主機 I/O 模組和插槽優先順序，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+若要查看您的儲存系統型號支援的所有主機 I/O 模組和插槽優先順序，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
 
 * 佈線範例未顯示主機 1 和主機 2 中的 4 連接埠 64Gb FC HBA；但是，如果您安裝了這些 HBA，則您可以按照 2 連接埠 HBA 所示的相同方式連接每隔一個連接埠。
 
@@ -341,12 +341,12 @@ image:../media/drw_ef80_4p_64gb_fc_3hic_fabric_ieops-2675.svg["採用三個 4 �
 以下步驟顯示如何將控制器連接到一個 DE460C 機櫃或三個 DE460C 機櫃的堆疊。
 
 .關於這項工作
-* 佈線範例顯示 DE460C 機櫃；但是，相同的佈線適用於所有支援的 SAS 機櫃。請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解支援的 SAS 機櫃。
-* 如需儲存系統支援的最大機櫃數量以及所有佈線選項（例如光纖）的相關資訊，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
+* 佈線範例顯示 DE460C 機櫃；不過，相同的佈線適用於所有支援的 SAS 機櫃。請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解支援的 SAS 機櫃。
+* 有關您的儲存系統支援的最大機櫃數量以及所有佈線選項（例如光纖）的資訊，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^]。
 * 佈線程序顯示控制器在插槽 3 中有一個 SAS I/O 模組。這是 SANtricity 12.10 唯一支援的 SAS I/O 模組組態。
 * 佈線示意圖中，藍色線表示控制器 A 的佈線，紅色線表示控制器 B 的佈線。
-* 您一律將控制器與一或多個機櫃連接纜線，以便為 A 側路徑（IOMA）和 B 側路徑（IOMB）提供兩個纜線連線，如佈線圖所示。
-* 您使用儲存系統隨附的儲存設備纜線，其可能是下列纜線類型：
+* 您始終為控制器和一個或多個機櫃連接纜線，以便為 A 側路徑（IOMA）和 B 側路徑（IOMB）提供兩個纜線連接，如佈線圖所示。
+* 您使用儲存系統隨附的儲存設備纜線，纜線類型可能如下：
 +
 *mini-SAS HD 纜線*
 
@@ -362,24 +362,24 @@ image::../media/oie_cable_mini_sas_hd_to_mini_sas_hd.svg[mini-SAS HD 纜線]
 將每個控制器透過電纜連接到 DE460C 機櫃上的每個 IOM12 模組，以便控制器具有到機櫃的 A 側路徑（IOMA）和 B 側路徑（IOMB）。
 
 .步驟
-. 將纜線從控制器 A 連接埠 3a 連接至機櫃 IOMA 連接埠 1。
+. 將控制器 A 連接埠 3a 連接至機櫃 IOMA 連接埠 1。
 . 將控制器 A 連接埠 3b 連接至機櫃 IOMA 連接埠 2。
 . 將控制器 A 連接埠 3c 連接至機櫃 IOMB 連接埠 3。
 . 將控制器 A 連接埠 3d 連接至機櫃 IOMB 連接埠 4。
 . 將控制器 B 連接埠 3a 連接至機櫃 IOMA 連接埠 3。
-. 將控制器 B 連接埠 3b 連接至機櫃 IOMA 連接埠 4。
+. 將控制器 B 連接埠 3b 接線至機櫃 IOMA 連接埠 4。
 . 將控制器 B 連接埠 3c 連接至機櫃 IOMB 連接埠 1。
 . 將控制器 B 連接埠 3d 連接至機櫃 IOMB 連接埠 2。
 
 
 完成機櫃佈線後，佈線應如下圖所示：
 
-image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg["將控制器連接埠接線至一個 DE460C 機櫃"]
+image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg["將控制器連接埠連接至一個 DE460C 機櫃"]
 
 --
 .選項 2：三個 DE460C 機櫃
 --
-將三個機櫃連接在一起（機櫃到機櫃的連接），然後將每個控制器連接到機櫃堆疊的每一端（機櫃 1 和機櫃 3），以便控制器有 A 側路徑（IOMA）和 B 側路徑（IOMB）連接到機櫃堆疊。
+將三個機櫃連接在一起（機櫃到機櫃的連線），然後將每個控制器連接到機櫃堆疊的每一端（機櫃 1 和機櫃 3），以便控制器有 A 側路徑（IOMA）和 B 側路徑（IOMB）連接到機櫃堆疊。
 
 . 為 IOMA 路徑連接機櫃間的纜線：
 +
@@ -389,7 +389,7 @@ image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg["將控制器連接
 .. 將機櫃 2 IOMA 連接埠 2 連接至機櫃 3 IOMA 連接埠 3。
 
 
-. 為 IOMB 路徑連接機櫃間連線：
+. 為 IOMB 路徑連接機櫃間電纜：
 +
 .. 將機櫃 1 IOMB 連接埠 1 連接至機櫃 2 IOMB 連接埠 3。
 .. 將機櫃 1 IOMB 連接埠 2 連接至機櫃 2 IOMB 連接埠 4。
@@ -405,7 +405,7 @@ image:../media/drw_ef50-ef80_1_de460c_cabling_ieops-2981.svg["將控制器連接
 .. 將控制器 A 連接埠 3d 連接至機櫃 1 IOMB 連接埠 4。
 
 
-. 將控制器 B 連接至機櫃 1（IOMA 路徑）和 3（IOMB 路徑）：
+. 將控制器 B 連接至機櫃 1（IOMA 路徑）與 3（IOMB 路徑）：
 +
 .. 將控制器 B 連接埠 3a 連接至機櫃 1 IOMA 連接埠 3。
 .. 將控制器 B 連接埠 3b 連接至機櫃 1 IOMA 連接埠 4。

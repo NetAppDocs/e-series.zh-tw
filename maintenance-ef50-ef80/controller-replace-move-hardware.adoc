@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, move the controller module hardware 
 summary: 若要更換 EF50 或 EF80 儲存系統中的故障控制器、請拆下控制器、將元件移至替換控制器、然後安裝替換控制器。 
 ---
-= 更換控制器 - EF50 和 EF80
+= 更換 EF50 和 EF80 儲存系統上的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

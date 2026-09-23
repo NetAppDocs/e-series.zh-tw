@@ -2,23 +2,23 @@
 permalink: config-linux/nvme-tcp-worksheet-for-concept.html 
 sidebar: sidebar 
 keywords: NVMe over TCP worksheet Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 使用此工作表記錄 NVMe over TCP 儲存組態資訊。 
+summary: 使用此工作表記錄基於 TCP 的 NVMe 儲存組態資訊。 
 ---
-= 記錄您在 E 系列 - Linux 中的 NVMe over TCP 組態
+= E 系列 Linux 主機 NVMe over TCP 組態工作表
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以產生並列印此頁面的 PDF 文件，然後使用以下工作表記錄 NVMe over TCP 儲存組態資訊。您需要這些資訊來執行配置工作。
+您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 NVMe over TCP 儲存組態資訊。您需要這些資訊來執行配置工作。
 
 
 
 [[direct-connect-topology]]
 == 直接連線拓撲
 
-在直接連線拓撲中，一或多部主機直接連接至子系統。在 SANtricity 作業系統 11.50 版本中，我們支援從每部主機到子系統控制器的單一連線，如下所示。在此組態中，每部主機的一個 NIC（網路介面卡）連接埠應與其連接的 E 系列控制器連接埠位於相同的子網路，但與另一個 NIC 連接埠位於不同的子網路。
+在直連拓撲中，一個或多個主機直接連接到子系統。在 SANtricity 作業系統 11.50 版本中，我們支援每個主機到子系統控制器的單一連接，如下圖所示。在此組態中，每個主機的一個 NIC（網路介面卡）連接埠應與其連接的 E 系列控制器連接埠位於相同子網路，但與另一個 NIC 連接埠位於不同的子網路。
 
 image::../media/nvmeof_direct_connect.gif[NVMe over TCP 直接連接範例]
 

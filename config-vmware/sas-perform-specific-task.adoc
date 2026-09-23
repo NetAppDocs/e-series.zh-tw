@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: sas, express vmware configuration, software configuration, vmware host, E2800, E5700, E4000, E-Series, eseries 
 summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行建議的設定。 
 ---
-= 在 E 系列 - VMware 中執行 SAS 專屬工作
+= 在 E 系列中設定 VMware 的 SAS 主機連接埠和設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -18,9 +18,9 @@ summary: 對於SAS傳輸協定、您可以決定主機連接埠位址並進行�
 [[step-1-record-your-configuration]]
 == 步驟 1：記錄您的組態
 
-您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄特定通訊協定的儲存組態資訊。您在執行配置工作時需要這些資訊。
+您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄特定於協定的儲存組態資訊。您在執行配置任務時需要這些資訊。
 
-圖中顯示了一台主機直接連接到 E 系列儲存陣列，並採用備援連線（假設使用 4 連接埠 SAS HBA）。第一條備援連線以紅線表示；第二條備援連線以藍線表示。連接埠數量取決於主機連接埠數量。您可能只有 2 個主機連接埠。在這種情況下，建議至少使用第一條備援連線。
+圖中顯示了一台主機直接連接到 E 系列儲存陣列，並採用備援連線（假設使用 4 連接埠 SAS HBA）。第一條備援連線以紅線表示；第二條備援連線以藍線表示。連接埠數量取決於主機連接埠數量。您可能只有 2 個主機連接埠。在這種情況下，建議至少採用第一條備援連線。
 
 image::../media/sas_topology_diagram_conf-vmw.gif[圖：SAS拓撲]
 
@@ -88,7 +88,7 @@ _不適用_
 
 
 [[step-2-determine-sas-host-identifiers]]
-== 步驟 2：決定 SAS 主機識別碼
+== 步驟 2：確定 SAS 主機識別符
 
 使用 esxcli 或 HBA 工具尋找 SAS 位址。
 
@@ -106,7 +106,7 @@ _不適用_
 ----
 esxcli storage core adapter list
 ----
-. 記錄啟動器 SAS 位址識別碼（UID 格式為 - sas.<SAS_Address>）。輸出將類似於此範例：
+. 記錄啟動器 SAS 位址識別碼（UID，格式為 - sas.<SAS_Address>）。輸出將類似於此範例：
 +
 [listing]
 ----

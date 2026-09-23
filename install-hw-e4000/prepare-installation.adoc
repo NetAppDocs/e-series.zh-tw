@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 準備安裝： E4012 和 E4060
+= 準備安裝 E4012 或 E4060 儲存系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,8 +20,8 @@ summary:
 NOTE: 您可以現在註冊系統，也可以稍後再註冊。稍後，系統啟動時，系統會提示您註冊系統。
 
 +
-.. 如果您還沒有帳戶，請在 http://mysupport.netapp.com/["NetApp支援"^]建立帳戶。
-.. 請依照 NetApp 知識庫文章 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何註冊新系統"^]中的說明註冊您的系統。
+.. 如果您還沒有帳戶，請至 http://mysupport.netapp.com/["NetApp支援"^]建立帳戶。
+.. 請依照 NetApp 知識庫文章中的說明註冊您的系統 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何註冊新系統"^]。
 
 
 . 確認您收到的包裝盒中有下列項目：

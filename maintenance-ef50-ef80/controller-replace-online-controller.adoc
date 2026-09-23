@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to online the controller 
 summary: 為 EF50 或 EF80 儲存系統安裝替換控制器後，確認替換控制器的 IP 位址、將控制器上線，並確認儲存系統狀態為「最佳」。 
 ---
-= 線上更換控制器 - EF50 和 EF80
+= 將 EF50 和 EF80 儲存系統上更換的控制器設為線上
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

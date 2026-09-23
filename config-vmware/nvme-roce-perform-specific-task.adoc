@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over RoCE protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries 
 summary: 對於 NVMe over RoCE 協定，您設定交換器並決定主機 NVMe 限定名稱（NQN）。 
 ---
-= 在 E 系列中執行 NVMe over RoCE 特定任務 - VMware
+= 在 E 系列中為 VMware 設定 NVMe over RoCE 交換器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,9 +21,9 @@ NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 �
 [[step-1-record-your-configuration]]
 == 步驟 1：記錄您的組態
 
-您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄特定通訊協定的儲存組態資訊。您在執行配置工作時需要這些資訊。
+您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄特定於協定的儲存組態資訊。您在執行配置任務時需要這些資訊。
 
-圖中顯示主機連接到 E 系列儲存陣列，並透過 VLAN 和/或獨立子網路分隔。藍線表示一個 VLAN/子網路；紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量會因網路介面的數量和控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 6 個）。
+圖中顯示了一台主機連接到 E 系列儲存陣列，該陣列透過 VLAN 和/或獨立子網路進行隔離。藍線表示一個 VLAN/子網路，紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量取決於網路介面的數量和控制器型號。您可能擁有更多連接埠（每個控制器最多 6 個）。
 
 image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼]
 
@@ -80,7 +80,7 @@ image::../media/network_generic_worksheet.gif[NVMe over RoCE 連接埠識別碼]
 * 交換器設定為適用於 NVMe over RDMA 的無損傳輸乙太網路（如果交換器在路徑中）。
 
 
-在規劃基於 RoCE 的 NVMe 連網時，請記住， https://configmax.broadcom.com/guest["VMware 組態最大值指南"^] 指出每個伺服器支援的最大 RDMA NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多的路徑。
+在規劃 NVMe over RoCE 連網時，請記住， https://configmax.broadcom.com/guest["VMware 組態上限指南"^] 指出每部伺服器支援的最大 RDMA NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多路徑。
 
 為確保良好的多路徑配置，請為 NVMe over RoCE 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠組合放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。
 
@@ -197,11 +197,11 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 在主機端設定 NVMe over RoCE 網路，即可讓 VMware NVMe over RDMA 儲存適配器啟動器與陣列建立工作階段。
 
 .開始之前
-如果主機透過乙太網路交換器連接到儲存陣列，則必須在交換器上依照步驟 2 和步驟 3 中的說明設定無損連網。在這種情況下，基於交換器的無損連網設定優先，您無需完成下方主機端的先決條件。
+如果主機透過乙太網路交換器連接到儲存陣列，則必須在交換器上依照步驟 2 和步驟 3 中的說明設定無損連網。在這種情況下，以交換器為基礎的無損連網設定優先，您無需完成下方的主機端先決條件。
 
-如果主機與儲存陣列有直接連接（路徑中沒有交換器），則在設定主機端 NVMe over RDMA 介面卡之前，請完成以下先決條件。
+如果主機與儲存陣列有直接連接（路徑中沒有交換器），則在設定主機端 NVMe over RDMA 介面卡之前，請完成下列先決條件。
 
-.先決條件：設定 NVMe over RDMA 的無損傳輸乙太網路（僅限直接連線）
+.先決條件：設定用於 NVMe over RDMA 的無損傳輸乙太網路（僅限直接連線）
 您可以使用基於區分服務代碼點 (DSCP) 的優先權流程控制 (PFC) 設定無損連網。
 
 如需詳細資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/requirements-for-vmware-nvme-storage.html#GUID-B764140D-BCF3-4C99-8169-E5B058757518-en["為透過 RDMA 的 NVMe 配置無損乙太網路"^]。
@@ -229,9 +229,9 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 
 
 
-NOTE: 在此過程中，可以透過「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時會需要用到此資訊。
+NOTE: 在此過程中，可以從「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時將會需要此資訊。
 
-成功新增後，可以從 vSphere Client 上的儲存介面卡檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。
+新增成功後，可以從 vSphere Client 上的「儲存介面卡」檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。
 
 
 
@@ -267,5 +267,5 @@ round-trip min/avg/max = 0.406/0.721/0.902 ms
 
 NOTE: 如果命令執行失敗並顯示訊息 `sendto() failed (Message too long)`，請驗證主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的 MTU 大小。
 
-. 如果步驟 5 探索失敗，請返回 NVMe over RoCE 主機端連網組態程序，以完成新增目標控制器。
+. 如果步驟 5 探索失敗，請返回 NVMe over RoCE 主機端連網組態程序以完成新增目標控制器。
 

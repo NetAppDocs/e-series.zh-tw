@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 準備安裝您的 EF50 或 EF80 儲存系統，請先準備好場地、了解儲存系統的吊掛注意事項、打開包裝箱並將內容物與裝箱單進行比較，以及註冊儲存系統以存取支援服務。 
 ---
-= 準備安裝 - EF50 和 EF80
+= 準備安裝 EF50 或 EF80 儲存系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -21,10 +21,10 @@ summary: 準備安裝您的 EF50 或 EF80 儲存系統，請先準備好場地�
 請確保場地和您計劃使用的機櫃或機架符合您儲存系統的規格。
 
 .步驟
-. 使用 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 確認您的站台符合儲存系統的環境與電氣需求。
+. 使用 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 來確認您的站台符合儲存系統的環境與電氣要求。
 . 請確保您的儲存系統和任何交換器有足夠的機櫃或機架空間。
 +
-如有需要，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以取得儲存系統的確切尺寸。
+如有需要，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解儲存系統的確切尺寸。
 
 +
 ** 2U 儲存系統
@@ -81,7 +81,7 @@ NOTE: 如有任何出入，請記錄下來以便採取進一步行動。
 以下項目是您可能會在盒子中看到的部分內容。
 
 +
-如有需要，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解其他支援的纜線，並確認其用途。
+如有需要，請參閱 link:https://hwu.netapp.com["NetApp Hardware Universe"^] 以了解其他支援的纜線並確認其用途。
 
 +
 [cols="9,9,5"]
@@ -130,8 +130,8 @@ image::../media/drw_ef50-ef80_sn_label_ieops-2689.svg[序號標籤範例]
 
 
 
-. 如果您還沒有帳戶，請在 http://mysupport.netapp.com/["NetApp支援"^]建立帳戶。
-. 請依照 NetApp 知識庫文章 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何註冊新系統"^]中的說明註冊您的系統。
+. 如果您還沒有帳戶，請至 http://mysupport.netapp.com/["NetApp支援"^]建立帳戶。
+. 請依照 NetApp 知識庫文章中的說明註冊您的系統 https://kb.netapp.com/nss/System_Registration/How_to_register_a_new_system_on_the_NetApp_Support_Site["如何註冊新系統"^]。
 
 
 .接下來呢？

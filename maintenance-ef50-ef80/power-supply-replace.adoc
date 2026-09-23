@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace a power supply 
 summary: 當您的 EF50 或 EF80 儲存系統中的電源單元（PSU）發生故障或故障時，請更換電源單元，以確保您的系統繼續獲得穩定運作所需的電力。 
 ---
-= 更換電源供應器 - EF50 和 EF80
+= 更換 EF50 或 EF80 儲存系統中的電源供應
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

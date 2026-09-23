@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the NV battery, NV battery 
 summary: 當您的 EF50 或 EF80 儲存系統中的 NV 電池開始失去電量或故障時，請更換該電池，因為它負責在斷電期間保存關鍵的系統資料。 
 ---
-= 更換 NV 電池 - EF50 和 EF80
+= 更換 EF50 或 EF80 儲存系統中的 NV 電池
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

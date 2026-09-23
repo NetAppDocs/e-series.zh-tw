@@ -49,10 +49,10 @@ image:../media/icon_round_2.png["圖說編號 2"]
 .. 順時針旋轉指旋螺絲以擰緊。
 
 
-. 將 I/O 模組接線至主機網路或 SAS 擴充櫃。
+. 將 I/O 模組透過電纜連接到主機網路或 SAS 擴充櫃。
 +
 ** 對於主機網路佈線，您可以參考link:../install-hw-ef50-ef80/install-cable.html["連接硬體"^]系統安裝和設定內容中有關主機網路佈線的部分。
-** 對於 SAS 擴充櫃佈線，您可以使用 link:../install-hw-cabling/hotadd-drive-shelf-task.html["熱新增磁碟機機櫃 - E 系列"^] 程序。
+** 對於 SAS 擴充櫃佈線，您可以使用 link:../install-hw-cabling/hotadd-drive-shelf-task.html["在 E 系列儲存系統中熱新增磁碟機機櫃"^] 程序。
 
 
 . 重複這些步驟來升級另一個控制器中的 I/O 模組。

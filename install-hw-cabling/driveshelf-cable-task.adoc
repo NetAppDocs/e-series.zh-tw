@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cabling, cables, drive shelf cabling, controller shelf cabling, E-Series, eseries, E2800, E5700, EF300, EF600, E4000, DE212C, DE224C, DE460C 
 summary: 將控制器櫃中的每個控制器連接至磁碟機櫃中的I/O模組（IOM）。 
 ---
-= 纜線控制器機櫃至磁碟機機機櫃（ E 系列）
+= 將 E 系列控制器機櫃以纜線連接至磁碟機機櫃
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,7 +20,7 @@ summary: 將控制器櫃中的每個控制器連接至磁碟機櫃中的I/O模�
 NOTE: IOM12C模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12C之前、請先確認您的控制器韌體已更新。
 
 * 如果您要將較舊的控制器機櫃佈線至DE212C、DE224C或DE460、請參閱 https://mysupport.netapp.com/ecm/ecm_download_file/ECMLP2859057["將IOM磁碟機櫃新增至現有的E27XX、E56XX或EF560控制器機櫃"^]。
-* 如果您正在將 EF50 或 EF80 儲存系統連接至 SAS 擴充機櫃，作為新系統安裝的一部分，請參閱link:../install-hw-ef50-ef80/install-cable.html["連接硬體線 - EF50 和 EF80"]程序。
+* 如果您正在將 EF50 或 EF80 儲存系統以纜線連接至 SAS 擴充機櫃，作為新系統安裝的一部分，請參閱link:../install-hw-ef50-ef80/install-cable.html["為 EF50 和 EF80 儲存系統連接硬體纜線"]程序。
 
 
 

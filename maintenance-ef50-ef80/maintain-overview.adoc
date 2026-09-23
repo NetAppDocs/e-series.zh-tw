@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80 maintenance, maintenance, repairing ef50, ef80, replace ef50, ef80 components 
 summary: 維護好您的 EF50 或 EF80 儲存系統的硬體，以確保其長期可靠性和最佳效能。定期執行維護任務，例如更換故障元件，這有助於防止停機和資料遺失。 
 ---
-= 維護程序概述 - EF50 和 EF80
+= 了解 EF50 和 EF80 儲存系統的維護程序
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

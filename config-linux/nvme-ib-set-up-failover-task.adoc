@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: failover, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 設定主機執行容錯移轉。 
 ---
-= 在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over InfiniBand ）
+= 使用 NVMe over InfiniBand 在 E 系列 Linux 主機上設定容錯移轉
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -107,7 +107,7 @@ devices {
 
 
 
-NOTE: 對於 SLES 15 和 RHEL 9，預設已啟用原生 NVMe 多路徑，無需額外組態。
+NOTE: 對於 SLES 15 和 RHEL 9，預設已啟用原生 NVMe 多重路徑，無需額外組態。
 
 
 
@@ -115,7 +115,7 @@ NOTE: 對於 SLES 15 和 RHEL 9，預設已啟用原生 NVMe 多路徑，無需�
 == 設定 NVMe I/O 原則
 
 .關於這項工作
-Linux NVMe 原生多路徑預設可能採用 `numa` I/O 原則。對於 E 系列/EF 系列 NVMe-over-Fabrics 組態，建議的 I/O 原則為 `round-robin`，這會將 I/O 均勻分配到所有可用路徑上。
+Linux NVMe 原生多重路徑預設可能採用  `numa` I/O 原則。對於 E 系列 / EF 系列 NVMe-over-Fabrics 組態，建議的 I/O 原則為  `round-robin`，這會將 I/O 平均分配到所有可用路徑上。
 
 .步驟
 . 驗證目前的 NVMe I/O 原則：
@@ -125,7 +125,7 @@ Linux NVMe 原生多路徑預設可能採用 `numa` I/O 原則。對於 E 系列
 # cat /sys/module/nvme_core/parameters/iopolicy
 numa
 ----
-. 使用以下方法之一設定 `round-robin` I/O 原則：
+. 使用下列其中一種方法來設定 `round-robin` I/O 原則：
 +
 ** *持久化（建議）* — 建立 udev 規則檔案：
 +
@@ -149,7 +149,7 @@ udevadm trigger --subsystem-match=nvme-subsystem
 ----
 nvme_core.iopolicy=round-robin
 ----
-** *非持久性（線上，無 I/O 中斷）* — 無需重新開機即可立即套用：
+** *非持續性（線上，無 I/O 中斷）* — 無需重新開機即可立即套用：
 +
 [listing]
 ----

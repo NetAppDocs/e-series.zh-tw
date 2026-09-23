@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: file systems, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 對於 RHEL 9、RHEL 10、SLES 15 和 SLES 16，您需要在原生 nvme 裝置上建立檔案系統並掛載該檔案系統。 
 ---
-= 在 E 系列中建立檔案系統 - Linux (NVMe over RoCE)
+= 在 Linux 主機上為 E 系列 NVMe over RoCE 建立檔案系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

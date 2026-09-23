@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 準備好安裝 EF50 或 EF80 儲存系統後，將機架安裝硬體安裝到機櫃或電信機架中，然後安裝並固定儲存系統。 
 ---
-= 安裝硬體 - EF50 和 EF80
+= 安裝 EF50 和 EF80 儲存系統的硬體
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

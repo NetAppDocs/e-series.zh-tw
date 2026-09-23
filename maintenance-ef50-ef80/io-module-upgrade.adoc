@@ -2,16 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-upgrade.html 
 sidebar: sidebar 
 keywords: ef50, ef80, upgrade io module, upgrade hic, upgrade host interface card 
-summary: 您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。 
+summary: 您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線能力，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。 
 ---
-= 升級 I/O 模組 - EF50 和 EF80
+= 升級 EF50 或 EF80 儲存系統中的 I/O 模組
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。
+您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線能力，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。
 
 .關於這項工作
 * 本程序中使用術語 _I/O 模組_ 來取代主機介面卡（HIC）。
@@ -32,11 +32,11 @@ summary: 您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加
 [[step-1-prepare-to-upgrade-io-modules]]
 == 步驟 1：準備升級 I/O 模組
 
-準備升級 I/O 模組，請安排停機維護所需時間、更新韌體、收集必要的工具和設備，並備份儲存系統的組態資料庫。
+準備升級 I/O 模組，請安排停機維護所需時間，更新韌體，收集必要的工具和設備，並備份儲存系統的組態資料庫。
 
 .步驟
 . 請為此程序安排停機維護時段。在成功完成此程序之前，您將無法存取儲存系統上的資料。由於兩個控制器在通電時必須具有相同的 I/O 模組組態，因此在升級 I/O 模組時必須關閉電源。
-. 將韌體更新至最新版本。若要更新韌體，請遵循 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"^] 中的說明
+. 將韌體更新至最新版本。若要更新韌體，請遵循 link:../upgrade-santricity/index.html["升級SANtricity 作業系統"^] 中的指示
 . 請確定您擁有下列項目：
 +
 ** 您要升級的新 I/O 模組。
@@ -50,7 +50,7 @@ summary: 您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加
 
 CAUTION: *可能遺失資料存取* -- 存在不相容或不匹配的 I/O 模組會導致控制器在通電時鎖定。
 
-** 用於將新的 I/O 模組連接到您的網路或 SAS 擴充櫃的纜線。
+** 用於將新的 I/O 模組連接至您的網路或 SAS 擴充櫃的纜線。
 ** ESD 腕帶或您已採取其他防靜電措施。
 ** 平整無靜電的工作檯面。
 ** 一個有瀏覽器的管理站，可以存取控制器的 SANtricity System Manager。
@@ -198,10 +198,10 @@ image:../media/icon_round_2.png["圖說編號 2"]
 .. 順時針旋轉指旋螺絲以擰緊。
 
 
-. 將 I/O 模組接線至主機網路或 SAS 擴充櫃。
+. 將 I/O 模組透過電纜連接到主機網路或 SAS 擴充櫃。
 +
 ** 對於主機網路佈線，您可以參考link:../install-hw-ef50-ef80/install-cable.html["連接硬體"^]系統安裝和設定內容中有關主機網路佈線的部分。
-** 對於 SAS 擴充櫃佈線，您可以使用 link:../install-hw-cabling/hotadd-drive-shelf-task.html["熱新增磁碟機機櫃 - E 系列"^] 程序。
+** 對於 SAS 擴充櫃佈線，您可以使用 link:../install-hw-cabling/hotadd-drive-shelf-task.html["在 E 系列儲存系統中熱新增磁碟機機櫃"^] 程序。
 
 
 . 重複這些步驟來升級另一個控制器中的 I/O 模組。

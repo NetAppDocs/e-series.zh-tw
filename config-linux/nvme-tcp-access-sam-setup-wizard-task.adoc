@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: access System Manager Linux, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytration System Manager）來設定儲存陣列。 
 ---
-= 使用 SANtricity System Manager - Linux（NVMe over TCP）設定您的儲存設備
+= 使用 SANtricity 設定精靈設定您的 E 系列儲存陣列
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -14,7 +14,7 @@ summary: 您可以使用SANtricity 《安裝精靈》（Setup Wizard in the Sytr
 [role="lead"]
 若要設定儲存陣列、您可以使用SANtricity 「系統管理程式」中的「設定精靈」。
 
-SANtricity System Manager 是一個嵌入在每個控制器上的網路型介面。若要存取使用者介面，您需要在瀏覽器中輸入控制器的 IP 位址。設定精靈可協助您開始進行系統組態。
+SANtricity System Manager 是一個嵌入在每個控制器上的網路型介面。若要存取該使用者介面，您需要在瀏覽器中輸入控制器的 IP 位址。設定精靈可協助您開始進行系統組態。
 
 .開始之前
 請確定您擁有下列項目：

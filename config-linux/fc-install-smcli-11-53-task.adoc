@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: install Storage Manager Linux, install CLI Windows, install command line interface, install Host Context Agent, install HCA, express linux configuration, software configuration, linux host, 
 summary: 在Linux Express方法中安裝適用於CLI和HCA的Storage Manager。 
 ---
-= 安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ FC ）
+= 在 E 系列 Linux FC 主機上安裝適用於 SMcli 的 SANtricity Storage Manager
 :allow-uri-read: 
 :experimental: 
 :icons: font

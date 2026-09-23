@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configure switch, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 根據廠商針對 NVMe over TCP 的建議來設定交換器。這些建議可能包括組態指令和程式碼更新。 
 ---
-= 設定 E 系列中的交換器 - Linux（NVMe over TCP）
+= 為 E 系列 Linux NVMe over TCP 主機設定交換器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

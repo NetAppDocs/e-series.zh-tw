@@ -9004,123 +9004,7 @@
   <block id="a4c34f83987821dd1d99ef73febdd962" category="paragraph">此版本僅包含輕微變更，且沒有新功能。有關此版本變更的詳細資訊，請參閱<block ref="1f7d7124974a1c2e3017c1729625e686" category="inline-link-rx"></block>。</block>
   <block id="c3d9022959f5cf3a3d385e7a2bd0bf3a" category="section-title">11.80.1R4 版的新功能</block>
   <block id="33651d232a545fe2c2786b34f36624d3" category="doc">SANtricity Cloud Connector 的系統需求</block>
-  <block id="838fb73f90f41f89b2bbddf5bb4faf63" category="doc">使用 SANtricity System Manager - Linux （ FC ）設定儲存設備</block>
-  <block id="7635a9a56f75ec203d4db850f9219c35" category="doc">使用 SANtricity 系統管理員指派磁碟區 - Linux （ FC over NVMe ）</block>
-  <block id="4a8203c5444cf179886f9a16686f89a1" category="doc">在 E 系列 - Linux （ FC ）中使用 DHCP 設定 IP 位址</block>
-  <block id="de265067b2a118b91aee10fd8d278657" category="doc">在 E 系列 - Linux （ FC ）中設定多重路徑軟體</block>
-  <block id="7156af939da33d4706b3dc430b74da68" category="doc">在 E 系列 - Linux （ FC ）中設定 FC 交換器</block>
-  <block id="ec2fdd1f2e6ee695231cc1b65ac9e203" category="doc">在 E 系列 - Linux （ FC ）中建立分割區和檔案系統</block>
-  <block id="1f5f0de28e7314d825efd9a881bfdc65" category="doc">決定 E 系列中的主機全球連接埠名稱（ WWPN ） - Linux （ FC ）</block>
-  <block id="a8052a427bf8a81e1230fb7ac881a3a5" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ FC ）</block>
-  <block id="12da4c23be3ec49c3a0ebb3551baa6f7" category="doc">在 E 系列 - Linux （ FC ）中設定 multipath.conf 檔案</block>
-  <block id="6b4af5eebbfa3ec509df83baaeba767a" category="doc">驗證 E 系列（ FC ）的 Linux 組態支援</block>
-  <block id="5025d58eae4f9cbec81b9e5a972373d5" category="doc">驗證 E 系列主機上的儲存設備存取權 - Linux （ FC ）</block>
-  <block id="bd123e68922a614e91c7f5b46d9e6bbc" category="doc">在 E 系列 - Linux 中記錄您的 FC 組態</block>
-  <block id="52486bcbd4ba54ce03a66f82aa4ab12f" category="doc">使用 SANtricity System Manager 指派磁碟區 - Linux （ NVMe over InfiniBand ）</block>
   <block id="233c71ba617138921cb7567f7e63f96c" category="doc">瞭解適用於 E 系列的 Linux Express 組態</block>
-  <block id="1703055c3a93440b399e93436f24bae3" category="doc">使用 SANtricity System Manager - Linux （ iSCSI ）設定儲存設備</block>
-  <block id="bb63d783c657c38de2564a72c7f8ce0e" category="doc">在 E 系列 - Linux （ iSCSI ）中設定陣列端網路</block>
-  <block id="afb2ca3bdeee0db7c52d5fe4d95f67df" category="doc">在 E 系列 - Linux （ iSCSI ）中設定主機端網路</block>
-  <block id="20a7cf20d9e62dc143beb4083e7237b5" category="doc">在 E 系列 - Linux （ iSCSI ）中使用 DHCP 設定 IP 位址</block>
-  <block id="fe776ee5e4dedd2220f0c1279eecfc4b" category="doc">在 E 系列 - Linux （ iSCSI ）中設定多重路徑軟體</block>
-  <block id="2983522bb7971192a7b19239c78489c4" category="doc">在 E 系列 - Linux （ iSCSI ）中設定網路</block>
-  <block id="a55d76a868400bdc13ddafa3c0b123fd" category="doc">在 E 系列中設定交換器 - Linux （ iSCSI ）</block>
-  <block id="56a7cfd4a09dd9cc915effc3b709e56b" category="doc">在 E 系列 - Linux （ iSCSI ）中建立分割區和檔案系統</block>
-  <block id="8ae63fb65e18e5737838f3f0f3616363" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ iSCSI ）</block>
-  <block id="2cf4743e22ee36076d5e788acb85d307" category="doc">在 E 系列 - Linux （ iSCSI ）中設定 multipath.conf 檔案</block>
-  <block id="83273ba9acef588f65385d940a4ea831" category="doc">驗證 E 系列 - Linux （ iSCSI ）中的 IP 網路連線</block>
-  <block id="8f62e4facb4bc655273ed769163ab21c" category="doc">驗證 E 系列（ iSCSI ）的 Linux 組態支援</block>
-  <block id="4bc50a2a653ce8bf72974b6ac8cfc723" category="doc">驗證 E 系列主機上的儲存存取權 - Linux （ iSCSI ）</block>
-  <block id="a83e1c6f12f16161e75235b413ae8fa2" category="doc">在 E 系列 - Linux 中記錄 iSCSI 組態</block>
-  <block id="f8b14e5588ab2c7ccd6691db53cf0802" category="doc">使用 SANtricity System Manager - Linux （ iSER over InfiniBand ）設定儲存設備</block>
-  <block id="e4be00e1b0a634e59018890a6f2ed654" category="doc">在 E 系列 - Linux （ InfiniBand 上的 iSER ）中使用 DHCP 設定 IP 位址</block>
-  <block id="8bae0da69b5f6463066dd9bf85db42d4" category="doc">在 E 系列 - Linux （ InfiniBand 上的 iSER ）中設定多重路徑軟體</block>
-  <block id="99482839a6b0e0d92b308e114bd43e5a" category="doc">設定主機與 E 系列儲存設備之間的網路連線 - Linux （ InfiniBand 上的 iSER ）</block>
-  <block id="3e4da59279004bcd22967f813d7c7f3f" category="doc">使用 SANtricity System Manager - Linux （ InfiniBand 上的 iSER ）設定網路連線</block>
-  <block id="51b23502fc01639de89ab204ca319f19" category="doc">在 E 系列 - Linux 中設定子網路管理員（ InfiniBand 上的 iSER ）</block>
-  <block id="c294953cfef25396092e6433e2aba579" category="doc">在 E 系列 - Linux （ InfiniBand 上的 iSER ）中建立分割區和檔案系統</block>
-  <block id="31a15fd8e15a2f1fd50fd6998a8cf036" category="doc">決定 E 系列 - Linux （ InfiniBand 上的 iSER ）中的主機連接埠全域唯一 ID</block>
-  <block id="066c8070ea2f5a6a1b0acad2fd1364ac" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ iSER over InfiniBand ）</block>
-  <block id="bda8bb645a075548b4adde8ea4b33efe" category="doc">在 E 系列 - Linux （ iSER over InfiniBand ）中設定 multipath.conf 檔案</block>
-  <block id="efe973952cf408c3cafd38a2c85cbddd" category="doc">驗證 E 系列的 Linux 組態支援（ iSER over InfiniBand ）</block>
-  <block id="2b97a27918b1e202ad67081905b22304" category="doc">驗證 E 系列 - Linux 主機上的儲存存取（ InfiniBand 上的 iSER ）</block>
-  <block id="8db325b590cf6a0886a2a9a408e73f08" category="doc">在 E 系列 - Linux 中，透過 InfiniBand 組態記錄您的 iSER</block>
-  <block id="521f0577af1b8b73aa7704da3b88f384" category="doc">存取 E 系列實體 NVMe 裝置目標的 NVMe 磁碟區 - Linux （ NVMe over FC ）</block>
-  <block id="5ad6856a8fa035d0e3c79579eece03b5" category="doc">使用 SANtricity System Manager - Linux （ NVMe over FC ）來設定儲存設備</block>
-  <block id="fb17130ec244634a0532f36a8cfa9912" category="doc">存取 E 系列中虛擬裝置目標的 NVMe 磁碟區 - Linux （ NVMe over FC ）</block>
-  <block id="43c850105df5604a2122f91584d74c9a" category="doc">在 E 系列 - Linux （ NVMe over FC ）中設定 FC 交換器</block>
-  <block id="f6034c055b35ceacc4497df2f77dfac2" category="doc">在 E 系列 - Linux （ NVMe over FC ）中使用 DHCP 設定 IP 位址</block>
-  <block id="dcb4a5fa07cd4ed36bb0fb3ad18e00b0" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over FC ）建立主機</block>
-  <block id="d592eb2cd6c39918cf5b03b226488789" category="doc">顯示 E 系列 - Linux （ NVMe over FC ）中主機可見的磁碟區</block>
-  <block id="b57faba400e703a11e8f1e99bf4f0f59" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ NVMe over FC ）</block>
-  <block id="e4f037b2f16eb16778d34ce5c1ac9d30" category="doc">在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over FC ）</block>
-  <block id="e51d0418d8bc67a5b28e3fd2d5544f25" category="doc">在 E 系列 - Linux 的主機上設定 NVMe over FC 啟動器</block>
-  <block id="1d0293d6b77349ced298c04bc26d49c1" category="doc">驗證 E 系列（ NVMe over FC ）的 Linux 組態支援與審查限制</block>
-  <block id="fc0410a54029e55ab72bd9d966040fce" category="doc">驗證 E 系列 - Linux （ NVMe over FC ）主機上的儲存存取</block>
-  <block id="e5c307fa33decb06230f0165a8aca583" category="doc">在 E 系列 - Linux 中記錄 NVMe over FC 組態</block>
-  <block id="2cffff675eb97a7f105ccf60cac7496b" category="doc">存取 E 系列實體 NVMe 裝置目標的 NVMe 磁碟區 - Linux （ NVMe over InfiniBand ）</block>
-  <block id="734b4c93e92c5acc85a56cae9cab5b9d" category="doc">使用 SANtricity System Manager - Linux （ NVMe over InfiniBand ）設定儲存設備</block>
-  <block id="b96420657c441ccbbc9f49b11c9b2422" category="doc">存取適用於 E 系列虛擬裝置目標的 NVMe 磁碟區 - Linux （ NVMe over InfiniBand ）</block>
-  <block id="639cd8f6ff7a3c560f2d878f2b7127b1" category="doc">在 E 系列 - Linux （ NVMe over InfiniBand ）中使用 DHCP 設定 IP 位址</block>
-  <block id="117959d1244ec1b0e9e0c3aeaace2244" category="doc">在 E 系列 - Linux 中，透過 InfiniBand 連線設定儲存陣列 NVMe</block>
-  <block id="afd02878fb071c80a878b8f7ab1dc1e3" category="doc">在 E 系列 - Linux （ NVMe over InfiniBand ）中設定子網路管理程式</block>
-  <block id="90a60ec18000092aa65e65fc3e62e2dc" category="doc">使用 SANtricity System Manager - Linux （ NVMe over InfiniBand ）建立主機</block>
-  <block id="51aada41b528b8fcd1f725914e663229" category="doc">決定 E 系列 - Linux （ NVMe over InfiniBand ）中的主機連接埠全域唯一 ID</block>
-  <block id="64492487b2dd2794b9708dd549ad379b" category="doc">探索並連接 E 系列 - Linux （ NVMe over InfiniBand ）主機的儲存設備</block>
-  <block id="5fbdecb41ec793f9844319823102e3dd" category="doc">顯示 E 系列 - Linux （ NVMe over InfiniBand ）中主機可見的磁碟區</block>
-  <block id="21b49eecbce48931b396aa9795816edf" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ NVMe over InfiniBand ）</block>
-  <block id="ad20b21e81e490b60923a62c7961b3ff" category="doc">在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over InfiniBand ）</block>
-  <block id="67f4e87315dd5c9de1b651f328ce6111" category="doc">在 E 系列 - Linux 的主機上，透過 InfiniBand 設定 NVMe 啟動器</block>
-  <block id="d049f096e0cf1d889ec8cc31028f375f" category="doc">驗證 E 系列（ NVMe over InfiniBand ）的 Linux 組態支援與審查限制</block>
-  <block id="ad6a9d04ac784c454bda19a77808e7a6" category="doc">驗證 E 系列 - Linux （ NVMe over InfiniBand ）主機上的儲存存取</block>
-  <block id="5f89e4391e734f9f4b02e1b568f48d4d" category="doc">在 E 系列 - Linux 中記錄 NVMe over InfiniBand 組態</block>
-  <block id="70a0aef5361fa5e17fc107247e1a4c28" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）來設定儲存設備</block>
-  <block id="1d6c2bec0357042ed9103d8a757e052e" category="doc">使用 SANtricity 系統管理員指派磁碟區 - Linux （ NVMe over roce ）</block>
-  <block id="f4406895abc0e7fb7bba147a1b4018fc" category="doc">在 E 系列 - Linux （ NVMe over roce ）中使用 DHCP 設定 IP 位址</block>
-  <block id="2e7f926937a19390a696edcd1611efd8" category="doc">在 E 系列 - Linux 中設定儲存陣列 NVMe over roce 連線</block>
-  <block id="1d775b87419a4b4faa9188d96fc9f1ef" category="doc">使用 SANtricity 系統管理員 - Linux （ NVMe over roce ）建立主機</block>
-  <block id="c06ab1417d3d38a6274ca96f4817729b" category="doc">從 E 系列 - Linux （ NVMe over roce ）的主機探索並連線至儲存設備</block>
-  <block id="d13fba07fdac58d9571d88a7346d4afc" category="doc">顯示 E 系列 - Linux （ NVMe over roce ）中主機可見的磁碟區</block>
-  <block id="572a21343ba550460bb71fa935ac705f" category="doc">在 E 系列的主機上設定容錯移轉 - Linux （ NVMe over roce ）</block>
-  <block id="af007fd6297be8fbbd67a572ddf4a294" category="doc">在 E 系列 - Linux 中的主機上透過 ROCE 設定 NVMe 啟動器</block>
-  <block id="e822c9e7b8dafd08970088f3f9f02ea6" category="doc">驗證 E 系列（ NVMe over roce ）的 Linux 組態支援與審查限制</block>
-  <block id="1d8081d0f5262d4fcb0996c8627dd7ac" category="doc">在 E 系列 - Linux 中記錄 NVMe over roce 組態</block>
-  <block id="a1f8e9c89527ab6eb3aa28c09b6aeefc" category="doc">假設（ E 系列和 Linux ）</block>
-  <block id="73c2afd8840846ab8905a188204d4b19" category="doc">使用 SANtricity System Manager - Linux （ SAS ）設定儲存設備</block>
-  <block id="421d1c5153f841655f2ad791c3b9382c" category="doc">在 E 系列 - Linux （ SAS ）中使用 DHCP 設定 IP 位址</block>
-  <block id="174bbe0956088982601d07bf4750fcf0" category="doc">在 E 系列 - Linux （ SAS ）中設定多重路徑軟體</block>
-  <block id="221409e67aacfe941a04460977bee7ba" category="doc">在 E 系列中建立分割區和檔案系統 - Linux （ SAS ）</block>
-  <block id="e9ca753ba2dbe90aa92161ccb16e38bc" category="doc">判斷 E 系列中的 SAS 主機識別碼 - Linux （ SAS ）</block>
-  <block id="68001805f74454d41c5344994334105d" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ SAS ）</block>
-  <block id="35d216f5b1ca143eb3beeaa5d30dc52d" category="doc">在 E 系列 - Linux （ SAS ）中設定 multipath.conf 檔案</block>
-  <block id="13c68af1e6a4e01e97dcf0b8bf97636a" category="doc">驗證 E 系列（ SAS ）的 Linux 組態支援</block>
-  <block id="ade8ef29154f84e55e0adfa62c795c0e" category="doc">驗證 E 系列主機上的儲存存取 - Linux （ SAS ）</block>
-  <block id="40fce8d16b0565810ee1c2c63133d092" category="doc">在 E 系列 - Linux 中記錄您的 SAS 組態</block>
-  <block id="bf33b3e625a1c0f412846daa1e9c9b97" category="doc">使用 SANtricity System Manager - Linux （ SRP over InfiniBand ）設定儲存設備</block>
-  <block id="a098d215528eb3474baccb141bba0fbe" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中使用 DHCP 設定 IP 位址</block>
-  <block id="2b81fc8d8386a3b53010012cd07ac8dc" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中設定多重路徑軟體</block>
-  <block id="cf3a126b78246d41311848c85a2670df" category="doc">使用 SANtricity System Manaer - Linux （ SRP over InfiniBand ）設定網路連線</block>
-  <block id="176cfa346487abc57acc41973cb76102" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中設定子網路管理員</block>
-  <block id="4d1495672528ba1edb974e7a3ec68925" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中建立分割區和檔案系統</block>
-  <block id="722418d400a6f71b750c9b59435c9e9c" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中判斷主機連接埠的全域唯一 ID</block>
-  <block id="fd9fdffac380d0e2ac60f7758fdaa33c" category="doc">安裝 SANtricity Storage Manager for SMCLI （ 11.53 或更早版本） - Linux （ SRP over InfiniBand ）</block>
-  <block id="8035356b3e36fae458c1388504938a10" category="doc">在 E 系列 - Linux （ SRP over InfiniBand ）中設定 multipath.conf 檔案</block>
-  <block id="42396f2886c0bfaf606e08b85587f5d5" category="doc">驗證 E 系列的 Linux 組態支援（ SRP over InfiniBand ）</block>
-  <block id="e395324aa03ccced94886fbf04db6183" category="doc">驗證 E 系列 - Linux 主機上的儲存存取（ SRP over InfiniBand ）</block>
-  <block id="d0186a57b662280c213dbecf7f6af1f9" category="doc">在 E 系列 - Linux 中記錄您的 SRP over InfiniBand 組態</block>
-  <block id="a515fb29e4fa1cddfb77de1f04e5fdc6" category="doc">使用 SANtricity System Manager - VMware 來設定儲存設備</block>
-  <block id="212ac6cf4b1a317c2d81b4c604a72c3f" category="doc">在 E 系列 - VMware 中使用 DHCP 設定 IP 位址</block>
-  <block id="8b1c228fce428494e4719fc97939f19b" category="doc">在 E 系列 - VMware 中設定多重路徑軟體</block>
-  <block id="75f9cb4af236fa315c70db76e6f02b4f" category="doc">在 E 系列 - VMware 中的主機上設定儲存設備</block>
-  <block id="9166e563351d6a1629f25f4f1660c5f3" category="doc">探索 E 系列 - VMware 主機上的儲存設備</block>
-  <block id="1ddf70e4199a94bc1f907bb8a4216235" category="doc">在 E 系列 - VMware 中執行 FC 專屬工作</block>
-  <block id="64152ae2d2a51ac7c673f8eaa8aab5f8" category="doc">E 系列中的 VMware Express 組態</block>
-  <block id="1b80dd788ccebd4cbcc6d5bf5f64fcc9" category="doc">在 E 系列 - VMware 中執行 iSCSI 專屬工作</block>
-  <block id="2275691e6a4620e1eaa09880c8eb813a" category="doc">在 E 系列 - VMware 中執行 NVMe over FC 專屬工作</block>
-  <block id="b42d041633a339eb1cb68994e3a77b85" category="doc">假設（ E 系列和 VMware ）</block>
-  <block id="efb2de62f4e8aebccdc0b73443b69ff2" category="doc">在 E 系列 - VMware 中執行 SAS 專屬工作</block>
-  <block id="0187ce621ab6fcff1256aeb784435247" category="doc">瞭解 E 系列中的 VMware 工作流程</block>
-  <block id="7a692260c7d7ac55fdd2b9a054942787" category="doc">驗證 E 系列中主機的儲存存取權 - VMware</block>
   <block id="8b7e0db19c428d327097c37f4549fca2" category="doc">驗證 E 系列中的 VMware 組態支援</block>
   <block id="c7c36987aba5ac530ed125d148025938" category="doc">驗證 E 系列中的 Windows 組態支援</block>
   <block id="c5c1c813359fe8c1da7d36bb836d0ab5" category="doc">E 系列硬體與 SANtricity 軟體 - 舊版</block>
@@ -9128,32 +9012,7 @@
   <block id="e3e2484afb61b8f618d900afdf3fa60e" category="doc">瞭解 E 系列硬體</block>
   <block id="e733011529029ff6f2e8fcfe5f3f81ab" category="doc">瞭解 E 系列機櫃類型</block>
   <block id="8efeb145abd28d35ed4d9bd581678b32" category="doc">瞭解 E 系列術語</block>
-  <block id="3adc0491bdd09b8053984a5540955ccd" category="doc">儲存系統纜線的需求（ E 系列）</block>
-  <block id="1e493b1f08040d7c09ccc1ed1b693f77" category="doc">纜線控制器機櫃至磁碟機機機櫃（ E 系列）</block>
-  <block id="175707be4013433c65da9b5edaa895c1" category="doc">完整儲存系統設定 - E4012</block>
-  <block id="89a1aa6002884003ed8af211319c8340" category="doc">完整儲存系統設定 - E4060</block>
-  <block id="f632da403421da7b6244d816b9e50f7b" category="doc">連接電源線 - E4012</block>
-  <block id="2b05b603ee07a93af0ce86ead8e77991" category="doc">連接電源線 - E4060</block>
-  <block id="54f1c33739ea60e063758169d1514108" category="doc">安裝與設定 - E4000 儲存系統</block>
-  <block id="fd279d622aac0a78a06d5faa40df6ae8" category="doc">安裝硬體： E4012</block>
-  <block id="0463eae428b7be4f2d1fbac99000d12e" category="doc">安裝硬體： E4060</block>
-  <block id="db86019789bc435a6cc640f489be3221" category="doc">準備安裝： E4012 和 E4060</block>
   <block id="87d6ab4989c0d8d9248aa48458ea993a" category="doc">E 系列版本資訊</block>
-  <block id="bc580ac1e93eaddbc212685a8b8590bd" category="doc">更換磁碟機抽屜 - E4000 （ 60 個磁碟機櫃）</block>
-  <block id="7fc9ffa7f2dac2358b73258595e6c486" category="doc">更換電池 - E4000</block>
-  <block id="8189d0347e45eae2ae65b6df4c31943d" category="doc">更換控制器 - E4000</block>
-  <block id="000981dc4d497993d32f6deb08dd457c" category="doc">更換控制器的要求 - E4000</block>
-  <block id="f43f3245e74a3b06b5097ce6f1e4e878" category="doc">新增第二個圓筒 - E4000</block>
-  <block id="dd7aa943bb1ecbbf426c849e2bcdfada" category="doc">更換 DIMM - E4000</block>
-  <block id="5c948f39e8fd840f607efa327e02156f" category="doc">更換磁碟機的需求 - E4000</block>
-  <block id="55593d98365d347d99a25490db7abce6" category="doc">更換磁碟機 - E4000 （ 12 個磁碟機或 24 個磁碟機櫃）</block>
-  <block id="a97ffa777434b22067345da46d1265d6" category="doc">更換磁碟機 - E4000 （ 60 個磁碟機櫃）</block>
-  <block id="e87889531365049e47a1ec9b1fe60143" category="doc">熱新增磁碟機櫃 - IOM12 或 IOM12B 模組 - E4000</block>
-  <block id="8eca50f3f65d57040cec46c39bce6aab" category="doc">更換風扇箱 - E4000 （ 60 個磁碟機）</block>
-  <block id="5ce8b8d324882dbed9dfce003731de24" category="doc">更換主機介面卡（ HIC ） - E4000</block>
-  <block id="5aa5e288d012774d6f84e29434b17ffb" category="doc">升級主機介面卡（ HIC ） - E4000</block>
-  <block id="4532c94f48ec34b94a391d3d7a98f4f9" category="doc">更換動力箱 - E4000 （ 60 個磁碟機）</block>
-  <block id="a27cb4b7c36de4a907961556d52154a9" category="doc">更換電源供應器 - E4000</block>
   <block id="23c19e9851a45bd1a62c97b5c51e16ab" category="doc">管理E系列儲存系統</block>
   <block id="2d77a77163078d96d0699098a7f29284" category="doc">瀏覽平台技術報告（ E 系列）</block>
   <block id="82395b99bc2ea612343c2224c9ba96f7" category="doc">匯入 SANtricity 遠端儲存磁碟區的遠端儲存設備</block>
@@ -9283,14 +9142,12 @@
   <block id="2db2ecd53dfa16abedb03a761e1763e8" category="paragraph">如有必要、請為最大傳輸單位（MTU）輸入新的位元組大小。預設MTU大小為每個框架1500位元組。您必須輸入1500到9000之間的值。</block>
   <block id="77c49ca57dc8cc81b5609b5c3b6b0120" category="paragraph">紅帽企業 Linux 8（RHEL 8）</block>
   <block id="f6915e22a07b317f6f9f3f4164551c8d" category="paragraph">對於 SLES 12，I/O 由 Linux 主機定向到虛擬設備目標。  DM-MP 管理這些虛擬目標背後的實體路徑。</block>
-  <block id="f9a6f2ee656556e80e38f8a39629d913" category="doc">在 E 系列中建立檔案系統 - SLES 12（NVMe over FC）</block>
   <block id="e6e90f0138a14d2c6523ea13f186d5ef" category="paragraph">對於 SLES 12，您可以在所需的 dm 裝置上建立檔案系統並掛載該檔案系統。</block>
   <block id="717270487102a24fa22876dec32c95f1" category="section-title">為 SLES 12 啟用裝置映射器多路徑 (DMMP)</block>
   <block id="cdfdf9bf8f4a464cd4abef555786cdbb" category="paragraph">預設情況下，SLES 中會停用 DM-MP。完成以下步驟以在主機上啟用 DM-MP 元件。</block>
   <block id="0a4a01fb64611536a7fb2c5e1e325d98" category="paragraph">以下步驟適用於使用 Broadcom Emulex 或 QLogic NVMe/FC 支援的 FC HBA 的 RHEL 8、RHEL 9、SLES 12 和 SLES 15。有關支援哪些作業系統或 HBA 版本的更多信息，請查閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>。</block>
   <block id="75dbe17d5307d64a197f24e012b0fe4e" category="paragraph">*RHEL 8 或 RHEL 9*</block>
   <block id="6ef765942b756be59a09bba2c1bea181" category="summary">對於 SLES 12，您可以在命名空間上建立一個檔案系統並掛載該檔案系統。</block>
-  <block id="5f72169c48d94cfdf13fa8e7156de8ee" category="doc">在 E 系列中建立檔案系統 - Linux SLES 12（NVMe over InfiniBand）</block>
   <block id="f3b72a76b6437fffe54c5f6a0e82669c" category="section-title">啟用裝置對映器多路徑 (DMMP) SLES 12</block>
   <block id="01d7072c63a7f17dd56f882aa05c191e" category="paragraph">*SLES 12.x 或更高版本*</block>
   <block id="fd5ba176689e7b1be93aaa098be59948" category="sidebar">建立檔案系統（SLES 12）</block>
@@ -9302,10 +9159,8 @@
   <block id="0a4aa2ff40d0cf90093b7465550f2a08" category="paragraph">*紅帽企業版 Linux 8、9 和 10（RHEL 8、RHEL 9 和 RHEL 10）*</block>
   <block id="60a3593eb1cbf82bd1db6d8518190595" category="paragraph">*SUSE Linux Enterprise Server 12、15 與 16（SLES 12、SLES 15 與 SLES 16）*</block>
   <block id="0e7753717e818bfa409c8e41fdfb5f27" category="admonition">這在 RHEL 10 上將不再有效。它適用於 RHEL 9 及更早版本和 SLES 16 及更早版本。</block>
-  <block id="885059743474b89fca8c2d38e2b71705" category="doc">在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16 中建立檔案系統（NVMe over FC）</block>
   <block id="35b935d753273a200a6f5f6542889327" category="paragraph">對於 RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16，您需要在本機 nvme 裝置上建立檔案系統並掛載該檔案系統。</block>
   <block id="6c77b485a16c059dab8257c7b606be3e" category="admonition">對於 SLES 15、SLES 16、RHEL 9 和 RHEL 10，預設啟用原生 NVMe 多路徑，無需額外配置。</block>
-  <block id="ac85a2a833e40762042d9152f479d518" category="doc">在 E 系列 Linux RHEL 8、RHEL 9、RHEL 10、SLES 15 和 SLES 16（基於 InfiniBand 的 NVMe）中建立檔案系統</block>
   <block id="1c90b820593a79fe35c50b5587f176bb" category="paragraph">您必須執行最新的相容 RHEL 8、RHEL 9、RHEL 10、SLES 12、SLES 15 或 SLES 16 服務包作業系統。參見<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block> 如需查看最新要求的完整清單。</block>
   <block id="5feeb9bdb446ab922f394a940c9ef4b8" category="paragraph">*SLES 12、SLES 15 或 SLES 16*</block>
   <block id="79b601d0ad8f64996a3f2d1444b5b84d" category="paragraph">*RHEL 8、RHEL 9 或 RHEL 10*</block>
@@ -9755,7 +9610,6 @@
   <block id="2d3c6d3090e0743f13c7d2f6e6baa8a7" category="list-text">在系統管理器介面的左側面板中，選擇 *Hardware* 。</block>
   <block id="54f28e00e77b3b878f53a93bac8c3b82" category="list-text">從 SANtricity System Manager 介面的左側面板中，選取功能表：Storage[Hosts]。</block>
   <block id="ae72018d6159d77eea99fbd937f32807" category="admonition">RHEL 10 不提供網路腳本。</block>
-  <block id="57b95658e40e066ac07b2b5155110cfe" category="doc">在 E 系列中執行 NVMe over RoCE 特定任務 - VMware</block>
   <block id="74c661da20b90780ad273fb5c128b862" category="section-title">步驟 1：記錄您的組態</block>
   <block id="e80331389c74f068dcf435a8c8a29bb4" category="section-title">步驟 2：設定 NVMe/RoCE 交換器</block>
   <block id="438a6e391139858173b2b6dac23fd47c" category="paragraph">本任務描述了配置交換器以透過 RoCE 實現 NVMe 的一般步驟。有關具體說明，請參閱交換器供應商的文件。</block>
@@ -9825,18 +9679,14 @@
   <block id="60a6b0fbbfa61d15c4020f7f7e098cb9" category="paragraph">命令列介面 (CLI) 是一種軟體應用程式，可用於設定和監控儲存陣列。使用 CLI，您可以從作業系統提示字元執行命令，例如 <block ref="41f813272af86bac56724a37decae4bb" prefix=" " category="inline-code"></block> 提示字元、Linux 作業系統路徑或 Solaris 作業系統路徑。</block>
   <block id="f6d6ca01d250853987d01c1f2f3320d3" category="paragraph">您可以在 E-Series 3040 40U 機櫃中安裝下列控制器磁碟機匣和擴充磁碟機匣。</block>
   <block id="724bffb2b9196928417abfcef2c53ecd" category="paragraph">如果您的控制器磁碟機匣或擴充磁碟機匣未列於下方，請參閱<block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block>以確認您的控制器磁碟機匣或擴充磁碟機匣是否受支援。</block>
-  <block id="a788f87717c430011cbd08f417a53334" category="doc">管理站的乙太網路纜線 - E 系列</block>
   <block id="0446bb64b3616c90897eb07d0cab4bac" category="paragraph">有些儲存系統的每個控制器上只有一個頻外 Ethernet 管理連接埠。</block>
   <block id="bbdf425fc3c642c8de49d63dc15badbc" category="paragraph">有關您儲存系統的具體佈線說明，請參閱 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 並按一下您特定儲存系統的連結。</block>
   <block id="a44f563f123b3f3a9a9ba60801e3cc35" category="admonition">以下資訊不適用於所有儲存系統，有關您儲存系統的主機佈線資訊，請參閱 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 並點擊您特定儲存系統的連結。</block>
-  <block id="46005072ff8ba642f00de1f96f5d8851" category="doc">為儲存系統佈線 - E-Series</block>
   <block id="f58b5ce520289d0295b8af12ea9b3b6c" category="admonition">如果您在下面的清單中沒有看到您的控制器機架（儲存系統），請查看 <block ref="420e50e517d79764f810d7bfbcee32b7" category="inline-link-macro-rx"></block> 並點擊您特定儲存系統的連結以存取佈線資訊。</block>
   <block id="38e73c38b9e2c6b284a24eeb6f0868fb" category="paragraph">如果您要為以下任何配置進行佈線，請參閱 <block ref="4426bbb413c69380e459efdddf2e423d" category="inline-link-rx"></block></block>
-  <block id="ad69ba1272ea2f557940362e05d45875" category="doc">儲存系統的電源線 - E-Series</block>
   <block id="a2f7472ef27aa6805d53dc2c352d968a" category="list-text">打開兩個電源供應器。</block>
   <block id="e5d6cef3c0e33a5155a04c0c6d89905c" category="admonition">根據您的儲存系統，電源供應器可能有電源開關，也可能沒有電源開關，您必須連接電源線才能開機。</block>
   <block id="32bfa1a65d1413942805620e277c6c06" category="summary">安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間的鏡像連結和主機網路連線。（管理連接埠的連接將在「完整儲存系統設定」部分進行後續步驟。）</block>
-  <block id="c4f6e132f298cda01ed84c032ae3487c" category="doc">連接硬體線 - EF50 和 EF80</block>
   <block id="309528c65dc2e27541a0b466d6affaba" category="list-text">在本程序中，術語 _I/O 模組_ 指的是主機介面卡 (HIC)。</block>
   <block id="28c4b42113d6ebd3c5e6ca40929d04a6" category="list-text">線纜圖示中帶有箭頭圖標，指示將連接器插入連接埠時線纜連接器拉片的正確方向（向上或向下）。</block>
   <block id="fd2cb99acafb4f0144bfb5e0e4c31373" category="paragraph">插入連接器時，應該可以感覺到它咔嗒一聲到位；如果沒有感覺到咔嗒聲，請將其取出，翻轉過來再試一次。</block>
@@ -9928,7 +9778,6 @@
   <block id="19693a6fcf27fa037b1b85c63e78d478" category="paragraph"><block ref="19693a6fcf27fa037b1b85c63e78d478" category="inline-image-macro-rx" type="image"></block></block>
   <block id="03ed2de1c6ced47cf2038751f6c4e1b4" category="inline-link-macro">啟動儲存系統</block>
   <block id="2559b1d3ade089296a5c82ea8def20df" category="summary">開啟 EF50 或 EF80 儲存系統電源後，您可以透過連接線纜並設定每個控制器上的管理連接埠以進行帶外儲存系統管理、設定儲存系統，然後驗證主機 I/O 模組協定是否正確來完成系統設定。</block>
-  <block id="c52380e4285fce53ae461e4bdf6b4527" category="doc">完整的儲存系統設定 - EF50 和 EF80</block>
   <block id="e12b25581394ec4377fd1f1f2eeac392" category="section-title">步驟 1：連接纜線並設定管理連接埠</block>
   <block id="6629e191e98b635ab2a2b11b4301d852" category="paragraph">為每個控制器的管理連接埠接上纜線，然後使用 DHCP 伺服器或靜態 IP 位址設定連接埠。</block>
   <block id="d0ae3b654b62807d5a54a174f1d72959" category="paragraph">纜線，然後使用 DHCP 伺服器設定管理連接埠。</block>
@@ -9963,7 +9812,6 @@
   <block id="3bdea44956eca6a6fe526f7453672cb2" category="paragraph">您需要使用<block ref="3b1e62b8f041cdbf32722b61a558d569" category="inline-link-macro-rx"></block>程序進行變更。</block>
   <block id="95212c9edc6cfd774f23d964ae66f173" category="admonition">變更主機連接埠傳輸協定包括準備傳輸協定變更、停止主機 I/O 作業、變更傳輸協定，然後設定主機以使用新的傳輸協定。</block>
   <block id="bf6c3346ff3606822a029bdc5f1fd038" category="summary">準備好安裝 EF50 或 EF80 儲存系統後，將機架安裝硬體安裝到機櫃或電信機架中，然後安裝並固定儲存系統。</block>
-  <block id="45b4e7c20322f386ee8d6f6de5e46bd7" category="doc">安裝硬體 - EF50 和 EF80</block>
   <block id="8bd4acc38771e6801a9c3e79e0914f1f" category="paragraph">如果您的儲存系統裝在機櫃中，您可以跳過此程序並前往<block ref="5cf36f95205599c906eaa6f0709db155" category="inline-link-macro-rx"></block>。</block>
   <block id="405064d385d6ce1555b45605e3b421aa" category="list-text">請確保您已收到機架安裝硬體包裝內的安裝說明。如果沒有、請參閱 <block ref="eec13eeca211854cac70cc479967d6f5" category="inline-link-macro-rx"></block>。</block>
   <block id="b433386c98551c70005a6f1b800aa07c" category="inline-link-macro">了解搬運注意事項</block>
@@ -9979,7 +9827,6 @@
   <block id="6bc9706054ddce477397a74fecd293ed" category="inline-link-macro">連接硬體纜線</block>
   <block id="0761c2876a223e6e2037a4e9e910b582" category="paragraph">安裝好儲存系統的硬體後， <block ref="bca22c8e81cd07d8c060c28f352f5c5b" category="inline-link-macro-rx"></block>。</block>
   <block id="5b456164c38ae8e563b1428c3f0d26f8" category="summary">為 EF50 或 EF80 儲存系統的控制器鏡像和主機網路連線進行佈線後，即可開啟控制器電源。</block>
-  <block id="fd8cf1a58916f99d088946d5a7230216" category="doc">啟動硬體 - EF50 和 EF80</block>
   <block id="5ebae18682dda3e61a78b4f23c59fde0" category="list-text">將電源線插入每個控制器電源供應器，然後將它們連接到不同電路上的電源。</block>
   <block id="bdc998a5bd1943bedb35cbcb343657f7" category="admonition">如果您使用的是第三方電源分配單元（PDU），請勿使用控制器正後方的電源插座，因為這可能會阻礙對控制器的存取。</block>
   <block id="fa2c4de61b033b70225eabcd36034670" category="image-alt">儲存系統電源連接圖</block>
@@ -9991,7 +9838,6 @@
   <block id="68db173907f08cd16d03de80c901a549" category="inline-link-macro">完整的儲存系統設定</block>
   <block id="d1b51920b70cb47316a2aed33df1996c" category="paragraph">啟動儲存系統後，<block ref="a1e08373f9f80025642e885c4d75384a" category="inline-link-macro-rx"></block>。</block>
   <block id="939b07324bfa4e3da6dfef87a4f84101" category="summary">準備安裝您的 EF50 或 EF80 儲存系統，請先準備好場地、了解儲存系統的吊掛注意事項、打開包裝箱並將內容物與裝箱單進行比較，以及註冊儲存系統以存取支援服務。</block>
-  <block id="d5072f1b35968b264502fd8cb42bbc49" category="doc">準備安裝 - EF50 和 EF80</block>
   <block id="92c8397408f55d9526d554c55cde3d22" category="section-title">步驟 1 ：準備站台</block>
   <block id="6953f9497ab506347f9ba3b6eab20b03" category="paragraph">請確保場地和您計劃使用的機櫃或機架符合您儲存系統的規格。</block>
   <block id="2d0759237f73e187af2bdd02dc95f81b" category="list-text">請確保您的儲存系統和任何交換器有足夠的機櫃或機架空間。</block>
@@ -10030,7 +9876,6 @@
   <block id="212304f8cbbd7ebaff4e2249b78ee581" category="inline-link-macro">安裝硬體</block>
   <block id="abda3eb065a719f1d88a781d2e38ad9e" category="paragraph">準備好安裝儲存系統後，<block ref="239db888dbc76fb83268465e5e6536a6" category="inline-link-macro-rx"></block>。</block>
   <block id="be8d4ce4918ddae84d02431379d6d80c" category="summary">若要安裝及設定 EF50 或 EF80 儲存系統，您必須準備站台、安裝硬體元件並進行佈線、開啟儲存系統電源，以及完成儲存系統設定與組態。</block>
-  <block id="686032153c045cdea3816ea49738e842" category="doc">安裝與設定 - EF50 和 EF80</block>
   <block id="e33ae0add8106498514961d910b3b38e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="bce179ad419bd48e9c41b073fd99e202" category="inline-link-macro-rx"></block></block>
   <block id="edb3e9aff5e398b7b7eb19e2ba1c1378" category="paragraph">為了做好安裝準備，請準備好場地，了解儲存系統的吊掛注意事項，打開包裝箱並將內容物與裝箱單進行核對，並註冊儲存系統以獲得支援福利。</block>
   <block id="923a86c9f908f09f61d33d7831905371" category="inline-link-macro">安裝硬體</block>
@@ -10050,17 +9895,14 @@
   <block id="e5917c8b7ae11d456fbbf964f73d5ea5" category="list-text">如果所有磁碟區都歸優先所有者所有，則繼續執行步驟 4 。</block>
   <block id="f5513a279f3a0cf086ef71ad97fc2b02" category="list-text">按一下所需的控制器，然後選擇 *Configure iSCSI ports*。</block>
   <block id="c4039f7107e8ace0d297e2c9ce9db8c0" category="summary">要完成 EF50 或 EF80 儲存系統的控制器更換，請確保儲存系統韌體是最新的，驗證磁碟區已歸還給其所有者，收集系統支援數據，並將故障部件退回 NetApp。</block>
-  <block id="1df492fb38de2abdeb3d08f3c3e7f6ed" category="doc">完成控制器更換 - EF50 和 EF80</block>
   <block id="8353977824c9791b266dc918db656fa9" category="paragraph">要完成 EF50 或 EF80 儲存系統的控制器更換，請確保已安裝最新版本的 SANtricity OS，驗證磁碟區已返回其所屬控制器，收集系統支援數據，並將故障元件退回 NetApp。</block>
   <block id="c544db45a7babe9836c72d84fccf4ad0" category="section-title">步驟 1：確保 SANtricity OS 為最新版本、驗證磁碟區所有權並收集支援資料</block>
   <block id="8d25d311e353251341d471f4c2d37620" category="section-title">步驟 2：將故障零件退回 NetApp</block>
   <block id="b7ed4d788cf16b7e63972cb4e46b077f" category="summary">若要更換 EF50 或 EF80 儲存系統中的故障控制器、請拆下控制器、將元件移至替換控制器、然後安裝替換控制器。</block>
-  <block id="4f76e3ac8bbd37b71def1f5a39dc253f" category="doc">更換控制器 - EF50 和 EF80</block>
   <block id="6670723c2864ca1765e9359b7d487d58" category="paragraph">若要更換 EF50 或 EF80 儲存系統中的故障控制器，請先驗證快取記憶體中的所有資料是否已寫入磁碟機，然後拔下故障控制器的所有纜線，取出故障控制器，將元件移至替換控制器，最後安裝替換控制器。</block>
   <block id="04930cabf99972a633341ff06ac0deb2" category="inline-link-macro">線上更換控制器</block>
   <block id="3afdcd3e40400319f3d0f83140582eb8" category="paragraph">更換故障控制器後，<block ref="b6ab23cdcb0c3e7e038497056f4f0fe6" category="inline-link-macro-rx"></block>。</block>
   <block id="cb4238e638fc47d7b570d750fcab014f" category="summary">在更換控制器時，請將故障控制器置於 EF50 或 EF80 儲存系統中的離線狀態，以防止資料遺失並確保系統穩定性。</block>
-  <block id="0ed60882ea4f8296eaf657de750f0b1f" category="doc">使受損的控制器離線 - EF50 和 EF80</block>
   <block id="9060587edeb01a63e3d3edc959678d1e" category="list-title">之前</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
   <block id="f1e36309340fc4f17fb40811d47953c7" category="list-text">您必須符合此程序的<block ref="f3fc649d7930c1668979ef9e48f6bb30" category="inline-link-macro-rx"></block>。</block>
@@ -10069,22 +9911,18 @@
   <block id="bce072f16c5d36a9b06ffd9b060b1032" category="inline-link-macro">更換受損的控制器</block>
   <block id="002fd09fb9764aac2eb6c3186d15cbfd" category="paragraph">將故障控制器離線後<block ref="ee0880cd8b48b6c56cd4da2441971f2e" category="inline-link-macro-rx"></block></block>
   <block id="beb7fb9c14796641ab9982a59ef200a1" category="summary">為 EF50 或 EF80 儲存系統安裝替換控制器後，確認替換控制器的 IP 位址、將控制器上線，並確認儲存系統狀態為「最佳」。</block>
-  <block id="596db6c24eb9e12a170f6a7b400b16e8" category="doc">線上更換控制器 - EF50 和 EF80</block>
   <block id="f6eeb21c85181baceb1efe4944921a82" category="paragraph">為 EF50 或 EF80 儲存系統安裝替換控制器後，確認其 IP 位址，將控制器上線，並確認儲存系統狀態為「最佳」。</block>
   <block id="a61002aab76d792f612bedb7d53fdd4f" category="inline-link-macro">完成控制器更換</block>
   <block id="ab0cc7192570c60edb959133170bce4a" category="paragraph">新控制器上線後，<block ref="867cf5cb10011fd216b1c24383b0303a" category="inline-link-macro-rx"></block>。</block>
   <block id="920518de31657059b4af98be4e467165" category="summary">準備更換 EF50 或 EF80 儲存系統中的故障控制器，方法是打開替換控制器的包裝、確認其零件編號正確，並備份組態資料庫。</block>
-  <block id="363003c031f52760e90e0fb1284fdefd" category="doc">準備更換控制器 - EF50 和 EF80</block>
   <block id="23182ac7189b12133b9a6f5a17fdb931" category="paragraph">若要更換 EF50 或 EF80 儲存系統中的故障控制器，請開啟替換控制器的包裝，並記下其 MAC 位址、確認其零件號碼是否正確，並備份儲存系統的組態資料庫。</block>
   <block id="14db85beb6439163bd9a3227e2e04e91" category="inline-link-macro">使受損的控制器離線</block>
   <block id="c71f02ba1917135ea53e6af0e26795fd" category="paragraph">做好控制器更換的準備工作後，<block ref="911e69b58a894f7ac5b57ca9f4b1508e" category="inline-link-macro-rx"></block>。</block>
   <block id="fb081072ce2cc9988433d80f3b47bbb0" category="summary">在更換 EF50 或 EF80 儲存系統中的控制器之前，請確保您已符合成功更換的所有需求。這包括確認您有一個故障的控制器、檢查儲存系統的狀態、準備執行程序所需的工具，以及擁有可存取 SANtricity System Manager 的管理工作站與瀏覽器。</block>
-  <block id="63d771a32f33c4067d74aa663218f475" category="doc">更換控制器的要求 - EF50 和 EF80</block>
   <block id="c7ae60c36e5dd3e8b2951d1153d89ab3" category="paragraph">在更換 EF50 或 EF80 儲存系統中的控制器之前、請確保符合成功更換的要求。這包括驗證您有故障的控制器、驗證儲存系統的狀態、取得程序所需的項目、以及擁有管理站和瀏覽器以存取 SANtricity System Manager 。</block>
   <block id="548802e3445e480c774adf86b3c9d40d" category="inline-link-macro">準備更換控制器</block>
   <block id="2f1a84cd73a9d1b253690cee5a996165" category="paragraph">在滿足控制器更換要求後，<block ref="eeedf715164715cd0f13218b7869f59b" category="inline-link-macro-rx"></block>。</block>
   <block id="2a9a93ea6f0bd977cebbea5c7c3931ef" category="summary">您可以透過滿足儲存系統需求、準備系統、將故障控制器離線、更換控制器、將新控制器上線並完成更換程序，來更換 EF50 或 EF80 儲存系統中的故障控制器。</block>
-  <block id="cbdd046cb437c2ec3b44256dfde2ff5b" category="doc">控制器更換工作流程 - EF50 和 EF80</block>
   <block id="cc7b6ad2b5c5cf984ed2b31eb7cdec78" category="inline-link-macro">審查控制器更換要求</block>
   <block id="63d82565e7082940cd04e84427b25ae7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block><block ref="fda781847f9aa68393ef9eb97f6097de" category="inline-link-macro-rx"></block></block>
   <block id="406f1172b9d2b0ceb171aea9558a5a68" category="paragraph">確認您的儲存系統是否有故障控制器、確認您的儲存系統的狀態、取得執行該程序所需的工具，並擁有一個管理工作站和瀏覽器來存取 SANtricity System Manager。</block>
@@ -10104,7 +9942,6 @@
   <block id="9b45b4bd50c50f33264d635b111c66e7" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block><block ref="fb1d229074231f8b8a434041a80b00f6" category="inline-link-macro-rx"></block></block>
   <block id="570aef57cad2607bde75709d4a86e944" category="paragraph">確保已安裝最新版本的 SANtricity OS，驗證磁碟區已返回其所屬控制器，收集系統支援數據，並將故障元件返回 NetApp。</block>
   <block id="383ef5177a54d7409b9e3c66bbdd00ca" category="summary">當您的 EF50 或 EF80 儲存系統中的 DIMM 發生故障、報告狀態不佳或容量不符時，請更換該 DIMM。</block>
-  <block id="4ba23e997e0cdc38baff6119bdd2115e" category="doc">更換 DIMM - EF50 和 EF80</block>
   <block id="127fa4a95ea776482897ccf0f46f143e" category="list-text">更換 DIMM 的步驟如下：確定是否需要更換 DIMM、做好準備、將故障控制器離線、移除控制器、更換 DIMM、重新安裝控制器、使其聯機、完成更換，並將故障部件退回 NetApp。</block>
   <block id="4abfd4171ab973970a9c4d4bb9f0dcc4" category="paragraph">當 DIMM 發生故障、顯示狀態不佳或容量不符時，請更換 DIMM。</block>
   <block id="c4576758d1a1108466321398e70b5733" category="paragraph">準備更換 DIMM 時，請確保沒有其他儲存系統問題需要解決、確保磁碟區處於正確狀態、收集必要的工具和設備、採取預防措施防止靜電放電，並備份儲存系統的組態資料庫。</block>
@@ -10119,12 +9956,10 @@
   <block id="e63100abf181cb74cc24fbd0bf3b20b8" category="section-title">步驟 8：完成 DIMM 更換</block>
   <block id="2324c9ff8290e7aacd93f5339cfc2986" category="section-title">步驟 9：將故障部件退回 NetApp</block>
   <block id="38b6c237ab61ba051247de5055885fbe" category="summary">當 EF50 或 EF80 儲存系統中的磁碟機發生故障或需要升級時、請更換磁碟機。</block>
-  <block id="b128b09f0503f3acadbab3ce838606d3" category="doc">更換磁碟機 - EF50 和 EF80</block>
   <block id="d73077f8b1eb74e5877c54065699aa12" category="paragraph">在 EF50 或 EF80 儲存系統接收 I/O 時更換故障磁碟機，以確保持續的資料存取和系統效能。</block>
   <block id="7167e6fb601eb461220ee6f5d0e38e0a" category="list-text">更換磁碟機的步驟包括：準備、更換磁碟機、完成更換，然後將故障零件退回 NetApp。</block>
   <block id="308f69e1eee5c954dd187a6972a6cb9e" category="list-text">SANtricity System Manager 中的 Recovery Guru 會監控儲存系統中的磁碟機，並可通知您即將發生的磁碟機故障或實際的磁碟機故障。當磁碟機發生故障時，其 Attention（琥珀色）LED 會亮起。</block>
   <block id="627ea20fba0ea612727b7cb7f0ea0aae" category="summary">當您的 EF50 或 EF80 儲存系統中的風扇發生故障或運作效率低時，請更換風扇模組，因為這會影響系統散熱和整體效能。</block>
-  <block id="dd25df4834294fa25b6149163a4481d5" category="doc">更換風扇模組 - EF50 和 EF80</block>
   <block id="1745642b329ee9ae6c4d423166d61ff9" category="list-text">更換風扇的步驟如下：準備、將故障控制器離線、拆下控制器、更換風扇、重新安裝控制器、將其上線、完成更換，並將故障零件退回 NetApp。</block>
   <block id="9b6957f30022c30a17cb5d4361b12eae" category="list-text">每個控制器都包含五個風扇。如果某個風扇發生故障，您必須盡快更換，以確保控制器有足夠的散熱。</block>
   <block id="96336de8c1578c91e716fcd8afc5a855" category="section-title">步驟 1：準備更換風扇</block>
@@ -10167,14 +10002,12 @@
   <block id="f281568467abf1639273a9b57450f6c3" category="paragraph">使用 SANtricity System Manager，變更主機 I/O 模組上的傳輸協定，等待控制器完成重新開機週期，確認其狀態為 Optimal，然後重新建立主機定義。</block>
   <block id="9b2d6660ebdf1089f3521ca4c1853164" category="section-title">步驟 4：設定主機以使用新傳輸協定</block>
   <block id="71f734bf869da0d12308b9e2aa7ccbf6" category="paragraph">變更主機傳輸協定後，您必須設定主機以使用新的傳輸協定。</block>
-  <block id="9d4faf90fbf60d477b0252d81536f322" category="doc">I/O 模組維護概述 - EF50 和 EF80</block>
   <block id="00015974de1f6f69c16403a005f48582" category="inline-link-macro">更換 I/O 模組</block>
   <block id="b49ba47015c67eae9f182326198621a4" category="list-text"><block ref="b49ba47015c67eae9f182326198621a4" category="inline-link-macro-rx"></block></block>
   <block id="c53f3fdfaf55dd8048784ee561500f34" category="paragraph">當儲存系統中的 I/O 模組發生故障時、您可以使用相同類型的 I/O 模組進行更換、以將儲存系統還原至最佳作業狀態。</block>
   <block id="4e2509f697c3b8d1e846cd633039ad0b" category="inline-link-macro">升級 I/O 模組</block>
   <block id="84e5d72d80fde0676199c46e2d62e76e" category="list-text"><block ref="84e5d72d80fde0676199c46e2d62e76e" category="inline-link-macro-rx"></block></block>
   <block id="fa2188ad1fdb23ca79cea5e526d0ee2e" category="summary">將 EF50 或 EF80 儲存系統中發生故障的 I/O 模組更換為相同類型的 I/O 模組，以使儲存系統恢復到最佳運作狀態。</block>
-  <block id="6aafc28ff0b06c5d0635130532d5a922" category="doc">更換 I/O 模組 - EF50 和 EF80</block>
   <block id="4831d2fac0f25621f059a75ed94f686b" category="list-text">更換 I/O 模組的步驟如下：準備、將故障控制器離線、更換故障 I/O 模組、將控制器重新上線，然後將故障零件退回 NetApp。</block>
   <block id="eda0698c7dcadcd604c916d474645b48" category="list-text">本程序中使用術語 _I/O 模組_ 來取代主機介面卡（HIC）。</block>
   <block id="80c20b828151ee676b7b9618527dbfbb" category="list-text">I/O 模組故障 LED（所有四個插槽）無法正常運作。它們始終保持熄滅狀態；因此，無法使用它們來驗證故障情況。</block>
@@ -10188,7 +10021,6 @@
   <block id="befdd23853982bc09987fc78ea428e05" category="section-title">步驟 4：將控制器上線</block>
   <block id="440fc355bde6ccb740bf9a234b02fb78" category="section-title">步驟 5：完成 I/O 模組更換</block>
   <block id="d099df7ce339c15abb7692668d035fea" category="section-title">步驟 6：將故障零件退回 NetApp</block>
-  <block id="e3d06cd515ac1a713a4b65d4d9fedf14" category="doc">升級 I/O 模組 - EF50 和 EF80</block>
   <block id="7d75a38e03bd858df8db3610fb3acd51" category="list-text">您可以透過更換現有的 I/O 模組或將 I/O 模組新增至未使用的 I/O 插槽來升級 I/O 模組。</block>
   <block id="bfeba3c88f2dd8e9ae01db5901cb206f" category="paragraph">未使用的 I/O 插槽應安裝遮蔽模組，以防止可能的散熱問題並符合 EMC 規範。</block>
   <block id="6585307bb8265d1b09829c194403a0c5" category="list-text">升級 I/O 模組的步驟如下：準備工作、關閉兩個控制器的電源、升級兩個控制器中的 I/O 模組、打開兩個控制器的電源、驗證升級是否成功，以及如有必要、驗證並變更主機 I/O 模組傳輸協定。</block>
@@ -10203,7 +10035,6 @@
   <block id="3a959d60be14e56f6c7451b1cfba02bb" category="section-title">步驟 5：完成 I/O 模組升級</block>
   <block id="31b3537334efd47611c131002c33e74d" category="paragraph">使用 SANtricity System Manager，確保已安裝最新版本的 SANtricity OS，驗證所有磁碟區是否已返回其所屬控制器，收集支援資料以便恢復操作，並在需要時驗證和變更主機 I/O 模組協定。</block>
   <block id="f92ca7c242e5a71bd3eb549d5c5bcb20" category="summary">維護好您的 EF50 或 EF80 儲存系統的硬體，以確保其長期可靠性和最佳效能。定期執行維護任務，例如更換故障元件，這有助於防止停機和資料遺失。</block>
-  <block id="862bd6d24dd0f13ccfd37178cbd8bf90" category="doc">維護程序概述 - EF50 和 EF80</block>
   <block id="fb0c3f0aa959723c48eb4727c35a9046" category="paragraph">維護程序假設您的 EF50 或 EF80 儲存系統已經部署在 SANtricity 環境中。</block>
   <block id="82ffa69e587186e368733ebdc76144cb" category="paragraph">對於您的 EF50 或 EF80 儲存系統、您可以對下列元件執行維護程序。</block>
   <block id="9bbf373797bf7cf7ba62c80023682e25" category="inline-link-macro">控制器</block>
@@ -10227,7 +10058,6 @@
   <block id="95ab97eb0fe2b20f23eb848c59d681ac" category="paragraph"><block ref="95ab97eb0fe2b20f23eb848c59d681ac" category="inline-link-macro-rx"></block></block>
   <block id="517e65cbfa02ca306eec69200485822d" category="paragraph">電源供應器可為控制器提供備援電源。</block>
   <block id="3d7672bcb38d18989e39f972e1f11656" category="summary">當您的 EF50 或 EF80 儲存系統中的 NV 電池開始失去電量或故障時，請更換該電池，因為它負責在斷電期間保存關鍵的系統資料。</block>
-  <block id="d8c568441978a950cb6bffddff68ef00" category="doc">更換 NV 電池 - EF50 和 EF80</block>
   <block id="e88aa91b6c2cdd74449e01fb276220d4" category="list-text">更換 NV 電池的步驟如下：準備、將故障控制器離線、拆下控制器、更換電池、重新安裝控制器、將其上線、完成更換，並將故障零件退回 NetApp。</block>
   <block id="80e937eeb581acc45452bbd5771394ad" category="section-title">步驟 1：準備更換 NVMEM 電池</block>
   <block id="456b055ed2f4157d2dfa8258fdc82373" category="paragraph">準備更換 NV 電池，請確認 NV 電池需要更換、確保沒有其他儲存系統問題需要解決、確保磁碟區處於正確狀態、收集必要的工具和設備，並備份儲存系統的組態資料庫。</block>
@@ -10235,7 +10065,6 @@
   <block id="b872d46d1b1391643aea9ed8377ec3e1" category="paragraph">找到故障控制器內部的故障 NV 電池並更換。</block>
   <block id="8bd15bb00c8a8a4e533704a40a89b456" category="section-title">步驟 7：完成 NV 電池更換</block>
   <block id="349183e8ca3928a2b870cc77a10e1248" category="summary">當您的 EF50 或 EF80 儲存系統中的電源單元（PSU）發生故障或故障時，請更換電源單元，以確保您的系統繼續獲得穩定運作所需的電力。</block>
-  <block id="dceeff04d941cbb6cd1ccef359f31bcc" category="doc">更換電源供應器 - EF50 和 EF80</block>
   <block id="37cc75713523b3a835397946c3cd7732" category="list-text">透過在 Recovery Guru 中查看詳細資訊，確認電源供應器是否有問題。</block>
   <block id="654ef16eef9220dfb025e429508a6e88" category="list-text">檢查電源供應器上的注意（琥珀色）LED 指示燈是否亮起，這表示電源供應器或其內建風扇故障。</block>
   <block id="2a05f53d4bb59b1be52dceab0bed35c9" category="paragraph">在 Recovery Guru 中選擇 *Recheck* 以查看是否還有其他問題。</block>
@@ -10354,7 +10183,6 @@
   <block id="5de3bf25939bdfa37414108f0d590980" category="section-title">12.0 版的新功能</block>
   <block id="ff0fa97cb252835f443a15ae7e9b46d4" category="admonition">SANtricity OS 12.0 版本僅相容於新型 EF80 和 EF50 全快閃儲存系統。</block>
   <block id="c34bc836af57fee3bb2df387de995660" category="paragraph">如需相關操作說明，請參閱<block ref="b1f1a9dce5288488396d4b3c3e74b2f3" category="inline-link-rx"></block>程序。</block>
-  <block id="a37cf4c23363931117c16cbe3dd30a4b" category="doc">從主機存取 E 系列目標的 NVMe Volume - Linux（NVMe over RoCE）</block>
   <block id="91c251c2c332b36b4246d0eaed4acae3" category="paragraph">對於 RHEL 9、RHEL 10、SLES 15 和 SLES 16，原生 NVMe 多路徑解決方案管理主機顯示的單一 NVMe 裝置底層的實體路徑。因此，我們將 I/O 直接導向到主機的 NVMe 裝置，而不是像基於 SCSI 的 Device Mapper Multipath（DMMP）這樣的多路徑裝置。NVMe 裝置的位置詳見下文。</block>
   <block id="4a1ca27394f764b4cd9f8c6e8533ee5e" category="section-title">NVMe 裝置是 I/O 目標</block>
   <block id="2ea106abcbd25d43bb31cead5d6cc703" category="list-text">輸入以下命令，以找出從 E-Series 陣列對應到此主機的磁碟區。</block>
@@ -10377,7 +10205,6 @@
   <block id="83f8c80e4b638ab6478d3f406c93eacf" category="paragraph">使用 DHCP 設定 IP 位址後，<block ref="b8100642f6482c6074045d99e3e82190" category="inline-link-macro-rx"></block>。</block>
   <block id="602a463bd066a3f8d89c69bb3529b46c" category="inline-link-macro">探索並連接主機上的儲存設備</block>
   <block id="d2255594b7c9d2d3a436cb625ac23fdb" category="paragraph">設定 NVMe over RoCE 連接埠設定後，<block ref="e588c9f2f098167c40ebed2b8ba01272" category="inline-link-macro-rx"></block>。</block>
-  <block id="de51b9f78104212ea19cafcc1aa1af7f" category="doc">設定 E 系列中的交換器 - Linux（NVMe over RoCE）</block>
   <block id="78c66e16ff4598c6116cedf599cf6e72" category="admonition">* 資料遺失風險 *您必須在無損環境中執行 NVMe/RoCE。在您的網路上使用全域暫停訊框型流量控制或優先權流量控制（PFC）啟用端對端流量控制，以消除資料遺失的風險。</block>
   <block id="7c64bbe6789d9c78deb6d523dad71fa5" category="section-title">全域暫停訊框</block>
   <block id="feb7f0d00fab57efe3a43429ed8663f5" category="paragraph">全域暫停訊框是最基本的流量控制形式，也是最容易實作的。當流量超過網路連接埠的處理能力時，系統會產生暫停訊框，暫停該連接埠上的所有流量，直到先前的流量已處理到足以讓網路連接埠能夠繼續處理而不會捨棄傳入流量。</block>
@@ -10389,7 +10216,6 @@
   <block id="b85cf23585c90efd9af6fcd73fa75295" category="inline-link-macro">在主機上透過 RoCE 設定 NVMe 啟動器</block>
   <block id="7bbf28624b17361ccea54892632c858e" category="paragraph">設定交換器之後，<block ref="95b7a1ba3f9889c0b414ce2ba47c4931" category="inline-link-macro-rx"></block>。</block>
   <block id="83441cd37c158260b27f7f62519460ff" category="summary">對於 RHEL 9、RHEL 10、SLES 15 和 SLES 16，您需要在原生 nvme 裝置上建立檔案系統並掛載該檔案系統。</block>
-  <block id="ef584eac1f2cf237a03edcb6114915c0" category="doc">在 E 系列中建立檔案系統 - Linux (NVMe over RoCE)</block>
   <block id="9f6bf7ed685a3543bdade472419ab06c" category="inline-link-macro">從主機存取 E 系列目標的 NVMe 磁碟區</block>
   <block id="abd87e5f00edf2b2787374cf4c27e685" category="paragraph">請確保您已完成 <block ref="06eb211a3ddd2abaa7174ce99ee6cecc" category="inline-link-macro-rx"></block> 任務，以確保 NVMe 裝置已正確配置且可存取。</block>
   <block id="143a64ab567fb05e3f04c1990fb26e2d" category="inline-link-macro">記錄您的 NVMe over RoCE 組態資訊</block>
@@ -10460,61 +10286,61 @@
   <block id="24c9cd56861c16e2290412c4fe4d5a8f" category="list-text">IOM12C - v0112</block>
   <block id="818d5ca9647738ea76069fc99cf59499" category="list-text">IOM12G - v0212</block>
   <block id="9133a8b23ddd677242ee6747a18b0e24" category="list-text">DCM3 - v01.12.09.02</block>
-  <block id="d53a0e0fc4f42c8a9a46fee4cd49c744" category="paragraph">在 DE460C 磁碟機機櫃中更換故障磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，則可以線上執行此程序。否則，您必須離線執行此程序，即在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充櫃）的電源。</block>
+  <block id="d53a0e0fc4f42c8a9a46fee4cd49c744" category="paragraph">在 DE460C 磁碟機機櫃中更換故障磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充櫃）的電源。</block>
   <block id="bb48a0034c265b437a29caf643520acc" category="list-text">存取儲存系統的命令列介面 (CLI)。如果您無法存取 CLI，可以執行下列操作之一：</block>
   <block id="6cf5d5559c6b94c3674c304be5107a7f" category="admonition">如果您需要有關如何更換 E 系列 DE460C 擴充櫃的資訊，請參閱<block ref="b46c4d97d6f1694e2cd029493cdb5475" category="inline-link-rx"></block>。</block>
   <block id="7f80f29683c7b9cac2473ae801ad367c" category="paragraph">決定是否可以在磁碟機機櫃線上時執行更換程序，或是否需要停止主機 I/O 活動並關閉儲存系統電源（離線執行程序）。</block>
-  <block id="b8ae3e509b91c9a6fc79dd104bac7d08" category="paragraph">如果您要更換帶有抽屜遺失保護功能的機櫃上的抽屜，則無需停止主機 I/O 活動並關閉儲存系統的電源。</block>
+  <block id="b8ae3e509b91c9a6fc79dd104bac7d08" category="paragraph">如果您要更換具備抽屜遺失保護功能的機櫃中的抽屜，則無需停止主機 I/O 活動並關閉儲存系統的電源。</block>
   <block id="97565863ff9f98a9d307ed07d3ace704" category="list-text">確定目標磁碟機機櫃是否已通電。</block>
-  <block id="3b44e20a23dd2e779ec5d2f674e9f822" category="list-text">如果電源已關閉，您不需要問題 CLI 命令將目標抽屜置於服務模式。前往 <block ref="27fcbda2111ca00bae3c94b96f348341" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3b44e20a23dd2e779ec5d2f674e9f822" category="list-text">如果電源已關閉，則無需發出 CLI 命令將目標抽屜置於服務模式。請前往 <block ref="27fcbda2111ca00bae3c94b96f348341" category="inline-xref-macro-rx"></block>。</block>
   <block id="cc1f0727dce340e073f9379206131511" category="list-text">存取 CLI，然後輸入下列命令將目標抽屜置於服務模式：</block>
-  <block id="14e5690140dafa9621a1a332e08e3664" category="list-text"><block ref="67219f91851e5d05a1215d9a6cf49b08" prefix="" category="inline-code"></block> 是儲存陣列的使用者名稱。您必須將 <block ref="67219f91851e5d05a1215d9a6cf49b08" prefix=" " category="inline-code"></block> 的值用雙引號（"）括起來。</block>
-  <block id="74e50f4e8c1976416e7a1c5bcd2923cb" category="list-text">如果顯示警告訊息，提示此命令無法完成，則必須先停止主機 I/O 活動，然後再移除抽屜。顯示此警告的原因是受影響抽屜中的一部或多部磁碟機位於未啟用抽屜遺失保護的儲存池或 Volume 群組中。為避免資料遺失，您必須完成後續步驟以停止主機 I/O 活動，並關閉控制器機櫃和所有擴充櫃的電源。</block>
+  <block id="14e5690140dafa9621a1a332e08e3664" category="list-text"><block ref="67219f91851e5d05a1215d9a6cf49b08" prefix="" category="inline-code"></block> 是儲存陣列的使用者名稱。您必須將 <block ref="67219f91851e5d05a1215d9a6cf49b08" prefix=" " category="inline-code"></block> 的值用雙引號（""）括起來。</block>
+  <block id="74e50f4e8c1976416e7a1c5bcd2923cb" category="list-text">如果顯示警告訊息，提示此命令無法完成，則必須先停止主機 I/O 活動，然後再移除抽屜。顯示此警告的原因是受影響抽屜中的一個或多個磁碟機位於未啟用抽屜遺失保護的儲存池或 Volume 群組中。為避免資料遺失，必須完成以下步驟：停止主機 I/O 活動，並關閉控制器機櫃和所有擴充櫃的電源。</block>
   <block id="e8b20625a65d856aa1417c9db82dd9a0" category="list-text">確保儲存系統與所有連接的主機之間沒有發生任何 I/O 作業。例如、您可以執行下列步驟：</block>
-  <block id="6fdfcac708ebb98786d238d0204dc652" category="list-text">如果儲存系統參與鏡射關係，請停止次要儲存系統上的所有主機 I/O 操作。</block>
+  <block id="6fdfcac708ebb98786d238d0204dc652" category="list-text">如果儲存系統參與鏡射關係，請停止次要儲存系統上的所有主機 I/O 作業。</block>
   <block id="2596058da06f217b6bf34c889a38e5cf" category="admonition">*可能資料遺失* -- 如果在 I/O 作業進行期間繼續執行此程序，主機應用程式可能會遺失資料，因為將無法存取儲存系統。</block>
   <block id="91905d4875af851bfb507c500665a5a8" category="list-text">如果您的擴充磁碟機櫃 *沒有* _抽屜遺失保護_，請關閉整個儲存系統的電源：</block>
-  <block id="d3b1c6fc58fde5e1dd084baec33fffb8" category="admonition">如果您要更換具有「抽屜遺失保護」功能的機櫃中的抽屜：無需關閉任何機櫃的電源。您可以在磁碟機抽屜處於線上狀態時執行更換程序，因為 Set Drawer Service Action Allowed Indicator CLI 命令已成功完成。</block>
+  <block id="d3b1c6fc58fde5e1dd084baec33fffb8" category="admonition">如果您要更換 *具有* _Drawer Loss Protection_ 的機櫃中的抽屜：不需要關閉任何機櫃的電源。您可以在磁碟機抽屜處於線上狀態時執行更換程序，因為 Set Drawer Service Action Allowed Indicator CLI 命令已成功完成。</block>
   <block id="435c4f6458aad7cc5b1c5ab5d11e1d78" category="list-text">關閉每個擴充磁碟機櫃上的兩個電源開關。</block>
   <block id="d4b48f59f59a206597c6646f901ae270" category="admonition">*可能造成硬體損壞* -- 如果磁碟機機櫃已通電，則電纜鏈將帶電，直到兩端都拔下為止。為避免設備短路，如果電纜鏈的另一端仍然插著，請勿讓拔下的電纜鏈連接器接觸金屬機箱。</block>
   <block id="3efa9b45055f45fc5a0aa52ef28957bf" category="list-text">確保控制器機櫃和擴充櫃不再有 I/O 活動且已斷電，或您已發出<block ref="956c86a9fbac73a081fa78cfd7623f9d" prefix=" " category="inline-code"></block> CLI 命令。</block>
-  <block id="616fbb3e7edee06a662b6d3105ad5e67" category="list-text">從目標磁碟機機櫃的後部，移除右側風扇罩：</block>
-  <block id="c38d5ed5102054dcce8ce98732d06464" category="list-text">使用把手將風扇箱從磁碟機機櫃中拉出，並將其放在一旁。</block>
-  <block id="0bb17a51732845c6c64c8bba51a5f16d" category="admonition">*過熱可能導致設備損壞* -- 如果磁碟機機櫃已通電，請勿同時移除兩個風扇。否則，設備可能會過熱。</block>
-  <block id="b610abcf4f48be06cbea93b0e1b26329" category="list-text">新的磁碟機抽屜已安裝完畢。</block>
-  <block id="285ca8cd317c2d80354912d6a7f5773c" category="paragraph">以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新裝上前擋板，重新接通電源（如果需要），手動重建磁碟機（如果需要），然後將故障零件退回 NetApp。</block>
+  <block id="616fbb3e7edee06a662b6d3105ad5e67" category="list-text">從目標磁碟機機櫃的後方，移除右側風扇箱：</block>
+  <block id="c38d5ed5102054dcce8ce98732d06464" category="list-text">使用把手將風扇機箱從磁碟機機櫃中拉出，並將其放在一旁。</block>
+  <block id="0bb17a51732845c6c64c8bba51a5f16d" category="admonition">*過熱可能導致設備損壞* —— 如果磁碟機機櫃已通電，請勿同時移除兩個風扇。否則，設備可能會過熱。</block>
+  <block id="b610abcf4f48be06cbea93b0e1b26329" category="list-text">新的磁碟機抽屜已安裝。</block>
+  <block id="285ca8cd317c2d80354912d6a7f5773c" category="paragraph">以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新安裝前擋板，重新接通電源（如果需要），手動重建磁碟機（如果需要），然後將故障零件退回 NetApp。</block>
   <block id="e6f2baee1819403a530a9b4d2c1bf712" category="list-text">如果您為了更換磁碟機抽屜而關閉了儲存系統（控制器機櫃和擴充櫃）的電源，請重新接通電源：</block>
   <block id="a6806c59bbf8414dddbc84886ad82d15" category="list-text">開啟所有擴充櫃上的兩個電源開關。</block>
   <block id="0c8acb701bc8bd633fea51af0ac952eb" category="list-text">如果您線上執行了磁碟機抽屜更換程序，並且更換的抽屜中的任何磁碟機發生故障，則必須手動重建磁碟機。</block>
   <block id="b1b60a9d62ad3a0e2b53034dd5933237" category="inline-link-macro">手動重建磁碟機</block>
   <block id="4a4732f425a15e8d08a0280d6e8bf7d9" category="paragraph">使用 SANtricity System Manager 完成 <block ref="6b5e3640c1e21a7339d7cc467788a46d" category="inline-link-macro-rx"></block> 程序。</block>
   <block id="285a751428fd6510b1bf7536917c2cd3" category="list-text">由於此程序較為複雜，請在開始程序前讀取所有步驟。</block>
-  <block id="7cdb90fd60037b7a213b468e0bff2cac" category="paragraph">當您將機櫃熱新增至一個或多個現有機櫃時，為了在程序期間維持系統完整性，您必須始終保持一條作用中路徑。您必須嚴格按照所列順序執行程序。</block>
+  <block id="7cdb90fd60037b7a213b468e0bff2cac" category="paragraph">當您將機櫃熱新增至一個或多個現有機櫃時，為了在程序執行期間維持系統完整性，您必須始終保持一條作用中路徑。您必須完全依照所列順序執行程序。</block>
   <block id="581a65d5017b8d579b0a5cabbc04e46c" category="paragraph">若要為新機櫃佈線，您需要重新連接 A 側（機櫃 IOM A）控制器到機櫃的連接，並新增機櫃到機櫃的連接，驗證 A 側路徑是否處於作用中，重新連接 B 側（機櫃 IOMB）控制器到機櫃的連接，並新增機櫃到機櫃的連接，然後驗證備援是否已重新建立。</block>
   <block id="b6ac254f69c12f8046c10ab517419031" category="admonition">如果您要安裝的磁碟機機櫃之前已安裝在儲存系統中，則此程序還有額外的步驟需要您執行。</block>
   <block id="35dee0f0750abb96e9a93b47b5fa0685" category="list-text">確認您的儲存系統執行的 SANtricity 版本支援 SAS 擴充櫃，並且未超過支援的 SAS 機櫃最大數量。</block>
-  <block id="f508fa34499d32b9ca9ffeed57d7194c" category="paragraph">如需有關 SANtricity 支援的版本，以及您的儲存系統所支援的最大 SAS 擴充櫃數量的資訊，請參閱 NetApp Hardware Universe：<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
+  <block id="f508fa34499d32b9ca9ffeed57d7194c" category="paragraph">有關 SANtricity 支援的版本以及儲存系統支援的最大 SAS 擴充櫃數量的資訊，請參閱 NetApp Hardware Universe：<block ref="5d49ffd87c57001d2b40191486fafc6a" category="inline-link-rx"></block>。</block>
   <block id="bf180b5331168077574d8cc901f7421e" category="admonition">執行 SANtricity 12.10 或更新版本的 EF50 與 EF80 儲存系統支援 SAS 擴充櫃。</block>
-  <block id="a20df2d2593058508d059a69f2cdfcf7" category="list-text">您的儲存系統必須具備可用的 SAS 連接埠。這表示必須已安裝 SAS I/O 模組。如果尚未安裝，請使用適用的程序來安裝 SAS I/O 模組，然後再返回此程序以熱新增磁碟機機櫃。</block>
+  <block id="a20df2d2593058508d059a69f2cdfcf7" category="list-text">您的儲存系統必須具備可用的 SAS 連接埠。這表示必須已安裝 SAS I/O 模組。如果尚未安裝，請使用適用的程序來安裝 SAS I/O 模組，然後回到本程序以熱新增磁碟機機櫃。</block>
   <block id="3f8d5253d3d6662062629a1770027225" category="inline-link-macro">升級 I/O 模組</block>
   <block id="b21ba8459e9baed732b78afdcafbcbed" category="list-text">對於 EF50 和 EF80 儲存系統，請使用 <block ref="5acd24946f3f33c49172c10869ae7ceb" category="inline-link-macro-rx"></block> 程序。</block>
-  <block id="9c4d9a4e85f55f589c0d5768a554f9b4" category="list-text">對於較舊的儲存系統，請在「維護系統」部分中，使用適用於您儲存系統型號的「SAS 擴充卡」程序。</block>
+  <block id="9c4d9a4e85f55f589c0d5768a554f9b4" category="list-text">對於較舊的儲存系統，請在「維護系統」部分中，使用適用於您的儲存系統型號的「SAS 擴充卡」程序。</block>
   <block id="55d51d777a9fe7b16090129d3c4672cc" category="list-text">此程序適用於 E2800、E2800B、EF280、E5700、E5700B、EF570、EF300、EF600、EF300C、EF600C、E4000、EF50 或 EF80 控制器機櫃。</block>
   <block id="cb2a482cfe4a9ea1f33c06181fa3a3bf" category="admonition">如果您正在為舊式控制器機櫃佈線，請參閱<block ref="0198df91334a412ebbcbbf86e387ec1b" category="inline-link-rx"></block>。</block>
   <block id="feb97c88366259364fd05e947ff0b5d2" category="list-text">此程序適用於熱新增配備 IOM12、IOM12B 或 IOM12C 模組的 DE212C、DE224C 或 DE460C 磁碟機櫃。</block>
   <block id="dd8d13584c87b578665c3d9c7aeaabcc" category="section-title">步驟 3：連接磁碟機機櫃電纜</block>
   <block id="6bbf656affa9edf14634f3d2771ca167" category="paragraph">要將機櫃連接到儲存系統，您需要將每個控制器連接起來，使其分別擁有通往單一機櫃或機櫃堆疊（視情況而定）的 A 側路徑（IOMA）和 B 側路徑（IOMB）。如果您使用的是機櫃堆疊，則需要透過 A 側路徑和 B 側路徑將這些機櫃連接起來（機櫃間連接）。</block>
-  <block id="46608505aaffaf47e09563f60ec8fc5d" category="paragraph">您一律將控制器與一或多個機櫃連接纜線，以便為 A 側路徑（IOMA）和 B 側路徑（IOMB）提供兩個纜線連線，如佈線圖所示。</block>
+  <block id="46608505aaffaf47e09563f60ec8fc5d" category="paragraph">您始終為控制器和一個或多個機櫃連接纜線，以便為 A 側路徑（IOMA）和 B 側路徑（IOMB）提供兩個纜線連接，如佈線圖所示。</block>
   <block id="d24b28449371bf7e77d0f49627decadf" category="open-title">連接 EF50 或 EF80 的磁碟機機櫃</block>
-  <block id="4509540633d6d7ef8579e2ea02e31233" category="paragraph">本程序指示您如何將初始 SAS 擴充櫃熱新增至 EF50 或 EF80 儲存系統，以及如何重新接線初始機櫃以熱新增第二個機櫃；不過，在新增其他機櫃時也可套用本程序。</block>
-  <block id="cbe2d076f0c53d1c09ed6a2a768990c0" category="list-text">如果您要將額外的機櫃熱新增至一個或多個現有機櫃，則適用以下規定：</block>
-  <block id="7d01373cb8be691b040956e04c979e6e" category="list-text">此程序要求您重新連接控制器到機櫃的連線，以便始終保持一條通往控制器機櫃的作用中路徑。</block>
-  <block id="5bb4e35a33e453f0a4b03a1eccc1147d" category="paragraph">為了在此程序中保持一條作用中路徑，您需要重新連接 A 側（機櫃 IOMA）控制器到機櫃的連接，並新增機櫃到機櫃的連接，驗證 A 側路徑是否處於作用中，然後重新連接 B 側（機櫃 IOMB）控制器到機櫃的連接，並新增機櫃到機櫃的連接，最後驗證備援是否已重新建立。</block>
-  <block id="7b890122ba03a41ba16d23c7fcbffbb6" category="list-text">您總是將堆疊中最後一個機櫃上的纜線移動到新機櫃上的相同 IOM 和 IOM 連接埠，然後將新機櫃連接到堆疊中之前的最後一個機櫃（機櫃到機櫃的連接）。</block>
+  <block id="4509540633d6d7ef8579e2ea02e31233" category="paragraph">本程序指示您如何將初始 SAS 擴充櫃熱新增至 EF50 或 EF80 儲存系統，以及如何重新接線初始機櫃以熱新增第二個機櫃；不過，在新增其他機櫃時，也可以套用本程序。</block>
+  <block id="cbe2d076f0c53d1c09ed6a2a768990c0" category="list-text">如果您要將額外的機櫃熱新增至一個或多個現有機櫃，則適用下列規定：</block>
+  <block id="7d01373cb8be691b040956e04c979e6e" category="list-text">此程序要求您重新連接控制器到機櫃的纜線，以便始終保持一條通往控制器機櫃的作用中路徑。</block>
+  <block id="5bb4e35a33e453f0a4b03a1eccc1147d" category="paragraph">為了在此程序中保持一條作用中路徑，您需要重新連接 A 側（機櫃 IOMA）控制器到機櫃的連線，並新增機櫃到機櫃的連線，驗證 A 側路徑是否處於作用中，重新連接 B 側（機櫃 IOMB）控制器到機櫃的連線，並新增機櫃到機櫃的連線，然後驗證備援是否已重新建立。</block>
+  <block id="7b890122ba03a41ba16d23c7fcbffbb6" category="list-text">您總是將纜線從堆疊中最後一個機櫃移動到新機櫃上的相同 IOM 和 IOM 連接埠，然後將新機櫃連接到堆疊中先前的最後一個機櫃（機櫃到機櫃的連接）。</block>
   <block id="3cff4cc9073a934194689aee767cf6c5" category="list-text">此程序包含熱新增最多兩個機櫃的步驟。不過，如果您要熱新增額外的機櫃，請從步驟 2 開始，並將這些步驟套用於額外的機櫃。</block>
-  <block id="e2ec6151897c2134f1bbac390ed5c5f7" category="list-text">此程序顯示插槽 3 中有一個 SAS I/O 模組的控制器。若要查看所有支援的 SAS I/O 模組組態，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2ec6151897c2134f1bbac390ed5c5f7" category="list-text">此程序顯示插槽 3 中具有一個 SAS I/O 模組的控制器。若要查看所有支援的 SAS I/O 模組組態，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="c01190fc9aae79c3431a1e2fa3d0ca0c" category="list-text">在佈線圖中，控制器 A 的連接以藍色顯示，控制器 B 的連接以紅色顯示。虛線（藍色和紅色）表示您在執行佈線步驟時需要移動的現有線纜。灰色連接埠和線條表示在執行佈線步驟時無需移動的現有線纜。</block>
-  <block id="86180e99613f92cc22bab23f33f019db" category="list-text">若要熱新增一個作為初始 SAS 擴充櫃的 SAS 機櫃，請完成下列子步驟；否則，請前往下一個步驟。</block>
+  <block id="86180e99613f92cc22bab23f33f019db" category="list-text">若要熱新增一個做為初始 SAS 擴充櫃的 SAS 機櫃，請完成下列子步驟；否則，請前往下一個步驟。</block>
   <block id="8c4fe2c3a93118475c234ed0b72063e8" category="list-text">將控制器 A 連接埠 3a 連接到機櫃 IOMA 連接埠 1。</block>
   <block id="4bc5f953dda034183f5d5aa7411c4464" category="list-text">將控制器 A 連接埠 3b 連接到機櫃 IOMA 連接埠 2。</block>
   <block id="057c500dc3a092bdf1b3c650ba119960" category="list-text">將控制器 A 連接埠 3c 連接到機櫃 IOMB 連接埠 3。</block>
@@ -10524,47 +10350,46 @@
   <block id="f7997ad01ff568ba78e149dd7e34d8f7" category="list-text">將控制器 B 連接埠 3c 連接到機櫃 IOMB 連接埠 1。</block>
   <block id="b5009cc35ddbb3480cd6de95213a687e" category="list-text">將控制器 B 連接埠 3d 連接到機櫃 IOMB 連接埠 2。</block>
   <block id="357a0cb04285190a269fc8624965384f" category="paragraph">完成機櫃佈線後，佈線應如下圖所示：</block>
-  <block id="df671cd2c514d1bdab03b1c88d557634" category="image-alt">為初始機櫃連接纜線</block>
-  <block id="8cc9830ba26b87f7daf175079aeea60c" category="list-text">若要熱新增第二個 SAS 擴充櫃（機櫃 2），請重新連接 A 側控制器對機櫃的連線，並新增 A 側機櫃對機櫃的連線，如下所示；否則，請前往下一步。</block>
-  <block id="e5dfdd0ccb0833875b06f521926c5bb8" category="list-text">將纜線從機櫃 1 的 IOMA 連接埠 1 拔下，然後將其重新連接至機櫃 2 的 IOMA 連接埠 1。</block>
-  <block id="640a6c3a36cf2973bd0c9bf3ccc38160" category="list-text">將纜線從機櫃 1 的 IOMA 連接埠 2 拔下，然後將其重新連接至機櫃 2 的 IOMA 連接埠 2。</block>
+  <block id="df671cd2c514d1bdab03b1c88d557634" category="image-alt">連接初始機櫃纜線</block>
+  <block id="8cc9830ba26b87f7daf175079aeea60c" category="list-text">若要熱新增第二個 SAS 擴充櫃（機櫃 2），請依下列方式重新連接 A 側控制器到機櫃的連線，並新增 A 側機櫃到機櫃的連線；否則，請前往下一個步驟。</block>
+  <block id="e5dfdd0ccb0833875b06f521926c5bb8" category="list-text">將纜線從機櫃 1 的 IOMA 連接埠 1 拔下，然後重新連接至機櫃 2 的 IOMA 連接埠 1。</block>
+  <block id="640a6c3a36cf2973bd0c9bf3ccc38160" category="list-text">將纜線從機櫃 1 IOMA 連接埠 2 拔下，然後將其重新連接至機櫃 2 IOMA 連接埠 2。</block>
   <block id="c7829d93ca29ba434c7285bce7296179" category="list-text">將機櫃 1 的 IOMA 連接埠 1 連接到機櫃 2 的 IOMA 連接埠 4。</block>
   <block id="9a1ceb3e41ccb02f2abd579fc5610144" category="list-text">將機櫃 1 的 IOMA 連接埠 2 連接到機櫃 2 的 IOMA 連接埠 3。</block>
   <block id="6bfe5e6d1464c23f9de075c8b8457141" category="paragraph">完成 A 側連接的重新佈線後，佈線應如下圖所示：</block>
   <block id="d6334d3d288b32d9e3b589ff0bb985b9" category="image-alt">加入第二機櫃並重新連接 A 側的連接線</block>
-  <block id="33b973b99116b1fa48d4f99f86fd2a1b" category="admonition">如果您要新增第二個 SAS 擴充櫃，在此程序的這個階段，您只有一條通往控制器機櫃的作用中路徑。</block>
+  <block id="33b973b99116b1fa48d4f99f86fd2a1b" category="admonition">如果您要新增第二個 SAS 擴充櫃，則在此程序的這個階段，您只有一條通往控制器機櫃的作用中路徑。</block>
   <block id="f86eb8b6ddc891d14b212fd0e3ec8b57" category="list-text">如果您要新增初始 SAS 擴充櫃，則會列出 IOM/ESM A 和 IOM/ESM B。如果您要新增第二個 SAS 擴充櫃，則會列出 IOM/ESM A。</block>
-  <block id="3e9cd9078856ad13954927ce103178d1" category="list-text">如果您要新增第二個 SAS 擴充櫃，請重新接線 B 側控制器到機櫃的連線，並新增 B 側機櫃到機櫃的連線，如下所示；否則，請前往步驟 10。</block>
+  <block id="3e9cd9078856ad13954927ce103178d1" category="list-text">如果您要新增第二個 SAS 擴充櫃，請如下重新連接 B 側控制器到機櫃的連線，並新增 B 側機櫃到機櫃的連線；否則，請前往步驟 10。</block>
   <block id="52c3f3bb9d973aaabc98b4f8043300f2" category="list-text">將纜線從機櫃 1 的 IOMB 連接埠 1 拔下，然後將其重新連接至機櫃 2 的 IOMB 連接埠 1。</block>
-  <block id="0cec60e491cbc80857e4b9a9077a2ca3" category="list-text">將纜線從機櫃 1 的 IOMB 連接埠 2 拔下，然後將其重新連接至機櫃 2 的 IOMB 連接埠 2。</block>
+  <block id="0cec60e491cbc80857e4b9a9077a2ca3" category="list-text">將纜線從機櫃 1 IOMB 連接埠 2 拔除，然後將其重新連接至機櫃 2 IOMB 連接埠 2。</block>
   <block id="a4147717e4636f794ad88eb38d397a92" category="list-text">將機櫃 1 的 IOMB 連接埠 1 連接到機櫃 2 的 IOMB 連接埠 3。</block>
   <block id="d9b1e65c4f1ac988ff34f23c83e272b7" category="list-text">將機櫃 1 的 IOMB 連接埠 2 連接到機櫃 2 的 IOMB 連接埠 4。</block>
   <block id="416deeeb14f72173055646efb481de3f" category="paragraph">完成 B 側連接的重新佈線後，佈線應如下圖所示：</block>
-  <block id="068b901d19b976bb021f12755af6d12c" category="image-alt">增加第二個機櫃並重新連接 B 側連接線</block>
+  <block id="068b901d19b976bb021f12755af6d12c" category="image-alt">增加第二個機櫃並重新連接 B 側連線</block>
   <block id="3c69ed2bb499e67b1022f483cb70f639" category="list-text">如果您要新增第二個 SAS 擴充櫃，完成兩個機櫃的重新佈線後，佈線應如下所示：</block>
   <block id="d7f2c06083c278c8ba62f76a2eb52869" category="inline-link-macro">選項 2：三個 DE460C 機櫃索引標籤</block>
-  <block id="a9c3c34462385d6fe043a67cac82729f" category="admonition">如果您要將第三個機櫃熱新增至兩個機櫃的堆疊中，則佈線應與新系統安裝的 _Cable the SAS shelf connections_ 區段 <block ref="b51c0dddf7304d1e2ae630c1f41b74f4" category="inline-link-macro-rx"></block> 中的插圖類似。</block>
+  <block id="a9c3c34462385d6fe043a67cac82729f" category="admonition">如果您要將第三個機櫃熱新增至兩個機櫃的堆疊中，則佈線應與新系統安裝的 _為 SAS 機櫃連線佈線_ 區段的 <block ref="b51c0dddf7304d1e2ae630c1f41b74f4" category="inline-link-macro-rx"></block> 中的插圖類似。</block>
   <block id="7194de72a5f67498fd2bb0cf680e2059" category="image-alt">兩個熱新增機櫃的佈線範例</block>
-  <block id="71ddd120e5f1457c35954d2753c4f8e2" category="section-title">步驟 4：分配磁碟機機櫃 ID</block>
-  <block id="d9ec61ac94aa8264f57467658edba3ec" category="paragraph">開啟機櫃電源，然後為每個機櫃指派唯一的機櫃 ID。</block>
+  <block id="71ddd120e5f1457c35954d2753c4f8e2" category="section-title">步驟 4：指派磁碟機機櫃 ID</block>
+  <block id="d9ec61ac94aa8264f57467658edba3ec" category="paragraph">開啟機櫃電源，然後指派唯一的機櫃 ID 給每個機櫃。</block>
   <block id="28b9878bbcf291bfabeaed2394ac65b7" category="list-text">為每個機櫃分配一個唯一的機櫃 ID，可確保該機櫃在您的儲存系統中是獨立的。</block>
   <block id="f4e530e07769045ad933874fca013307" category="paragraph">有效的機櫃 ID 為 01 至 99。</block>
-  <block id="0fd03f907bb57e3fb29ec8015ae6a597" category="paragraph">整合在控制器中的內部機櫃（儲存設備）會被指派固定的機櫃 ID 00。</block>
-  <block id="2a7879567dadc242874b8514dc8d6191" category="list-text">您必須將機櫃斷電重新啟動（關閉 SAS 機櫃每個電源供應器上的電源開關，等待至少 10 秒鐘，然後重新開啟電源），機櫃 ID 才能生效。</block>
+  <block id="0fd03f907bb57e3fb29ec8015ae6a597" category="paragraph">整合在控制器中的內部機櫃（儲存設備）會指派固定的機櫃 ID 00。</block>
+  <block id="2a7879567dadc242874b8514dc8d6191" category="list-text">您必須將機櫃斷電重新啟動（關閉 SAS 機櫃每個電源供應器上的電源開關，等待至少 10 秒鐘，然後再重新開啟電源），機櫃 ID 才能生效。</block>
   <block id="ba79a134cbfbf535ef0d30ec122fd9fb" category="list-text">移除左側端蓋，即可存取面板上的橘色機櫃 ID 按鈕。</block>
-  <block id="fed93196d3b2f03ca5bcd6c8038a7289" category="image-alt">變更 SAS 機櫃 ID</block>
+  <block id="fed93196d3b2f03ca5bcd6c8038a7289" category="image-alt">更改 SAS 機櫃 ID</block>
   <block id="48fb10beb7e1cd15b9bdbab40aac9532" category="paragraph">機櫃端蓋</block>
-  <block id="d8147b4a0f272144c59f006b412b8290" category="image-alt">［標註編號 2</block>
   <block id="22f4a2aa68e94fdf29e1fc7d0f30d571" category="paragraph">機櫃面板</block>
   <block id="8c5529e435c4992332c3afef54410f4e" category="image-alt">［標註編號 3</block>
   <block id="d99e56a0fc1270d6ad52dad4e860e03b" category="paragraph">機櫃 ID 按鈕</block>
   <block id="1e7068fa54071c2235730ac32aea59df" category="image-alt">［標註編號 4</block>
   <block id="40e6ceebb2eb1677b588bd7f52f95206" category="paragraph">機櫃 ID 編號</block>
   <block id="208e81853e4dca831b5edd6d17516137" category="list-text">更改機櫃 ID 的第一個數字：</block>
-  <block id="a575fb8631b6f36bc982f14c1cc92a6e" category="list-text">按住機櫃 ID 按鈕，直到數位顯示器上的第一個數字閃爍，然後版本按鈕。</block>
+  <block id="a575fb8631b6f36bc982f14c1cc92a6e" category="list-text">按住機櫃 ID 按鈕，直到數位顯示器上的第一個數字閃爍，然後放開按鈕。</block>
   <block id="6c986a8fa042f029d13ead15d42662bd" category="paragraph">數字閃爍最多可能需要 15 秒。這會啟動機櫃 ID 編程模式。</block>
-  <block id="d82a10aaede074fc250a2dc7ef372dca" category="admonition">如果 ID 超過 15 秒才閃爍，請再次按住機櫃 ID 按鈕，確保完全按下。</block>
-  <block id="1e6aa1713a8e26a3cecae4cd918e20a0" category="list-text">按下並放開機櫃 ID 按鈕以推進編號，直到達到 0 到 9 之間的所需編號。</block>
+  <block id="d82a10aaede074fc250a2dc7ef372dca" category="admonition">如果 ID 超過 15 秒才開始閃爍，請再次按住機櫃 ID 按鈕，確保將其完全按下。</block>
+  <block id="1e6aa1713a8e26a3cecae4cd918e20a0" category="list-text">按下並版本機櫃 ID 按鈕，即可前進編號，直到達到 0 到 9 之間的所需編號。</block>
   <block id="9ae44f0bc1687521dee9858246cd5a9f" category="paragraph">每次按下和版本的持續時間最短可至一秒。</block>
   <block id="1b0ebfdfcf370caa9ec32325934a52ca" category="paragraph">第一個數字持續閃爍。</block>
   <block id="c539e06786951f3062af110033f30a2e" category="list-text">更改機櫃 ID 的第二個數字：</block>
@@ -10576,115 +10401,99 @@
   <block id="c2dca9d3a8a74a90e1c390b10134c3b9" category="paragraph">數字停止閃爍最多可能需要三秒鐘。</block>
   <block id="3a7f97a4c78b33a1c47a571494b17709" category="paragraph">數位顯示器上的兩個數字開始閃爍，大約五秒鐘後琥珀色 LED 燈亮起，提醒您待處理的機櫃 ID 尚未生效。</block>
   <block id="6344f7fd68670da7ea2e25f860ab47c7" category="list-text">將機櫃斷電重啟至少 10 秒鐘，以使機櫃 ID 生效。</block>
-  <block id="85ff23f588feef29eb74730158d32ac1" category="list-text">關閉每個電源供應上的電源開關。</block>
-  <block id="2fd334af24d7f85b4be7ae87f6cc3fd5" category="list-text">請等待 10 秒鐘。</block>
-  <block id="8d2d400bb8fd6bedd576a4f6ecb3b00e" category="list-text">開啟每個電源供應上的電源開關，以完成電源循環。</block>
+  <block id="85ff23f588feef29eb74730158d32ac1" category="list-text">關閉每個電源供應器上的電源開關。</block>
+  <block id="2fd334af24d7f85b4be7ae87f6cc3fd5" category="list-text">請等待 10 秒。</block>
+  <block id="8d2d400bb8fd6bedd576a4f6ecb3b00e" category="list-text">打開每個電源供應上的電源開關，以完成電源循環。</block>
   <block id="8e07696a8d5e9a7e9c31668e6a3d49b7" category="paragraph">電源供應接通時，雙色 LED 指示燈應亮起綠色。</block>
   <block id="5a6ec3ac63a7fb05de2686f31f690298" category="list-text">更換左側端蓋。</block>
   <block id="219bc3cc88ca648bc1b063fde2e1a784" category="section-title">步驟 5：完成熱新增</block>
   <block id="32544d725f7fdf9b60d27e42ed14a2e9" category="list-text">圖示為從插槽 2 移除 I/O 模組。根據您要升級的 I/O 模組類型，插槽可能會有所不同。</block>
-  <block id="d07fee24111f33471b6b15bc084c4593" category="list-text">將 I/O 模組接線至主機網路或 SAS 擴充櫃。</block>
+  <block id="d07fee24111f33471b6b15bc084c4593" category="list-text">將 I/O 模組透過電纜連接到主機網路或 SAS 擴充櫃。</block>
   <block id="8179315eb32c7efcdf3e58127f99adce" category="list-text">對於主機網路佈線，您可以參考<block ref="ed123abde8ecae3a647e0e4cc4ae2bec" category="inline-link-macro-rx"></block>系統安裝和設定內容中有關主機網路佈線的部分。</block>
-  <block id="151c95c419da3528bbd85e9caeaca48f" category="inline-link-macro">熱新增磁碟機機櫃 - E 系列</block>
-  <block id="4abb9e44d0aa6788a2ee5ad302c1576f" category="list-text">對於 SAS 擴充櫃佈線，您可以使用 <block ref="c82f409cf9559f3141dff9968daf44de" category="inline-link-macro-rx"></block> 程序。</block>
-  <block id="900e8159dd6f8d418ea7113907369b88" category="list-text">將韌體更新至最新版本。若要更新韌體，請遵循 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block> 中的說明</block>
+  <block id="900e8159dd6f8d418ea7113907369b88" category="list-text">將韌體更新至最新版本。若要更新韌體，請遵循 <block ref="2834c74834ca1d1cb0e165f8c6e2c750" category="inline-link-macro-rx"></block> 中的指示</block>
   <block id="6f18bbfbd9e478ef3c8cceb18bd86949" category="paragraph">請確保您要升級的 I/O 模組受您的儲存系統和 SANtricity 版本支援，每個控制器的 I/O 模組類型和數量相同，並且您了解插槽優先順序（新的 I/O 模組必須安裝在每個控制器的同一插槽中）。</block>
   <block id="4a1ab291727496d8c5dc301e19d4bd20" category="paragraph">您可以在 <block ref="f73c85a53b5d65cc9c35da0b9e0d2f09" category="inline-link-rx"></block> 確認儲存系統支援的 I/O 模組和插槽優先順序。</block>
-  <block id="2df7d9d285fecf3ba0dd40702372d270" category="list-text">用於將新的 I/O 模組連接到您的網路或 SAS 擴充櫃的纜線。</block>
+  <block id="2df7d9d285fecf3ba0dd40702372d270" category="list-text">用於將新的 I/O 模組連接至您的網路或 SAS 擴充櫃的纜線。</block>
   <block id="247c0e6470162b7a3042e47ba1909187" category="doc">使用 SANtricity Cloud Connector 管理 E 系列 Volume 備份</block>
   <block id="9f3d820381ae1d6aec27f069b05f91d5" category="doc">了解 SANtricity Cloud Connector</block>
   <block id="34d28ab1eb0932f1e37ef019e281fc50" category="doc">登入 SANtricity Cloud Connector</block>
   <block id="5c82d00bdc24537a75614f91287b7aab" category="doc">使用 SANtricity Cloud Connector 還原 E 系列 Volume</block>
-  <block id="f73803e1cf3e0dd74e22c58b7e7b970d" category="summary">使用動態主機組態協定（DHCP）提供 IP 位址。</block>
-  <block id="2e45c572f7362dcc550a86211b3844d2" category="summary">您安裝 FC HBA 公用程式，以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外，您可以使用 HBA 公用程式來變更 NetApp 互通性對照表工具的「備註」欄中針對支援的組態所建議的任何設定。</block>
+  <block id="f73803e1cf3e0dd74e22c58b7e7b970d" category="summary">使用動態主機設定協定（DHCP）提供 IP 位址。</block>
+  <block id="2e45c572f7362dcc550a86211b3844d2" category="summary">您安裝 FC HBA 公用程式，以便檢視每個主機連接埠的全球連接埠名稱（WWPN）。此外，您可以使用 HBA 公用程式，變更 NetApp 互通性矩陣工具「備註」欄中針對支援組態所建議的任何設定。</block>
   <block id="d1c880d2d3422bfbdd2ae687b1d78a6f" category="list-text">NVMe over TCP</block>
   <block id="755b7c23b9a5eaa34824fdb514726769" category="list-text">按一下 *+新增主機連接埠* 以存取「主機連接埠」欄位，並新增主機的主機連接埠識別碼。您可以新增一或多個主機連接埠識別碼，以與主機建立關聯。</block>
-  <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">對於 RHEL 9 和 SLES 15，預設已啟用原生 NVMe 多路徑，無需額外組態。</block>
+  <block id="0d1a0f91594280f9d49e074cc400230c" category="admonition">對於 RHEL 9 和 SLES 15，預設已啟用原生 NVMe 多重路徑，無需額外組態。</block>
   <block id="69a42864185042ed8b45b45e80d6d616" category="section-title">設定 NVMe I/O 原則</block>
-  <block id="bce1101a6ca498ccd325dceab3e97fdb" category="paragraph">Linux NVMe 原生多路徑預設可能採用<block ref="0dfb2d09aeef6a0220a25c2e2d0fddbd" prefix=" " category="inline-code"></block> I/O 原則。對於 E 系列/EF 系列 NVMe-over-Fabrics 組態，建議的 I/O 原則為<block ref="7b6d85eaafedeee6d733437bf856da7e" prefix=" " category="inline-code"></block>，這會將 I/O 均勻分配到所有可用路徑上。</block>
+  <block id="bce1101a6ca498ccd325dceab3e97fdb" category="paragraph">Linux NVMe 原生多重路徑預設可能採用 <block ref="0dfb2d09aeef6a0220a25c2e2d0fddbd" prefix=" " category="inline-code"></block> I/O 原則。對於 E 系列 / EF 系列 NVMe-over-Fabrics 組態，建議的 I/O 原則為 <block ref="7b6d85eaafedeee6d733437bf856da7e" prefix=" " category="inline-code"></block>，這會將 I/O 平均分配到所有可用路徑上。</block>
   <block id="2e180a6834546212e0f9c55613b6e892" category="list-text">驗證目前的 NVMe I/O 原則：</block>
-  <block id="d77971a692e4ea128f68b95c1f86da5b" category="list-text">使用以下方法之一設定<block ref="7b6d85eaafedeee6d733437bf856da7e" prefix=" " category="inline-code"></block> I/O 原則：</block>
+  <block id="d77971a692e4ea128f68b95c1f86da5b" category="list-text">使用下列其中一種方法來設定<block ref="7b6d85eaafedeee6d733437bf856da7e" prefix=" " category="inline-code"></block> I/O 原則：</block>
   <block id="8875815463174f428b868e119a4ce584" category="list-text">*持久化（建議）* — 建立 udev 規則檔案：</block>
   <block id="8d3cd9cbf189a57b51740cc8ea86f6cf" category="listing-title">&lt;code&gt;/etc/udev/rules.d/71-nvme-io-policy.rules&lt;/code&gt;</block>
   <block id="b324e53f0d7ea85d8a3e5aa49a897f0d" category="paragraph">然後重新載入並套用規則：</block>
   <block id="dc843781e17a05b31fd93e0a89469932" category="list-text">*開機時全域設定* — 將下列內核參數新增至您的開機載入程式組態：</block>
-  <block id="e22c29ebad6de91567222774d3e1c740" category="list-text">*非持久性（線上，無 I/O 中斷）* — 無需重新開機即可立即套用：</block>
+  <block id="e22c29ebad6de91567222774d3e1c740" category="list-text">*非持續性（線上，無 I/O 中斷）* — 無需重新開機即可立即套用：</block>
   <block id="ca56c4a6f14ac814d0c726cb79a30e73" category="admonition">此設定在重新開機後不會保留。</block>
   <block id="102d63dd391e2810afb7ef320f85ca28" category="summary">您可以根據您的 SLES 版本（SUSE Linux 版本）設定指向裝置目標的 I/O。</block>
   <block id="b7f8de38c32c804fc29c431821ec8ede" category="summary">根據您的 SLES 版本（SUSE Linux 版本）設定指向裝置目標的 I/O。</block>
-  <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">對於 SLES 15 和 RHEL 9，預設已啟用原生 NVMe 多路徑，無需額外組態。</block>
+  <block id="d061a1419e660c90553f0a82e4f669dc" category="admonition">對於 SLES 15 和 RHEL 9，預設已啟用原生 NVMe 多重路徑，無需額外組態。</block>
   <block id="24a1e84f171f7624a56edc931ebd942f" category="paragraph">{nbsp}</block>
   <block id="62ade7e0c22daa883981655031319ff7" category="paragraph">目前，您必須使用運行 11.80.1 版本的 EF600 E-Series Array（配備 200Gb/s 乙太網路 HIC，零件號 111-04583）或運行任何支援的 NVMe/RoCE HIC 的 EF80 E-Series Array。PFC 參數已硬編碼在陣列上，並且要求 NVMe/RoCE 流量標記為優先權 3，DSCP 值為<block ref="4e732ced3463d06de0ca9a15b6153677" prefix=" " category="inline-code"></block>。</block>
-  <block id="da04550f4adba2712a5dbb475e5f39d6" category="doc">從主機存取 E 系列目標的 NVMe Volume - Linux（NVMe over TCP）</block>
-  <block id="9366306925dff0617e895b12e6e2ba5c" category="list-text">輸入以下命令，尋找從 E 系列陣列對應到此主機的 Volume。</block>
-  <block id="13325d154f69322b8ec3809330f38bff" category="paragraph">在<block ref="4e113d7b9673c6f8c3a2b38f3f9aec2f" prefix=" " category="inline-code"></block>中的連結是確定性的，不會改變。請避免使用低層級 NVMe 裝置位置<block ref="e09c78c90a7982668482f4c02bad49a1" prefix=" " category="inline-code"></block>，因為它主旨會改變。可以使用下列命令找到這兩個位置之間的連結：</block>
+  <block id="9366306925dff0617e895b12e6e2ba5c" category="list-text">輸入以下命令以尋找從 E 系列陣列對應至此主機的 Volume。</block>
+  <block id="13325d154f69322b8ec3809330f38bff" category="paragraph"><block ref="4e113d7b9673c6f8c3a2b38f3f9aec2f" prefix=" " category="inline-code"></block> 中的連結是確定性的，不會改變。請避免使用低層級 NVMe 裝置位置<block ref="e09c78c90a7982668482f4c02bad49a1" prefix=" " category="inline-code"></block>，因為它主旨會改變。可以使用下列命令找到這兩個位置之間的連結：</block>
   <block id="3e9152d3131e2cd2a75a704f9fe11555" category="paragraph">I/O 執行至<block ref="324b592ebf16794a0c88511b40085a76" prefix=" " category="inline-code"></block>將直接通過<block ref="9378e8badf02c342286a3b9928e4df7c" prefix=" " category="inline-code"></block>，其下所有路徑均使用 Native NVMe 多路徑解決方案進行虛擬化。</block>
   <block id="8f7c209823fb02906eb6628c51bfffe0" category="paragraph">在 I/O 執行至 NVMe 裝置時，<block ref="0a9ef5ca98f9fabc5abc9416224075f0" category="inline-link-macro-rx"></block>。</block>
-  <block id="0acce8f96bd2ce210e23679857bdfe95" category="doc">使用 SANtricity System Manager - Linux（NVMe over TCP）設定您的儲存設備</block>
-  <block id="d771f3ad83d1807a72cb56bcefdcaebb" category="paragraph">SANtricity System Manager 是一個嵌入在每個控制器上的網路型介面。若要存取使用者介面，您需要在瀏覽器中輸入控制器的 IP 位址。設定精靈可協助您開始進行系統組態。</block>
+  <block id="d771f3ad83d1807a72cb56bcefdcaebb" category="paragraph">SANtricity System Manager 是一個嵌入在每個控制器上的網路型介面。若要存取該使用者介面，您需要在瀏覽器中輸入控制器的 IP 位址。設定精靈可協助您開始進行系統組態。</block>
   <block id="9c43862fb5d8587c4dfb5cb034967ef0" category="paragraph">在 SANtricity System Manager 中設定儲存設備後，<block ref="e50d55abaf1be8a478a57bd2bd79efcf" category="inline-link-macro-rx"></block>。</block>
-  <block id="4a88b07cf8cd13c0bc729fd71386e51a" category="doc">使用 SANtricity System Manager 指派 Volume - Linux（NVMe over TCP）</block>
   <block id="994a48a92308ae96017f63bb93d7a837" category="paragraph">指派磁碟區後，<block ref="173098c4c299f6a8c5d93d155415692c" category="inline-link-macro-rx"></block>。</block>
-  <block id="6f1d33d45640bafa854a217eef890ac4" category="doc">在 E 系列 - Linux（NVMe over TCP）中使用 DHCP 設定 IP 位址</block>
   <block id="73e862db760ddbedb1720b0800722894" category="paragraph">使用 DHCP 設定 IP 位址後，<block ref="6225107933aa8a75e80a173360eaefe0" category="inline-link-macro-rx"></block>。</block>
-  <block id="b7a02896d4bd1641cb607216ed2f322f" category="summary">如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。</block>
-  <block id="594da31fc30d9c8cb191f3eab21c9be6" category="doc">在 E 系列中設定儲存陣列 NVMe over TCP 連線 - Linux</block>
+  <block id="b7a02896d4bd1641cb607216ed2f322f" category="summary">如果您的控制器包含 NVMe over TCP 的連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。</block>
   <block id="111dfdc5bb7ee06a485b3db71d644165" category="list-text">控制器上需要一個 NVMe over TCP 主機連接埠；否則，System Manager 中將無法使用 NVMe over TCP 設定。</block>
-  <block id="4db85c3f4cd6200b125b25d535eeaabe" category="paragraph">您可以從 *硬體* 頁面或 menu:設定[系統] 存取 NVMe over TCP 組態。本工作說明如何從硬體頁面設定連接埠。</block>
+  <block id="4db85c3f4cd6200b125b25d535eeaabe" category="paragraph">您可以從 *硬體* 頁面或從 menu:Settings[System] 存取 NVMe over TCP 組態。本工作說明如何從硬體頁面設定連接埠。</block>
   <block id="97ef5d93de6d036011e5d28d2a2b5a23" category="admonition">只有當儲存陣列的控制器包含 NVMe over TCP 連接埠時，才會顯示 NVMe over TCP 設定和功能。</block>
   <block id="701d3c8a5f1175c50fce13e92c0ff381" category="list-text">按一下具有您要設定之 NVMe over TCP 連接埠的控制器。</block>
   <block id="db97759f422fa188cd1703e2c69f56c3" category="list-text">選擇 *設定 NVMe over TCP 連接埠*。</block>
   <block id="a5fef639f392ea32c8db3d3a5ff2eb5c" category="paragraph">*設定 NVMe over TCP 連接埠* 對話方塊開啟。</block>
   <block id="72b2ed116fc1414e36b18ddb07bb397e" category="paragraph">選擇所需速度。下拉清單中顯示的選項取決於您的網路支援的最大速度（例如，10 Gbps）。可能的值包括：</block>
   <block id="5db7c5e6cd1092003593f35244abe9ae" category="admonition">設定的 NVMe over TCP 連接埠速度應與所選連接埠上 SFP 的速度功能相符。</block>
-  <block id="e7fe57bbb42199a28aef9860d4daadda" category="paragraph">已設定的前向錯誤更正（FEC）模式</block>
-  <block id="2ff2900f7403f61cdbcee368f336ce50" category="paragraph">選擇所需的 FEC 模式。下拉清單中顯示的選項取決於目前選擇的速度，並且僅列出該速度支援的選項。並非所有速度都支援所有 FEC 模式。可選值包括：</block>
+  <block id="e7fe57bbb42199a28aef9860d4daadda" category="paragraph">已設定的前向糾錯（FEC）模式</block>
+  <block id="2ff2900f7403f61cdbcee368f336ce50" category="paragraph">選擇所需的 FEC 模式。下拉清單中顯示的選項取決於目前選擇的速度，並且僅列出該速度支援的選項。並非所有 FEC 模式都適用於所有速度。可能的值包括：</block>
   <block id="2e452b27b7507a5be7a3ba1aad7d9860" category="list-text">Reed-Solomon</block>
   <block id="8966bfbc9fae5bcf41e0578a28d99f2c" category="list-text">消防規範</block>
   <block id="086247a9b57fde6eefee2a0c4752242d" category="list-text">自動</block>
-  <block id="0874c833f4638c576e5d4ef8af88b833" category="admonition">此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可用。</block>
+  <block id="0874c833f4638c576e5d4ef8af88b833" category="admonition">此選項僅在 iSCSI 環境中可用。它在 NVMe over TCP 環境中不可用。</block>
   <block id="a97882e316023ab6c4e2b27c8d59431c" category="paragraph">設定 NVMe over TCP 連接埠設定後，<block ref="49859666c9a0eef18f5e63b9e6e82fe3" category="inline-link-macro-rx"></block>。</block>
   <block id="8401db4ffeed4e95c0a6c8bf83f8b35c" category="summary">根據廠商針對 NVMe over TCP 的建議來設定交換器。這些建議可能包括組態指令和程式碼更新。</block>
-  <block id="e276af5d8809f3dc1c689233d91ba1ea" category="doc">設定 E 系列中的交換器 - Linux（NVMe over TCP）</block>
   <block id="92a0d39dc6d1b3428d754bef3ba61fa8" category="paragraph">E 系列沒有針對網路組態的具體指導。請諮詢您的網路管理員，以取得選擇適合您環境的組態的指導。</block>
   <block id="bf77e798334e99422ca0a480a68abd80" category="inline-link-macro">在主機上透過 TCP 設定 NVMe 啟動器</block>
   <block id="69d2f0a23cda1007d1e6eaaab59e9978" category="paragraph">設定交換器之後，<block ref="30487c3e387442819807ff1ea25900b7" category="inline-link-macro-rx"></block>。</block>
-  <block id="791885bcf9cdfc033f8e3c19043f5102" category="doc">在 E 系列中建立檔案系統 - Linux（NVMe over TCP）</block>
   <block id="bfb604adb96796a40bb9a61b27aeae24" category="paragraph">請確保您已完成 <block ref="7178e7343f0fb64b5a9313cfea0265ab" category="inline-link-macro-rx"></block> 任務，以確保 NVMe 裝置已正確配置且可存取。</block>
   <block id="87a79f2a723b2ad4de5f698a2f918ccd" category="inline-link-macro">記錄您的 NVMe over TCP 組態資訊</block>
   <block id="df7295d2f9acec38e8ce650c2585fba4" category="paragraph">建立檔案系統之後，<block ref="c81ec7ccafd94b2b1b522270a6c3f0bf" category="inline-link-macro-rx"></block>。</block>
-  <block id="f2ee95ae832ef771b1b3a9418dcf2a9c" category="doc">使用 SANtricity System Manager 建立主機 - Linux （NVMe over TCP）</block>
   <block id="a75c2dbd90f4b62641372f0cdabe99c6" category="paragraph">建立主機後，<block ref="310c1ce107a2411b80205215f3d54e0a" category="inline-link-macro-rx"></block>。</block>
-  <block id="eb066c0ab0d558cdd672a9308bb40db4" category="doc">在 E 系列 - Linux （NVMe over TCP）中從主機探索並連線至儲存設備</block>
   <block id="cfd722758287fdd060b95f1e5ba84c2f" category="list-text">請使用下列命令驗證是否可以從主機 ping 通每個陣列 HIC 連接埠：</block>
-  <block id="3297c4376be4282828e1dd69754fdc06" category="list-text">使用命令連接到第一條路徑上發現的子系統：<block ref="af9b81426fcf6b77838d7011abd3b4b9" prefix=" " category="inline-code"></block></block>
+  <block id="3297c4376be4282828e1dd69754fdc06" category="list-text">使用以下命令連線至第一條路徑上探索到的子系統：<block ref="af9b81426fcf6b77838d7011abd3b4b9" prefix=" " category="inline-code"></block></block>
   <block id="fc67b71fbb7fccbc9fac4913a5234967" category="admonition">預設情況下，佇列深度設定為<block ref="76dc611d6ebaafc66cc0879c71b5db5c" prefix=" " category="inline-code"></block>。請勿變更此預設值，因為 NVMe over TCP 需要的佇列深度為<block ref="76dc611d6ebaafc66cc0879c71b5db5c" prefix=" " category="inline-code"></block>。</block>
   <block id="2b25072e4412090c9610bb2d2a465ecf" category="list-text">對任何其他連線重複步驟 4。</block>
   <block id="996a6b1e1761b1c58015cd3452fc899f" category="paragraph">建立連線之後，<block ref="acad23f939fb9ea2eb8702eb617c3b4b" category="inline-link-macro-rx"></block>。</block>
-  <block id="cea2f56eb6bb10217c1d3200b7c9af51" category="doc">在 E 系列 - Linux（NVMe over TCP）中顯示主機可見的 Volume</block>
   <block id="da2766b4ca5b01839ddda3f434794b74" category="paragraph">檢視可見磁碟區後，<block ref="5a641ad169291a90434ef225097cafe6" category="inline-link-macro-rx"></block>。</block>
-  <block id="0c0f1afae9de592370faa4f7bd838009" category="doc">在 E 系列的主機上設定容錯移轉 - Linux（NVMe over TCP）</block>
   <block id="caf619e726f5bf6f848e15c9126b40f3" category="paragraph">啟用原生 NVMe 多路徑後，<block ref="b3bbc63df00de4e3b8e004570d32eb73" category="inline-link-macro-rx"></block>。</block>
-  <block id="bdeb8a1c11435c912297d5b077d13a16" category="summary">在 TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 軟體包、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。</block>
-  <block id="f55cacd882dc2a6af2db094080b02e10" category="doc">在 E 系列 - Linux 主機上設定 NVMe over TCP 啟動器</block>
-  <block id="6601d8b823bcb2a846b497d2023abaa0" category="list-text">如果您使用的是 HCA 內建的乙太網路驅動程式，請依下列方式安裝 <block ref="e1667929105bf030b9f367fc21f8d216" prefix=" " category="inline-code"></block> 套件：</block>
+  <block id="bdeb8a1c11435c912297d5b077d13a16" category="summary">TCP 環境中的 NVMe 啟動器組態包括安裝和設定 nvme-cli 套件、設定啟動器 IP 位址，以及在主機上設定 NVMe-oF 階層。</block>
+  <block id="6601d8b823bcb2a846b497d2023abaa0" category="list-text">如果您使用的是 HCA 內建的乙太網路驅動程式，請依下列步驟安裝 <block ref="e1667929105bf030b9f367fc21f8d216" prefix=" " category="inline-code"></block> 套件：</block>
   <block id="57136dd6314060323b3676cc14aed895" category="inline-link-macro">NVIDIA 文件</block>
-  <block id="f0dcb256a3fe6622e1c22ca626da1881" category="paragraph">如果您使用的是 NVIDIA HCA，並希望使用外部 DOCA 驅動程式，請參閱 <block ref="9c3c81f8f83b9765b8c8dec6fb3a6961" category="inline-link-macro-rx"></block> 以取得有關如何在此環境中正確安裝的資訊。</block>
-  <block id="109f1cedab840ed2aa658fcdac9b0825" category="list-text">在用於透過 TCP 連接 NVMe 的乙太網路連接埠上設定 IPv4 IP 位址。為每個網路介面建立一個組態指令碼，其中包含該介面的不同變數。</block>
-  <block id="7811a322c7116bb2055841124b0d8911" category="paragraph">建立包含以下內容的範例檔案<block ref="3f3164e95f1a0a33561bc4e251b80643" prefix=" " category="inline-code"></block>。</block>
+  <block id="f0dcb256a3fe6622e1c22ca626da1881" category="paragraph">如果您正在使用 NVIDIA HCA 並希望使用外部 DOCA 驅動程式，請參閱 <block ref="9c3c81f8f83b9765b8c8dec6fb3a6961" category="inline-link-macro-rx"></block> 以取得有關如何在此環境中正確安裝它的資訊。</block>
+  <block id="109f1cedab840ed2aa658fcdac9b0825" category="list-text">在用於連接 NVMe over TCP 的乙太網路連接埠上設定 IPv4 IP 位址。為每個網路介面建立一個組態指令碼，其中包含該介面的不同變數。</block>
+  <block id="7811a322c7116bb2055841124b0d8911" category="paragraph">建立包含下列內容的範例檔案<block ref="3f3164e95f1a0a33561bc4e251b80643" prefix=" " category="inline-code"></block>。</block>
   <block id="ea3f22d0cf75f36774155a37de017acd" category="list-text">在主機上設定 NVMe-oF 階層。在<block ref="5b084c473f7842460c228cc4f4e08f98" prefix=" " category="inline-code"></block>下建立下列檔案，以載入<block ref="0013f4c4587eb6f39a45edd47ca677fd" prefix=" " category="inline-code"></block>核心模組，並確保核心模組始終處於啟用狀態，即使在重新開機後也是如此：</block>
-  <block id="01ddbe5092ea694584317211e5972ce4" category="list-text">或者，您可以執行此命令來載入<block ref="0013f4c4587eb6f39a45edd47ca677fd" prefix=" " category="inline-code"></block>內核模組，而無需重新開機：</block>
+  <block id="01ddbe5092ea694584317211e5972ce4" category="list-text">或者，您可以執行此命令來載入<block ref="0013f4c4587eb6f39a45edd47ca677fd" prefix=" " category="inline-code"></block>核心模組，而無需重新開機：</block>
   <block id="75741c93073e16dcb559cb76c17a94ff" category="list-text">驗證 <block ref="0013f4c4587eb6f39a45edd47ca677fd" prefix=" " category="inline-code"></block> 核心模組是否已載入，請執行此命令：</block>
   <block id="a0a340234268b3353116edfd492550df" category="inline-link-macro">設定 NVMe over TCP 連接埠設定</block>
   <block id="adde2fc7ca87af5c1d2d9c7b500856ff" category="paragraph">在主機上設定 NVMe over TCP 啟動器後，<block ref="856fedec1ddd14a2129dda72f45cd064" category="inline-link-macro-rx"></block>。</block>
-  <block id="6baf323a81b9587efb4954af68c81dd3" category="doc">驗證 E 系列（NVMe over TCP）的 Linux 組態支援並審查限制</block>
   <block id="370fe24ef98d151b120c5c7c7b73fcff" category="section-title">驗證 NVMe over TCP 限制</block>
   <block id="4128e57e8a09d88e0a9cc3d56e3ce0c0" category="paragraph">在使用 NVMe over TCP 之前，請參閱<block ref="0aaf04254af18646f3d246cd4a4b417d" category="inline-link-rx"></block>以審查最新的控制器、主機和恢復限制。</block>
   <block id="1a6e2e9ab305c490a226a957a7390c7b" category="paragraph">在您驗證 Linux 組態支援並檢閱限制之後，<block ref="ae589d31b5d7b132693eb4327a541905" category="inline-link-macro-rx"></block>。</block>
-  <block id="b4b8bd4df3b00f98cead846f12916c64" category="summary">使用此工作表記錄 NVMe over TCP 儲存組態資訊。</block>
-  <block id="e582a62bdfe7d09f2a435413e6f17c76" category="doc">記錄您在 E 系列 - Linux 中的 NVMe over TCP 組態</block>
-  <block id="72ae959f937f5a75665b1fcdd31b5a23" category="paragraph">您可以產生並列印此頁面的 PDF 文件，然後使用以下工作表記錄 NVMe over TCP 儲存組態資訊。您需要這些資訊來執行配置工作。</block>
-  <block id="7260183b581899a0d609f5b63ec360cf" category="paragraph">在直接連線拓撲中，一或多部主機直接連接至子系統。在 SANtricity 作業系統 11.50 版本中，我們支援從每部主機到子系統控制器的單一連線，如下所示。在此組態中，每部主機的一個 NIC（網路介面卡）連接埠應與其連接的 E 系列控制器連接埠位於相同的子網路，但與另一個 NIC 連接埠位於不同的子網路。</block>
+  <block id="b4b8bd4df3b00f98cead846f12916c64" category="summary">使用此工作表記錄基於 TCP 的 NVMe 儲存組態資訊。</block>
+  <block id="72ae959f937f5a75665b1fcdd31b5a23" category="paragraph">您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 NVMe over TCP 儲存組態資訊。您需要這些資訊來執行配置工作。</block>
+  <block id="7260183b581899a0d609f5b63ec360cf" category="paragraph">在直連拓撲中，一個或多個主機直接連接到子系統。在 SANtricity 作業系統 11.50 版本中，我們支援每個主機到子系統控制器的單一連接，如下圖所示。在此組態中，每個主機的一個 NIC（網路介面卡）連接埠應與其連接的 E 系列控制器連接埠位於相同子網路，但與另一個 NIC 連接埠位於不同的子網路。</block>
   <block id="b4ae50af5c445aa40fecedb09a585243" category="image-alt">NVMe over TCP 直接連接範例</block>
   <block id="aab4e4c8b0caf4d3e4792977f135cb45" category="list-text">子網路 1：主機 1 NIC 連接埠 1 和控制器 1 主機連接埠 1</block>
   <block id="9cbd7bf2a6072d77032c713a788366e3" category="list-text">子網路 2：主機 1 NIC 連接埠 2 和控制器 2 主機連接埠 1</block>
@@ -10704,26 +10513,26 @@
   <block id="23761215fbfa8fbc95cebe95ad46b42a" category="paragraph">您應該使用的 SATP 是 *VMW_SATP_ALUA*（這是 NetApp E 系列的預設選擇）。如需詳細資訊，請參閱<block ref="8c5440c95a17ab6b152e40571e5982f4" category="inline-link-rx"></block>。</block>
   <block id="4d79cbf3e4313a3fa1c4e452c9ed695d" category="section-title">路徑選擇外掛與原則（PSP）</block>
   <block id="151f37cb2647d99624db6f31525f27da" category="inline-link">變更路徑選擇原則</block>
-  <block id="ad4f9dc5c6de1fc251b65efd64448c99" category="paragraph">這些外掛程式是 VMware NMP 的子模組。NMP 會根據裝置類型為每個邏輯裝置指派預設的 PSP。您可以置換預設的 PSP。如需詳細資訊，請參閱<block ref="f433f38446675ffd924fcd4ceca221ff" category="inline-link-rx"></block>。NMP 會為 NetApp 裝置指派 VMW_PSP_RR（輪詢）的預設路徑選擇原則。這是建議的 PSP。</block>
+  <block id="ad4f9dc5c6de1fc251b65efd64448c99" category="paragraph">這些外掛是 VMware NMP 的子模組。NMP 會根據裝置類型為每個邏輯裝置指派預設的 PSP。您可以置換預設的 PSP。如需詳細資訊，請參閱<block ref="f433f38446675ffd924fcd4ceca221ff" category="inline-link-rx"></block>。NMP 會為 NetApp 裝置指派 VMW_PSP_RR（輪詢）的預設路徑選擇原則。這是建議的 PSP。</block>
   <block id="9afcee3d77b1960758c4ad10935dc850" category="inline-link">VMware 路徑選擇外掛與原則</block>
-  <block id="89c7b1cd0024156c2262caa8de61e85d" category="paragraph">如需更多資訊，請參閱<block ref="9e00a010cd30587ef6148787303131d8" category="inline-link-rx"></block>。</block>
+  <block id="89c7b1cd0024156c2262caa8de61e85d" category="paragraph">如需詳細資訊，請參閱<block ref="9e00a010cd30587ef6148787303131d8" category="inline-link-rx"></block>。</block>
   <block id="9ed9a26f192e761740f9d3a843eb1af6" category="section-title">高效能外掛（HPP）</block>
-  <block id="62d384b987f18d6abb2fdcec4c7944c6" category="paragraph">HPP 取代 NMP 用於高速裝置，例如 NVMe。HPP 是宣告 NVMe-oF 目標的預設外掛。ESX 支援端對端 NVMe（無需模擬）以及 SCSI 到 NVMe 的模擬。HPP 僅支援作用中/作用中和隱式 ALUA 目標。</block>
+  <block id="62d384b987f18d6abb2fdcec4c7944c6" category="paragraph">HPP 取代 NMP 用於高速裝置，例如 NVMe。HPP 是宣告 NVMe-oF 目標的預設外掛。ESX 支援端對端 NVMe（無需模擬）以及 SCSI 到 NVMe 模擬。HPP 僅支援作用中/作用中和隱含的 ALUA 目標。</block>
   <block id="a838301124c87fec8f5213424115f815" category="section-title">路徑選擇方案（PSS）</block>
-  <block id="1acdfc4ec093c2413a9f22e588bf39b0" category="paragraph">為了支援多重路徑，HPP 在選擇 I/O 請求的實體路徑時會使用路徑選擇方案（PSS）。HPP 所宣告裝置的預設方案是 LB-RR（負載平衡 - 輪詢）。這是建議的 PSS。</block>
+  <block id="1acdfc4ec093c2413a9f22e588bf39b0" category="paragraph">為了支援多重路徑，HPP 在選擇 I/O 要求的實體路徑時會使用路徑選擇方案（PSS）。HPP 宣告之裝置的預設方案為 LB-RR（負載平衡 - 輪詢）。這是建議的 PSS。</block>
   <block id="4a63cbec7e35ae8e55d7f5f18b151377" category="inline-link">VMware 高效能外掛和路徑選擇方案</block>
-  <block id="ce9e8fa445cfdcd0b06a97bb313d2167" category="paragraph">如需有關 HPP 或 PSS 的詳細資訊，請參閱<block ref="96196cf034628742f4445771b703ead5" category="inline-link-rx"></block>。</block>
-  <block id="f416e59e3f071a2f3aa5b442794b5c3f" category="summary">您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存區或原始裝置對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。</block>
+  <block id="ce9e8fa445cfdcd0b06a97bb313d2167" category="paragraph">如需 HPP 或 PSS 的詳細資訊，請參閱<block ref="96196cf034628742f4445771b703ead5" category="inline-link-rx"></block>。</block>
+  <block id="f416e59e3f071a2f3aa5b442794b5c3f" category="summary">您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存或原始設備對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。</block>
   <block id="ba00d3bba5b805eef491c0bde7c843e7" category="paragraph">所有目前版本的 ESXi 支援 VMFS 版本 5 和 6。</block>
   <block id="46a7d1dcccbd5cae70e71efd29e2b0e3" category="inline-link">如何擴充 Volume - NetApp 知識庫</block>
-  <block id="eb807d737fcdadd08bf02acf81a47550" category="admonition">不建議在 VMware 上使用 VMFS 擴充。與其將另一個 Volume 作為擴充新增至現有的 VMFS 資料儲存以增加容量，建議對現有的後端 Volume 執行 DVE 操作 <block ref="f1be7a24621c35ca38d8badc0b4c2154" category="inline-link-rx"></block>），並擴充 VMFS 資料儲存。</block>
+  <block id="eb807d737fcdadd08bf02acf81a47550" category="admonition">不建議在 VMware 上使用 VMFS 擴充。與其將另一個 Volume 作為擴充加入現有的 VMFS 資料儲存區來增加容量，不如對現有的後端 Volume 執行 DVE 操作 <block ref="f1be7a24621c35ca38d8badc0b4c2154" category="inline-link-rx"></block>），從而擴充 VMFS 資料儲存區。</block>
   <block id="dd1c81d442e4793130a1431bfd5d9f08" category="admonition">建議在 Linux 虛擬機器上使用虛擬 RDM 或虛擬磁碟，而不是實體 RDM。</block>
   <block id="1b40bf61fe1c327fdef49e3fb3671293" category="inline-link">建立 vSphere VMFS 資料存放區</block>
-  <block id="6754bbabe69874d79af9887b338b9c98" category="list-text">如需建立 VMFS 資料儲存的說明，請參閱<block ref="d2c7c477a6fabe150f36368f5e610bef" category="inline-link-rx"></block>。</block>
-  <block id="7e79aa4166f520e48cf1620384ff9266" category="inline-link">在 vSphere 中的原始裝置對應</block>
-  <block id="125d6d7f2f489540b4a4c92a6d4abc6a" category="list-text">有關建立 RDM 的說明，請參閱<block ref="3365c9835c6a2e387cc9427764f7cdf0" category="inline-link-rx"></block>。</block>
-  <block id="9717db19639735f9eec6183f8d79176f" category="paragraph">將 Volume 分配給主機。執行重新掃描，以便主機偵測並設定 Volume 以進行多重路徑。</block>
-  <block id="6f52aaf5ba41d3c8de89c84301b62cfc" category="paragraph">如需建立主機和指派 Volume 的相關資訊，請參閱：</block>
+  <block id="6754bbabe69874d79af9887b338b9c98" category="list-text">如需建立 VMFS 資料存放區的說明，請參閱<block ref="d2c7c477a6fabe150f36368f5e610bef" category="inline-link-rx"></block>。</block>
+  <block id="7e79aa4166f520e48cf1620384ff9266" category="inline-link">vSphere 中的原始裝置對應</block>
+  <block id="125d6d7f2f489540b4a4c92a6d4abc6a" category="list-text">如需建立 RDM 的說明，請參閱<block ref="3365c9835c6a2e387cc9427764f7cdf0" category="inline-link-rx"></block>。</block>
+  <block id="9717db19639735f9eec6183f8d79176f" category="paragraph">將 Volume 指派給主機。執行重新掃描，以便主機偵測並設定 Volume 以進行多重路徑。</block>
+  <block id="6f52aaf5ba41d3c8de89c84301b62cfc" category="paragraph">有關建立主機和指派 Volume 的資訊，請參閱：</block>
   <block id="bac3f87a4b95dce4003a30541d3edd00" category="inline-link">建立主機定義</block>
   <block id="ab90caa587b6c7446848e21d6388ed87" category="list-text"><block ref="ab90caa587b6c7446848e21d6388ed87" category="inline-link-rx"></block></block>
   <block id="a860acc90e9644e79c6a2c48bace79cb" category="inline-link">建立主機叢集</block>
@@ -10732,10 +10541,10 @@
   <block id="f4864cba05df18a76eb98e0666f37b57" category="list-text"><block ref="f4864cba05df18a76eb98e0666f37b57" category="inline-link-rx"></block></block>
   <block id="da939eef80c027a3c2977dacdb2d5f1c" category="list-text">請確保按照上述連結中的說明建立 Volume 並將其指派給 ESXi 主機。</block>
   <block id="a9dd866135bfa9fdf6bc265e658c2eb9" category="inline-link">執行儲存設備重新掃描</block>
-  <block id="23fad453f4e82498aa327ae4acfa7bc7" category="list-text">如需有關如何在 ESXi 主機上執行儲存設備重新掃描的指示，請參閱<block ref="42804f76d979138ab538cf29cf1aaeae" category="inline-link-rx"></block>。</block>
+  <block id="23fad453f4e82498aa327ae4acfa7bc7" category="list-text">有關如何在 ESXi 主機上執行儲存設備重新掃描的說明，請參閱<block ref="42804f76d979138ab538cf29cf1aaeae" category="inline-link-rx"></block>。</block>
   <block id="d086ea43f45e2548cf5e76a4e030e6ee" category="summary">對於 Fibre Channel 傳輸協定（FCP），您設定交換器並決定主機連接埠識別碼。</block>
   <block id="4cbfc104479c2c53caaffd1f87922214" category="paragraph">您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 FC 儲存組態資訊。您在執行配置工作時需要這些資訊。</block>
-  <block id="038c815652159cdbc47371790bba4180" category="paragraph">圖中顯示連接到兩個區域中 E 系列儲存陣列的主機。一個區域以紅線標示；另一個區域以藍線標示。每個區域至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量將取決於主機匯流排介面卡的數量和控制器型號。您可能會有更多可用的連接埠（每個控制器最多 12 個）。如有需要，請列印其他 PDF 檔案。</block>
+  <block id="038c815652159cdbc47371790bba4180" category="paragraph">圖中顯示主機在兩個區域中連接至 E 系列儲存陣列。一個區域以紅線標示；另一個區域以藍線標示。每個區域至少包含一個啟動器連接埠和一半的目標連接埠。主機和 / 或控制器連接埠的數量將因主機匯流排介面卡的數量與控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 12 個）。視需要列印額外的 PDF。</block>
   <block id="b4ec84377c736f10a41349e329a1222a" category="image-alt">Fibre Channel 連接埠識別碼</block>
   <block id="d9b70f9341f418a8f092864673e73c61" category="paragraph">控制器 A，連接埠 2 連接至 FC 交換器 1</block>
   <block id="110a3e1f844c30d39f0a845c2d87777b" category="paragraph">控制器 A，連接埠 3 連接至 FC 交換器 2</block>
@@ -10744,16 +10553,16 @@
   <block id="b6a620e5cb4decf887f5037d4e162840" category="paragraph">控制器 B，連接埠 3 連接至 FC 交換器 2</block>
   <block id="d1d03743b101fb892614a885db5613d8" category="paragraph">控制器 B，連接埠 4 連接至 FC 交換器 2</block>
   <block id="283264a227750a8a703820e9be41084c" category="section-title">主機對應資訊</block>
-  <block id="bc81339ee38955b310daa0c4357f8287" category="section-title">步驟 2：判斷主機連接埠 WWPN</block>
+  <block id="bc81339ee38955b310daa0c4357f8287" category="section-title">步驟 2：確定主機連接埠 WWPN</block>
   <block id="1481f5d5a52062e8b24ff2a87243aae0" category="inline-link">在 ESXi 中使用 ESXi Shell</block>
   <block id="2ac83f619543eb311fdd9041d8fc7646" category="list-text">使用 SSH 或 ESXi shell 連線到 ESXi 主機。若要啟用 ESXi shell，請參閱<block ref="277c82e3cb627ca6a5cbcc309944d0ff" category="inline-link-rx"></block>。</block>
   <block id="0be1184114f68d1aa38a299d0dc88b67" category="list-text">記錄啟動器 WWPN 識別碼（UID，格式為 fc.WWNN:WWPN）。輸出結果將類似於以下範例：</block>
-  <block id="34a467c4ce5faaae4a8678a04fef485e" category="paragraph">在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是預期中的情況。請記錄每個唯一的 WWPN。</block>
+  <block id="34a467c4ce5faaae4a8678a04fef485e" category="paragraph">在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是正常的。請記錄每個唯一的 WWPN。</block>
   <block id="a735a286e166f0ebfafccf602f40cef4" category="admonition">另一個命令選項是<block ref="c2a16b08807ab71a8fde996e835d2ed1" prefix=" " category="inline-code"></block>。這將顯示更多詳細資訊以及以冒號分隔的十六進位格式的 WWPN。</block>
   <block id="e1ab6acec549881bcb49ef458979fc95" category="section-title">步驟 3：設定 FC 交換器</block>
   <block id="8e82ca71458c9f8967c1c5e8d12b2685" category="list-text">連接到交換器的每個主機啟動器埠和每個控制器目標埠的 WWPN。</block>
-  <block id="80a88e9139fc64f26965382c803a7837" category="paragraph">請參閱交換器廠商的文件，以取得有關設定區域的詳細說明。</block>
-  <block id="6cf7d173e2851c96d84441a6be7f0891" category="paragraph">安裝儲存陣列並存取 SANtricity System Manager 的 VMware express 方法，適用於設定搭配 E 系列儲存系統的獨立式 VMware 主機。其設計旨在以最少的決策點，盡可能快速地讓儲存系統啟動並運作。</block>
+  <block id="80a88e9139fc64f26965382c803a7837" category="paragraph">請查閱交換器廠商的文件，以取得有關設定區域的詳細說明。</block>
+  <block id="6cf7d173e2851c96d84441a6be7f0891" category="paragraph">安裝儲存陣列並存取 SANtricity System Manager 的 VMware 快速方法，適用於設定搭配 E 系列儲存系統的獨立式 VMware 主機。其旨在以最少的決策點，盡可能快速地讓儲存系統啟動並運作。</block>
   <block id="6178165d07337646ef3aa419e26c32b3" category="list-text"><block ref="6178165d07337646ef3aa419e26c32b3" category="inline-link-macro-rx"></block></block>
   <block id="756cea6ea226d5ecdf219049dbe844f7" category="inline-link-macro">光纖通道 (FCP)</block>
   <block id="2cdb6aaad542cf90288d081462e71e35" category="list-text"><block ref="2cdb6aaad542cf90288d081462e71e35" category="inline-link-macro-rx"></block></block>
@@ -10763,63 +10572,63 @@
   <block id="5b297aaab012ee8f94acf3d2c329c42d" category="list-text"><block ref="43b3c7df84aacaab63edf7c08d59bbc2" category="inline-link-rx"></block> -- NVMe over fabrics 的特定組態要求。</block>
   <block id="ae0aa1a81eb18e69d5fc662eaee0efd5" category="inline-link">Broadcom 技術文件</block>
   <block id="9084c413ff85a7b0094993ff079db1c3" category="list-text"><block ref="d5ec05d5862a4efa0c0f47029bcf8f30" category="inline-link-rx"></block> -- VMware 雲端基礎架構軟體和 vSphere 技術文件。</block>
-  <block id="c4e70e6b5f9f2187fbb01433c5ba1cdf" category="paragraph">您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄特定通訊協定的儲存組態資訊。您在執行配置工作時需要這些資訊。</block>
-  <block id="45e7f5c5654d96726298abf7ad5112c3" category="paragraph">圖中顯示主機連接到 E 系列儲存陣列，並透過 VLAN 和/或獨立子網路分隔。藍線表示一個 VLAN/子網路；紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量會因網路介面的數量和控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 6 個）。</block>
+  <block id="c4e70e6b5f9f2187fbb01433c5ba1cdf" category="paragraph">您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄特定於協定的儲存組態資訊。您在執行配置任務時需要這些資訊。</block>
+  <block id="45e7f5c5654d96726298abf7ad5112c3" category="paragraph">圖中顯示了一台主機連接到 E 系列儲存陣列，該陣列透過 VLAN 和/或獨立子網路進行隔離。藍線表示一個 VLAN/子網路，紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量取決於網路介面的數量和控制器型號。您可能擁有更多連接埠（每個控制器最多 6 個）。</block>
   <block id="8d6fb26a26c48e07c5acfa9a6cc1a4c0" category="cell">主機 IQN</block>
   <block id="20ad77cb6d3e5304a8d15b2ac5cdd2be" category="section-title">步驟 2：設定交換器</block>
   <block id="a15b1de3afabfdaf4c9d58dedf7fdcf0" category="list-text">啟用 *端對端* 的發送和接收硬體流程控制。</block>
-  <block id="f20346d0bb685ae84e2d11b5e9517575" category="list-text">如果合適，請啟用巨型訊框（建議）。</block>
+  <block id="f20346d0bb685ae84e2d11b5e9517575" category="list-text">如果適用，請啟用巨型訊框（建議）。</block>
   <block id="de25c908498c4a6834d12fc406a2dc42" category="section-title">步驟 3：設定連網</block>
-  <block id="b1fac05468b89225ed73fb9e591e78ac" category="paragraph">如果出於效能考量而在 IP SAN 中使用巨型訊框，請確定將陣列、交換器和主機設定為使用巨型訊框。如需如何在主機和交換器上啟用巨型訊框的相關資訊，請參閱您的作業系統和交換器文件。若要在陣列上啟用巨型訊框，請完成步驟 4 中的步驟。</block>
-  <block id="b83bc12054bf1ef941badc96d42932c1" category="inline-link">VMware 組態最大值指南</block>
-  <block id="c76a6ad3cac24b7200f02772f8570cb9" category="paragraph">在規劃 iSCSI 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每個 LUN 最多支援 32 條 iSCSI 路徑，並且每部伺服器最多可以與軟體 iSCSI 堆疊關聯或綁定連接埠的 NICs 數量為 8 個。您必須考慮此要求，以避免設定過多的路徑。</block>
-  <block id="edaa550859f23f24f8b9dbbcf3a8a9c3" category="inline-link">在 ESX/ESXi 中使用軟體 iSCSI 連接埠繫結的最佳實務</block>
-  <block id="c1788dabde19a303a3d0ef2254ce5364" category="admonition">VMware iSCSI 連接埠綁定是一項功能，它強制所有綁定的 VMkernel 連接埠登入設定的網路區段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱<block ref="bd6b3975638d81e73dff203761b6fa8b" category="inline-link-rx"></block>。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI vmkernel 連接埠，以避免與連接埠綁定發生衝突。</block>
+  <block id="b1fac05468b89225ed73fb9e591e78ac" category="paragraph">如果出於效能考量而在 IP SAN 中使用巨型訊框，請務必將陣列、交換器和主機設定為使用巨型訊框。如需如何在主機和交換器上啟用巨型訊框的資訊，請參閱您的作業系統和交換器文件。若要在陣列上啟用巨型訊框，請完成步驟 4 中的步驟。</block>
+  <block id="b83bc12054bf1ef941badc96d42932c1" category="inline-link">VMware 組態上限指南</block>
+  <block id="c76a6ad3cac24b7200f02772f8570cb9" category="paragraph">在規劃 iSCSI 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每個 LUN 最多支援 32 條 iSCSI 路徑，並且每台伺服器最多可以與軟體 iSCSI 堆疊關聯或綁定連接埠的網路卡數量為 8 個。您必須考慮此要求，以避免設定過多的路徑。</block>
+  <block id="edaa550859f23f24f8b9dbbcf3a8a9c3" category="inline-link">在 ESX/ESXi 中使用軟體 iSCSI 連接埠綁定的最佳實務</block>
+  <block id="c1788dabde19a303a3d0ef2254ce5364" category="admonition">VMware iSCSI 連接埠綁定是一項功能，它會強制所有綁定的 VMkernel 連接埠登入已設定網路區段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱<block ref="bd6b3975638d81e73dff203761b6fa8b" category="inline-link-rx"></block>。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI VMkernel 連接埠，以避免與連接埠綁定發生衝突。</block>
   <block id="9a0e74e094d48a69f3783a4093c2e8cc" category="section-title">步驟 4：設定陣列側連網</block>
   <block id="37606aa33e7c3dbea1bc945e63863889" category="paragraph">選擇所需速度。下拉清單中顯示的選項取決於您的網路可支援的最大速度（例如，25 Gbps）。</block>
   <block id="5690c7eed0ee7c57cbe222baab97488f" category="admonition">控制器上可用的 iSCSI 主機介面卡不會自動協商速度。您必須將每個連接埠的速度設定為 1 Gb、10 Gb 或 25 Gb。所有連接埠都必須設定為相同的速度。</block>
   <block id="ba2f010acf873daccdc50454ccd8b73c" category="paragraph">預設的最大傳輸單元（MTU）大小為每個訊框 1500 位元組。您必須輸入 1500 到 9000 之間的值。若要啟用巨型訊框，請將此值設為 9000 位元組。</block>
   <block id="e4c0cddd8647687170676434eeca230b" category="section-title">步驟 5：設定主機端連網</block>
   <block id="67e0b171d6322ee2484716362b950d07" category="paragraph">此工作在主機端設定 iSCSI 連網，並與儲存陣列建立 iSCSI 工作階段。</block>
-  <block id="c7d2fae09bd652a74fa95a8c23b50449" category="inline-link">使用 ESXi 設定 iSCSI 介面卡與儲存設備</block>
-  <block id="77f720983c50e0acc7b14951062155c4" category="paragraph">如需設定 VMware 的 iSCSI 連網的其他資訊，請參閱<block ref="8d1a4b6d6d237d33ce197d28e6b34768" category="inline-link-rx"></block>。</block>
+  <block id="c7d2fae09bd652a74fa95a8c23b50449" category="inline-link">使用 ESXi 設定 iSCSI 介面卡和儲存設備</block>
+  <block id="77f720983c50e0acc7b14951062155c4" category="paragraph">如需為 VMware 設定 iSCSI 連網的其他資訊，請參閱<block ref="8d1a4b6d6d237d33ce197d28e6b34768" category="inline-link-rx"></block>。</block>
   <block id="1596f5a006650eef0eaa6501216cc0d4" category="admonition">在此過程中，請記錄新增軟體 iSCSI 介面卡的 iSCSI 限定名稱（IQN）。稍後設定主機對應時將需要此資訊。</block>
   <block id="da01d7431fe14486518f1d3ae0951134" category="list-text">已設定將用於承載 iSCSI 儲存設備流量的交換器。</block>
-  <block id="7f4eec4895590686ac2fdf507832ac77" category="list-text">交換器上啟用 *端對端* 的傳送與接收硬體流程控制。</block>
+  <block id="7f4eec4895590686ac2fdf507832ac77" category="list-text">在交換器上啟用 *端對端* 的傳送與接收硬體流程控制。</block>
   <block id="58376cc4826a17003ac8f68dd92a09af" category="list-text">交換器上的優先權流程控制已停用。</block>
   <block id="7b2401fcbb672846e10fef04a1902c92" category="list-text">陣列端 iSCSI 組態完成。</block>
-  <block id="ced0698aad8989c8b0778660aaf7dc33" category="list-text">至少需要兩個主機網路卡埠用於 iSCSI 流量。</block>
-  <block id="42f4fd1c0fb327d489514ce219fb993a" category="list-text">使用 vSphere 用戶端或 vSphere Web 用戶端來執行主機端組態。請參閱<block ref="8d1a4b6d6d237d33ce197d28e6b34768" category="inline-link-rx"></block>。</block>
+  <block id="ced0698aad8989c8b0778660aaf7dc33" category="list-text">至少兩個主機網路卡埠用於 iSCSI 流量。</block>
+  <block id="42f4fd1c0fb327d489514ce219fb993a" category="list-text">使用 vSphere 用戶端或 vSphere Web 用戶端執行主機端組態。請參閱<block ref="8d1a4b6d6d237d33ce197d28e6b34768" category="inline-link-rx"></block>。</block>
   <block id="cb4a19b4c50d4db2d9d19a6deb421ec3" category="inline-link">使用 ESX 設定 iSCSI 網路</block>
   <block id="e50957d545aacb094a2e4e5dbe7b338d" category="list-text">設定 iSCSI 網路。請參閱<block ref="53acb86b9e7beb49d21936cda327bed6" category="inline-link-rx"></block>。</block>
-  <block id="a32e48667053627e4ed83d74bf9f513a" category="list-text">建議不要使用連接埠綁定。VMware iSCSI 連接埠綁定是一項功能，它會強制所有綁定的 VMkernel 連接埠登入已設定網段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱<block ref="bd6b3975638d81e73dff203761b6fa8b" category="inline-link-rx"></block>。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI vmkernel 連接埠，以避免與連接埠綁定發生任何衝突。</block>
+  <block id="a32e48667053627e4ed83d74bf9f513a" category="list-text">建議不要使用連接埠綁定。VMware iSCSI 連接埠綁定是一項功能，它會強制所有綁定的 VMkernel 連接埠登入已設定網段上所有可存取的目標連接埠。它適用於為 iSCSI 目標提供單一網路位址的陣列。NetApp 建議不要使用 iSCSI 連接埠綁定。如需其他資訊，請參閱<block ref="bd6b3975638d81e73dff203761b6fa8b" category="inline-link-rx"></block>。如果 ESXi 主機連接到其他廠商的儲存設備，NetApp 建議您使用分隔的 iSCSI vmkernel 連接埠，以避免與連接埠綁定發生衝突。</block>
   <block id="ec67617e42db4aae6eb23b151da44724" category="inline-link">iSCSI 組態中的多個網路介面卡</block>
-  <block id="0931796c069eb27b4622f2e7458db06a" category="list-text">NetApp 建議在 vSphere 標準交換器上設定多個介面卡對應，並利用主動/待命介面卡來提供備援。請參閱<block ref="c7a4fb9987b4c33455ab7b3a15f80c2e" category="inline-link-rx"></block>。</block>
+  <block id="0931796c069eb27b4622f2e7458db06a" category="list-text">NetApp 建議在 vSphere 標準交換器上使用多個介面卡對應，並利用主動/待命介面卡來提供備援。請參閱<block ref="c7a4fb9987b4c33455ab7b3a15f80c2e" category="inline-link-rx"></block>。</block>
   <block id="4ebf93985a631d3f9a599001a89dc2ea" category="inline-link">在 ESX 上搭配 iSCSI 使用巨型訊框</block>
-  <block id="33315e5dcad36d6081fce9bd002f4043" category="list-text">如有需要，請透過 iSCSI 啟用巨型訊框。請參閱<block ref="d00973ba04c2b6397b30270cd599b559" category="inline-link-rx"></block>。</block>
+  <block id="33315e5dcad36d6081fce9bd002f4043" category="list-text">如有需要，可使用 iSCSI 啟用巨型訊框。請參閱<block ref="d00973ba04c2b6397b30270cd599b559" category="inline-link-rx"></block>。</block>
   <block id="f9fe2db48782408e70c7fefb3c15102a" category="inline-link">新增或移除軟體 iSCSI 介面卡</block>
   <block id="33a8893f58881653baabd2def1be8aa2" category="list-text">新增軟體 iSCSI 介面卡。請參閱<block ref="f6781d572c448fddeb3b8d4b316d5a25" category="inline-link-rx"></block>。</block>
   <block id="bc7215cc366d7a4a1e7e9133852dde59" category="inline-link">修改 ESX 主機上 iSCSI 的一般屬性</block>
   <block id="dbc0eefddb75c4df0a96d6629ab6d721" category="list-text">記錄主機 IQN 並新增 iSCSI 別名（選用）。請參閱<block ref="9a076924a63a4ee56593d4f25893fda1" category="inline-link-rx"></block>。</block>
   <block id="9360d015577b62a6af575d75b922c3e5" category="inline-link">在 ESX 主機上設定 iSCSI 介面卡的 CHAP 參數</block>
-  <block id="f822a8645faf7559a7688bd68e5e7df9" category="list-text">如果使用 CHAP 金鑰，請設定 CHAP 參數。請參閱<block ref="962d0f67e34749c56a478c5116fd9a4b" category="inline-link-rx"></block>。</block>
-  <block id="cd479108f74cb7cd37b8edf9bb3b56f8" category="paragraph">成功新增後，可以從 vSphere Client 上的儲存介面卡檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。</block>
+  <block id="f822a8645faf7559a7688bd68e5e7df9" category="list-text">如果使用 CHAP 密碼，請設定 CHAP 參數。請參閱<block ref="962d0f67e34749c56a478c5116fd9a4b" category="inline-link-rx"></block>。</block>
+  <block id="cd479108f74cb7cd37b8edf9bb3b56f8" category="paragraph">新增成功後，可以從 vSphere Client 上的「儲存介面卡」檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。</block>
   <block id="3a1ae4d18abf9d4826b70cb74001c506" category="section-title">步驟 6：驗證 IP 網路連線</block>
-  <block id="ca95576e496808a00030632eaf6ab93e" category="list-text">如果步驟 5 的探索不成功，請回到 iSCSI 主機端連網組態程序以完成工作階段探索。</block>
+  <block id="ca95576e496808a00030632eaf6ab93e" category="list-text">如果步驟 5 的探索不成功，請返回 iSCSI 主機端連網組態程序以完成工作階段探索。</block>
   <block id="892625a2787784e331c7f91c65622254" category="admonition">在規劃 NVMe over FC 組態時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每部伺服器最多支援 2 個 NVMe FC 啟動器連接埠。您必須考慮此要求，以避免設定過多路徑。</block>
-  <block id="caafe405670b14c60fa022df5adb796e" category="paragraph">您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 NVMe over Fibre Channel 儲存組態資訊。您在執行配置工作時需要這些資訊。</block>
-  <block id="c1360b718f165f8c374dd0b2012efa11" category="paragraph">圖中顯示了一台主機連接到 E 系列儲存陣列的兩個區域。一個區域以紅線標示；另一個區域以藍線標示。每個區域包含一個啟動器連接埠和一半的目標連接埠。控制器連接埠的數量取決於控制器型號和主機介面卡（HIC）的數量。您可能擁有更多連接埠（每個控制器最多 12 個）。如有需要，請列印其他 PDF 檔案。</block>
+  <block id="caafe405670b14c60fa022df5adb796e" category="paragraph">您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄 NVMe over Fibre Channel 儲存組態資訊。您在執行配置工作時需要這些資訊。</block>
+  <block id="c1360b718f165f8c374dd0b2012efa11" category="paragraph">圖中顯示主機連接至兩個區域中的 E 系列儲存陣列。一個區域以紅線標示；另一個區域以藍線標示。每個區域包含一個啟動器連接埠和一半的目標連接埠。控制器連接埠的數量會因控制器型號和主機介面卡（HIC）的數量而異。您可能會有更多可用的連接埠（每個控制器最多 12 個）。視需要列印額外的 PDF。</block>
   <block id="946a5076f6c10eba75e38048af9ea5e3" category="image-alt">NVMe over Fibre Channel 連接埠識別碼</block>
   <block id="d710b83f119ed69d4de2e35008d9751f" category="section-title">步驟 2：確定主機連接埠 WWPNs</block>
-  <block id="e7472a8a79e2758634afe3177156c658" category="list-text">執行下列命令並記錄主機 NQN（稍後設定主機對應時需要使用）：</block>
+  <block id="e7472a8a79e2758634afe3177156c658" category="list-text">執行以下命令並記錄主機 NQN（稍後設定主機對應時需要使用）：</block>
   <block id="4734277907bb1ea92ecc2b57399c8ef4" category="section-title">步驟 3：設定 NVMe/FC 交換器</block>
   <block id="e91d8a2994dcca3786182125a2971072" category="summary">對於 NVMe over RoCE 協定，您設定交換器並決定主機 NVMe 限定名稱（NQN）。</block>
   <block id="951a34f6bd9acb1656894a955541d439" category="image-alt">NVMe over RoCE 連接埠識別碼</block>
   <block id="d18373b658dc66344be91245ccec65e9" category="list-text">交換器設定為適用於 NVMe over RDMA 的無損傳輸乙太網路（如果交換器在路徑中）。</block>
-  <block id="5b481f3f842d5ab26068db6d5587d08d" category="paragraph">在規劃基於 RoCE 的 NVMe 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每個伺服器支援的最大 RDMA NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多的路徑。</block>
-  <block id="e178281fce115342ac694a5b34892dc4" category="paragraph">如果主機透過乙太網路交換器連接到儲存陣列，則必須在交換器上依照步驟 2 和步驟 3 中的說明設定無損連網。在這種情況下，基於交換器的無損連網設定優先，您無需完成下方主機端的先決條件。</block>
-  <block id="7e3c92d450d59dc1720184b528ce6242" category="paragraph">如果主機與儲存陣列有直接連接（路徑中沒有交換器），則在設定主機端 NVMe over RDMA 介面卡之前，請完成以下先決條件。</block>
-  <block id="d32ccbe22e83e6326ad16bf80ce44153" category="paragraph-title">先決條件：設定 NVMe over RDMA 的無損傳輸乙太網路（僅限直接連線）</block>
+  <block id="5b481f3f842d5ab26068db6d5587d08d" category="paragraph">在規劃 NVMe over RoCE 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每部伺服器支援的最大 RDMA NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多路徑。</block>
+  <block id="e178281fce115342ac694a5b34892dc4" category="paragraph">如果主機透過乙太網路交換器連接到儲存陣列，則必須在交換器上依照步驟 2 和步驟 3 中的說明設定無損連網。在這種情況下，以交換器為基礎的無損連網設定優先，您無需完成下方的主機端先決條件。</block>
+  <block id="7e3c92d450d59dc1720184b528ce6242" category="paragraph">如果主機與儲存陣列有直接連接（路徑中沒有交換器），則在設定主機端 NVMe over RDMA 介面卡之前，請完成下列先決條件。</block>
+  <block id="d32ccbe22e83e6326ad16bf80ce44153" category="paragraph-title">先決條件：設定用於 NVMe over RDMA 的無損傳輸乙太網路（僅限直接連線）</block>
   <block id="03ada87e2bce11e436e1e774b8fd611d" category="paragraph">您可以使用基於區分服務代碼點 (DSCP) 的優先權流程控制 (PFC) 設定無損連網。</block>
   <block id="7d49a33ec351f94ee6ef652341a323f7" category="paragraph">如需詳細資訊，請參閱 <block ref="8c3816909dd807137e9561d3e9a4b712" category="inline-link-macro-rx"></block>。</block>
   <block id="f404acdd3fe9f4ba575cf61622ccffe5" category="paragraph">此工作建立 NVMe over RDMA 主機介面卡，並新增控制器連線至儲存設備。</block>
@@ -10827,28 +10636,27 @@
   <block id="7edabb7a11d47c82c27839149e3fb737" category="paragraph">如需詳細資訊，請參閱 <block ref="45c0f85cbcc8af0b20f4466610baef3d" category="inline-link-macro-rx"></block>。</block>
   <block id="0a968e9484e3df3791dea91a2731fd15" category="paragraph">如需詳細資訊，請參閱 <block ref="9e13c96473396c2a64623f541d08c300" category="inline-link-macro-rx"></block>。</block>
   <block id="7c6fba2139ce43af5b147a7064c3c692" category="paragraph">如需詳細資訊，請參閱 <block ref="9297908a6388079c82f7d288af7d3503" category="inline-link-macro-rx"></block>。</block>
-  <block id="e5be71ff13064645b16c53bd0564994f" category="admonition">在此過程中，可以透過「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時會需要用到此資訊。</block>
+  <block id="e5be71ff13064645b16c53bd0564994f" category="admonition">在此過程中，可以從「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時將會需要此資訊。</block>
   <block id="a7effa13bc49e76f7f85f73d0a827ee2" category="list-text">在主機上執行以下命令：</block>
-  <block id="61e3f97a5cb7d4ac5d28247995eabde9" category="list-text">如果步驟 5 探索失敗，請返回 NVMe over RoCE 主機端連網組態程序，以完成新增目標控制器。</block>
-  <block id="c419a0989b573ac4bc7b6e0433d58393" category="summary">對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe 限定名稱（NQN）。</block>
-  <block id="372facf12bd65c689f21280c3d57694f" category="doc">在 E 系列中執行 NVMe over TCP 特定工作 - VMware</block>
+  <block id="61e3f97a5cb7d4ac5d28247995eabde9" category="list-text">如果步驟 5 探索失敗，請返回 NVMe over RoCE 主機端連網組態程序以完成新增目標控制器。</block>
+  <block id="c419a0989b573ac4bc7b6e0433d58393" category="summary">對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe Qualified Name（NQN）。</block>
   <block id="44b571f6be070a06b9777317764bc05b" category="image-alt">NVMe over TCP 連接埠識別碼</block>
   <block id="0c0ba917fcdd9bb8fde2e9e5229defd9" category="section-title">步驟 2：設定 NVMe/TCP 交換器</block>
-  <block id="f87b3267ecad9001b8b47890ed68857b" category="paragraph">您根據廠商針對 NVMe over TCP 的建議設定交換器。這些建議可能包括組態指令和程式碼更新。</block>
-  <block id="58e93321262e65bd48808ffc426b1e14" category="paragraph">本工作說明為 NVMe over TCP 設定交換器的一般步驟。如需具體說明，請參閱交換器廠商的文件。</block>
+  <block id="f87b3267ecad9001b8b47890ed68857b" category="paragraph">您根據廠商針對 NVMe over TCP 的建議設定交換器。這些建議可能包括組態指令以及程式碼更新。</block>
+  <block id="58e93321262e65bd48808ffc426b1e14" category="paragraph">本工作說明設定交換器以使用 NVMe over TCP 的一般步驟。如需特定指示，請參閱交換器廠商的文件。</block>
   <block id="7decec3de590a507e16d6eaf4fa01f35" category="list-text">為了實現高可用度，請使用兩個分隔的網路。請確保將 NVMe over TCP 流量隔離到分隔的網段。</block>
-  <block id="6710f7fe44866e14a5ee3a604056435a" category="paragraph">您可以根據資料儲存設備要求，透過多種方式設定 NVMe over TCP 網路。請諮詢您的網路管理員，以取得為您的環境選擇最佳組態的建議。</block>
-  <block id="c5da3fe030f4f5c7c959160f4a75d434" category="paragraph">本工作說明針對 NVMe over TCP 設定網路的一般步驟。如需特定指示，請參閱交換器廠商的文件。</block>
+  <block id="6710f7fe44866e14a5ee3a604056435a" category="paragraph">您可以根據資料儲存設備要求，透過多種方式設定 NVMe over TCP 網路。請諮詢您的網路管理員，以取得選擇最適合您環境的組態的建議。</block>
+  <block id="c5da3fe030f4f5c7c959160f4a75d434" category="paragraph">本工作描述設定 NVMe over TCP 網路的一般步驟。如需特定指示，請參閱交換器廠商的文件。</block>
   <block id="94a77447472aa681a4d37475a0deccad" category="list-text">交換器已設定為用於 TCP 流量。</block>
-  <block id="160ebe774b6303908823e8e9922be75d" category="paragraph">在規劃 NVMe over TCP 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每部伺服器支援的最大 TCP NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多路徑。</block>
-  <block id="413935435e8cc6ee7dd50f26ccc5ccf0" category="paragraph">為確保良好的多重路徑組態，請為 NVMe over TCP 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠群組放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。</block>
+  <block id="160ebe774b6303908823e8e9922be75d" category="paragraph">在規劃基於 TCP 的 NVMe 連網時，請記住，<block ref="adcd7e293fed259eb732757ed512268b" category="inline-link-rx"></block> 指出每部伺服器支援的最大 TCP NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多的路徑。</block>
+  <block id="413935435e8cc6ee7dd50f26ccc5ccf0" category="paragraph">為確保良好的多路徑組態，請為 NVMe over TCP 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠群組放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。</block>
   <block id="6e6d848c003763946564868294d6967f" category="paragraph">您可以使用 SANtricity System Manager 介面在陣列側設定 NVMe over TCP 連網。</block>
   <block id="fe7f38b30d9933f38f6a600f597be6d8" category="paragraph">本工作介紹如何從 SANtricity System Manager 的「控制器和元件」頁面存取 NVMe over TCP 連接埠組態。您也可以從 SANtricity System Manager 中的「設定 NVMe over TCP 連接埠」頁面存取該組態。</block>
   <block id="2f37a37a5f1c74f185e540420922dbdf" category="list-text">按一下要設定 NVMe over TCP 連接埠的控制器。</block>
   <block id="d6c296c293f746ecbf96df56e954fffb" category="paragraph">「設定 NVMe over TCP 連接埠」對話方塊開啟。</block>
   <block id="1513c01139575a8534b12d7d47978f29" category="paragraph">在主機端設定 NVMe over TCP 連網，即可讓 VMware NVMe over TCP 儲存設備介面卡啟動器與陣列建立工作階段。</block>
   <block id="fde3a7c70695a509a40cb9aabcdb2c79" category="list-text">識別 TCP 網路介面卡並記錄 vmnic 配對的上行鏈路。</block>
-  <block id="03bed5a258d1ffcfc9d0a3abeb178de9" category="paragraph">主機上的網路介面卡命名為 vmnicN，其中 N 是用於識別網路介面卡的唯一編號，例如 vmnic0、vmnic1 等。您可以從 ESXi 主機的「連網」下檢視實體介面卡，或是從代管 vCenter 的清單中選取 ESXi 主機後，從「設定」標籤來檢視。</block>
+  <block id="03bed5a258d1ffcfc9d0a3abeb178de9" category="paragraph">主機上的網路介面卡命名為 vmnicN，其中 N 是用於識別網路介面卡的唯一編號，例如 vmnic0、vmnic1 等。可以從 ESXi 主機的「連網」下檢視實體介面卡，或在從託管 vCenter 的清單中選取 ESXi 主機後，從「設定」索引標籤中檢視。</block>
   <block id="99d34b61f8c1fb79419b807c55ce8384" category="list-text">使用 vSphere 標準交換器為 TCP 適配器配置 VMkernel 連接埠綁定。</block>
   <block id="f240a82ef2dfc2550a689937f8b80681" category="inline-link-macro">設定 TCP 介面卡的 VMkernel 繫結</block>
   <block id="1b54772fd850933516f8e54588a858c4" category="paragraph">如需詳細資訊，請參閱 <block ref="ee595b4b67f26c723e3167db08deb717" category="inline-link-macro-rx"></block>。</block>
@@ -10856,40 +10664,40 @@
   <block id="38e873b40f9f1fadf5b58bb3e7881a0a" category="paragraph">如需詳細資訊，請參閱 <block ref="83ec1ea21d3b4612b4378c8e0322370e" category="inline-link-macro-rx"></block>。</block>
   <block id="35364a0d878a8e2835e056f68bbe94ca" category="list-text">新增用於透過 TCP 實現 NVMe 的 NVMe 控制器。</block>
   <block id="85711dc46edb07fe18d562b7bd2afd62" category="paragraph">如需詳細資訊，請參閱 <block ref="138a9b696f8791e3b3cb78426f306288" category="inline-link-macro-rx"></block>。</block>
-  <block id="6ffa0472c7a35ad33e212ebdffd65a85" category="paragraph">在這個例子中，NVMe over TCP 的目標 IP 位址是 192.29.11.111。</block>
-  <block id="6ecdef344e2ba5fc1740960e5ecc14b7" category="list-text">從每台主機的啟動器位址（用於 NVMe over TCP 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over TCP 連接埠發出 <block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block> 命令。在組態中的每台主機伺服器上執行此行動，並根據需要變更 IP 位址。</block>
-  <block id="ef85308abea9690943da10064f1e07e0" category="list-text">如果步驟 5 探索失敗，請返回 NVMe over TCP 主機端連網組態程序，以完成新增目標控制器。</block>
+  <block id="6ffa0472c7a35ad33e212ebdffd65a85" category="paragraph">在此範例中，NVMe over TCP 目標 IP 位址是 192.29.11.111。</block>
+  <block id="6ecdef344e2ba5fc1740960e5ecc14b7" category="list-text">從每台主機的啟動器位址（用於 NVMe over TCP 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over TCP 連接埠發出<block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block>命令。在組態中的每台主機伺服器上執行此行動，並根據需要變更 IP 位址。</block>
+  <block id="ef85308abea9690943da10064f1e07e0" category="list-text">如果步驟 5 探索失敗，請返回 NVMe over TCP 主機端連網組態程序以完成新增目標控制器。</block>
   <block id="1a3d4bf2d05228be4c3d309c7db17ca9" category="paragraph">協定：Fibre Channel（FCP）</block>
   <block id="e245ffdba090a65d99fe22496755d699" category="paragraph">協定：基於 RoCE 的 NVMe（基於融合乙太網路的 RDMA）</block>
   <block id="5c8d1d56a6d63811036fc4659d525bcc" category="list-text">您使用的是支援 RDMA 流量的乙太網路交換器</block>
-  <block id="0a0f36408aafa560030d26abed28dbe8" category="list-text">您已將乙太網路交換器設定為使用基於區分服務代碼點（DSCP）的優先權流程控制（PFC）以進行無損連網</block>
+  <block id="0a0f36408aafa560030d26abed28dbe8" category="list-text">您已將乙太網路交換器設定為使用基於區分服務代碼點（DSCP）的優先權流程控制（PFC）來進行無損連網</block>
   <block id="be77df4826f64e608be38045783a949f" category="list-text">您使用的 RDMA 驅動程式和韌體版本如<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>中所列。</block>
   <block id="300cb1a4edfd504d648463f37c29fa1e" category="paragraph">協定：NVMe over TCP</block>
   <block id="9bf07a082871b5b2bde5446d60b3cb8c" category="list-text">您使用的是支援 TCP 流量的乙太網路交換器</block>
-  <block id="ae0618e767935a9a60ed82f649815c98" category="list-text">您已依照廠商對 TCP 的建議設定了乙太網路交換器。</block>
-  <block id="4d1590193cfe7b56c0d47eaea67c5458" category="list-text">您使用的是<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>中所列的網路驅動程式與韌體版本。</block>
-  <block id="8351605a674a1e220afb90ad54d8bc3a" category="paragraph">圖中顯示了一台主機直接連接到 E 系列儲存陣列，並採用備援連線（假設使用 4 連接埠 SAS HBA）。第一條備援連線以紅線表示；第二條備援連線以藍線表示。連接埠數量取決於主機連接埠數量。您可能只有 2 個主機連接埠。在這種情況下，建議至少使用第一條備援連線。</block>
+  <block id="ae0618e767935a9a60ed82f649815c98" category="list-text">您已依照廠商對 TCP 的建議設定乙太網路交換器。</block>
+  <block id="4d1590193cfe7b56c0d47eaea67c5458" category="list-text">您使用的網路驅動程式和韌體版本如<block ref="49d81d143d5c8b402603532056154481" category="inline-link-rx"></block>中所列。</block>
+  <block id="8351605a674a1e220afb90ad54d8bc3a" category="paragraph">圖中顯示了一台主機直接連接到 E 系列儲存陣列，並採用備援連線（假設使用 4 連接埠 SAS HBA）。第一條備援連線以紅線表示；第二條備援連線以藍線表示。連接埠數量取決於主機連接埠數量。您可能只有 2 個主機連接埠。在這種情況下，建議至少採用第一條備援連線。</block>
   <block id="c5daa80fdfc0697fe66e2de622db250e" category="paragraph">主機（啟動器）連接埠 3 連接到控制器 A 的連接埠 1</block>
   <block id="8eb6fad89aa77b3287c53971fabefc71" category="paragraph">主機（啟動器）連接埠 4 連接到控制器 B 的連接埠 1</block>
-  <block id="628b72f1d2259b1b58950ca8c6b429d9" category="section-title">步驟 2：決定 SAS 主機識別碼</block>
+  <block id="628b72f1d2259b1b58950ca8c6b429d9" category="section-title">步驟 2：確定 SAS 主機識別符</block>
   <block id="c8670f3f57f0c94c21a0b61627842a29" category="paragraph">使用 esxcli 或 HBA 工具尋找 SAS 位址。</block>
-  <block id="0e3de7fd1d7f38456be4db276c14a068" category="list-text">記錄啟動器 SAS 位址識別碼（UID 格式為 - sas.&lt;SAS_Address&gt;）。輸出將類似於此範例：</block>
+  <block id="0e3de7fd1d7f38456be4db276c14a068" category="list-text">記錄啟動器 SAS 位址識別碼（UID，格式為 - sas.&lt;SAS_Address&gt;）。輸出將類似於此範例：</block>
   <block id="49001880f6008623486bf7471777e1e9" category="paragraph">在上面的範例中，UID 只會顯示基本 SAS 位址。對於其他連接埠，前 14 個字元保持不變，只有最後兩個字元會變化以代表不同的連接埠。通常，每個連接埠的最後一位數字都會遞增 1。在主機對映期間，通常只需知道基本 SAS 位址即可識別主機介面卡，因為 E 系列陣列會自動偵測並列出其他連接埠的 SAS 位址以供選擇。使用廠商的 HBA 工具可能有助於取得每個連接埠的 SAS 位址。</block>
   <block id="149fe12b42c558b60fb09877c7bb7bd9" category="admonition">另一個命令選項是<block ref="ed52beeb2ac8f895adb7b0bd91ca5181" prefix=" " category="inline-code"></block>。這將顯示更多詳細資訊以及以冒號分隔的十六進位格式的基本 SAS 位址。</block>
   <block id="692e1582dab34176765ec04f5269def1" category="summary">使用 VMware express 組態工作流程。</block>
-  <block id="e3d1595c80c041a7db5e7528b0fc51f4" category="image-alt">VMware Express 指南工作流程</block>
+  <block id="e3d1595c80c041a7db5e7528b0fc51f4" category="image-alt">VMware express 指南工作流程</block>
   <block id="83abb6afcb95779460030d1a75567f53" category="inline-link">_VMware 相容性指南_</block>
-  <block id="82209fdd6dda48ca82f16597b1b52c6f" category="list-text">每個 HBA 廠商都有特定的開機程式碼和韌體更新方法。這些方法可能包括使用 vCenter 外掛程式或在 ESXi 主機上安裝 CIM 供應商。vCenter 外掛程式可用於取得廠商特定 HBA 的資訊。請參閱廠商網站的支援區段，以取得更新 HBA 開機程式碼或韌體所需的指示和軟體。請參閱<block ref="d237dedff45cbd32bae2359b6e551ac2" category="inline-link-rx"></block>或 HBA 廠商的網站，以取得正確的開機程式碼或韌體。</block>
-  <block id="98300a5ca768b2d65f3877093ac4713c" category="list-text">檢閱與所選組態相關的警示與資訊，以瞭解任何特定作業系統、客體作業系統、HBA 或其他可能需要套用於您組態的相關設定或資訊。</block>
+  <block id="82209fdd6dda48ca82f16597b1b52c6f" category="list-text">每個 HBA 廠商都有特定的開機程式碼和韌體更新方法。這些方法可能包括使用 vCenter 外掛程式或在 ESXi 主機上安裝 CIM 供應商。vCenter 外掛程式可用於取得有關廠商特定 HBA 的資訊。請參閱廠商網站的支援區段，以取得更新 HBA 開機程式碼或韌體所需的說明和軟體。請參閱<block ref="d237dedff45cbd32bae2359b6e551ac2" category="inline-link-rx"></block>或 HBA 廠商的網站，以取得正確的開機程式碼或韌體。</block>
+  <block id="98300a5ca768b2d65f3877093ac4713c" category="list-text">檢閱與所選組態相關的警示與資訊，以瞭解可能需要套用至您組態的任何特定作業系統、客體作業系統、HBA 或其他相關設定或資訊。</block>
   <block id="a7c815fafe60ae637d38216fa6300395" category="paragraph">FCP</block>
   <block id="b0200b682ac58d839e945538eef9dd59" category="paragraph">NVMe over FC</block>
   <block id="ea8dc3b3aa6e8aa3018b658cea59ba6d" category="paragraph">遠端直接記憶體存取 (RDMA) 驅動程式、韌體和開機程式碼</block>
   <block id="554dc438e17c2b78f130df1fdb49a525" category="doc">在 Windows 系統上使用 SANtricity System Manager 設定 E 系列儲存系統</block>
-  <block id="2f9af9626a0cad07dd41646304d8dc33" category="summary">使用動態主機設定協定（DHCP）在 Windows 快速方法中提供 IP 位址。</block>
-  <block id="788966ab5b9fc01e74ac585ea22adcba" category="doc">在 E 系列中為 Windows 主機使用 DHCP 設定 IP 位址</block>
-  <block id="6699cd5b0633625db05fd846be2726f1" category="doc">為 E 系列 Windows 主機設定多重路徑軟體</block>
+  <block id="2f9af9626a0cad07dd41646304d8dc33" category="summary">使用動態主機組態協定（DHCP）在 Windows 快速方法中提供 IP 位址。</block>
+  <block id="788966ab5b9fc01e74ac585ea22adcba" category="doc">在 E 系列中使用 DHCP 為 Windows 主機設定 IP 位址</block>
+  <block id="6699cd5b0633625db05fd846be2726f1" category="doc">為 E 系列中的 Windows 主機設定多重路徑軟體</block>
   <block id="246b45ec481fd96520e092c60fc46f69" category="doc">在 E 系列 Windows 主機上設定儲存設備</block>
-  <block id="304b1af71dc7a528a491d9dd846d2d80" category="doc">在 E 系列 Windows 主機上探索儲存設備</block>
+  <block id="304b1af71dc7a528a491d9dd846d2d80" category="doc">在 E 系列的 Windows 主機上探索儲存設備</block>
   <block id="263d9cebcd297c0fec6f8f4d0ae6e628" category="doc">為 E 系列中的 Windows 主機設定 Fibre Channel 連線</block>
   <block id="dee7d34c5a13951ddd3d0012b2fbdabd" category="doc">E 系列中的 Windows Express 組態工作流程</block>
   <block id="982c21453f712f88f1c1b4e7f336314e" category="doc">在 E 系列 Windows 主機上安裝適用於 SMcli 的 SANtricity Storage Manager</block>
@@ -10899,21 +10707,21 @@
   <block id="11f5538433544914ae8e87c30e7ea9c4" category="doc">E 系列 Windows 組態工作流程</block>
   <block id="7da4952f3bcbfb3aa1bd454b332ca52b" category="doc">驗證 E 系列 Windows 主機上的儲存設備存取</block>
   <block id="0c98285e8321ba8d60e7cf2b212dd6ee" category="doc">本 E 系列文件包含的內容</block>
-  <block id="5c217d0ce4a792dc3b170f1ef68bc1cc" category="list-text">EF300C 系列 —— 入門級全快閃，高密度 NVMe</block>
+  <block id="5c217d0ce4a792dc3b170f1ef68bc1cc" category="list-text">EF300C 系列 -- 入門級全快閃，高密度 NVMe</block>
   <block id="d1e2f6186432038e17614d3608164388" category="list-text">EF600C 系列 -- 中階全快閃，高密度 NVMe</block>
   <block id="c9a267d11348291129c1b90777ab8021" category="list-text">E2800 系列（停止供貨）-- 入門級混合式</block>
   <block id="bd69d1be7bafcf364fb571731382ccf3" category="list-text">EF280 系列（停止供貨）-- 入門級全快閃</block>
-  <block id="592a531a7c45621d2bfcbba779e4b670" category="list-text">E5700 系列（停止供貨）-- 中階混合</block>
+  <block id="592a531a7c45621d2bfcbba779e4b670" category="list-text">E5700 系列（停止供應）-- 中階混合</block>
   <block id="bbde88e564e45445733d947ae2561b6e" category="list-text">EF570 系列（停止供貨）-- 中階全快閃</block>
-  <block id="bfb835fd9ec58b8474477e4a8c72d7a3" category="admonition">對於 30TB 和 60TB 磁碟機，EF50 僅支援使用動態磁碟資源池，不支援傳統 RAID。</block>
+  <block id="bfb835fd9ec58b8474477e4a8c72d7a3" category="admonition">對於 30TB 和 60TB 磁碟機，EF50 僅支援動態磁碟池，不支援傳統 RAID。</block>
   <block id="c897a7c4b4a4469260425c32af97a8ab" category="list-text">如果在系統開機期間有足夠的未指派磁碟機，則會自動建立單一磁碟資源池。</block>
   <block id="cf70338d56e4317ceba79dbca9032b1c" category="list-text">從 SANtricity 作業系統 12.10 開始，EF50 支援將 3.8 TB、7.6 TB 和 15.3 TB 的磁碟機與 30 TB 和 60 TB 的磁碟機混合使用。混合機櫃中的這些磁碟機將自動放入單一磁碟資源池，不支援 RAID。</block>
   <block id="69e5ff2e74434bc78cd3809a03034346" category="inline-link">刪除磁碟資源池 - SANtricity CLI 指南</block>
   <block id="537fe339133f0c4e2216008629939e00" category="inline-link">刪除資源池或 Volume 群組 - SANtricity System Manager 指南</block>
   <block id="b8304d67e795f1fd16db40f1f15f6b88" category="admonition">可透過 SANtricity System Manager 或 SANtricity CLI 刪除自動建立的磁碟資源池。如需詳細資訊，請參閱<block ref="d094f48021b7eced5892029830bc5156" category="inline-link-rx"></block>與<block ref="73ce565b7d3f6208d91bf6d4111db933" category="inline-link-rx"></block>。</block>
-  <block id="085b39d6600ce8ee378a1dd28b541dda" category="admonition">對於 30TB 和 60TB 磁碟機，EF80 僅支援動態磁碟池使用，不支援傳統 RAID。</block>
+  <block id="085b39d6600ce8ee378a1dd28b541dda" category="admonition">對於 30TB 和 60TB 磁碟機，EF80 僅支援使用動態磁碟池，不支援傳統 RAID。</block>
   <block id="a0dea8f086986ac7dcc898dd6e8fac35" category="paragraph">如果安裝了 SAS 擴充卡，則每個控制器用於主機連線功能的主機介面卡最大數量限制為兩個。</block>
-  <block id="d7024bb7cf465f710bfc5d78ff78e76d" category="list-text">從 SANtricity 作業系統 12.10 開始，EF80 支援將 3.8 TB、7.6 TB 和 15.3 TB 的磁碟機與 30 TB 和 60 TB 的磁碟機混合使用。混合機櫃中的這些磁碟機將自動放入單一不支援 RAID 的磁碟資源池。+ 注意：自動建立的磁碟資源池可以透過 SANtricity System Manager 或 SANtricity CLI 刪除。如需詳細資訊，請參閱<block ref="d094f48021b7eced5892029830bc5156" category="inline-link-rx"></block>和<block ref="73ce565b7d3f6208d91bf6d4111db933" category="inline-link-rx"></block>。</block>
+  <block id="d7024bb7cf465f710bfc5d78ff78e76d" category="list-text">從 SANtricity 作業系統 12.10 開始，EF80 支援將 3.8 TB、7.6 TB 和 15.3 TB 的磁碟機與 30 TB 和 60 TB 的磁碟機混合使用。混合機櫃中的這些磁碟機將自動放入單一不支援 RAID 的磁碟資源池。+ 注意：自動建立的磁碟資源池可以透過 SANtricity System Manager 或 SANtricity CLI 刪除。如需詳細資訊，請參閱<block ref="d094f48021b7eced5892029830bc5156" category="inline-link-rx"></block>與<block ref="73ce565b7d3f6208d91bf6d4111db933" category="inline-link-rx"></block>。</block>
   <block id="c56bfb1eb951d0095c85f49e382e1669" category="list-text">200Gb NVMe / TCP</block>
   <block id="af83f89242b9175f8ce778b32f00d2d8" category="open-title">E2800 型號（EOA）</block>
   <block id="83df5f4b2b9da365b5c77923ebcb910c" category="open-title">EF280 型號（EOA）</block>
@@ -10931,11 +10739,9 @@
   <block id="6a81d5b3c8194532121881d1b12b67e2" category="doc">將 E 系列 3040 40U 機櫃移至其永久位置</block>
   <block id="cf396c72923438d821813b985dee624e" category="doc">E 系列 3040 40U 機櫃規格</block>
   <block id="bfe0f1c41374a328970c4604ff73b66b" category="doc">準備移動 E 系列 3040 40U 機櫃</block>
-  <block id="484dd4f2ed6437d29296453a2826359a" category="list-text">如果您正在將 EF50 或 EF80 儲存系統連接至 SAS 擴充機櫃，作為新系統安裝的一部分，請參閱<block ref="7cb7d3cfe60b015d25d177439a2a01c3" category="inline-link-macro-rx"></block>程序。</block>
-  <block id="65d7c0d014df782697fc7f4a0afc2aac" category="doc">將主機連接至控制器或交換器的佈線（E 系列）</block>
-  <block id="d6313aac6bda6928b5691bdc2c4ceeb4" category="paragraph">當您的儲存系統控制器已有可用的 SAS 連接埠時，您可以在儲存系統其他元件仍通電的情況下新增磁碟機機櫃。您可以在不中斷使用者存取資料的情況下設定、重新配置、新增或遷移儲存系統容量。</block>
+  <block id="d6313aac6bda6928b5691bdc2c4ceeb4" category="paragraph">當您的儲存系統控制器已有可用的 SAS 連接埠時，您可以在儲存系統其他元件仍通電的情況下新增新的磁碟機機櫃。您可以在不中斷使用者資料存取的情況下設定、重新配置、新增或遷移儲存系統容量。</block>
   <block id="56eac742ee3aa6d2a66c9529d204df56" category="paragraph">有關支援鏡像功能的佈線資訊，請參閱<block ref="f720224b17ba12e9703e24420a9f3f4f" category="inline-link-rx"></block>。</block>
-  <block id="2bac2b11733e0bc3248775ec5527378d" category="doc">完成 E5724、EF570、EF280、E2812、E2824、DE212C 與 DE224C 的儲存系統設定與組態</block>
+  <block id="2bac2b11733e0bc3248775ec5527378d" category="doc">完成 E5724、EF570、EF280、E2812、E2824、DE212C 和 DE224C 的儲存系統設定與組態</block>
   <block id="a14eaf94dcdfd580ca065f5b1413841c" category="doc">連接 E5724、EF570、EF280、E2812、E2824、DE212C 和 DE224C 的電源線</block>
   <block id="d1c7f99511f1569663ae1dcf9ba35293" category="doc">安裝 E5724、EF570、EF280、E2812、E2824、DE212C 和 DE224C 的硬體</block>
   <block id="8e4497c1e60b9d74427c6ae7c4974f9e" category="doc">準備安裝 E5724、EF570、EF280、E2812、E2824、DE212C 和 DE224C 儲存系統</block>
@@ -10944,45 +10750,45 @@
   <block id="e726861b40cf7af3ea0527236389f41b" category="doc">安裝 E2860、E5760 和 DE460 的硬體</block>
   <block id="77d7e65dd52412a24991d65d969a5a7e" category="doc">準備安裝 E2860、E5760 和 DE460 儲存系統</block>
   <block id="83b25fbae1e9c61d691996747610a96b" category="doc">E2800 和 E5700 儲存系統的安裝和設定工作流程</block>
-  <block id="abc5c4664d05bccb8326a7076c5e846b" category="admonition">E2800 和 E5700 儲存系統已停產（EOA），不再銷售，但仍提供支援。本節資訊僅供參考。</block>
+  <block id="abc5c4664d05bccb8326a7076c5e846b" category="admonition">E2800 和 E5700 儲存系統為停止供貨（EOA）產品，已不再販售，但仍提供支援。本節資訊僅供參考。</block>
   <block id="d590e71a7e57c6a041a501d65c22a2c7" category="doc">了解 E2800 和 E5700 的安裝程序</block>
   <block id="b9b9903347ebd606ff16446c21fd30f5" category="list-text">註冊您的系統：</block>
   <block id="c3c90ade39dd1f6e7c4235a46aeefe30" category="admonition">您可以現在註冊系統，也可以稍後再註冊。稍後，系統啟動時，系統會提示您註冊系統。</block>
-  <block id="53ccae484eeb734c777e3d1973a60316" category="list-text">如果您還沒有帳戶，請在<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>建立帳戶。</block>
+  <block id="53ccae484eeb734c777e3d1973a60316" category="list-text">如果您還沒有帳戶，請至<block ref="1a36b59ecae7684863b79a0f690b6840" category="inline-link-rx"></block>建立帳戶。</block>
   <block id="f6be6cab52bd96b7d40b02ccdfd6b844" category="inline-link">如何註冊新系統</block>
-  <block id="bbdc20745a8bd122941f177dd518c19c" category="list-text">請依照 NetApp 知識庫文章<block ref="cd41b5456fe5e229f43f5b01bc271774" category="inline-link-rx"></block>中的說明註冊您的系統。</block>
-  <block id="ddda2f02fd168244055f1edfd586cc6f" category="paragraph">安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間鏡射、主機網路連線以及 SAS 機櫃（如果適用的話）。（您稍後會在「完成儲存系統設定」一節中連接管理連接埠。）</block>
-  <block id="6ee516f4a441f3d883b2b2c0222e4d3a" category="list-text">根據您的儲存系統型號和運行的 SANtricity 版本，支援的主機 I/O 模組類型有所不同。本程序中的佈線範例展示了乙太網路和 Fibre Channel （FC） 主機 I/O 模組。</block>
-  <block id="64a7dd2aa85de5fdef03ccd717fd2205" category="paragraph">若要查看儲存系統型號支援的所有主機 I/O 模組和插槽優先順序，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="bbdc20745a8bd122941f177dd518c19c" category="list-text">請依照 NetApp 知識庫文章中的說明註冊您的系統<block ref="cd41b5456fe5e229f43f5b01bc271774" category="inline-link-rx"></block>。</block>
+  <block id="ddda2f02fd168244055f1edfd586cc6f" category="paragraph">安裝 EF50 或 EF80 儲存系統硬體後，請連接控制器間鏡射、主機網路連線以及 SAS 機櫃（如果適用）。（您稍後會在「完成儲存系統設定」一節中連接管理連接埠。）</block>
+  <block id="6ee516f4a441f3d883b2b2c0222e4d3a" category="list-text">根據您的儲存系統型號和運行的 SANtricity 版本，支援的主機 I/O 模組類型有所不同。本程序中的佈線範例顯示了乙太網路和 Fibre Channel （FC） 主機 I/O 模組。</block>
+  <block id="64a7dd2aa85de5fdef03ccd717fd2205" category="paragraph">若要查看您的儲存系統型號支援的所有主機 I/O 模組和插槽優先順序，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="fd89821131f2145ef62656ce9b37250f" category="section-title">步驟 3：連接 SAS 機櫃連接線</block>
   <block id="4456efb686a6f99a2c6b940d72dfb1a6" category="paragraph">以下步驟顯示如何將控制器連接到一個 DE460C 機櫃或三個 DE460C 機櫃的堆疊。</block>
-  <block id="b5ce63e53b86e06c8adedafe4b8e006e" category="list-text">佈線範例顯示 DE460C 機櫃；但是，相同的佈線適用於所有支援的 SAS 機櫃。請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以了解支援的 SAS 機櫃。</block>
-  <block id="2c978bdca3b33c608154d3caf94f9524" category="list-text">如需儲存系統支援的最大機櫃數量以及所有佈線選項（例如光纖）的相關資訊，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="b5ce63e53b86e06c8adedafe4b8e006e" category="list-text">佈線範例顯示 DE460C 機櫃；不過，相同的佈線適用於所有支援的 SAS 機櫃。請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以了解支援的 SAS 機櫃。</block>
+  <block id="2c978bdca3b33c608154d3caf94f9524" category="list-text">有關您的儲存系統支援的最大機櫃數量以及所有佈線選項（例如光纖）的資訊，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block>。</block>
   <block id="e21772dbe085e5e1c6279bc19682e672" category="list-text">佈線程序顯示控制器在插槽 3 中有一個 SAS I/O 模組。這是 SANtricity 12.10 唯一支援的 SAS I/O 模組組態。</block>
   <block id="75e4206e43425ca3a2d459c1e6c44410" category="list-text">佈線示意圖中，藍色線表示控制器 A 的佈線，紅色線表示控制器 B 的佈線。</block>
-  <block id="72d885b36f3dabe9e44ce371442073d6" category="list-text">您使用儲存系統隨附的儲存設備纜線，其可能是下列纜線類型：</block>
+  <block id="72d885b36f3dabe9e44ce371442073d6" category="list-text">您使用儲存系統隨附的儲存設備纜線，纜線類型可能如下：</block>
   <block id="5e8bd9e3dbab26401b61204dc74109f0" category="paragraph">*mini-SAS HD 纜線*</block>
   <block id="0da5c300bf112189987b87a7f94a807d" category="image-alt">mini-SAS HD 纜線</block>
   <block id="26282732d05f6c7db7efcc498fbec877" category="open-title">選項 1：一個 DE460C 機櫃</block>
   <block id="8c071601d98f3858ee6ac210d73ca201" category="paragraph">將每個控制器透過電纜連接到 DE460C 機櫃上的每個 IOM12 模組，以便控制器具有到機櫃的 A 側路徑（IOMA）和 B 側路徑（IOMB）。</block>
-  <block id="527cdaddc7960d16b3b681a907a819e8" category="list-text">將纜線從控制器 A 連接埠 3a 連接至機櫃 IOMA 連接埠 1。</block>
+  <block id="527cdaddc7960d16b3b681a907a819e8" category="list-text">將控制器 A 連接埠 3a 連接至機櫃 IOMA 連接埠 1。</block>
   <block id="f21437f597bbc81c7de0a08629d9e8a9" category="list-text">將控制器 A 連接埠 3b 連接至機櫃 IOMA 連接埠 2。</block>
   <block id="2add8e07b94a6448da92a343fcb86eb0" category="list-text">將控制器 A 連接埠 3c 連接至機櫃 IOMB 連接埠 3。</block>
   <block id="94ca3c3663cd26acd8a70523249b52d4" category="list-text">將控制器 A 連接埠 3d 連接至機櫃 IOMB 連接埠 4。</block>
   <block id="21cd0a8b6367bdcc6ff737c6e4442c70" category="list-text">將控制器 B 連接埠 3a 連接至機櫃 IOMA 連接埠 3。</block>
-  <block id="50165d60e15f8c934324205b52968808" category="list-text">將控制器 B 連接埠 3b 連接至機櫃 IOMA 連接埠 4。</block>
+  <block id="50165d60e15f8c934324205b52968808" category="list-text">將控制器 B 連接埠 3b 接線至機櫃 IOMA 連接埠 4。</block>
   <block id="8e11e9a468e2afcd8451c9846d1dfecd" category="list-text">將控制器 B 連接埠 3c 連接至機櫃 IOMB 連接埠 1。</block>
   <block id="bdcaa4492f2466feab04197bd5c7c401" category="list-text">將控制器 B 連接埠 3d 連接至機櫃 IOMB 連接埠 2。</block>
-  <block id="588ba2b3a1aaea6d10471502dcfe9d01" category="inline-image-macro">將控制器連接埠接線至一個 DE460C 機櫃</block>
+  <block id="588ba2b3a1aaea6d10471502dcfe9d01" category="inline-image-macro">將控制器連接埠連接至一個 DE460C 機櫃</block>
   <block id="ae0fa6dd4afb64c8d362c78194d4cfdf" category="paragraph"><block ref="ae0fa6dd4afb64c8d362c78194d4cfdf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b51b1b8954120e9e2f8712db4198f1ab" category="open-title">選項 2：三個 DE460C 機櫃</block>
-  <block id="f0b1786db9be39904c3da4ff5ec6a100" category="paragraph">將三個機櫃連接在一起（機櫃到機櫃的連接），然後將每個控制器連接到機櫃堆疊的每一端（機櫃 1 和機櫃 3），以便控制器有 A 側路徑（IOMA）和 B 側路徑（IOMB）連接到機櫃堆疊。</block>
+  <block id="f0b1786db9be39904c3da4ff5ec6a100" category="paragraph">將三個機櫃連接在一起（機櫃到機櫃的連線），然後將每個控制器連接到機櫃堆疊的每一端（機櫃 1 和機櫃 3），以便控制器有 A 側路徑（IOMA）和 B 側路徑（IOMB）連接到機櫃堆疊。</block>
   <block id="d4063f6224c0da0e542e802447b82e7a" category="list-text">為 IOMA 路徑連接機櫃間的纜線：</block>
   <block id="bbf5b2656e01f9c4f318b4d9f3421757" category="list-text">將機櫃 1 IOMA 連接埠 1 連接至機櫃 2 IOMA 連接埠 4。</block>
   <block id="c7819e4a3730581c4e38774033e17b32" category="list-text">將機櫃 1 IOMA 連接埠 2 連接至機櫃 2 IOMA 連接埠 3。</block>
   <block id="008ab3dfa59aa1d7428ffca2f40095c6" category="list-text">將機櫃 2 IOMA 連接埠 1 連接至機櫃 3 IOMA 連接埠 4。</block>
   <block id="600eb8754ea3d94de02633627101eb48" category="list-text">將機櫃 2 IOMA 連接埠 2 連接至機櫃 3 IOMA 連接埠 3。</block>
-  <block id="65b3c76594d94f3eb5bf78e02132b04b" category="list-text">為 IOMB 路徑連接機櫃間連線：</block>
+  <block id="65b3c76594d94f3eb5bf78e02132b04b" category="list-text">為 IOMB 路徑連接機櫃間電纜：</block>
   <block id="b332fd2168207fa2b1b522f30c07b8ca" category="list-text">將機櫃 1 IOMB 連接埠 1 連接至機櫃 2 IOMB 連接埠 3。</block>
   <block id="c0b7621cecd4ec9ff6495b8b5f48c874" category="list-text">將機櫃 1 IOMB 連接埠 2 連接至機櫃 2 IOMB 連接埠 4。</block>
   <block id="6d54ba1f6a50d1e91bbd68587d34da30" category="list-text">將機櫃 2 IOMB 連接埠 1 連接至機櫃 3 IOMB 連接埠 3。</block>
@@ -10992,7 +10798,7 @@
   <block id="6ffeb33d2f056fc41292ef83078bdfd6" category="list-text">將控制器 A 連接埠 3b 連接至機櫃 3 IOMA 連接埠 2。</block>
   <block id="8112ca3c210ca9bb41643eae8f86ac59" category="list-text">將控制器 A 連接埠 3c 連接至機櫃 1 IOMB 連接埠 3。</block>
   <block id="b5a794131ce57031822e078ed6038235" category="list-text">將控制器 A 連接埠 3d 連接至機櫃 1 IOMB 連接埠 4。</block>
-  <block id="50e259f68ad665b46eef7ba5802add93" category="list-text">將控制器 B 連接至機櫃 1（IOMA 路徑）和 3（IOMB 路徑）：</block>
+  <block id="50e259f68ad665b46eef7ba5802add93" category="list-text">將控制器 B 連接至機櫃 1（IOMA 路徑）與 3（IOMB 路徑）：</block>
   <block id="cffddc07d0b45f1073cba98ad46cd305" category="list-text">將控制器 B 連接埠 3a 連接至機櫃 1 IOMA 連接埠 3。</block>
   <block id="8b7619bc551a9488000e1c80eef50219" category="list-text">將控制器 B 連接埠 3b 連接至機櫃 1 IOMA 連接埠 4。</block>
   <block id="e16ddec4a052a9bd3add51dd47a5caf8" category="list-text">將控制器 B 連接埠 3c 連接至機櫃 3 IOMB 連接埠 1。</block>
@@ -11003,83 +10809,82 @@
   <block id="e88e6fcd2f7db318a47a801d86fcbe2b" category="paragraph">完成儲存系統的佈線後，<block ref="d0c3b85257c0c216b48d88ca57aa0056" category="inline-link-macro-rx"></block>。</block>
   <block id="8447a23d77e05e67b2c5c54f21f2a282" category="paragraph">為 EF50 或 EF80 儲存系統佈線後，請開啟機櫃電源並指派機櫃 ID（如果適用），然後開啟控制器電源。</block>
   <block id="07fcfe649f6429bd8d372db5d2a496c3" category="section-title">步驟 1：開啟機櫃電源並指派機櫃 ID</block>
-  <block id="7ca755a8f6cc07b6b9e0fb7e1b6c9a09" category="list-text">首先將電源線連接到機櫃，用電源線固定器將其固定到位，將電源線連接到不同電路上的電源，然後開啟每個電源供應（位於機櫃背面）上的電源開關，即可為機櫃開啟電源。</block>
-  <block id="58664d0a6ee33336810fe2050bd807f7" category="paragraph">機櫃通電後會自動開啟電源並開機。</block>
+  <block id="7ca755a8f6cc07b6b9e0fb7e1b6c9a09" category="list-text">首先將電源線連接到機櫃，用電源線固定器將其固定到位，然後將電源線連接到不同電路上的電源，最後打開每個電源供應（位於機櫃背面）上的電源開關，即可為機櫃通電。</block>
+  <block id="58664d0a6ee33336810fe2050bd807f7" category="paragraph">機櫃通電後會自動啟動。</block>
   <block id="b1ea51baf980ec6bb00ca1b7b419d506" category="section-title">步驟 2：開啟控制器電源</block>
   <block id="998bb6a007aab18ea998af1f37d99bb4" category="paragraph">在將機櫃通電並指派唯一 ID 後，將控制器通電。</block>
-  <block id="2a1404c193a3d395c9d8e7b7febb6392" category="list-text">使用 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 確認您的站台符合儲存系統的環境與電氣需求。</block>
-  <block id="de70d03bb040b5b61578c1f76450d6ec" category="paragraph">如有需要，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以取得儲存系統的確切尺寸。</block>
-  <block id="7d0a6f9f5205f1af1b78ac9fca8c5851" category="paragraph">如有需要，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以了解其他支援的纜線，並確認其用途。</block>
+  <block id="2a1404c193a3d395c9d8e7b7febb6392" category="list-text">使用 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 來確認您的站台符合儲存系統的環境與電氣要求。</block>
+  <block id="de70d03bb040b5b61578c1f76450d6ec" category="paragraph">如有需要，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以了解儲存系統的確切尺寸。</block>
+  <block id="7d0a6f9f5205f1af1b78ac9fca8c5851" category="paragraph">如有需要，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以了解其他支援的纜線並確認其用途。</block>
   <block id="df53f47a226bee8a643fbf508cbcb49a" category="admonition">您可以現在註冊儲存系統，也可以稍後註冊。稍後，系統啟動時，系統會提示您註冊系統。</block>
   <block id="576213bd95249480f13b425b55814881" category="list-text">請記下每個控制器的序號（SN）。</block>
   <block id="522f6d09fbbbe7fb90ce69e7a09b30fa" category="paragraph">您可以在以下位置找到序號：</block>
-  <block id="5bf09170685f77e7264aa00a9f36a5f0" category="paragraph">若要連接硬體，請將控制器彼此連接以啟用控制器間鏡射，這可確保系統完全備援，並用於快取鏡射和 I/O 傳輸；將控制器連接至您的主機網路；然後連接 SAS 擴充機櫃（如果適用）。</block>
-  <block id="f89d7290d380443d893672807480cdc4" category="paragraph">要啟動儲存系統，您需要先啟動機櫃並分配機櫃 ID（如果適用），然後再啟動控制器。</block>
+  <block id="5bf09170685f77e7264aa00a9f36a5f0" category="paragraph">若要連接硬體，請將控制器彼此連接以啟用控制器間鏡射，從而確保系統完全備援，並用於快取鏡射和 I/O 傳輸；將控制器連接到主機網路；然後連接 SAS 擴充機櫃（如果適用）。</block>
+  <block id="f89d7290d380443d893672807480cdc4" category="paragraph">若要啟動儲存系統，您必須先啟動機櫃並指派機櫃 ID（如果適用），然後再啟動控制器。</block>
   <block id="271e0a681520c9e00264eeda74f3cace" category="doc">EF300 和 EF600 儲存系統的完整設定和組態</block>
   <block id="efdd5227c6127dffe5f62d0cbfdbcd37" category="doc">EF300 和 EF600 儲存系統的安裝和設定工作流程</block>
   <block id="d0749451671d38df408a56625f271c2e" category="doc">安裝 EF300 或 EF600 儲存系統的硬體</block>
   <block id="45a8592881ede2e843fdf5efa5e9cc21" category="doc">了解 EF300 和 EF600 儲存系統的安裝</block>
   <block id="87b105d11919d6f19bc871251435bb28" category="doc">為您的 EF300 或 EF600 儲存系統開啟控制器機櫃電源</block>
   <block id="8a42d9b6a1d55070f2bbe745a830a56c" category="doc">準備安裝您的 EF300 或 EF600 儲存系統</block>
-  <block id="10ef56d155b001d0a9693f0730d7b686" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以尋找該纜線並確認其用途。</block>
+  <block id="10ef56d155b001d0a9693f0730d7b686" category="paragraph">下表列出您可能會收到的纜線類型。如果您收到的纜線未列於表中，請參閱 <block ref="43b42c26c42f7c6fe4ef77f9f2ed17ff" category="inline-link-macro-rx"></block> 以尋找該纜線並確定其用途。</block>
   <block id="c53baf062a208cb78d5ae43b5ade9f7e" category="inline-link">12.10 版本說明</block>
   <block id="bacdc3a92924eaa9b34b524b4d2ce475" category="list-text"><block ref="bacdc3a92924eaa9b34b524b4d2ce475" category="inline-link-rx"></block></block>
   <block id="83b98e3079c52801f27e512b1f0edd8c" category="doc">完成 E2800 電池更換</block>
   <block id="6f3a8cab8efbb35f70eab922fe59d36c" category="doc">在 E2800 陣列中安裝新電池</block>
   <block id="db01df1f2847ebb85376501e0180cea2" category="doc">E2800 儲存系統的電池更換要求</block>
   <block id="a480319edc9f2002ed83c4c5c21a4ed8" category="doc">準備更換 E2800 電池</block>
-  <block id="c46fc7869401e2a53ff6511307c4d457" category="doc">將控制器機匣重新安裝到 E2800 陣列中</block>
+  <block id="c46fc7869401e2a53ff6511307c4d457" category="doc">將控制器機箱重新安裝到 E2800 陣列中</block>
   <block id="769fec57f6b68398c47a3d7b06445731" category="doc">從 E2800 陣列取出控制器外殼</block>
   <block id="9151024b2b0922898a9379f2605df7a3" category="doc">從 E2800 陣列移除故障電池</block>
   <block id="d919286516c1521783674af7020b1906" category="doc">更換 60 磁碟機 E2800 機櫃中的電源箱</block>
-  <block id="ccf5d3e1db8fd4d4d887b5dcccd21520" category="doc">更換 60 磁碟機 E2800 機櫃中的風扇機箱</block>
+  <block id="ccf5d3e1db8fd4d4d887b5dcccd21520" category="doc">更換 60 磁碟機 E2800 機櫃中的風扇箱</block>
   <block id="5dae3002acb278acca0f452218becef2" category="doc">E2800 儲存系統的機匣更換要求</block>
   <block id="674bb2e773a73d61d6e506ceada3c61e" category="doc">更換 E2800 12 磁碟機或 24 磁碟機機櫃的電源供應</block>
   <block id="6f99c2bf869754724bbfa956b07b7643" category="list-text">查看 *機櫃* 下拉式清單右側的電源 <block ref="34a51d44013a1ce73b6f6d4343cad0e8" category="inline-image-macro-rx" type="image"></block> 和風扇 <block ref="92142d8792a6161b2c79960b384e088a" category="inline-image-macro-rx" type="image"></block> 圖示，以判斷哪個機櫃的電源供應故障。</block>
   <block id="f68244fbd54cb620435b5ad5c6e50caf" category="doc">更換 E2800 雙工組態中的控制器</block>
   <block id="7179e58aaec5abc2cfec339341cdd4da" category="doc">E2800 控制器更換要求</block>
-  <block id="7ab5e1b53433469cd758dbb7e28985d1" category="doc">將第二個控制器機箱新增至 E2800 陣列</block>
+  <block id="7ab5e1b53433469cd758dbb7e28985d1" category="doc">在 E2800 陣列中加入第二個控制器機匣</block>
   <block id="47d35563b56d6105d76a1574063d06b3" category="doc">更換 E2800 單工組態中的控制器</block>
   <block id="cebd7c1ab00a0fd91d89ad77edaa1466" category="doc">更換 E2800 12 磁碟機或 24 磁碟機機櫃中的磁碟機</block>
   <block id="26880b2d2637eae31e3be8992704af7f" category="doc">更換 E2800 60 磁碟機機櫃中的磁碟機</block>
   <block id="f61757b3e656cda9e8e3e8ed07d3565a" category="doc">更換 E2800 60 磁碟機機櫃中的磁碟機抽屜</block>
   <block id="59003c3d74e48580a9fe8d840a5cee24" category="doc">熱新增配備 IOM12 或 IOM12B 模組的 E2800 磁碟機機櫃</block>
   <block id="b28450b052fc94243cfa174fd371d44c" category="doc">E2800 磁碟機更換要求</block>
-  <block id="1b518992d1bd72c9818efea1213a6f81" category="doc">在 E2800 陣列中新增主機介面卡</block>
+  <block id="1b518992d1bd72c9818efea1213a6f81" category="doc">將主機介面卡新增至 E2800 陣列</block>
   <block id="63577367b370e694ae9bff58d2720d35" category="doc">更換 E2800 陣列主機介面卡的要求</block>
   <block id="39e8ce9825f33a6fe336ff6b0c9a8567" category="doc">更換 E2800 陣列中的主機介面卡</block>
   <block id="4df53a8a7e0bdf3757591ede9e3cff68" category="doc">升級 E2800 陣列中的主機介面卡</block>
-  <block id="5127d6da7eec909932d222f9ac4f36d6" category="doc">傳送關於文件的意見並接收更新通知</block>
+  <block id="5127d6da7eec909932d222f9ac4f36d6" category="doc">傳送有關文件的意見並接收更新通知</block>
   <block id="d51cfd2d0129096396f73ccf7e2981de" category="doc">變更 E2800 陣列上的主機協定</block>
   <block id="453825c762b1f0e39608515f5d0bc659" category="doc">完成 E2800 陣列的主機協定轉換</block>
-  <block id="f9015280d50f2ebbf19fc0373386a75b" category="list-text">點擊交換器並選擇 *設定 iSCSI 連接埠*。</block>
+  <block id="f9015280d50f2ebbf19fc0373386a75b" category="list-text">按一下交換器並選取 *設定 iSCSI 連接埠*。</block>
   <block id="fcd3b4e6e5e7f0cbeb9e4ff8b9fecfc0" category="doc">更改 E2800 陣列主機連接埠協定的要求</block>
   <block id="faebf9e38b82339b054dc42b4622bc99" category="doc">維護 E2800 儲存系統的硬體</block>
-  <block id="6fcd6f2e14e2a3729f16afbc87ecc703" category="admonition">E2800 儲存系統為停止供貨（EOA）產品，不再提供購買，但仍提供支援。本節資訊僅供參考。</block>
-  <block id="5d0bf8f3e38bbb8f56b1ea5e6a81f586" category="paragraph">更換 E4060 控制器機櫃或 DE460C 磁碟機機櫃中故障的磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充機櫃）的電源。</block>
-  <block id="68f98bef4694ddbcc6959babd7a0ca54" category="paragraph">確定是否可以在磁碟機機櫃處於線上時執行更換程序，或者是否需要停止主機 I/O 活動並關閉任何已通電的機櫃電源（離線執行程序）。</block>
-  <block id="e2ab3c26168469989bb08bd3847e0733" category="list-text">從 SANtricity System Manager 的左側面板中，選擇 menu:儲存設備[進行中的作業]。</block>
-  <block id="25ac4eaa44e2358a577cf614c451b7b6" category="paragraph">以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新裝上前擋板，重新接通電源（如果需要），然後手動重建磁碟機（如果需要）。</block>
-  <block id="ce1cc448d2a10fcf81de9e2c65f58915" category="list-text">選擇 menu:硬體[控制器與元件] 以顯示控制器。</block>
-  <block id="10a79a27b98b85ffbb657dc8fa419254" category="list-text">選取 menu:Hardware[Controller &amp; Components]。</block>
-  <block id="d3c5f8dc0dd962d9fd52d780c18d38c1" category="list-text">選取 *儲存設備 › Volume*。在 *所有 Volume* 頁面中，確認 Volume 已分散至其偏好的擁有者。選取 *省略符號圖示 › 變更 Volume 所有權* 以檢視 Volume 擁有者。</block>
+  <block id="6fcd6f2e14e2a3729f16afbc87ecc703" category="admonition">E2800 儲存系統已停產（EOA），不再銷售，但仍提供支援。本節資訊僅供參考。</block>
+  <block id="5d0bf8f3e38bbb8f56b1ea5e6a81f586" category="paragraph">更換 E4060 控制器機櫃或 DE460C 磁碟機機櫃中故障磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充機櫃）的電源。</block>
+  <block id="68f98bef4694ddbcc6959babd7a0ca54" category="paragraph">確定您是否可以在磁碟機機櫃處於線上時執行更換程序，或者是否需要停止主機 I/O 活動並關閉任何已開啟電源的機櫃（離線執行程序）。</block>
+  <block id="e2ab3c26168469989bb08bd3847e0733" category="list-text">從 SANtricity System Manager 的左側面板中，選取 menu:儲存設備[進行中的作業]。</block>
+  <block id="25ac4eaa44e2358a577cf614c451b7b6" category="paragraph">以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新安裝前擋板，重新接通電源（如果需要），然後手動重建磁碟機（如果需要）。</block>
+  <block id="10a79a27b98b85ffbb657dc8fa419254" category="list-text">選擇 menu:硬體［控制器 &amp; 元件］。</block>
+  <block id="d3c5f8dc0dd962d9fd52d780c18d38c1" category="list-text">選擇 *儲存設備 › Volume*。在 *所有 Volume* 頁面中，確認 Volume 已分配給其偏好的擁有者。選擇 *省略號圖示 › 變更 Volume 所有權* 以檢視 Volume 擁有者。</block>
   <block id="a7a8c5b976c41958e9283c1de3ca54f8" category="list-text">如果所有 Volume 均未傳回，則必須手動傳回 Volume。前往 *省略號圖示 › 重新分配 Volume*。</block>
-  <block id="ad925156eaaf8f98b68985d7496650f6" category="list-text">選擇選單：硬體［控制器和組件］。</block>
+  <block id="ad925156eaaf8f98b68985d7496650f6" category="list-text">選取 menu:硬體［控制器與元件］。</block>
   <block id="3ceafaf5257214df67878af5c9892a16" category="list-text">選擇*省略號圖示 › 重新分配 Volume*。</block>
-  <block id="683bceb17c9342f149f1c7be2e652240" category="list-text">從「所有 Volume」標籤中，選擇 *省略號圖示 › 變更所有權*。</block>
-  <block id="0a622335cb737c907b84de944cd1c783" category="list-text">選擇 menu:硬體[控制器與組件]</block>
-  <block id="781df08e36e39483632f41f10a05ee00" category="list-text">選取 *儲存設備 › Volume*。在 *所有 Volume* 頁面中，確認 Volume 已分散至其偏好的擁有者。選取 *省略號圖示 › 變更擁有權* 以檢視 Volume 擁有者。</block>
-  <block id="374873d886a52b30b89d3d8526373e3e" category="list-text">選擇 menu:硬體［磁碟機］。</block>
-  <block id="c8c971d434b63f335425d84b7b3db967" category="list-text">在 SANtricity System Manager 中，選取 menu:硬體[控制器與元件]。</block>
-  <block id="3e4ba062f9b4da7b96ee902b7021347e" category="list-text">在 SANtricity System Manager 中，選擇 menu:硬體[控制器和元件]，然後視需要向下捲動，即可看到新增的磁碟機機櫃。</block>
-  <block id="88cb2d49e6393547eb991ae1b4a3b954" category="list-text">找到帶有紅色圖示的機櫃後，選擇風扇罐或紅色風扇圖示。</block>
-  <block id="ccbb4c51b2338b1446ab6f5c577e437c" category="list-text">從 SANtricity System Manager 的首頁，選擇 menu:儲存設備[正在進行的操作]。</block>
+  <block id="683bceb17c9342f149f1c7be2e652240" category="list-text">在「所有 Volume」標籤中，選擇*省略號圖示 › 變更所有權*。</block>
+  <block id="0a622335cb737c907b84de944cd1c783" category="list-text">選擇選單：硬體［控制器與組件］</block>
+  <block id="781df08e36e39483632f41f10a05ee00" category="list-text">選取 *儲存設備 › Volume*。在 *所有 Volume* 頁面中，確認 Volume 已分配給其偏好的擁有者。選取 *省略號圖示 › 變更擁有權* 以檢視 Volume 擁有者。</block>
+  <block id="374873d886a52b30b89d3d8526373e3e" category="list-text">選擇選單：硬體［磁碟機］。</block>
+  <block id="c8c971d434b63f335425d84b7b3db967" category="list-text">在 SANtricity System Manager 中，選擇選單：硬體［控制器和元件］。</block>
+  <block id="3e4ba062f9b4da7b96ee902b7021347e" category="list-text">在 SANtricity System Manager 中，選擇選單：硬體［控制器和元件］，然後視需要向下捲動，即可看到新增加的磁碟機機櫃。</block>
+  <block id="88cb2d49e6393547eb991ae1b4a3b954" category="list-text">找到帶有紅色圖示的機櫃後，選擇風扇機匣或紅色風扇圖示。</block>
+  <block id="ccbb4c51b2338b1446ab6f5c577e437c" category="list-text">從 SANtricity System Manager 的首頁，選擇選單：儲存設備［進行中的作業］。</block>
   <block id="2e619d8dda1c511e94da078624ea794a" category="list-text">找到帶有紅色圖示的機櫃後，選擇電源箱或紅色電源圖示。</block>
   <block id="a00e54bd7ea8a12d17b3a05be1e39618" category="list-text">找到帶有紅色圖示的機櫃後，選擇任一電源供應。</block>
   <block id="6bac1eb1eaa2e8451ed6a11b00ea399f" category="doc">E5700 電池更換要求</block>
   <block id="9000e20dd5700484061e384db3564183" category="doc">更換 E5700 電池</block>
-  <block id="c1480ea807feb42e153a717609c47985" category="doc">更換 E5700 60 磁碟機機櫃中的風扇匣</block>
-  <block id="a71cd52769a1d8ffb2a89df1e52473e1" category="doc">E5700 機匣更換要求</block>
+  <block id="c1480ea807feb42e153a717609c47985" category="doc">更換 E5700 60 磁碟機機櫃中的風扇罐</block>
+  <block id="a71cd52769a1d8ffb2a89df1e52473e1" category="doc">E5700 機匣更換需求</block>
   <block id="0160d215228ba1f361e8238021daa125" category="doc">更換 E5700 60 磁碟機機櫃中的電源機匣</block>
   <block id="421d19ddc10fff93a2af026bdefba29e" category="doc">更換 E5700 24 磁碟機機櫃的電源供應</block>
   <block id="69c78aac7bce586dce02b0b91891c218" category="doc">更換 E5700 雙工組態中的控制器</block>
@@ -11087,24 +10892,23 @@
   <block id="251e71d1e630b88839947aff3c757315" category="doc">更換 E5700 24 磁碟機機櫃中的磁碟機</block>
   <block id="572447e16195fffe5df1b434188b891f" category="doc">更換 E5700 60 磁碟機機櫃中的磁碟機</block>
   <block id="2ac787e01dac445c3657709ac2b67272" category="doc">更換 E5700 的磁碟機抽屜</block>
-  <block id="cf14fe04e0162e2871464256bbd02694" category="doc">在 E5700 中熱新增配備 IOM12 或 IOM12B 模組的磁碟機機櫃</block>
+  <block id="cf14fe04e0162e2871464256bbd02694" category="doc">在 E5700 中熱新增帶有 IOM12 或 IOM12B 模組的磁碟機機櫃</block>
   <block id="1c2a97285cae1dd050062a699d839699" category="doc">更換 E5700 磁碟機的要求</block>
   <block id="852404c4b31a75b6b0d15f5aab53e0c6" category="doc">為 E5700 新增主機介面卡</block>
   <block id="95924b9d531945583e77dd4d8f40b88c" category="doc">更換 E5700 主機介面卡的要求</block>
   <block id="b7b5a6b6c73b4a59c4bdc931fadb1ac4" category="doc">更換 E5700 中的主機介面卡</block>
   <block id="bbc2f408851ce44f64edd6c5e8e20b0e" category="doc">升級 E5700 中的主機介面卡</block>
-  <block id="c6a662cf6c1cf2758091c8efde751679" category="doc">更改 E5700 中的主機協定</block>
+  <block id="c6a662cf6c1cf2758091c8efde751679" category="doc">變更 E5700 中的主機傳輸協定</block>
   <block id="245c044896ecd1672fd27464168b940e" category="doc">完成 E5700 的主機協定轉換</block>
   <block id="2f9bb7ad7a917b641dd82123cb356b59" category="doc">更改 E5700 主機連接埠協定的要求</block>
   <block id="626581bbf3b2966c3caac8e807f438ec" category="doc">維護 E5700 硬體</block>
   <block id="ff23fdf40390fadde1e8f98fdf539bd5" category="admonition">E5700 儲存系統已停產（EOA），不再銷售，但仍提供支援。本節資訊僅供參考。</block>
   <block id="4ab87809651c0f5a9bd1875faa265284" category="summary">對於 EF50 和 EF80 儲存系統，當磁碟機機櫃處於線上或離線時，您可以更換 DE460C 擴充磁碟機機櫃中的磁碟機抽屜。</block>
-  <block id="5203a85b5bc148b8b10f600f7a286d3f" category="doc">更換 DE460C - EF50 和 EF80 中的磁碟機抽屜</block>
-  <block id="b6f35db08c9d34c9c9564da0ff1ae97d" category="summary">EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供了靈活度，以增強網路連線能力與效能，並增加儲存容量。</block>
-  <block id="23702f27ce520fc887c40681359e071d" category="paragraph">您可以升級儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線能力，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。</block>
+  <block id="b6f35db08c9d34c9c9564da0ff1ae97d" category="summary">EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供靈活度，以增強網路連線與效能，並增加儲存容量。</block>
+  <block id="23702f27ce520fc887c40681359e071d" category="paragraph">您可以升級儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。</block>
   <block id="457da54eb993d9495f36c5448178240b" category="admonition">執行 SANtricity 12.10 或更新版本的儲存系統支援 SAS 擴充 I/O 模組。</block>
-  <block id="c12388cc4688a7b545cc718dcae13d6c" category="summary">您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。</block>
-  <block id="c8dd81bc79dee5fabf7f324c418439d5" category="paragraph">準備升級 I/O 模組，請安排停機維護所需時間、更新韌體、收集必要的工具和設備，並備份儲存系統的組態資料庫。</block>
+  <block id="c12388cc4688a7b545cc718dcae13d6c" category="summary">您可以升級 EF50 或 EF80 儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線能力，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。</block>
+  <block id="c8dd81bc79dee5fabf7f324c418439d5" category="paragraph">準備升級 I/O 模組，請安排停機維護所需時間，更新韌體，收集必要的工具和設備，並備份儲存系統的組態資料庫。</block>
   <block id="7ea3ee227ab2b5fc9e52744defc55838" category="paragraph">開啟兩個控制器的電源，檢查控制器之間的通訊是否已恢復，然後確認控制器是否正常運作。</block>
   <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">接下來</block>
   <block id="5ac2db2b4a633c49248658190b0e01e1" category="paragraph">儲存系統的 I/O 模組升級程序已完成。您可以恢復正常運作。</block>
@@ -11112,10 +10916,9 @@
   <block id="85f3280c9c04240b42f22f0a1ca35a19" category="paragraph">磁碟機抽屜是 DE460C 磁碟機機櫃的五個組件之一，最多可容納 12 個磁碟機。</block>
   <block id="b4946a13f7bd9b5128c1a15f788732ed" category="doc">更換 EF300 或 EF600 陣列中的電池</block>
   <block id="b8c264960cfa310c91fdb758d67f8d1f" category="doc">更換 EF300 或 EF600 陣列中的控制器</block>
-  <block id="ad66e8e94bdc6e0b8484ec0f1731a214" category="doc">更換 EF300 或 EF600 DIMM 的要求</block>
+  <block id="ad66e8e94bdc6e0b8484ec0f1731a214" category="doc">EF300 或 EF600 DIMM 更換的要求</block>
   <block id="a72ff7829a4f9f546d2271a20a4425b7" category="doc">更換 EF300 或 EF600 陣列中的 DIMM</block>
-  <block id="1189cb21dc60eef28050d18c365f6789" category="summary">對於 EF300 和 EF600 儲存系統，您可以在磁碟機機櫃處於線上或離線時，更換擴充 DE460C 磁碟機機櫃中的磁碟機抽屜。</block>
-  <block id="3edf83328388cfa89e604b5c584dd139" category="doc">更換 DE460C - EF300 和 EF600 中的磁碟機抽屜</block>
+  <block id="1189cb21dc60eef28050d18c365f6789" category="summary">對於 EF300 和 EF600 儲存系統，當磁碟機機櫃處於線上或離線時，您可以更換 DE460C 擴充磁碟機機櫃中的磁碟機抽屜。</block>
   <block id="0ab759916c30aece2d588afbb01ac411" category="doc">在 EF300 和 EF600 系統中熱新增 IOM12 或 IOM12B 磁碟機機櫃</block>
   <block id="c828d490cf7e0735951e87cd02825b42" category="doc">更換 EF300 陣列中的磁碟機</block>
   <block id="446c6fe138664e34a9f33cdd7ac5de63" category="doc">更換 EF600 陣列中的磁碟機</block>
@@ -11124,11 +10927,10 @@
   <block id="855aa5c35864e070ca7843920d5252eb" category="doc">EF300 和 EF600 系統的 HIC 升級需求</block>
   <block id="51bc6e836fe399f441fb770325571487" category="doc">更換 EF300 或 EF600 儲存系統中發生故障的 HIC</block>
   <block id="0fcb734b61ed8c1503d9cd9f4cb6ef67" category="admonition">更換相同傳輸協定類型的 HIC 時（例如，將 Fibre Channel HIC 更換為另一個 Fibre Channel HIC），EF300 和 EF600 儲存陣列無需斷電。</block>
-  <block id="027df802b190acde7d9e973cda9c33c2" category="list-text">選擇選單：儲存設備［Volume］。在 *所有 Volume* 頁面中，確認 Volume 已分配給其首選擁有者。選擇選單：省略號圖示［變更所有權］以檢視 Volume 擁有者。</block>
   <block id="d4d75ba85f727f12865fa8d7b3bf95eb" category="doc">升級 EF300 或 EF600 儲存系統中的 HIC</block>
   <block id="15267fce76928a47265adbb5fa8a9abc" category="doc">變更 EF300 或 EF600 儲存系統的主機傳輸協定</block>
   <block id="0f25dc31a5d74fda2e6e52ffa91d9cef" category="list-text">選擇 *支援資源* 標籤。</block>
-  <block id="aeda03254f008331feb869b95fa67c92" category="list-text">從 SANtricity System Manager ，選取 menu:硬體[控制器與元件]。</block>
+  <block id="aeda03254f008331feb869b95fa67c92" category="list-text">從 SANtricity System Manager 中選擇選單：硬體［控制器和元件］。</block>
   <block id="3e34b17a3c8deb49cda80eca3f2bb12f" category="doc">完成 EF300 或 EF600 儲存系統的主機傳輸協定轉換</block>
   <block id="5b0591a3885f3a278a4b3c233cc97deb" category="doc">EF300 或 EF600 儲存系統主機協定轉換需求</block>
   <block id="811f2c30605ff38e270d61df6fba0b2b" category="doc">EF300 和 EF600 系統的硬體維護</block>
@@ -11142,24 +10944,24 @@
   <block id="c39c1420e33ff7533f300e7e66231f28" category="floating-title">E4000、E2800 和 E5700 控制器型號</block>
   <block id="88f964212d8c31afd4f780fc10f00ebc" category="floating-title">EF600 和 EF300 控制器型號</block>
   <block id="dbd2d420447227f4ddb40125756c1987" category="paragraph">移除控制器機匣，以便更換新的控制器機匣。</block>
-  <block id="7bee202f14b7f6085e431dd076154f5c" category="paragraph">由於必須將 HIC 從舊控制器外殼中移除，因此必須從 HIC 連接埠移除所有 SFP。重新連接纜線時，您可以將這些 SFP 移至新的控制器外殼。</block>
+  <block id="7bee202f14b7f6085e431dd076154f5c" category="paragraph">由於必須將 HIC 從舊控制器機匣中移除，因此必須從 HIC 連接埠移除所有 SFP。重新連接纜線時，您可以將這些 SFP 移至新的控制器機匣。</block>
   <block id="deb545c1d91c230281584adc79d9ae08" category="doc">了解 E 系列控制器升級</block>
   <block id="df56150298054069a9ce9fd1ac3df4ab" category="doc">升級 SANtricity 軟體的前提條件</block>
   <block id="eae297fc85998311cb0af2015120f079" category="doc">升級多個 E 系列控制器的軟體和韌體</block>
   <block id="d9bac1177f849cb7614def56680a37e9" category="doc">升級單一 E 系列控制器的軟體和韌體</block>
-  <block id="392020a9cd2c7a7b60d6bdd17a0801fb" category="doc">適用於 vCenter 的 SANtricity Storage Plugin 安裝與升級需求</block>
+  <block id="392020a9cd2c7a7b60d6bdd17a0801fb" category="doc">適用於 vCenter 的 SANtricity 儲存外掛程式安裝與升級需求</block>
   <block id="1514ff0286b5e893949cdcec49fd27af" category="doc">在適用於 vCenter 的 SANtricity Storage Plugin 中為工作負載新增 Volume</block>
-  <block id="af6a65a8d15837322e7b954b77766216" category="doc">變更 vCenter 專用 SANtricity Storage Plugin 中的資源池設定</block>
-  <block id="3d62046a4185ccc064c9acd90370778b" category="doc">變更適用於 vCenter 的 SANtricity Storage Plugin 中的 Volume 群組設定</block>
-  <block id="fdab3d63b3ba52ed31aae27f999e63e0" category="doc">在適用於 vCenter 的 SANtricity Storage Plugin 中刪除 Volume</block>
+  <block id="af6a65a8d15837322e7b954b77766216" category="doc">變更適用於 vCenter 的 SANtricity Storage Plugin 中的資源池設定</block>
+  <block id="3d62046a4185ccc064c9acd90370778b" category="doc">變更適用於 vCenter 的 SANtricity 儲存外掛程式中的 Volume 群組設定</block>
+  <block id="fdab3d63b3ba52ed31aae27f999e63e0" category="doc">在適用於 vCenter 的 SANtricity 儲存外掛程式中刪除 Volume</block>
   <block id="6b2f30eb814ff5adde7d6bd6d53b86de" category="doc">了解適用於 vCenter 的 SANtricity 儲存外掛程式中的匯入設定功能</block>
   <block id="e3210607dd0daf1f83f4aa946e9f5a52" category="doc">管理適用於 vCenter 的 SANtricity Storage 外掛程式中的軟體儲存庫</block>
   <block id="cc809116c2987c377689ad182dde2a30" category="doc">在適用於 vCenter 的 SANtricity 儲存外掛程式中執行升級前資訊健檢</block>
   <block id="62d610418263bea049c5ea0c1bceb571" category="doc">了解如何使用適用於 vCenter 的 Storage Plugin 進行 SANtricity 軟體升級</block>
-  <block id="ac470681b983e1be7d284270f81cde5b" category="doc">SANtricity Web 服務代理程式的安裝和升級需求</block>
+  <block id="ac470681b983e1be7d284270f81cde5b" category="doc">SANtricity Web Services Proxy 安裝和升級需求</block>
   <block id="d403e5c657198b7c63f5e0d6ae5f0292" category="doc">安裝或升級 SANtricity Web 服務 Proxy 和 Unified Manager</block>
-  <block id="d5cdd4269848776d2efaeaa9b34105a9" category="doc">SANtricity Web Services Proxy 相容性與限制</block>
-  <block id="90b9ecbd31de6bb7969caa315a07d5f6" category="doc">SANtricity Web Services Proxy 術語</block>
+  <block id="d5cdd4269848776d2efaeaa9b34105a9" category="doc">SANtricity Web 服務代理程式相容性與限制</block>
+  <block id="90b9ecbd31de6bb7969caa315a07d5f6" category="doc">SANtricity Web 服務代理程式術語</block>
   <block id="621a2c1ca4495109dc6086eaed6ea91f" category="section-title">12.10 版的新功能</block>
   <block id="a3a344658c60b081294c8dfd5b5e7b0e" category="paragraph">EF50 和 EF80 儲存系統的 SAS 擴充支援</block>
   <block id="750d1793602e8cfa868f12434d1442cd" category="paragraph">EF50 和 EF80 儲存系統現已支援 SAS 擴充，進而提升儲存容量和靈活度。透過 SAS 擴充，您可以將額外的儲存設備機箱連接至 EF50 和 EF80 系統，讓您能視需要擴充儲存環境。對於需要大容量儲存設備解決方案，並希望最大化其在 EF50 和 EF80 平台上投資的組織而言，此功能特別有益。</block>
@@ -11173,7 +10975,7 @@
   <block id="6ddf1a58fab8ae22218c544a3f975adc" category="paragraph">EF80 和 EF50 儲存系統現在支援在同一儲存陣列中使用效能和容量 NVMe SSD 磁碟機，但需符合最低磁碟機數量（效能為 6 個，容量為 12 個）。效能和容量磁碟機必須保留在分隔的資源池和 Volume 群組中。</block>
   <block id="65388a9417cc2c2b425bd9a974a3c1a3" category="paragraph">增加標準與精簡 Volume 名稱的字元限制</block>
   <block id="b7aacc1799b10f1a6f159f760a1992a3" category="paragraph">標準與精簡 Volume 名稱的字元限制已從 30 個字元增加至 60 個字元。</block>
-  <block id="dc33e50723b460931dd9606198ca8046" category="admonition">如果存在名稱超過 30 個字元的標準或精簡 Volume，則不支援降級至 SANtricity 作業系統軟體版本 11.90 或更早版本。如果您打算降級至 SANtricity 作業系統軟體版本 11.90 或更早版本，請在降級前變更所有名稱超過 30 個字元的標準或精簡 Volume 的名稱。</block>
+  <block id="dc33e50723b460931dd9606198ca8046" category="admonition">如果存在名稱超過 30 個字元的標準或精簡 Volume，則不支援降級到 SANtricity 作業系統軟體版本 11.90 或更早版本。如果您打算降級到 SANtricity 作業系統軟體版本 11.90 或更早版本，請在降級前變更所有名稱超過 30 個字元的標準或精簡 Volume 的名稱。</block>
   <block id="afabc8a2ed2fc4cb183a0e16494c0ece" category="paragraph">SANtricity System Manager 使用者介面的最短非活動逾時限制現為 10 分鐘</block>
   <block id="a7599c3416261b29714aee7f7f1464cb" category="paragraph">SANtricity System Manager 使用者介面的閒置逾時限制已更新為最短 10 分鐘。先前，最短閒置逾時限制為 15 分鐘。此變更有助於增強安全性，確保使用者介面在閒置 10 分鐘後自動登出。</block>
   <block id="ac91efa472c36c5704769a1e6a7a0be6" category="sidebar">SANtricity System Manager 12.10</block>
@@ -11182,5 +10984,200 @@
   <block id="72062fcdeb373d07c261f466c108987b" category="sidebar">在主機上設定 NVMe over TCP</block>
   <block id="1994aa7db9e9fad5a648e62ba534a9a8" category="sidebar">Linux 版 NVMe over TCP 工作表</block>
   <block id="13b5a4ce04bdd18c6dbe66e0aff43c56" category="sidebar">執行 NVMe over FC 特定任務</block>
-  <block id="12100775087ee0a5c3fb85e5dbaf178d" category="sidebar">執行 NVMe over TCP 特定任務</block>
+  <block id="12100775087ee0a5c3fb85e5dbaf178d" category="sidebar">執行 NVMe over TCP 特定工作</block>
+  <block id="52713e505d003d068ad59700e6eac608" category="inline-link-macro">在 E 系列儲存系統中熱新增磁碟機機櫃</block>
+  <block id="fe63633f71957121919023df95db4c3c" category="list-text">對於 SAS 擴充櫃佈線，您可以使用 <block ref="f70736b3bf617285cac71324b99c448b" category="inline-link-macro-rx"></block> 程序。</block>
+  <block id="4749edbead8bd2fe87cc77d50f64b2cd" category="doc">在 E 系列 Linux FC 主機上使用 SANtricity System Manager 配置儲存設備</block>
+  <block id="04f79c9c91dcc176f1abfd01994d57d3" category="doc">使用 SANtricity System Manager for Linux FC over NVMe 指派 E 系列 Volume</block>
+  <block id="a33e709b2217bf570c2858e836f407e2" category="doc">使用 DHCP 為 E 系列 Linux FC 主機設定 IP 位址</block>
+  <block id="147becb4e1f057509b08fa168a5f9fa3" category="doc">在 E 系列 Linux FC 主機上設定多重路徑軟體</block>
+  <block id="2dc7255253ff8165bdd2bb9ac4948882" category="doc">為 E 系列 Linux 主機設定 FC 交換器</block>
+  <block id="9f4b3d411a70c33e2f29b6a8e267e675" category="doc">在 E 系列 Linux FC 主機上建立分割區和檔案系統</block>
+  <block id="86e7392a4446f7bd970b4c76418da6be" category="doc">確定 E 系列 Linux FC 主機的全球主機連接埠名稱</block>
+  <block id="c22ff1e9e65cd90b4ff0dbc50e709c75" category="doc">在 E 系列 Linux FC 主機上安裝適用於 SMcli 的 SANtricity Storage Manager</block>
+  <block id="d44c8c0a9ab4d91a8bf5335a399e5967" category="doc">E 系列 Linux FC 主機的 multipath.conf 檔案</block>
+  <block id="d8d35f7ba5f95d736afe8e51cc4d17f0" category="doc">驗證 E 系列中對 Linux FC 組態的支援</block>
+  <block id="19791e0b31ef2f974a9dd101b06206cd" category="doc">驗證 E 系列中 Linux 主機上的 FC 儲存設備存取</block>
+  <block id="e2f689f80089d17253cc00d15490f00b" category="doc">E 系列 Linux 主機的 FC 組態表</block>
+  <block id="ef286c28f145e969f7cfa89be3770044" category="doc">使用 SANtricity System Manager 指派 E 系列 NVMe over InfiniBand Volume</block>
+  <block id="50e5dfd13c11898bb872d9d360540bf3" category="doc">使用 SANtricity System Manager 在 E 系列中設定 iSCSI 儲存設備</block>
+  <block id="b19e40c87d0f97dc0e348d12c98f71e7" category="doc">設定 E 系列中 Linux 主機的陣列端 iSCSI 連網</block>
+  <block id="e1e707ce3c864cc9f558e289613979cb" category="doc">為 E 系列中的 Linux 主機設定主機端 iSCSI 連網</block>
+  <block id="2af5b5efc9d1b58f0a9d5eb6ac411998" category="doc">在 E 系列中為 Linux 主機設定 iSCSI IP 位址（使用 DHCP）</block>
+  <block id="17eeaf3210216b5884b79a09a650da1e" category="doc">為 E 系列的 Linux 主機設定 iSCSI 多重路徑軟體</block>
+  <block id="a147c74c3f4d959eda71af487629fadc" category="doc">了解 E 系列中 Linux 主機的 iSCSI 網路組態</block>
+  <block id="337e2fdd280d6de21daba27e1c11c91e" category="doc">E 系列 Linux 主機的 iSCSI 交換器組態需求</block>
+  <block id="d5b4441abb8a36d7d517ff24e357ebca" category="doc">在 E 系列 Linux 主機上建立分割區和檔案系統</block>
+  <block id="cadbeec4bb7539cb400dc1f880eb7a19" category="doc">在 E 系列 Linux 主機上安裝適用於 SMcli 的 SANtricity Storage Manager</block>
+  <block id="94e27141a626e561e2ad9c1950b064d0" category="doc">E 系列 Linux 主機的 multipath.conf 檔案</block>
+  <block id="e31b548de0f005165342d5104964e732" category="doc">驗證 E 系列 Linux 主機上的 IP 網路連線</block>
+  <block id="6ba1af728cad9662d80b70c962f92ad2" category="doc">驗證 Linux iSCSI 組態對 E 系列的支援</block>
+  <block id="e431f31f486a9d30a1cae32757d74eda" category="doc">驗證 E 系列 Linux 主機上的儲存設備存取</block>
+  <block id="559d783e7ccef44ff6225ab11526cc7f" category="doc">E 系列 Linux 主機 iSCSI 組態表</block>
+  <block id="b2554a15107f2a227754c2b0bfd1de02" category="doc">使用 SANtricity System Manager 為 Linux iSER 主機設定 E 系列儲存系統</block>
+  <block id="459f2a7bbf52111e2f25cde5533cc2d8" category="doc">使用 DHCP 為 E 系列 Linux iSER 主機設定 IP 位址</block>
+  <block id="50711d892f25099ca1d2ba6502b3f7d6" category="doc">使用基於 IB 的 iSER 為 E 系列 Linux 主機設定多重路徑軟體</block>
+  <block id="27875becad21c7c1727f136a44b25af2" category="doc">使用基於 IB 的 iSER 為 E 系列 Linux 主機設定網路連線</block>
+  <block id="ecc1e432f48d2415ff81975292d22ff5" category="doc">在 SANtricity System Manager 中設定 E 系列網路連線，以進行 iSER over IB</block>
+  <block id="62caf94bd756aca29d0f833d763e4fd3" category="doc">使用基於 IB 的 iSER 為 E 系列 Linux 主機設定子網路管理程式</block>
+  <block id="c370384a88bdd91bbd82b025b11746de" category="doc">使用 iSER over IB 在 E 系列 Linux 主機上建立分割區和檔案系統</block>
+  <block id="7ffd8d338e3286d03f22b5071cd6fbac" category="doc">使用 iSER over IB 確定 E 系列 Linux 主機的主機連接埠 GUID</block>
+  <block id="dd9618f6975f3c6ab89c5d089ba883f2" category="doc">在透過 IB 使用 iSER 的 E 系列 Linux 主機上，multipath.conf 檔案如何運作</block>
+  <block id="1d10485e2f1f172dd2799a883158be94" category="doc">驗證 E 系列對使用 iSER over IB 的 Linux 組態支援</block>
+  <block id="63cdbabf8545bb67bfa8b21ca0511728" category="doc">使用 iSER over IB 驗證 E 系列 Linux 主機上的儲存設備存取</block>
+  <block id="290443b88c22e08c2f18d266c201284a" category="doc">適用於 E 系列 Linux 主機的 iSER over InfiniBand 組態工作表</block>
+  <block id="36df7caf7869d21a78d4a8cfde335540" category="doc">E 系列如何將 I/O 導向到 Linux 主機上的實體 NVMe 裝置目標</block>
+  <block id="6897b6076f6b29774ee3f7bfdbbcf0d0" category="doc">使用 SANtricity System Manager for Linux NVMe over FC 設定 E 系列儲存系統</block>
+  <block id="cbc8197f9e0f938894448cc955758460" category="doc">E 系列如何將 I/O 導向到 Linux 主機上的虛擬 NVMe 裝置目標</block>
+  <block id="be9886374a410d2b785400042b13f157" category="doc">為 E 系列 Linux NVMe over FC 主機設定 FC 交換器</block>
+  <block id="690ca23a4fae0a03e08e0c154dc82b10" category="doc">使用 DHCP 為 E 系列 Linux NVMe over FC 主機設定 IP 位址</block>
+  <block id="b08ffc2bc6be955019d15749f6f8c4c3" category="doc">在 E 系列 Volume 上為 SLES 12 NVMe over FC 主機建立檔案系統</block>
+  <block id="c784c0507d2db17fc2a8cef46146c3f0" category="doc">在 E 系列 Volume 上為 RHEL 8、RHEL 9 和 SLES 15 NVMe over FC 主機建立檔案系統</block>
+  <block id="c78d9977874a40f6f5b1a671a207aeab" category="doc">使用 SANtricity System Manager 為 E 系列 Linux NVMe over FC 主機建立主機</block>
+  <block id="8c9d084601f62d923947a2b5519e5f14" category="doc">顯示使用 E 系列 NVMe over FC 的 Linux 主機可見的 Volume</block>
+  <block id="cdf50127fbcd332085ad9bc709f607b0" category="doc">在 E 系列 Linux 主機上安裝 SANtricity Storage Manager 以進行 NVMe over FC</block>
+  <block id="ec67fa61cc8dc93ee2e874a0f3faee38" category="doc">在 Linux 主機上為 E 系列中的 NVMe over FC 設定故障轉移</block>
+  <block id="456d9c58eabce84820afc6748560cf3c" category="doc">在 E 系列 Linux 主機上設定 NVMe over FC 啟動器</block>
+  <block id="24f15fa0cd14b9de72aef8daacf12a29" category="doc">驗證 E 系列中 Linux 組態對 NVMe over FC 的支援</block>
+  <block id="c9f73ff75f2f2cfb947ca4ed57ef00fc" category="doc">驗證 E 系列中 Linux 主機上 NVMe over FC 的儲存設備存取</block>
+  <block id="6817c316490396b6e284f79371355e04" category="doc">適用於 E 系列 Linux 主機的 NVMe over FC 組態工作表</block>
+  <block id="e92d786a73e7266194a3bc0231cb0ca9" category="doc">E 系列如何在 Linux 上透過 InfiniBand 將 I/O 路由至實體 NVMe 目標</block>
+  <block id="5bc7dcaadbd19e20b6aa9d553792f9ca" category="doc">使用 SANtricity System Manager 設定 E 系列儲存系統以支援 NVMe over InfiniBand</block>
+  <block id="14010e792c7d3e14daa706d6a7df7705" category="doc">E 系列如何在 Linux 上透過 InfiniBand 將 I/O 路由至虛擬 NVMe 目標</block>
+  <block id="18952f3f7ebb34ce296a8769141c058d" category="doc">在 E 系列 Linux 主機上使用 DHCP 設定 IP 位址</block>
+  <block id="10206f79f8a51ee3997346b6f60d05dd" category="doc">在 E 系列 Linux 主機上設定 NVMe over InfiniBand 連線</block>
+  <block id="46ec93f9148579374cc8108ecc6ce52d" category="doc">在 E 系列 Linux 主機上使用 NVMe over InfiniBand 設定子網路管理程式</block>
+  <block id="b4b8270bd6abf0be383a2822378b6312" category="doc">在採用 NVMe over InfiniBand 的 E 系列 Linux SLES 12 主機上建立檔案系統</block>
+  <block id="27ada00861d98eeb2c21d38eb8f13f8e" category="doc">在 RHEL 8、RHEL 9 和 SLES 15 主機上為 E 系列 NVMe over InfiniBand 建立檔案系統</block>
+  <block id="b49add351fd66ee3de8d4fd343f0ab52" category="doc">在 Linux 系統上使用 SANtricity System Manager 建立 E 系列主機</block>
+  <block id="53a00ed0b95803509562673314fd851a" category="doc">確定使用 NVMe over InfiniBand 的 E 系列 Linux 主機的主機連接埠 GUID</block>
+  <block id="3328a2714a4c486893f377bec482a263" category="doc">透過 NVMe over InfiniBand 從 Linux 主機發現並連接到 E 系列儲存系統</block>
+  <block id="7d2168362a3a96e1f7f0fc37a0ba7007" category="doc">顯示透過 NVMe over InfiniBand 對 Linux 主機可見的 E 系列 Volume</block>
+  <block id="9df44231829d7010f5e957019c2820a7" category="doc">使用 NVMe over InfiniBand 在 E 系列 Linux 主機上設定容錯移轉</block>
+  <block id="c0a751a06bb655f6e3a5cb4b2855fe15" category="doc">在 E 系列 Linux 主機上透過 InfiniBand 設定 NVMe 啟動器</block>
+  <block id="3919424c34d519c9037b68cf3be853a7" category="doc">驗證 E 系列中 NVMe over InfiniBand 的 Linux 組態支援</block>
+  <block id="2dd176a5cb9fb70bc00781c0e724183c" category="doc">驗證 E 系列 Linux 主機上 NVMe over InfiniBand 的儲存設備存取</block>
+  <block id="b705a9d3e8b85cb75daf749228dcbeea" category="doc">E 系列 NVMe over InfiniBand 組態工作表</block>
+  <block id="781c2f5421dd04c053bc9980341cc513" category="doc">從 Linux 主機存取 E 系列目標上的 NVMe over RoCE Volume</block>
+  <block id="006ad31165e10589f2aef62eb022ae46" category="doc">使用 SANtricity System Manager 設定 E 系列儲存系統以用於 RoCE</block>
+  <block id="ecbe867917bf15418f14827214e93123" category="doc">使用 SANtricity System Manager 為 NVMe over RoCE 分配 E 系列 Volume</block>
+  <block id="1b3dd02a4402ca7b89208c5435b01e7d" category="doc">在 E 系列中使用 DHCP 為 NVMe over RoCE 設定 IP 位址</block>
+  <block id="1d2713dcd0568fab0eedc7fd07827def" category="doc">為 Linux 主機設定 E 系列儲存陣列 RoCE 連接</block>
+  <block id="6ab635d853b390e2b92e325b1f9b0099" category="doc">在 E 系列 Linux 環境中設定交換器以支援 NVMe over RoCE</block>
+  <block id="a99a27464ff629a153495d9256910303" category="doc">在 Linux 主機上為 E 系列 NVMe over RoCE 建立檔案系統</block>
+  <block id="6a767318b1d815ac937a59b511ccbece" category="doc">在 Linux 上為 NVMe over RoCE 建立 E 系列主機</block>
+  <block id="cade3f12e9f333f0c4fad0776cd8ec64" category="doc">使用 NVMe over RoCE 從 Linux 主機探索並連線至 E 系列儲存系統</block>
+  <block id="521e14db6ebfc2fda4e0055980bbea7c" category="doc">顯示 E 系列中透過 RoCE 使用 NVMe 的 Linux 主機可見的 Volume</block>
+  <block id="aa8a5cee145a816a2c5e8d8a6fc5b96c" category="doc">在 E 系列中使用 NVMe over RoCE 在 Linux 主機上設定容錯移轉</block>
+  <block id="d764f37153c0e6bf787c1a612cd4a7eb" category="doc">在 E 系列的 Linux 主機上透過 RoCE 設定 NVMe 啟動器</block>
+  <block id="8efbdb10548df65e7c86de93e68dbe2f" category="doc">驗證 E 系列中 Linux 組態對 NVMe over RoCE 的支援</block>
+  <block id="309e3d011f45d3f868e5272078cfb15e" category="doc">E 系列 Linux 主機的 NVMe over RoCE 組態工作表</block>
+  <block id="a49c177d9ae37517ab2beab13c520117" category="doc">Linux 主機如何透過 TCP 存取 E 系列目標上的 NVMe Volume</block>
+  <block id="5849e6185b133efd47118059b25cba46" category="doc">使用 SANtricity 設定精靈設定您的 E 系列儲存陣列</block>
+  <block id="60e6b6cb13e8378cf69b549065cc3a29" category="doc">在 E 系列中將 Volume 指派給 Linux NVMe over TCP 主機</block>
+  <block id="7cb90feaf1f45677e556b2cf76fd1dd3" category="doc">使用 DHCP 為 E 系列 NVMe over TCP 主機設定 IP 位址</block>
+  <block id="91aeb1f250964d252653d030d0502e91" category="doc">為 Linux 主機設定 E 系列儲存系統 NVMe over TCP 連線</block>
+  <block id="502cd5b1192ae5f0735f41d9dc0e24ca" category="doc">為 E 系列 Linux NVMe over TCP 主機設定交換器</block>
+  <block id="7b37a0f29d622c85064c9acbeaa21971" category="doc">為 E 系列 Linux NVMe over TCP 主機建立檔案系統</block>
+  <block id="9f77aa835a4259d07042602bb69c5205" category="doc">在 SANtricity System Manager 中建立 E 系列 Linux NVMe over TCP 主機</block>
+  <block id="8e3fdb8908210fddccb02e071316d355" category="doc">從 Linux 主機發現並連接到 E 系列儲存系統</block>
+  <block id="2516828b7cd181e4abf570d6c02734c6" category="doc">顯示 E 系列 Linux NVMe over TCP 主機可見的 Volume</block>
+  <block id="4d4819393e4bd082000dfd1630f2c667" category="doc">在 E 系列 Linux NVMe over TCP 主機上設定故障轉移</block>
+  <block id="c4f6a74c8504e1885dfc6ef5ddfc10ba" category="doc">在 E 系列 Linux 主機上設定 NVMe over TCP 啟動器</block>
+  <block id="353fcc77ac3b934fa36f0501ca6abcb1" category="doc">驗證 E 系列中對 Linux NVMe over TCP 組態的支援</block>
+  <block id="b7508c190e033a0750b3cfe0a8233dea" category="doc">E 系列 Linux 主機 NVMe over TCP 組態工作表</block>
+  <block id="ea7789285a8226e0f1ff9f0ec50d1086" category="doc">E 系列和 Linux 組態假設</block>
+  <block id="ef58402492facb2e09b2a9be90cf4d5b" category="doc">使用 SANtricity System Manager 為 Linux SAS 主機設定 E 系列儲存系統</block>
+  <block id="1a9187e783cbecddb5ab428cbe694ff8" category="doc">使用 DHCP 為 E 系列 Linux SAS 主機設定 IP 位址</block>
+  <block id="f2263d13d3dc52f4522334e0a297be5f" category="doc">為 E 系列 Linux SAS 主機設定多重路徑軟體</block>
+  <block id="1756392ac8968d52f91d0bd17c5fd559" category="doc">為 E 系列 Linux SAS 主機建立分割區和檔案系統</block>
+  <block id="c1f6d8bb9f0140fec1163884e795b8fa" category="doc">確定 E 系列 Linux 系統的 SAS 主機識別符</block>
+  <block id="a38e219f61c6d22603d50d5a8085679f" category="doc">在 E 系列 Linux SAS 主機上安裝適用於 SMcli 的 SANtricity Storage Manager</block>
+  <block id="e86f751893c68bd3534aa34609c8e8a5" category="doc">E 系列 Linux SAS 組態的 multipath.conf 檔案</block>
+  <block id="f735691709e1994620cf23973807f573" category="doc">驗證 E 系列中 SAS 的 Linux 組態支援</block>
+  <block id="6463f86f7ec10bc7a14f850e0c0fba9a" category="doc">驗證 E 系列 Linux SAS 主機上的儲存設備存取</block>
+  <block id="b87dd33ec93f455db357b088ad6a4c3c" category="doc">E 系列 Linux 主機 SAS 組態表</block>
+  <block id="dd652dae694bf85c0aa29de0986236fb" category="doc">使用設定精靈設定 E 系列儲存系統，以透過 InfiniBand 執行 SRP</block>
+  <block id="ef11a14bac545f6e6037b459055fe036" category="doc">在 E 系列中為透過 InfiniBand 的 SRP 設定 DHCP IP 位址</block>
+  <block id="bf0abfcb894955be966f92e3a39c7d9d" category="doc">在 E 系列中為透過 InfiniBand 的 SRP 設定多重路徑軟體</block>
+  <block id="9963a910e39dcb03647aa109a94891fb" category="doc">在 E 系列中設定透過 InfiniBand 的 SRP 網路連線</block>
+  <block id="f42ebf718e036b2de6de97f1c17f94f4" category="doc">在 E 系列中設定 SRP over InfiniBand 的子網路管理程式</block>
+  <block id="3d0e0018ab95c502f9d5ac9bf23457b6" category="doc">在 E 系列中為透過 InfiniBand 的 SRP 建立分割區和檔案系統</block>
+  <block id="f872550161a0aad3b6d099bff5c15ffd" category="doc">判斷 E 系列中透過 InfiniBand 執行 SRP 的主機連接埠 GUID</block>
+  <block id="0116240a180170cd86a8654be753efb1" category="doc">multipath.conf 檔案在 E 系列的 Linux SRP over InfiniBand 主機上如何運作</block>
+  <block id="a38d3668245a1f283f861410197482e3" category="doc">驗證 E 系列對透過 InfiniBand 的 SRP 的 Linux 組態支援</block>
+  <block id="7e1b639aecade20545b8574b5806fa76" category="doc">驗證 E 系列中 Linux 主機上透過 InfiniBand 的 SRP 儲存設備存取</block>
+  <block id="0678649b1c88215df1162ba3bff99d03" category="doc">適用於 E 系列 Linux 主機的 SRP over InfiniBand 組態工作表</block>
+  <block id="e71585831647c72a389c6cabf4b8919d" category="doc">使用 SANtricity System Manager for VMware 設定 E 系列儲存系統</block>
+  <block id="cd8240ee620dda165e7e0f8b00a88c66" category="doc">在 E 系列中為 VMware 透過 DHCP 設定 IP 位址</block>
+  <block id="b4415065b339abcc663c720d8b8309cd" category="doc">E 系列中 VMware 主機的多重路徑運作原理</block>
+  <block id="bf53116de9f04fe9ea75a6a00eb56bc2" category="doc">在 E 系列中為 VMware 設定主機上的儲存設備</block>
+  <block id="53c42db78b255c126e34fee1e3f6c213" category="doc">在 VMware 的 E 系列主機上探索儲存設備</block>
+  <block id="acc6587dd7430ed7d349ab00fc8a3a4b" category="doc">在 E 系列中設定 VMware 的 FC 交換器和主機識別符</block>
+  <block id="31d9a2fcf1a2f63fd78973899c7065ff" category="doc">E 系列 VMware 主機組態快速入門</block>
+  <block id="1670d4b3589ecdf1eaaff47f19a1a739" category="doc">在 E 系列中為 VMware 設定 iSCSI 交換器和連網</block>
+  <block id="db6681c47b04a442467990138fc6d12d" category="doc">在 E 系列中設定用於 VMware 的 NVMe over FC 交換器</block>
+  <block id="9202271d898f68de8acd231d82358de4" category="doc">在 E 系列中為 VMware 設定 NVMe over RoCE 交換器</block>
+  <block id="8f120659d91e3efe86e5291c689d4f9d" category="doc">在 E 系列中為 VMware 設定 NVMe over TCP 交換器</block>
+  <block id="c64616aa5cec151621c2479af3cce71b" category="doc">E 系列的 VMware Express 組態假設</block>
+  <block id="e40316054cb96f927b85952f7c4363df" category="doc">在 E 系列中設定 VMware 的 SAS 主機連接埠和設定</block>
+  <block id="c0da1b841e3007e23dccb5224632fae6" category="doc">適用於 E 系列的 VMware 快速組態工作流程</block>
+  <block id="8af7435514ac82d17cf948bb8f30fdc2" category="doc">驗證 E 系列和 VMware 主機上的儲存設備存取</block>
+  <block id="b20d2d86d6e75165170078c7c8117f08" category="doc">E 系列儲存系統的佈線需求</block>
+  <block id="ad27a7d7a3ccff57d17b173e30e58eac" category="doc">將 E 系列控制器機櫃以纜線連接至磁碟機機櫃</block>
+  <block id="ee67f4a61e71cdfc4d05ff8b8d26413a" category="inline-link-macro">為 EF50 和 EF80 儲存系統連接硬體纜線</block>
+  <block id="89504f912e9f72ccab053983460f4d36" category="list-text">如果您正在將 EF50 或 EF80 儲存系統以纜線連接至 SAS 擴充機櫃，作為新系統安裝的一部分，請參閱<block ref="de620a953cce9f05e59ec8f37de19c7d" category="inline-link-macro-rx"></block>程序。</block>
+  <block id="0156baf25c24c0d403a597ee9252e545" category="doc">E 系列管理工作站的乙太網路線纜</block>
+  <block id="efc05ee92c09bb20475ff7e07c63fb64" category="doc">E 系列控制器與交換器的主機佈線</block>
+  <block id="5cebdb2f3c10b933ba68e86a7e655626" category="doc">了解 E 系列儲存系統的佈線</block>
+  <block id="673196658b45abf7d0bf9b6c8e4b37bc" category="doc">為您的 E 系列儲存系統連接電源線</block>
+  <block id="b2a922240813da9da4cafcf09db233ee" category="doc">完成 E4012 儲存系統設定</block>
+  <block id="086cd337571d07a53b147daacef00e97" category="doc">完成 E4060 儲存系統設定</block>
+  <block id="bc3739759563ef27a204eb86e6d441fd" category="doc">連接 E4012 儲存系統的電源線</block>
+  <block id="16650f712d5cdee04385053543e64ab2" category="doc">連接 E4060 儲存系統的電源線</block>
+  <block id="aa2a78e346fb8bbee5f2a10913eca887" category="doc">E4000 儲存系統的安裝與設定工作流程</block>
+  <block id="d64216b38013e0438c4d35f2427a39dc" category="doc">安裝 E4012 儲存系統的硬體</block>
+  <block id="cbe5afba4ed8e3dafbfeb61251de192f" category="doc">安裝 E4060 儲存系統的硬體</block>
+  <block id="3b93bb22c99c34217382d9a7a174853b" category="doc">準備安裝 E4012 或 E4060 儲存系統</block>
+  <block id="1c5005c7f1c620e3b7c9719ca6c7c998" category="doc">完成 EF50 和 EF80 儲存系統的儲存系統設定</block>
+  <block id="19ffa472b79c4e9f3ff7cf8ee16b042f" category="doc">安裝 EF50 和 EF80 儲存系統的硬體</block>
+  <block id="393ad5bc5f04bf67bd1e1a0c96b5a5c7" category="doc">啟動 EF50 和 EF80 儲存系統的硬體電源</block>
+  <block id="426bea9f4db7b6eda3b7cf846a56ff5d" category="doc">準備安裝 EF50 或 EF80 儲存系統</block>
+  <block id="7facab0e69930e6194e7c321b5ba390b" category="doc">EF50 和 EF80 儲存系統的安裝與設定工作流程</block>
+  <block id="7cd87a736a16d512aef9ef4a5c984cfc" category="doc">更換 E4000 60 磁碟機機櫃中的磁碟機抽屜</block>
+  <block id="cccbdbe39e0c2eecdb00e35e14cd5882" category="doc">更換 E4000 儲存系統中的電池</block>
+  <block id="115d868a9c84268c440479352ac78650" category="list-text">選擇 menu:硬體［控制器和組件］以顯示控制器。</block>
+  <block id="98935b3e00c7de930c321194b69e7589" category="doc">更換 E4000 儲存系統中的控制器</block>
+  <block id="dc5157674a9ca2bff1ae3c7e1215b749" category="doc">E4000 控制器更換要求</block>
+  <block id="a94ddfe4b0aff3e5229d0d30df250bee" category="doc">將第二個控制器機箱新增至 E4000 陣列</block>
+  <block id="39c21ef8a2de026835fee6ed58374189" category="doc">更換 E4000 儲存系統中的 DIMM</block>
+  <block id="086d124fc47c1e9c01be172779a4ed23" category="doc">E4000 磁碟機更換要求</block>
+  <block id="b177eb283b2509f4e312a43034e240f3" category="doc">更換 E4000 12 磁碟機或 24 磁碟機機櫃中的磁碟機</block>
+  <block id="921fdbbd8302a001c08fd7f8eaa9530c" category="doc">更換 E4000 60 磁碟機機櫃中的磁碟機</block>
+  <block id="0c26d4073194516aaa176b29418e204b" category="doc">熱新增配備 IOM12 或 IOM12B 模組的 E4000 磁碟機機櫃</block>
+  <block id="f9f1953efee2b3d36311914a6e77d97b" category="doc">更換 E4000 60 磁碟機機櫃中的風扇機箱</block>
+  <block id="febd041de6ca9f75cba9212c9777cae8" category="doc">更換 E4000 主機介面卡</block>
+  <block id="6df9e95b50549b9e2199d437bf31efab" category="doc">升級 E4000 主機介面卡</block>
+  <block id="102faa906fd0a2593f1b7d426319b461" category="doc">更換 E4000 60 磁碟機機櫃中的電源機箱</block>
+  <block id="5a6e2a770c07edc87705435c2e14da8b" category="doc">更換 E4000 儲存系統的電源供應</block>
+  <block id="736b632f5c831012400ba2cb6134a311" category="doc">完成 EF50 和 EF80 儲存系統的控制器更換</block>
+  <block id="03b286fd18001e363a5683040f89fecb" category="doc">更換 EF50 和 EF80 儲存系統上的控制器</block>
+  <block id="c5f73d62dea14e7d2dc676b431146746" category="doc">將 EF50 和 EF80 儲存系統上的故障控制器離線</block>
+  <block id="715ba9ea51b7b4dc99a3a005f8f5eccc" category="doc">將 EF50 和 EF80 儲存系統上更換的控制器設為線上</block>
+  <block id="2a368f66e93a765a1c09695399a45bcc" category="doc">準備更換 EF50 和 EF80 儲存系統上的控制器</block>
+  <block id="5016b87664dc9e61fa8640d63cb934fa" category="doc">EF50 和 EF80 儲存系統的控制器更換需求</block>
+  <block id="83bfccb79d2a25c074005d5e1d39dfa4" category="doc">EF50 和 EF80 儲存系統的控制器更換工作流程</block>
+  <block id="e238536b8704645aa8810c76e38325ee" category="doc">更換 EF50 和 EF80 儲存系統中的 DIMM</block>
+  <block id="31f0d62350420f728c2e5de5baaf3d31" category="doc">更換 EF50 和 EF80 儲存系統上的 DE460C 磁碟機抽屜</block>
+  <block id="e586b549849c78c129b9723f223c0d44" category="doc">更換 EF50 和 EF80 儲存系統中的磁碟機</block>
+  <block id="9366c90072627eab0375bda40e23ae52" category="doc">更換 EF50 或 EF80 儲存系統中的風扇模組</block>
+  <block id="8688f32e8c0cf572fce2c82122e6fd40" category="doc">變更 EF50 或 EF80 系統中的主機 I/O 模組協定</block>
+  <block id="e00f2091c99a087186dd3515cbe80830" category="doc">了解 EF50 和 EF80 儲存系統的 I/O 模組維護</block>
+  <block id="ebe0958a173c78d99043ccb3dcff18e9" category="doc">更換 EF50 或 EF80 儲存系統中的 I/O 模組</block>
+  <block id="eef13f10399661ec7edaef7852020f97" category="doc">升級 EF50 或 EF80 儲存系統中的 I/O 模組</block>
+  <block id="0da44bdd3928ce5332b9ca7b416230f8" category="doc">了解 EF50 和 EF80 儲存系統的維護程序</block>
+  <block id="bf023ee64dc67e4cdf0db7c0ad4ecfb8" category="doc">更換 EF50 或 EF80 儲存系統中的 NV 電池</block>
+  <block id="c258d5ff72ac6cde3a2d2c9160d9be3e" category="doc">更換 EF50 或 EF80 儲存系統中的電源供應</block>
+  <block id="8f7e1bfda34b5c8fb95937ace0e0bea7" category="doc">更換 DE460C - EF300 和 EF600 中的磁碟機抽屜</block>
+  <block id="6c1d99e806e444e516c2482fdbe8f055" category="list-text">選擇 menu:儲存設備［Volume］。從 *所有 Volume* 頁面，確認 Volume 已分配給其偏好的擁有者。選擇 *省略符號圖示* &gt; *變更所有權* 以檢視 Volume 擁有者。</block>
 </blocks>

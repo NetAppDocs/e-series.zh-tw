@@ -22,11 +22,11 @@ E系列儲存陣列有多種組態和機型可供選擇。
 * E4000系列-入門級混合式
 * EF600系列-中階All Flash、All NVMe
 * EF300系列：入門級All Flash、All NVMe
-* EF300C 系列 —— 入門級全快閃，高密度 NVMe
+* EF300C 系列 -- 入門級全快閃，高密度 NVMe
 * EF600C 系列 -- 中階全快閃，高密度 NVMe
 * E2800 系列（停止供貨）-- 入門級混合式
 * EF280 系列（停止供貨）-- 入門級全快閃
-* E5700 系列（停止供貨）-- 中階混合
+* E5700 系列（停止供應）-- 中階混合
 * EF570 系列（停止供貨）-- 中階全快閃
 
 
@@ -59,7 +59,7 @@ image::../media/ef50_2u_front.png[EF50 2U]
 ** 60 TB
 +
 
-NOTE: 對於 30TB 和 60TB 磁碟機，EF50 僅支援使用動態磁碟資源池，不支援傳統 RAID。
+NOTE: 對於 30TB 和 60TB 磁碟機，EF50 僅支援動態磁碟池，不支援傳統 RAID。
 
 
 
@@ -118,7 +118,7 @@ image::../media/ef80_2u_front.png[EF80 2U]
 ** 60 TB
 +
 
-NOTE: 對於 30TB 和 60TB 磁碟機，EF80 僅支援動態磁碟池使用，不支援傳統 RAID。
+NOTE: 對於 30TB 和 60TB 磁碟機，EF80 僅支援使用動態磁碟池，不支援傳統 RAID。
 
 
 
@@ -134,7 +134,7 @@ NOTE: 配置 EF80 系統時，正確連接鏡像纜線至關重要。如需詳�
 如果安裝了 SAS 擴充卡，則每個控制器用於主機連線功能的主機介面卡最大數量限制為兩個。
 
 * 如果在系統開機期間有足夠的未指派磁碟機，則會自動建立單一磁碟資源池。
-* 從 SANtricity 作業系統 12.10 開始，EF80 支援將 3.8 TB、7.6 TB 和 15.3 TB 的磁碟機與 30 TB 和 60 TB 的磁碟機混合使用。混合機櫃中的這些磁碟機將自動放入單一不支援 RAID 的磁碟資源池。+ 注意：自動建立的磁碟資源池可以透過 SANtricity System Manager 或 SANtricity CLI 刪除。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["刪除磁碟資源池 - SANtricity CLI 指南"^]和 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["刪除資源池或 Volume 群組 - SANtricity System Manager 指南"^]。
+* 從 SANtricity 作業系統 12.10 開始，EF80 支援將 3.8 TB、7.6 TB 和 15.3 TB 的磁碟機與 30 TB 和 60 TB 的磁碟機混合使用。混合機櫃中的這些磁碟機將自動放入單一不支援 RAID 的磁碟資源池。+ 注意：自動建立的磁碟資源池可以透過 SANtricity System Manager 或 SANtricity CLI 刪除。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/delete-diskpool.html["刪除磁碟資源池 - SANtricity CLI 指南"^]與 https://docs.netapp.com/us-en/e-series-santricity/sm-storage/delete-pool-or-volume-group.html["刪除資源池或 Volume 群組 - SANtricity System Manager 指南"^]。
 
 
 --

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary: 開啟 EF50 或 EF80 儲存系統電源後，您可以透過連接線纜並設定每個控制器上的管理連接埠以進行帶外儲存系統管理、設定儲存系統，然後驗證主機 I/O 模組協定是否正確來完成系統設定。 
 ---
-= 完整的儲存系統設定 - EF50 和 EF80
+= 完成 EF50 和 EF80 儲存系統的儲存系統設定
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

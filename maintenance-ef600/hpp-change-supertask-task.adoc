@@ -669,7 +669,7 @@ image::../media/sam1130_ss_system_change_feature_pack_maint-ef600.gif[變更功�
 
 . 確認主機連接埠具有您所期望的傳輸協定。
 +
-.. 從 SANtricity System Manager ，選取 menu:硬體[控制器與元件]。
+.. 從 SANtricity System Manager 中選擇選單：硬體［控制器和元件］。
 .. 選取控制器A或控制器B的圖形
 .. 從內容功能表中選取*檢視設定*。
 .. 選取*主機介面*索引標籤。

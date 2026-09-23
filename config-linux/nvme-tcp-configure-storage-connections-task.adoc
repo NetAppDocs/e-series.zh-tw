@@ -2,9 +2,9 @@
 permalink: config-linux/nvme-tcp-configure-storage-connections-task.html 
 sidebar: sidebar 
 keywords: NVMe over TCP, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
-summary: 如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。 
+summary: 如果您的控制器包含 NVMe over TCP 的連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。 
 ---
-= 在 E 系列中設定儲存陣列 NVMe over TCP 連線 - Linux
+= 為 Linux 主機設定 E 系列儲存系統 NVMe over TCP 連線
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -12,7 +12,7 @@ summary: 如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtric
 
 
 [role="lead"]
-如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。
+如果您的控制器包含 NVMe over TCP 的連線，您可以從 SANtricity System Manager 的硬體頁面或系統頁面設定 NVMe 連接埠設定。
 
 .開始之前
 請確定您擁有下列項目：
@@ -22,7 +22,7 @@ summary: 如果您的控制器包含 NVMe over TCP 連線，您可以從 SANtric
 
 
 .關於這項工作
-您可以從 *硬體* 頁面或 menu:設定[系統] 存取 NVMe over TCP 組態。本工作說明如何從硬體頁面設定連接埠。
+您可以從 *硬體* 頁面或從 menu:Settings[System] 存取 NVMe over TCP 組態。本工作說明如何從硬體頁面設定連接埠。
 
 
 NOTE: 只有當儲存陣列的控制器包含 NVMe over TCP 連接埠時，才會顯示 NVMe over TCP 設定和功能。
@@ -67,9 +67,9 @@ NOTE: 設定的 NVMe over TCP 連接埠速度應與所選連接埠上 SFP 的速
 
 
  a| 
-已設定的前向錯誤更正（FEC）模式
+已設定的前向糾錯（FEC）模式
  a| 
-選擇所需的 FEC 模式。下拉清單中顯示的選項取決於目前選擇的速度，並且僅列出該速度支援的選項。並非所有速度都支援所有 FEC 模式。可選值包括：
+選擇所需的 FEC 模式。下拉清單中顯示的選項取決於目前選擇的速度，並且僅列出該速度支援的選項。並非所有 FEC 模式都適用於所有速度。可能的值包括：
 
 ** 無
 ** Reed-Solomon
@@ -122,7 +122,7 @@ NOTE: 如果只有一個可路由的IP位址、請將其餘位址設為0：0：0
 啟用VLAN支援（按一下*「Show More settings（顯示更多設定）」*即可取得。）
  a| 
 
-NOTE: 此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可用。
+NOTE: 此選項僅在 iSCSI 環境中可用。它在 NVMe over TCP 環境中不可用。
 
 
 
@@ -130,7 +130,7 @@ NOTE: 此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可�
 啟用乙太網路優先順序（按一下*顯示更多設定*即可取得）。
  a| 
 
-NOTE: 此選項僅在 iSCSI 環境中可用。在 NVMe over TCP 環境中不可用。
+NOTE: 此選項僅在 iSCSI 環境中可用。它在 NVMe over TCP 環境中不可用。
 
 |===
 . 單擊*完成*。

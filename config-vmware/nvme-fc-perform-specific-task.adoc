@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe over FC, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries 
 summary: 對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並判斷主機連接埠識別碼。 
 ---
-= 在 E 系列 - VMware 中執行 NVMe over FC 專屬工作
+= 在 E 系列中設定用於 VMware 的 NVMe over FC 交換器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -17,16 +17,16 @@ summary: 對於NVMe over Fibre Channel傳輸協定、您可以設定交換器並
 NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 位元組模擬（512e），以確保與 VMware 相容。如需將 Volume 設定為使用 512 位元組模擬（512e）的詳細資訊，請參閱 SANtricity System Manager 線上說明。
 
 
-NOTE: 在規劃 NVMe over FC 組態時，請記住， https://configmax.broadcom.com/guest["VMware 組態最大值指南"^] 指出每部伺服器最多支援 2 個 NVMe FC 啟動器連接埠。您必須考慮此要求，以避免設定過多路徑。
+NOTE: 在規劃 NVMe over FC 組態時，請記住， https://configmax.broadcom.com/guest["VMware 組態上限指南"^] 指出每部伺服器最多支援 2 個 NVMe FC 啟動器連接埠。您必須考慮此要求，以避免設定過多路徑。
 
 
 
 [[step-1-record-your-configuration]]
 == 步驟 1：記錄您的組態
 
-您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 NVMe over Fibre Channel 儲存組態資訊。您在執行配置工作時需要這些資訊。
+您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄 NVMe over Fibre Channel 儲存組態資訊。您在執行配置工作時需要這些資訊。
 
-圖中顯示了一台主機連接到 E 系列儲存陣列的兩個區域。一個區域以紅線標示；另一個區域以藍線標示。每個區域包含一個啟動器連接埠和一半的目標連接埠。控制器連接埠的數量取決於控制器型號和主機介面卡（HIC）的數量。您可能擁有更多連接埠（每個控制器最多 12 個）。如有需要，請列印其他 PDF 檔案。
+圖中顯示主機連接至兩個區域中的 E 系列儲存陣列。一個區域以紅線標示；另一個區域以藍線標示。每個區域包含一個啟動器連接埠和一半的目標連接埠。控制器連接埠的數量會因控制器型號和主機介面卡（HIC）的數量而異。您可能會有更多可用的連接埠（每個控制器最多 12 個）。視需要列印額外的 PDF。
 
 image::../media/port_identifiers_host_and_target_conf-vmw.gif[NVMe over Fibre Channel 連接埠識別碼]
 
@@ -200,12 +200,12 @@ vmhba65   lpfc      link-up     fc.200070b7e4395531:100070b7e4395531            
 ----
 
 
-在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是預期中的情況。請記錄每個唯一的 WWPN。
+在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是正常的。請記錄每個唯一的 WWPN。
 
 
 NOTE: 另一個命令選項是 `esxcli storage san fc list`。這將顯示更多詳細資訊以及以冒號分隔的十六進位格式的 WWPN。
 
-. 執行下列命令並記錄主機 NQN（稍後設定主機對應時需要使用）：
+. 執行以下命令並記錄主機 NQN（稍後設定主機對應時需要使用）：
 +
 [listing]
 ----
@@ -240,4 +240,4 @@ NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如�
 . 儲存區域、然後啟動新的分區組態。
 
 
-請參閱交換器廠商的文件，以取得有關設定區域的詳細說明。
+請查閱交換器廠商的文件，以取得有關設定區域的詳細說明。

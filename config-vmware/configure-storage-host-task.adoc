@@ -2,27 +2,27 @@
 permalink: config-vmware/configure-storage-host-task.html 
 sidebar: sidebar 
 keywords: configure storage ESXi, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
-summary: 您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存區或原始裝置對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。 
+summary: 您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存或原始設備對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。 
 ---
-= 在 E 系列 - VMware 中的主機上設定儲存設備
+= 在 E 系列中為 VMware 設定主機上的儲存設備
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存區或原始裝置對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。
+您可以將指派給 ESXi 主機的儲存設備用作虛擬機器檔案系統（VMFS）資料儲存或原始設備對應（RDM）。NVMe over 架構協定（NVMe over FC、NVMe over RoCE、NVMe over TCP）不支援 RDM。
 
 所有目前版本的 ESXi 支援 VMFS 版本 5 和 6。
 
 
-NOTE: 不建議在 VMware 上使用 VMFS 擴充。與其將另一個 Volume 作為擴充新增至現有的 VMFS 資料儲存以增加容量，建議對現有的後端 Volume 執行 DVE 操作 (https://kb.netapp.com/on-prem/E-Series/Management-Apps-KBs/How_to_expand_Volumes["如何擴充 Volume - NetApp 知識庫"^]），並擴充 VMFS 資料儲存。
+NOTE: 不建議在 VMware 上使用 VMFS 擴充。與其將另一個 Volume 作為擴充加入現有的 VMFS 資料儲存區來增加容量，不如對現有的後端 Volume 執行 DVE 操作 (https://kb.netapp.com/on-prem/E-Series/Management-Apps-KBs/How_to_expand_Volumes["如何擴充 Volume - NetApp 知識庫"^]），從而擴充 VMFS 資料儲存區。
 
 
 NOTE: 建議在 Linux 虛擬機器上使用虛擬 RDM 或虛擬磁碟，而不是實體 RDM。
 
 .步驟
 . 請確定已正確探索對應至ESXi主機的磁碟區。
-. 如需建立 VMFS 資料儲存的說明，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/working-with-datastores-in-vsphere-storage-environment/vsphere-vmfs-datastore-concepts-and-operations/create-a-vsphere-vmfs-datastore.html["建立 vSphere VMFS 資料存放區"^]。
-. 有關建立 RDM 的說明，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/raw-device-mapping-in-vsphere.html["在 vSphere 中的原始裝置對應"^]。
+. 如需建立 VMFS 資料存放區的說明，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/working-with-datastores-in-vsphere-storage-environment/vsphere-vmfs-datastore-concepts-and-operations/create-a-vsphere-vmfs-datastore.html["建立 vSphere VMFS 資料存放區"^]。
+. 如需建立 RDM 的說明，請參閱 https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/raw-device-mapping-in-vsphere.html["vSphere 中的原始裝置對應"^]。
 

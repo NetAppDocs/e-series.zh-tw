@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: workflow, guide, express, method, configuring, configure, storage, array, system, manager, host, understand, vmware, VMware 
 summary: 使用 VMware express 組態工作流程。 
 ---
-= 瞭解 E 系列中的 VMware 工作流程
+= 適用於 E 系列的 VMware 快速組態工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,4 +13,4 @@ summary: 使用 VMware express 組態工作流程。
 [role="lead"]
 本工作流程將引導您完成「快速方法」、以設定儲存陣列和SANtricity 使用VMware System Manager、讓VMware主機能夠使用儲存設備。
 
-image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[VMware Express 指南工作流程]
+image::../media/1130_flw_sys_mgr_vmware_express_guide_all_protocols.png[VMware express 指南工作流程]

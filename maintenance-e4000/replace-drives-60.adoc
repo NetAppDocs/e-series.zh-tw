@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive, replacing E4000 drive, E4000 replace drive, replacing E4000 drive, E4000 
 summary: 將E2800中的磁碟機更換為60個磁碟機櫃。 
 ---
-= 更換磁碟機 - E4000 （ 60 個磁碟機櫃）
+= 更換 E4000 60 磁碟機機櫃中的磁碟機
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -144,7 +144,7 @@ CAUTION: *可能會遺失資料存取*-將磁碟機抽屜推回機箱時、請�
 NOTE: 只有在技術支援或Recovery Guru指示下、才執行此作業。
 
 +
-.. 選擇 menu:硬體［磁碟機］。
+.. 選擇選單：硬體［磁碟機］。
 .. 按一下您更換的磁碟機。
 .. 從磁碟機的內容功能表中、選取* Reconstronstron*。
 .. 確認您要執行此作業。

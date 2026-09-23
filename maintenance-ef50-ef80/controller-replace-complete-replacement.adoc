@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, how to complete the controller replacement process 
 summary: 要完成 EF50 或 EF80 儲存系統的控制器更換，請確保儲存系統韌體是最新的，驗證磁碟區已歸還給其所有者，收集系統支援數據，並將故障部件退回 NetApp。 
 ---
-= 完成控制器更換 - EF50 和 EF80
+= 完成 EF50 和 EF80 儲存系統的控制器更換
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

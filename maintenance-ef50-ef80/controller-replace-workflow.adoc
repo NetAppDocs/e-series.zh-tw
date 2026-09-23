@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, replace the controller workflow 
 summary: 您可以透過滿足儲存系統需求、準備系統、將故障控制器離線、更換控制器、將新控制器上線並完成更換程序，來更換 EF50 或 EF80 儲存系統中的故障控制器。 
 ---
-= 控制器更換工作流程 - EF50 和 EF80
+= EF50 和 EF80 儲存系統的控制器更換工作流程
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

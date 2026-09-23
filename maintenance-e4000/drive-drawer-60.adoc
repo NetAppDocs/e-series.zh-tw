@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E4000 replace drive drawer, replacing E4000 drive drawer, E4000 replace drive drawer, replacing E4000 drive drawer, E4000, E-Series, eseries 
 summary: 您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣。 
 ---
-= 更換磁碟機抽屜 - E4000 （ 60 個磁碟機櫃）
+= 更換 E4000 60 磁碟機機櫃中的磁碟機抽屜
 :allow-uri-read: 
 :experimental: 
 :icons: font
@@ -15,7 +15,7 @@ summary: 您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣
 您可以更換E4060控制器櫃或DE460C磁碟機櫃中的磁碟機匣。
 
 .關於這項工作
-更換 E4060 控制器機櫃或 DE460C 磁碟機機櫃中故障的磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充機櫃）的電源。
+更換 E4060 控制器機櫃或 DE460C 磁碟機機櫃中故障磁碟機抽屜的步驟，取決於抽屜中的 Volume 是否受抽屜遺失保護（Drawer Loss Protection）的保護。如果磁碟機抽屜中的所有 Volume 都位於具有抽屜遺失保護的磁碟池或 Volume 群組中，您可以線上執行此程序。否則，您必須離線執行此程序，在更換磁碟機抽屜之前，停止所有主機 I/O 活動並關閉整個儲存系統（控制器機櫃和所有擴充機櫃）的電源。
 
 .開始之前
 * 確定磁碟機櫃符合下列所有條件：
@@ -53,7 +53,7 @@ NOTE: 如果您需要有關如何更換 E 系列 DE460C 擴充櫃的資訊，請
 [[step-1-prepare-to-replace-drive-drawer]]
 == 步驟1：準備更換磁碟機抽屜
 
-確定是否可以在磁碟機機櫃處於線上時執行更換程序，或者是否需要停止主機 I/O 活動並關閉任何已通電的機櫃電源（離線執行程序）。
+確定您是否可以在磁碟機機櫃處於線上時執行更換程序，或者是否需要停止主機 I/O 活動並關閉任何已開啟電源的機櫃（離線執行程序）。
 
 如果您要用藥櫃遺失保護功能來更換藥櫃中的藥櫃、則無需停止主機I/O活動、也無需關閉任何磁碟櫃。
 
@@ -76,7 +76,7 @@ serviceAllowedIndicator=on;"
 
 +
 ** 「<ctlr_ip1>'是控制器的識別碼。
-**  `array_username` 是儲存陣列的使用者名稱。您必須將  `array_username` 的值用雙引號（"）括起來。
+**  `array_username` 是儲存陣列的使用者名稱。您必須將  `array_username` 的值用雙引號（""）括起來。
 ** 「array_password」是儲存陣列的密碼。您必須將「array_password」的值括在雙引號（""）內。
 ** 「TrayID]」是磁碟機櫃的識別碼、其中包含您要更換的磁碟機匣。磁碟機櫃ID值為0至99。您必須將「TrayID」的值括在方括弧中。
 ** 「drawerID」是您要更換的磁碟機匣的識別碼。藥櫃ID值為1（頂端藥櫃）至5（底部藥櫃）。必須將"drawerid"的值括在方括弧中。
@@ -88,7 +88,7 @@ serviceAllowedIndicator=on;"
 +
 [listing]
 ----
-SMcli <ctlr_IP1\> -k -u "DC1-PRD-SAN-01" -p "safety-1" -c "set tray [10] drawer [1]
+SMcli <ctlr_IP1\> -k -u "array_username" -p "array_password" -c "set tray [10] drawer [1]
 serviceAllowedIndicator=forceOnWarning;"
 ----
 . 判斷您是否需要停止主機I/O活動、如下所示：
@@ -121,7 +121,7 @@ CAUTION: *可能的資料遺失*-如果您在執行I/O作業時繼續執行此�
 +
 當需要將快取資料寫入磁碟機時、每個控制器背面的綠色快取作用中LED會亮起。您必須等待此LED燈關閉。
 
-. 從 SANtricity System Manager 的左側面板中，選擇 menu:儲存設備[進行中的作業]。
+. 從 SANtricity System Manager 的左側面板中，選取 menu:儲存設備[進行中的作業]。
 . 請等待所有作業完成、然後再繼續下一步。
 . 請使用下列其中一項程序關閉磁碟櫃電源：
 +
@@ -177,7 +177,7 @@ image::../media/28_dwg_e2860_de460c_fan_canister_handle_with_callout_maint-e2800
 +
 *（1）*風扇容器握把_
 
-.. 使用把手將風扇箱從磁碟機機櫃中拉出，並將其放在一旁。
+.. 使用把手將風扇機箱從磁碟機機櫃中拉出，並將其放在一旁。
 .. 如果磁碟櫃已開啟電源、請確定左風扇達到最大速度。
 +
 
@@ -394,7 +394,7 @@ CAUTION: *設備受損風險*：如果您覺得卡住、請停止推動磁碟機
 .步驟
 . 請確定：
 +
-** 新的磁碟機抽屜已安裝完畢。
+** 新的磁碟機抽屜已安裝。
 ** 您有兩個替換的纜線鏈、分別標示為左和右（位於磁碟機抽屜旁的橫式連接器上）。
 
 
@@ -471,7 +471,7 @@ CAUTION: *設備故障風險*-如果連接器未鎖定、則纜線鏈可能會�
 [[step-6-complete-drive-drawer-replacement]]
 == 步驟6：完整更換磁碟機匣
 
-以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新裝上前擋板，重新接通電源（如果需要），然後手動重建磁碟機（如果需要）。
+以正確的順序重新插入磁碟機，將磁碟機抽屜重新安裝到磁碟機機櫃中，重新安裝前擋板，重新接通電源（如果需要），然後手動重建磁碟機（如果需要）。
 
 
 CAUTION: *可能會遺失資料存取*：您必須將每個磁碟機安裝在磁碟機抽屜的原始位置。

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume physical, SLES 15, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以根據您的 SLES 版本（SUSE Linux 版本）設定指向裝置目標的 I/O。 
 ---
-= 存取 E 系列實體 NVMe 裝置目標的 NVMe 磁碟區 - Linux （ NVMe over InfiniBand ）
+= E 系列如何在 Linux 上透過 InfiniBand 將 I/O 路由至實體 NVMe 目標
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

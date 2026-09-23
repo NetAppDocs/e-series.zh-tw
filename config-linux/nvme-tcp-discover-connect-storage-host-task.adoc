@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: discover storage, host, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 在SANtricity 定義完「支援系統管理程式」中的每個主機之前、您必須先從主機探索目標控制器連接埠、然後建立NVMe連線。 
 ---
-= 在 E 系列 - Linux （NVMe over TCP）中從主機探索並連線至儲存設備
+= 從 Linux 主機發現並連接到 E 系列儲存系統
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -62,7 +62,7 @@ eflags:  none
 sectype: none
 ----
 . 對任何其他連線重複步驟 2。
-. 使用命令連接到第一條路徑上發現的子系統： `nvme connect -t tcp -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
+. 使用以下命令連線至第一條路徑上探索到的子系統： `nvme connect -t tcp -n discovered_sub_nqn -a target_ip_address -Q queue_depth_setting -l controller_loss_timeout_period`
 +
 
 NOTE: 上述命令在重新開機後不會保留。每次重新開機後都需要執行  `nvme connect` 命令以重新建立 NVMe 連線。

@@ -408,7 +408,7 @@ sidebar:
         url: "/config-vmware/nvme-roce-perform-specific-task.html"
       - title: 執行 NVMe over FC 特定任務
         url: "/config-vmware/nvme-fc-perform-specific-task.html"
-      - title: 執行 NVMe over TCP 特定任務
+      - title: 執行 NVMe over TCP 特定工作
         url: "/config-vmware/nvme-tcp-perform-specific-task.html"
       - title: 執行iSCSI專屬工作
         url: "/config-vmware/iscsi-perform-specific-task.html"

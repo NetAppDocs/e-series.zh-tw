@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volumes physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 根據您的Linux版本設定導向裝置目標的I/O。 
 ---
-= 存取 E 系列實體 NVMe 裝置目標的 NVMe 磁碟區 - Linux （ NVMe over FC ）
+= E 系列如何將 I/O 導向到 Linux 主機上的實體 NVMe 裝置目標
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

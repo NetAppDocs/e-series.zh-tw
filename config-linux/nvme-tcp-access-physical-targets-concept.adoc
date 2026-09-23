@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: NVMe volume physical, express linux configuration, software configuration, linux host, E2800, E5700, EF300, EF600, E-Series, eseries 
 summary: 您可以根據Linux版本設定導向裝置目標的I/O。 
 ---
-= 從主機存取 E 系列目標的 NVMe Volume - Linux（NVMe over TCP）
+= Linux 主機如何透過 TCP 存取 E 系列目標上的 NVMe Volume
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -20,7 +20,7 @@ summary: 您可以根據Linux版本設定導向裝置目標的I/O。
 [[nvme-devices-are-io-targets]]
 == NVMe 裝置是 I/O 目標
 
-. 輸入以下命令，尋找從 E 系列陣列對應到此主機的 Volume。
+. 輸入以下命令以尋找從 E 系列陣列對應至此主機的 Volume。
 +
 以下命令提供主機上的低階 NVMe 裝置位置、該裝置對應的陣列名稱、磁碟區名稱、NSID、唯一磁碟區 ID、目前擁有的控制器以及磁碟區大小。
 
@@ -35,7 +35,7 @@ summary: 您可以根據Linux版本設定導向裝置目標的I/O。
 ----
 . 對  `/dev/disk/by-id/nvme-eui.[Volume ID#]` 中的鏈路執行 I/O。
 +
-在 `/dev/disk/by-id/nvme-eui.[Volume ID#]`中的連結是確定性的，不會改變。請避免使用低層級 NVMe 裝置位置 `(/dev/nvme[subsys#]n[id#])`，因為它主旨會改變。可以使用下列命令找到這兩個位置之間的連結：
+ `/dev/disk/by-id/nvme-eui.[Volume ID#]` 中的連結是確定性的，不會改變。請避免使用低層級 NVMe 裝置位置 `(/dev/nvme[subsys#]n[id#])`，因為它主旨會改變。可以使用下列命令找到這兩個位置之間的連結：
 
 +
 [listing]

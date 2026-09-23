@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, offline the impaired controller 
 summary: 在更換控制器時，請將故障控制器置於 EF50 或 EF80 儲存系統中的離線狀態，以防止資料遺失並確保系統穩定性。 
 ---
-= 使受損的控制器離線 - EF50 和 EF80
+= 將 EF50 和 EF80 儲存系統上的故障控制器離線
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

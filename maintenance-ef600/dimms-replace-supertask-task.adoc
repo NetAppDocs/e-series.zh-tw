@@ -221,7 +221,7 @@ image::../media/remove_controller_7.png[將 DIMM 安裝到控制器的插槽中]
 .步驟
 . 將控制器置於線上。
 +
-.. 在 SANtricity System Manager 中，選取 menu:硬體[控制器與元件]。
+.. 在 SANtricity System Manager 中，選擇選單：硬體［控制器和元件］。
 .. 選取內含更換DIMM的控制器。
 .. 從下拉式清單中選取*線上放置*。
 

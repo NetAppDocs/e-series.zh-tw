@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Fibre Channel protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, E4000, EF50, EF80, E-Series, eseries 
 summary: 對於 Fibre Channel 傳輸協定（FCP），您設定交換器並決定主機連接埠識別碼。 
 ---
-= 在 E 系列 - VMware 中執行 FC 專屬工作
+= 在 E 系列中設定 VMware 的 FC 交換器和主機識別符
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -23,7 +23,7 @@ NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 �
 
 您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄 FC 儲存組態資訊。您在執行配置工作時需要這些資訊。
 
-圖中顯示連接到兩個區域中 E 系列儲存陣列的主機。一個區域以紅線標示；另一個區域以藍線標示。每個區域至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量將取決於主機匯流排介面卡的數量和控制器型號。您可能會有更多可用的連接埠（每個控制器最多 12 個）。如有需要，請列印其他 PDF 檔案。
+圖中顯示主機在兩個區域中連接至 E 系列儲存陣列。一個區域以紅線標示；另一個區域以藍線標示。每個區域至少包含一個啟動器連接埠和一半的目標連接埠。主機和 / 或控制器連接埠的數量將因主機匯流排介面卡的數量與控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 12 個）。視需要列印額外的 PDF。
 
 image::../media/port_identifiers_host_and_target_conf-vmw.gif[Fibre Channel 連接埠識別碼]
 
@@ -165,7 +165,7 @@ _不適用_
 
 
 [[step-2-determine-the-host-port-wwpns]]
-== 步驟 2：判斷主機連接埠 WWPN
+== 步驟 2：確定主機連接埠 WWPN
 
 若要設定FC分區、您必須決定每個啟動器連接埠的全球連接埠名稱（WWPN）。
 
@@ -191,7 +191,7 @@ vmhba65   lpfc      link-up     fc.200070b7e4395531:100070b7e4395531            
 ----
 
 
-在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是預期中的情況。請記錄每個唯一的 WWPN。
+在上面的範例中，vmhba4 和 vmhba64 以及 vmhba5 和 vmhba65 的 UID 相同。這對於同時支援 FCP 和 NVMe over FC 的 FC 介面卡來說是正常的。請記錄每個唯一的 WWPN。
 
 
 NOTE: 另一個命令選項是 `esxcli storage san fc list`。這將顯示更多詳細資訊以及以冒號分隔的十六進位格式的 WWPN。
@@ -223,4 +223,4 @@ NOTE: 廠商的HBA公用程式可用來升級及取得HBA的特定資訊。如�
 . 儲存區域、然後啟動新的分區組態。
 
 
-請參閱交換器廠商的文件，以取得有關設定區域的詳細說明。
+請查閱交換器廠商的文件，以取得有關設定區域的詳細說明。

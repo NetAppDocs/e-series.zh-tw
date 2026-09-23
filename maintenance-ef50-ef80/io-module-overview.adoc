@@ -2,16 +2,16 @@
 permalink: maintenance-ef50-ef80/io-module-overview.html 
 sidebar: sidebar 
 keywords: ef50, ef80, replace io module, upgrade io module, io module overview 
-summary: EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供了靈活度，以增強網路連線能力與效能，並增加儲存容量。 
+summary: EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供靈活度，以增強網路連線與效能，並增加儲存容量。 
 ---
-= I/O 模組維護概述 - EF50 和 EF80
+= 了解 EF50 和 EF80 儲存系統的 I/O 模組維護
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供了靈活度，以增強網路連線能力與效能，並增加儲存容量。
+EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供靈活度，以增強網路連線與效能，並增加儲存容量。
 
 * link:io-module-replace.html["更換 I/O 模組"]
 +
@@ -19,7 +19,7 @@ EF50 和 EF80 儲存系統在更換或升級 I/O 模組方面提供了靈活度�
 
 * link:io-module-upgrade.html["升級 I/O 模組"]
 +
-您可以升級儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線能力，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。
+您可以升級儲存系統中的 I/O 模組，以增加主機連接埠的數量，從而增強網路連線，擴充系統處理資料流量的能力，並連接 SAS 擴充機櫃。
 
 +
 

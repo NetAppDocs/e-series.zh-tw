@@ -4,14 +4,14 @@ sidebar: sidebar
 keywords: express vmware configuration, software configuration, vmware host, E2800, E5700, EF300, EF600, EF50, EF80, E4000, E-Series, eseries 
 summary: 使用E系列系統的VMware主機快速組態。 
 ---
-= E 系列中的 VMware Express 組態
+= E 系列 VMware 主機組態快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-安裝儲存陣列並存取 SANtricity System Manager 的 VMware express 方法，適用於設定搭配 E 系列儲存系統的獨立式 VMware 主機。其設計旨在以最少的決策點，盡可能快速地讓儲存系統啟動並運作。
+安裝儲存陣列並存取 SANtricity System Manager 的 VMware 快速方法，適用於設定搭配 E 系列儲存系統的獨立式 VMware 主機。其旨在以最少的決策點，盡可能快速地讓儲存系統啟動並運作。
 
 
 

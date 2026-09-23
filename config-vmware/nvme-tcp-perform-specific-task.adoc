@@ -2,16 +2,16 @@
 permalink: config-vmware/nvme-tcp-perform-specific-task.html 
 sidebar: sidebar 
 keywords: NVMe over TCP protocol, switches, zone switches, zoning, host port identifiers, express vmware configuration, software configuration, vmware host, E5700, EF300, EF600, EF50, EF80, E-Series, eseries 
-summary: 對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe 限定名稱（NQN）。 
+summary: 對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe Qualified Name（NQN）。 
 ---
-= 在 E 系列中執行 NVMe over TCP 特定工作 - VMware
+= 在 E 系列中為 VMware 設定 NVMe over TCP 交換器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe 限定名稱（NQN）。
+對於 NVMe over TCP 協定，您設定交換器並決定主機 NVMe Qualified Name（NQN）。
 
 
 NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 位元組模擬（512e），以確保與 VMware 相容。如需將 Volume 設定為使用 512 位元組模擬（512e）的詳細資訊，請參閱 SANtricity System Manager 線上說明。
@@ -21,9 +21,9 @@ NOTE: 使用 4096 位元組磁碟機時，必須將 Volume 設定為使用 512 �
 [[step-1-record-your-configuration]]
 == 步驟 1：記錄您的組態
 
-您可以產生並列印此頁面的 PDF，然後使用下列工作表記錄特定通訊協定的儲存組態資訊。您在執行配置工作時需要這些資訊。
+您可以產生並列印此頁面的 PDF 文件，然後使用下列工作表記錄特定於協定的儲存組態資訊。您在執行配置任務時需要這些資訊。
 
-圖中顯示主機連接到 E 系列儲存陣列，並透過 VLAN 和/或獨立子網路分隔。藍線表示一個 VLAN/子網路；紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量會因網路介面的數量和控制器型號而異。您可能會有更多可用的連接埠（每個控制器最多 6 個）。
+圖中顯示了一台主機連接到 E 系列儲存陣列，該陣列透過 VLAN 和/或獨立子網路進行隔離。藍線表示一個 VLAN/子網路，紅線表示另一個 VLAN/子網路。每個 VLAN/子網路至少包含一個啟動器連接埠和一半的目標連接埠。主機和/或控制器連接埠的數量取決於網路介面的數量和控制器型號。您可能擁有更多連接埠（每個控制器最多 6 個）。
 
 image::../media/network_generic_worksheet.gif[NVMe over TCP 連接埠識別碼]
 
@@ -50,10 +50,10 @@ image::../media/network_generic_worksheet.gif[NVMe over TCP 連接埠識別碼]
 [[step-2-configure-the-nvmetcp-switches]]
 == 步驟 2：設定 NVMe/TCP 交換器
 
-您根據廠商針對 NVMe over TCP 的建議設定交換器。這些建議可能包括組態指令和程式碼更新。
+您根據廠商針對 NVMe over TCP 的建議設定交換器。這些建議可能包括組態指令以及程式碼更新。
 
 .關於這項工作
-本工作說明為 NVMe over TCP 設定交換器的一般步驟。如需具體說明，請參閱交換器廠商的文件。
+本工作說明設定交換器以使用 NVMe over TCP 的一般步驟。如需特定指示，請參閱交換器廠商的文件。
 
 .開始之前
 請確定您擁有下列項目：
@@ -69,10 +69,10 @@ image::../media/network_generic_worksheet.gif[NVMe over TCP 連接埠識別碼]
 [[step-3-configure-networking]]
 == 步驟 3：設定連網
 
-您可以根據資料儲存設備要求，透過多種方式設定 NVMe over TCP 網路。請諮詢您的網路管理員，以取得為您的環境選擇最佳組態的建議。
+您可以根據資料儲存設備要求，透過多種方式設定 NVMe over TCP 網路。請諮詢您的網路管理員，以取得選擇最適合您環境的組態的建議。
 
 .關於這項工作
-本工作說明針對 NVMe over TCP 設定網路的一般步驟。如需特定指示，請參閱交換器廠商的文件。
+本工作描述設定 NVMe over TCP 網路的一般步驟。如需特定指示，請參閱交換器廠商的文件。
 
 .開始之前
 請確定您擁有下列項目：
@@ -80,9 +80,9 @@ image::../media/network_generic_worksheet.gif[NVMe over TCP 連接埠識別碼]
 * 交換器已設定為用於 TCP 流量。
 
 
-在規劃 NVMe over TCP 連網時，請記住， https://configmax.broadcom.com/guest["VMware 組態最大值指南"^] 指出每部伺服器支援的最大 TCP NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多路徑。
+在規劃基於 TCP 的 NVMe 連網時，請記住， https://configmax.broadcom.com/guest["VMware 組態上限指南"^] 指出每部伺服器支援的最大 TCP NVMe 啟動器連接埠數為 2。您必須考慮此要求，以避免設定過多的路徑。
 
-為確保良好的多重路徑組態，請為 NVMe over TCP 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠群組放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。
+為確保良好的多路徑組態，請為 NVMe over TCP 網路使用多個網段。將至少一個主機端連接埠和每個陣列控制器的至少一個連接埠放置在一個網段上，並將相同的主機端和陣列端連接埠群組放置在另一個網段上。盡可能使用多個乙太網路交換器以提供額外的備援。
 
 .步驟
 請參閱交換器廠商的文件。
@@ -199,7 +199,7 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 .步驟
 . 識別 TCP 網路介面卡並記錄 vmnic 配對的上行鏈路。
 +
-主機上的網路介面卡命名為 vmnicN，其中 N 是用於識別網路介面卡的唯一編號，例如 vmnic0、vmnic1 等。您可以從 ESXi 主機的「連網」下檢視實體介面卡，或是從代管 vCenter 的清單中選取 ESXi 主機後，從「設定」標籤來檢視。
+主機上的網路介面卡命名為 vmnicN，其中 N 是用於識別網路介面卡的唯一編號，例如 vmnic0、vmnic1 等。可以從 ESXi 主機的「連網」下檢視實體介面卡，或在從託管 vCenter 的清單中選取 ESXi 主機後，從「設定」索引標籤中檢視。
 
 . 使用 vSphere 標準交換器為 TCP 適配器配置 VMkernel 連接埠綁定。
 +
@@ -216,9 +216,9 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 
 
 
-NOTE: 在此過程中，可以透過「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時會需要用到此資訊。
+NOTE: 在此過程中，可以從「新增控制器」對話方塊取得主機 NQN。稍後設定主機對應時將會需要此資訊。
 
-成功新增後，可以從 vSphere Client 上的儲存介面卡檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。
+新增成功後，可以從 vSphere Client 上的「儲存介面卡」檢視中查看連線。如果不成功，請跳至步驟 6 以驗證與連接埠的通訊並修正任何連線設定。
 
 
 
@@ -235,7 +235,7 @@ NOTE: 在此過程中，可以透過「新增控制器」對話方塊取得主�
 vmkping <NVMe over TCP_target_IP_address\>
 ----
 +
-在這個例子中，NVMe over TCP 的目標 IP 位址是 192.29.11.111。
+在此範例中，NVMe over TCP 目標 IP 位址是 192.29.11.111。
 
 +
 [listing]
@@ -249,10 +249,10 @@ PING 192.29.11.111 (192.29.11.111): 56 data bytes
 3 packets transmitted, 3 packets received, 0% packet loss
 round-trip min/avg/max = 0.406/0.721/0.902 ms
 ----
-. 從每台主機的啟動器位址（用於 NVMe over TCP 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over TCP 連接埠發出  `vmkping` 命令。在組態中的每台主機伺服器上執行此行動，並根據需要變更 IP 位址。
+. 從每台主機的啟動器位址（用於 NVMe over TCP 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over TCP 連接埠發出 `vmkping`命令。在組態中的每台主機伺服器上執行此行動，並根據需要變更 IP 位址。
 +
 
 NOTE: 如果命令執行失敗並顯示訊息 `sendto() failed (Message too long)`，請驗證主機伺服器、儲存控制器和交換器連接埠上乙太網路介面的 MTU 大小。
 
-. 如果步驟 5 探索失敗，請返回 NVMe over TCP 主機端連網組態程序，以完成新增目標控制器。
+. 如果步驟 5 探索失敗，請返回 NVMe over TCP 主機端連網組態程序以完成新增目標控制器。
 

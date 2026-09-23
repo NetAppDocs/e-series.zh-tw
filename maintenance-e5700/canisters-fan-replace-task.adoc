@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: E5700 fan, repair E5700 fan, replace E5700 fan, failed E5700 fan 
 summary: 更換E5700風扇。 
 ---
-= 更換 E5700 60 磁碟機機櫃中的風扇匣
+= 更換 E5700 60 磁碟機機櫃中的風扇罐
 :allow-uri-read: 
 :experimental: 
 :icons: font

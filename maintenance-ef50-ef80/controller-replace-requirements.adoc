@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: ef50, ef80, prerequisite, replace the controller module 
 summary: 在更換 EF50 或 EF80 儲存系統中的控制器之前，請確保您已符合成功更換的所有需求。這包括確認您有一個故障的控制器、檢查儲存系統的狀態、準備執行程序所需的工具，以及擁有可存取 SANtricity System Manager 的管理工作站與瀏覽器。 
 ---
-= 更換控制器的要求 - EF50 和 EF80
+= EF50 和 EF80 儲存系統的控制器更換需求
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
