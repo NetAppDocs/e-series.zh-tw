@@ -211,7 +211,7 @@ MTU 大小（點擊「顯示更多連接埠設定」即可查看。）
 
 . 新增用於透過 TCP 實現 NVMe 的 NVMe 控制器。
 +
-如需詳細資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi/shared-content/submaps/GUID-23E6D699-BEDC-4B5F-9515-3390C0E73888_copy.html["新增 NVMe over Fabrics 控制器"^]。
+如需詳細資訊，請參閱 link:https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/9-1/vsphere-storage/about-vmware-nvme-storage/configuring-nvme-over-tcp-on-esxi.html["新增 NVMe over Fabrics 控制器"^]。
 
 
 

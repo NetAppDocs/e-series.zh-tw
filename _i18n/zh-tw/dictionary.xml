@@ -9112,7 +9112,6 @@
   <block id="dce708315880727f8ba7e84bab86b168" category="paragraph">此程序適用於 IOM12、IOM12B 和 IOM12C 驅動器架。</block>
   <block id="3f457ff9c17714d64ba75fd9d6d618f2" category="admonition">IOM12C 模組僅在 SANtricity OS 11.90R3 及更高版本上支援。在安裝或升級至IOM12C之前、請先確認您的控制器韌體已更新。</block>
   <block id="8d93e2013316d1241b304432f0103be5" category="admonition">此程序適用於類似的機櫃IOM熱交換或更換。這表示您只能將IOM12模組更換為另一個IOM12模組、或將IOM12C模組更換為另一個IOM12C模組。（您的機櫃可以有兩個IOM12模組、或有兩個IOM12C模組。）</block>
-  <block id="e0f75caa67759a6c5e34cbad6ae84d57" category="admonition">IOM12C模組僅在SANtricity 不含作業系統11.70.2的版本上受支援。在安裝或升級至IOM12C之前、請先確認您的控制器韌體已更新。</block>
   <block id="bbfd15448c83d50ee0a4a62cc152d856" category="paragraph"><block ref="bbfd15448c83d50ee0a4a62cc152d856" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7178ecd56d859f9f7e4878779a236ea" category="paragraph"><block ref="f7178ecd56d859f9f7e4878779a236ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="949ca69f081f10e2fc1938e0e24759c8" category="paragraph"><block ref="949ca69f081f10e2fc1938e0e24759c8" category="inline-image-macro-rx" type="image"></block></block>
@@ -10663,7 +10662,6 @@
   <block id="63caec46d73c7fc7cfb31576f03448b3" category="list-text">新增軟體 NVMe over TCP 適配器。</block>
   <block id="38e873b40f9f1fadf5b58bb3e7881a0a" category="paragraph">如需詳細資訊，請參閱 <block ref="83ec1ea21d3b4612b4378c8e0322370e" category="inline-link-macro-rx"></block>。</block>
   <block id="35364a0d878a8e2835e056f68bbe94ca" category="list-text">新增用於透過 TCP 實現 NVMe 的 NVMe 控制器。</block>
-  <block id="85711dc46edb07fe18d562b7bd2afd62" category="paragraph">如需詳細資訊，請參閱 <block ref="138a9b696f8791e3b3cb78426f306288" category="inline-link-macro-rx"></block>。</block>
   <block id="6ffa0472c7a35ad33e212ebdffd65a85" category="paragraph">在此範例中，NVMe over TCP 目標 IP 位址是 192.29.11.111。</block>
   <block id="6ecdef344e2ba5fc1740960e5ecc14b7" category="list-text">從每台主機的啟動器位址（用於 NVMe over TCP 的主機乙太網路連接埠的 IP 位址）向每個控制器的 NVMe over TCP 連接埠發出<block ref="bb8dcb7aca9e5a9c6d0064e07e54900b" prefix=" " category="inline-code"></block>命令。在組態中的每台主機伺服器上執行此行動，並根據需要變更 IP 位址。</block>
   <block id="ef85308abea9690943da10064f1e07e0" category="list-text">如果步驟 5 探索失敗，請返回 NVMe over TCP 主機端連網組態程序以完成新增目標控制器。</block>
@@ -11180,4 +11178,5 @@
   <block id="c258d5ff72ac6cde3a2d2c9160d9be3e" category="doc">更換 EF50 或 EF80 儲存系統中的電源供應</block>
   <block id="8f7e1bfda34b5c8fb95937ace0e0bea7" category="doc">更換 DE460C - EF300 和 EF600 中的磁碟機抽屜</block>
   <block id="6c1d99e806e444e516c2482fdbe8f055" category="list-text">選擇 menu:儲存設備［Volume］。從 *所有 Volume* 頁面，確認 Volume 已分配給其偏好的擁有者。選擇 *省略符號圖示* &gt; *變更所有權* 以檢視 Volume 擁有者。</block>
+  <block id="7baca5088011490565ae0a1cf6125785" category="paragraph">如需詳細資訊，請參閱 <block ref="540ffd17fd5ec0a460640b11d1bd0a3b" category="inline-link-macro-rx"></block>。</block>
 </blocks>
