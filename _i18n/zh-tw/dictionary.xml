@@ -11179,4 +11179,6 @@
   <block id="8f7e1bfda34b5c8fb95937ace0e0bea7" category="doc">更換 DE460C - EF300 和 EF600 中的磁碟機抽屜</block>
   <block id="6c1d99e806e444e516c2482fdbe8f055" category="list-text">選擇 menu:儲存設備［Volume］。從 *所有 Volume* 頁面，確認 Volume 已分配給其偏好的擁有者。選擇 *省略符號圖示* &gt; *變更所有權* 以檢視 Volume 擁有者。</block>
   <block id="7baca5088011490565ae0a1cf6125785" category="paragraph">如需詳細資訊，請參閱 <block ref="540ffd17fd5ec0a460640b11d1bd0a3b" category="inline-link-macro-rx"></block>。</block>
+  <block id="712baff1701c605dfc39f4e5da7d934e" category="section-title">Version 12.10R1 版本新增功能</block>
+  <block id="9bee6f4318d6dc6bfd57ef5376da8437" category="paragraph">此版本僅包含少量變更，沒有新功能。如需此版本變更的詳細資訊，請參閱 E-Series SANtricity OS 12.10R1 README。</block>
 </blocks>
